@@ -1,0 +1,20 @@
+Terminal Session Create-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ter:CreateTerminalSessionReq AuthorizedBy="PPSMOKETEST" TargetBranch="TP_1P_SOA" Host="1P" xmlns:ter="http://www.travelport.com/schema/terminal_v33_0" xmlns:com="http://www.travelport.com/schema/common_v33_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </ter:CreateTerminalSessionReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Terminal Session Create-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <terminal:CreateTerminalSessionRsp TransactionId="9DCF58420A07643B096D7BC3C65009A8" ResponseTime="11" xmlns:terminal="http://www.travelport.com/schema/terminal_v33_0">
+         <common_v33_0:HostToken Host="1P" xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0">73FD7A75-49E8-4E67-5063-5120F9F77043</common_v33_0:HostToken>
+      </terminal:CreateTerminalSessionRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

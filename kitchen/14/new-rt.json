@@ -1,0 +1,202 @@
+[
+  {
+    "from": "BKI",
+    "to": "KUL"
+  },
+  {
+    "from": "SDK",
+    "to": "KUL"
+  },
+  {
+    "from": "KCH",
+    "to": "KUL"
+  },
+  {
+    "from": "PAR",
+    "to": "KUL"
+  },
+  {
+    "from": "JHB",
+    "to": "KUL"
+  },
+  {
+    "from": "JHB",
+    "to": "PEN"
+  },
+  {
+    "from": "JHB",
+    "to": "LGK"
+  },
+  {
+    "from": "AOR",
+    "to": "JHB"
+  },
+  {
+    "from": "KUL",
+    "to": "JHB"
+  },
+  {
+    "from": "BKI",
+    "to": "TWU"
+  },
+  {
+    "from": "BKI",
+    "to": "KCH"
+  },
+  {
+    "from": "BKI",
+    "to": "KUL"
+  },
+  {
+    "from": "KUL",
+    "to": "BKI"
+  },
+  {
+    "from": "PEN",
+    "to": "BKI"
+  },
+  {
+    "from": "KCH",
+    "to": "BTU"
+  },
+  {
+    "from": "KCH",
+    "to": "LGK"
+  },
+  {
+    "from": "KCH",
+    "to": "KUL"
+  },
+  {
+    "from": "KCH",
+    "to": "MYY"
+  },
+  {
+    "from": "KUL",
+    "to": "KCH"
+  },
+  {
+    "from": "BKI",
+    "to": "KCH"
+  },
+  {
+    "from": "SIN",
+    "to": "KCH"
+  },
+  {
+    "from": "MYY",
+    "to": "KCH"
+  },
+  {
+    "from": "PEN",
+    "to": "KUL"
+  },
+  {
+    "from": "PEN",
+    "to": "BKI"
+  },
+  {
+    "from": "PEN",
+    "to": "JKT"
+  },
+  {
+    "from": "JHB",
+    "to": "PEN"
+  },
+  {
+    "from": "KUL",
+    "to": "PEN"
+  },
+  {
+    "from": "TWU",
+    "to": "KUL"
+  },
+  {
+    "from": "BKI",
+    "to": "TWU"
+  },
+  {
+    "from": "KUL",
+    "to": "TWU"
+  },
+  {
+    "from": "KBR",
+    "to": "KUL"
+  },
+  {
+    "from": "KUL",
+    "to": "KBR"
+  },
+  {
+    "from": "KUL",
+    "to": "LGK"
+  },
+  {
+    "from": "KCH",
+    "to": "LGK"
+  },
+  {
+    "from": "JHB",
+    "to": "LGK"
+  },
+  {
+    "from": "KUL",
+    "to": "TGG"
+  },
+  {
+    "from": "MYY",
+    "to": "LBU"
+  },
+  {
+    "from": "MYY",
+    "to": "KUL"
+  },
+  {
+    "from": "MYY",
+    "to": "KCH"
+  },
+  {
+    "from": "KUL",
+    "to": "MYY"
+  },
+  {
+    "from": "SBW",
+    "to": "MYY"
+  },
+  {
+    "from": "KCH",
+    "to": "MYY"
+  },
+  {
+    "from": "SIN",
+    "to": "IPH"
+  },
+  {
+    "from": "AOR",
+    "to": "KUL"
+  },
+  {
+    "from": "AOR",
+    "to": "JHB"
+  },
+  {
+    "from": "KUL",
+    "to": "AOR"
+  },
+  {
+    "from": "SBW",
+    "to": "KUL"
+  },
+  {
+    "from": "SBW",
+    "to": "MYY"
+  },
+  {
+    "from": "KUL",
+    "to": "SBW"
+  },
+  {
+    "from": "PNH",
+    "to": "MNL"
+  }
+]

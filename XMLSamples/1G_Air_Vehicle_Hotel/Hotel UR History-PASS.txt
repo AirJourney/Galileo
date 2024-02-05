@@ -1,0 +1,332 @@
+Hotel UR History-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordHistorySearchReq AuthorizedBy="SUSIL" UniversalRecordLocatorCode="0T1JNI" TraceId="PP_1G_001" TargetBranch="P7102538" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordHistorySearchReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel UR History-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordHistorySearchRsp TraceId="PP_1G_001" TransactionId="9C1862BE0A07643B096D7BC391B3FB40" ResponseTime="171" LastResult="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-02T16:33:22.855+00:00" ElementType="URCreate" Action="URCreate">
+            <universal:New>UR RecLoc: 0T1JNI</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-02T16:33:22.857+00:00" ElementType="HotelReservation" Action="HotelCreate">
+            <universal:New>Universal Record Locator Code: 0T1JNI
+               
+               
+               Provider Reservation:
+               
+               Provider Code: 1G
+               Provider Locator: 48WKSI
+               CustomCheckRule:
+               
+               
+               CustomerID:
+               Postscript:
+               
+               
+               UserAcceptance:
+               
+               
+               Booking Confirmation:25887920
+               
+               Status:HK
+               
+               
+               Traveler Info 1:
+               BookingTravelerRefKey : TuJJbrVu4hG1/9LlYIhwmw==
+               Booking Traveler First Name: Harry K
+               Booking Traveler Last Name:  Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               
+               
+               Hotel Segment:
+               Status: HK
+               Hotel Chain:Holiday Inn
+               Hotel Code:25326
+               Hotel Location:DEN
+               Hotel Address:
+               6900 TOWER ROAD
+               DENVER US 80249 CO
+               Hotel Phone Number:1-303-5741300
+               Hotel Fax Number:1-303-5741340
+               Hotel Other Number:
+               Check In Date:2020-05-01
+               Check Out:2020-05-16
+               
+               Rate Plan Type:2QN08PG
+               SurCharge :
+               Base:USD204.23
+               Total :USD3407.47
+               
+               
+               
+               Tax:USD3203.24
+               Tax:
+               
+               NonRefundableStayIndicator:
+               
+               
+               Rate By Date 1:-
+               Effective Date:2020-05-01
+               Expire Date:2020-05-02
+               Base:USD189.04
+               
+               Rate By Date 2:-
+               Effective Date:2020-05-02
+               Expire Date:2020-05-03
+               Base:USD200.68
+               
+               Rate By Date 3:-
+               Effective Date:2020-05-03
+               Expire Date:2020-05-04
+               Base:USD202.41
+               
+               Rate By Date 4:-
+               Effective Date:2020-05-04
+               Expire Date:2020-05-08
+               Base:USD204.23
+               
+               Rate By Date 5:-
+               Effective Date:2020-05-08
+               Expire Date:2020-05-09
+               Base:USD188.81
+               
+               Rate By Date 6:-
+               Effective Date:2020-05-09
+               Expire Date:2020-05-10
+               Base:USD200.43
+               
+               Rate By Date 7:-
+               Effective Date:2020-05-10
+               Expire Date:2020-05-11
+               Base:USD152.36
+               
+               Rate By Date 8:-
+               Effective Date:2020-05-11
+               Expire Date:2020-05-12
+               Base:USD191.57
+               
+               Rate By Date 9:-
+               Effective Date:2020-05-12
+               Expire Date:2020-05-15
+               Base:USD204.23
+               
+               Rate By Date 10:-
+               Effective Date:2020-05-15
+               Expire Date:2020-05-16
+               Base:USD188.91
+               
+               Guarantee Detail:
+               Hold Time:
+               Guarantee Type:
+               Deposit Amount:
+               Approximate Deposit Amount:
+               
+               
+               
+               Reservation Name First:HARRYK
+               Reservation Name Last:LOBO
+               
+               
+               
+               
+               
+               Hotel Commission: Y
+               
+               Guest Information:
+               ExtraAdult:
+               Amount :
+               Content:
+               AdultCount: 1
+               ChildCount:
+               Age:
+               Amount:
+               RoomCount: 1
+               
+               ExtraChild:
+               Count:
+               Content:
+               CreatedAt: 2020-03-02T16:33:22.857+00:00</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-02T16:33:28.501+00:00" ElementType="HotelReservation" Action="HotelCancel">
+            <universal:Old>Universal Record Locator Code: 0T1JNI
+               Provider Reservation:
+               Provider Code:1G
+               ProviderLocatorCode:48WKSI
+               
+               Traveler Info 1:
+               Name: Harry K Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               Booking Confirmation:25887920
+               Status:HK
+               
+               Hotel Chain:Holiday Inn
+               Hotel Code:25326
+               Hotel Location:DEN
+               RateSupplier:$reservation.getFirstStay().rateSupplier
+               Check In Date:2020-05-01
+               Check Out:2020-05-16
+               Rate Plan Type:2QN08PG
+               
+               Rate By Date 1:-
+               Effective Date:2020-05-08
+               Expire Date:2020-05-09
+               Rate By Date 2:-
+               Effective Date:2020-05-01
+               Expire Date:2020-05-02
+               Rate By Date 3:-
+               Effective Date:2020-05-02
+               Expire Date:2020-05-03
+               Rate By Date 4:-
+               Effective Date:2020-05-03
+               Expire Date:2020-05-04
+               Rate By Date 5:-
+               Effective Date:2020-05-04
+               Expire Date:2020-05-08
+               Rate By Date 6:-
+               Effective Date:2020-05-09
+               Expire Date:2020-05-10
+               Rate By Date 7:-
+               Effective Date:2020-05-10
+               Expire Date:2020-05-11
+               Rate By Date 8:-
+               Effective Date:2020-05-11
+               Expire Date:2020-05-12
+               Rate By Date 9:-
+               Effective Date:2020-05-12
+               Expire Date:2020-05-15
+               Rate By Date 10:-
+               Effective Date:2020-05-15
+               Expire Date:2020-05-16
+               
+               General Remark:
+               Category: MCT
+               TypeInGDS:
+               SupplierType:
+               Text: NotRequired
+               
+               General Remark:
+               Category: A
+               TypeInGDS: Alpha
+               SupplierType:
+               Text: THIS IS A ;;ALPHA ;;;;GENERAL;;;; REMARK
+               
+               
+               
+               Total Rate:USD3407.47
+               Base:USD204.23
+               Tax:
+               SurCharge:
+               Status: HK
+               Cancellation Number:
+               Reservation Name First:HARRYK
+               Reservation Name Last:LOBO
+               Sell Message:CXL:CXL AFTER 1800 30APR FORFEIT FIRST NITE STAY
+               Sell Message:ROOM DESCRIPTION:TWO QUEEN BEDS NONSMOKING
+               Sell Message:THANK YOU FOR BOOKING HOLIDAY INN HOTEL AND SUITES THE GUEST IS
+               Sell Message:CONFIRMED IN A NON-SMOKING ROOM *****NOTE-RATE CHANGE
+               Sell Message:APPLIES***** *</universal:Old>
+            <universal:New>Universal Record Locator Code: 0T1JNI
+               Provider Reservation:
+               Provider Code:1G
+               ProviderLocatorCode:48WKSI
+               
+               Traveler Info 1:
+               Name: Harry K Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               Booking Confirmation:25887920
+               Status:XX
+               AggregatorBookingStatus:cancelled
+               
+               Hotel Chain:Holiday Inn
+               Hotel Code:25326
+               Hotel Location:DEN
+               RateSupplier:$reservation.getFirstStay().rateSupplier
+               Check In Date:2020-05-01
+               Check Out:2020-05-16
+               Rate Plan Type:2QN08PG
+               
+               Rate By Date 1:-
+               Effective Date:2020-05-08
+               Expire Date:2020-05-09
+               Rate By Date 2:-
+               Effective Date:2020-05-01
+               Expire Date:2020-05-02
+               Rate By Date 3:-
+               Effective Date:2020-05-02
+               Expire Date:2020-05-03
+               Rate By Date 4:-
+               Effective Date:2020-05-03
+               Expire Date:2020-05-04
+               Rate By Date 5:-
+               Effective Date:2020-05-04
+               Expire Date:2020-05-08
+               Rate By Date 6:-
+               Effective Date:2020-05-09
+               Expire Date:2020-05-10
+               Rate By Date 7:-
+               Effective Date:2020-05-10
+               Expire Date:2020-05-11
+               Rate By Date 8:-
+               Effective Date:2020-05-11
+               Expire Date:2020-05-12
+               Rate By Date 9:-
+               Effective Date:2020-05-12
+               Expire Date:2020-05-15
+               Rate By Date 10:-
+               Effective Date:2020-05-15
+               Expire Date:2020-05-16
+               
+               General Remark:
+               Category: MCT
+               TypeInGDS:
+               SupplierType:
+               Text: NotRequired
+               
+               General Remark:
+               Category: A
+               TypeInGDS: Alpha
+               SupplierType:
+               Text: THIS IS A ;;ALPHA ;;;;GENERAL;;;; REMARK
+               
+               General Remark:
+               Category:
+               TypeInGDS:
+               SupplierType: Hotel
+               Text: Hotel Chain: HI Check In Date: 2020-05-01 Booking Confirmation Number: 25887920 Cancel Confirmation Num: 14112079
+               
+               
+               
+               Total Rate:USD3407.47
+               Base:USD204.23
+               Tax:
+               SurCharge:
+               Status: XX
+               Cancellation Number: 14112079
+               Reservation Name First:HARRYK
+               Reservation Name Last:LOBO
+               Sell Message:CXL:CXL AFTER 1800 30APR FORFEIT FIRST NITE STAY
+               Sell Message:ROOM DESCRIPTION:TWO QUEEN BEDS NONSMOKING
+               Sell Message:THANK YOU FOR BOOKING HOLIDAY INN HOTEL AND SUITES THE GUEST IS
+               Sell Message:CONFIRMED IN A NON-SMOKING ROOM *****NOTE-RATE CHANGE
+               Sell Message:APPLIES***** *</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+      </universal:UniversalRecordHistorySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

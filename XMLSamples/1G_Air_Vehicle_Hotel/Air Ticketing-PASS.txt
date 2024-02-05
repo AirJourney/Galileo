@@ -1,0 +1,27 @@
+Air Ticketing-Request
+******************************************************************** 
+<soap:Envelope  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <AirTicketingReq TargetBranch="P7102538" TraceId="Air Ticketing" AuthorizedBy="test" ReturnInfoOnFail="true" BulkTicket="false" xmlns="http://www.travelport.com/schema/air_v50_0">
+   
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <AirReservationLocatorCode>0T1JI5</AirReservationLocatorCode>
+
+         
+ </AirTicketingReq>        
+      
+   </soap:Body>
+</soap:Envelope>
+
+Air Ticketing-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AirTicketingRsp TraceId="Air Ticketing" TransactionId="9C13FA1A0A0764772606212B5FB7F0C9" ResponseTime="1064" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <air:TicketFailureInfo Code="12008" Message="Host error during ticket issue. FILED FARE HAS BEEN INVALIDATED" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMQ==">
+            <air:AirPricingInfoRef Key="NgSNMC7Q2BKArkm2BAAAAA=="/>
+            <common_v50_0:Name Prefix="Mr" First="CARSTEN" Last="LINDELOEV"/>
+         </air:TicketFailureInfo>
+      </air:AirTicketingRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

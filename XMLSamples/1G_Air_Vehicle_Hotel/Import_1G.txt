@@ -1,0 +1,61 @@
+	<soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<UniversalRecordImportReq TargetBranch="P9876543" ProviderCode="1G" ProviderLocatorCode="123456" xmlns="http://www.travelport.com/schema/universal_v50_0">
+			<BillingPointOfSaleInfo OriginApplication="uAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+		</UniversalRecordImportReq>
+	</soap:Body>
+</soap:Envelope>
+
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<universal:UniversalRecordImportRsp xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle_37_1="http://www.travelport.com/schema/vehicle_v37_1" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" TransactionId="93BA303A0A0759D43C141B204B8E43B3" ResponseTime="285">
+			<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">
+				<![CDATA[PNR already exists in Universal Record 2DKOCU]]>
+			</common_v50_0:ResponseMessage>
+			<universal:UniversalRecord LocatorCode="2DKOCU" Version="19" Status="Active">
+				<common_v50_0:BookingTraveler Key="NCbGOBBAAA/B7vMPEGAAAA==" TravelerType="ADT" Age="44" DOB="**********">
+					<common_v50_0:BookingTravelerName Prefix="MR" First="NARENDRA" Last="DOE"/>
+					<common_v50_0:PhoneNumber Key="NCbGOBBAAA/B8vMPEGAAAA==" Type="Mobile" Location="BLR" Number="9701234567">
+						<common_v50_0:ProviderReservationInfoRef Key="NCbGOBBAAA/BWPcPEGAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:Email Key="NCbGOBBAAA/BAwMPEGAAAA==" Type="Agency" EmailID="email@gmail.com">
+						<common_v50_0:ProviderReservationInfoRef Key="NCbGOBBAAA/BWPcPEGAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:SSR Key="NCbGOBBAAA/B9vMPEGAAAA==" Status="HK" Type="****" FreeText="////*******/M//DOE/NARENDRA -1DOE/NARENDRAMR" Carrier="AI" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA=="/>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:OSI Key="FXgQ6BpB0BKA+DwGPMAAAA==" Carrier="1G" Text="SNC RLOC AI YPC1R" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA=="/>
+				<universal:ProviderReservationInfo Key="NCbGOBBAAA/BWPcPEGAAAA==" ProviderCode="1G" LocatorCode="123456" CreateDate="2020-02-18T14:41:21.346+00:00" ModifiedDate="2020-03-01T01:33:37.902+00:00" HostCreateDate="2020-02-18" OwningPCC="4PA"/>
+				<air:AirReservation xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" LocatorCode="2DIR1F" CreateDate="2020-02-18T14:41:20.898+00:00" ModifiedDate="2020-03-01T01:33:37.958+00:00">
+					<common_v50_0:SupplierLocator SupplierCode="AI" SupplierLocatorCode="YPC1R" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA==" CreateDateTime="2020-02-18T14:41:00.000+00:00"/>
+					<air:DocumentInfo>
+						<air:TicketInfo Number="0983759208336" Status="N" BookingTravelerRef="NCbGOBBAAA/B7vMPEGAAAA==">
+							<common_v50_0:Name Prefix="MR" First="NARENDRA" Last="DOE"/>
+						</air:TicketInfo>
+					</air:DocumentInfo>
+					<common_v50_0:BookingTravelerRef Key="NCbGOBBAAA/B7vMPEGAAAA=="/>
+					<common_v50_0:ProviderReservationInfoRef Key="NCbGOBBAAA/BWPcPEGAAAA=="/>
+				</air:AirReservation>
+				<common_v50_0:GeneralRemark Key="NCbGOBBAAA/BBwMPEGAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA==" CreateDate="2020-02-18T14:41:00.000+00:00">
+					<common_v50_0:RemarkData>IATA-1.44-PLB-1.23</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="M3mNOBQc1BKAaQE4+FAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA==" SupplierCode="AI" Direction="Incoming" CreateDate="2020-02-18T14:41:00.000+00:00">
+					<common_v50_0:RemarkData>AUTO XX IF SSR TKNA/E/M/C NOT RCVD BY AI BY 2011/21FEB/ BLR LT</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="FXgQ6BpB0BKA9DwGPMAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA==" SupplierCode="AI" Direction="Incoming" CreateDate="2020-02-29T13:03:00.000+00:00">
+					<common_v50_0:RemarkData>PFS NOSHO AI951 S 29FEB20 VTZHYD</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI6114261559-2F064E01" BranchCode="P9876543" AgencyCode="S1TRAVEL" EventTime="2020-02-18T14:41:19.273+00:00"/>
+					<common_v50_0:AgentAction ActionType="Modified" AgentCode="UAPI6114261559-2F064E01" BranchCode="P9876543" AgencyCode="S1TRAVEL" EventTime="2020-03-01T01:33:37.966+00:00"/>
+					<common_v50_0:AgentAction ActionType="Ticketed" AgentCode="UAPI6114261559-2F064E01" BranchCode="P8765432" AgencyCode="S1TRAVEL" EventTime="2020-02-18T14:41:29.473+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:SSR Key="NCbGOBBAAA/BOtWPEGAAAA==" Status="HK" Type="****" FreeText="/SERVICE//MYFAREBOX.COM-1DOE/NARENDRAMR" Carrier="AI" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA=="/>
+				<common_v50_0:SSR Key="NCbGOBBAAA/BPtWPEGAAAA==" Status="HK" Type="****" FreeText="/919704777720-1DOE/NARENDRAMR" Carrier="AI" ProviderReservationInfoRef="NCbGOBBAAA/BWPcPEGAAAA=="/>
+				<common_v50_0:FormOfPayment Key="NCbGOBBAAA/BCwMPEGAAAA==" Type="Cash" Reusable="false" ProfileKey="Z8zPRmp7Tli746i2lLvhIw==">
+					<common_v50_0:ProviderReservationInfoRef Key="NCbGOBBAAA/BWPcPEGAAAA=="/>
+				</common_v50_0:FormOfPayment>
+			</universal:UniversalRecord>
+		</universal:UniversalRecordImportRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

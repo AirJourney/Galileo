@@ -1,0 +1,824 @@
+HotelDetails-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Body>
+      <hotel:HotelDetailsReq AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" TraceId="PP_1J_001" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hotel:HotelProperty HotelChain="RC" HotelCode="DENRD" Name="RESIDENCE INN CITY CN MARRIOTT" VendorLocationKey="xs/MMC4R2BKAOYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>1725 CHAMPA ST</hotel:Address>
+                  <hotel:Address>DENVER CO US 80202</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13032963456"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13032963444"/>
+               <common_v50_0:Distance Units="MI" Value="0" Direction="N"/>
+            </hotel:HotelProperty>
+         <hotel:HotelDetailsModifiers RateRuleDetail="Complete" NumberOfAdults="1" NumberOfRooms="1">
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+            </hotel:HotelStay>
+         </hotel:HotelDetailsModifiers>
+      </hotel:HotelDetailsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelDetails-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelDetailsRsp TraceId="PP_1J_001" TransactionId="9DCF66520A07643B096D7BC3D8F41825" ResponseTime="368" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:RequestedHotelDetails>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENRD" HotelLocation="DEN" Name="RESIDENCE INN CITY CN MARRIOTT" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>1725 CHAMPA ST</hotel:Address>
+                  <hotel:Address>DENVER CO US 80202</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13032963456"/>
+               <common_v50_0:PhoneNumber Type="Hotel" Number="13032963444"/>
+            </hotel:HotelProperty>
+            <hotel:HotelDetailItem Name="BUSINESS AND MEETING SERVICES (19)">
+               <hotel:Text>BUSINESS SERVICES - BUSINESS CENTER             COMPUTER PRINTING COMPUTERS                   COPY MACHINE FAX SERVICE                 SHIPPING CHARGEABLE BUSINESS SERVICES - INTERNET APPLIANCE OR PC  COMPLIMENTARY</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CANCELLATION/REFUND (09)">
+               <hotel:Text>** SEE RATE RULES FOR CANCELLATION/REFUND INFORMATION **</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CORPORATE LOCATIONS (17)">
+               <hotel:Text>ATANDT                    0.1 MI ACCENTURE                 0.4 MI W CENTRAL BUSINESS DISTRICT 0 MI DELOITTE AND TOUCHE       0.5 MI SE FEDERAL BUILDING          1 MI FEDERAL COURT HOUSE       0 MI W QWEST                     0.2 MI SE SPRINT                    0 MI XCEL ENERGY               0.3 MI N</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CREDIT CARDS (08)">
+               <hotel:Text>CREDIT CARDS ACCEPTED AS PAYMENT- AMERICAN EXPRESS - DINERS CLUB - DISCOVER CARD - INTERBANK MASTER CARD - JCB INTERNATIONAL - MASTER CARD - VISA</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CheckInTime">
+               <hotel:Text>1600</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CheckOutTime">
+               <hotel:Text>1100</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="DINING (21)">
+               <hotel:Text>LOBBY COFFEE SERVICES  COMPLIMENTARY MEAL PLANS AVAILABLE AT PROPERTY - BUFFET BREAKFAST PLAN FULL BREAKFAST PLAN MEAL PLANS INCLUDED IN RATES CARIBOU COFFEE MEALS SERVED - BREAKFAST / LUNCH RESTAURANT DESCRIPTION - CONNECTED TO THE HOTEL  SERVING BREAKFAST BREADS AND LUNCH ITEMS</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="DIRECTIONS (16)">
+               <hotel:Text>DIRECTION TO THE PROPERTY FROM AIRPORT - COS DRENNAN ROAD TURN RIGHT ON TO SOUTH POWERS BLVD.TO E. FOUNTAIN BLVD. TURN RIGHT. /FOUNTAIN BLVD BECOMES US 24W /. MERGE ON TO I 25 NORTH TO DENVER. EXIT ONTO SPEER BLVD SOUTH TO STOUT STREET. GO LEFT ON STOUT TO 18TH STREET. GO LEFT ON 18TH TO CHAMPA AND TURN LEFT. THE HOTEL WILL BE ON YOUR RIGHT DIRECTION TO THE PROPERTY FROM AIRPORT - DEN EXIT DIA ONTO PENA BLVD. AND FOLLOW IT TO I-70 WEST. TAKE I-70 WEST TO I-25 SOUTH. FOLLOW TO PARK AVENUE EXIT . GO LEFT ON PARK AVENUE TO CHAMPA ST.  TURN RIGHT ON CHAMPA STREET. THE HOTEL WILL BE 4 BLOCKS DOWN ON YOUR RIGHT. DIRECTION TO THE PROPERTY FROM AIRPORT - FNL GO EAST ON EARHART ROAD TOWARD LEAR DRIVE. TURN RIGHT ON TO NW FRONTAGE ROAD. TURN LEFT ON E CROSSROADS BLVD. MERGE ON TO I 25 SOUTH TO PARK AVENUE EXIT. TURN RIGHT ON TO CHAMPA STREET. GO 4 BLOCKS HOTEL IS ON THE RIGHT</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="EXTRAS/OPTIONS (10)">
+               <hotel:Text>TAXES AND SURCHARGES - TAX- 15.75 PCT  SALES TAX BASED ON PER ROOM PER NIGHT TOTAL TAX 15.75 INCOMING FAX CHARGE - COMPLIMENTARY PHONE CHARGES - LOCAL PHONE CHARGE -</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="FACILITIES (12)">
+               <hotel:Text>ON-SITE FACILITIES - GENERAL FACILITIES BBQ                         COFFEE SHOP ELEVATORS GYM  OTHER THAN EXISTING HEALTH CLUB HANDICAP FACILITIES         LAUNDROMAT LOUNGE                      MEETING ROOM NEWSSTAND                   NON-SMOKING ROOMS SERVICE / GUIDE DOGS ALLOWED CHARGEABLE FACILITIES BUSINESS CENTER FITNESS CENTER HEALTH CLUB  COMPLIMENTARY PARKING FACILITIES DISABLED PARKING PUBLIC AREA FACILITIES HIGH SPEED INTERNET ACCESS WIRELESS DATA CONNECTION ADDITIONAL ON-SITE FACILITIES - PARKING 35.00 USD DAILY OFF-SITE FACILITIES - GENERAL FACILITIES BARBER/BEAUTY SHOP          PHARMACY SPA                         TENNIS COURTS ADDITIONAL OFF-SITE FACILITIES - ALL RATES AT THIS HOTEL INCLUDE COMPLIMENTARY BREAKFAST AND IN-ROOM HIGH SPEED INTERNET ACCESS</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="LOCATION (15)">
+               <hotel:Text>DEN AIRPORT                   24 MI SW COS AIRPORT                   83 MI N FNL AIRPORT                   50 MI S PRIMARY CITY - DEN - DENVER DOWNTOWN 0.3 MI NW 16TH STREET MALL          0.1 MI 18TH AND CALIFORNIA STATI 0.2 MI E 18TH AND STOUT SOUTHBOUND 0.1 MI E AMTRAK UNION STATION      0.5 MI W ARVADA CENTER FOR THE ART B-52 BILLIARDS BANDIMERE SPEEDWAY        16 MI SW BLACK HAWK CENTRAL CITY G 40 MI W CHERRY CREEK SHOPPING MAL CHILDRENS MUSEUM          1.5 MI N COLORADO AVALANCHE COLORADO CHILDRENS MUSEUM COLORADO CONVENTION CENTE 0.3 MI SW COLORADO CRUSH ARENA FOOT COLORADO HISTORY CENTER   1.1 MI S COLORADO HISTORY MUSEUM   1 MI SE COLORADO MAMMOTH LACROSSE COLORADO MILLS COLORADO RAPID SOCCER COLORADO SPRINGS AIRPORT  83 MI N COLORADO STATE CAPITAL COLORADO STATE CAPITOL    1 MI SW COLORADO STATE UNIVERSITY COMEDY WORKS              0.3 MI COORS BREWERY TOUR        20 MI W COORS BREWERY TOURS COORS FIELD               0.4 MI N COUNTRY DINNER PLAYHOUSE  15 MI DENVER                    0.3 MI NW DENVER ART MUSEUM         1 MI SE DENVER BOTANIC GARDENS    5 MI SE DENVER BRONCOS DENVER CENTER ATTRACTIONS DENVER CENTER FOR THE PER DENVER DOWNTOWN           0.3 MI NW DENVER FIREFIGHTERS MUSEU DENVER INTERNATIONAL AIRP 24 MI SW DENVER MUSEUM OF MINIATUR DENVER MUSEUM OF NATURE A 5 MI SE DENVER NUGGETS DENVER PAVILIONS DENVER ROCKIES DENVER ZOO                3 MI E DOWNTOWN AQUARIUM         1 MI SW ELITCH GARDENS            0.5 MI W FALLING ROCK TAP HOUSE FLATIRON CROSSSING FORT COLLINS-LOVELAND AIR 50 MI S FOUR MILE HISTORIC PARK GRAY LINE OF DENVER GREYHOUND BUS LINE        0.2 MI E GRIZZLY ROSE SALOON AND D HISTORIC DENVER COLISEUM  5 MI NE LARIMER SQUAREWRITERS SQU LIME LUCKY STRIKE LANES        0.2 MI SW MARTINI RANCH METRO STATE UNIVERSITY MOLLY BROWN HOUSE         1 MI SE MUSEUM OF CONTEMPORARY AR OUTLETS AT CASTLE ROCK OUTLETS AT LOVELAND OUTLETS AT SILVERTHORNE PARAMOUNT THEATRE         0.3 MI PARK MEADOWS MALL PEOPLES CHOICE TRANSPORTA PEPSI CENTER              0.5 MI W PUBLIC ART WALKING TOUR RED ROCKS PARK AMPHITHEAT 15 MI W RISE NIGHTCLUB SAMBUCA JAZZ CAFE SPORTS AUTHORITY FIELD AT 2 MI NW STRANAHANS COLORADO WHISK TABOR CENTER THE CELTIC TAVERN US MINT                   1 MI S UNION STATION             0.8 MI UNITED ARTIST THEATRES UNITED ARTISTS THEATRE    0.3 MI UNIVERSITY OF COLORADO UNIVERSITY OF COLORADO AT UNIVERSITY OF DENVER WINGS OVER THE ROCKIES AI</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="MEETINGS AND CONVENTIONS (18)">
+               <hotel:Text>TOTAL NBR OF MEETING ROOMS - 4 TOTAL MEASUREMENT  ALL ROOMS - 1742.27 SQ FT MEASUREMENT OF LARGEST MEETING ROOM - 761.27 SQ FT MEASUREMENT OF SMALLEST MEETING ROOM - 201 SQ FT SEATING FORMAT OPTIONS - MEETING ROOM NAME - VAIL MEASUREMENT - 300 SQ FT CONFERENCE ROOM - 10 MEETING ROOM NAME - ASPEN MEASUREMENT - 761.27 SQ FT BANQUET - 40 CLASSROOM - 36                CONFERENCE ROOM - 26 RECEPTION STYLE - 50          THEATRE STYLE - 50 U-SHAPED - 27 MEETING ROOM NAME - TELLURIDE MEASUREMENT - 480 SQ FT BANQUET - 30 CLASSROOM - 24                CONFERENCE ROOM - 18 RECEPTION STYLE - 40          THEATRE STYLE - 36 U-SHAPED - 15 MEETING ROOM NAME - BRECKENRIDGE MEASUREMENT - 201 SQ FT CONFERENCE ROOM - 8</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="POLICY (07)">
+               <hotel:Text>RATES ARE GUARANTEED FAMILY PLAN AVAILABLE CHILDREN STAY FREE - PETS ALLOWED ON PROPERTY - USD 75 NON-REFUNDABLE CLEANING FEE PER STAY GOVERNMENT ID REQUIRED FOR GOVERNMENT BOOKINGS - GOVERNMENT RATE SUBJECT TO CHANGE WITHOUT NOTICE - PROPERTY PARTICIPATES IN A CENTRALIZED COMMISSION PROGRAM THE PROPERTY PARTICIPATES IN THE FOLLOWING THIRD PARTY CENTRALIZED COMMISSION PROGRAMS - CTAC 05FEB20 - XXXXXXX - CANCEL BY 2 DAYS PRIOR TO  HOURS ON DAY OF ARRIVAL LOCAL HOTEL TIME CANCELLATION POLICY TEXT - CANCEL POLICY MAY BE MORE RESTRICTIVE BASED ON RATE / ROOM BOOKED  SEASON  SPECIAL EVENTS 05FEB20 - XXXXXXX MON-SUN GUARANTEE TEXT - SEE INDIVIDUAL RATE AND RULES FOR GUARANTEE DEPOSIT POLICY FORM OF PAYMENT TEXT - SEE INDIVIDUAL RATE AND RULES FOR ACCEPTED PAYMENT FORMS ACCEPTED FORMS OF GUARANTEE- CREDIT CARD ACCEPTED FORMS OF DEPOSIT- CREDIT CARD                  MONEY ORDER PERSONAL CHECK ACCEPTED FORMS OF PAYMENT- CASH                         CREDIT CARD MONEY ORDER                  PERSONAL CHECK</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="PROPERTY DESCRIPTION (14)">
+               <hotel:Text>PROPERTY CATEGORY - FIRST CLASS/UPSCALE PROPERTY TYPE - ALL SUITES                   EXTENDED STAY HOTEL YEAR BUILT - 2005            YEAR REMODELED - 2018 ADDITIONAL PROPERTY DESCRIPTION - SETTLE IN AT RESIDENCE INN DENVER CITY CENTER. OUR EXTENDED STAY HOTEL IN DOWNTOWN DENVER CO HAS EVERYTHING YOU NEED TO MAKE YOURSELF AT HOME. RELAX IN OUR PET FRIENDLY SUITES WITH FULL KITCHENS  FREE WI-FI  AND PLUSH MARRIOTT BEDDING. KEEP YOUR ROOM STOCKED WITH OUR FREE GROCERY DELIVERY SERVICE. START YOUR DAY WITH OUR FREE BREAKFAST BUFFET AND ENJOY LUNCH AND DINNER AT NEARBY RESTAURANTS LIKE ROCK BOTTOM  PANZANO S  AND STOIC AND GENUINE. RETURN TO OUR HOTEL IN THE EVENING FOR THE RESIDENCE INN MIX  OFFERING LIGHT LOCAL FARE AND DRINKS. MAINTAIN YOUR ROUTINE AT OUR 24/7 ONSITE FITNESS CENTER. EXPLORE DOWNTOWN DENVER DURING YOUR EXTENDED STAY WITH ATTRACTIONS LIKE PEPSI CENTER  COORS FIELD  AND 16TH STREET MALL NEAR OUR HOTEL. OUR CENTRAL LOCATION ALSO MAKES OUR EVENT VENUES A GREAT CHOICE FOR YOUR UPCOMING MEETING OR RECEPTION. ASK ABOUT SPECIAL GROUP RATES WHEN YOU BOOK A ROOM BLOCK. WHATEVER BRINGS YOU TO TOWN  ENJOY IT AT RESIDENCE INN DENVER CITY CENTER. EMAIL - BEN.KULAK RIDENVER.COM</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="RECREATION (22)">
+               <hotel:Text>ON-SITE RECREATIONS - EXERCISING               GYM OFF-SITE RECREATIONS - BICYCLING                BOWLING CHILDREN S ACTIVITIES    ENTERTAINMENT FISHING                  HIKING HORSEBACK RIDING         HUNTING JET SKIING               MOUNTAIN BIKING SAILING/BOATING          TENNIS VOLLEYBALL               WATER SKIING</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="ROOM DESCRIPTIONS (23)">
+               <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14 NBR OF NON-SMOKING ROOMS - 228 ROOM AMENITIES FOR ALL ROOMS - ROOM AMENITIES - AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES / CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS / DESK / DIRECT DIAL TELEPHONE / DISH WASHER / ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE / PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO / REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE / TELEPHONE / TELEVISION / TOASTER TECHNOLOGY - SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL CHARGEABLE AMENITIES - HIGH SPEED INTERNET ACCESS HIGH SPEED WIRELESS WIRELESS DATAPORT MISCELLANEOUS - CLOSETS 1 / PHONES 1 ROOM AMENITIES FOR HANDICAP ROOMS - RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS MAX OCCUPANCY - 4 MAX NBR OF ROLLAWAYS - 0 THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS IN THIS HOTEL</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="SAFETY (20)">
+               <hotel:Text>PROPERTY SAFETY AND SECURITY - SECURITY</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="SERVICES (13)">
+               <hotel:Text>ON-SITE GENERAL SERVICES BUSINESS SERVICES           DRY CLEANING - SAME DAY FRONT DESK 24 HRS           GROCERY SERVICE HEARING IMPAIRED SERVICES   MAIL SERVICES SAFE DEPOSIT BOX            WAKE-UP CALLS WEDDING SERVICES ON-SITE CHARGEABLE SERVICES HOUSEKEEPING  FULL LAUNDRY/VALET OFF-SITE GENERAL SERVICES CURRENCY EXCHANGE OFF-SITE CHARGEABLE SERVICES CAR RENTAL</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="TRANSPORTATION (11)">
+               <hotel:Text>TRANSPORTATION FROM PRIMARY AIRPORT TO PROPERTY - TAXI RENTAL CAR CITY CENTER IS WITHIN WALKABLE DISTANCE FROM PROPERTY- DISTANCE FROM CITY CENTER TO PROPERTY  0.3 MI NEAREST RAILROAD STATION - AMTRAK UNION STATION  0.5 MI NEAREST METRO  BUS  SUBWAY - GREYHOUND BUS LINE 0.2 MI TRANSPORTATION FROM CITY CENTER TO PROPERTY - TAXI RENTAL CAR</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelRateDetail RatePlanType="LTSA00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules  Studio  1 Queen  Sofa Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Long Term Stay Rate  15  Nights  See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD159.00" ApproximateBase="JPY17476"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="APND00" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>In Full  Non-refundable  Studio  1 Queen  Sofa</hotel:Text>
+                  <hotel:Text>Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate  15  Nights  Prepay</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel">
+                  <hotel:Text>Please reference the Cancellation Policy in Hotel Rules.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD159.00" ApproximateBase="JPY17476"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="APNM00" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>In Full  Non-refundable  One Bedroom City View</hotel:Text>
+                  <hotel:Text>Guest Room  1 Queen  Sofa Bed  City View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate  15  Nights  Prepay</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel">
+                  <hotel:Text>Please reference the Cancellation Policy in Hotel Rules.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD159.00" ApproximateBase="JPY17476"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGD00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>View  Guest Room  1 Queen  Sofa Bed  City View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Regular Rate  15  Nights  One Bedroom City</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD169.00" ApproximateBase="JPY18575"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="LTSC00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules  1 Bedroom Suite  1 Queen  Sofa Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Long Term Stay Rate  15  Nights  See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD169.00" ApproximateBase="JPY18575"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGG00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Suite  Larger Studio  1 Queen  Sofa Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Regular Rate  15  Nights  Corner Studio</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD174.00" ApproximateBase="JPY19125"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="UPKO00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Parking  See Rate Rules  Studio  1 Queen  Sofa</hotel:Text>
+                  <hotel:Text>Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Parking Package  Includes 15  Nights</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD174.00" ApproximateBase="JPY19125"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGH00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Bedroom  1 Bedroom Larger Suite  1 Queen  Sofa</hotel:Text>
+                  <hotel:Text>Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Regular Rate  15  Nights  Corner One</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD179.00" ApproximateBase="JPY19674"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="UPKW00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Parking  See Rate Rules  1 Bedroom Suite  1</hotel:Text>
+                  <hotel:Text>Queen  Sofa Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Parking Package  Includes 15  Nights</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD184.00" ApproximateBase="JPY20224"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGB00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Regular Rate  15  Nights  2 Bedroom Suite</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD279.00" ApproximateBase="JPY30665"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="QAZA00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Required  Studio  1 Queen  Sofa Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Aaa Rate  15  Nights  Aaa Membership Card</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD159.00" ApproximateBase="JPY17476"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:RequestedHotelDetails>
+      </hotel:HotelDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,21 @@
+End Session-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ter:EndTerminalSessionReq TargetBranch="TP_1P_SOA" xmlns:ter="http://www.travelport.com/schema/terminal_v33_0" xmlns:com="http://www.travelport.com/schema/common_v33_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:HostToken Host="1P" Key="1T">73FD7A75-49E8-4E67-5063-5120F9F77043</com:HostToken>
+      </ter:EndTerminalSessionReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+End Session-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <terminal:EndTerminalSessionRsp TransactionId="9DCF5D340A0764785B1483FC1BC1FACB" ResponseTime="14" xmlns:terminal="http://www.travelport.com/schema/terminal_v33_0">
+         <common_v33_0:ResponseMessage Code="601" Type="Info" xmlns:common_v33_0="http://www.travelport.com/schema/common_v33_0">Terminal End Session Successful</common_v33_0:ResponseMessage>
+      </terminal:EndTerminalSessionRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

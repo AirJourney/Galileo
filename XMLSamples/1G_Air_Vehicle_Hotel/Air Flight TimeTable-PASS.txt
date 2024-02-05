@@ -1,0 +1,29 @@
+Air Flight TimeTable-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:FlightTimeTableReq AuthorizedBy="SUSIL" TargetBranch="P7102538" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:FlightTimeTableCriteria>
+            <air:GeneralTimeTable StartDate="2020-03-17" EndDate="2020-03-22">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+               <air:FlightOrigin>
+                  <com:CityOrAirport Code="PHW" PreferCity="false"/>
+               </air:FlightOrigin>
+               <air:FlightDestination>
+                  <com:CityOrAirport Code="CPT" PreferCity="false"/>
+               </air:FlightDestination>
+            </air:GeneralTimeTable>
+         </air:FlightTimeTableCriteria>
+      </air:FlightTimeTableReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Flight TimeTable-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightTimeTableRsp TransactionId="9DCDD47A0A0764785B1483FCB8946B71" ResponseTime="28" xmlns:air="http://www.travelport.com/schema/air_v50_0"/>
+   </SOAP:Body>
+</SOAP:Envelope>

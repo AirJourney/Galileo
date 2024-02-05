@@ -1,0 +1,420 @@
+HotelDetails-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Body>
+      <hotel:HotelDetailsReq AuthorizedBy="SUSIL" TargetBranch="P7102538" TraceId="PP_1G_001" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+       <hotel:HotelProperty HotelChain="HY" HotelCode="07320" HotelLocation="DEN" Name="HYATT HOUSE DENVER AIRPORT" VendorLocationKey="NgSNMC7Q2BKA7ErBCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>18741 EAST 71ST AVEN</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+
+
+         <hotel:HotelDetailsModifiers RateRuleDetail="Complete" NumberOfAdults="1" NumberOfRooms="1">
+            <com:PermittedProviders>
+               <com:Provider Code="1G"/>
+            </com:PermittedProviders>
+
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+            </hotel:HotelStay>
+         </hotel:HotelDetailsModifiers>
+      </hotel:HotelDetailsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelDetails-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelDetailsRsp TraceId="PP_1G_001" TransactionId="9DCE8E250A0764772606212B695CE1D8" ResponseTime="2736" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:RequestedHotelDetails>
+            <hotel:HotelProperty HotelChain="HY" HotelCode="07320" HotelLocation="DEN" Name="HYATT HOUSE DENVER AIRPORT" ParticipationLevel="2">
+               <hotel:PropertyAddress>
+                  <hotel:Address>18741 East 71st Avenue</hotel:Address>
+                  <hotel:Address>DENVER CO 80249 US</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Business" Number="1-303-628-7777"/>
+               <common_v50_0:PhoneNumber Type="Fax" Number="1-303-628-7778"/>
+               <common_v50_0:Distance Units="KM" Value="9" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+               <hotel:MarketingMessage>
+                  <hotel:Text>EARN AA MILES AT HYATT - HODHY/PART</hotel:Text>
+               </hotel:MarketingMessage>
+            </hotel:HotelProperty>
+            <hotel:HotelDetailItem Name="CheckInTime">
+               <hotel:Text>3PM</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CheckOutTime">
+               <hotel:Text>12N</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelRateDetail RatePlanType="DXNRACK" Base="USD3885.00" Total="USD4469.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Deluxe Ns Suite</hotel:Text>
+                  <hotel:Text>Full Brkfst:free Wifi:32in Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD259.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="1KNRACK" Base="USD3980.00" Total="USD4578.99" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>1 Bd King Nonsm</hotel:Text>
+                  <hotel:Text>Full Breakfast:social Hour:full Kitchen:1bdrm</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-05" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-07" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-12" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-14" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-14" ExpireDate="2020-05-16" Base="USD264.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="1KTRACK" Base="USD3980.00" Total="USD4578.99" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Ada 1br King Tub</hotel:Text>
+                  <hotel:Text>Hot Breakfast:free Wireless:flat Panel Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-05" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-07" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-12" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-14" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-14" ExpireDate="2020-05-16" Base="USD264.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2KNRACK" Base="USD4885.00" Total="USD5620.19" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>2 Bd King Nosm</hotel:Text>
+                  <hotel:Text>Full Breakfast:social Hour:2 Bdrm:2 Bathrm</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-03" Base="USD339.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-03" ExpireDate="2020-05-08" Base="USD319.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-08" ExpireDate="2020-05-10" Base="USD339.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-10" ExpireDate="2020-05-15" Base="USD319.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-15" ExpireDate="2020-05-16" Base="USD339.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="SKARACK" Base="USD3885.00" Total="USD4469.70" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Hot Breakfast:free Wireless:flat Panel Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>Ada St King Shwr</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD259.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2TNRACK" Base="USD5235.00" Total="USD6022.87" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>2 BD TRIO NOSM.FULL BREAKFAST:SOCIAL HOUR:2 BDRM TRIO.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD349.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2TARACK" Base="USD5235.00" Total="USD6022.87" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Hot Breakfast:free Wireless:flat Panel Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>Ada 2br 2q1k Shw</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD349.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="DXNRKX2" Base="USD1935.00" Total="USD2226.22" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Deluxe Ns Suite</hotel:Text>
+                  <hotel:Text>Full Brkfst:free Wifi:32in Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD129.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="1KNRKX2" Base="USD2030.00" Total="USD2335.51" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>1 Bd King Nonsm</hotel:Text>
+                  <hotel:Text>Full Breakfast:social Hour:full Kitchen:1bdrm</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-05" Base="USD134.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-07" Base="USD139.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-12" Base="USD134.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-14" Base="USD139.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-14" ExpireDate="2020-05-16" Base="USD134.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="1KTRKX2" Base="USD2030.00" Total="USD2335.51" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Ada 1br King Tub</hotel:Text>
+                  <hotel:Text>Hot Breakfast:free Wireless:flat Panel Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-05" Base="USD134.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-07" Base="USD139.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-12" Base="USD134.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-14" Base="USD139.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-14" ExpireDate="2020-05-16" Base="USD134.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2KNRKX2" Base="USD2935.00" Total="USD3376.72" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>2 Bd King Nosm</hotel:Text>
+                  <hotel:Text>Full Breakfast:social Hour:2 Bdrm:2 Bathrm</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-03" Base="USD209.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-03" ExpireDate="2020-05-08" Base="USD189.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-08" ExpireDate="2020-05-10" Base="USD209.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-10" ExpireDate="2020-05-15" Base="USD189.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-15" ExpireDate="2020-05-16" Base="USD209.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="SKARKX2" Base="USD1935.00" Total="USD2226.22" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Hot Breakfast:free Wireless:flat Panel Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>Ada St King Shwr</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD129.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2TNRKX2" Base="USD3285.00" Total="USD3779.40" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>2 BD TRIO NOSM.FULL BREAKFAST:SOCIAL HOUR:2 BDRM TRIO.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD219.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2TARKX2" Base="USD3285.00" Total="USD3779.40" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Hot Breakfast:free Wireless:flat Panel Tv</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>Ada 2br 2q1k Shw</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD219.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="DXNPSFS" Base="USD3905.00" Total="USD4492.71" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Receive Complimentary Long Term Parking</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Park Stay 7 Nts Deluxe Ns Suite**see Hov**</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD279.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-16" Base="USD259.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="1KNPSFS" Base="USD4000.00" Total="USD4602.00" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Receive Complimentary Long Term Parking</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Park Stay 7 Nts 1 Bd King Nonsm**see Hov**</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD284.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-05" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-07" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-12" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-14" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-14" ExpireDate="2020-05-16" Base="USD264.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="1KTPSFS" Base="USD4000.00" Total="USD4602.00" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Receive Complimentary Long Term Parking</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Park Stay 7 Nts Ada 1br King Tub**see Hov**</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD284.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-05" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-07" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-12" Base="USD264.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-14" Base="USD269.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-14" ExpireDate="2020-05-16" Base="USD264.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2KNPSFS" Base="USD4905.00" Total="USD5643.21" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Receive Complimentary Long Term Parking</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Park Stay 7 Nts 2 Bd King Nosm**see Hov**</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD359.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-03" Base="USD339.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-03" ExpireDate="2020-05-08" Base="USD319.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-08" ExpireDate="2020-05-10" Base="USD339.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-10" ExpireDate="2020-05-15" Base="USD319.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-15" ExpireDate="2020-05-16" Base="USD339.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="SKAPSFS" Base="USD3905.00" Total="USD4492.71" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Receive Complimentary Long Term Parking</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Park Stay 7 Nts Ada St King Shwr**see Hov**</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD279.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-16" Base="USD259.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2TNPSFS" Base="USD5255.00" Total="USD6045.87" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Receive Complimentary Long Term Parking</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Park Stay 7 Nts 2 Bd Trio Nosm**see Hov**</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD369.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-16" Base="USD349.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="2TAPSFS" Base="USD5255.00" Total="USD6045.87" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Receive Complimentary Long Term Parking</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Park Stay 7 Nts Ada 2br 2q1k Shw**see Hov**</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD369.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-16" Base="USD349.00"/>
+               <hotel:Commission Indicator="true" Percent="10"/>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" OffsetTimeUnit="Hour" OffsetUnitMultiplier="48" OffsetDropTime="BeforeArrival"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:RequestedHotelDetails>
+      </hotel:HotelDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,240 @@
+HotelBook-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Body>
+      <univ:HotelCreateReservationReq RetrieveProviderReservationDetails="true" UserAcceptance="true" AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" TraceId="PP_1J_001" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:BookingTraveler Key="TuJJbrVu4hG1/9LlYIhwmw==" TravelerType="ADT" VIP="true">
+            <com:BookingTravelerName Prefix="Mr" First="Harry" Middle="J" Last="Lobo"/>
+            <com:PhoneNumber Key="PDz3y7xu4hGfaM/wYIhwmw==" Location="DEN" Number="1123456789" Type="Home"/>
+            <com:PhoneNumber Key="PDz9y7xu4hGfaM/wYIhwmw==" Location="DEN" Number="2123456789" Type="Mobile"/>
+            <com:PhoneNumber Key="PDf1y7xu4hGfaM/wYIhwmw==" Location="DEN" Number="3123456789" Type="Business"/>
+            <com:Email Type="Home" EmailID="K.solomon@travelporttest.com"/>
+            <com:Address Key="QDz8y7xu4hDfaM/wYIhwmw==">
+               <com:AddressName>Home Address</com:AddressName>
+               <com:Street>Street1</com:Street>
+               <com:Street>NearApp</com:Street>
+               <com:City>Okhalama City</com:City>
+               <com:State>OK</com:State>
+               <com:PostalCode>73107</com:PostalCode>
+               <com:Country>US</com:Country>
+            </com:Address>
+         </com:BookingTraveler>
+         <com:GeneralRemark Key="GAJOYqWo4hGShsrlYIhwmw==" Category="A" TypeInGds="Alpha" SupplierType="Hotel" ProviderCode="1G">
+            <com:RemarkData>This is a ;;Alpha ;;;;General;;;; remark</com:RemarkData>
+         </com:GeneralRemark>
+         <com:ContinuityCheckOverride>NotRequired</com:ContinuityCheckOverride>
+         <hotel:HotelRateDetail RatePlanType="APND00" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>In Full  Non-refundable  Studio  1 Queen  Sofa</hotel:Text>
+                  <hotel:Text>Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate  15  Nights  Prepay</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel">
+                  <hotel:Text>Please reference the Cancellation Policy in Hotel Rules.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>NBR OF ROOMS - 228 NBR OF SUITES - 228 NBR OF FLOORS - 14</hotel:Text>
+                  <hotel:Text>NBR OF NON-SMOKING ROOMS - 228</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR ALL ROOMS -</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES -</hotel:Text>
+                  <hotel:Text>AM/FM ALARM CLOCK / BATH TUB / BATHROOM AMENITIES /</hotel:Text>
+                  <hotel:Text>CABLE/SATELLITE TV / COFFEE/TEA MAKER / COLOR TV / CRIBS</hotel:Text>
+                  <hotel:Text>/ DESK / DIRECT DIAL TELEPHONE / DISH WASHER /</hotel:Text>
+                  <hotel:Text>ELECTRICAL OUTLET AT DESK - AT DESK LEVEL / MEAL</hotel:Text>
+                  <hotel:Text>INCLUDED  BREAKFAST / MICROWAVE / PLATES AND GLASSWARE /</hotel:Text>
+                  <hotel:Text>PLATES AND SILVERWARE / POTS  PANS  AND DISHES / RADIO</hotel:Text>
+                  <hotel:Text>/ REFRIGERATOR ICE MAKER / REMOTE CONTROL TV / ROLLAWAY</hotel:Text>
+                  <hotel:Text>BEDS/COTS / SHOWER / SLEEPER COUCH/SOFABED / STOVE /</hotel:Text>
+                  <hotel:Text>TELEPHONE / TELEVISION / TOASTER</hotel:Text>
+                  <hotel:Text>TECHNOLOGY -</hotel:Text>
+                  <hotel:Text>SPEAKER PHONE / TWO LINE TELEPHONE / VOICE MAIL</hotel:Text>
+                  <hotel:Text>CHARGEABLE AMENITIES -</hotel:Text>
+                  <hotel:Text>HIGH SPEED INTERNET ACCESS</hotel:Text>
+                  <hotel:Text>HIGH SPEED WIRELESS</hotel:Text>
+                  <hotel:Text>WIRELESS DATAPORT</hotel:Text>
+                  <hotel:Text>MISCELLANEOUS -</hotel:Text>
+                  <hotel:Text>CLOSETS 1 / PHONES 1</hotel:Text>
+                  <hotel:Text>ROOM AMENITIES FOR HANDICAP ROOMS -</hotel:Text>
+                  <hotel:Text>RAILS IN BATHROOM / RAISED TOILET WITH GRAB BARS</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY - 4</hotel:Text>
+                  <hotel:Text>MAX NBR OF ROLLAWAYS - 0</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="USD159.00" ApproximateBase="JPY17476"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DS"/>
+               <hotel:AcceptedPayment PaymentCode="JC"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>15.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:ExtraCharges ExtraAdultAmount="JPY0" ExtraChildAmount="JPY0" CribAmount="JPY0" AdultRollawayCharge="JPY0" ChildRollawayCharge="JPY0"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+         <hotel:HotelProperty HotelChain="RC" HotelCode="DENRD" HotelLocation="DEN" Name="RESIDENCE INN CITY CN MARRIOTT" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>1725 CHAMPA ST</hotel:Address>
+                  <hotel:Address>DENVER CO US 80202</hotel:Address>
+               </hotel:PropertyAddress>
+               <com:PhoneNumber Type="Fax" Number="13032963456"/>
+               <com:PhoneNumber Type="Hotel" Number="13032963444"/>
+            </hotel:HotelProperty>
+         <hotel:HotelStay>
+            <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+            <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+         </hotel:HotelStay>
+         <com:Guarantee Type="Deposit" Key="PDz8y7xu4hGfaM/wYIhwmw==">
+            <com:CreditCard Type="AX" ExpDate="2020-09" Number="373900000000000"/>
+         </com:Guarantee>
+         <hotel:GuestInformation NumberOfRooms="1">
+            <hotel:NumberOfAdults>2</hotel:NumberOfAdults>
+         </hotel:GuestInformation>
+      </univ:HotelCreateReservationReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelBook-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:HotelCreateReservationRsp TraceId="PP_1J_001" TransactionId="9DCF69260A0764785B1483FC71ACC292" ResponseTime="1410" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0">
+         <universal:UniversalRecord LocatorCode="0T1ON7" Version="0" Status="Active">
+            <common_v50_0:BookingTraveler Key="TuJJbrVu4hG1/9LlYIhwmw==" NameNumber="1.1" TravelerType="ADT" VIP="true" ElStat="A">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="Harry" Middle="J" Last="Lobo"/>
+               <common_v50_0:PhoneNumber Key="PDz3y7xu4hGfaM/wYIhwmw==" Type="Home" Location="DEN" Number="1123456789" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAyYUKCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:PhoneNumber Key="PDz9y7xu4hGfaM/wYIhwmw==" Type="Mobile" Location="DEN" Number="2123456789" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAyYUKCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:PhoneNumber Key="PDf1y7xu4hGfaM/wYIhwmw==" Type="Business" Location="DEN" Number="3123456789" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAyYUKCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="xs/MMC4R2BKAoYUKCAAAAA==" Type="Home" EmailID="K.solomon@travelporttest.com" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAyYUKCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:Address Key="QDz8y7xu4hDfaM/wYIhwmw==" ElStat="A">
+                  <common_v50_0:AddressName>Home Address</common_v50_0:AddressName>
+                  <common_v50_0:Street>Street1</common_v50_0:Street>
+                  <common_v50_0:Street>NearApp</common_v50_0:Street>
+                  <common_v50_0:City>Okhalama City</common_v50_0:City>
+                  <common_v50_0:State>OK</common_v50_0:State>
+                  <common_v50_0:PostalCode>73107</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAyYUKCAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="xs/MMC4R2BKAuYUKCAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="xs/MMC4R2BKAyYUKCAAAAA==" ProviderCode="1J" ElStat="A">
+               <common_v50_0:Remark>00</common_v50_0:Remark>
+            </common_v50_0:ActionStatus>
+            <universal:ProviderReservationInfo Key="xs/MMC4R2BKAyYUKCAAAAA==" ProviderCode="1J" LocatorCode="MEHOQZ" CreateDate="2020-03-03T00:33:03.015+00:00" ModifiedDate="2020-03-03T00:33:03.015+00:00" HostCreateDate="2020-03-03" HostCreateTime="00:33:00.000+00:00" OwningPCC="00C" AgentOverride="1J">
+               <universal:ProviderReservationDisplayDetailsList>
+                  <universal:DisplayDetails ProviderReservationDetail="true">
+                     <universal:DisplayDetail Name="OwningAgencyPCC" Value="00C"/>
+                     <universal:DisplayDetail Name="CreatingAgentSignOn" Value="1J"/>
+                     <universal:DisplayDetail Name="CreatingAgentDuty" Value="GS"/>
+                     <universal:DisplayDetail Name="PrepaidTicketAdviceIndicator" Value="N"/>
+                     <universal:DisplayDetail Name="BFBorrowed" Value="N"/>
+                     <universal:DisplayDetail Name="PNRPurgeDate" Value="20200615"/>
+                     <universal:DisplayDetail Name="OriginalReceivedFieldValue" Value="SUSIL-DIR"/>
+                  </universal:DisplayDetails>
+                  <universal:TravelerNameNum Prefix="Mr" First="Harry" Middle="J" Last="Lobo" PaxNum="1.1"/>
+               </universal:ProviderReservationDisplayDetailsList>
+            </universal:ProviderReservationInfo>
+            <hotel:HotelReservation Status="HK" BookingConfirmation="87304741" LocatorCode="0098SCGZ" CreateDate="2020-03-03T00:33:02.847+00:00" ModifiedDate="2020-03-03T00:33:03.015+00:00" ProviderReservationInfoRef="xs/MMC4R2BKAyYUKCAAAAA==" TravelOrder="1" ProviderSegmentOrder="1">
+               <common_v50_0:BookingTravelerRef Key="TuJJbrVu4hG1/9LlYIhwmw=="/>
+               <common_v50_0:ReservationName>
+                  <common_v50_0:NameOverride First="HARRY" Last="LOBO"/>
+               </common_v50_0:ReservationName>
+               <hotel:HotelProperty HotelChain="RC" HotelCode="DENRD" HotelLocation="DEN" Name="RESIDENCE INN CITY CN MARRIOTT" ParticipationLevel="4" Availability="Available">
+                  <hotel:PropertyAddress>
+                     <hotel:Address>1725 CHAMPA ST</hotel:Address>
+                     <hotel:Address>DENVER CO US 80202</hotel:Address>
+                  </hotel:PropertyAddress>
+                  <common_v50_0:PhoneNumber Type="Hotel" Number="13032963444"/>
+                  <common_v50_0:PhoneNumber Type="Fax" Number="13032963456"/>
+               </hotel:HotelProperty>
+               <hotel:HotelRateDetail RatePlanType="APND00" Base="USD3868.80" Total="USD4478.13">
+                  <hotel:RoomRateDescription Name="Room">
+                     <hotel:Text>In Full  Non-refundable  Studio  1 Queen  Sofa</hotel:Text>
+                     <hotel:Text>Bed</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:RoomRateDescription Name="Cancellation">
+                     <hotel:Text>CANCEL PERMITTED UP TO 01 DAYS AFTER BOOKING. NON-REFUNDABLE RATE.</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:RoomRateDescription Name="Late Arrival Guarantee">
+                     <hotel:Text>DEPCCAXXXXXXXXXXXX0000EXP*****</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:RoomRateDescription Name="Rate">
+                     <hotel:Text>Advance Purchase Rate  15  Nights  Prepay</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD159.00"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-03" Base="USD199.00"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-03" ExpireDate="2020-05-04" Base="USD702.05"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-04" ExpireDate="2020-05-05" Base="USD607.05"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-06" Base="USD578.55"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-06" ExpireDate="2020-05-07" Base="USD199.00"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-10" Base="USD159.00"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-10" ExpireDate="2020-05-11" Base="USD152.15"/>
+                  <hotel:HotelRateByDate EffectiveDate="2020-05-11" ExpireDate="2020-05-16" Base="USD159.00"/>
+                  <hotel:TaxDetails>
+                     <hotel:Tax Code="27" Term="Night" CollectionFreq="Compound">
+                        <hotel:Percentage>1.0</hotel:Percentage>
+                     </hotel:Tax>
+                     <hotel:Tax Code="15" Term="Night" CollectionFreq="Compound">
+                        <hotel:Percentage>4.0</hotel:Percentage>
+                     </hotel:Tax>
+                     <hotel:Tax Code="3" Term="Night" CollectionFreq="Compound">
+                        <hotel:Percentage>10.75</hotel:Percentage>
+                     </hotel:Tax>
+                  </hotel:TaxDetails>
+               </hotel:HotelRateDetail>
+               <hotel:HotelStay>
+                  <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+                  <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+               </hotel:HotelStay>
+               <common_v50_0:Guarantee Type="Deposit" Key="PDz8y7xu4hGfaM/wYIhwmw==" Reusable="true" ElStat="A">
+                  <common_v50_0:CreditCard Type="AX" Number="***********0000" ExpDate="2020-09"/>
+               </common_v50_0:Guarantee>
+               <common_v50_0:BookingSource Type="IataNumber" Code="1J"/>
+               <hotel:GuestInformation NumberOfRooms="1">
+                  <hotel:NumberOfAdults>2</hotel:NumberOfAdults>
+               </hotel:GuestInformation>
+               <common_v50_0:SellMessage>RATE PLAN REQUIRES ADVANCE PURCHASE $RC$ RATE IS BASED ON CONTINUOUS LENGTH OF STAY.                     EARLY DEPARTURE MAY RESULT IN A RATE CHANGE. $RC$ ARC/IATA NOT ON FILE WITH RESIDENCE. REFER TO G/HTL/RCQ/COMM. $RC$ GRQ-FULL STAY CHARGED TO YOUR CREDIT CARD RG1-EFF 01MAY20     159.00 USD RG2-EFF 02MAY20     199.00 USD  RG3-EFF 03MAY20     702.05 USD  RG4-EFF 04MAY20     607.05 USD  RG5-EFF 05MAY20     578.55 USD  RG6-EFF 06MAY20     199.00 USD  RG7-EFF 07MAY20     159.00 USD  RG8-EFF 10MAY20     152.15 USD  RG9-EFF 11MAY20     159.00 USD   $RC$</common_v50_0:SellMessage>
+               <hotel:HotelCommission>Y</hotel:HotelCommission>
+            </hotel:HotelReservation>
+            <common_v50_0:GeneralRemark Key="xs/MMC4R2BKAvYUKCAAAAA==" Category="Advisory" ProviderReservationInfoRef="xs/MMC4R2BKAyYUKCAAAAA==" ElStat="A">
+               <common_v50_0:RemarkData>RATE PLAN REQUIRES ADVANCE PURCHASE $RC$ RATE IS BASED ON CONTINUOUS LENGTH OF STAY.                     EARLY DEPARTURE MAY RESULT IN A RATE CHANGE. $RC$ ARC/IATA NOT ON FILE WITH RESIDENCE. REFER TO G/HTL/RCQ/COMM. $RC$ GRQ-FULL STAY CHARGED TO YOUR CREDIT CARD RG1-EFF 01MAY20     159.00 USD RG2-EFF 02MAY20     199.00 USD  RG3-EFF 03MAY20     702.05 USD  RG4-EFF 04MAY20     607.05 USD  RG5-EFF 05MAY20     578.55 USD  RG6-EFF 06MAY20     199.00 USD  RG7-EFF 07MAY20     159.00 USD  RG8-EFF 10MAY20     152.15 USD  RG9-EFF 11MAY20     159.00 USD   $RC$</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="xs/MMC4R2BKAwYUKCAAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="xs/MMC4R2BKAyYUKCAAAAA==" ElStat="A">
+               <common_v50_0:RemarkData>THIS IS A ALPHA GENERAL REMARK</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="TRAVELPORTSUPERADMIN" BranchCode="MXFVuATURbeqn5sADSKmcg==" AgencyCode="TVPORTDYNASKLTONWABAGENCY" EventTime="2020-03-03T00:33:02.239+00:00"/>
+            </common_v50_0:AgencyInfo>
+         </universal:UniversalRecord>
+      </universal:HotelCreateReservationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

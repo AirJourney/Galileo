@@ -1,0 +1,402 @@
+[
+  {
+    "from": "HKG",
+    "to": "CTU"
+  },
+  {
+    "from": "HKG",
+    "to": "CKG"
+  },
+  {
+    "from": "HKG",
+    "to": "NGB"
+  },
+  {
+    "from": "HKG",
+    "to": "LAS"
+  },
+  {
+    "from": "HKG",
+    "to": "SHA"
+  },
+  {
+    "from": "HKG",
+    "to": "BJS"
+  },
+  {
+    "from": "HKG",
+    "to": "MEX"
+  },
+  {
+    "from": "HKG",
+    "to": "XMN"
+  },
+  {
+    "from": "HKG",
+    "to": "WAW"
+  },
+  {
+    "from": "HKG",
+    "to": "LON"
+  },
+  {
+    "from": "HKG",
+    "to": "MEL"
+  },
+  {
+    "from": "HKG",
+    "to": "SAO"
+  },
+  {
+    "from": "HKG",
+    "to": "CEB"
+  },
+  {
+    "from": "HKG",
+    "to": "JNB"
+  },
+  {
+    "from": "HKG",
+    "to": "YTO"
+  },
+  {
+    "from": "HKG",
+    "to": "TYO"
+  },
+  {
+    "from": "HKG",
+    "to": "MAN"
+  },
+  {
+    "from": "HKG",
+    "to": "MNL"
+  },
+  {
+    "from": "HKG",
+    "to": "BNE"
+  },
+  {
+    "from": "HKG",
+    "to": "OSA"
+  },
+  {
+    "from": "HKG",
+    "to": "HGH"
+  },
+  {
+    "from": "HKG",
+    "to": "TPE"
+  },
+  {
+    "from": "HKG",
+    "to": "SIN"
+  },
+  {
+    "from": "HKG",
+    "to": "ALA"
+  },
+  {
+    "from": "HKG",
+    "to": "BKK"
+  },
+  {
+    "from": "HKG",
+    "to": "JKT"
+  },
+  {
+    "from": "HKG",
+    "to": "LAX"
+  },
+  {
+    "from": "HKG",
+    "to": "SYD"
+  },
+  {
+    "from": "HKG",
+    "to": "NYC"
+  },
+  {
+    "from": "HKG",
+    "to": "NKG"
+  },
+  {
+    "from": "HKG",
+    "to": "SFO"
+  },
+  {
+    "from": "HKG",
+    "to": "CHI"
+  },
+  {
+    "from": "HKG",
+    "to": "PER"
+  },
+  {
+    "from": "HKG",
+    "to": "PIT"
+  },
+  {
+    "from": "HKG",
+    "to": "ROM"
+  },
+  {
+    "from": "HKG",
+    "to": "SEL"
+  },
+  {
+    "from": "HKG",
+    "to": "HAN"
+  },
+  {
+    "from": "HKG",
+    "to": "AMS"
+  },
+  {
+    "from": "HKG",
+    "to": "CLE"
+  },
+  {
+    "from": "HKG",
+    "to": "PAR"
+  },
+  {
+    "from": "HKG",
+    "to": "SUB"
+  },
+  {
+    "from": "HKG",
+    "to": "BCN"
+  },
+  {
+    "from": "HKG",
+    "to": "YVR"
+  },
+  {
+    "from": "HKG",
+    "to": "POM"
+  },
+  {
+    "from": "HKG",
+    "to": "AUS"
+  },
+  {
+    "from": "HKG",
+    "to": "BOS"
+  },
+  {
+    "from": "HKG",
+    "to": "VTE"
+  },
+  {
+    "from": "HKG",
+    "to": "ADL"
+  },
+  {
+    "from": "HKG",
+    "to": "DXB"
+  },
+  {
+    "from": "HKG",
+    "to": "IST"
+  },
+  {
+    "from": "BKK",
+    "to": "CNX"
+  },
+  {
+    "from": "BKK",
+    "to": "URT"
+  },
+  {
+    "from": "BKK",
+    "to": "HKT"
+  },
+  {
+    "from": "BKK",
+    "to": "NST"
+  },
+  {
+    "from": "BKK",
+    "to": "MFM"
+  },
+  {
+    "from": "BKK",
+    "to": "CJM"
+  },
+  {
+    "from": "BKK",
+    "to": "KBV"
+  },
+  {
+    "from": "BKK",
+    "to": "CEI"
+  },
+  {
+    "from": "BKK",
+    "to": "SEL"
+  },
+  {
+    "from": "BKK",
+    "to": "USM"
+  },
+  {
+    "from": "BKK",
+    "to": "MNL"
+  },
+  {
+    "from": "BKK",
+    "to": "HDY"
+  },
+  {
+    "from": "BKK",
+    "to": "UTH"
+  },
+  {
+    "from": "BKK",
+    "to": "NAW"
+  },
+  {
+    "from": "BKK",
+    "to": "KKC"
+  },
+  {
+    "from": "BKK",
+    "to": "BKK"
+  },
+  {
+    "from": "BKK",
+    "to": "PNH"
+  },
+  {
+    "from": "BKK",
+    "to": "TBS"
+  },
+  {
+    "from": "BKK",
+    "to": "KTM"
+  },
+  {
+    "from": "BKK",
+    "to": "TST"
+  },
+  {
+    "from": "BKK",
+    "to": "KOP"
+  },
+  {
+    "from": "BKK",
+    "to": "KUL"
+  },
+  {
+    "from": "BKK",
+    "to": "UBP"
+  },
+  {
+    "from": "BKK",
+    "to": "MOW"
+  },
+  {
+    "from": "BKK",
+    "to": "SGN"
+  },
+  {
+    "from": "BKK",
+    "to": "SEA"
+  },
+  {
+    "from": "BKK",
+    "to": "CMB"
+  },
+  {
+    "from": "BKK",
+    "to": "SNO"
+  },
+  {
+    "from": "BKK",
+    "to": "PHS"
+  },
+  {
+    "from": "BKK",
+    "to": "ROI"
+  },
+  {
+    "from": "BKK",
+    "to": "CAN"
+  },
+  {
+    "from": "BKK",
+    "to": "VTE"
+  },
+  {
+    "from": "BKK",
+    "to": "MLE"
+  },
+  {
+    "from": "BKK",
+    "to": "OSA"
+  },
+  {
+    "from": "BKK",
+    "to": "NNT"
+  },
+  {
+    "from": "BKK",
+    "to": "CCU"
+  },
+  {
+    "from": "BKK",
+    "to": "HAN"
+  },
+  {
+    "from": "BKK",
+    "to": "HKG"
+  },
+  {
+    "from": "BKK",
+    "to": "RGN"
+  },
+  {
+    "from": "BKK",
+    "to": "THS"
+  },
+  {
+    "from": "BKK",
+    "to": "LOE"
+  },
+  {
+    "from": "BKK",
+    "to": "TPE"
+  },
+  {
+    "from": "BKK",
+    "to": "LPT"
+  },
+  {
+    "from": "BKK",
+    "to": "LON"
+  },
+  {
+    "from": "BKK",
+    "to": "DXB"
+  },
+  {
+    "from": "BKK",
+    "to": "SFO"
+  },
+  {
+    "from": "BKK",
+    "to": "LAX"
+  },
+  {
+    "from": "BKK",
+    "to": "SYD"
+  },
+  {
+    "from": "BKK",
+    "to": "EBL"
+  },
+  {
+    "from": "BKK",
+    "to": "SIN"
+  }
+]

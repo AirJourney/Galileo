@@ -1,0 +1,390 @@
+Air Availability - Round Trip-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:AvailabilitySearchReq AuthorizedBy="SUsil" TraceId="PP_1V_0329" TargetBranch="TP_1V_SOA" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="SEA"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="SFO"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-04-16"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="SFO"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="SEA"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-04-19"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers>
+            <air:PreferredProviders>
+               <com:Provider Code="1V"/>
+            </air:PreferredProviders>
+            <air:PermittedCarriers>
+               <com:Carrier Code="DL"/>
+            </air:PermittedCarriers>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+         <com:SearchPassenger Code="ADT"/>
+      </air:AvailabilitySearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Availability - Round Trip-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AvailabilitySearchRsp TraceId="PP_1V_0329" TransactionId="9DCC58A70A0764785B1483FC9E6DFC08" ResponseTime="325" DistanceUnits="MI" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:NextResultReference>H4sIAAAAAAAAAJ1UzU8TQRR/bSlfVgkfEoNBNBrw4m5bSmvFC/IVTPmIJR5KOAzd6TK43Vlmp2UxxqgXT8aj0cSTkcTEP8BE41WPxngzHgxn/wBOODPdtqwEie5hd+bN7/3ee7/3Zt/+gqjLoHcDVZFW4cTSJhhD2znicu/h18Hnn9DLCITmoMUld7HnAEB4q0W+hdOVIi1rZtLdIry4rpmGqyEDORwzVxMnZWpr0x5nqMiX6R1s5x59HyL73TthaF+BE4ixZVLGMg6HxEpOOOh1Kl1QlamBLb1Go0tk3sFFUiJFxAm1xwWDgZ0mQ/YYhhkLe2TNwoeZcpLJ5cRWWw49OSmFbiHb1POcEdsUkKjJaMXh0HvgcM7m2MRMnHaUKcOqxk24D9EctFJGTFLfxRxGq8TAbFJk5NuivAH3nArzFQiIqfKvC3k479fnb3/5+CzzJAyg2gKCJXsMy9EqfHu/eu3s493VOltItDf9f1xQe0JhCOWgy8WIFdfVHEyhbZeD9vdG5YP4cY+B9m/KNOO3FKCfuEsMlzDDhgQuUD5LqmIW4aSjzL6dw8VgWn428kLoU4irKkWnY64fSe5l97pE97lY3xITIVguHz/HCjkuRBYKXwhU5hekLmE9ZrOY1gLEDGGtl1CALmJXkUVUAQVq4wKcoqWSi3kTEuOBots3qIEkNYczOcpMXe51iQkUyX3CBVQrMtoYiX7hpEknTWIaWb677hkbKz/25PQwGAqC1pCLtRviVUfv7+/9XFzVXoUhfBPayDyxLOKKa0gm1xm1qUXNbQ4Df+TXPJPaQWjzwRxICUeCwYoKps3lF5sOl/K8svbmc3dpM7M0EpED7h5Ksp6bLFvhd/TQi3vJgV2F3+qAtmle1Gfnlz3Pke7Dx86k6nOzfRGhqxhti4h/zYHh6bRE4IAlOJjKKEI6ctEn/kCR/Myi+JwbjcfjyXgmmxjLZtLZxNVEKpVIZeOjY6lkMh2XuOkJkal0C1fku139I+SqUzVTrmKgPj0Nw2mp7NMPfSA3A77/YC36sOOzHh09NZZMpzJxP0vH+w0zXzobXQYAAA==</common_v50_0:NextResultReference>
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="xs/MMC4R2BKAq6HKCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T06:30:00.000-07:00" ArrivalTime="2020-04-16T08:46:00.000-07:00" FlightTime="136" TravelTime="136" GroundTime="0" Equipment="221" OnTimePerformance="60" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAs6HKCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T09:00:00.000-07:00" ArrivalTime="2020-04-16T11:23:00.000-07:00" FlightTime="143" TravelTime="143" GroundTime="0" Equipment="221" OnTimePerformance="70" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAu6HKCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T13:05:00.000-07:00" ArrivalTime="2020-04-16T15:24:00.000-07:00" FlightTime="139" TravelTime="139" GroundTime="0" Equipment="221" OnTimePerformance="90" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAw6HKCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T15:32:00.000-07:00" ArrivalTime="2020-04-16T17:51:00.000-07:00" FlightTime="139" TravelTime="139" GroundTime="0" Equipment="221" OnTimePerformance="70" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAy6HKCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T17:15:00.000-07:00" ArrivalTime="2020-04-16T19:36:00.000-07:00" FlightTime="141" TravelTime="141" GroundTime="0" Equipment="E7W" OnTimePerformance="90" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA06HKCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T21:20:00.000-07:00" ArrivalTime="2020-04-16T23:39:00.000-07:00" FlightTime="139" TravelTime="139" GroundTime="0" Equipment="221" OnTimePerformance="60" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA26HKCAAAAA==" Origin="SEA" Destination="SLC" DepartureTime="2020-04-16T06:00:00.000-07:00" ArrivalTime="2020-04-16T09:00:00.000-06:00" FlightTime="120" TravelTime="397" GroundTime="0" Equipment="739" OnTimePerformance="90" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA46HKCAAAAA==" Origin="SLC" Destination="SFO" DepartureTime="2020-04-16T11:20:00.000-06:00" ArrivalTime="2020-04-16T12:37:00.000-07:00" FlightTime="137" TravelTime="397" GroundTime="0" Equipment="221" OnTimePerformance="70" OriginTerminal="2" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA66HKCAAAAA==" Origin="SEA" Destination="SLC" DepartureTime="2020-04-16T07:00:00.000-07:00" ArrivalTime="2020-04-16T09:57:00.000-06:00" FlightTime="117" TravelTime="337" GroundTime="0" Equipment="739" OnTimePerformance="90" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA86HKCAAAAA==" Origin="SLC" Destination="SFO" DepartureTime="2020-04-16T11:20:00.000-06:00" ArrivalTime="2020-04-16T12:37:00.000-07:00" FlightTime="137" TravelTime="337" GroundTime="0" Equipment="221" OnTimePerformance="70" OriginTerminal="2" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA+6HKCAAAAA==" Origin="SEA" Destination="LAX" DepartureTime="2020-04-16T06:00:00.000-07:00" ArrivalTime="2020-04-16T08:45:00.000-07:00" FlightTime="165" TravelTime="507" GroundTime="0" Equipment="738" OnTimePerformance="90" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAA7HKCAAAAA==" Origin="LAX" Destination="SFO" DepartureTime="2020-04-16T12:59:00.000-07:00" ArrivalTime="2020-04-16T14:27:00.000-07:00" FlightTime="88" TravelTime="507" GroundTime="0" Equipment="319" OnTimePerformance="70" OriginTerminal="3" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAC7HKCAAAAA==" Origin="SEA" Destination="LAX" DepartureTime="2020-04-16T07:24:00.000-07:00" ArrivalTime="2020-04-16T10:10:00.000-07:00" FlightTime="166" TravelTime="423" GroundTime="0" Equipment="739" OnTimePerformance="90" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAE7HKCAAAAA==" Origin="LAX" Destination="SFO" DepartureTime="2020-04-16T12:59:00.000-07:00" ArrivalTime="2020-04-16T14:27:00.000-07:00" FlightTime="88" TravelTime="423" GroundTime="0" Equipment="319" OnTimePerformance="70" OriginTerminal="3" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAG7HKCAAAAA==" Origin="SEA" Destination="LAX" DepartureTime="2020-04-16T09:32:00.000-07:00" ArrivalTime="2020-04-16T12:15:00.000-07:00" FlightTime="163" TravelTime="295" GroundTime="0" Equipment="738" OnTimePerformance="90" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAI7HKCAAAAA==" Origin="LAX" Destination="SFO" DepartureTime="2020-04-16T12:59:00.000-07:00" ArrivalTime="2020-04-16T14:27:00.000-07:00" FlightTime="88" TravelTime="295" GroundTime="0" Equipment="319" OnTimePerformance="70" OriginTerminal="3" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAK7HKCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" GroundTime="0" Equipment="221" OnTimePerformance="90" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAM7HKCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T10:00:00.000-07:00" ArrivalTime="2020-04-19T12:24:00.000-07:00" FlightTime="144" TravelTime="144" GroundTime="0" Equipment="221" OnTimePerformance="80" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAO7HKCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T12:10:00.000-07:00" ArrivalTime="2020-04-19T14:34:00.000-07:00" FlightTime="144" TravelTime="144" GroundTime="0" Equipment="221" OnTimePerformance="70" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAQ7HKCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T16:03:00.000-07:00" ArrivalTime="2020-04-19T18:20:00.000-07:00" FlightTime="137" TravelTime="137" GroundTime="0" Equipment="221" OnTimePerformance="80" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAS7HKCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T18:33:00.000-07:00" ArrivalTime="2020-04-19T20:43:00.000-07:00" FlightTime="130" TravelTime="130" GroundTime="0" Equipment="221" OnTimePerformance="50" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAU7HKCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T20:30:00.000-07:00" ArrivalTime="2020-04-19T22:50:00.000-07:00" FlightTime="140" TravelTime="140" GroundTime="0" Equipment="E7W" OnTimePerformance="70" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAW7HKCAAAAA==" Origin="SFO" Destination="SLC" DepartureTime="2020-04-19T06:00:00.000-07:00" ArrivalTime="2020-04-19T08:56:00.000-06:00" FlightTime="116" TravelTime="325" GroundTime="0" Equipment="221" OnTimePerformance="90" OriginTerminal="1" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAY7HKCAAAAA==" Origin="SLC" Destination="SEA" DepartureTime="2020-04-19T10:03:00.000-06:00" ArrivalTime="2020-04-19T11:25:00.000-07:00" FlightTime="142" TravelTime="325" GroundTime="0" Equipment="738" OnTimePerformance="90" OriginTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAa7HKCAAAAA==" Origin="SFO" Destination="LAX" DepartureTime="2020-04-19T06:45:00.000-07:00" ArrivalTime="2020-04-19T08:15:00.000-07:00" FlightTime="90" TravelTime="328" GroundTime="0" Equipment="739" OnTimePerformance="90" OriginTerminal="1" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAc7HKCAAAAA==" Origin="LAX" Destination="SEA" DepartureTime="2020-04-19T09:15:00.000-07:00" ArrivalTime="2020-04-19T12:13:00.000-07:00" FlightTime="178" TravelTime="328" GroundTime="0" Equipment="738" OnTimePerformance="90" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAe7HKCAAAAA==" Origin="SFO" Destination="SLC" DepartureTime="2020-04-19T06:00:00.000-07:00" ArrivalTime="2020-04-19T08:56:00.000-06:00" FlightTime="116" TravelTime="394" GroundTime="0" Equipment="221" OnTimePerformance="90" OriginTerminal="1" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAg7HKCAAAAA==" Origin="SLC" Destination="SEA" DepartureTime="2020-04-19T11:18:00.000-06:00" ArrivalTime="2020-04-19T12:34:00.000-07:00" FlightTime="136" TravelTime="394" GroundTime="0" Equipment="739" OnTimePerformance="60" OriginTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAi7HKCAAAAA==" Origin="SFO" Destination="LAX" DepartureTime="2020-04-19T06:45:00.000-07:00" ArrivalTime="2020-04-19T08:15:00.000-07:00" FlightTime="90" TravelTime="447" GroundTime="0" Equipment="739" OnTimePerformance="90" OriginTerminal="1" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAk7HKCAAAAA==" Origin="LAX" Destination="SEA" DepartureTime="2020-04-19T11:15:00.000-07:00" ArrivalTime="2020-04-19T14:12:00.000-07:00" FlightTime="177" TravelTime="447" GroundTime="0" Equipment="739" OnTimePerformance="90" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAm7HKCAAAAA==" Origin="SFO" Destination="LAX" DepartureTime="2020-04-19T06:45:00.000-07:00" ArrivalTime="2020-04-19T08:15:00.000-07:00" FlightTime="90" TravelTime="581" GroundTime="0" Equipment="739" OnTimePerformance="90" OriginTerminal="1" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAo7HKCAAAAA==" Origin="SNA" Destination="SEA" DepartureTime="2020-04-19T13:20:00.000-07:00" ArrivalTime="2020-04-19T16:26:00.000-07:00" FlightTime="186" TravelTime="581" GroundTime="0" Equipment="CR7" OnTimePerformance="60"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="xs/MMC4R2BKAr6HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="2490" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T06:30:00.000-07:00" ArrivalTime="2020-04-16T08:46:00.000-07:00" FlightTime="136" TravelTime="136" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9|Z7"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAq6HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAt6HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="2429" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T09:00:00.000-07:00" ArrivalTime="2020-04-16T11:23:00.000-07:00" FlightTime="143" TravelTime="143" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J5|C5|D5|I4"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V6|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAs6HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAv6HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="2002" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T13:05:00.000-07:00" ArrivalTime="2020-04-16T15:24:00.000-07:00" FlightTime="139" TravelTime="139" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J8|C8|D6|I5"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V7|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAu6HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAx6HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="2984" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T15:32:00.000-07:00" ArrivalTime="2020-04-16T17:51:00.000-07:00" FlightTime="139" TravelTime="139" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D8|I7|Z3"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAw6HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAz6HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="3950" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T17:15:00.000-07:00" ArrivalTime="2020-04-16T19:36:00.000-07:00" FlightTime="141" TravelTime="141" ETicketability="Yes" Equipment="E7W" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo>SKYWEST DBA DELTA CONNECTION</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L5|E5"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAy6HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA16HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="2621" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T21:20:00.000-07:00" ArrivalTime="2020-04-16T23:39:00.000-07:00" FlightTime="139" TravelTime="139" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9|Z5"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA06HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA36HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="1985" Origin="SEA" Destination="SLC" DepartureTime="2020-04-16T06:00:00.000-07:00" ArrivalTime="2020-04-16T09:00:00.000-06:00" FlightTime="120" TravelTime="397" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D6|I4"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U6|T6|X6|V6|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA26HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA56HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="1970" Origin="SLC" Destination="SFO" DepartureTime="2020-04-16T11:20:00.000-06:00" ArrivalTime="2020-04-16T12:37:00.000-07:00" FlightTime="137" TravelTime="397" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J8|C8|D5|I2"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W3|S3"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA46HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA76HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="2725" Origin="SEA" Destination="SLC" DepartureTime="2020-04-16T07:00:00.000-07:00" ArrivalTime="2020-04-16T09:57:00.000-06:00" FlightTime="117" TravelTime="337" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I8|Z8"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA66HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA96HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="1970" Origin="SLC" Destination="SFO" DepartureTime="2020-04-16T11:20:00.000-06:00" ArrivalTime="2020-04-16T12:37:00.000-07:00" FlightTime="137" TravelTime="337" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J8|C8|D5|I3"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W3|S3"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA86HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA/6HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="2523" Origin="SEA" Destination="LAX" DepartureTime="2020-04-16T06:00:00.000-07:00" ArrivalTime="2020-04-16T08:45:00.000-07:00" FlightTime="165" TravelTime="507" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D6|I3"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA+6HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAB7HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="1327" Origin="LAX" Destination="SFO" DepartureTime="2020-04-16T12:59:00.000-07:00" ArrivalTime="2020-04-16T14:27:00.000-07:00" FlightTime="88" TravelTime="507" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D5"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAA7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAD7HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="659" Origin="SEA" Destination="LAX" DepartureTime="2020-04-16T07:24:00.000-07:00" ArrivalTime="2020-04-16T10:10:00.000-07:00" FlightTime="166" TravelTime="423" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I6"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAC7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAF7HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="1327" Origin="LAX" Destination="SFO" DepartureTime="2020-04-16T12:59:00.000-07:00" ArrivalTime="2020-04-16T14:27:00.000-07:00" FlightTime="88" TravelTime="423" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D6|I4"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAE7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAH7HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="746" Origin="SEA" Destination="LAX" DepartureTime="2020-04-16T09:32:00.000-07:00" ArrivalTime="2020-04-16T12:15:00.000-07:00" FlightTime="163" TravelTime="295" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D3"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAG7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAJ7HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="1327" Origin="LAX" Destination="SFO" DepartureTime="2020-04-16T12:59:00.000-07:00" ArrivalTime="2020-04-16T14:27:00.000-07:00" FlightTime="88" TravelTime="295" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAI7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAL7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2703" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D6|I6|Z3"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W8|S8"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAK7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAN7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2490" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T10:00:00.000-07:00" ArrivalTime="2020-04-19T12:24:00.000-07:00" FlightTime="144" TravelTime="144" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I6"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L2|E2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAM7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAP7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2429" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T12:10:00.000-07:00" ArrivalTime="2020-04-19T14:34:00.000-07:00" FlightTime="144" TravelTime="144" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAO7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAR7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2002" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T16:03:00.000-07:00" ArrivalTime="2020-04-19T18:20:00.000-07:00" FlightTime="137" TravelTime="137" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I8"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAQ7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAT7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2984" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T18:33:00.000-07:00" ArrivalTime="2020-04-19T20:43:00.000-07:00" FlightTime="130" TravelTime="130" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I8"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAS7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAV7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="3950" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T20:30:00.000-07:00" ArrivalTime="2020-04-19T22:50:00.000-07:00" FlightTime="140" TravelTime="140" ETicketability="Yes" Equipment="E7W" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo>SKYWEST DBA DELTA CONNECTION</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAU7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAX7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2401" Origin="SFO" Destination="SLC" DepartureTime="2020-04-19T06:00:00.000-07:00" ArrivalTime="2020-04-19T08:56:00.000-06:00" FlightTime="116" TravelTime="325" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J7|C6|D2"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K6"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAW7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAZ7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2440" Origin="SLC" Destination="SEA" DepartureTime="2020-04-19T10:03:00.000-06:00" ArrivalTime="2020-04-19T11:25:00.000-07:00" FlightTime="142" TravelTime="325" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D3|I3"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAY7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAb7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2246" Origin="SFO" Destination="LAX" DepartureTime="2020-04-19T06:45:00.000-07:00" ArrivalTime="2020-04-19T08:15:00.000-07:00" FlightTime="90" TravelTime="328" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I4"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAa7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAd7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2540" Origin="LAX" Destination="SEA" DepartureTime="2020-04-19T09:15:00.000-07:00" ArrivalTime="2020-04-19T12:13:00.000-07:00" FlightTime="178" TravelTime="328" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAc7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAf7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2401" Origin="SFO" Destination="SLC" DepartureTime="2020-04-19T06:00:00.000-07:00" ArrivalTime="2020-04-19T08:56:00.000-06:00" FlightTime="116" TravelTime="394" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J7|C6"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAe7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAh7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="1725" Origin="SLC" Destination="SEA" DepartureTime="2020-04-19T11:18:00.000-06:00" ArrivalTime="2020-04-19T12:34:00.000-07:00" FlightTime="136" TravelTime="394" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D6"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAg7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAj7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2246" Origin="SFO" Destination="LAX" DepartureTime="2020-04-19T06:45:00.000-07:00" ArrivalTime="2020-04-19T08:15:00.000-07:00" FlightTime="90" TravelTime="447" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAi7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAl7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="864" Origin="LAX" Destination="SEA" DepartureTime="2020-04-19T11:15:00.000-07:00" ArrivalTime="2020-04-19T14:12:00.000-07:00" FlightTime="177" TravelTime="447" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I8"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAk7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAn7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2246" Origin="SFO" Destination="LAX" DepartureTime="2020-04-19T06:45:00.000-07:00" ArrivalTime="2020-04-19T08:15:00.000-07:00" FlightTime="90" TravelTime="581" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q7"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAm7HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAp7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="3572" Origin="SNA" Destination="SEA" DepartureTime="2020-04-19T13:20:00.000-07:00" ArrivalTime="2020-04-19T16:26:00.000-07:00" FlightTime="186" TravelTime="581" ETicketability="Yes" Equipment="CR7" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo>SKYWEST DBA DELTA CONNECTION</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1V">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J5|C5"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q5"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAo7HKCAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:AirItinerarySolution Key="xs/MMC4R2BKAq7HKCAAAAA==">
+            <air:AirSegmentRef Key="xs/MMC4R2BKAr6HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAt6HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAv6HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAx6HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAz6HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA16HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA36HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA56HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA76HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA96HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA/6HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAB7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAD7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAF7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAH7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAJ7HKCAAAAA=="/>
+            <air:Connection SegmentIndex="6"/>
+            <air:Connection SegmentIndex="8"/>
+            <air:Connection SegmentIndex="10"/>
+            <air:Connection SegmentIndex="12"/>
+            <air:Connection SegmentIndex="14"/>
+         </air:AirItinerarySolution>
+         <air:AirItinerarySolution Key="xs/MMC4R2BKAr7HKCAAAAA==">
+            <air:AirSegmentRef Key="xs/MMC4R2BKAL7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAN7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAP7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAR7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAT7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAV7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAX7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAZ7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAb7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAd7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAf7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAh7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAj7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAl7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAn7HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAp7HKCAAAAA=="/>
+            <air:Connection SegmentIndex="6"/>
+            <air:Connection SegmentIndex="8"/>
+            <air:Connection SegmentIndex="10"/>
+            <air:Connection SegmentIndex="12"/>
+            <air:Connection SegmentIndex="14"/>
+         </air:AirItinerarySolution>
+      </air:AvailabilitySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

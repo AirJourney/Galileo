@@ -1,0 +1,66 @@
+VehicleRules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <Vehicle:VehicleRulesReq AuthorizedBy="SUSIL" TargetBranch="P7102538" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:Vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <Vehicle:VehicleRulesLookup>
+            <Vehicle:VehicleDateLocation ReturnLocation="LHR" ReturnDateTime="2020-05-16T10:00:00" PickupLocation="LHR" PickupDateTime="2020-05-01T10:00:00">
+               <Vehicle:VendorLocation Key="n3Y7ONgbROaAyGU5duDUOw==" VendorLocationID="1" VendorCode="SX" ProviderCode="1G"/>
+            </Vehicle:VehicleDateLocation>
+            <Vehicle:VehicleSearchModifiers RatePeriod="Daily" RateCategory="Standard">
+               <Vehicle:VehicleModifier DoorCount="TwoToFourDoors" Category="Car" VehicleClass="Compact" TransmissionType="Automatic" AirConditioning="true"/>
+               <Vehicle:RateModifiers VendorCode="SX" RateCode="2IU"/>
+               <Vehicle:RateHostIndicator RateToken="6292007252"/>
+            </Vehicle:VehicleSearchModifiers>
+         </Vehicle:VehicleRulesLookup>
+      </Vehicle:VehicleRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+VehicleRules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRulesRsp TransactionId="9DCE23A50A0764772606212BD07A3360" ResponseTime="253" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" NumberOfPeriods="15" UnlimitedMileage="true" Units="KM" RateCode="2IU" RateCategory="Standard" AdvancedBooking="000H">
+               <vehicle:SupplierRate RateForPeriod="GBP30.50" BaseRate="GBP457.50" EstimatedTotalAmount="GBP658.80" DropOffCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription Name="PREMIUM SECOND">
+                  <vehicle:Text>PickUp - ** PREMIUM SECOND **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:OperationTime>Drop Off Hours OPEN: 0500 - 2359</vehicle:OperationTime>
+         <vehicle:OperationTime>Hours of Operation OPEN: 0500 - 2359</vehicle:OperationTime>
+         <vehicle:RentalPeriodRules>
+            <vehicle:AbsoluteMax RentalUnit="Days" Length="365"/>
+         </vehicle:RentalPeriodRules>
+         <vehicle:PaymentCreditCard>AE</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>AP</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>CA</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>CR</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>DC</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>DE</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>PA</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>PV</vehicle:PaymentCreditCard>
+         <vehicle:PaymentCreditCard>SW</vehicle:PaymentCreditCard>
+         <vehicle:VehicleCharge Category="Surcharge" Name="YOUNG DRIVER SURCHAR" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>GBP30.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="AIRPORT ACCESS FEE" Type="Percent" IncludedInRate="IncludedInTotal">
+            <vehicle:Percentage>20.00</vehicle:Percentage>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="LDW" Type="Rental" IncludedInRate="IncludedInBase">
+            <vehicle:Amount>GBP0.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="ALI" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>GBP8.49</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <common_v50_0:MarketingInformation>
+            <common_v50_0:Text>**</common_v50_0:Text>
+         </common_v50_0:MarketingInformation>
+      </vehicle:VehicleRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

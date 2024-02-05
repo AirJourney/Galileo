@@ -1,0 +1,7534 @@
+[
+  {
+    "from": "KUL",
+    "to": "CAI"
+  },
+  {
+    "from": "KIV",
+    "to": "BKK"
+  },
+  {
+    "from": "FRA",
+    "to": "MIA"
+  },
+  {
+    "from": "SKG",
+    "to": "ATH"
+  },
+  {
+    "from": "LBA",
+    "to": "AGP"
+  },
+  {
+    "from": "LON",
+    "to": "AYT"
+  },
+  {
+    "from": "BUH",
+    "to": "IST"
+  },
+  {
+    "from": "DXB",
+    "to": "KTM"
+  },
+  {
+    "from": "VIE",
+    "to": "FRA"
+  },
+  {
+    "from": "CHI",
+    "to": "TIA"
+  },
+  {
+    "from": "MUC",
+    "to": "MAD"
+  },
+  {
+    "from": "AVL",
+    "to": "FLL"
+  },
+  {
+    "from": "BRU",
+    "to": "LPL"
+  },
+  {
+    "from": "MFM",
+    "to": "NGB"
+  },
+  {
+    "from": "HAM",
+    "to": "LHE"
+  },
+  {
+    "from": "MFM",
+    "to": "TSN"
+  },
+  {
+    "from": "OPO",
+    "to": "EIN"
+  },
+  {
+    "from": "USM",
+    "to": "BRU"
+  },
+  {
+    "from": "BER",
+    "to": "BKK"
+  },
+  {
+    "from": "WAW",
+    "to": "ZRH"
+  },
+  {
+    "from": "JHB",
+    "to": "TWU"
+  },
+  {
+    "from": "LON",
+    "to": "MAH"
+  },
+  {
+    "from": "ROM",
+    "to": "BOG"
+  },
+  {
+    "from": "DPS",
+    "to": "SWQ"
+  },
+  {
+    "from": "FUK",
+    "to": "NGO"
+  },
+  {
+    "from": "ECN",
+    "to": "ISB"
+  },
+  {
+    "from": "NQY",
+    "to": "LON"
+  },
+  {
+    "from": "BRS",
+    "to": "OPO"
+  },
+  {
+    "from": "PRG",
+    "to": "VCE"
+  },
+  {
+    "from": "PAR",
+    "to": "ZRH"
+  },
+  {
+    "from": "MAN",
+    "to": "SKT"
+  },
+  {
+    "from": "BCN",
+    "to": "MOW"
+  },
+  {
+    "from": "BRU",
+    "to": "SHA"
+  },
+  {
+    "from": "BKK",
+    "to": "BER"
+  },
+  {
+    "from": "EDI",
+    "to": "RTM"
+  },
+  {
+    "from": "PAR",
+    "to": "QSF"
+  },
+  {
+    "from": "LUX",
+    "to": "BUD"
+  },
+  {
+    "from": "ROM",
+    "to": "MAD"
+  },
+  {
+    "from": "AUH",
+    "to": "JKT"
+  },
+  {
+    "from": "BKI",
+    "to": "SDK"
+  },
+  {
+    "from": "MAN",
+    "to": "LAX"
+  },
+  {
+    "from": "JED",
+    "to": "HYD"
+  },
+  {
+    "from": "DOH",
+    "to": "DEL"
+  },
+  {
+    "from": "BER",
+    "to": "SOF"
+  },
+  {
+    "from": "LAX",
+    "to": "YVR"
+  },
+  {
+    "from": "TLV",
+    "to": "BUH"
+  },
+  {
+    "from": "NYC",
+    "to": "DPS"
+  },
+  {
+    "from": "PNH",
+    "to": "HKG"
+  },
+  {
+    "from": "BCN",
+    "to": "GOA"
+  },
+  {
+    "from": "LUX",
+    "to": "AES"
+  },
+  {
+    "from": "KUL",
+    "to": "BNE"
+  },
+  {
+    "from": "PAR",
+    "to": "ABJ"
+  },
+  {
+    "from": "LAX",
+    "to": "OAK"
+  },
+  {
+    "from": "NYC",
+    "to": "BEG"
+  },
+  {
+    "from": "SUB",
+    "to": "SEL"
+  },
+  {
+    "from": "STR",
+    "to": "LON"
+  },
+  {
+    "from": "SCL",
+    "to": "MDZ"
+  },
+  {
+    "from": "DUB",
+    "to": "KRT"
+  },
+  {
+    "from": "IST",
+    "to": "BKK"
+  },
+  {
+    "from": "BKK",
+    "to": "NKG"
+  },
+  {
+    "from": "NYC",
+    "to": "KHI"
+  },
+  {
+    "from": "SEL",
+    "to": "REP"
+  },
+  {
+    "from": "VIE",
+    "to": "DAR"
+  },
+  {
+    "from": "LON",
+    "to": "GLA"
+  },
+  {
+    "from": "OKA",
+    "to": "SEL"
+  },
+  {
+    "from": "AMS",
+    "to": "LAX"
+  },
+  {
+    "from": "BOM",
+    "to": "DEL"
+  },
+  {
+    "from": "VLC",
+    "to": "TBS"
+  },
+  {
+    "from": "PER",
+    "to": "SYD"
+  },
+  {
+    "from": "MTY",
+    "to": "CUN"
+  },
+  {
+    "from": "PAR",
+    "to": "WUH"
+  },
+  {
+    "from": "AMD",
+    "to": "DPS"
+  },
+  {
+    "from": "TIJ",
+    "to": "CUN"
+  },
+  {
+    "from": "PAR",
+    "to": "BUH"
+  },
+  {
+    "from": "BRS",
+    "to": "IBZ"
+  },
+  {
+    "from": "UIO",
+    "to": "MAD"
+  },
+  {
+    "from": "NHA",
+    "to": "BKK"
+  },
+  {
+    "from": "CNX",
+    "to": "HHQ"
+  },
+  {
+    "from": "EDI",
+    "to": "EIN"
+  },
+  {
+    "from": "STO",
+    "to": "LON"
+  },
+  {
+    "from": "LIL",
+    "to": "NCE"
+  },
+  {
+    "from": "HAM",
+    "to": "SHA"
+  },
+  {
+    "from": "MIL",
+    "to": "ZAG"
+  },
+  {
+    "from": "MFM",
+    "to": "DAD"
+  },
+  {
+    "from": "HKG",
+    "to": "HAM"
+  },
+  {
+    "from": "ALC",
+    "to": "ROM"
+  },
+  {
+    "from": "TYO",
+    "to": "KMG"
+  },
+  {
+    "from": "KUL",
+    "to": "NYC"
+  },
+  {
+    "from": "TAC",
+    "to": "BKK"
+  },
+  {
+    "from": "NCE",
+    "to": "AJA"
+  },
+  {
+    "from": "BRS",
+    "to": "AGP"
+  },
+  {
+    "from": "CUE",
+    "to": "UIO"
+  },
+  {
+    "from": "MIL",
+    "to": "PMI"
+  },
+  {
+    "from": "IBZ",
+    "to": "PMI"
+  },
+  {
+    "from": "ZRH",
+    "to": "VLC"
+  },
+  {
+    "from": "JKT",
+    "to": "KUL"
+  },
+  {
+    "from": "MAD",
+    "to": "SEL"
+  },
+  {
+    "from": "TLV",
+    "to": "LAX"
+  },
+  {
+    "from": "ROM",
+    "to": "ATL"
+  },
+  {
+    "from": "JKT",
+    "to": "XMN"
+  },
+  {
+    "from": "HKG",
+    "to": "CNS"
+  },
+  {
+    "from": "DXB",
+    "to": "JED"
+  },
+  {
+    "from": "HAM",
+    "to": "ACC"
+  },
+  {
+    "from": "TPE",
+    "to": "HIJ"
+  },
+  {
+    "from": "MAN",
+    "to": "JNB"
+  },
+  {
+    "from": "OSL",
+    "to": "AES"
+  },
+  {
+    "from": "ZAG",
+    "to": "SPU"
+  },
+  {
+    "from": "PMI",
+    "to": "BCN"
+  },
+  {
+    "from": "HRE",
+    "to": "BJS"
+  },
+  {
+    "from": "CAI",
+    "to": "TPA"
+  },
+  {
+    "from": "CTA",
+    "to": "BCN"
+  },
+  {
+    "from": "THD",
+    "to": "SGN"
+  },
+  {
+    "from": "EAS",
+    "to": "BCN"
+  },
+  {
+    "from": "BOM",
+    "to": "DFW"
+  },
+  {
+    "from": "YTO",
+    "to": "YEA"
+  },
+  {
+    "from": "BRE",
+    "to": "SIN"
+  },
+  {
+    "from": "EIN",
+    "to": "ALC"
+  },
+  {
+    "from": "KUL",
+    "to": "HAN"
+  },
+  {
+    "from": "YTO",
+    "to": "TPE"
+  },
+  {
+    "from": "SUB",
+    "to": "HKG"
+  },
+  {
+    "from": "CGN",
+    "to": "THR"
+  },
+  {
+    "from": "AGP",
+    "to": "LPA"
+  },
+  {
+    "from": "FUK",
+    "to": "SIN"
+  },
+  {
+    "from": "LAS",
+    "to": "PVU"
+  },
+  {
+    "from": "HKG",
+    "to": "DEN"
+  },
+  {
+    "from": "MAD",
+    "to": "MUB"
+  },
+  {
+    "from": "NYC",
+    "to": "LAS"
+  },
+  {
+    "from": "LON",
+    "to": "PSA"
+  },
+  {
+    "from": "BRU",
+    "to": "HKG"
+  },
+  {
+    "from": "MFM",
+    "to": "JKT"
+  },
+  {
+    "from": "BUE",
+    "to": "COR"
+  },
+  {
+    "from": "VNO",
+    "to": "MUC"
+  },
+  {
+    "from": "PAR",
+    "to": "PTP"
+  },
+  {
+    "from": "DEL",
+    "to": "BKK"
+  },
+  {
+    "from": "MAN",
+    "to": "SYZ"
+  },
+  {
+    "from": "ZAG",
+    "to": "DBV"
+  },
+  {
+    "from": "AKL",
+    "to": "TYO"
+  },
+  {
+    "from": "SGN",
+    "to": "JKT"
+  },
+  {
+    "from": "OPO",
+    "to": "PDL"
+  },
+  {
+    "from": "MIL",
+    "to": "WAW"
+  },
+  {
+    "from": "SIN",
+    "to": "PER"
+  },
+  {
+    "from": "PAR",
+    "to": "SPU"
+  },
+  {
+    "from": "LON",
+    "to": "BAK"
+  },
+  {
+    "from": "BIO",
+    "to": "ACE"
+  },
+  {
+    "from": "RMQ",
+    "to": "MZG"
+  },
+  {
+    "from": "YMQ",
+    "to": "FLL"
+  },
+  {
+    "from": "JNB",
+    "to": "NBO"
+  },
+  {
+    "from": "SYD",
+    "to": "KWL"
+  },
+  {
+    "from": "BIO",
+    "to": "SVQ"
+  },
+  {
+    "from": "DUB",
+    "to": "GLA"
+  },
+  {
+    "from": "VCE",
+    "to": "CTA"
+  },
+  {
+    "from": "MEL",
+    "to": "YVR"
+  },
+  {
+    "from": "YTO",
+    "to": "DXB"
+  },
+  {
+    "from": "DAC",
+    "to": "TYO"
+  },
+  {
+    "from": "DYU",
+    "to": "IST"
+  },
+  {
+    "from": "PAR",
+    "to": "CHI"
+  },
+  {
+    "from": "BHX",
+    "to": "INV"
+  },
+  {
+    "from": "LON",
+    "to": "FNA"
+  },
+  {
+    "from": "TPE",
+    "to": "YTO"
+  },
+  {
+    "from": "LAX",
+    "to": "MIL"
+  },
+  {
+    "from": "MEL",
+    "to": "KMG"
+  },
+  {
+    "from": "FRA",
+    "to": "SEZ"
+  },
+  {
+    "from": "BHX",
+    "to": "GRZ"
+  },
+  {
+    "from": "CAI",
+    "to": "KWI"
+  },
+  {
+    "from": "PAR",
+    "to": "MAA"
+  },
+  {
+    "from": "WAW",
+    "to": "PRG"
+  },
+  {
+    "from": "JKT",
+    "to": "SYD"
+  },
+  {
+    "from": "PNH",
+    "to": "SZX"
+  },
+  {
+    "from": "MIL",
+    "to": "HAM"
+  },
+  {
+    "from": "VLI",
+    "to": "SON"
+  },
+  {
+    "from": "VTE",
+    "to": "SEL"
+  },
+  {
+    "from": "ALC",
+    "to": "LIM"
+  },
+  {
+    "from": "DXB",
+    "to": "MBA"
+  },
+  {
+    "from": "YTO",
+    "to": "CHI"
+  },
+  {
+    "from": "AMS",
+    "to": "CHI"
+  },
+  {
+    "from": "OSA",
+    "to": "CJU"
+  },
+  {
+    "from": "YNY",
+    "to": "TPE"
+  },
+  {
+    "from": "SYD",
+    "to": "MAA"
+  },
+  {
+    "from": "MAN",
+    "to": "PER"
+  },
+  {
+    "from": "FRA",
+    "to": "GVA"
+  },
+  {
+    "from": "MAN",
+    "to": "MBA"
+  },
+  {
+    "from": "LON",
+    "to": "FUK"
+  },
+  {
+    "from": "MLE",
+    "to": "BKK"
+  },
+  {
+    "from": "ATQ",
+    "to": "BHX"
+  },
+  {
+    "from": "HPH",
+    "to": "SEL"
+  },
+  {
+    "from": "NWI",
+    "to": "AMS"
+  },
+  {
+    "from": "IST",
+    "to": "ADA"
+  },
+  {
+    "from": "DXB",
+    "to": "SXR"
+  },
+  {
+    "from": "DXB",
+    "to": "SIN"
+  },
+  {
+    "from": "SIN",
+    "to": "ORL"
+  },
+  {
+    "from": "ZRH",
+    "to": "CMB"
+  },
+  {
+    "from": "HIJ",
+    "to": "TPE"
+  },
+  {
+    "from": "YNB",
+    "to": "DMM"
+  },
+  {
+    "from": "EDI",
+    "to": "THR"
+  },
+  {
+    "from": "TLV",
+    "to": "DEL"
+  },
+  {
+    "from": "ZRH",
+    "to": "STO"
+  },
+  {
+    "from": "HKG",
+    "to": "AMS"
+  },
+  {
+    "from": "LBA",
+    "to": "ZRH"
+  },
+  {
+    "from": "LUX",
+    "to": "BER"
+  },
+  {
+    "from": "EIN",
+    "to": "MIL"
+  },
+  {
+    "from": "BCN",
+    "to": "CPH"
+  },
+  {
+    "from": "LON",
+    "to": "NKG"
+  },
+  {
+    "from": "SGN",
+    "to": "DXB"
+  },
+  {
+    "from": "KTW",
+    "to": "ZRH"
+  },
+  {
+    "from": "MSP",
+    "to": "CHI"
+  },
+  {
+    "from": "SIN",
+    "to": "YNT"
+  },
+  {
+    "from": "AMS",
+    "to": "THR"
+  },
+  {
+    "from": "MRS",
+    "to": "FSC"
+  },
+  {
+    "from": "ZRH",
+    "to": "PMI"
+  },
+  {
+    "from": "PAR",
+    "to": "BOG"
+  },
+  {
+    "from": "BOM",
+    "to": "HKG"
+  },
+  {
+    "from": "LON",
+    "to": "BRU"
+  },
+  {
+    "from": "DUS",
+    "to": "DOH"
+  },
+  {
+    "from": "SGN",
+    "to": "PUS"
+  },
+  {
+    "from": "BHX",
+    "to": "BUH"
+  },
+  {
+    "from": "DXB",
+    "to": "WAW"
+  },
+  {
+    "from": "BNE",
+    "to": "NAN"
+  },
+  {
+    "from": "MNL",
+    "to": "ROM"
+  },
+  {
+    "from": "LON",
+    "to": "DLM"
+  },
+  {
+    "from": "NBO",
+    "to": "MAN"
+  },
+  {
+    "from": "WAW",
+    "to": "MAD"
+  },
+  {
+    "from": "MUC",
+    "to": "PAR"
+  },
+  {
+    "from": "MIA",
+    "to": "LIM"
+  },
+  {
+    "from": "LAX",
+    "to": "LON"
+  },
+  {
+    "from": "WAW",
+    "to": "BCN"
+  },
+  {
+    "from": "TUN",
+    "to": "MUC"
+  },
+  {
+    "from": "TLS",
+    "to": "BEY"
+  },
+  {
+    "from": "BKK",
+    "to": "USU"
+  },
+  {
+    "from": "ORL",
+    "to": "SAO"
+  },
+  {
+    "from": "FRA",
+    "to": "LIM"
+  },
+  {
+    "from": "CHI",
+    "to": "CAI"
+  },
+  {
+    "from": "BHX",
+    "to": "BFS"
+  },
+  {
+    "from": "BER",
+    "to": "MAD"
+  },
+  {
+    "from": "ALA",
+    "to": "IST"
+  },
+  {
+    "from": "LYS",
+    "to": "DKR"
+  },
+  {
+    "from": "SEA",
+    "to": "SNA"
+  },
+  {
+    "from": "MIA",
+    "to": "POS"
+  },
+  {
+    "from": "AKL",
+    "to": "PPT"
+  },
+  {
+    "from": "DUB",
+    "to": "KIR"
+  },
+  {
+    "from": "TAG",
+    "to": "BKK"
+  },
+  {
+    "from": "ATL",
+    "to": "ANK"
+  },
+  {
+    "from": "LON",
+    "to": "ADL"
+  },
+  {
+    "from": "DUS",
+    "to": "MRU"
+  },
+  {
+    "from": "SEA",
+    "to": "FAT"
+  },
+  {
+    "from": "AMS",
+    "to": "ORL"
+  },
+  {
+    "from": "OSA",
+    "to": "SYD"
+  },
+  {
+    "from": "YEA",
+    "to": "HOU"
+  },
+  {
+    "from": "BOG",
+    "to": "CTG"
+  },
+  {
+    "from": "VCE",
+    "to": "BRU"
+  },
+  {
+    "from": "GVA",
+    "to": "DJE"
+  },
+  {
+    "from": "EDI",
+    "to": "BCN"
+  },
+  {
+    "from": "LPQ",
+    "to": "BKK"
+  },
+  {
+    "from": "DXB",
+    "to": "ATH"
+  },
+  {
+    "from": "MNL",
+    "to": "CNX"
+  },
+  {
+    "from": "MNL",
+    "to": "SGN"
+  },
+  {
+    "from": "BKK",
+    "to": "BOM"
+  },
+  {
+    "from": "MAN",
+    "to": "BCN"
+  },
+  {
+    "from": "HAN",
+    "to": "CNX"
+  },
+  {
+    "from": "MUC",
+    "to": "BEY"
+  },
+  {
+    "from": "DXB",
+    "to": "SIA"
+  },
+  {
+    "from": "DEL",
+    "to": "VGA"
+  },
+  {
+    "from": "SIN",
+    "to": "MAD"
+  },
+  {
+    "from": "YVR",
+    "to": "LIM"
+  },
+  {
+    "from": "NYC",
+    "to": "SEL"
+  },
+  {
+    "from": "LON",
+    "to": "PRG"
+  },
+  {
+    "from": "TPE",
+    "to": "BNE"
+  },
+  {
+    "from": "CBR",
+    "to": "MEL"
+  },
+  {
+    "from": "MIL",
+    "to": "IST"
+  },
+  {
+    "from": "TPE",
+    "to": "SYD"
+  },
+  {
+    "from": "NUE",
+    "to": "KUL"
+  },
+  {
+    "from": "AJA",
+    "to": "PAR"
+  },
+  {
+    "from": "DUB",
+    "to": "HAM"
+  },
+  {
+    "from": "YTO",
+    "to": "SGN"
+  },
+  {
+    "from": "NCE",
+    "to": "CAN"
+  },
+  {
+    "from": "BRU",
+    "to": "DUB"
+  },
+  {
+    "from": "SIN",
+    "to": "TBS"
+  },
+  {
+    "from": "DUS",
+    "to": "LHE"
+  },
+  {
+    "from": "MIL",
+    "to": "BER"
+  },
+  {
+    "from": "WAS",
+    "to": "AMM"
+  },
+  {
+    "from": "FKB",
+    "to": "ZAD"
+  },
+  {
+    "from": "KHI",
+    "to": "BHX"
+  },
+  {
+    "from": "LAX",
+    "to": "PDX"
+  },
+  {
+    "from": "HAM",
+    "to": "DPS"
+  },
+  {
+    "from": "OSA",
+    "to": "TSN"
+  },
+  {
+    "from": "FRA",
+    "to": "NDR"
+  },
+  {
+    "from": "HKG",
+    "to": "STO"
+  },
+  {
+    "from": "BCN",
+    "to": "CFU"
+  },
+  {
+    "from": "DUB",
+    "to": "COK"
+  },
+  {
+    "from": "JKT",
+    "to": "AMS"
+  },
+  {
+    "from": "AMS",
+    "to": "LCG"
+  },
+  {
+    "from": "LON",
+    "to": "TNG"
+  },
+  {
+    "from": "MIA",
+    "to": "RIO"
+  },
+  {
+    "from": "ALG",
+    "to": "TUN"
+  },
+  {
+    "from": "WAS",
+    "to": "HKG"
+  },
+  {
+    "from": "MRS",
+    "to": "VIL"
+  },
+  {
+    "from": "LON",
+    "to": "BUQ"
+  },
+  {
+    "from": "YMQ",
+    "to": "YYC"
+  },
+  {
+    "from": "DUB",
+    "to": "GOA"
+  },
+  {
+    "from": "TLV",
+    "to": "MIA"
+  },
+  {
+    "from": "DAC",
+    "to": "LON"
+  },
+  {
+    "from": "NCE",
+    "to": "MIR"
+  },
+  {
+    "from": "MRS",
+    "to": "YTO"
+  },
+  {
+    "from": "YVR",
+    "to": "SNA"
+  },
+  {
+    "from": "HAN",
+    "to": "SIN"
+  },
+  {
+    "from": "TLL",
+    "to": "ALG"
+  },
+  {
+    "from": "FRA",
+    "to": "VNO"
+  },
+  {
+    "from": "LON",
+    "to": "IAS"
+  },
+  {
+    "from": "LIS",
+    "to": "SIN"
+  },
+  {
+    "from": "CRV",
+    "to": "VCE"
+  },
+  {
+    "from": "JMK",
+    "to": "ATH"
+  },
+  {
+    "from": "PRG",
+    "to": "SHA"
+  },
+  {
+    "from": "LON",
+    "to": "LDY"
+  },
+  {
+    "from": "JKT",
+    "to": "CGO"
+  },
+  {
+    "from": "MNL",
+    "to": "LAX"
+  },
+  {
+    "from": "MEL",
+    "to": "MIL"
+  },
+  {
+    "from": "MIL",
+    "to": "CLJ"
+  },
+  {
+    "from": "CTA",
+    "to": "VCE"
+  },
+  {
+    "from": "SEL",
+    "to": "SDJ"
+  },
+  {
+    "from": "PAR",
+    "to": "BEY"
+  },
+  {
+    "from": "ZRH",
+    "to": "SPU"
+  },
+  {
+    "from": "DUS",
+    "to": "SKG"
+  },
+  {
+    "from": "LYS",
+    "to": "BJS"
+  },
+  {
+    "from": "BCN",
+    "to": "BOM"
+  },
+  {
+    "from": "KUL",
+    "to": "PQC"
+  },
+  {
+    "from": "BCN",
+    "to": "ZNZ"
+  },
+  {
+    "from": "MAN",
+    "to": "LON"
+  },
+  {
+    "from": "BCN",
+    "to": "NBO"
+  },
+  {
+    "from": "IST",
+    "to": "EBL"
+  },
+  {
+    "from": "NYC",
+    "to": "ROC"
+  },
+  {
+    "from": "BNE",
+    "to": "KTM"
+  },
+  {
+    "from": "NUE",
+    "to": "VCE"
+  },
+  {
+    "from": "LPL",
+    "to": "PAR"
+  },
+  {
+    "from": "DUB",
+    "to": "SHE"
+  },
+  {
+    "from": "DAD",
+    "to": "HAN"
+  },
+  {
+    "from": "MME",
+    "to": "AMS"
+  },
+  {
+    "from": "SGN",
+    "to": "OSA"
+  },
+  {
+    "from": "DUB",
+    "to": "AGP"
+  },
+  {
+    "from": "MAD",
+    "to": "GYE"
+  },
+  {
+    "from": "CRK",
+    "to": "SIN"
+  },
+  {
+    "from": "BAK",
+    "to": "TBS"
+  },
+  {
+    "from": "LYS",
+    "to": "CMN"
+  },
+  {
+    "from": "LON",
+    "to": "SYZ"
+  },
+  {
+    "from": "BNE",
+    "to": "TAO"
+  },
+  {
+    "from": "KHI",
+    "to": "LON"
+  },
+  {
+    "from": "RUH",
+    "to": "MNL"
+  },
+  {
+    "from": "BKK",
+    "to": "YEA"
+  },
+  {
+    "from": "COK",
+    "to": "MLE"
+  },
+  {
+    "from": "CHI",
+    "to": "SAO"
+  },
+  {
+    "from": "NAP",
+    "to": "BUD"
+  },
+  {
+    "from": "IST",
+    "to": "MUC"
+  },
+  {
+    "from": "NAS",
+    "to": "MIA"
+  },
+  {
+    "from": "BIQ",
+    "to": "LON"
+  },
+  {
+    "from": "AMS",
+    "to": "SJJ"
+  },
+  {
+    "from": "SIN",
+    "to": "MIL"
+  },
+  {
+    "from": "ZRH",
+    "to": "FAO"
+  },
+  {
+    "from": "BUD",
+    "to": "IST"
+  },
+  {
+    "from": "MSQ",
+    "to": "DEL"
+  },
+  {
+    "from": "TWU",
+    "to": "BKI"
+  },
+  {
+    "from": "PNH",
+    "to": "LAX"
+  },
+  {
+    "from": "DEL",
+    "to": "BHX"
+  },
+  {
+    "from": "SLP",
+    "to": "CUN"
+  },
+  {
+    "from": "BFV",
+    "to": "BKK"
+  },
+  {
+    "from": "NYC",
+    "to": "CUN"
+  },
+  {
+    "from": "ADL",
+    "to": "AKL"
+  },
+  {
+    "from": "SIN",
+    "to": "DVO"
+  },
+  {
+    "from": "BKK",
+    "to": "CCU"
+  },
+  {
+    "from": "ATH",
+    "to": "LXS"
+  },
+  {
+    "from": "SEL",
+    "to": "LAS"
+  },
+  {
+    "from": "YMQ",
+    "to": "NYC"
+  },
+  {
+    "from": "CHI",
+    "to": "SEL"
+  },
+  {
+    "from": "FKB",
+    "to": "VLC"
+  },
+  {
+    "from": "EDI",
+    "to": "BKK"
+  },
+  {
+    "from": "MUC",
+    "to": "FMY"
+  },
+  {
+    "from": "BHX",
+    "to": "ORK"
+  },
+  {
+    "from": "SIN",
+    "to": "BOS"
+  },
+  {
+    "from": "BHX",
+    "to": "BUD"
+  },
+  {
+    "from": "AGP",
+    "to": "AMS"
+  },
+  {
+    "from": "BER",
+    "to": "FRA"
+  },
+  {
+    "from": "TYO",
+    "to": "KHH"
+  },
+  {
+    "from": "BCN",
+    "to": "NCE"
+  },
+  {
+    "from": "EXT",
+    "to": "EDI"
+  },
+  {
+    "from": "BNE",
+    "to": "NTG"
+  },
+  {
+    "from": "LON",
+    "to": "VTZ"
+  },
+  {
+    "from": "WAW",
+    "to": "PAR"
+  },
+  {
+    "from": "BOS",
+    "to": "SAN"
+  },
+  {
+    "from": "FRA",
+    "to": "JED"
+  },
+  {
+    "from": "LAX",
+    "to": "MEX"
+  },
+  {
+    "from": "LAX",
+    "to": "YEA"
+  },
+  {
+    "from": "CPH",
+    "to": "SGN"
+  },
+  {
+    "from": "NUE",
+    "to": "LON"
+  },
+  {
+    "from": "BER",
+    "to": "YTO"
+  },
+  {
+    "from": "LAX",
+    "to": "NBO"
+  },
+  {
+    "from": "OSA",
+    "to": "ULN"
+  },
+  {
+    "from": "BOM",
+    "to": "MEL"
+  },
+  {
+    "from": "MIL",
+    "to": "CAI"
+  },
+  {
+    "from": "YVR",
+    "to": "NAN"
+  },
+  {
+    "from": "MYY",
+    "to": "KUL"
+  },
+  {
+    "from": "MAD",
+    "to": "CWB"
+  },
+  {
+    "from": "WAW",
+    "to": "GDN"
+  },
+  {
+    "from": "LON",
+    "to": "TGD"
+  },
+  {
+    "from": "SVQ",
+    "to": "LEI"
+  },
+  {
+    "from": "BNE",
+    "to": "JNB"
+  },
+  {
+    "from": "TUN",
+    "to": "YMQ"
+  },
+  {
+    "from": "BOS",
+    "to": "BOG"
+  },
+  {
+    "from": "TYO",
+    "to": "DUB"
+  },
+  {
+    "from": "MEL",
+    "to": "PAR"
+  },
+  {
+    "from": "GVA",
+    "to": "MEX"
+  },
+  {
+    "from": "MAN",
+    "to": "DAC"
+  },
+  {
+    "from": "FRA",
+    "to": "FAO"
+  },
+  {
+    "from": "TYO",
+    "to": "MEX"
+  },
+  {
+    "from": "MAD",
+    "to": "DEL"
+  },
+  {
+    "from": "FRA",
+    "to": "SJO"
+  },
+  {
+    "from": "LAX",
+    "to": "OSA"
+  },
+  {
+    "from": "EDI",
+    "to": "BJS"
+  },
+  {
+    "from": "SFO",
+    "to": "SGN"
+  },
+  {
+    "from": "VIE",
+    "to": "IST"
+  },
+  {
+    "from": "REK",
+    "to": "PAR"
+  },
+  {
+    "from": "SYD",
+    "to": "ZQN"
+  },
+  {
+    "from": "PAR",
+    "to": "BIQ"
+  },
+  {
+    "from": "HKG",
+    "to": "TAO"
+  },
+  {
+    "from": "WAW",
+    "to": "FRA"
+  },
+  {
+    "from": "NGO",
+    "to": "SHE"
+  },
+  {
+    "from": "YTO",
+    "to": "MAA"
+  },
+  {
+    "from": "LYS",
+    "to": "ABJ"
+  },
+  {
+    "from": "SEL",
+    "to": "YTO"
+  },
+  {
+    "from": "VIE",
+    "to": "DBV"
+  },
+  {
+    "from": "AKL",
+    "to": "TPE"
+  },
+  {
+    "from": "MRS",
+    "to": "MAD"
+  },
+  {
+    "from": "IST",
+    "to": "TAS"
+  },
+  {
+    "from": "LON",
+    "to": "TSR"
+  },
+  {
+    "from": "MEL",
+    "to": "DLC"
+  },
+  {
+    "from": "NCE",
+    "to": "NYC"
+  },
+  {
+    "from": "PAR",
+    "to": "VLC"
+  },
+  {
+    "from": "MAD",
+    "to": "CTA"
+  },
+  {
+    "from": "LON",
+    "to": "JIB"
+  },
+  {
+    "from": "AMS",
+    "to": "HOU"
+  },
+  {
+    "from": "MAD",
+    "to": "MAH"
+  },
+  {
+    "from": "EDI",
+    "to": "BOD"
+  },
+  {
+    "from": "HKG",
+    "to": "VCE"
+  },
+  {
+    "from": "LON",
+    "to": "VCE"
+  },
+  {
+    "from": "DEL",
+    "to": "SYD"
+  },
+  {
+    "from": "NAN",
+    "to": "VLI"
+  },
+  {
+    "from": "MAN",
+    "to": "LIM"
+  },
+  {
+    "from": "VIE",
+    "to": "TPE"
+  },
+  {
+    "from": "NYC",
+    "to": "SDQ"
+  },
+  {
+    "from": "HKG",
+    "to": "BUD"
+  },
+  {
+    "from": "BHX",
+    "to": "BER"
+  },
+  {
+    "from": "STO",
+    "to": "PAR"
+  },
+  {
+    "from": "LAX",
+    "to": "RIO"
+  },
+  {
+    "from": "LBA",
+    "to": "FAO"
+  },
+  {
+    "from": "OSA",
+    "to": "LAX"
+  },
+  {
+    "from": "RHO",
+    "to": "ATH"
+  },
+  {
+    "from": "LON",
+    "to": "BNE"
+  },
+  {
+    "from": "CEB",
+    "to": "LAX"
+  },
+  {
+    "from": "DUB",
+    "to": "NAP"
+  },
+  {
+    "from": "BCN",
+    "to": "WAW"
+  },
+  {
+    "from": "FRA",
+    "to": "HAM"
+  },
+  {
+    "from": "RUH",
+    "to": "HKG"
+  },
+  {
+    "from": "SHJ",
+    "to": "DOH"
+  },
+  {
+    "from": "BRU",
+    "to": "CMB"
+  },
+  {
+    "from": "BCN",
+    "to": "MUC"
+  },
+  {
+    "from": "CJU",
+    "to": "OSA"
+  },
+  {
+    "from": "DUB",
+    "to": "YYC"
+  },
+  {
+    "from": "MAN",
+    "to": "HAJ"
+  },
+  {
+    "from": "PAR",
+    "to": "FOC"
+  },
+  {
+    "from": "AMS",
+    "to": "BHX"
+  },
+  {
+    "from": "FRA",
+    "to": "WUH"
+  },
+  {
+    "from": "MIL",
+    "to": "DEN"
+  },
+  {
+    "from": "TPE",
+    "to": "KMQ"
+  },
+  {
+    "from": "BEY",
+    "to": "BHX"
+  },
+  {
+    "from": "PAR",
+    "to": "HAN"
+  },
+  {
+    "from": "DEL",
+    "to": "MNL"
+  },
+  {
+    "from": "LAX",
+    "to": "CHI"
+  },
+  {
+    "from": "ADL",
+    "to": "TPE"
+  },
+  {
+    "from": "MNL",
+    "to": "TNA"
+  },
+  {
+    "from": "WRO",
+    "to": "CPH"
+  },
+  {
+    "from": "LUX",
+    "to": "BCN"
+  },
+  {
+    "from": "BCN",
+    "to": "OPO"
+  },
+  {
+    "from": "MAN",
+    "to": "AUH"
+  },
+  {
+    "from": "HOU",
+    "to": "SHA"
+  },
+  {
+    "from": "BHX",
+    "to": "TLS"
+  },
+  {
+    "from": "BFS",
+    "to": "CWL"
+  },
+  {
+    "from": "ADD",
+    "to": "TNR"
+  },
+  {
+    "from": "BOG",
+    "to": "PUJ"
+  },
+  {
+    "from": "YOW",
+    "to": "NYC"
+  },
+  {
+    "from": "SFO",
+    "to": "MEX"
+  },
+  {
+    "from": "WAW",
+    "to": "LON"
+  },
+  {
+    "from": "CPH",
+    "to": "IST"
+  },
+  {
+    "from": "LST",
+    "to": "SYD"
+  },
+  {
+    "from": "VLC",
+    "to": "AHB"
+  },
+  {
+    "from": "BSB",
+    "to": "SAO"
+  },
+  {
+    "from": "BLQ",
+    "to": "VLC"
+  },
+  {
+    "from": "MAN",
+    "to": "HRE"
+  },
+  {
+    "from": "NQY",
+    "to": "DUB"
+  },
+  {
+    "from": "SIN",
+    "to": "ULN"
+  },
+  {
+    "from": "HKG",
+    "to": "BEG"
+  },
+  {
+    "from": "OPO",
+    "to": "FNC"
+  },
+  {
+    "from": "YVR",
+    "to": "PSP"
+  },
+  {
+    "from": "YXJ",
+    "to": "YYC"
+  },
+  {
+    "from": "BOS",
+    "to": "YTO"
+  },
+  {
+    "from": "ACC",
+    "to": "DXB"
+  },
+  {
+    "from": "MEX",
+    "to": "CTM"
+  },
+  {
+    "from": "CLO",
+    "to": "BOG"
+  },
+  {
+    "from": "PAD",
+    "to": "AGP"
+  },
+  {
+    "from": "MRS",
+    "to": "DXB"
+  },
+  {
+    "from": "ROM",
+    "to": "HGH"
+  },
+  {
+    "from": "EDI",
+    "to": "PRG"
+  },
+  {
+    "from": "STR",
+    "to": "KIV"
+  },
+  {
+    "from": "KWI",
+    "to": "BEY"
+  },
+  {
+    "from": "BIO",
+    "to": "ATH"
+  },
+  {
+    "from": "FRA",
+    "to": "MDE"
+  },
+  {
+    "from": "BER",
+    "to": "TIA"
+  },
+  {
+    "from": "LON",
+    "to": "KWI"
+  },
+  {
+    "from": "LED",
+    "to": "MOW"
+  },
+  {
+    "from": "AGP",
+    "to": "LIS"
+  },
+  {
+    "from": "BKK",
+    "to": "WAS"
+  },
+  {
+    "from": "HAM",
+    "to": "LON"
+  },
+  {
+    "from": "BKK",
+    "to": "KHI"
+  },
+  {
+    "from": "BOD",
+    "to": "CMN"
+  },
+  {
+    "from": "SEL",
+    "to": "SAN"
+  },
+  {
+    "from": "CPT",
+    "to": "MRU"
+  },
+  {
+    "from": "LIM",
+    "to": "MAD"
+  },
+  {
+    "from": "TPE",
+    "to": "GVA"
+  },
+  {
+    "from": "JRO",
+    "to": "ZNZ"
+  },
+  {
+    "from": "LJU",
+    "to": "KUL"
+  },
+  {
+    "from": "WRO",
+    "to": "LON"
+  },
+  {
+    "from": "FUK",
+    "to": "PAR"
+  },
+  {
+    "from": "FRA",
+    "to": "LIS"
+  },
+  {
+    "from": "SFO",
+    "to": "UIO"
+  },
+  {
+    "from": "NYC",
+    "to": "MSP"
+  },
+  {
+    "from": "PAR",
+    "to": "MSP"
+  },
+  {
+    "from": "HKG",
+    "to": "MUC"
+  },
+  {
+    "from": "LIM",
+    "to": "BOG"
+  },
+  {
+    "from": "LON",
+    "to": "SKG"
+  },
+  {
+    "from": "SIN",
+    "to": "LAS"
+  },
+  {
+    "from": "TUN",
+    "to": "TLS"
+  },
+  {
+    "from": "SYD",
+    "to": "BLR"
+  },
+  {
+    "from": "TGZ",
+    "to": "VCE"
+  },
+  {
+    "from": "LAX",
+    "to": "SGN"
+  },
+  {
+    "from": "PEN",
+    "to": "DAC"
+  },
+  {
+    "from": "PRG",
+    "to": "ALA"
+  },
+  {
+    "from": "LYS",
+    "to": "KRK"
+  },
+  {
+    "from": "SFO",
+    "to": "LON"
+  },
+  {
+    "from": "YMQ",
+    "to": "PAR"
+  },
+  {
+    "from": "LON",
+    "to": "XMN"
+  },
+  {
+    "from": "RIO",
+    "to": "IGU"
+  },
+  {
+    "from": "DUB",
+    "to": "LOS"
+  },
+  {
+    "from": "MIL",
+    "to": "TUN"
+  },
+  {
+    "from": "DTM",
+    "to": "IAS"
+  },
+  {
+    "from": "AMS",
+    "to": "MEX"
+  },
+  {
+    "from": "NCL",
+    "to": "HKG"
+  },
+  {
+    "from": "FRA",
+    "to": "BHX"
+  },
+  {
+    "from": "MNL",
+    "to": "USU"
+  },
+  {
+    "from": "BDS",
+    "to": "MIL"
+  },
+  {
+    "from": "JKT",
+    "to": "MIL"
+  },
+  {
+    "from": "JKT",
+    "to": "FOC"
+  },
+  {
+    "from": "BRU",
+    "to": "VCE"
+  },
+  {
+    "from": "MVD",
+    "to": "RIO"
+  },
+  {
+    "from": "BCN",
+    "to": "FUE"
+  },
+  {
+    "from": "TUN",
+    "to": "MIL"
+  },
+  {
+    "from": "TLL",
+    "to": "TBS"
+  },
+  {
+    "from": "BRU",
+    "to": "GLA"
+  },
+  {
+    "from": "MAN",
+    "to": "KRT"
+  },
+  {
+    "from": "VCA",
+    "to": "SEL"
+  },
+  {
+    "from": "LON",
+    "to": "VGA"
+  },
+  {
+    "from": "EBB",
+    "to": "KGL"
+  },
+  {
+    "from": "FRA",
+    "to": "MHD"
+  },
+  {
+    "from": "DUS",
+    "to": "MAA"
+  },
+  {
+    "from": "BKK",
+    "to": "WAW"
+  },
+  {
+    "from": "SNN",
+    "to": "MRS"
+  },
+  {
+    "from": "GVA",
+    "to": "VIE"
+  },
+  {
+    "from": "VRN",
+    "to": "TIA"
+  },
+  {
+    "from": "TAE",
+    "to": "TPE"
+  },
+  {
+    "from": "LON",
+    "to": "VRN"
+  },
+  {
+    "from": "MAD",
+    "to": "NCE"
+  },
+  {
+    "from": "BOD",
+    "to": "OPO"
+  },
+  {
+    "from": "LYS",
+    "to": "DPS"
+  },
+  {
+    "from": "SAO",
+    "to": "BJS"
+  },
+  {
+    "from": "YVR",
+    "to": "ANC"
+  },
+  {
+    "from": "SZZ",
+    "to": "WAW"
+  },
+  {
+    "from": "NBO",
+    "to": "LON"
+  },
+  {
+    "from": "CGP",
+    "to": "DAC"
+  },
+  {
+    "from": "STR",
+    "to": "BJS"
+  },
+  {
+    "from": "DUB",
+    "to": "DFW"
+  },
+  {
+    "from": "TPE",
+    "to": "BOS"
+  },
+  {
+    "from": "HAJ",
+    "to": "ALY"
+  },
+  {
+    "from": "DXB",
+    "to": "CEB"
+  },
+  {
+    "from": "BER",
+    "to": "DUB"
+  },
+  {
+    "from": "LON",
+    "to": "SPU"
+  },
+  {
+    "from": "XRY",
+    "to": "BCN"
+  },
+  {
+    "from": "BRE",
+    "to": "PMI"
+  },
+  {
+    "from": "DUS",
+    "to": "MHD"
+  },
+  {
+    "from": "HKG",
+    "to": "NHA"
+  },
+  {
+    "from": "WAS",
+    "to": "HGH"
+  },
+  {
+    "from": "LUX",
+    "to": "BJS"
+  },
+  {
+    "from": "ADD",
+    "to": "CPT"
+  },
+  {
+    "from": "MEL",
+    "to": "BLR"
+  },
+  {
+    "from": "DUB",
+    "to": "ALC"
+  },
+  {
+    "from": "TLV",
+    "to": "AMS"
+  },
+  {
+    "from": "YYC",
+    "to": "PHX"
+  },
+  {
+    "from": "MRS",
+    "to": "BKK"
+  },
+  {
+    "from": "ACC",
+    "to": "LON"
+  },
+  {
+    "from": "TIA",
+    "to": "BCN"
+  },
+  {
+    "from": "PTY",
+    "to": "DAV"
+  },
+  {
+    "from": "SPK",
+    "to": "OSA"
+  },
+  {
+    "from": "PAR",
+    "to": "HER"
+  },
+  {
+    "from": "LON",
+    "to": "GCM"
+  },
+  {
+    "from": "SIN",
+    "to": "AMS"
+  },
+  {
+    "from": "LYS",
+    "to": "ZNZ"
+  },
+  {
+    "from": "LON",
+    "to": "SVD"
+  },
+  {
+    "from": "MEC",
+    "to": "UIO"
+  },
+  {
+    "from": "PNH",
+    "to": "CSX"
+  },
+  {
+    "from": "MAD",
+    "to": "DXB"
+  },
+  {
+    "from": "ATL",
+    "to": "PAR"
+  },
+  {
+    "from": "FRA",
+    "to": "LHE"
+  },
+  {
+    "from": "WAW",
+    "to": "BKK"
+  },
+  {
+    "from": "NYC",
+    "to": "CTU"
+  },
+  {
+    "from": "EDI",
+    "to": "CAI"
+  },
+  {
+    "from": "VCE",
+    "to": "ZNZ"
+  },
+  {
+    "from": "JOG",
+    "to": "KUL"
+  },
+  {
+    "from": "SFO",
+    "to": "SEA"
+  },
+  {
+    "from": "PER",
+    "to": "HKG"
+  },
+  {
+    "from": "SCQ",
+    "to": "MIL"
+  },
+  {
+    "from": "VIE",
+    "to": "VCE"
+  },
+  {
+    "from": "OSA",
+    "to": "TNA"
+  },
+  {
+    "from": "BNE",
+    "to": "DVO"
+  },
+  {
+    "from": "DMM",
+    "to": "DEL"
+  },
+  {
+    "from": "BRS",
+    "to": "ACE"
+  },
+  {
+    "from": "DUB",
+    "to": "FOC"
+  },
+  {
+    "from": "ALC",
+    "to": "BUD"
+  },
+  {
+    "from": "KUL",
+    "to": "JOG"
+  },
+  {
+    "from": "RUN",
+    "to": "PAR"
+  },
+  {
+    "from": "DUB",
+    "to": "LPL"
+  },
+  {
+    "from": "AMS",
+    "to": "AHU"
+  },
+  {
+    "from": "LIS",
+    "to": "WAS"
+  },
+  {
+    "from": "JKT",
+    "to": "CSX"
+  },
+  {
+    "from": "EIN",
+    "to": "MRS"
+  },
+  {
+    "from": "FRA",
+    "to": "BOG"
+  },
+  {
+    "from": "AKL",
+    "to": "FOC"
+  },
+  {
+    "from": "IST",
+    "to": "CMN"
+  },
+  {
+    "from": "ILY",
+    "to": "GLA"
+  },
+  {
+    "from": "PER",
+    "to": "NNG"
+  },
+  {
+    "from": "ROM",
+    "to": "TRS"
+  },
+  {
+    "from": "NTE",
+    "to": "LON"
+  },
+  {
+    "from": "BHX",
+    "to": "DAC"
+  },
+  {
+    "from": "VCE",
+    "to": "DXB"
+  },
+  {
+    "from": "SEA",
+    "to": "SHA"
+  },
+  {
+    "from": "POZ",
+    "to": "ZRH"
+  },
+  {
+    "from": "LON",
+    "to": "AOI"
+  },
+  {
+    "from": "BNE",
+    "to": "HBA"
+  },
+  {
+    "from": "LAX",
+    "to": "SCL"
+  },
+  {
+    "from": "BNE",
+    "to": "POM"
+  },
+  {
+    "from": "NYC",
+    "to": "IST"
+  },
+  {
+    "from": "MIL",
+    "to": "ALY"
+  },
+  {
+    "from": "SEA",
+    "to": "CHI"
+  },
+  {
+    "from": "HYD",
+    "to": "LON"
+  },
+  {
+    "from": "MAN",
+    "to": "KWI"
+  },
+  {
+    "from": "GLA",
+    "to": "DXB"
+  },
+  {
+    "from": "ADD",
+    "to": "MPM"
+  },
+  {
+    "from": "MRS",
+    "to": "BIA"
+  },
+  {
+    "from": "BUH",
+    "to": "AMS"
+  },
+  {
+    "from": "PMI",
+    "to": "VIE"
+  },
+  {
+    "from": "TUN",
+    "to": "ALG"
+  },
+  {
+    "from": "ROM",
+    "to": "TYO"
+  },
+  {
+    "from": "LBU",
+    "to": "MYY"
+  },
+  {
+    "from": "KHH",
+    "to": "JKT"
+  },
+  {
+    "from": "DUS",
+    "to": "BEG"
+  },
+  {
+    "from": "ROM",
+    "to": "WNZ"
+  },
+  {
+    "from": "RUN",
+    "to": "RRG"
+  },
+  {
+    "from": "MFM",
+    "to": "SFO"
+  },
+  {
+    "from": "CUN",
+    "to": "MEX"
+  },
+  {
+    "from": "DUS",
+    "to": "LON"
+  },
+  {
+    "from": "AUH",
+    "to": "DOH"
+  },
+  {
+    "from": "BUD",
+    "to": "WRO"
+  },
+  {
+    "from": "IST",
+    "to": "FRU"
+  },
+  {
+    "from": "PAR",
+    "to": "SZX"
+  },
+  {
+    "from": "NUE",
+    "to": "SHA"
+  },
+  {
+    "from": "LAX",
+    "to": "OGG"
+  },
+  {
+    "from": "BKK",
+    "to": "JKT"
+  },
+  {
+    "from": "AMS",
+    "to": "TBS"
+  },
+  {
+    "from": "DUS",
+    "to": "BKK"
+  },
+  {
+    "from": "TYO",
+    "to": "MAD"
+  },
+  {
+    "from": "BUD",
+    "to": "BCN"
+  },
+  {
+    "from": "TLV",
+    "to": "ATH"
+  },
+  {
+    "from": "RUH",
+    "to": "COK"
+  },
+  {
+    "from": "PAR",
+    "to": "OSA"
+  },
+  {
+    "from": "KHH",
+    "to": "FUK"
+  },
+  {
+    "from": "LON",
+    "to": "GDN"
+  },
+  {
+    "from": "ADL",
+    "to": "MAA"
+  },
+  {
+    "from": "TPE",
+    "to": "USU"
+  },
+  {
+    "from": "TUN",
+    "to": "KUL"
+  },
+  {
+    "from": "DVO",
+    "to": "BKK"
+  },
+  {
+    "from": "CMN",
+    "to": "ROM"
+  },
+  {
+    "from": "PAR",
+    "to": "HAM"
+  },
+  {
+    "from": "CTA",
+    "to": "PSA"
+  },
+  {
+    "from": "LON",
+    "to": "PEW"
+  },
+  {
+    "from": "SJC",
+    "to": "TYO"
+  },
+  {
+    "from": "BRS",
+    "to": "BCN"
+  },
+  {
+    "from": "SYD",
+    "to": "SIN"
+  },
+  {
+    "from": "MAD",
+    "to": "TYO"
+  },
+  {
+    "from": "BCN",
+    "to": "SOF"
+  },
+  {
+    "from": "BKK",
+    "to": "LPQ"
+  },
+  {
+    "from": "BOS",
+    "to": "VTE"
+  },
+  {
+    "from": "KRK",
+    "to": "WAW"
+  },
+  {
+    "from": "ZRH",
+    "to": "HER"
+  },
+  {
+    "from": "OSA",
+    "to": "ZRH"
+  },
+  {
+    "from": "VIE",
+    "to": "TUN"
+  },
+  {
+    "from": "EDI",
+    "to": "YYC"
+  },
+  {
+    "from": "HEL",
+    "to": "CPH"
+  },
+  {
+    "from": "VLC",
+    "to": "AMS"
+  },
+  {
+    "from": "MIA",
+    "to": "PBM"
+  },
+  {
+    "from": "VLC",
+    "to": "BJS"
+  },
+  {
+    "from": "SYD",
+    "to": "CHC"
+  },
+  {
+    "from": "SKG",
+    "to": "LCA"
+  },
+  {
+    "from": "MUC",
+    "to": "BOG"
+  },
+  {
+    "from": "GLA",
+    "to": "CAI"
+  },
+  {
+    "from": "FMM",
+    "to": "PMI"
+  },
+  {
+    "from": "STO",
+    "to": "REK"
+  },
+  {
+    "from": "BKK",
+    "to": "FRA"
+  },
+  {
+    "from": "BRU",
+    "to": "CMN"
+  },
+  {
+    "from": "CMN",
+    "to": "KUL"
+  },
+  {
+    "from": "TPE",
+    "to": "USM"
+  },
+  {
+    "from": "KWI",
+    "to": "IST"
+  },
+  {
+    "from": "DUB",
+    "to": "ATH"
+  },
+  {
+    "from": "SYD",
+    "to": "YVR"
+  },
+  {
+    "from": "RGN",
+    "to": "NYC"
+  },
+  {
+    "from": "MEL",
+    "to": "CGQ"
+  },
+  {
+    "from": "SAO",
+    "to": "XAP"
+  },
+  {
+    "from": "TGZ",
+    "to": "MAN"
+  },
+  {
+    "from": "LON",
+    "to": "TLV"
+  },
+  {
+    "from": "BCN",
+    "to": "SIN"
+  },
+  {
+    "from": "STR",
+    "to": "SKG"
+  },
+  {
+    "from": "MOW",
+    "to": "VLC"
+  },
+  {
+    "from": "MAD",
+    "to": "ACE"
+  },
+  {
+    "from": "EBB",
+    "to": "ADD"
+  },
+  {
+    "from": "BRU",
+    "to": "NAP"
+  },
+  {
+    "from": "DOH",
+    "to": "AUH"
+  },
+  {
+    "from": "MIA",
+    "to": "BOG"
+  },
+  {
+    "from": "BER",
+    "to": "WAW"
+  },
+  {
+    "from": "VIE",
+    "to": "ROM"
+  },
+  {
+    "from": "DEL",
+    "to": "BBI"
+  },
+  {
+    "from": "LAX",
+    "to": "HOU"
+  },
+  {
+    "from": "SIN",
+    "to": "BOG"
+  },
+  {
+    "from": "YMQ",
+    "to": "MEX"
+  },
+  {
+    "from": "MNL",
+    "to": "CBO"
+  },
+  {
+    "from": "PAR",
+    "to": "TCI"
+  },
+  {
+    "from": "PER",
+    "to": "NKG"
+  },
+  {
+    "from": "BHX",
+    "to": "JNB"
+  },
+  {
+    "from": "YMQ",
+    "to": "SFO"
+  },
+  {
+    "from": "HKG",
+    "to": "STR"
+  },
+  {
+    "from": "SHJ",
+    "to": "IST"
+  },
+  {
+    "from": "MUC",
+    "to": "AYT"
+  },
+  {
+    "from": "ADL",
+    "to": "LON"
+  },
+  {
+    "from": "YEA",
+    "to": "YYJ"
+  },
+  {
+    "from": "DTM",
+    "to": "SBZ"
+  },
+  {
+    "from": "VNO",
+    "to": "LAX"
+  },
+  {
+    "from": "MES",
+    "to": "SIN"
+  },
+  {
+    "from": "NYC",
+    "to": "MKC"
+  },
+  {
+    "from": "TLV",
+    "to": "PAR"
+  },
+  {
+    "from": "LON",
+    "to": "ABV"
+  },
+  {
+    "from": "BRU",
+    "to": "BJM"
+  },
+  {
+    "from": "ROM",
+    "to": "MIL"
+  },
+  {
+    "from": "HDY",
+    "to": "CNX"
+  },
+  {
+    "from": "KWI",
+    "to": "MAD"
+  },
+  {
+    "from": "TPE",
+    "to": "TAE"
+  },
+  {
+    "from": "SYD",
+    "to": "ATQ"
+  },
+  {
+    "from": "CAI",
+    "to": "BKK"
+  },
+  {
+    "from": "LYS",
+    "to": "JKT"
+  },
+  {
+    "from": "DFW",
+    "to": "IST"
+  },
+  {
+    "from": "STR",
+    "to": "BEY"
+  },
+  {
+    "from": "OKA",
+    "to": "DPS"
+  },
+  {
+    "from": "BUE",
+    "to": "MIA"
+  },
+  {
+    "from": "PAR",
+    "to": "GVA"
+  },
+  {
+    "from": "TLL",
+    "to": "DUS"
+  },
+  {
+    "from": "SIN",
+    "to": "NYC"
+  },
+  {
+    "from": "BKK",
+    "to": "WUH"
+  },
+  {
+    "from": "BUD",
+    "to": "WAW"
+  },
+  {
+    "from": "TRN",
+    "to": "MIA"
+  },
+  {
+    "from": "CLE",
+    "to": "NJF"
+  },
+  {
+    "from": "SYD",
+    "to": "WNZ"
+  },
+  {
+    "from": "BKK",
+    "to": "STO"
+  },
+  {
+    "from": "MRS",
+    "to": "AGP"
+  },
+  {
+    "from": "LYS",
+    "to": "BJA"
+  },
+  {
+    "from": "SYD",
+    "to": "HET"
+  },
+  {
+    "from": "SAO",
+    "to": "FRA"
+  },
+  {
+    "from": "MAN",
+    "to": "ACC"
+  },
+  {
+    "from": "SEL",
+    "to": "MES"
+  },
+  {
+    "from": "SEA",
+    "to": "NYC"
+  },
+  {
+    "from": "CAI",
+    "to": "PAR"
+  },
+  {
+    "from": "NYC",
+    "to": "WAS"
+  },
+  {
+    "from": "FLR",
+    "to": "NYC"
+  },
+  {
+    "from": "PRG",
+    "to": "MIL"
+  },
+  {
+    "from": "MDL",
+    "to": "LUM"
+  },
+  {
+    "from": "BNE",
+    "to": "TYO"
+  },
+  {
+    "from": "BCN",
+    "to": "ACE"
+  },
+  {
+    "from": "MNL",
+    "to": "KHH"
+  },
+  {
+    "from": "DUB",
+    "to": "BRS"
+  },
+  {
+    "from": "SIN",
+    "to": "SHE"
+  },
+  {
+    "from": "CJS",
+    "to": "MEX"
+  },
+  {
+    "from": "DXB",
+    "to": "DMM"
+  },
+  {
+    "from": "BER",
+    "to": "LIS"
+  },
+  {
+    "from": "SAN",
+    "to": "SEA"
+  },
+  {
+    "from": "SYD",
+    "to": "ZRH"
+  },
+  {
+    "from": "ZRH",
+    "to": "SVQ"
+  },
+  {
+    "from": "CMN",
+    "to": "TUN"
+  },
+  {
+    "from": "MEX",
+    "to": "PXM"
+  },
+  {
+    "from": "LIL",
+    "to": "ALG"
+  },
+  {
+    "from": "DUS",
+    "to": "MIL"
+  },
+  {
+    "from": "OSA",
+    "to": "GUM"
+  },
+  {
+    "from": "NQT",
+    "to": "PMI"
+  },
+  {
+    "from": "KUL",
+    "to": "SBW"
+  },
+  {
+    "from": "DEL",
+    "to": "ATQ"
+  },
+  {
+    "from": "VTE",
+    "to": "CAN"
+  },
+  {
+    "from": "BUD",
+    "to": "BER"
+  },
+  {
+    "from": "CWL",
+    "to": "ALC"
+  },
+  {
+    "from": "LON",
+    "to": "RAK"
+  },
+  {
+    "from": "BRE",
+    "to": "ALY"
+  },
+  {
+    "from": "AKL",
+    "to": "SIA"
+  },
+  {
+    "from": "STO",
+    "to": "VNO"
+  },
+  {
+    "from": "SIN",
+    "to": "VIE"
+  },
+  {
+    "from": "SDF",
+    "to": "SRQ"
+  },
+  {
+    "from": "HKG",
+    "to": "BKI"
+  },
+  {
+    "from": "STO",
+    "to": "LIS"
+  },
+  {
+    "from": "EDI",
+    "to": "SHA"
+  },
+  {
+    "from": "SFO",
+    "to": "SAN"
+  },
+  {
+    "from": "SEL",
+    "to": "YYC"
+  },
+  {
+    "from": "SEL",
+    "to": "MPH"
+  },
+  {
+    "from": "NAS",
+    "to": "GGT"
+  },
+  {
+    "from": "SEL",
+    "to": "FSZ"
+  },
+  {
+    "from": "DUB",
+    "to": "CUN"
+  },
+  {
+    "from": "RTM",
+    "to": "PUY"
+  },
+  {
+    "from": "ZRH",
+    "to": "GRZ"
+  },
+  {
+    "from": "DUS",
+    "to": "BAK"
+  },
+  {
+    "from": "LYS",
+    "to": "TIA"
+  },
+  {
+    "from": "SYD",
+    "to": "IST"
+  },
+  {
+    "from": "UTH",
+    "to": "HKG"
+  },
+  {
+    "from": "HAM",
+    "to": "OSL"
+  },
+  {
+    "from": "HAM",
+    "to": "VIE"
+  },
+  {
+    "from": "LYS",
+    "to": "WUH"
+  },
+  {
+    "from": "BUH",
+    "to": "JED"
+  },
+  {
+    "from": "NAP",
+    "to": "LON"
+  },
+  {
+    "from": "HKG",
+    "to": "FYV"
+  },
+  {
+    "from": "LON",
+    "to": "BDS"
+  },
+  {
+    "from": "DXB",
+    "to": "GLA"
+  },
+  {
+    "from": "YVR",
+    "to": "TSN"
+  },
+  {
+    "from": "NTE",
+    "to": "OPO"
+  },
+  {
+    "from": "MUC",
+    "to": "CMB"
+  },
+  {
+    "from": "LON",
+    "to": "BSB"
+  },
+  {
+    "from": "ORL",
+    "to": "EYW"
+  },
+  {
+    "from": "BUD",
+    "to": "BJS"
+  },
+  {
+    "from": "MAN",
+    "to": "POZ"
+  },
+  {
+    "from": "BAH",
+    "to": "AMM"
+  },
+  {
+    "from": "NAP",
+    "to": "OLB"
+  },
+  {
+    "from": "BER",
+    "to": "THR"
+  },
+  {
+    "from": "JKT",
+    "to": "DXB"
+  },
+  {
+    "from": "NYC",
+    "to": "TAS"
+  },
+  {
+    "from": "CBR",
+    "to": "BNE"
+  },
+  {
+    "from": "FRA",
+    "to": "DFW"
+  },
+  {
+    "from": "ALC",
+    "to": "PAR"
+  },
+  {
+    "from": "IST",
+    "to": "LON"
+  },
+  {
+    "from": "VCE",
+    "to": "PRG"
+  },
+  {
+    "from": "FRA",
+    "to": "FOC"
+  },
+  {
+    "from": "LIS",
+    "to": "AMS"
+  },
+  {
+    "from": "VIE",
+    "to": "MIL"
+  },
+  {
+    "from": "YTO",
+    "to": "SHE"
+  },
+  {
+    "from": "DUS",
+    "to": "ATL"
+  },
+  {
+    "from": "LON",
+    "to": "BTS"
+  },
+  {
+    "from": "TPE",
+    "to": "ROR"
+  },
+  {
+    "from": "NCE",
+    "to": "MAD"
+  },
+  {
+    "from": "ROM",
+    "to": "VGO"
+  },
+  {
+    "from": "GOA",
+    "to": "NYC"
+  },
+  {
+    "from": "HKT",
+    "to": "SHA"
+  },
+  {
+    "from": "FRA",
+    "to": "CCU"
+  },
+  {
+    "from": "BAH",
+    "to": "JED"
+  },
+  {
+    "from": "TYO",
+    "to": "TAE"
+  },
+  {
+    "from": "HEL",
+    "to": "IST"
+  },
+  {
+    "from": "BKK",
+    "to": "TAG"
+  },
+  {
+    "from": "KHH",
+    "to": "KUL"
+  },
+  {
+    "from": "SAO",
+    "to": "CBB"
+  },
+  {
+    "from": "DXB",
+    "to": "SKT"
+  },
+  {
+    "from": "AKL",
+    "to": "HKG"
+  },
+  {
+    "from": "TYO",
+    "to": "VIE"
+  },
+  {
+    "from": "SFO",
+    "to": "SYD"
+  },
+  {
+    "from": "LUX",
+    "to": "IST"
+  },
+  {
+    "from": "MAN",
+    "to": "BLR"
+  },
+  {
+    "from": "MIA",
+    "to": "SXM"
+  },
+  {
+    "from": "ADL",
+    "to": "HKG"
+  },
+  {
+    "from": "HAN",
+    "to": "NGO"
+  },
+  {
+    "from": "KUL",
+    "to": "LAX"
+  },
+  {
+    "from": "OSL",
+    "to": "VIE"
+  },
+  {
+    "from": "BKK",
+    "to": "THS"
+  },
+  {
+    "from": "ECN",
+    "to": "IST"
+  },
+  {
+    "from": "HAM",
+    "to": "SOF"
+  },
+  {
+    "from": "NYC",
+    "to": "HNL"
+  },
+  {
+    "from": "MEL",
+    "to": "CJB"
+  },
+  {
+    "from": "BEY",
+    "to": "TUN"
+  },
+  {
+    "from": "WAW",
+    "to": "WRO"
+  },
+  {
+    "from": "HRE",
+    "to": "DXB"
+  },
+  {
+    "from": "SSA",
+    "to": "MAD"
+  },
+  {
+    "from": "SIN",
+    "to": "AKL"
+  },
+  {
+    "from": "SIN",
+    "to": "SOF"
+  },
+  {
+    "from": "SGN",
+    "to": "LON"
+  },
+  {
+    "from": "PAR",
+    "to": "FDF"
+  },
+  {
+    "from": "DMM",
+    "to": "LON"
+  },
+  {
+    "from": "YTO",
+    "to": "KMG"
+  },
+  {
+    "from": "OSA",
+    "to": "LON"
+  },
+  {
+    "from": "MAD",
+    "to": "CTG"
+  },
+  {
+    "from": "KWI",
+    "to": "AMM"
+  },
+  {
+    "from": "SVQ",
+    "to": "LPA"
+  },
+  {
+    "from": "MUC",
+    "to": "ATL"
+  },
+  {
+    "from": "SEL",
+    "to": "AKL"
+  },
+  {
+    "from": "BIO",
+    "to": "LON"
+  },
+  {
+    "from": "BRS",
+    "to": "PMI"
+  },
+  {
+    "from": "AMS",
+    "to": "PBM"
+  },
+  {
+    "from": "BOS",
+    "to": "DTT"
+  },
+  {
+    "from": "MOW",
+    "to": "HKG"
+  },
+  {
+    "from": "KWI",
+    "to": "ISB"
+  },
+  {
+    "from": "MOW",
+    "to": "SIN"
+  },
+  {
+    "from": "EAP",
+    "to": "ALG"
+  },
+  {
+    "from": "WAS",
+    "to": "CMN"
+  },
+  {
+    "from": "JKT",
+    "to": "PKU"
+  },
+  {
+    "from": "DOH",
+    "to": "DUB"
+  },
+  {
+    "from": "DUS",
+    "to": "DAC"
+  },
+  {
+    "from": "MIA",
+    "to": "GCM"
+  },
+  {
+    "from": "AMS",
+    "to": "KMG"
+  },
+  {
+    "from": "ORL",
+    "to": "ATL"
+  },
+  {
+    "from": "SFO",
+    "to": "HNL"
+  },
+  {
+    "from": "BER",
+    "to": "VLC"
+  },
+  {
+    "from": "FRA",
+    "to": "HRB"
+  },
+  {
+    "from": "ROM",
+    "to": "IBZ"
+  },
+  {
+    "from": "JNB",
+    "to": "WDH"
+  },
+  {
+    "from": "COK",
+    "to": "FRA"
+  },
+  {
+    "from": "HKG",
+    "to": "CGY"
+  },
+  {
+    "from": "MOW",
+    "to": "AYT"
+  },
+  {
+    "from": "STO",
+    "to": "UME"
+  },
+  {
+    "from": "LON",
+    "to": "KSC"
+  },
+  {
+    "from": "NBO",
+    "to": "JUB"
+  },
+  {
+    "from": "YXE",
+    "to": "YYJ"
+  },
+  {
+    "from": "LON",
+    "to": "CRA"
+  },
+  {
+    "from": "BHX",
+    "to": "JED"
+  },
+  {
+    "from": "ZRH",
+    "to": "GDN"
+  },
+  {
+    "from": "MLA",
+    "to": "BJS"
+  },
+  {
+    "from": "EDI",
+    "to": "TYO"
+  },
+  {
+    "from": "AMS",
+    "to": "AGA"
+  },
+  {
+    "from": "YTO",
+    "to": "SIN"
+  },
+  {
+    "from": "DUB",
+    "to": "SPU"
+  },
+  {
+    "from": "UTH",
+    "to": "HKT"
+  },
+  {
+    "from": "LON",
+    "to": "AUS"
+  },
+  {
+    "from": "DUS",
+    "to": "CMB"
+  },
+  {
+    "from": "OSA",
+    "to": "KMG"
+  },
+  {
+    "from": "BKK",
+    "to": "PER"
+  },
+  {
+    "from": "GLA",
+    "to": "BJS"
+  },
+  {
+    "from": "PER",
+    "to": "SIN"
+  },
+  {
+    "from": "MAN",
+    "to": "TCI"
+  },
+  {
+    "from": "BER",
+    "to": "ROM"
+  },
+  {
+    "from": "TLS",
+    "to": "ORN"
+  },
+  {
+    "from": "MAN",
+    "to": "GOT"
+  },
+  {
+    "from": "DLM",
+    "to": "IST"
+  },
+  {
+    "from": "AMS",
+    "to": "DAR"
+  },
+  {
+    "from": "AKL",
+    "to": "SYD"
+  },
+  {
+    "from": "ZRH",
+    "to": "ATH"
+  },
+  {
+    "from": "LON",
+    "to": "CCS"
+  },
+  {
+    "from": "MEL",
+    "to": "ZQN"
+  },
+  {
+    "from": "MOW",
+    "to": "XMN"
+  },
+  {
+    "from": "SEL",
+    "to": "TLV"
+  },
+  {
+    "from": "EDI",
+    "to": "BTS"
+  },
+  {
+    "from": "JKT",
+    "to": "SEL"
+  },
+  {
+    "from": "ADL",
+    "to": "SHE"
+  },
+  {
+    "from": "MAN",
+    "to": "TPE"
+  },
+  {
+    "from": "MEX",
+    "to": "GDL"
+  },
+  {
+    "from": "DUS",
+    "to": "MAD"
+  },
+  {
+    "from": "ATH",
+    "to": "LIS"
+  },
+  {
+    "from": "YYC",
+    "to": "YXX"
+  },
+  {
+    "from": "CAI",
+    "to": "BJS"
+  },
+  {
+    "from": "PAR",
+    "to": "BKO"
+  },
+  {
+    "from": "TYO",
+    "to": "MYJ"
+  },
+  {
+    "from": "WAS",
+    "to": "LFW"
+  },
+  {
+    "from": "GVA",
+    "to": "BKK"
+  },
+  {
+    "from": "HAN",
+    "to": "NKG"
+  },
+  {
+    "from": "DPS",
+    "to": "TPE"
+  },
+  {
+    "from": "AMM",
+    "to": "HRG"
+  },
+  {
+    "from": "LIS",
+    "to": "HKG"
+  },
+  {
+    "from": "PAR",
+    "to": "NAP"
+  },
+  {
+    "from": "SEL",
+    "to": "JNB"
+  },
+  {
+    "from": "BCN",
+    "to": "VCE"
+  },
+  {
+    "from": "BLQ",
+    "to": "BER"
+  },
+  {
+    "from": "AKL",
+    "to": "TSN"
+  },
+  {
+    "from": "MEL",
+    "to": "PEN"
+  },
+  {
+    "from": "LHE",
+    "to": "JED"
+  },
+  {
+    "from": "FRA",
+    "to": "OSL"
+  },
+  {
+    "from": "GVA",
+    "to": "NCE"
+  },
+  {
+    "from": "SGN",
+    "to": "HFE"
+  },
+  {
+    "from": "MIA",
+    "to": "SIN"
+  },
+  {
+    "from": "FLN",
+    "to": "LON"
+  },
+  {
+    "from": "FRA",
+    "to": "TLV"
+  },
+  {
+    "from": "VCE",
+    "to": "PAR"
+  },
+  {
+    "from": "VIX",
+    "to": "REC"
+  },
+  {
+    "from": "AMS",
+    "to": "GOT"
+  },
+  {
+    "from": "SYD",
+    "to": "DLC"
+  },
+  {
+    "from": "SIN",
+    "to": "BPN"
+  },
+  {
+    "from": "MAD",
+    "to": "OVD"
+  },
+  {
+    "from": "ORL",
+    "to": "CHI"
+  },
+  {
+    "from": "LON",
+    "to": "MRS"
+  },
+  {
+    "from": "WAW",
+    "to": "DOH"
+  },
+  {
+    "from": "YMQ",
+    "to": "MRS"
+  },
+  {
+    "from": "WLG",
+    "to": "NAN"
+  },
+  {
+    "from": "SDJ",
+    "to": "SPK"
+  },
+  {
+    "from": "FRA",
+    "to": "JKT"
+  },
+  {
+    "from": "GVA",
+    "to": "MNL"
+  },
+  {
+    "from": "LED",
+    "to": "IST"
+  },
+  {
+    "from": "PAR",
+    "to": "BZV"
+  },
+  {
+    "from": "HAM",
+    "to": "DTT"
+  },
+  {
+    "from": "DAD",
+    "to": "KUL"
+  },
+  {
+    "from": "MID",
+    "to": "GDL"
+  },
+  {
+    "from": "MNL",
+    "to": "OZC"
+  },
+  {
+    "from": "SKG",
+    "to": "JKH"
+  },
+  {
+    "from": "RUH",
+    "to": "IST"
+  },
+  {
+    "from": "SFO",
+    "to": "MFM"
+  },
+  {
+    "from": "HKG",
+    "to": "CJU"
+  },
+  {
+    "from": "LBA",
+    "to": "GDN"
+  },
+  {
+    "from": "CHC",
+    "to": "CAN"
+  },
+  {
+    "from": "CTA",
+    "to": "VRN"
+  },
+  {
+    "from": "FRA",
+    "to": "RIX"
+  },
+  {
+    "from": "PAR",
+    "to": "DUB"
+  },
+  {
+    "from": "MAD",
+    "to": "DBV"
+  },
+  {
+    "from": "BLR",
+    "to": "LON"
+  },
+  {
+    "from": "ZRH",
+    "to": "BJS"
+  },
+  {
+    "from": "AUH",
+    "to": "BOM"
+  },
+  {
+    "from": "BEY",
+    "to": "JED"
+  },
+  {
+    "from": "LAX",
+    "to": "CTU"
+  },
+  {
+    "from": "BCN",
+    "to": "BKO"
+  },
+  {
+    "from": "MUC",
+    "to": "NAP"
+  },
+  {
+    "from": "PNH",
+    "to": "BJS"
+  },
+  {
+    "from": "AKL",
+    "to": "HRB"
+  },
+  {
+    "from": "VRN",
+    "to": "NAP"
+  },
+  {
+    "from": "JNB",
+    "to": "ZNZ"
+  },
+  {
+    "from": "LED",
+    "to": "AYT"
+  },
+  {
+    "from": "NCE",
+    "to": "CZL"
+  },
+  {
+    "from": "MAD",
+    "to": "NBO"
+  },
+  {
+    "from": "DUB",
+    "to": "HRE"
+  },
+  {
+    "from": "NCL",
+    "to": "DUB"
+  },
+  {
+    "from": "DUB",
+    "to": "JNB"
+  },
+  {
+    "from": "KWI",
+    "to": "LON"
+  },
+  {
+    "from": "SEL",
+    "to": "KTM"
+  },
+  {
+    "from": "VCE",
+    "to": "VIE"
+  },
+  {
+    "from": "WAW",
+    "to": "OSA"
+  },
+  {
+    "from": "CEB",
+    "to": "CGY"
+  },
+  {
+    "from": "HKG",
+    "to": "HOU"
+  },
+  {
+    "from": "OSL",
+    "to": "NYC"
+  },
+  {
+    "from": "MAN",
+    "to": "MNL"
+  },
+  {
+    "from": "TPE",
+    "to": "CJU"
+  },
+  {
+    "from": "HAM",
+    "to": "TIA"
+  },
+  {
+    "from": "EDI",
+    "to": "BFS"
+  },
+  {
+    "from": "IST",
+    "to": "BEY"
+  },
+  {
+    "from": "YTO",
+    "to": "BEG"
+  },
+  {
+    "from": "MAN",
+    "to": "MUC"
+  },
+  {
+    "from": "PAR",
+    "to": "JNB"
+  },
+  {
+    "from": "CUN",
+    "to": "LIS"
+  },
+  {
+    "from": "GVA",
+    "to": "OPO"
+  },
+  {
+    "from": "CGN",
+    "to": "VLC"
+  },
+  {
+    "from": "DEN",
+    "to": "LON"
+  },
+  {
+    "from": "JNB",
+    "to": "MUB"
+  },
+  {
+    "from": "IST",
+    "to": "KUL"
+  },
+  {
+    "from": "MEX",
+    "to": "SEL"
+  },
+  {
+    "from": "MRS",
+    "to": "CZL"
+  },
+  {
+    "from": "ACC",
+    "to": "JNB"
+  },
+  {
+    "from": "WAS",
+    "to": "SAO"
+  },
+  {
+    "from": "MIL",
+    "to": "REG"
+  },
+  {
+    "from": "CUN",
+    "to": "YMQ"
+  },
+  {
+    "from": "KUL",
+    "to": "ROM"
+  },
+  {
+    "from": "LON",
+    "to": "NGO"
+  },
+  {
+    "from": "FUK",
+    "to": "SHE"
+  },
+  {
+    "from": "DXB",
+    "to": "ISB"
+  },
+  {
+    "from": "YVR",
+    "to": "LIH"
+  },
+  {
+    "from": "PAR",
+    "to": "JTR"
+  },
+  {
+    "from": "FRA",
+    "to": "DJE"
+  },
+  {
+    "from": "HKG",
+    "to": "ISB"
+  },
+  {
+    "from": "LON",
+    "to": "BRI"
+  },
+  {
+    "from": "DUB",
+    "to": "KUL"
+  },
+  {
+    "from": "ABV",
+    "to": "LOS"
+  },
+  {
+    "from": "DEL",
+    "to": "TAS"
+  },
+  {
+    "from": "ABZ",
+    "to": "MAN"
+  },
+  {
+    "from": "HAN",
+    "to": "LON"
+  },
+  {
+    "from": "BIO",
+    "to": "GUA"
+  },
+  {
+    "from": "AOR",
+    "to": "KUL"
+  },
+  {
+    "from": "MUC",
+    "to": "DTT"
+  },
+  {
+    "from": "TYO",
+    "to": "BOM"
+  },
+  {
+    "from": "ADD",
+    "to": "TYO"
+  },
+  {
+    "from": "KUL",
+    "to": "AOR"
+  },
+  {
+    "from": "BFS",
+    "to": "BHX"
+  },
+  {
+    "from": "DXB",
+    "to": "TAS"
+  },
+  {
+    "from": "BHX",
+    "to": "ADD"
+  },
+  {
+    "from": "DMM",
+    "to": "MAA"
+  },
+  {
+    "from": "DXB",
+    "to": "BHO"
+  },
+  {
+    "from": "TYO",
+    "to": "IST"
+  },
+  {
+    "from": "LHE",
+    "to": "EDI"
+  },
+  {
+    "from": "LON",
+    "to": "CHQ"
+  },
+  {
+    "from": "MAN",
+    "to": "NAP"
+  },
+  {
+    "from": "NGO",
+    "to": "PNH"
+  },
+  {
+    "from": "BUD",
+    "to": "STO"
+  },
+  {
+    "from": "DUB",
+    "to": "MRU"
+  },
+  {
+    "from": "HKG",
+    "to": "PEN"
+  },
+  {
+    "from": "ROM",
+    "to": "AGP"
+  },
+  {
+    "from": "OSA",
+    "to": "CGO"
+  },
+  {
+    "from": "NQT",
+    "to": "DUB"
+  },
+  {
+    "from": "DMM",
+    "to": "RUH"
+  },
+  {
+    "from": "SYD",
+    "to": "CNS"
+  },
+  {
+    "from": "RGN",
+    "to": "NKG"
+  },
+  {
+    "from": "BKK",
+    "to": "TAE"
+  },
+  {
+    "from": "MAD",
+    "to": "ACC"
+  },
+  {
+    "from": "TPE",
+    "to": "HRB"
+  },
+  {
+    "from": "LON",
+    "to": "KBV"
+  },
+  {
+    "from": "SIN",
+    "to": "IST"
+  },
+  {
+    "from": "AMS",
+    "to": "EVN"
+  },
+  {
+    "from": "ZRH",
+    "to": "TCI"
+  },
+  {
+    "from": "HKG",
+    "to": "TSN"
+  },
+  {
+    "from": "EIN",
+    "to": "SOF"
+  },
+  {
+    "from": "VNO",
+    "to": "HAM"
+  },
+  {
+    "from": "YYC",
+    "to": "CUN"
+  },
+  {
+    "from": "SYD",
+    "to": "SGN"
+  },
+  {
+    "from": "SEL",
+    "to": "ATL"
+  },
+  {
+    "from": "BEY",
+    "to": "KWI"
+  },
+  {
+    "from": "HAM",
+    "to": "TOS"
+  },
+  {
+    "from": "MAN",
+    "to": "RAK"
+  },
+  {
+    "from": "RDU",
+    "to": "AMM"
+  },
+  {
+    "from": "SEL",
+    "to": "PER"
+  },
+  {
+    "from": "GDL",
+    "to": "CUN"
+  },
+  {
+    "from": "VIE",
+    "to": "AYT"
+  },
+  {
+    "from": "TPE",
+    "to": "MIL"
+  },
+  {
+    "from": "ADL",
+    "to": "TNA"
+  },
+  {
+    "from": "MAD",
+    "to": "TLV"
+  },
+  {
+    "from": "HKG",
+    "to": "TUG"
+  },
+  {
+    "from": "IST",
+    "to": "DOH"
+  },
+  {
+    "from": "MIL",
+    "to": "LUX"
+  },
+  {
+    "from": "KIV",
+    "to": "IST"
+  },
+  {
+    "from": "HOU",
+    "to": "SEL"
+  },
+  {
+    "from": "BOH",
+    "to": "VCE"
+  },
+  {
+    "from": "MIL",
+    "to": "SEZ"
+  },
+  {
+    "from": "NAP",
+    "to": "TRN"
+  },
+  {
+    "from": "KGL",
+    "to": "JNB"
+  },
+  {
+    "from": "SGN",
+    "to": "VCS"
+  },
+  {
+    "from": "ATL",
+    "to": "HKG"
+  },
+  {
+    "from": "BOM",
+    "to": "NYC"
+  },
+  {
+    "from": "MEL",
+    "to": "TNA"
+  },
+  {
+    "from": "FRA",
+    "to": "ANK"
+  },
+  {
+    "from": "HAN",
+    "to": "LAX"
+  },
+  {
+    "from": "EIN",
+    "to": "FAO"
+  },
+  {
+    "from": "JKT",
+    "to": "SOC"
+  },
+  {
+    "from": "OSL",
+    "to": "BGO"
+  },
+  {
+    "from": "BFS",
+    "to": "LBA"
+  },
+  {
+    "from": "LAX",
+    "to": "DEN"
+  },
+  {
+    "from": "MUC",
+    "to": "ZNZ"
+  },
+  {
+    "from": "CHI",
+    "to": "NYC"
+  },
+  {
+    "from": "DPS",
+    "to": "SIN"
+  },
+  {
+    "from": "TGG",
+    "to": "KUL"
+  },
+  {
+    "from": "DUB",
+    "to": "BLR"
+  },
+  {
+    "from": "VRN",
+    "to": "CTA"
+  },
+  {
+    "from": "EDI",
+    "to": "SAO"
+  },
+  {
+    "from": "ROM",
+    "to": "SVQ"
+  },
+  {
+    "from": "VLC",
+    "to": "SOF"
+  },
+  {
+    "from": "MUC",
+    "to": "BOM"
+  },
+  {
+    "from": "PAR",
+    "to": "ZTH"
+  },
+  {
+    "from": "OSA",
+    "to": "ROM"
+  },
+  {
+    "from": "SIN",
+    "to": "GES"
+  },
+  {
+    "from": "TPE",
+    "to": "FOC"
+  },
+  {
+    "from": "SEL",
+    "to": "TBS"
+  },
+  {
+    "from": "HEL",
+    "to": "RVN"
+  },
+  {
+    "from": "BHX",
+    "to": "ROM"
+  },
+  {
+    "from": "TPE",
+    "to": "KMG"
+  },
+  {
+    "from": "VCE",
+    "to": "BRI"
+  },
+  {
+    "from": "HKG",
+    "to": "ADD"
+  },
+  {
+    "from": "MEX",
+    "to": "OAX"
+  },
+  {
+    "from": "SVG",
+    "to": "LON"
+  },
+  {
+    "from": "LON",
+    "to": "SDR"
+  },
+  {
+    "from": "FRA",
+    "to": "PMI"
+  },
+  {
+    "from": "HKG",
+    "to": "BLQ"
+  },
+  {
+    "from": "DRS",
+    "to": "SHA"
+  },
+  {
+    "from": "OSA",
+    "to": "KUL"
+  },
+  {
+    "from": "SGN",
+    "to": "AKL"
+  },
+  {
+    "from": "DEL",
+    "to": "YTO"
+  },
+  {
+    "from": "BOG",
+    "to": "SJO"
+  },
+  {
+    "from": "PMI",
+    "to": "LON"
+  },
+  {
+    "from": "SYD",
+    "to": "AMS"
+  },
+  {
+    "from": "ZRH",
+    "to": "BER"
+  },
+  {
+    "from": "TYO",
+    "to": "STR"
+  },
+  {
+    "from": "BLL",
+    "to": "VIE"
+  },
+  {
+    "from": "DPS",
+    "to": "HAN"
+  },
+  {
+    "from": "LON",
+    "to": "LEI"
+  },
+  {
+    "from": "PVU",
+    "to": "SNA"
+  },
+  {
+    "from": "BKK",
+    "to": "SHE"
+  },
+  {
+    "from": "TYO",
+    "to": "MMY"
+  },
+  {
+    "from": "AOI",
+    "to": "CTA"
+  },
+  {
+    "from": "TPE",
+    "to": "LIS"
+  },
+  {
+    "from": "PAR",
+    "to": "AAE"
+  },
+  {
+    "from": "NGO",
+    "to": "LAX"
+  },
+  {
+    "from": "SOF",
+    "to": "FRA"
+  },
+  {
+    "from": "MVD",
+    "to": "BUE"
+  },
+  {
+    "from": "YYC",
+    "to": "YYJ"
+  },
+  {
+    "from": "BCN",
+    "to": "TYO"
+  },
+  {
+    "from": "ZRH",
+    "to": "TAS"
+  },
+  {
+    "from": "JKT",
+    "to": "BKS"
+  },
+  {
+    "from": "EBL",
+    "to": "AMM"
+  },
+  {
+    "from": "OSA",
+    "to": "DLC"
+  },
+  {
+    "from": "LON",
+    "to": "ZAG"
+  },
+  {
+    "from": "DXB",
+    "to": "MRU"
+  },
+  {
+    "from": "WAW",
+    "to": "BUH"
+  },
+  {
+    "from": "LON",
+    "to": "MCT"
+  },
+  {
+    "from": "MAD",
+    "to": "SDQ"
+  },
+  {
+    "from": "MIL",
+    "to": "ASM"
+  },
+  {
+    "from": "FMM",
+    "to": "VAR"
+  },
+  {
+    "from": "HAM",
+    "to": "BEY"
+  },
+  {
+    "from": "DPS",
+    "to": "LBJ"
+  },
+  {
+    "from": "HKG",
+    "to": "BWN"
+  },
+  {
+    "from": "HKG",
+    "to": "DFW"
+  },
+  {
+    "from": "SYD",
+    "to": "KWE"
+  },
+  {
+    "from": "BOM",
+    "to": "MAD"
+  },
+  {
+    "from": "VNO",
+    "to": "FRU"
+  },
+  {
+    "from": "SGN",
+    "to": "DLI"
+  },
+  {
+    "from": "FLL",
+    "to": "HOU"
+  },
+  {
+    "from": "IST",
+    "to": "DUS"
+  },
+  {
+    "from": "LPA",
+    "to": "MAD"
+  },
+  {
+    "from": "PER",
+    "to": "BJS"
+  },
+  {
+    "from": "YVR",
+    "to": "SGN"
+  },
+  {
+    "from": "SIN",
+    "to": "HET"
+  },
+  {
+    "from": "TBS",
+    "to": "BAK"
+  },
+  {
+    "from": "YVR",
+    "to": "SAN"
+  },
+  {
+    "from": "MSQ",
+    "to": "IST"
+  },
+  {
+    "from": "FRA",
+    "to": "MOW"
+  },
+  {
+    "from": "MRS",
+    "to": "CLY"
+  },
+  {
+    "from": "LON",
+    "to": "NOC"
+  },
+  {
+    "from": "EDI",
+    "to": "DPS"
+  },
+  {
+    "from": "EDI",
+    "to": "BLL"
+  },
+  {
+    "from": "OSA",
+    "to": "NYC"
+  },
+  {
+    "from": "JNB",
+    "to": "MPM"
+  },
+  {
+    "from": "HKG",
+    "to": "DLC"
+  },
+  {
+    "from": "NUE",
+    "to": "THR"
+  },
+  {
+    "from": "YLW",
+    "to": "YYJ"
+  },
+  {
+    "from": "STO",
+    "to": "MMA"
+  },
+  {
+    "from": "MYY",
+    "to": "SIN"
+  },
+  {
+    "from": "SIN",
+    "to": "WNZ"
+  },
+  {
+    "from": "FLR",
+    "to": "PAR"
+  },
+  {
+    "from": "CPH",
+    "to": "BJS"
+  },
+  {
+    "from": "OSA",
+    "to": "FOC"
+  },
+  {
+    "from": "CJU",
+    "to": "SIN"
+  },
+  {
+    "from": "SNA",
+    "to": "AUS"
+  },
+  {
+    "from": "DXB",
+    "to": "BCN"
+  },
+  {
+    "from": "JNB",
+    "to": "SZX"
+  },
+  {
+    "from": "MRS",
+    "to": "CAN"
+  },
+  {
+    "from": "KUL",
+    "to": "TNA"
+  },
+  {
+    "from": "DUS",
+    "to": "PRG"
+  },
+  {
+    "from": "NYC",
+    "to": "BOS"
+  },
+  {
+    "from": "MAN",
+    "to": "IOM"
+  },
+  {
+    "from": "YQR",
+    "to": "YTO"
+  },
+  {
+    "from": "AGP",
+    "to": "JKT"
+  },
+  {
+    "from": "CCU",
+    "to": "HKT"
+  },
+  {
+    "from": "ATH",
+    "to": "JKT"
+  },
+  {
+    "from": "DOH",
+    "to": "BOM"
+  },
+  {
+    "from": "LEJ",
+    "to": "BEY"
+  },
+  {
+    "from": "LON",
+    "to": "MDE"
+  },
+  {
+    "from": "PNH",
+    "to": "REP"
+  },
+  {
+    "from": "BHX",
+    "to": "EDI"
+  },
+  {
+    "from": "PER",
+    "to": "PEN"
+  },
+  {
+    "from": "FUK",
+    "to": "SPK"
+  },
+  {
+    "from": "MFM",
+    "to": "SUB"
+  },
+  {
+    "from": "TPE",
+    "to": "HAK"
+  },
+  {
+    "from": "SGN",
+    "to": "SIA"
+  },
+  {
+    "from": "LON",
+    "to": "ANK"
+  },
+  {
+    "from": "TYO",
+    "to": "BUH"
+  },
+  {
+    "from": "SIN",
+    "to": "GLA"
+  },
+  {
+    "from": "BLR",
+    "to": "PER"
+  },
+  {
+    "from": "LON",
+    "to": "KIR"
+  },
+  {
+    "from": "IST",
+    "to": "SJJ"
+  },
+  {
+    "from": "HKG",
+    "to": "JNB"
+  },
+  {
+    "from": "NAP",
+    "to": "JMK"
+  },
+  {
+    "from": "CGY",
+    "to": "MNL"
+  },
+  {
+    "from": "AUH",
+    "to": "KWI"
+  },
+  {
+    "from": "NCE",
+    "to": "CMN"
+  },
+  {
+    "from": "HKG",
+    "to": "WAS"
+  },
+  {
+    "from": "NCE",
+    "to": "SHA"
+  },
+  {
+    "from": "TYO",
+    "to": "ISB"
+  },
+  {
+    "from": "IST",
+    "to": "ISB"
+  },
+  {
+    "from": "AKL",
+    "to": "NKG"
+  },
+  {
+    "from": "BNA",
+    "to": "AMD"
+  },
+  {
+    "from": "BCN",
+    "to": "HGH"
+  },
+  {
+    "from": "HKG",
+    "to": "RXS"
+  },
+  {
+    "from": "BKK",
+    "to": "AUS"
+  },
+  {
+    "from": "NBO",
+    "to": "ZNZ"
+  },
+  {
+    "from": "RIX",
+    "to": "PRG"
+  },
+  {
+    "from": "BRU",
+    "to": "AMM"
+  },
+  {
+    "from": "YVR",
+    "to": "ORL"
+  },
+  {
+    "from": "LON",
+    "to": "YHZ"
+  },
+  {
+    "from": "DXB",
+    "to": "YTO"
+  },
+  {
+    "from": "LON",
+    "to": "SVG"
+  },
+  {
+    "from": "LON",
+    "to": "FIH"
+  },
+  {
+    "from": "NGO",
+    "to": "TSN"
+  },
+  {
+    "from": "MAD",
+    "to": "BEY"
+  },
+  {
+    "from": "SAO",
+    "to": "MEX"
+  },
+  {
+    "from": "SFO",
+    "to": "NKG"
+  },
+  {
+    "from": "GLA",
+    "to": "BRU"
+  },
+  {
+    "from": "SIN",
+    "to": "CSX"
+  },
+  {
+    "from": "AMM",
+    "to": "RUH"
+  },
+  {
+    "from": "BNE",
+    "to": "AKL"
+  },
+  {
+    "from": "YTO",
+    "to": "YXE"
+  },
+  {
+    "from": "MAD",
+    "to": "RAK"
+  },
+  {
+    "from": "SJO",
+    "to": "CTG"
+  },
+  {
+    "from": "YQG",
+    "to": "YMQ"
+  },
+  {
+    "from": "KCH",
+    "to": "BKI"
+  },
+  {
+    "from": "AMS",
+    "to": "NAP"
+  },
+  {
+    "from": "TYO",
+    "to": "JOG"
+  },
+  {
+    "from": "SAO",
+    "to": "BUE"
+  },
+  {
+    "from": "LYS",
+    "to": "BLJ"
+  },
+  {
+    "from": "LCA",
+    "to": "EVN"
+  },
+  {
+    "from": "YTO",
+    "to": "COK"
+  },
+  {
+    "from": "YMQ",
+    "to": "CAN"
+  },
+  {
+    "from": "INV",
+    "to": "BFS"
+  },
+  {
+    "from": "DKR",
+    "to": "BJL"
+  },
+  {
+    "from": "BKK",
+    "to": "SNO"
+  },
+  {
+    "from": "DUS",
+    "to": "DXB"
+  },
+  {
+    "from": "AKL",
+    "to": "WLG"
+  },
+  {
+    "from": "MOW",
+    "to": "HKT"
+  },
+  {
+    "from": "BKI",
+    "to": "MYY"
+  },
+  {
+    "from": "NCL",
+    "to": "CTU"
+  },
+  {
+    "from": "CPH",
+    "to": "WAW"
+  },
+  {
+    "from": "HKG",
+    "to": "NCL"
+  },
+  {
+    "from": "CAI",
+    "to": "LAX"
+  },
+  {
+    "from": "LON",
+    "to": "SDQ"
+  },
+  {
+    "from": "NCE",
+    "to": "TBS"
+  },
+  {
+    "from": "CWL",
+    "to": "AMS"
+  },
+  {
+    "from": "PER",
+    "to": "HAN"
+  },
+  {
+    "from": "TYO",
+    "to": "BOS"
+  },
+  {
+    "from": "MEL",
+    "to": "KHN"
+  },
+  {
+    "from": "SGN",
+    "to": "HOU"
+  },
+  {
+    "from": "ALA",
+    "to": "DXB"
+  },
+  {
+    "from": "NAP",
+    "to": "SOF"
+  },
+  {
+    "from": "YMQ",
+    "to": "SEL"
+  },
+  {
+    "from": "JKT",
+    "to": "LOP"
+  },
+  {
+    "from": "BKI",
+    "to": "JHB"
+  },
+  {
+    "from": "VNO",
+    "to": "BUD"
+  },
+  {
+    "from": "FRA",
+    "to": "SFO"
+  },
+  {
+    "from": "SEL",
+    "to": "JED"
+  },
+  {
+    "from": "SYD",
+    "to": "XUZ"
+  },
+  {
+    "from": "HKG",
+    "to": "PHL"
+  },
+  {
+    "from": "MNL",
+    "to": "CYP"
+  },
+  {
+    "from": "SNO",
+    "to": "BKK"
+  },
+  {
+    "from": "FUK",
+    "to": "KUL"
+  },
+  {
+    "from": "CMN",
+    "to": "MNL"
+  },
+  {
+    "from": "IST",
+    "to": "MAD"
+  },
+  {
+    "from": "BHX",
+    "to": "FAO"
+  },
+  {
+    "from": "TYO",
+    "to": "WUH"
+  },
+  {
+    "from": "IST",
+    "to": "TYO"
+  },
+  {
+    "from": "PAR",
+    "to": "CKY"
+  },
+  {
+    "from": "NOC",
+    "to": "LPL"
+  },
+  {
+    "from": "MFM",
+    "to": "TAO"
+  },
+  {
+    "from": "TYO",
+    "to": "SYD"
+  },
+  {
+    "from": "BIO",
+    "to": "FUE"
+  },
+  {
+    "from": "LON",
+    "to": "LRH"
+  },
+  {
+    "from": "LON",
+    "to": "GZT"
+  },
+  {
+    "from": "STR",
+    "to": "AMM"
+  },
+  {
+    "from": "EIN",
+    "to": "VIE"
+  },
+  {
+    "from": "BCN",
+    "to": "JNB"
+  },
+  {
+    "from": "JNB",
+    "to": "LAX"
+  },
+  {
+    "from": "OKA",
+    "to": "BKK"
+  },
+  {
+    "from": "JED",
+    "to": "RUH"
+  },
+  {
+    "from": "STO",
+    "to": "ALC"
+  },
+  {
+    "from": "LYS",
+    "to": "MRU"
+  },
+  {
+    "from": "CHI",
+    "to": "BJS"
+  },
+  {
+    "from": "ATH",
+    "to": "TIA"
+  },
+  {
+    "from": "TLS",
+    "to": "SHA"
+  },
+  {
+    "from": "KUL",
+    "to": "PER"
+  },
+  {
+    "from": "BER",
+    "to": "CAN"
+  },
+  {
+    "from": "MIL",
+    "to": "OVD"
+  },
+  {
+    "from": "HKG",
+    "to": "OMA"
+  },
+  {
+    "from": "HRE",
+    "to": "VFA"
+  },
+  {
+    "from": "LON",
+    "to": "LKO"
+  },
+  {
+    "from": "AUH",
+    "to": "RUH"
+  },
+  {
+    "from": "MAD",
+    "to": "PTY"
+  },
+  {
+    "from": "HYD",
+    "to": "AKL"
+  },
+  {
+    "from": "AGP",
+    "to": "CUN"
+  },
+  {
+    "from": "TYO",
+    "to": "NHA"
+  },
+  {
+    "from": "TAK",
+    "to": "TYO"
+  },
+  {
+    "from": "ZRH",
+    "to": "OSL"
+  },
+  {
+    "from": "SEL",
+    "to": "AMS"
+  },
+  {
+    "from": "TRN",
+    "to": "TIA"
+  },
+  {
+    "from": "WRO",
+    "to": "BRU"
+  },
+  {
+    "from": "SEL",
+    "to": "USU"
+  },
+  {
+    "from": "MFM",
+    "to": "DLC"
+  },
+  {
+    "from": "YTO",
+    "to": "LAS"
+  },
+  {
+    "from": "LON",
+    "to": "ZNZ"
+  },
+  {
+    "from": "KPO",
+    "to": "CJU"
+  },
+  {
+    "from": "MAN",
+    "to": "LOS"
+  },
+  {
+    "from": "HAM",
+    "to": "AMM"
+  },
+  {
+    "from": "NCE",
+    "to": "VNO"
+  },
+  {
+    "from": "YVR",
+    "to": "OGG"
+  },
+  {
+    "from": "DMM",
+    "to": "DXB"
+  },
+  {
+    "from": "NYC",
+    "to": "OSA"
+  },
+  {
+    "from": "RUN",
+    "to": "TNR"
+  },
+  {
+    "from": "QRO",
+    "to": "CUN"
+  },
+  {
+    "from": "PAD",
+    "to": "PMI"
+  },
+  {
+    "from": "WRO",
+    "to": "WAW"
+  },
+  {
+    "from": "MAD",
+    "to": "SCU"
+  },
+  {
+    "from": "DUB",
+    "to": "NCL"
+  },
+  {
+    "from": "ROM",
+    "to": "SZX"
+  },
+  {
+    "from": "VLI",
+    "to": "TAH"
+  },
+  {
+    "from": "MEX",
+    "to": "ACA"
+  },
+  {
+    "from": "SEA",
+    "to": "MEX"
+  },
+  {
+    "from": "NYC",
+    "to": "RZE"
+  },
+  {
+    "from": "BRU",
+    "to": "CAI"
+  },
+  {
+    "from": "JKT",
+    "to": "NGO"
+  },
+  {
+    "from": "MAD",
+    "to": "SAP"
+  },
+  {
+    "from": "YTO",
+    "to": "TAO"
+  },
+  {
+    "from": "MAN",
+    "to": "BUD"
+  },
+  {
+    "from": "MUC",
+    "to": "OSA"
+  },
+  {
+    "from": "BCN",
+    "to": "SEZ"
+  },
+  {
+    "from": "LOS",
+    "to": "BKK"
+  },
+  {
+    "from": "MAN",
+    "to": "IZM"
+  },
+  {
+    "from": "MOW",
+    "to": "CTU"
+  },
+  {
+    "from": "BNE",
+    "to": "OSA"
+  },
+  {
+    "from": "MME",
+    "to": "ABZ"
+  },
+  {
+    "from": "LYS",
+    "to": "MIR"
+  },
+  {
+    "from": "TRC",
+    "to": "MEX"
+  },
+  {
+    "from": "YEA",
+    "to": "XMN"
+  },
+  {
+    "from": "ACC",
+    "to": "SIN"
+  },
+  {
+    "from": "CKY",
+    "to": "PAR"
+  },
+  {
+    "from": "GUM",
+    "to": "SEL"
+  },
+  {
+    "from": "BHX",
+    "to": "BKK"
+  },
+  {
+    "from": "SFO",
+    "to": "CAN"
+  },
+  {
+    "from": "BKK",
+    "to": "CPT"
+  },
+  {
+    "from": "JKT",
+    "to": "TJQ"
+  },
+  {
+    "from": "BER",
+    "to": "VCE"
+  },
+  {
+    "from": "BCN",
+    "to": "DPS"
+  },
+  {
+    "from": "YNY",
+    "to": "CJU"
+  },
+  {
+    "from": "HHQ",
+    "to": "CNX"
+  },
+  {
+    "from": "MAN",
+    "to": "SYD"
+  },
+  {
+    "from": "LOP",
+    "to": "DPS"
+  },
+  {
+    "from": "CPH",
+    "to": "LON"
+  },
+  {
+    "from": "KIV",
+    "to": "LON"
+  },
+  {
+    "from": "HKT",
+    "to": "IST"
+  },
+  {
+    "from": "NYC",
+    "to": "AVL"
+  },
+  {
+    "from": "IND",
+    "to": "SEA"
+  },
+  {
+    "from": "LED",
+    "to": "SEL"
+  },
+  {
+    "from": "MLA",
+    "to": "PAR"
+  },
+  {
+    "from": "PNH",
+    "to": "SHA"
+  },
+  {
+    "from": "BOM",
+    "to": "DOH"
+  },
+  {
+    "from": "BKI",
+    "to": "KCH"
+  },
+  {
+    "from": "MAD",
+    "to": "GVA"
+  },
+  {
+    "from": "LON",
+    "to": "KUN"
+  },
+  {
+    "from": "MAD",
+    "to": "WNZ"
+  },
+  {
+    "from": "CUN",
+    "to": "ZLO"
+  },
+  {
+    "from": "SEZ",
+    "to": "MRU"
+  },
+  {
+    "from": "ROM",
+    "to": "TPA"
+  },
+  {
+    "from": "OSL",
+    "to": "LYR"
+  },
+  {
+    "from": "BCN",
+    "to": "THR"
+  },
+  {
+    "from": "SGN",
+    "to": "HUI"
+  },
+  {
+    "from": "YXE",
+    "to": "YTO"
+  },
+  {
+    "from": "HKG",
+    "to": "GLA"
+  },
+  {
+    "from": "SCQ",
+    "to": "PMI"
+  },
+  {
+    "from": "TLV",
+    "to": "MNL"
+  },
+  {
+    "from": "MTY",
+    "to": "HOU"
+  },
+  {
+    "from": "HAN",
+    "to": "LPQ"
+  },
+  {
+    "from": "ISB",
+    "to": "GIL"
+  },
+  {
+    "from": "BOD",
+    "to": "BCN"
+  },
+  {
+    "from": "BKK",
+    "to": "CGQ"
+  },
+  {
+    "from": "TIA",
+    "to": "IST"
+  },
+  {
+    "from": "OSA",
+    "to": "OKA"
+  },
+  {
+    "from": "CJU",
+    "to": "TAE"
+  },
+  {
+    "from": "LON",
+    "to": "AMM"
+  },
+  {
+    "from": "PER",
+    "to": "MEL"
+  },
+  {
+    "from": "ZRH",
+    "to": "HRG"
+  },
+  {
+    "from": "PAR",
+    "to": "BAK"
+  },
+  {
+    "from": "TYO",
+    "to": "GVA"
+  },
+  {
+    "from": "NYC",
+    "to": "CHI"
+  },
+  {
+    "from": "HOU",
+    "to": "TYO"
+  },
+  {
+    "from": "KUL",
+    "to": "LBU"
+  },
+  {
+    "from": "BNE",
+    "to": "HYD"
+  },
+  {
+    "from": "YTO",
+    "to": "DLC"
+  },
+  {
+    "from": "SEL",
+    "to": "BRU"
+  },
+  {
+    "from": "CBR",
+    "to": "OOL"
+  },
+  {
+    "from": "VNO",
+    "to": "OSL"
+  },
+  {
+    "from": "AMS",
+    "to": "TLS"
+  },
+  {
+    "from": "YTO",
+    "to": "AMD"
+  },
+  {
+    "from": "ALC",
+    "to": "MIL"
+  },
+  {
+    "from": "FRA",
+    "to": "CTU"
+  },
+  {
+    "from": "AUH",
+    "to": "LAX"
+  },
+  {
+    "from": "EDI",
+    "to": "TUN"
+  },
+  {
+    "from": "OSL",
+    "to": "STO"
+  },
+  {
+    "from": "FLL",
+    "to": "GUA"
+  },
+  {
+    "from": "LPL",
+    "to": "SZZ"
+  },
+  {
+    "from": "BOM",
+    "to": "BLR"
+  },
+  {
+    "from": "LON",
+    "to": "LHW"
+  },
+  {
+    "from": "TYO",
+    "to": "ZRH"
+  },
+  {
+    "from": "BKK",
+    "to": "BHX"
+  },
+  {
+    "from": "WAW",
+    "to": "SJJ"
+  },
+  {
+    "from": "MNL",
+    "to": "TUG"
+  },
+  {
+    "from": "LON",
+    "to": "EVN"
+  },
+  {
+    "from": "NYC",
+    "to": "SKG"
+  },
+  {
+    "from": "ZRH",
+    "to": "OPO"
+  },
+  {
+    "from": "VIE",
+    "to": "DUB"
+  },
+  {
+    "from": "MEX",
+    "to": "TYO"
+  },
+  {
+    "from": "MNL",
+    "to": "JKT"
+  },
+  {
+    "from": "BHX",
+    "to": "ABZ"
+  },
+  {
+    "from": "MAD",
+    "to": "ASU"
+  },
+  {
+    "from": "KUL",
+    "to": "DAD"
+  },
+  {
+    "from": "CJU",
+    "to": "CJJ"
+  },
+  {
+    "from": "EIN",
+    "to": "ATH"
+  },
+  {
+    "from": "DOD",
+    "to": "DAR"
+  },
+  {
+    "from": "SVG",
+    "to": "ABZ"
+  },
+  {
+    "from": "DOH",
+    "to": "KTM"
+  },
+  {
+    "from": "PAR",
+    "to": "GOA"
+  },
+  {
+    "from": "FRA",
+    "to": "PNQ"
+  },
+  {
+    "from": "CNX",
+    "to": "SEL"
+  },
+  {
+    "from": "EDI",
+    "to": "NBO"
+  },
+  {
+    "from": "EIN",
+    "to": "IBZ"
+  },
+  {
+    "from": "BRU",
+    "to": "LPA"
+  },
+  {
+    "from": "YXJ",
+    "to": "YEA"
+  },
+  {
+    "from": "BOM",
+    "to": "SGN"
+  },
+  {
+    "from": "TYO",
+    "to": "OIT"
+  },
+  {
+    "from": "LON",
+    "to": "IDR"
+  },
+  {
+    "from": "YEA",
+    "to": "YOW"
+  },
+  {
+    "from": "SFO",
+    "to": "ALG"
+  },
+  {
+    "from": "LON",
+    "to": "GVA"
+  },
+  {
+    "from": "DTM",
+    "to": "KTW"
+  },
+  {
+    "from": "TYO",
+    "to": "BRU"
+  },
+  {
+    "from": "ROM",
+    "to": "VIE"
+  },
+  {
+    "from": "PDL",
+    "to": "SMA"
+  },
+  {
+    "from": "DUB",
+    "to": "BLQ"
+  },
+  {
+    "from": "LON",
+    "to": "JKT"
+  },
+  {
+    "from": "MAN",
+    "to": "HGH"
+  },
+  {
+    "from": "HAN",
+    "to": "CKG"
+  },
+  {
+    "from": "DUS",
+    "to": "TLV"
+  },
+  {
+    "from": "WAW",
+    "to": "DEL"
+  },
+  {
+    "from": "SEL",
+    "to": "SYX"
+  },
+  {
+    "from": "LON",
+    "to": "RIO"
+  },
+  {
+    "from": "LON",
+    "to": "BGO"
+  },
+  {
+    "from": "BOS",
+    "to": "LUN"
+  },
+  {
+    "from": "TUN",
+    "to": "MRS"
+  },
+  {
+    "from": "BOS",
+    "to": "LAX"
+  },
+  {
+    "from": "LUX",
+    "to": "MOW"
+  },
+  {
+    "from": "CBR",
+    "to": "HBA"
+  },
+  {
+    "from": "BNE",
+    "to": "AMD"
+  },
+  {
+    "from": "PDX",
+    "to": "LAX"
+  },
+  {
+    "from": "FRA",
+    "to": "TAO"
+  },
+  {
+    "from": "HNL",
+    "to": "TYO"
+  },
+  {
+    "from": "MEL",
+    "to": "OSA"
+  },
+  {
+    "from": "MAD",
+    "to": "LUX"
+  },
+  {
+    "from": "VER",
+    "to": "MEX"
+  },
+  {
+    "from": "TPE",
+    "to": "SHE"
+  },
+  {
+    "from": "PER",
+    "to": "DEL"
+  },
+  {
+    "from": "SEL",
+    "to": "BOS"
+  },
+  {
+    "from": "AMS",
+    "to": "IBZ"
+  },
+  {
+    "from": "ARK",
+    "to": "ZNZ"
+  },
+  {
+    "from": "MOW",
+    "to": "WUH"
+  },
+  {
+    "from": "MUC",
+    "to": "DXB"
+  },
+  {
+    "from": "GDN",
+    "to": "MAD"
+  },
+  {
+    "from": "PAR",
+    "to": "BCN"
+  },
+  {
+    "from": "ZRH",
+    "to": "MLA"
+  },
+  {
+    "from": "FRA",
+    "to": "CUN"
+  },
+  {
+    "from": "NTE",
+    "to": "CMN"
+  },
+  {
+    "from": "MEX",
+    "to": "MAD"
+  },
+  {
+    "from": "LON",
+    "to": "AGA"
+  },
+  {
+    "from": "RMQ",
+    "to": "HKG"
+  },
+  {
+    "from": "FRU",
+    "to": "TAS"
+  },
+  {
+    "from": "IST",
+    "to": "MAN"
+  },
+  {
+    "from": "DKR",
+    "to": "NKC"
+  },
+  {
+    "from": "VPS",
+    "to": "RDU"
+  },
+  {
+    "from": "ZRH",
+    "to": "HAV"
+  },
+  {
+    "from": "VTE",
+    "to": "LPQ"
+  },
+  {
+    "from": "MUC",
+    "to": "CPH"
+  },
+  {
+    "from": "MRU",
+    "to": "LON"
+  },
+  {
+    "from": "BCN",
+    "to": "SCQ"
+  },
+  {
+    "from": "MAN",
+    "to": "ATH"
+  },
+  {
+    "from": "TIJ",
+    "to": "SJD"
+  },
+  {
+    "from": "BKK",
+    "to": "MEL"
+  },
+  {
+    "from": "TPE",
+    "to": "NNG"
+  },
+  {
+    "from": "TYO",
+    "to": "SCL"
+  },
+  {
+    "from": "PER",
+    "to": "SEL"
+  },
+  {
+    "from": "SEL",
+    "to": "DXB"
+  },
+  {
+    "from": "HAM",
+    "to": "CSX"
+  },
+  {
+    "from": "NYC",
+    "to": "AMM"
+  },
+  {
+    "from": "WAS",
+    "to": "MOW"
+  },
+  {
+    "from": "BRE",
+    "to": "NYC"
+  },
+  {
+    "from": "NQT",
+    "to": "REU"
+  },
+  {
+    "from": "NYC",
+    "to": "REK"
+  },
+  {
+    "from": "CWL",
+    "to": "DUB"
+  },
+  {
+    "from": "IST",
+    "to": "MIL"
+  },
+  {
+    "from": "BRE",
+    "to": "IST"
+  },
+  {
+    "from": "TYO",
+    "to": "DEL"
+  },
+  {
+    "from": "ULN",
+    "to": "LON"
+  },
+  {
+    "from": "CBR",
+    "to": "SYD"
+  },
+  {
+    "from": "SYD",
+    "to": "SKP"
+  },
+  {
+    "from": "YTO",
+    "to": "SIA"
+  },
+  {
+    "from": "CAI",
+    "to": "MED"
+  },
+  {
+    "from": "BUD",
+    "to": "DUB"
+  },
+  {
+    "from": "PAR",
+    "to": "HGH"
+  },
+  {
+    "from": "LPL",
+    "to": "STO"
+  },
+  {
+    "from": "NYC",
+    "to": "KIN"
+  },
+  {
+    "from": "YTO",
+    "to": "POS"
+  },
+  {
+    "from": "NYC",
+    "to": "CAI"
+  },
+  {
+    "from": "PDX",
+    "to": "SJC"
+  },
+  {
+    "from": "CMN",
+    "to": "ERH"
+  },
+  {
+    "from": "BJM",
+    "to": "ZNZ"
+  },
+  {
+    "from": "NBO",
+    "to": "FRA"
+  },
+  {
+    "from": "MAN",
+    "to": "CHI"
+  },
+  {
+    "from": "KRT",
+    "to": "JKT"
+  },
+  {
+    "from": "BOS",
+    "to": "CUN"
+  },
+  {
+    "from": "OPO",
+    "to": "TER"
+  },
+  {
+    "from": "FRA",
+    "to": "MVD"
+  },
+  {
+    "from": "BER",
+    "to": "ANK"
+  },
+  {
+    "from": "DUB",
+    "to": "PHL"
+  },
+  {
+    "from": "KUL",
+    "to": "PDG"
+  },
+  {
+    "from": "TPE",
+    "to": "MUC"
+  },
+  {
+    "from": "DUB",
+    "to": "PMI"
+  },
+  {
+    "from": "BUD",
+    "to": "KIV"
+  },
+  {
+    "from": "LON",
+    "to": "SKT"
+  },
+  {
+    "from": "OSA",
+    "to": "WUH"
+  },
+  {
+    "from": "LAX",
+    "to": "DRS"
+  },
+  {
+    "from": "LON",
+    "to": "DEN"
+  },
+  {
+    "from": "SKG",
+    "to": "MLA"
+  },
+  {
+    "from": "FRA",
+    "to": "KTM"
+  },
+  {
+    "from": "NCL",
+    "to": "WRO"
+  },
+  {
+    "from": "SDJ",
+    "to": "BKK"
+  },
+  {
+    "from": "EDI",
+    "to": "BRS"
+  },
+  {
+    "from": "MUC",
+    "to": "CPT"
+  },
+  {
+    "from": "DOH",
+    "to": "DPS"
+  },
+  {
+    "from": "ATH",
+    "to": "CHI"
+  },
+  {
+    "from": "GLA",
+    "to": "AGP"
+  },
+  {
+    "from": "DEL",
+    "to": "DPS"
+  },
+  {
+    "from": "MIA",
+    "to": "MDE"
+  },
+  {
+    "from": "MEL",
+    "to": "DXB"
+  },
+  {
+    "from": "DUS",
+    "to": "REK"
+  },
+  {
+    "from": "CAI",
+    "to": "JKT"
+  },
+  {
+    "from": "DUS",
+    "to": "FEZ"
+  },
+  {
+    "from": "LAX",
+    "to": "XMN"
+  },
+  {
+    "from": "SAO",
+    "to": "LAX"
+  },
+  {
+    "from": "NYC",
+    "to": "ATL"
+  },
+  {
+    "from": "YTO",
+    "to": "SAO"
+  },
+  {
+    "from": "GOT",
+    "to": "SHA"
+  },
+  {
+    "from": "ALG",
+    "to": "AAE"
+  },
+  {
+    "from": "BOS",
+    "to": "TYO"
+  },
+  {
+    "from": "MIA",
+    "to": "SCL"
+  },
+  {
+    "from": "JNB",
+    "to": "VFA"
+  },
+  {
+    "from": "LON",
+    "to": "EGC"
+  },
+  {
+    "from": "DFW",
+    "to": "HYD"
+  },
+  {
+    "from": "AUH",
+    "to": "TUN"
+  },
+  {
+    "from": "SEL",
+    "to": "CGN"
+  },
+  {
+    "from": "ZRH",
+    "to": "VCE"
+  },
+  {
+    "from": "YTO",
+    "to": "ROM"
+  },
+  {
+    "from": "TYO",
+    "to": "YNT"
+  },
+  {
+    "from": "BHX",
+    "to": "ATH"
+  },
+  {
+    "from": "DMM",
+    "to": "BLR"
+  },
+  {
+    "from": "DAC",
+    "to": "FRA"
+  },
+  {
+    "from": "HKG",
+    "to": "KIV"
+  },
+  {
+    "from": "ROM",
+    "to": "MIA"
+  },
+  {
+    "from": "MEL",
+    "to": "FOC"
+  },
+  {
+    "from": "YTO",
+    "to": "YOW"
+  },
+  {
+    "from": "SGN",
+    "to": "BJS"
+  },
+  {
+    "from": "MIL",
+    "to": "OLB"
+  },
+  {
+    "from": "CLT",
+    "to": "TYO"
+  },
+  {
+    "from": "DEN",
+    "to": "MED"
+  },
+  {
+    "from": "BER",
+    "to": "HAN"
+  },
+  {
+    "from": "PEN",
+    "to": "SGN"
+  },
+  {
+    "from": "CMN",
+    "to": "VIL"
+  },
+  {
+    "from": "IND",
+    "to": "FLL"
+  },
+  {
+    "from": "STR",
+    "to": "BGW"
+  },
+  {
+    "from": "SEL",
+    "to": "MYJ"
+  },
+  {
+    "from": "MCT",
+    "to": "DXB"
+  },
+  {
+    "from": "BCN",
+    "to": "ATL"
+  },
+  {
+    "from": "PAR",
+    "to": "MUC"
+  },
+  {
+    "from": "MAN",
+    "to": "MAA"
+  },
+  {
+    "from": "LON",
+    "to": "MES"
+  },
+  {
+    "from": "SEL",
+    "to": "SAO"
+  },
+  {
+    "from": "TBS",
+    "to": "AMS"
+  },
+  {
+    "from": "XAP",
+    "to": "SAO"
+  },
+  {
+    "from": "IST",
+    "to": "GZT"
+  },
+  {
+    "from": "DXB",
+    "to": "LHE"
+  },
+  {
+    "from": "HYD",
+    "to": "DPS"
+  },
+  {
+    "from": "BHX",
+    "to": "KTM"
+  },
+  {
+    "from": "TPE",
+    "to": "CAI"
+  },
+  {
+    "from": "BIO",
+    "to": "MIL"
+  },
+  {
+    "from": "CTA",
+    "to": "NYC"
+  },
+  {
+    "from": "HOU",
+    "to": "HKG"
+  },
+  {
+    "from": "SEL",
+    "to": "SEA"
+  },
+  {
+    "from": "ATH",
+    "to": "JNX"
+  },
+  {
+    "from": "YVR",
+    "to": "PAR"
+  },
+  {
+    "from": "BKK",
+    "to": "JAX"
+  },
+  {
+    "from": "OSA",
+    "to": "VIE"
+  },
+  {
+    "from": "SEA",
+    "to": "HNL"
+  },
+  {
+    "from": "TIA",
+    "to": "LON"
+  },
+  {
+    "from": "MAN",
+    "to": "CTU"
+  },
+  {
+    "from": "LYS",
+    "to": "SEZ"
+  },
+  {
+    "from": "TYO",
+    "to": "ROM"
+  },
+  {
+    "from": "LON",
+    "to": "NJF"
+  },
+  {
+    "from": "POA",
+    "to": "SAO"
+  },
+  {
+    "from": "MNL",
+    "to": "IST"
+  },
+  {
+    "from": "CLT",
+    "to": "NYC"
+  },
+  {
+    "from": "LUX",
+    "to": "LIS"
+  },
+  {
+    "from": "SEL",
+    "to": "OPO"
+  },
+  {
+    "from": "FRA",
+    "to": "KIV"
+  },
+  {
+    "from": "LJU",
+    "to": "BKK"
+  },
+  {
+    "from": "AMS",
+    "to": "BOD"
+  },
+  {
+    "from": "MAD",
+    "to": "BER"
+  },
+  {
+    "from": "MLE",
+    "to": "COK"
+  },
+  {
+    "from": "NQT",
+    "to": "BCN"
+  },
+  {
+    "from": "DAC",
+    "to": "SIN"
+  },
+  {
+    "from": "SFO",
+    "to": "PHX"
+  },
+  {
+    "from": "TYO",
+    "to": "AGP"
+  },
+  {
+    "from": "BRU",
+    "to": "VIE"
+  },
+  {
+    "from": "MAN",
+    "to": "BOD"
+  },
+  {
+    "from": "TUN",
+    "to": "LIS"
+  },
+  {
+    "from": "HOU",
+    "to": "ORL"
+  },
+  {
+    "from": "BRI",
+    "to": "IST"
+  },
+  {
+    "from": "MEL",
+    "to": "LYA"
+  },
+  {
+    "from": "HKG",
+    "to": "OZC"
+  },
+  {
+    "from": "SIN",
+    "to": "THR"
+  },
+  {
+    "from": "HKG",
+    "to": "SEA"
+  },
+  {
+    "from": "BUH",
+    "to": "CLJ"
+  },
+  {
+    "from": "SJC",
+    "to": "SEA"
+  },
+  {
+    "from": "GYN",
+    "to": "VIX"
+  },
+  {
+    "from": "VLC",
+    "to": "AGP"
+  },
+  {
+    "from": "DPS",
+    "to": "UPG"
+  },
+  {
+    "from": "PAR",
+    "to": "ERH"
+  },
+  {
+    "from": "BLR",
+    "to": "MLE"
+  },
+  {
+    "from": "TIA",
+    "to": "ATH"
+  },
+  {
+    "from": "DUS",
+    "to": "DPS"
+  },
+  {
+    "from": "SEL",
+    "to": "LIS"
+  },
+  {
+    "from": "AKL",
+    "to": "URC"
+  },
+  {
+    "from": "SAO",
+    "to": "POA"
+  },
+  {
+    "from": "PAR",
+    "to": "VIL"
+  },
+  {
+    "from": "PAR",
+    "to": "BOS"
+  },
+  {
+    "from": "NYC",
+    "to": "AAL"
+  },
+  {
+    "from": "HKT",
+    "to": "HKG"
+  },
+  {
+    "from": "EDI",
+    "to": "NAP"
+  },
+  {
+    "from": "NYC",
+    "to": "DVO"
+  },
+  {
+    "from": "BRS",
+    "to": "FAO"
+  },
+  {
+    "from": "LYS",
+    "to": "BCN"
+  },
+  {
+    "from": "SEL",
+    "to": "CMB"
+  },
+  {
+    "from": "YYC",
+    "to": "LON"
+  },
+  {
+    "from": "BKK",
+    "to": "DXB"
+  },
+  {
+    "from": "REP",
+    "to": "BKK"
+  },
+  {
+    "from": "MEL",
+    "to": "SWA"
+  },
+  {
+    "from": "MSO",
+    "to": "DEN"
+  },
+  {
+    "from": "ZNZ",
+    "to": "JRO"
+  },
+  {
+    "from": "KTM",
+    "to": "CTU"
+  },
+  {
+    "from": "CPH",
+    "to": "OSL"
+  },
+  {
+    "from": "EDI",
+    "to": "AGP"
+  },
+  {
+    "from": "MIL",
+    "to": "ZNZ"
+  },
+  {
+    "from": "BHX",
+    "to": "BOM"
+  },
+  {
+    "from": "TYO",
+    "to": "RUH"
+  },
+  {
+    "from": "BKK",
+    "to": "JHB"
+  },
+  {
+    "from": "IST",
+    "to": "ULN"
+  },
+  {
+    "from": "SOU",
+    "to": "AMS"
+  },
+  {
+    "from": "YHZ",
+    "to": "YTO"
+  },
+  {
+    "from": "SYD",
+    "to": "TNA"
+  },
+  {
+    "from": "SEL",
+    "to": "VIE"
+  },
+  {
+    "from": "WAS",
+    "to": "IST"
+  },
+  {
+    "from": "FRA",
+    "to": "FRU"
+  },
+  {
+    "from": "LON",
+    "to": "ZRH"
+  },
+  {
+    "from": "OAK",
+    "to": "LAX"
+  },
+  {
+    "from": "ROM",
+    "to": "CAI"
+  },
+  {
+    "from": "MAN",
+    "to": "ATL"
+  },
+  {
+    "from": "CGN",
+    "to": "VIE"
+  },
+  {
+    "from": "FRA",
+    "to": "FMY"
+  },
+  {
+    "from": "AMM",
+    "to": "CAI"
+  },
+  {
+    "from": "BLR",
+    "to": "BCN"
+  },
+  {
+    "from": "EDI",
+    "to": "FAO"
+  },
+  {
+    "from": "PAR",
+    "to": "PFO"
+  },
+  {
+    "from": "MLA",
+    "to": "CTA"
+  },
+  {
+    "from": "HPH",
+    "to": "PQC"
+  },
+  {
+    "from": "LEI",
+    "to": "BCN"
+  },
+  {
+    "from": "PEN",
+    "to": "WUH"
+  },
+  {
+    "from": "DPS",
+    "to": "BKK"
+  },
+  {
+    "from": "PAR",
+    "to": "MAH"
+  },
+  {
+    "from": "YVR",
+    "to": "YMQ"
+  },
+  {
+    "from": "MIA",
+    "to": "SRZ"
+  },
+  {
+    "from": "PUS",
+    "to": "GUM"
+  },
+  {
+    "from": "WAS",
+    "to": "LAX"
+  },
+  {
+    "from": "BCN",
+    "to": "MIL"
+  },
+  {
+    "from": "TPE",
+    "to": "ATL"
+  },
+  {
+    "from": "MAD",
+    "to": "ISB"
+  },
+  {
+    "from": "AMS",
+    "to": "SGN"
+  },
+  {
+    "from": "LAD",
+    "to": "MSZ"
+  },
+  {
+    "from": "AMS",
+    "to": "CNX"
+  },
+  {
+    "from": "PAR",
+    "to": "FSC"
+  },
+  {
+    "from": "ZRH",
+    "to": "CFU"
+  },
+  {
+    "from": "BUH",
+    "to": "CMB"
+  },
+  {
+    "from": "OSA",
+    "to": "DEL"
+  },
+  {
+    "from": "YVR",
+    "to": "HAN"
+  },
+  {
+    "from": "BER",
+    "to": "CGN"
+  },
+  {
+    "from": "BOS",
+    "to": "NYC"
+  },
+  {
+    "from": "PAR",
+    "to": "TLM"
+  },
+  {
+    "from": "LAX",
+    "to": "BEY"
+  },
+  {
+    "from": "SIN",
+    "to": "BER"
+  },
+  {
+    "from": "LBA",
+    "to": "PMI"
+  },
+  {
+    "from": "SYD",
+    "to": "MCY"
+  },
+  {
+    "from": "MRS",
+    "to": "ALC"
+  },
+  {
+    "from": "CHI",
+    "to": "FLL"
+  },
+  {
+    "from": "TYO",
+    "to": "HGH"
+  },
+  {
+    "from": "MAD",
+    "to": "DKR"
+  },
+  {
+    "from": "CJB",
+    "to": "SEL"
+  },
+  {
+    "from": "SYD",
+    "to": "CMB"
+  },
+  {
+    "from": "TYO",
+    "to": "LUX"
+  },
+  {
+    "from": "MAN",
+    "to": "CLT"
+  },
+  {
+    "from": "ZNZ",
+    "to": "ARK"
+  },
+  {
+    "from": "SAO",
+    "to": "SRZ"
+  },
+  {
+    "from": "YVR",
+    "to": "NKG"
+  },
+  {
+    "from": "DXB",
+    "to": "NCE"
+  },
+  {
+    "from": "FLL",
+    "to": "AVL"
+  },
+  {
+    "from": "TLV",
+    "to": "PRG"
+  },
+  {
+    "from": "VTE",
+    "to": "DAD"
+  },
+  {
+    "from": "BRU",
+    "to": "ZAG"
+  },
+  {
+    "from": "DXB",
+    "to": "HKT"
+  },
+  {
+    "from": "TLV",
+    "to": "LON"
+  },
+  {
+    "from": "BGW",
+    "to": "IST"
+  },
+  {
+    "from": "LAX",
+    "to": "SAO"
+  },
+  {
+    "from": "LCA",
+    "to": "SHA"
+  },
+  {
+    "from": "PER",
+    "to": "JKT"
+  },
+  {
+    "from": "HAN",
+    "to": "VII"
+  },
+  {
+    "from": "NYC",
+    "to": "TSN"
+  },
+  {
+    "from": "BRU",
+    "to": "JRO"
+  },
+  {
+    "from": "LAS",
+    "to": "TYO"
+  },
+  {
+    "from": "AUS",
+    "to": "SRQ"
+  },
+  {
+    "from": "EIN",
+    "to": "BTS"
+  },
+  {
+    "from": "MAD",
+    "to": "SRZ"
+  },
+  {
+    "from": "LON",
+    "to": "GRO"
+  },
+  {
+    "from": "LAX",
+    "to": "LIM"
+  },
+  {
+    "from": "SIN",
+    "to": "OZC"
+  },
+  {
+    "from": "SEL",
+    "to": "KMG"
+  },
+  {
+    "from": "BEY",
+    "to": "RUH"
+  },
+  {
+    "from": "BKK",
+    "to": "CKG"
+  },
+  {
+    "from": "SEA",
+    "to": "TPE"
+  },
+  {
+    "from": "LYS",
+    "to": "BEY"
+  },
+  {
+    "from": "YYC",
+    "to": "BJS"
+  },
+  {
+    "from": "VIE",
+    "to": "PMO"
+  },
+  {
+    "from": "TYO",
+    "to": "SAO"
+  },
+  {
+    "from": "WAW",
+    "to": "JNB"
+  },
+  {
+    "from": "SGN",
+    "to": "KHN"
+  },
+  {
+    "from": "BUE",
+    "to": "HAV"
+  },
+  {
+    "from": "TLS",
+    "to": "YAO"
+  },
+  {
+    "from": "KUL",
+    "to": "AMS"
+  },
+  {
+    "from": "ROM",
+    "to": "JKT"
+  },
+  {
+    "from": "SIN",
+    "to": "TUN"
+  },
+  {
+    "from": "BER",
+    "to": "BEY"
+  },
+  {
+    "from": "RIO",
+    "to": "BUE"
+  },
+  {
+    "from": "IST",
+    "to": "ROM"
+  },
+  {
+    "from": "NGO",
+    "to": "MMY"
+  },
+  {
+    "from": "TYO",
+    "to": "XMN"
+  },
+  {
+    "from": "IST",
+    "to": "MNL"
+  },
+  {
+    "from": "ADL",
+    "to": "CGQ"
+  },
+  {
+    "from": "GUA",
+    "to": "FRS"
+  },
+  {
+    "from": "DUB",
+    "to": "LUX"
+  },
+  {
+    "from": "DAD",
+    "to": "PUS"
+  },
+  {
+    "from": "HKG",
+    "to": "DRP"
+  },
+  {
+    "from": "AUH",
+    "to": "HKT"
+  },
+  {
+    "from": "NYC",
+    "to": "CTG"
+  },
+  {
+    "from": "MLA",
+    "to": "PRG"
+  },
+  {
+    "from": "YTO",
+    "to": "CTU"
+  },
+  {
+    "from": "MOW",
+    "to": "BAK"
+  },
+  {
+    "from": "VNO",
+    "to": "WRO"
+  },
+  {
+    "from": "OPO",
+    "to": "BRS"
+  },
+  {
+    "from": "NVT",
+    "to": "SAO"
+  },
+  {
+    "from": "MOW",
+    "to": "EVN"
+  },
+  {
+    "from": "SFO",
+    "to": "ATH"
+  },
+  {
+    "from": "CLJ",
+    "to": "BUH"
+  },
+  {
+    "from": "REK",
+    "to": "OSL"
+  },
+  {
+    "from": "AKL",
+    "to": "CSX"
+  },
+  {
+    "from": "YQT",
+    "to": "YTO"
+  },
+  {
+    "from": "SIN",
+    "to": "SEA"
+  },
+  {
+    "from": "CPH",
+    "to": "BKK"
+  },
+  {
+    "from": "WAS",
+    "to": "TYO"
+  },
+  {
+    "from": "PPS",
+    "to": "MNL"
+  },
+  {
+    "from": "SEL",
+    "to": "KMJ"
+  },
+  {
+    "from": "BUR",
+    "to": "SEA"
+  },
+  {
+    "from": "KUL",
+    "to": "SDJ"
+  },
+  {
+    "from": "LIS",
+    "to": "RAI"
+  },
+  {
+    "from": "CNX",
+    "to": "KMG"
+  },
+  {
+    "from": "CMH",
+    "to": "HKG"
+  },
+  {
+    "from": "NGO",
+    "to": "GUM"
+  },
+  {
+    "from": "TUN",
+    "to": "CMN"
+  },
+  {
+    "from": "HAJ",
+    "to": "BEY"
+  },
+  {
+    "from": "ZAG",
+    "to": "ZRH"
+  },
+  {
+    "from": "HRE",
+    "to": "BOM"
+  },
+  {
+    "from": "HKG",
+    "to": "JOG"
+  },
+  {
+    "from": "SIN",
+    "to": "CPT"
+  },
+  {
+    "from": "IST",
+    "to": "JKT"
+  }
+]

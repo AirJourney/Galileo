@@ -1,0 +1,159 @@
+Air Fare Rules using AirFareDisplayRuleKey-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:AirFareRulesReq AuthorizedBy="SUSIL" TargetBranch="P7102538" FareRuleType="long" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:AirFareDisplayRuleKey ProviderCode="1G">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</air:AirFareDisplayRuleKey>
+      </air:AirFareRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Fare Rules using AirFareDisplayRuleKey-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AirFareRulesRsp TransactionId="9C1725EE0A07643B096D7BC3ABEB5678" ResponseTime="9300" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">FARES LAST UPDATED 16JAN 23:20 P</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">DEPART 12MAR                      AIRPORT FARES</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">**ADDITIONAL TAXES/FEES MAY APPLY**</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">PUBLIC/PRIVATE FARES FOR 80EZ</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">U.S. PASSENGER FACILITY CHARGES MAY APPLY</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">TAXES AND FEES MAY VARY DEPENDING ON THE BOOKED ITINERARY</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">USD     FARE         MIN/   XL  TVL DATES    TKT DATES</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">CX  FARE    BASIS    AP    MAX  FE  FIRST/LAST   FIRST/LAST</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1G">OTHER FARES EXIST-DO MORE SPECIFIC FD</common_v50_0:ResponseMessage>
+         <air:FareRule RuleNumber="0" Source="ATPCO">
+            <air:FareRuleLong Category="0" Type="RULE">RULE - 011/2020
+UNLESS OTHERWISE SPECIFIED
+ONE WAY TRIP FARES
+ APPLICATION
+   CLASS OF SERVICE
+     THESE FARES APPLY FOR ECONOMY CLASS SERVICE.
+   TYPES OF TRANSPORTATION
+     FARES GOVERNED BY THIS RULE CAN BE USED TO CREATE
+     ONE-WAY JOURNEYS.</air:FareRuleLong>
+            <air:FareRuleLong Category="5" Type="RULE">FOR -3 TYPE FARES
+  RESERVATIONS FOR ALL SECTORS ARE REQUIRED BY MIDNIGHT 3
+  DAYS BEFORE DEPARTURE.
+  WAITLIST NOT PERMITTED.
+  TICKETING MUST BE COMPLETED WITHIN 24 HOURS AFTER
+  RESERVATIONS ARE MADE.</air:FareRuleLong>
+            <air:FareRuleLong Category="8" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  STOPOVERS NOT PERMITTED ON THE FARE COMPONENT.
+     NO STOPOVER OCCURS IF PASSENGER TAKES NEXT AVAILABLE
+      FLIGHT WITHIN 8 HOURS.</air:FareRuleLong>
+            <air:FareRuleLong Category="10" Type="RULE">UNLESS OTHERWISE SPECIFIED
+   DOUBLE OPEN JAWS/MULTI-COMPONENT CIRCLE TRIPS NOT
+   PERMITTED.
+   APPLICABLE ADD-ON CONSTRUCTION IS ADDRESSED IN
+   MISCELLANEOUS PROVISIONS - CATEGORY 23.
+  OPEN JAWS/2-COMPONENT CIRCLE TRIPS
+    FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS WITH NK
+    FARES IN ANY RULE AND TARIFF.
+    -TO FORM SINGLE OPEN JAWS
+    -TO FORM 2-COMPONENT CIRCLE TRIPS
+    OPEN JAWS/ROUND TRIPS NOTE -
+      THE MOST RESTRICTIVE CONDITIONS APPLY INCLUDING
+      MIN/MAX STAY/RESERVATIONS AND TICKETING
+      REQUIREMENTS/PENALTIES OR SERVICE CHARGES.  OPEN
+      JAW PERMITTED AS LONG AS RETURN IS TO ORIGINAL
+      DEPARTING CITY.
+  END-ON-END
+    END-ON-END COMBINATIONS PERMITTED WITH NK DOMESTIC/
+    INTERNATIONAL FARES. VALIDATE ALL FARE COMPONENTS. SIDE
+    TRIPS PERMITTED.
+   PROVIDED -
+     COMBINATIONS ARE FOR CARRIER NK IN ANY RULE IN ANY
+      TARIFF.</air:FareRuleLong>
+            <air:FareRuleLong Category="11" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TRAVEL IS NOT PERMITTED ON 01MAR 20 OR 06MAR 20 THROUGH
+  08MAR 20 OR 12MAR 20 THROUGH 15MAR 20 OR 19MAR 20 THROUGH
+  23MAR 20 OR 26MAR 20 THROUGH 29MAR 20.</air:FareRuleLong>
+            <air:FareRuleLong Category="12" Type="RULE">FOR G- TYPE FARES
+  IF INFANT UNDER 02 WITHOUT A SEAT.
+    THERE IS NO CHARGE FOR TRAVEL.
+  OTHERWISE
+    THERE IS NO CHARGE FOR TRAVEL PER FARE COMPONENT.
+FOR G- TYPE FARES
+  IF INFANT UNDER 02 WITHOUT A SEAT.
+    THERE IS NO CHARGE FOR TRAVEL.
+  OTHERWISE
+    A SURCHARGE OF USD 21.39 PER COUPON WILL BE ADDED TO THE
+    APPLICABLE FARE FOR TRAVEL.
+         NOTE -
+          PUF-PASSENGER USAGE FEE
+    AND - A SURCHARGE OF USD 4.65 PER COUPON WILL BE ADDED
+          TO THE APPLICABLE FARE FOR TRAVEL.
+         NOTE -
+          EF - EXCHANGE FEE</air:FareRuleLong>
+            <air:FareRuleLong Category="14" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TRAVEL ON THIS FARE COMPONENT MUST COMMENCE BY MIDNIGHT ON
+  30MAR 20.</air:FareRuleLong>
+            <air:FareRuleLong Category="15" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TICKETS MAY BE ISSUED BY MAIL/PTA. PTA DOES NOT CONSTITUTE
+  TICKETING.
+         NOTE -
+          NONREFUNDABLE CHARGE OF USD 25.00 WILL BE ASSESSED
+          FOR PTAS.
+          PASSENGERS SUBJECT TO PHOTO ID AT TIME OF FLIGHT
+          CHECK-IN.
+UNLESS OTHERWISE SPECIFIED
+         NOTE -
+          EXTENSION OF TICKET VALIDITY PERMITTED UNDER
+          GUIDELINES SET FORTH BY CARRIER.  CONTACT
+          CARRIER FOR DETAILS.</air:FareRuleLong>
+            <air:FareRuleLong Category="16" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  CHANGES
+    ANY TIME
+      CHARGE USD 100.00 FOR REISSUE/REVALIDATION.
+         NOTE -
+          1.   CHANGES PERMITTED TWENTY-FOUR /24/ HOURS OR
+               MORE IN ADVANCE OF COMMENCING TRAVEL PROVIDED
+               THE NEW ITINERARY MEETS ALL THE PROVISIONS OF
+               ADVANCE RESERVATIONS AND TICKET PURCHASE AND
+               MIN/MAX STAY REQUIREMENTS OF THE ORIGINAL
+               FARE.
+          2.   THE NEW ITINERARY IS OF EQUAL OR GREATER
+               VALUE. NOTE...THE FULL VALUE OF AN EXISTING
+               TICKET MAY BE APPLIED TO AN ITINERARY OF
+               LOWER VALUE HOWEVER NO REFUND WILL APPLY.
+          3.   A SERVICE FEE OF USD 100.00 FOR
+               ALLOWABLE CHANGES PLUS DIFFERENCE BETWEEN
+               ORIGINAL FARE AND NEW FARE.
+          4.   PASSENGER USAGE FEE OF USD 20.99 PER
+               PASSENGER ONE-WAY IS NON-REFUNDABLE AND
+               WILL BE AN ADDITIONAL PENALTY TO THE PER
+               PASSENGER CANCEL/CHANGE/MODIFICATION FEE OF
+               USD 100.00 FOR TRANSACTIONS MADE VIA THE GDS.
+  CANCELLATIONS
+    ANY TIME
+      TICKET IS NON-REFUNDABLE.
+      WAIVED FOR DEATH OF PASSENGER.
+         NOTE -
+          WAIVER ALSO APPLIES TO TRAVELING COMPANION.
+          IN THE EVENT OF DEATH OF PASSENGER OR TRAVELING
+          COMPANION A SERVICE CHARGE OF USD 110.00
+          WILL BE ASSESSED IN ORDER TO PROCESS REFUND.
+          CANCELLATIONS MUST BE MADE 24 HOURS PRIOR TO
+          ORIGINAL DEPARTURE OR TICKET BECOMES UNCHANGEABLE
+          AND ENTIRE VALUE OF TICKET IS LOST.</air:FareRuleLong>
+            <air:FareRuleLong Category="18" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  THE ORIGINAL TICKET MUST BE ANNOTATED - NONREF/NONTRANS/
+  VALID NK - IN THE ENDORSEMENT BOX.</air:FareRuleLong>
+            <air:FareRuleLong Category="19" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  INFANT UNDER 2 WITHOUT A SEAT - NO CHARGE
+    MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME COMPARTMENT
+      BY ADULT
+  OR - UNACCOMPANIED CHILD 5-14 - CHARGE 100 PERCENT OF THE
+         FARE PLUS USD 100.00.
+         NOTE -
+          100.00 USD SERVICE FEE EACH WAY.</air:FareRuleLong>
+            <air:FareRuleLong Category="22" Type="RULE">UNLESS OTHERWISE SPECIFIED
+         NOTE -
+          NO OTHER DISCOUNTS APPLY.</air:FareRuleLong>
+         </air:FareRule>
+      </air:AirFareRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

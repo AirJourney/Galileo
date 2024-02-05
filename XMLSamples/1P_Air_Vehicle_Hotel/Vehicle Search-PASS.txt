@@ -1,0 +1,521 @@
+Vehicle Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleSearchAvailabilityReq ReturnMediaLinks="true" AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehicleDateLocation Key="OngF/R9nSmGZOmAaefRUdg==" PickupLocationType="Terminal" PickupLocation="LHR" ReturnDateTime="2020-05-10T10:00:00" PickupDateTime="2020-04-25T10:00:00">
+            <veh:VendorLocation VendorCode="SX" ProviderCode="1P"/>
+         </veh:VehicleDateLocation>
+<!--         <com:PointOfSale Key="pqlNZBdtSnG/ZnM6m5tZ7Q==" ProviderCode="1P" PseudoCityCode="XUF"/>-->
+      </veh:VehicleSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleSearchAvailabilityRsp TransactionId="7D9383C30A0764779F0019AA3FFCC33A" ResponseTime="727" MediaLinksSearchId="7D9383C30A0764779F0019AA3FFCC33A_1P" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleDateLocation PickupDateTime="2020-04-25T10:00:00.000+01:00" PickupLocation="LHR" ReturnDateTime="2020-05-10T10:00:00.000+01:00" ReturnLocation="LHR">
+            <vehicle:VendorLocation ProviderCode="1P" VendorCode="SX" VendorLocationID="001" Key="CYxS9B3R2BKAoLeCAAAAAA==" LocationType="Terminal" LocationCode="LHR" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1P" VendorCode="SX" VendorLocationID="001" Key="CYxS9B3R2BKAoLeCAAAAAA==" LocationType="Terminal" LocationCode="LHR" Type="Return"/>
+         </vehicle:VehicleDateLocation>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="ECMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP19.25" BaseRate="GBP288.75" EstimatedTotalAmount="GBP415.80" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD25.07" BaseRate="USD376.07" EstimatedTotalAmount="USD541.54" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="01"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Mini" Category="Car" DoorCount="TwoToThreeDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="MBMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP19.25" BaseRate="GBP288.75" EstimatedTotalAmount="GBP415.80" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD25.07" BaseRate="USD376.07" EstimatedTotalAmount="USD541.54" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="02"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToThreeDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CBMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP20.46" BaseRate="GBP306.90" EstimatedTotalAmount="GBP441.94" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD26.64" BaseRate="USD399.70" EstimatedTotalAmount="USD575.58" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="03"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CDMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP21.06" BaseRate="GBP315.90" EstimatedTotalAmount="GBP454.90" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD27.42" BaseRate="USD411.43" EstimatedTotalAmount="USD592.46" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="04"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Limo" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CLMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP22.31" BaseRate="GBP334.65" EstimatedTotalAmount="GBP481.90" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD29.05" BaseRate="USD435.85" EstimatedTotalAmount="USD627.62" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="05"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CFMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP22.45" BaseRate="GBP336.75" EstimatedTotalAmount="GBP484.92" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD29.23" BaseRate="USD438.58" EstimatedTotalAmount="USD631.56" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="16"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CCMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP25.27" BaseRate="GBP379.05" EstimatedTotalAmount="GBP545.83" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD32.91" BaseRate="USD493.67" EstimatedTotalAmount="USD710.89" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="06"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="IDMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP26.80" BaseRate="GBP402.00" EstimatedTotalAmount="GBP578.88" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD34.90" BaseRate="USD523.56" EstimatedTotalAmount="USD753.93" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="07"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CDAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP28.42" BaseRate="GBP426.30" EstimatedTotalAmount="GBP613.87" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD37.01" BaseRate="USD555.21" EstimatedTotalAmount="USD799.50" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="08"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="IFMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP29.49" BaseRate="GBP442.35" EstimatedTotalAmount="GBP636.98" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD38.40" BaseRate="USD576.11" EstimatedTotalAmount="USD829.60" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="17"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Limo" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CLAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP30.13" BaseRate="GBP451.95" EstimatedTotalAmount="GBP650.81" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD39.24" BaseRate="USD588.62" EstimatedTotalAmount="USD847.61" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="09"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP30.50" BaseRate="GBP457.50" EstimatedTotalAmount="GBP658.80" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD39.72" BaseRate="USD595.85" EstimatedTotalAmount="USD858.02" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0A"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="IDAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP30.78" BaseRate="GBP461.70" EstimatedTotalAmount="GBP664.85" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD40.08" BaseRate="USD601.32" EstimatedTotalAmount="USD865.90" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0B"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Limo" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="ILMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP31.20" BaseRate="GBP468.00" EstimatedTotalAmount="GBP673.92" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD40.63" BaseRate="USD609.52" EstimatedTotalAmount="USD877.71" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0C"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToThreeDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CBMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP32.31" BaseRate="GBP484.65" EstimatedTotalAmount="GBP697.90" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD42.08" BaseRate="USD631.21" EstimatedTotalAmount="USD908.94" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0D"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Limo" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="ILAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP32.96" BaseRate="GBP494.40" EstimatedTotalAmount="GBP711.94" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD42.92" BaseRate="USD643.91" EstimatedTotalAmount="USD927.23" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0E"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CDMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP33.28" BaseRate="GBP499.20" EstimatedTotalAmount="GBP718.85" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD43.34" BaseRate="USD650.16" EstimatedTotalAmount="USD936.23" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0F"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CWMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP33.65" BaseRate="GBP504.75" EstimatedTotalAmount="GBP726.84" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD43.82" BaseRate="USD657.38" EstimatedTotalAmount="USD946.64" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0G"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Limo" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CLMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP35.32" BaseRate="GBP529.80" EstimatedTotalAmount="GBP762.91" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD46.00" BaseRate="USD690.01" EstimatedTotalAmount="USD993.61" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0H"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CFMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP35.55" BaseRate="GBP533.25" EstimatedTotalAmount="GBP767.88" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD46.30" BaseRate="USD694.50" EstimatedTotalAmount="USD1000.09" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="18"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="SDMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP36.11" BaseRate="GBP541.65" EstimatedTotalAmount="GBP779.98" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD47.02" BaseRate="USD705.44" EstimatedTotalAmount="USD1015.85" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0I"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="SDAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP39.62" BaseRate="GBP594.30" EstimatedTotalAmount="GBP855.79" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD51.60" BaseRate="USD774.02" EstimatedTotalAmount="USD1114.58" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0J"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CCMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP39.95" BaseRate="GBP599.25" EstimatedTotalAmount="GBP862.92" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD52.03" BaseRate="USD780.46" EstimatedTotalAmount="USD1123.87" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0K"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="IWMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP42.45" BaseRate="GBP636.75" EstimatedTotalAmount="GBP916.92" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD55.28" BaseRate="USD829.30" EstimatedTotalAmount="USD1194.20" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0L"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CDAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP44.95" BaseRate="GBP674.25" EstimatedTotalAmount="GBP970.92" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD58.54" BaseRate="USD878.14" EstimatedTotalAmount="USD1264.53" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0M"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CWAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU3" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP45.09" BaseRate="GBP676.35" EstimatedTotalAmount="GBP973.94" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD58.72" BaseRate="USD880.88" EstimatedTotalAmount="USD1268.46" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM THIRD US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0N"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="FDAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP45.27" BaseRate="GBP679.05" EstimatedTotalAmount="GBP977.83" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD58.95" BaseRate="USD884.39" EstimatedTotalAmount="USD1273.53" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0O"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="IVMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP45.55" BaseRate="GBP683.25" EstimatedTotalAmount="GBP983.88" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD59.32" BaseRate="USD889.86" EstimatedTotalAmount="USD1281.41" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0P"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP320.48" BaseRate="GBP686.74" EstimatedTotalAmount="GBP988.90" ExtraMileageCharge="GBP0.30" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD417.39" BaseRate="USD894.41" EstimatedTotalAmount="USD1287.95" ExtraMileageCharge="USD0.39" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="19"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="SWMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP47.36" BaseRate="GBP710.40" EstimatedTotalAmount="GBP1022.98" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD61.68" BaseRate="USD925.22" EstimatedTotalAmount="USD1332.33" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0Q"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="IWAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU3" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP47.68" BaseRate="GBP715.20" EstimatedTotalAmount="GBP1029.89" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD62.09" BaseRate="USD931.48" EstimatedTotalAmount="USD1341.33" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM THIRD US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0R"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Limo" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CLAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP47.68" BaseRate="GBP715.20" EstimatedTotalAmount="GBP1029.89" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD62.09" BaseRate="USD931.48" EstimatedTotalAmount="USD1341.33" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0S"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP48.28" BaseRate="GBP724.20" EstimatedTotalAmount="GBP1042.85" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD62.88" BaseRate="USD943.20" EstimatedTotalAmount="USD1358.21" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0T"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="SWAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU3" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP50.09" BaseRate="GBP751.35" EstimatedTotalAmount="GBP1081.94" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD65.23" BaseRate="USD978.56" EstimatedTotalAmount="USD1409.12" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM THIRD US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0U"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="FWAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP51.57" BaseRate="GBP773.55" EstimatedTotalAmount="GBP1113.91" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD67.16" BaseRate="USD1007.47" EstimatedTotalAmount="USD1450.76" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0V"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Compact" Category="Roadster" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CNMN">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP55.04" BaseRate="GBP825.60" EstimatedTotalAmount="GBP1188.86" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD71.68" BaseRate="USD1075.26" EstimatedTotalAmount="USD1548.37" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0W"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="PDAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP56.57" BaseRate="GBP848.55" EstimatedTotalAmount="GBP1221.91" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD73.67" BaseRate="USD1105.15" EstimatedTotalAmount="USD1591.42" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0X"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="SVMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP59.16" BaseRate="GBP887.40" EstimatedTotalAmount="GBP1277.86" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD77.05" BaseRate="USD1155.75" EstimatedTotalAmount="USD1664.29" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="0Z"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="PWAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP62.22" BaseRate="GBP933.30" EstimatedTotalAmount="GBP1343.95" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD81.03" BaseRate="USD1215.53" EstimatedTotalAmount="USD1750.36" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="10"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Fullsize" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="FVMR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP68.05" BaseRate="GBP1020.75" EstimatedTotalAmount="GBP1469.88" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD88.62" BaseRate="USD1329.43" EstimatedTotalAmount="USD1914.38" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="11"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Sport" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="LSAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP479.25" BaseRate="GBP1026.96" EstimatedTotalAmount="GBP1478.82" ExtraMileageCharge="GBP0.30" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD624.17" BaseRate="USD1337.51" EstimatedTotalAmount="USD1926.02" ExtraMileageCharge="USD0.39" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="1A"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="StationWagon" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="LWAR">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP75.27" BaseRate="GBP1129.05" EstimatedTotalAmount="GBP1625.83" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD98.03" BaseRate="USD1470.48" EstimatedTotalAmount="USD2117.49" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="12"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="PFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP538.60" BaseRate="GBP1154.14" EstimatedTotalAmount="GBP1661.95" ExtraMileageCharge="GBP0.30" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD701.47" BaseRate="USD1503.16" EstimatedTotalAmount="USD2164.53" ExtraMileageCharge="USD0.39" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="1B"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="LFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP608.55" BaseRate="GBP1304.04" EstimatedTotalAmount="GBP1877.81" ExtraMileageCharge="GBP0.30" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD792.57" BaseRate="USD1698.39" EstimatedTotalAmount="USD2445.67" ExtraMileageCharge="USD0.39" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="1C"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Compact" Category="Roadster" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="CNMN">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="DU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP87.08" BaseRate="GBP1306.20" EstimatedTotalAmount="GBP1880.93" ExtraMileageCharge="GBP0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD113.41" BaseRate="USD1701.20" EstimatedTotalAmount="USD2449.73" ExtraMileageCharge="USD0.00" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="13"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Special" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="XFMR">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP635.80" BaseRate="GBP1362.43" EstimatedTotalAmount="GBP1961.89" ExtraMileageCharge="GBP0.40" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD828.07" BaseRate="USD1774.43" EstimatedTotalAmount="USD2555.17" ExtraMileageCharge="USD0.52" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="1D"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="XFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP667.21" BaseRate="GBP1429.73" EstimatedTotalAmount="GBP2058.80" ExtraMileageCharge="GBP0.30" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD868.97" BaseRate="USD1862.09" EstimatedTotalAmount="USD2681.39" ExtraMileageCharge="USD0.39" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="1E"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="XDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP685.04" BaseRate="GBP1467.94" EstimatedTotalAmount="GBP2113.82" ExtraMileageCharge="GBP0.30" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD892.20" BaseRate="USD1911.85" EstimatedTotalAmount="USD2753.05" ExtraMileageCharge="USD0.39" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="14"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="AllTerrain" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="CYxS9B3R2BKAoLeCAAAAAA==" AcrissVehicleCode="XJAN">
+            <vehicle:VehicleRate RatePeriod="Weekly" MileageAllowance="2100" Units="MI" RateSource="Source" RateAvailability="Available" RateCode="CU2" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="GBP701.26" BaseRate="GBP1502.70" EstimatedTotalAmount="GBP2163.89" ExtraMileageCharge="GBP0.40" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="USD913.32" BaseRate="USD1957.12" EstimatedTotalAmount="USD2818.26" ExtraMileageCharge="USD0.52" PayNow="GBP0.00" PayLater="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>INCLUDED LDW TAX</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="A0TWHQA6" RateToken="15"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <common_v50_0:MarketingInformation>
+            <common_v50_0:Text>** NEW SIXT IS NOW ON COMPLETE PRICING</common_v50_0:Text>
+            <common_v50_0:Text>PLEASE CHECK WITH CRA... **</common_v50_0:Text>
+         </common_v50_0:MarketingInformation>
+      </vehicle:VehicleSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

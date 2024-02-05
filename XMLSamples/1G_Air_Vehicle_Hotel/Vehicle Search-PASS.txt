@@ -1,0 +1,132 @@
+Vehicle Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleSearchAvailabilityReq ReturnMediaLinks="true" AuthorizedBy="SUSIL" TargetBranch="P7102538" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehicleDateLocation Key="OngF/R9nSmGZOmAaefRUdg==" PickupLocationType="Terminal" PickupLocation="LHR" ReturnDateTime="2020-05-16T10:00:00" PickupDateTime="2020-05-01T10:00:00">
+            <veh:VendorLocation VendorCode="SX" ProviderCode="1G"/>
+         </veh:VehicleDateLocation>
+<!--         <com:PointOfSale Key="pqlNZBdtSnG/ZnM6m5tZ7Q==" ProviderCode="1G" PseudoCityCode="5X19"/>-->
+      </veh:VehicleSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleSearchAvailabilityRsp TransactionId="9DCE20590A07643CAB0E0A7C4C52C5DC" ResponseTime="655" MediaLinksSearchId="9DCE20590A07643CAB0E0A7C4C52C5DC_1G" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:NextResultReference ProviderCode="1G">6292007252</common_v50_0:NextResultReference>
+         <vehicle:VehicleDateLocation PickupDateTime="2020-05-01T10:00:00.000+01:00" PickupLocation="LHR" ReturnDateTime="2020-05-16T10:00:00.000+01:00">
+            <vehicle:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="01" Key="VbtNMC8Q2BKAigAICAAAAA==" LocationType="Terminal" LocationCode="LHR" Type="Pickup"/>
+         </vehicle:VehicleDateLocation>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAigAICAAAAA==" AcrissVehicleCode="ECMR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="GBP19.25" BaseRate="GBP288.75" EstimatedTotalAmount="GBP415.80" ExtraMileageCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator RateToken="6292007252"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="021" Description="CRUISE CONTROL "/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToThreeDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAigAICAAAAA==" AcrissVehicleCode="CBMR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="GBP20.46" BaseRate="GBP306.90" EstimatedTotalAmount="GBP441.94" ExtraMileageCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="2" RateToken="6292007252"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="021" Description="CRUISE CONTROL "/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAigAICAAAAA==" AcrissVehicleCode="CDMR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="GBP21.06" BaseRate="GBP315.90" EstimatedTotalAmount="GBP454.90" ExtraMileageCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="3" RateToken="6292007252"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="021" Description="CRUISE CONTROL "/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Limo" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAigAICAAAAA==" AcrissVehicleCode="CLMR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="GBP22.31" BaseRate="GBP334.65" EstimatedTotalAmount="GBP481.90" ExtraMileageCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="4" RateToken="6292007252"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="021" Description="CRUISE CONTROL "/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAigAICAAAAA==" AcrissVehicleCode="CCMR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="GBP25.27" BaseRate="GBP379.05" EstimatedTotalAmount="GBP545.83" ExtraMileageCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="5" RateToken="6292007252"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="021" Description="CRUISE CONTROL "/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAigAICAAAAA==" AcrissVehicleCode="IDMR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="GBP26.80" BaseRate="GBP402.00" EstimatedTotalAmount="GBP578.88" ExtraMileageCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="6" RateToken="6292007252"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="021" Description="CRUISE CONTROL "/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAigAICAAAAA==" AcrissVehicleCode="CDAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="GBP28.42" BaseRate="GBP426.30" EstimatedTotalAmount="GBP613.87" ExtraMileageCharge="GBP0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="7" RateToken="6292007252"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="021" Description="CRUISE CONTROL "/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+      </vehicle:VehicleSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

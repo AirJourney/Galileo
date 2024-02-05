@@ -1,0 +1,168 @@
+	<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<GdsNextOnQueueReq TraceId="46e1ab75-c4b9-4f11-8799-7c837d192f61" AuthorizedBy="UAPI" TargetBranch="P9999999" RemoveCurrent="true" QueueSessionToken="B1573DCE0A0759B6A0D06701FB459717" ProviderCode="1V" xmlns="http://www.travelport.com/schema/gdsQueue_v50_0">
+			<BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+		</GdsNextOnQueueReq>
+	</s:Body>
+</s:Envelope> 
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<gdsQueue:GdsNextOnQueueRsp xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" TraceId="46e1ab75-c4b9-4f11-8799-7c837d192f61" TransactionId="B15797AA0A0759B9B49FA1DE023FEB4F" ResponseTime="720" QueueSessionToken="B15799BF0A0759B9B49FA1DEEFFCD816">
+			<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="0" Type="Info">
+				<![CDATA[Universal Record W6A1AQ successfully removed from queue 1]]>
+			</common_v50_0:ResponseMessage>
+			<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="6211" Type="Info">
+				<![CDATA[PNR in Queue Mode: 1V-WS20HY]]>
+			</common_v50_0:ResponseMessage>
+			<universal:UniversalRecord xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" LocatorCode="PSU88L" Version="11" Status="Active">
+				<common_v50_0:BookingTraveler Key="m9y71Eu0QpGITUtOubS9vg==" TravelerType="ADT" Age="63" DOB="1956-10-04" Gender="F">
+					<common_v50_0:BookingTravelerName First="CAROL" Middle="Lynn" Last="DOE"/>
+					<common_v50_0:DeliveryInfo>
+						<common_v50_0:ShippingAddress Key="xGPH24r+Obd1SDXaibxutA==">
+							<common_v50_0:AddressName>CAROL DOE</common_v50_0:AddressName>
+							<common_v50_0:Street>24 NEWJERSEY WAY</common_v50_0:Street>
+							<common_v50_0:City>JERSEYCITY</common_v50_0:City>
+							<common_v50_0:State>NJ</common_v50_0:State>
+							<common_v50_0:PostalCode>07430</common_v50_0:PostalCode>
+							<common_v50_0:Country>US</common_v50_0:Country>
+							<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+						</common_v50_0:ShippingAddress>
+					</common_v50_0:DeliveryInfo>
+					<common_v50_0:PhoneNumber Key="xepj5Vdtp4KrQfspdHRhjg==" Type="Home" Location="EWR" Number="8912222" AreaCode="201" Text="">
+						<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:Email Key="yKfzf9BAAA/BFdABAAAAAA==" Type="Other" EmailID="carolDOE@gmail.com">
+						<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:SSR Key="5hcMWAIF4a+6SRRtKEaDmg==" Status="HK" Type="****" FreeText="////*******/F//DOE/CAROL/LYNN-1DOE/CAROLLYNN" Carrier="DL" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA=="/>
+					<common_v50_0:Address Key="yKfzf9BAAA/BGdABAAAAAA==">
+						<common_v50_0:AddressName>CAROL DOE</common_v50_0:AddressName>
+						<common_v50_0:Street>24 NEWJERSEY WAY</common_v50_0:Street>
+						<common_v50_0:City>JERSEYCITY</common_v50_0:City>
+						<common_v50_0:State>NJ</common_v50_0:State>
+						<common_v50_0:PostalCode>07430</common_v50_0:PostalCode>
+						<common_v50_0:Country>US</common_v50_0:Country>
+						<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+					</common_v50_0:Address>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:BookingTraveler Key="6sn2VtZT8oOpRqUCQfWeQQ==" TravelerType="ADT" Age="66" DOB="1953-10-25" Gender="M">
+					<common_v50_0:BookingTravelerName First="Thomas" Middle="V" Last="DOE"/>
+					<common_v50_0:PhoneNumber Key="yKfzf9BAAA/BHdABAAAAAA==" Type="Home" Location="EWR" Number="8912222" AreaCode="201" Text="">
+						<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:Email Key="yKfzf9BAAA/BIdABAAAAAA==" Type="Other" EmailID="caroldoe@gmail.com">
+						<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:SSR Key="5goGzKwcXI3oQtJGvmX3gg==" Status="HK" Type="****" FreeText="////*******/M//DOE/THOMAS/V-1DOE/THOMASV" Carrier="DL" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA=="/>
+					<common_v50_0:Address Key="yKfzf9BAAA/BJdABAAAAAA==">
+						<common_v50_0:AddressName>Thomas DOE</common_v50_0:AddressName>
+						<common_v50_0:Street>24 NEWJERSEY WAY</common_v50_0:Street>
+						<common_v50_0:City>JERSEYCITY</common_v50_0:City>
+						<common_v50_0:State>NJ</common_v50_0:State>
+						<common_v50_0:PostalCode>07430</common_v50_0:PostalCode>
+						<common_v50_0:Country>US</common_v50_0:Country>
+					</common_v50_0:Address>
+				</common_v50_0:BookingTraveler>
+				<universal:ProviderReservationInfo Key="yKfzf9BAAA/BWdABAAAAAA==" ProviderCode="1V" LocatorCode="WS20HY" CreateDate="2020-01-03T14:30:53.964+00:00" ModifiedDate="2020-03-06T19:34:33.029+00:00" HostCreateDate="2020-01-03" InQueueMode="true" OwningPCC="JD9"/>
+				<air:AirReservation xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" LocatorCode="N4CGF8" CreateDate="2020-01-03T14:30:52.721+00:00" ModifiedDate="2020-01-03T22:08:35.996+00:00">
+					<common_v50_0:SupplierLocator SupplierCode="DL" SupplierLocatorCode="GZC6Q5" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==" CreateDateTime="2020-01-03T14:30:00.000+00:00"/>
+					<common_v50_0:BookingTravelerRef Key="m9y71Eu0QpGITUtOubS9vg=="/>
+					<common_v50_0:BookingTravelerRef Key="6sn2VtZT8oOpRqUCQfWeQQ=="/>
+					<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+				</air:AirReservation>
+				<common_v50_0:GeneralRemark Key="l7iuTGe/Q9KTu/6VospZFg==" Category="Z" TypeInGds="Alpha" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>MEMBER TYPE: BASIC</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="rjlf0dcEs6EqTUrNiRmBmg==" TypeInGds="Basic" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>UNIVERSAL DESKTOP BOOKED BY: cfujikawa</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="+Vhzf9BAAA/BYuJBAAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>UNIVERSAL DESKTOP RECORD LOCATOR:</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="+Vhzf9BAAA/BZuJBAAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>PSU88L</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:AccountingRemark Key="yKfzf9BAAA/BedABAAAAAA==" Category="S4" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>CAROL DOE</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="yKfzf9BAAA/BfdABAAAAAA==" Category="S4" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>THOMAS DOE</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="yKfzf9BAAA/BgdABAAAAAA==" Category="S3" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>201 8912222</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="yKfzf9BAAA/BhdABAAAAAA==" Category="S3" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>201 8912222</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="yKfzf9BAAA/BidABAAAAAA==" Category="S10" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>CAROLDOE//GMAIL.COM</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="yKfzf9BAAA/BjdABAAAAAA==" Category="S10" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>CAROLDOE//GMAIL.COM</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BkuJBAAAAAA==" Category="S36" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>UNIVERSAL DESKTOP</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BluJBAAAAAA==" Category="*BA" TypeInGds="BookingAgentOverride" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>C10</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BmuJBAAAAAA==" Category="*SA" TypeInGds="SellingAgentOverride" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>C10</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BnuJBAAAAAA==" Category="*TA" TypeInGds="TicketingAgent" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>C10</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BeuJBAAAAAA==" Category="CA" TypeInGds="Account" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>2570@19155</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BfuJBAAAAAA==" Category="T" TypeInGds="Other" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>*HL2570</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="ahCDDvL3hKxyTXKGhDgmyA==" Category="S5" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>24 NEWJERSEY WAY</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="rRZIpT6VO7PBT4jMGDu50g==" Category="S7" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>JERSEYCITY</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="0NthXY4ugZZQQN8VAiOimg==" Category="S8" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>NJ</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="pVLAHQ0RVJbdQpwUR3mPMQ==" Category="S9" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>07430</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BouJBAAAAAA==" Category="SF" TypeInGds="ServiceFee" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>50.00</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="cgWuIQHxx4G+Q2L63EJehA==" Category="S2" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>6202401552600005</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BpuJBAAAAAA==" Category="S1" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>ACCEPTED</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BquJBAAAAAA==" Category="S23" TypeInGds="Sort" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>PHONE CALL</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="+Vhzf9BAAA/BruJBAAAAAA==" Category="*PT" TypeInGds="ProductTypeOverride" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>A</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AccountingRemark Key="Pun++foe45qVQd9VgEeSvA==" Category="T" TypeInGds="Other" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">
+					<common_v50_0:RemarkData>CLICK ON OTHER</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="pie" BranchCode="P9999999" AgencyCode="S3.14159" EventTime="2020-01-03T14:30:49.924+00:00"/>
+					<common_v50_0:AgentAction ActionType="Modified" AgentCode="pie" BranchCode="P9999999" AgencyCode="S3.14159" EventTime="2020-01-03T22:08:35.117+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:AgencyContactInfo>
+					<common_v50_0:PhoneNumber Key="yKfzf9BAAA/BmdABAAAAAA==" Type="Agency" Location="EWR" Number="265-2797" AreaCode="201" Text="AAA WORLDWIDE TRAVEL 31-78396-4-Claudete Fujikawa"/>
+					<common_v50_0:PhoneNumber Key="+Vhzf9BAAA/BQIKBAAAAAA==" Type="Agency" Location="EWR" Number="201 265-2797 6716 AAA WORLDWIDE TRAVEL 31-78396-4-CLAUDETE FUJIKAWA">
+						<common_v50_0:ProviderReservationInfoRef Key="yKfzf9BAAA/BWdABAAAAAA=="/>
+					</common_v50_0:PhoneNumber>
+				</common_v50_0:AgencyContactInfo>
+				<common_v50_0:CustomerID Key="yKfzf9BAAA/BWdABAAAAAA==" ProviderCode="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA==">6202401552600005</common_v50_0:CustomerID>
+				<common_v50_0:SSR Key="E0z0f9BAAA/BV0JBAAAAAA==" Type="****" FreeText="TODL BY 06JAN 2359 EWR OTHERWISE MAY BE XLD" Carrier="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA=="/>
+				<common_v50_0:SSR Key="E0z0f9BAAA/BW0JBAAAAAA==" Type="****" FreeText="TODL BY 06JAN FARE MAY NEED EARLIER TKT DTE" Carrier="1V" ProviderReservationInfoRef="yKfzf9BAAA/BWdABAAAAAA=="/>
+			</universal:UniversalRecord>
+		</gdsQueue:GdsNextOnQueueRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

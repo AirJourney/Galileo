@@ -1,0 +1,202 @@
+[
+  {
+    "from": "PNH",
+    "to": "TYO"
+  },
+  {
+    "from": "PNH",
+    "to": "REP"
+  },
+  {
+    "from": "PNH",
+    "to": "JKT"
+  },
+  {
+    "from": "PNH",
+    "to": "IST"
+  },
+  {
+    "from": "MIL",
+    "to": "PNH"
+  },
+  {
+    "from": "NGO",
+    "to": "PNH"
+  },
+  {
+    "from": "OSA",
+    "to": "PNH"
+  },
+  {
+    "from": "PNH",
+    "to": "REP"
+  },
+  {
+    "from": "PNH",
+    "to": "MNL"
+  },
+  {
+    "from": "PNH",
+    "to": "TYO"
+  },
+  {
+    "from": "PNH",
+    "to": "REP"
+  },
+  {
+    "from": "PNH",
+    "to": "JKT"
+  },
+  {
+    "from": "PNH",
+    "to": "IST"
+  },
+  {
+    "from": "MIL",
+    "to": "PNH"
+  },
+  {
+    "from": "NGO",
+    "to": "PNH"
+  },
+  {
+    "from": "OSA",
+    "to": "PNH"
+  },
+  {
+    "from": "PNH",
+    "to": "REP"
+  },
+  {
+    "from": "SIN",
+    "to": "KUL"
+  },
+  {
+    "from": "SIN",
+    "to": "PAR"
+  },
+  {
+    "from": "SIN",
+    "to": "MNL"
+  },
+  {
+    "from": "SIN",
+    "to": "DOH"
+  },
+  {
+    "from": "SIN",
+    "to": "DXB"
+  },
+  {
+    "from": "SIN",
+    "to": "SHA"
+  },
+  {
+    "from": "SIN",
+    "to": "CRK"
+  },
+  {
+    "from": "SIN",
+    "to": "BCN"
+  },
+  {
+    "from": "SIN",
+    "to": "SFO"
+  },
+  {
+    "from": "SIN",
+    "to": "MAA"
+  },
+  {
+    "from": "SIN",
+    "to": "LAX"
+  },
+  {
+    "from": "SIN",
+    "to": "MLE"
+  },
+  {
+    "from": "SIN",
+    "to": "DEN"
+  },
+  {
+    "from": "SIN",
+    "to": "SEL"
+  },
+  {
+    "from": "SIN",
+    "to": "HKT"
+  },
+  {
+    "from": "SIN",
+    "to": "KCH"
+  },
+  {
+    "from": "SIN",
+    "to": "BKK"
+  },
+  {
+    "from": "SIN",
+    "to": "CKG"
+  },
+  {
+    "from": "SIN",
+    "to": "JKT"
+  },
+  {
+    "from": "SIN",
+    "to": "DUB"
+  },
+  {
+    "from": "SIN",
+    "to": "IPH"
+  },
+  {
+    "from": "SIN",
+    "to": "BLR"
+  },
+  {
+    "from": "KUL",
+    "to": "SIN"
+  },
+  {
+    "from": "LON",
+    "to": "SIN"
+  },
+  {
+    "from": "ZRH",
+    "to": "SIN"
+  },
+  {
+    "from": "HKG",
+    "to": "SIN"
+  },
+  {
+    "from": "HKT",
+    "to": "SIN"
+  },
+  {
+    "from": "MNL",
+    "to": "SIN"
+  },
+  {
+    "from": "DVO",
+    "to": "SIN"
+  },
+  {
+    "from": "TPE",
+    "to": "SIN"
+  },
+  {
+    "from": "PAR",
+    "to": "SIN"
+  },
+  {
+    "from": "CTU",
+    "to": "SIN"
+  },
+  {
+    "from": "MNL",
+    "to": "TAG"
+  }
+]

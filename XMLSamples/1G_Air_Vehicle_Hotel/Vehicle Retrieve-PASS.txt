@@ -1,0 +1,32 @@
+Vehicle Retrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleRetrieveReq TargetBranch="P7102538" ProviderCode="1G" ProviderLocatorCode="5BQJZ4" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </veh:VehicleRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Retrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRetrieveRsp TransactionId="9DCE4DFF0A07643CAB0E0A7C59A4D346" ResponseTime="197" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleReservation SupplierCode="SX" BookingConfirmation="9889951982" LocatorCode="0098S6TZ" Status="HK" CreateDate="2020-03-03T00:31:44.975+00:00" ModifiedDate="2020-03-03T00:31:44.980+00:00" ProviderReservationInfoRef="xs/MMC4R2BKAP/PKCAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+            </common_v50_0:ReservationName>
+            <vehicle:VehicleDateLocation PickupDateTime="2020-05-01T10:00:00.000+01:00" PickupLocation="LHR" ReturnDateTime="2020-05-16T10:00:00.000+01:00"/>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToThreeDoors" AcrissVehicleCode="CBMR">
+               <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RequiredCharges="GBP135.04" RateCode="2IU" RateCategory="Standard" RateGuaranteed="true" RateGuaranteeType="Rate Guaranteed">
+                  <vehicle:SupplierRate RateForPeriod="GBP20.46" EstimatedTotalAmount="GBP441.94"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:BookingSource Type="IataNumber" Code="77206275"/>
+         </vehicle:VehicleReservation>
+      </vehicle:VehicleRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

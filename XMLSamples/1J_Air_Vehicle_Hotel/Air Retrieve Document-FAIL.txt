@@ -1,0 +1,33 @@
+Air Retrieve Document-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:AirRetrieveDocumentReq TargetBranch="TP_WAB_031" TraceId="Air RetrieveDocument" AuthorizedBy="Test" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirReservationLocatorCode>0SQAVO</air:AirReservationLocatorCode>
+<!-- <com:TicketNumber>9969903416065</com:TicketNumber>-->
+
+      </air:AirRetrieveDocumentReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Retrieve Document-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <SOAP:Fault>
+         <faultcode>Server.null</faultcode>
+         <faultstring>The reservation '0SQAVO' has no tickets yet</faultstring>
+         <detail>
+            <common_v50_0:ErrorInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+               <common_v50_0:Code>3000</common_v50_0:Code>
+               <common_v50_0:Service>PROVISIONINGSERVICE</common_v50_0:Service>
+               <common_v50_0:Type/>
+               <common_v50_0:Description>The reservation '0SQAVO' has no tickets yet</common_v50_0:Description>
+               <common_v50_0:TransactionId>9DCE8CA00A0764785B1483FC66CD5846</common_v50_0:TransactionId>
+               <common_v50_0:TraceId>Air RetrieveDocument</common_v50_0:TraceId>
+            </common_v50_0:ErrorInfo>
+         </detail>
+      </SOAP:Fault>
+   </SOAP:Body>
+</SOAP:Envelope>

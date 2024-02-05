@@ -1,0 +1,1054 @@
+Air Asynch LowFareSearch-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:LowFareSearchAsynchReq TargetBranch="TP_WAB_031" SolutionResult="true" TraceId="PP_1J_001" AuthorizedBy="SUSIL" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:CityOrAirport Code="LHR"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:CityOrAirport Code="JFK"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-31"/>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:CityOrAirport Code="JFK"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:CityOrAirport Code="LHR"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-06-05"/>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers DistanceType="MI" IncludeFlightDetails="true">
+            <air:DisfavoredProviders>
+               <com:Provider Code="RCH"/>
+            </air:DisfavoredProviders>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+      </air:LowFareSearchAsynchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Asynch LowFareSearch-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:LowFareSearchAsynchRsp TraceId="PP_1J_001" TransactionId="9DCE40B10A07643B096D7BC3264CF8A2" ResponseTime="15619" DistanceUnits="MI" SearchId="9DCE40B10A07643B096D7BC3264CF8A2_RLHRJFK31May20JFKLHR05Jun20tftnull300-1-1MInullfADTff287613" CurrencyType="JPY" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="15017" Type="Error" ProviderCode="ACH">No flight records found for this date or market</common_v50_0:ResponseMessage>
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="NgSNMC7Q2BKAI+qBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T09:05:00.000+01:00" ArrivalTime="2020-05-31T11:55:00.000-04:00" FlightTime="470" Distance="3441" Equipment="351" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAL+qBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T10:15:00.000-04:00" ArrivalTime="2020-06-05T22:25:00.000+01:00" FlightTime="430" Distance="3441" Equipment="764" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAP/qBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T14:05:00.000+01:00" ArrivalTime="2020-05-31T16:45:00.000-04:00" FlightTime="460" Distance="3456" Equipment="333" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAT/qBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:00:00.000-04:00" ArrivalTime="2020-06-06T06:25:00.000+01:00" FlightTime="445" Distance="3441" Equipment="333" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA9+qBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T17:30:00.000+01:00" ArrivalTime="2020-05-31T20:45:00.000-04:00" FlightTime="495" Distance="3441" Equipment="764" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA5+qBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T20:01:00.000-04:00" ArrivalTime="2020-06-06T08:00:00.000+01:00" FlightTime="419" Distance="3456" Equipment="789" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAb/qBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T08:15:00.000-04:00" ArrivalTime="2020-06-05T20:10:00.000+01:00" FlightTime="415" Distance="3441" Equipment="789" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA//qBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T14:05:00.000+01:00" ArrivalTime="2020-05-31T17:00:00.000-04:00" FlightTime="475" Distance="3456" Equipment="77W" OriginTerminal="3" DestinationTerminal="8"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKACArBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T10:30:00.000-04:00" ArrivalTime="2020-06-05T22:10:00.000+01:00" FlightTime="400" Distance="3456" Equipment="772" OriginTerminal="8" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA4/qBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T10:45:00.000+01:00" ArrivalTime="2020-05-31T13:54:00.000-04:00" FlightTime="489" Distance="3441" Equipment="764" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA1+qBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T17:30:00.000+01:00" ArrivalTime="2020-05-31T20:45:00.000-04:00" FlightTime="495" Distance="3441" Equipment="764" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAWArBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T22:35:00.000-04:00" ArrivalTime="2020-06-06T10:50:00.000+01:00" FlightTime="435" Distance="3456" Equipment="772" OriginTerminal="8" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAxArBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T09:35:00.000+01:00" ArrivalTime="2020-05-31T12:25:00.000-04:00" FlightTime="470" Distance="3456" Equipment="772" OriginTerminal="3" DestinationTerminal="8"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA4ArBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T19:35:00.000-04:00" ArrivalTime="2020-06-06T07:40:00.000+01:00" FlightTime="425" Distance="3456" Equipment="77W" OriginTerminal="8" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAWBrBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:10:00.000-04:00" ArrivalTime="2020-06-06T06:20:00.000+01:00" FlightTime="430" Distance="3456" Equipment="77W" OriginTerminal="8" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKApBrBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:00:00.000-04:00" ArrivalTime="2020-06-06T06:25:00.000+01:00" FlightTime="445" Distance="3441" Equipment="333" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAQCrBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T22:00:00.000-04:00" ArrivalTime="2020-06-06T10:10:00.000+01:00" FlightTime="430" Distance="3441" Equipment="351" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA1CrBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T10:45:00.000+01:00" ArrivalTime="2020-05-31T13:54:00.000-04:00" FlightTime="489" Distance="3456" Equipment="764" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKA3CrBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T22:00:00.000-04:00" ArrivalTime="2020-06-06T10:10:00.000+01:00" FlightTime="430" Distance="3456" Equipment="351" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAJDrBCAAAAA==" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:00:00.000-04:00" ArrivalTime="2020-06-06T06:25:00.000+01:00" FlightTime="445" Distance="3456" Equipment="333" OriginTerminal="4" DestinationTerminal="3"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAiDrBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T17:30:00.000+01:00" ArrivalTime="2020-05-31T20:45:00.000-04:00" FlightTime="495" Distance="3456" Equipment="764" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKAvCrBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T09:05:00.000+01:00" ArrivalTime="2020-05-31T11:55:00.000-04:00" FlightTime="470" Distance="3441" Equipment="351" OriginTerminal="3" DestinationTerminal="4"/>
+            <air:FlightDetails Key="NgSNMC7Q2BKANCrBCAAAAA==" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T12:30:00.000+01:00" ArrivalTime="2020-05-31T15:25:00.000-04:00" FlightTime="475" Distance="3441" Equipment="351" OriginTerminal="3" DestinationTerminal="4"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="NgSNMC7Q2BKAH+qBCAAAAA==" Group="0" Carrier="KL" FlightNumber="4820" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T09:05:00.000+01:00" ArrivalTime="2020-05-31T11:55:00.000-04:00" FlightTime="470" Distance="3441" ETicketability="Yes" Equipment="351" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAJ+qBCAAAAA==">KL  4820 VIRGIN ATLANTIC</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="VS" OperatingFlightNumber="3">VS3</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAI+qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAK+qBCAAAAA==" Group="1" Carrier="KL" FlightNumber="6101" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T10:15:00.000-04:00" ArrivalTime="2020-06-05T22:25:00.000+01:00" FlightTime="430" Distance="3441" ETicketability="Yes" Equipment="764" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAM+qBCAAAAA==">KL  6101 DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="1">DL1</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAL+qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAO/qBCAAAAA==" Group="0" Carrier="AF" FlightNumber="9663" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T14:05:00.000+01:00" ArrivalTime="2020-05-31T16:45:00.000-04:00" FlightTime="460" Distance="3456" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAQ/qBCAAAAA==">AF  9663 VIRGIN ATLANTIC</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="VS" OperatingFlightNumber="45">VS45</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAP/qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAS/qBCAAAAA==" Group="1" Carrier="KL" FlightNumber="4826" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:00:00.000-04:00" ArrivalTime="2020-06-06T06:25:00.000+01:00" FlightTime="445" Distance="3441" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAU/qBCAAAAA==">KL  4826 VIRGIN ATLANTIC</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="VS" OperatingFlightNumber="4">VS4</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAT/qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA8+qBCAAAAA==" Group="0" Carrier="KL" FlightNumber="6108" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T17:30:00.000+01:00" ArrivalTime="2020-05-31T20:45:00.000-04:00" FlightTime="495" Distance="3441" ETicketability="Yes" Equipment="764" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKA++qBCAAAAA==">KL  6108 DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="6">DL6</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA9+qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA4+qBCAAAAA==" Group="1" Carrier="AF" FlightNumber="9917" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T20:01:00.000-04:00" ArrivalTime="2020-06-06T08:00:00.000+01:00" FlightTime="419" Distance="3456" ETicketability="Yes" Equipment="789" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKA6+qBCAAAAA==">AF  9917 VIRGIN ATLANTIC</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="VS" OperatingFlightNumber="138">VS138</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA5+qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAa/qBCAAAAA==" Group="1" Carrier="KL" FlightNumber="4825" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T08:15:00.000-04:00" ArrivalTime="2020-06-05T20:10:00.000+01:00" FlightTime="415" Distance="3441" ETicketability="Yes" Equipment="789" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAc/qBCAAAAA==">KL  4825 VIRGIN ATLANTIC</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="VS" OperatingFlightNumber="26">VS26</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAb/qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA+/qBCAAAAA==" Group="0" Carrier="AY" FlightNumber="4015" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T14:05:00.000+01:00" ArrivalTime="2020-05-31T17:00:00.000-04:00" FlightTime="475" Distance="3456" ETicketability="Yes" Equipment="77W" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAAArBCAAAAA==">AY  4015 AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="105">AA105</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA//qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKABArBCAAAAA==" Group="1" Carrier="AY" FlightNumber="4036" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T10:30:00.000-04:00" ArrivalTime="2020-06-05T22:10:00.000+01:00" FlightTime="400" Distance="3456" ETicketability="Yes" Equipment="772" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKADArBCAAAAA==">AY  4036 AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="142">AA142</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKACArBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA3/qBCAAAAA==" Group="0" Carrier="VS" FlightNumber="4029" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T10:45:00.000+01:00" ArrivalTime="2020-05-31T13:54:00.000-04:00" FlightTime="489" Distance="3441" ETicketability="Yes" Equipment="764" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKA5/qBCAAAAA==">VS  4029 DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="4">DL4</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA4/qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA0+qBCAAAAA==" Group="0" Carrier="VS" FlightNumber="4007" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T17:30:00.000+01:00" ArrivalTime="2020-05-31T20:45:00.000-04:00" FlightTime="495" Distance="3441" ETicketability="Yes" Equipment="764" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKA2+qBCAAAAA==">VS  4007 DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="6">DL6</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA1+qBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAVArBCAAAAA==" Group="1" Carrier="AY" FlightNumber="4016" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T22:35:00.000-04:00" ArrivalTime="2020-06-06T10:50:00.000+01:00" FlightTime="435" Distance="3456" ETicketability="Yes" Equipment="772" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAXArBCAAAAA==">AY  4016 AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="104">AA104</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAWArBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAwArBCAAAAA==" Group="0" Carrier="AY" FlightNumber="4011" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T09:35:00.000+01:00" ArrivalTime="2020-05-31T12:25:00.000-04:00" FlightTime="470" Distance="3456" ETicketability="Yes" Equipment="772" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAyArBCAAAAA==">AY  4011 AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="101">AA101</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAxArBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA3ArBCAAAAA==" Group="1" Carrier="AY" FlightNumber="4018" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T19:35:00.000-04:00" ArrivalTime="2020-06-06T07:40:00.000+01:00" FlightTime="425" Distance="3456" ETicketability="Yes" Equipment="77W" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKA5ArBCAAAAA==">AY  4018 AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="106">AA106</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA4ArBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAVBrBCAAAAA==" Group="1" Carrier="AY" FlightNumber="4012" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:10:00.000-04:00" ArrivalTime="2020-06-06T06:20:00.000+01:00" FlightTime="430" Distance="3456" ETicketability="Yes" Equipment="77W" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAXBrBCAAAAA==">AY  4012 AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="100">AA100</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAWBrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAoBrBCAAAAA==" Group="1" Carrier="VS" FlightNumber="4" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:00:00.000-04:00" ArrivalTime="2020-06-06T06:25:00.000+01:00" FlightTime="445" Distance="3441" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKApBrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAPCrBCAAAAA==" Group="1" Carrier="VS" FlightNumber="10" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T22:00:00.000-04:00" ArrivalTime="2020-06-06T10:10:00.000+01:00" FlightTime="430" Distance="3441" ETicketability="Yes" Equipment="351" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAQCrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA0CrBCAAAAA==" Group="0" Carrier="DL" FlightNumber="4" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T10:45:00.000+01:00" ArrivalTime="2020-05-31T13:54:00.000-04:00" FlightTime="489" Distance="3456" ETicketability="Yes" Equipment="764" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA1CrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKA2CrBCAAAAA==" Group="1" Carrier="DL" FlightNumber="4377" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T22:00:00.000-04:00" ArrivalTime="2020-06-06T10:10:00.000+01:00" FlightTime="430" Distance="3456" ETicketability="Yes" Equipment="351" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKA4CrBCAAAAA==">DL  4377 VIRGIN ATLANTIC</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="VS" OperatingFlightNumber="10">VS10</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKA3CrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAIDrBCAAAAA==" Group="1" Carrier="DL" FlightNumber="4373" Origin="JFK" Destination="LHR" DepartureTime="2020-06-05T18:00:00.000-04:00" ArrivalTime="2020-06-06T06:25:00.000+01:00" FlightTime="445" Distance="3456" ETicketability="Yes" Equipment="333" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="NgSNMC7Q2BKAKDrBCAAAAA==">DL  4373 VIRGIN ATLANTIC</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="VS" OperatingFlightNumber="4">VS4</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAJDrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAhDrBCAAAAA==" Group="0" Carrier="DL" FlightNumber="6" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T17:30:00.000+01:00" ArrivalTime="2020-05-31T20:45:00.000-04:00" FlightTime="495" Distance="3456" ETicketability="Yes" Equipment="764" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAiDrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAuCrBCAAAAA==" Group="0" Carrier="VS" FlightNumber="3" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T09:05:00.000+01:00" ArrivalTime="2020-05-31T11:55:00.000-04:00" FlightTime="470" Distance="3441" ETicketability="Yes" Equipment="351" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKAvCrBCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="NgSNMC7Q2BKAMCrBCAAAAA==" Group="0" Carrier="VS" FlightNumber="137" Origin="LHR" Destination="JFK" DepartureTime="2020-05-31T12:30:00.000+01:00" ArrivalTime="2020-05-31T15:25:00.000-04:00" FlightTime="475" Distance="3441" ETicketability="Yes" Equipment="351" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <air:AirAvailInfo ProviderCode="1J"/>
+               <air:FlightDetailsRef Key="NgSNMC7Q2BKANCrBCAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:FareInfoList>
+            <air:FareInfo Key="NgSNMC7Q2BKAa+qBCAAAAA==" FareBasis="VKUR83BN" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY5000">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAa+qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^VKUR83BN^KL^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAfErBCAAAAA==" BrandID="279476" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAA/qBCAAAAA==" FareBasis="VKUR83BN" PassengerTypeCode="ADT" Origin="JFK" Destination="LHR" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY4900">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAA/qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^VKUR83BN^KL^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAgErBCAAAAA==" BrandID="279476" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAM/qBCAAAAA==" FareBasis="VKUR83BN" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY5000">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAM/qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^VKUR83BN^AF^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAhErBCAAAAA==" BrandID="279483" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAm+qBCAAAAA==" FareBasis="VKUR83BN" PassengerTypeCode="ADT" Origin="JFK" Destination="LHR" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY4900">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAm+qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^VKUR83BN^AF^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAiErBCAAAAA==" BrandID="279483" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAo/qBCAAAAA==" FareBasis="VKUR83BN" PassengerTypeCode="ADT" Origin="LON" Destination="NYC" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAo/qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^VKUR83BN^KL^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAp/qBCAAAAA==" FareBasis="VKUR83BN" PassengerTypeCode="ADT" Origin="NYC" Destination="LON" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAp/qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^VKUR83BN^KL^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAOArBCAAAAA==" FareBasis="OKN8Z2B4" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY5300">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAOArBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^OKN8Z2B4^AY^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAjErBCAAAAA==" BrandID="168470" BrandTier="0002"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAPArBCAAAAA==" FareBasis="QKN4Z2B4" PassengerTypeCode="ADT" Origin="JFK" Destination="LHR" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY8200">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAPArBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^QKN4Z2B4^AY^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAkErBCAAAAA==" BrandID="168470" BrandTier="0002"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKA1/qBCAAAAA==" FareBasis="NKUR43BN" PassengerTypeCode="ADT" Origin="LON" Destination="NYC" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKA1/qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^NKUR43BN^VS^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAy+qBCAAAAA==" FareBasis="NKUR43BN" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY7900">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAy+qBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^NKUR43BN^VS^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAiArBCAAAAA==" FareBasis="OKN8Z2B4" PassengerTypeCode="ADT" Origin="LON" Destination="NYC" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAiArBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^OKN8Z2B4^AY^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAjArBCAAAAA==" FareBasis="NKN4Z2B4" PassengerTypeCode="ADT" Origin="NYC" Destination="LON" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAjArBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^NKN4Z2B4^AY^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAEBrBCAAAAA==" FareBasis="NKN4Z2B4" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY11100">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAEBrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^NKN4Z2B4^AY^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAlErBCAAAAA==" BrandID="168470" BrandTier="0002"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAPBrBCAAAAA==" FareBasis="QKN4Z2B4" PassengerTypeCode="ADT" Origin="JFK" Destination="LHR" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY8100">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAPBrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^QKN4Z2B4^AY^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAmErBCAAAAA==" BrandID="168470" BrandTier="0002"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAuArBCAAAAA==" FareBasis="NKN4Z2B4" PassengerTypeCode="ADT" Origin="LON" Destination="NYC" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAuArBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^NKN4Z2B4^AY^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAiBrBCAAAAA==" FareBasis="QKN4Z2B4" PassengerTypeCode="ADT" Origin="NYC" Destination="LON" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAiBrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^QKN4Z2B4^AY^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKA0BrBCAAAAA==" FareBasis="NKUR43MN" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY15000">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKA0BrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^NKUR43MN^VS^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKA/BrBCAAAAA==" FareBasis="KKUP83MN" PassengerTypeCode="ADT" Origin="JFK" Destination="LHR" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY41600">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKA/BrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^KKUP83MN^VS^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAgCrBCAAAAA==" FareBasis="NKUR43MN" PassengerTypeCode="ADT" Origin="LON" Destination="NYC" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAgCrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^NKUR43MN^VS^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAhCrBCAAAAA==" FareBasis="KKUP83MN" PassengerTypeCode="ADT" Origin="NYC" Destination="LON" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAhCrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^KKUP83MN^VS^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKADDrBCAAAAA==" FareBasis="XKUR43MN" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY15000">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKADDrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^XKUR43MN^DL^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAnErBCAAAAA==" BrandID="279899" BrandTier="0002"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAEDrBCAAAAA==" FareBasis="GKUP83MN" PassengerTypeCode="ADT" Origin="JFK" Destination="LHR" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY41600">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAEDrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^GKUP83MN^DL^^</air:FareRuleKey>
+               <air:Brand Key="NgSNMC7Q2BKAoErBCAAAAA==" BrandID="279897" BrandTier="0004"/>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAsCrBCAAAAA==" FareBasis="XKUR43MN" PassengerTypeCode="ADT" Origin="LON" Destination="NYC" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAsCrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^XKUR43MN^DL^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAVDrBCAAAAA==" FareBasis="GKUP83MN" PassengerTypeCode="ADT" Origin="NYC" Destination="LON" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAVDrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^GKUP83MN^DL^^</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="NgSNMC7Q2BKAKCrBCAAAAA==" FareBasis="XKUR43MN" PassengerTypeCode="ADT" Origin="LHR" Destination="JFK" EffectiveDate="2020-03-03T09:32:00.000+09:00" DepartureDate="2020-05-31" Amount="JPY17900">
+               <air:FareRuleKey FareInfoRef="NgSNMC7Q2BKAKCrBCAAAAA==" ProviderCode="1J">dir-LON^NYC^2020152^ALL^XKUR43MN^VS^^</air:FareRuleKey>
+            </air:FareInfo>
+         </air:FareInfoList>
+         <air:RouteList>
+            <air:Route Key="NgSNMC7Q2BKAeErBCAAAAA==">
+               <air:Leg Key="NgSNMC7Q2BKAN+qBCAAAAA==" Group="0" Origin="LON" Destination="NYC"/>
+               <air:Leg Key="NgSNMC7Q2BKAO+qBCAAAAA==" Group="1" Origin="NYC" Destination="LON"/>
+            </air:Route>
+         </air:RouteList>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAG+qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAH+qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAK+qBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAP+qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520" LatestTicketingTime="2020-03-17" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="KL" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAa+qBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAA/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAa+qBCAAAAA==" SegmentRef="NgSNMC7Q2BKAH+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAA/qBCAAAAA==" SegmentRef="NgSNMC7Q2BKAK+qBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY3160"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAX/qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520">
+            <air:Journey TravelTime="P0DT7H40M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAO/qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H25M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAS/qBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAB/qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520" LatestTicketingTime="2020-03-17" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="AF" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAM/qBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAA/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAM/qBCAAAAA==" SegmentRef="NgSNMC7Q2BKAO/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAA/qBCAAAAA==" SegmentRef="NgSNMC7Q2BKAS/qBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY3160"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAY/qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520">
+            <air:Journey TravelTime="P0DT8H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA8+qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT6H59M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA4+qBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAb+qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520" LatestTicketingTime="2020-03-17" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="KL" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAa+qBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAm+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAa+qBCAAAAA==" SegmentRef="NgSNMC7Q2BKA8+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAm+qBCAAAAA==" SegmentRef="NgSNMC7Q2BKA4+qBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY3160"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAZ/qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAH+qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT6H55M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAa/qBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAd/qBCAAAAA==" TotalPrice="JPY50420" BasePrice="JPY9900" ApproximateTotalPrice="JPY50420" ApproximateBasePrice="JPY9900" Taxes="JPY40520" LatestTicketingTime="2020-03-17" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="KL" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAo/qBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAp/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAo/qBCAAAAA==" SegmentRef="NgSNMC7Q2BKAH+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAp/qBCAAAAA==" SegmentRef="NgSNMC7Q2BKAa/qBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY3160"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKA9/qBCAAAAA==" TotalPrice="JPY50860" BasePrice="JPY13500" ApproximateTotalPrice="JPY50860" ApproximateBasePrice="JPY13500" Taxes="JPY37360">
+            <air:Journey TravelTime="P0DT7H55M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA+/qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT6H40M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKABArBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAEArBCAAAAA==" TotalPrice="JPY50860" BasePrice="JPY13500" ApproximateTotalPrice="JPY50860" ApproximateBasePrice="JPY13500" Taxes="JPY37360" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="AY" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAOArBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAPArBCAAAAA=="/>
+               <air:BookingInfo BookingCode="O" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAOArBCAAAAA==" SegmentRef="NgSNMC7Q2BKA+/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="Q" BookingCount="5" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAPArBCAAAAA==" SegmentRef="NgSNMC7Q2BKABArBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKASArBCAAAAA==" TotalPrice="JPY51740" BasePrice="JPY12800" ApproximateTotalPrice="JPY51740" ApproximateBasePrice="JPY12800" Taxes="JPY38940">
+            <air:Journey TravelTime="P0DT8H9M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA3/qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT6H55M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAa/qBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAq/qBCAAAAA==" TotalPrice="JPY51740" BasePrice="JPY12800" ApproximateTotalPrice="JPY51740" ApproximateBasePrice="JPY12800" Taxes="JPY38940" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKA1/qBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAp/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKA1/qBCAAAAA==" SegmentRef="NgSNMC7Q2BKA3/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAp/qBCAAAAA==" SegmentRef="NgSNMC7Q2BKAa/qBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY8030"/>
+               <air:TaxInfo Category="YR" Amount="JPY6450"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKATArBCAAAAA==" TotalPrice="JPY51740" BasePrice="JPY12800" ApproximateTotalPrice="JPY51740" ApproximateBasePrice="JPY12800" Taxes="JPY38940">
+            <air:Journey TravelTime="P0DT8H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA0+qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT6H59M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA4+qBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAn+qBCAAAAA==" TotalPrice="JPY51740" BasePrice="JPY12800" ApproximateTotalPrice="JPY51740" ApproximateBasePrice="JPY12800" Taxes="JPY38940" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAy+qBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAm+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAy+qBCAAAAA==" SegmentRef="NgSNMC7Q2BKA0+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="V" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAm+qBCAAAAA==" SegmentRef="NgSNMC7Q2BKA4+qBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY8030"/>
+               <air:TaxInfo Category="YR" Amount="JPY6450"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAUArBCAAAAA==" TotalPrice="JPY53760" BasePrice="JPY16400" ApproximateTotalPrice="JPY53760" ApproximateBasePrice="JPY16400" Taxes="JPY37360">
+            <air:Journey TravelTime="P0DT7H55M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA+/qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAVArBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAYArBCAAAAA==" TotalPrice="JPY53760" BasePrice="JPY16400" ApproximateTotalPrice="JPY53760" ApproximateBasePrice="JPY16400" Taxes="JPY37360" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="AY" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAiArBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAjArBCAAAAA=="/>
+               <air:BookingInfo BookingCode="O" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAiArBCAAAAA==" SegmentRef="NgSNMC7Q2BKA+/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="7" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAjArBCAAAAA==" SegmentRef="NgSNMC7Q2BKAVArBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKA2ArBCAAAAA==" TotalPrice="JPY56560" BasePrice="JPY19200" ApproximateTotalPrice="JPY56560" ApproximateBasePrice="JPY19200" Taxes="JPY37360">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAwArBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA3ArBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKA6ArBCAAAAA==" TotalPrice="JPY56560" BasePrice="JPY19200" ApproximateTotalPrice="JPY56560" ApproximateBasePrice="JPY19200" Taxes="JPY37360" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="AY" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAEBrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAPBrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="3" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAEBrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAwArBCAAAAA=="/>
+               <air:BookingInfo BookingCode="Q" BookingCount="5" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAPBrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA3ArBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAUBrBCAAAAA==" TotalPrice="JPY56560" BasePrice="JPY19200" ApproximateTotalPrice="JPY56560" ApproximateBasePrice="JPY19200" Taxes="JPY37360">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAwArBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAVBrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAYBrBCAAAAA==" TotalPrice="JPY56560" BasePrice="JPY19200" ApproximateTotalPrice="JPY56560" ApproximateBasePrice="JPY19200" Taxes="JPY37360" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="AY" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAuArBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAiBrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="3" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAuArBCAAAAA==" SegmentRef="NgSNMC7Q2BKAwArBCAAAAA=="/>
+               <air:BookingInfo BookingCode="Q" BookingCount="7" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAiBrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAVBrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAlBrBCAAAAA==" TotalPrice="JPY56560" BasePrice="JPY19200" ApproximateTotalPrice="JPY56560" ApproximateBasePrice="JPY19200" Taxes="JPY37360">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAwArBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT6H40M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKABArBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAFBrBCAAAAA==" TotalPrice="JPY56560" BasePrice="JPY19200" ApproximateTotalPrice="JPY56560" ApproximateBasePrice="JPY19200" Taxes="JPY37360" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="AY" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAEBrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAPBrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="3" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAEBrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAwArBCAAAAA=="/>
+               <air:BookingInfo BookingCode="Q" BookingCount="5" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAPBrBCAAAAA==" SegmentRef="NgSNMC7Q2BKABArBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAmBrBCAAAAA==" TotalPrice="JPY59460" BasePrice="JPY22100" ApproximateTotalPrice="JPY59460" ApproximateBasePrice="JPY22100" Taxes="JPY37360">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAwArBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAVArBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAkArBCAAAAA==" TotalPrice="JPY59460" BasePrice="JPY22100" ApproximateTotalPrice="JPY59460" ApproximateBasePrice="JPY22100" Taxes="JPY37360" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="AY" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAuArBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAjArBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="3" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAuArBCAAAAA==" SegmentRef="NgSNMC7Q2BKAwArBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="7" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAjArBCAAAAA==" SegmentRef="NgSNMC7Q2BKAVArBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY12900"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAnBrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA0+qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H25M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAqBrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKA0BrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKA/BrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKA0BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA0+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="5" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKA/BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAVCrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H9M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA3/qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAWCrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAgCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAhCrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="6" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAgCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA3/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="2" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKAhCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAzCrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H9M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA0CrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA2CrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKA5CrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="DL" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKADDrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAEDrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="6" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKADDrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA0CrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKAEDrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA2CrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAHDrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H9M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA0CrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H25M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAIDrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKALDrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="DL" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAsCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAVDrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="6" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAsCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA0CrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="5" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKAVDrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAIDrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAmDrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA0+qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAnDrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKA0BrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKA/BrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKA0BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA0+qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="2" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKA/BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAzDrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAhDrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA2CrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKA0DrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="DL" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAsCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAVDrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAsCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAhDrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKAVDrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA2CrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAAErBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H9M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKA3/qBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H25M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKA1BrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKA0BrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKA/BrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="N" BookingCount="6" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKA0BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKA3/qBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="5" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKA/BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKABErBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT8H15M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAhDrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H25M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAIDrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAWDrBCAAAAA==" TotalPrice="JPY101830" BasePrice="JPY56600" ApproximateTotalPrice="JPY101830" ApproximateBasePrice="JPY56600" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="DL" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAsCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAVDrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAsCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAhDrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="5" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKAVDrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAIDrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YR" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKACErBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAuCrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H25M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKADErBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAKCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKA/BrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAKCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAuCrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="5" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKA/BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAPErBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT7H55M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAMCrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H25M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAQErBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAsCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAhCrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAsCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAMCrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="5" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKAhCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAoBrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAcErBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT7H55M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAMCrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAACrBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAKCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKA/BrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="9" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAKCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAMCrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="2" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKA/BrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="NgSNMC7Q2BKAdErBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230">
+            <air:Journey TravelTime="P0DT7H50M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAuCrBCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT7H10M0S">
+               <air:AirSegmentRef Key="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="NgSNMC7Q2BKAN+qBCAAAAA=="/>
+            <air:LegRef Key="NgSNMC7Q2BKAO+qBCAAAAA=="/>
+            <air:AirPricingInfo Key="NgSNMC7Q2BKAiCrBCAAAAA==" TotalPrice="JPY104730" BasePrice="JPY59500" ApproximateTotalPrice="JPY104730" ApproximateBasePrice="JPY59500" Taxes="JPY45230" LatestTicketingTime="2020-03-06" PricingMethod="Auto" ETicketability="Yes" PlatingCarrier="VS" ProviderCode="1J">
+               <air:FareInfoRef Key="NgSNMC7Q2BKAsCrBCAAAAA=="/>
+               <air:FareInfoRef Key="NgSNMC7Q2BKAhCrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="X" BookingCount="4" CabinClass="Economy" FareInfoRef="NgSNMC7Q2BKAsCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAuCrBCAAAAA=="/>
+               <air:BookingInfo BookingCode="K" BookingCount="2" CabinClass="PremiumEconomy" FareInfoRef="NgSNMC7Q2BKAhCrBCAAAAA==" SegmentRef="NgSNMC7Q2BKAPCrBCAAAAA=="/>
+               <air:TaxInfo Category="GB" Amount="JPY11460"/>
+               <air:TaxInfo Category="UB" Amount="JPY5860"/>
+               <air:TaxInfo Category="AY" Amount="JPY620"/>
+               <air:TaxInfo Category="US" Amount="JPY4160"/>
+               <air:TaxInfo Category="XA" Amount="JPY440"/>
+               <air:TaxInfo Category="XF" Amount="JPY500">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="JFK"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="XY" Amount="JPY770"/>
+               <air:TaxInfo Category="YC" Amount="JPY650"/>
+               <air:TaxInfo Category="YQ" Amount="JPY20770"/>
+               <air:PassengerType Code="ADT"/>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AsyncProviderSpecificResponse ProviderCode="1J" MoreResults="false"/>
+         <air:BrandList>
+            <air:Brand Key="NgSNMC7Q2BKApErBCAAAAA==" BrandID="168470" Name="LIGHT" BrandedDetailsAvailable="true" Carrier="AY">
+               <air:Title Type="External" LanguageCode="EN">LIGHT</air:Title>
+               <air:Title Type="Short" LanguageCode="EN">Light</air:Title>
+               <air:Text Type="Upsell" LanguageCode="EN">Upgrade to STANDARD fares which include one checked baggage</air:Text>
+               <air:Text Type="MarketingAgent" LanguageCode="EN">The LIGHT fare includes: 
+
+•  One carry on bag max 8kg.   
+•  Checked baggage available for an additional fee.                                                     
+•  Advance seat selection available for an additional fee.
+•  Changes available for an additional fee.
+•  Complimentary meals and drinks on board.           
+•  Earn Finnair Plus Points. 
+
+If the flight will be operated by another airline then the onboard product or service may be different.</air:Text>
+               <air:Text Type="Strapline" LanguageCode="EN">The fare to suit those travelling light</air:Text>
+               <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="149">https://cdn.travelport.com/finnair/AY_general_medium_1377.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/finnair/AY_general_large_42635.jpg</air:ImageLocation>
+            </air:Brand>
+            <air:Brand Key="NgSNMC7Q2BKAqErBCAAAAA==" BrandID="279899" Name="Main Cabin" BrandedDetailsAvailable="true" Carrier="DL">
+               <air:Title Type="External" LanguageCode="EN">Main Cabin</air:Title>
+               <air:Title Type="Short" LanguageCode="EN">Main Cabin</air:Title>
+               <air:Text Type="Upsell" LanguageCode="EN">Upgrade to Main Cabin for added flexibility, including seat selection at purchase, same day travel changes (subject to availability, fees may apply) and full Medallion® benefits</air:Text>
+               <air:Text Type="MarketingAgent" LanguageCode="EN">A higher standard. 
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+               <air:Text Type="Strapline" LanguageCode="EN">Low affordable fare with perks</air:Text>
+               <air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45994.jpg</air:ImageLocation>
+            </air:Brand>
+            <air:Brand Key="NgSNMC7Q2BKArErBCAAAAA==" BrandID="279476" Name="ECONOMY LIGHT1" BrandedDetailsAvailable="true" Carrier="KL">
+               <air:Title Type="External" LanguageCode="EN">Economy Light</air:Title>
+               <air:Title Type="Short" LanguageCode="EN">EcoLight</air:Title>
+               <air:Text Type="MarketingAgent" LanguageCode="EN">KLM Economy Class includes: 
+
+- Comfortable modern seating. 
+- Complimentary meals and drinks on board. 
+- Personal seat back entertainment system on board long haul flights. 
+- WiFi available on all of our brand new Boeing 787 Dreamliners and on 1 of our Boeing 777-300 aircraft. 
+
+If the flight is operated by another airline then the onboard product or service might be different.</air:Text>
+               <air:Text Type="Strapline" LanguageCode="EN">The fare to suit those travelling light</air:Text>
+               <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/klm/KL_general_large_92275.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="149">https://cdn.travelport.com/klm/KL_general_medium_1337.jpg</air:ImageLocation>
+            </air:Brand>
+            <air:Brand Key="NgSNMC7Q2BKAsErBCAAAAA==" BrandID="279897" Name="Delta Premium Select" BrandedDetailsAvailable="true" Carrier="DL">
+               <air:Title Type="External" LanguageCode="EN">Delta Premium Select</air:Title>
+               <air:Title Type="Short" LanguageCode="EN">Premium</air:Title>
+               <air:Text Type="Upsell" LanguageCode="EN">Experience Delta Premium Select; a new, superior cabin designed for comfort on our longest flights.</air:Text>
+               <air:Text Type="MarketingAgent" LanguageCode="EN">Relax in New Delta Premium Select.  
+
+
+- Sky Priority® expedited check-in, security and baggage handling, and premium boarding 
+- 2 Standard Checked Bags Free 
+- Be seated first with Sky Priority Boarding
+- A relaxing cabin with personal service 
+- Relax in an adjustable seat with footrests
+- Enjoy plated meals on Alessi serviceware
+- Stay entertained with a larger entertainment screen
+- Find in-seat power to charge your devices
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+               <air:Text Type="Strapline" LanguageCode="EN">Relax in New Delta Premium Select</air:Text>
+               <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="99">https://cdn.travelport.com/delta/DL_general_medium_4502.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_46032.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="99">https://cdn.travelport.com/delta/DL_general_medium_4502.jpg</air:ImageLocation>
+            </air:Brand>
+            <air:Brand Key="NgSNMC7Q2BKAtErBCAAAAA==" BrandID="279483" Name="ECONOMY LIGHT1" BrandedDetailsAvailable="true" Carrier="AF">
+               <air:Title Type="External" LanguageCode="EN">Economy Light</air:Title>
+               <air:Title Type="Short" LanguageCode="EN">EcoLight</air:Title>
+               <air:Text Type="MarketingAgent" LanguageCode="EN">AF Economy Class includes: 
+
+- Comfortable modern seating. 
+- Complimentary meals and drinks on board. 
+- Personal seat back entertainment system on board long haul flights. 
+- WiFi available on all of our brand new Boeing 787 Dreamliners and on 1 of our Boeing 777-300 aircraft. 
+
+If the flight is operated by another airline then the onboard product or service might be different.</air:Text>
+               <air:Text Type="Strapline" LanguageCode="EN">The fare to suit those travelling light</air:Text>
+               <air:ImageLocation Type="Agent" ImageWidth="149" ImageHeight="150">https://cdn.travelport.com/airfrance/AF_general_medium_1435.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/airfrance/AF_general_large_52679.jpg</air:ImageLocation>
+            </air:Brand>
+         </air:BrandList>
+      </air:LowFareSearchAsynchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

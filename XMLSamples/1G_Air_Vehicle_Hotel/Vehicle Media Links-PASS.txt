@@ -1,0 +1,943 @@
+Vehicle Media Links-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleMediaLinksReq AuthorizedBy="SUSIL" TargetBranch="P7102538" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehiclePickupLocation PickUpLocation="LHR">
+            <veh:Vendor Code="SX"/>
+            <!--<veh:VehicleModifier AirConditioning="true" TransmissionType="Automatic" VehicleClass="?" Category="?" DoorCount="?" FuelType="?"/>-->
+         </veh:VehiclePickupLocation>
+      </veh:VehicleMediaLinksReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Media Links-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleMediaLinksRsp TransactionId="9DCE4AC20A07643B096D7BC3BA81225D" ResponseTime="161" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Premium" Category="Convertible" AcrissVehicleCode="PTMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25700.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="ECMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25647.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="RegularCabPickup" AcrissVehicleCode="XPAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25732.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Convertible" AcrissVehicleCode="ITMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25671.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Convertible" AcrissVehicleCode="CTMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25637.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Limo" AcrissVehicleCode="XLAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25729.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="AllTerrain" AcrissVehicleCode="XJAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25727.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Limo" AcrissVehicleCode="ILMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25669.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Luxury" Category="RegularCabPickup" AcrissVehicleCode="LPMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25683.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Fullsize" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="FDMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25654.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" AcrissVehicleCode="SFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25705.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Van" AcrissVehicleCode="PVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25701.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="Limo" AcrissVehicleCode="XLAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25728.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="XDAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25718.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="ManualAWD" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" FuelType="Electric" AcrissVehicleCode="CCCC">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25628.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="XCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25716.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Fullsize" Category="Van" AcrissVehicleCode="FVMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25658.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Van" AcrissVehicleCode="IVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25672.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="Sport" AcrissVehicleCode="SSMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25707.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="ExtendedCabPickup" AcrissVehicleCode="IQMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25670.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="IDMN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25665.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Special" Category="SUV" FuelType="Ethanol" AcrissVehicleCode="XFMX">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25726.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Special" Category="Limo" AcrissVehicleCode="XLMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25730.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Special" Category="RegularCabPickup" AcrissVehicleCode="XPMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25733.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="Special" AcrissVehicleCode="SXMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25714.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Compact" Category="Roadster" AcrissVehicleCode="CNMN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25636.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="SUV" FuelType="Hybrid" AcrissVehicleCode="XFAH">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25721.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="Sport" FuelType="Ethanol" AcrissVehicleCode="XSAX">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25735.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Economy" Category="Convertible" AcrissVehicleCode="ETMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25650.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="TwoWheelVehicle" AcrissVehicleCode="IYAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25678.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="StationWagon" AcrissVehicleCode="SWAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25711.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Premium" Category="SUV" AcrissVehicleCode="PFMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25697.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="XDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25719.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="SUV" AcrissVehicleCode="XFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25723.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Mini" Category="Car" DoorCount="TwoToThreeDoors" AcrissVehicleCode="MBMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25692.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Special" AcrissVehicleCode="FXAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25661.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Convertible" FuelType="MultiFuel" AcrissVehicleCode="XTAM">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25737.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Economy" Category="Car" DoorCount="TwoToThreeDoors" AcrissVehicleCode="EBMN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25644.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Economy" Category="Car" DoorCount="TwoToThreeDoors" AcrissVehicleCode="EBMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25645.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Luxury" Category="Convertible" AcrissVehicleCode="LTMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25690.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="SUV" FuelType="Ethanol" AcrissVehicleCode="XFAX">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25724.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Van" AcrissVehicleCode="FVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25657.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="Car" DoorCount="FourToFiveDoors" FuelType="Ethanol" AcrissVehicleCode="XDAX">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25720.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Special" Category="Sport" AcrissVehicleCode="XSMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25736.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Limo" AcrissVehicleCode="CLAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25634.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Special" AcrissVehicleCode="SXAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25713.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="StationWagon" AcrissVehicleCode="SWMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25712.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Convertible" AcrissVehicleCode="PTAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25699.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="RegularCabPickup" AcrissVehicleCode="XPAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25731.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="CCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25627.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Convertible" AcrissVehicleCode="XTAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25738.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Special" AcrissVehicleCode="IXMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25677.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="SUV" AcrissVehicleCode="IFMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25667.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Van" AcrissVehicleCode="FVAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25656.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="StationWagon" AcrissVehicleCode="PWAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25702.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Limo" AcrissVehicleCode="ILAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25668.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="IDMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25666.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Van" AcrissVehicleCode="SVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25709.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Premium" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="PDMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25695.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="TwoWheelVehicle" AcrissVehicleCode="SYAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25715.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Luxury" Category="Sport" FuelType="Ethanol" AcrissVehicleCode="LSAX">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25686.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Sport" AcrissVehicleCode="XSAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25734.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Special" FuelType="Hybrid" AcrissVehicleCode="CXAH">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25640.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Economy" Category="Special" AcrissVehicleCode="EXMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25652.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="SUV" AcrissVehicleCode="XFAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25722.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Special" Category="SUV" AcrissVehicleCode="XFMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25725.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="TwoWheelVehicle" AcrissVehicleCode="FYAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25663.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Fullsize" Category="Special" AcrissVehicleCode="FXMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25662.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="TwoWheelVehicle" AcrissVehicleCode="CYAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25643.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="EDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25648.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Car" DoorCount="FourToFiveDoors" FuelType="LPGCNG" AcrissVehicleCode="XDAL">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25717.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Economy" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="EDMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25649.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Premium" Category="Sport" AcrissVehicleCode="PSMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25698.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="Van" AcrissVehicleCode="SVMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25710.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Sport" AcrissVehicleCode="SSAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25706.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Mini" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="MCMN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25693.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Luxury" Category="Sport" AcrissVehicleCode="LSMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25687.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="CDMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25631.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="Van" AcrissVehicleCode="IVMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25673.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="CDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25630.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="IDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25664.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="SUV" AcrissVehicleCode="LFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25681.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Special" AcrissVehicleCode="CXAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25641.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="CCMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25629.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Convertible" AcrissVehicleCode="STAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25708.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Special" Category="SpecialOffer" AcrissVehicleCode="XZAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25739.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Car" DoorCount="TwoToThreeDoors" AcrissVehicleCode="CBMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25626.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToThreeDoors" AcrissVehicleCode="CBAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25625.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="StationWagon" AcrissVehicleCode="CWAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25638.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Standard" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="SDMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25704.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="SUV" AcrissVehicleCode="PFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25696.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Luxury" Category="Sport" AcrissVehicleCode="LSAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25684.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="StationWagon" AcrissVehicleCode="CWMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25639.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Luxury" Category="Convertible" AcrissVehicleCode="LTAN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25688.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Sport" AcrissVehicleCode="LSAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25685.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="PDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25694.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="SDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25703.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Special" AcrissVehicleCode="IXAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25676.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="SUV" AcrissVehicleCode="CFMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25633.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="StationWagon" AcrissVehicleCode="LWAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25691.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="FourToFiveDoors" FuelType="Ethanol" AcrissVehicleCode="LDAX">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25680.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Limo" AcrissVehicleCode="CLMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25635.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="SUV" AcrissVehicleCode="FFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25655.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="ECAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25646.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Intermediate" Category="StationWagon" AcrissVehicleCode="IWMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25675.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Compact" Category="Special" AcrissVehicleCode="CXMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25642.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="FDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25653.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="FourToFiveDoors" AcrissVehicleCode="LDAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25679.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="StationWagon" AcrissVehicleCode="IWAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25674.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="SUV" AcrissVehicleCode="CFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25632.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Fullsize" Category="StationWagon" AcrissVehicleCode="FWMR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25660.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="StationWagon" AcrissVehicleCode="FWAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25659.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="RegularCabPickup" AcrissVehicleCode="LPAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25682.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Convertible" AcrissVehicleCode="LTAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25689.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="false" TransmissionType="Manual" VehicleClass="Economy" Category="Special" AcrissVehicleCode="EXMN">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmsixtgmbh/SX_general_large_25651.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+      </vehicle:VehicleMediaLinksRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

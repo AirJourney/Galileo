@@ -1,0 +1,274 @@
+Vehicle Location-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleLocationReq AuthorizedBy="SUSIL" TargetBranch="P7102538" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:PickupDateLocation Date="2020-04-01" Location="LHR"/>
+      </veh:VehicleLocationReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Location-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationRsp TransactionId="9C17F28C0A07643B096D7BC3632C7F97" ResponseTime="248" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="0"/>
+            <vehicle:LocationInformation LocationType="Airport" AreaGroup="A" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON HEATHROW AP T 2,3,4</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="5"/>
+            <common_v50_0:Distance Units="MI" Value="0"/>
+            <vehicle:LocationInformation LocationType="Airport" AreaGroup="B" Location="LHR" AreaType="AirportSecondary">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON HEATHROW AP T5</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="48" Direction="N"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="C" Location="KYN" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>MILTON KEYNES</common_v50_0:Street>
+                  <common_v50_0:City>KYN</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="30" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="Airport" AreaGroup="D" Location="LGW" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON GATWICK AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LGW</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="8"/>
+            <common_v50_0:Distance Units="MI" Value="2" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>FELTHAM/HATTON CROSS</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="7"/>
+            <common_v50_0:Distance Units="MI" Value="11" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON HAMMERSMITH</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="6"/>
+            <common_v50_0:Distance Units="MI" Value="11" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON WEMBLEY NORTH</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="2"/>
+            <common_v50_0:Distance Units="MI" Value="12" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON SHEPHERDS BUSH</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="14"/>
+            <common_v50_0:Distance Units="MI" Value="12" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON/HILTON KENSINGTON</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="11"/>
+            <common_v50_0:Distance Units="MI" Value="13" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON BATTERSEA/VAUXHALL</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="9"/>
+            <common_v50_0:Distance Units="MI" Value="14" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON VICTORIA STATION</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="34"/>
+            <common_v50_0:Distance Units="MI" Value="14" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON/HILTON PARK LANE</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="5"/>
+            <common_v50_0:Distance Units="MI" Value="15" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON WESTMINSTER/TAJ HTL</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="4"/>
+            <common_v50_0:Distance Units="MI" Value="18" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON CALEDONIAN RD. ST.</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="49"/>
+            <common_v50_0:Distance Units="MI" Value="22" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON STRATFORD WESTFIELD</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="23" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON WALTHAMSTOW</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="3"/>
+            <common_v50_0:Distance Units="MI" Value="27" Direction="E"/>
+            <vehicle:LocationInformation LocationType="CityCenterDowntown" AreaGroup="E" Location="LON" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON ILFORD</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="29" Direction="N"/>
+            <vehicle:LocationInformation LocationType="NorthOfCityCenter" AreaGroup="F" Location="LON" AreaType="NorthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>LUTON</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="15" Direction="SE"/>
+            <vehicle:LocationInformation LocationType="SouthOfCityCenter" AreaGroup="G" Location="LON" AreaType="SouthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>EPSOM</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="6"/>
+            <common_v50_0:Distance Units="MI" Value="24" Direction="E"/>
+            <vehicle:LocationInformation LocationType="SouthOfCityCenter" AreaGroup="G" Location="LON" AreaType="SouthOfCityCenter">
+               <vehicle:Address>
+                  <common_v50_0:Street>BROMLEY</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="5"/>
+            <common_v50_0:Distance Units="MI" Value="16" Direction="E"/>
+            <vehicle:LocationInformation LocationType="RailwayStation" AreaGroup="H" Location="LON" AreaType="RailwayStation">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON ST PANCRAS/KINGS CR</common_v50_0:Street>
+                  <common_v50_0:City>LON</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="30" Direction="N"/>
+            <vehicle:LocationInformation LocationType="ShuttleOffAirport" AreaGroup="I" Location="LTN">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON LUTON AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LTN</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="SX" VendorLocationID="1"/>
+            <common_v50_0:Distance Units="MI" Value="50" Direction="NE"/>
+            <vehicle:LocationInformation LocationType="Airport" AreaGroup="J" Location="STN" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:Street>LONDON STANSTED AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>STN</common_v50_0:City>
+                  <common_v50_0:Country>GB</common_v50_0:Country>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+      </vehicle:VehicleLocationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,34 @@
+Air Flight Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:FlightDetailsReq TargetBranch="TP_1V_SOA" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirSegment xmlns:air="http://www.travelport.com/schema/air_v50_0" Key="xs/MMC4R2BKAL7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2703" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General" ProviderCode="1V" ClassOfService="Y"/>
+
+      </air:FlightDetailsReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Flight Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightDetailsRsp TransactionId="9DCEBF030A0764772606212B66FB22B5" ResponseTime="838" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:AirSegment Key="xs/MMC4R2BKAL7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2703" ProviderCode="1V" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" ClassOfService="Y" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" AvailabilityDisplayType="General">
+            <air:FlightDetails Key="sQTWMC3R2BKAKw0FCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" Equipment="221" OriginTerminal="1" AutomatedCheckin="false">
+               <air:Meals>NoMealService</air:Meals>
+               <air:InFlightServices>Non-smoking</air:InFlightServices>
+               <air:InFlightServices>Amenities subject to change</air:InFlightServices>
+               <air:InFlightServices>TSA SECURED FLIGHT</air:InFlightServices>
+            </air:FlightDetails>
+         </air:AirSegment>
+         <air:CO2Emissions TotalValue="207.26" Unit="KG/PerPerson" Category="Economy" Source="CLIMATENEUTRALGROUP.COM/OFFSET-NOW">
+            <air:CO2Emission AirSegmentRef="xs/MMC4R2BKAL7HKCAAAAA==" Value="207.26"/>
+         </air:CO2Emissions>
+         <air:CO2Emissions TotalValue="207.26" Unit="KG/PerPerson" Category="Premium" Source="CLIMATENEUTRALGROUP.COM/OFFSET-NOW">
+            <air:CO2Emission AirSegmentRef="xs/MMC4R2BKAL7HKCAAAAA==" Value="207.26"/>
+         </air:CO2Emissions>
+      </air:FlightDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

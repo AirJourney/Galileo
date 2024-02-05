@@ -1,0 +1,149 @@
+Hotel Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelSearchAvailabilityReq AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" TraceId="PP_1J_001" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hot:HotelSearchLocation>
+            <hot:HotelLocation Location="DEN"/>
+         </hot:HotelSearchLocation>
+         <hot:HotelSearchModifiers NumberOfAdults="2" NumberOfRooms="1" AvailableHotelsOnly="true" ReturnAmenities="false">
+            <hot:PermittedChains>
+               <hot:HotelChain Code="RC"/>
+            </hot:PermittedChains>
+
+            
+            <com:PermittedProviders>
+               <com:Provider Code="1J"/>
+            </com:PermittedProviders>
+         </hot:HotelSearchModifiers>
+         <hot:HotelStay>
+            <hot:CheckinDate>2020-05-01</hot:CheckinDate>
+            <hot:CheckoutDate>2020-05-16</hot:CheckoutDate>
+         </hot:HotelStay>
+      </hot:HotelSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelSearchAvailabilityRsp TraceId="PP_1J_001" TransactionId="9DCF04FA0A0764785B1483FCFB1B05DB" ResponseTime="24134" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:ReferencePoint Country="US" State="CO">DENVER</hotel:ReferencePoint>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENRD" Key="xs/MMC4R2BKAOYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENRD" Name="RESIDENCE INN CITY CN MARRIOTT" VendorLocationKey="xs/MMC4R2BKAOYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>1725 CHAMPA ST</hotel:Address>
+                  <hotel:Address>DENVER CO US 80202</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13032963456"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13032963444"/>
+               <common_v50_0:Distance Units="MI" Value="0" Direction="N"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY16723" ApproximateMaximumAmount="JPY77163"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENRE" Key="xs/MMC4R2BKARYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENRE" Name="RESIDENCE INN STAPLET MARRIOTT" VendorLocationKey="xs/MMC4R2BKARYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>4667 N CENTRAL PARK BLVD</hotel:Address>
+                  <hotel:Address>DENVER CO US 80238</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13033733970"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13033733960"/>
+               <common_v50_0:Distance Units="MI" Value="7" Direction="NE"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY17476" ApproximateMaximumAmount="JPY35062"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENGO" Key="xs/MMC4R2BKASYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENGO" Name="RESIDENCE INN GOLDEN MARRIOTT" VendorLocationKey="xs/MMC4R2BKASYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>14600 W 6TH AVE FRONTAGE ROAD</hotel:Address>
+                  <hotel:Address>GOLDEN CO US 80401</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13032794930"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13032710909"/>
+               <common_v50_0:Distance Units="MI" Value="10" Direction="W"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY10881" ApproximateMaximumAmount="JPY25170"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENRA" Key="xs/MMC4R2BKAVYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENRA" Name="RESIDENCE INN CONVENT MARRIOTT" VendorLocationKey="xs/MMC4R2BKAVYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6762 TOWER ROAD</hotel:Address>
+                  <hotel:Address>DENVER CO US 80249</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13033079111"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13033079100"/>
+               <common_v50_0:Distance Units="MI" Value="15" Direction="NE"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY20224" ApproximateMaximumAmount="JPY32863"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENRI" Key="xs/MMC4R2BKAXYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENRI" Name="RESIDENCE INN AIRPORT MARRIOTT" VendorLocationKey="xs/MMC4R2BKAXYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>16490 E 40TH CIRCLE</hotel:Address>
+                  <hotel:Address>AURORA CO US 80011</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13034598100"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13034598000"/>
+               <common_v50_0:Distance Units="MI" Value="11" Direction="E"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY16377" ApproximateMaximumAmount="JPY21323"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENEW" Key="xs/MMC4R2BKAYYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENEW" Name="RESIDENCE INN MARRIOTT TECH CE" VendorLocationKey="xs/MMC4R2BKAYYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6565 S YOSEMITE ST</hotel:Address>
+                  <hotel:Address>GREENWOOD VILLAGE CO US 80111</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13037419426"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13037407177"/>
+               <common_v50_0:Distance Units="MI" Value="14" Direction="SE"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY13079" ApproximateMaximumAmount="JPY17476"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENHR" Key="xs/MMC4R2BKAZYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENHR" Name="RESIDENCE INN HIGHLND MARRIOTT" VendorLocationKey="xs/MMC4R2BKAZYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>93 W CENTENNIAL BLVD</hotel:Address>
+                  <hotel:Address>HIGHLANDS RANCH CO US 80126</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13036835555"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13036835500"/>
+               <common_v50_0:Distance Units="MI" Value="13" Direction="S"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY12266" ApproximateMaximumAmount="JPY25170"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="RC" VendorLocationID="DENOF" Key="xs/MMC4R2BKAdYUKCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENOF" Name="RESIDECE INN BROOMFIE MARRIOTT" VendorLocationKey="xs/MMC4R2BKAdYUKCAAAAA==" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>455 ZANG STREET</hotel:Address>
+                  <hotel:Address>BROOMFIELD CO US 80021</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13034667008"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="13034667007"/>
+               <common_v50_0:Distance Units="MI" Value="17" Direction="NW"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="JPY13079" ApproximateMaximumAmount="JPY26269"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+      </hotel:HotelSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

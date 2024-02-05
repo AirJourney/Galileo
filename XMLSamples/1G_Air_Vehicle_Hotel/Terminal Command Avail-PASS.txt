@@ -1,0 +1,33 @@
+Terminal Command Avail-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ter:TerminalReq AuthorizedBy="PRODSMOKETEST" TargetBranch="P7102538" xmlns:ter="http://www.travelport.com/schema/terminal_v33_0" xmlns:com="http://www.travelport.com/schema/common_v33_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:HostToken Host="1G" Key="1T">79E77E7D-49E8-4E6C-5063-51A0D9D7D043</com:HostToken>
+         <ter:TerminalCommand>ADENATL</ter:TerminalCommand>
+      </ter:TerminalReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Terminal Command Avail-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <terminal:TerminalRsp TransactionId="9C18678B0A0764785B1483FCA3DAAE2A" ResponseTime="493" xmlns:terminal="http://www.travelport.com/schema/terminal_v33_0">
+         <terminal:TerminalCommandResponse>
+            <terminal:Text>NEUTRAL DISPLAY*   MO 02MAR DEN/ATL</terminal:Text>
+            <terminal:Text>1 DEN ATL 1010 1504  UA 307 J8 C6 D2 Z1 P0 Y9 B9 M9 E9 U9#319C*E</terminal:Text>
+            <terminal:Text>2 DEN ATL 1040 1526 @VS5082 J4 C4 D2 I0 Z0 W0 S0 H0 K0 Y9#739C*E</terminal:Text>
+            <terminal:Text>3 DEN ATL 1040 1526  DL1816 J4 C4 D2 I0 Z0 W0 S0 Y9 B9 M9#739C*E</terminal:Text>
+            <terminal:Text>4 DEN ATL 1219 1706 @VS5078 J4 C4 D1 I0 Z0 W9 S9 H9 K9 Y9#757C*E</terminal:Text>
+            <terminal:Text>5 DEN ATL 1219 1706  DL1547 J4 C4 D1 I0 Z0 W9 S0 Y9 B9 M9#757C*E</terminal:Text>
+            <terminal:Text>6 DEN ATL 1329 1828 @UA3720 J5 C4 D1 Z1 P0 Y9 B9 M4 E4 U0#E70C*E</terminal:Text>
+            <terminal:Text>7 DEN ATL 1415 1906 @AR7007 J0 C0 D0 I0 Y7 B7 M7 U7 K7 H7#739C*E</terminal:Text>
+            <terminal:Text>8 DEN ATL 1415 1906  DL2590 J9 C9 D9 I9 Z8 W7 S0 Y9 B9 M9#739C*E</terminal:Text>
+            <terminal:Text>>&lt;</terminal:Text>
+         </terminal:TerminalCommandResponse>
+      </terminal:TerminalRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,98 @@
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<universal:UniversalRecordImportReq ProviderLocatorCode="123456" TargetBranch="P7654321" ProviderCode="1P" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+			<BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+		</universal:UniversalRecordImportReq>
+	</SOAP:Body>
+</SOAP:Envelope>
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+		<SOAP:Body>
+			<universal:UniversalRecordImportRsp xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" TransactionId="936855920A0759D43C141B20D5C4A4F3" ResponseTime="356">
+				<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1P">
+					<![CDATA[PNR already exists in Universal Record 390SE4]]>
+				</common_v50_0:ResponseMessage>
+				<universal:UniversalRecord LocatorCode="390SE4" Version="7" Status="Active">
+					<common_v50_0:BookingTraveler Key="dCckRCkYlDKA5AOAxAAAAA==" TravelerType="ADT" Gender="F">
+						<common_v50_0:BookingTravelerName Prefix="MS" First="BHARTI" Last="DOE"/>
+						<common_v50_0:PhoneNumber Key="dCckRCkYlDKA6AOAxAAAAA==" Type="Mobile" CountryCode="971" Number="504504504">
+							<common_v50_0:ProviderReservationInfoRef Key="dCckRCkYlDKAxrTAxAAAAA=="/>
+						</common_v50_0:PhoneNumber>
+						<common_v50_0:SSR Key="sGhhRCOc1BKApCQOyAAAAA==" SegmentRef="VMbkRCcYlDKAS2KzuAAAAA==" Status="HK" Type="****" FreeText="2359434405141C1" Carrier="TK" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA=="/>
+					</common_v50_0:BookingTraveler>
+					<common_v50_0:OSI Key="dCckRCkYlDKA7AOAxAAAAA==" Carrier="TK" Text="CTCE BHARTI.DOE//GMAIL.COM" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA=="/>
+					<common_v50_0:OSI Key="dCckRCkYlDKA8AOAxAAAAA==" Carrier="TK" Text="CTCM 00971504504504" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA=="/>
+					<common_v50_0:ActionStatus Key="dCckRCkYlDKA9AOAxAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==" ProviderCode="1P">
+						<common_v50_0:Remark>01MAR 0032  1P/22V/RS DOCUMENTATION COMPLETE</common_v50_0:Remark>
+					</common_v50_0:ActionStatus>
+					<universal:ProviderReservationInfo Key="dCckRCkYlDKAxrTAxAAAAA==" ProviderCode="1P" LocatorCode="123456" CreateDate="2020-02-29T22:32:32.636+00:00" ModifiedDate="2020-03-01T00:04:13.586+00:00" HostCreateDate="2020-02-29" OwningPCC="4WM" AgentOverride="RS"/>
+					<air:AirReservation xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" LocatorCode="390SI1" CreateDate="2020-02-29T22:32:32.479+00:00" ModifiedDate="2020-02-29T22:32:50.460+00:00">
+						<common_v50_0:SupplierLocator SupplierCode="TK" SupplierLocatorCode="VDEPNP" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==">
+							<common_v50_0:SegmentRef Key="VMbkRCcYlDKAS2KzuAAAAA=="/>
+						</common_v50_0:SupplierLocator>
+						<air:DocumentInfo>
+							<air:TicketInfo Number="2359434405141" Status="N" BookingTravelerRef="dCckRCkYlDKA5AOAxAAAAA==" AirPricingInfoRef="VMbkRCcYlDKA48KzuAAAAA==">
+								<common_v50_0:Name Prefix="MS" First="BHARTI" Last="DOE"/>
+							</air:TicketInfo>
+						</air:DocumentInfo>
+						<common_v50_0:BookingTravelerRef Key="dCckRCkYlDKA5AOAxAAAAA=="/>
+						<common_v50_0:ProviderReservationInfoRef Key="dCckRCkYlDKAxrTAxAAAAA=="/>
+						<air:AirSegment Key="VMbkRCcYlDKAS2KzuAAAAA==" Group="0" Carrier="TK" CabinClass="Economy" FlightNumber="7686" ProviderCode="1P" Origin="SAW" Destination="DXB" DepartureTime="2020-05-25T20:30:00.000+03:00" ArrivalTime="2020-05-26T02:00:00.000+04:00" TravelTime="270" ClassOfService="U" ETicketability="Yes" Equipment="73H" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false">
+							<air:CodeshareInfo>OPERATED BY ANADOLUJET TRADEMARK OF TURKISH AIRLINES</air:CodeshareInfo>
+							<air:FlightDetails Key="dCckRCkYlDKAzrTAxAAAAA==" Origin="SAW" Destination="DXB" DepartureTime="2020-05-25T20:30:00.000+03:00" ArrivalTime="2020-05-26T02:00:00.000+04:00" FlightTime="270" TravelTime="270" Distance="1844" Equipment="73H" DestinationTerminal="1" AutomatedCheckin="false"/>
+						</air:AirSegment>
+						<air:AirPricingInfo Key="VMbkRCcYlDKA48KzuAAAAA==" TotalPrice="EUR68.66" BasePrice="USD1.00" ApproximateTotalPrice="EUR68.66" ApproximateBasePrice="EUR1.00" EquivalentBasePrice="EUR1.00" Taxes="EUR67.66" LatestTicketingTime="2020-03-01T23:59:00.000+02:00" PricingMethod="Ticketed" Refundable="true" PlatingCarrier="TK" ProviderCode="1P" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==" AirPricingInfoGroup="1" PricingType="TicketRecord" FareCalculationInd="9">
+							<air:FareInfo Key="VMbkRCcYlDKA38KzuAAAAA==" FareBasis="UT1AJOD2" PassengerTypeCode="ADT" Origin="IST" Destination="DXB" EffectiveDate="2020-03-01T00:00:00.000+03:00" TravelDate="2020-05-25" DepartureDate="2020-05-25" Amount="NUC1.00" NotValidBefore="2020-05-25" NotValidAfter="2020-05-25">
+								<air:BaggageAllowance>
+									<air:MaxWeight Value="20" Unit="Kilograms"/>
+								</air:BaggageAllowance>
+							</air:FareInfo>
+							<air:BookingInfo BookingCode="U" FareInfoRef="VMbkRCcYlDKA38KzuAAAAA==" SegmentRef="VMbkRCcYlDKAS2KzuAAAAA=="/>
+							<air:TaxInfo Category="M6" Amount="EUR3.00" Key="dCckRCkYlDKA6xSAxAAAAA=="/>
+							<air:TaxInfo Category="TR" Amount="EUR15.00" Key="dCckRCkYlDKA7xSAxAAAAA=="/>
+							<air:TaxInfo Category="ZR" Amount="EUR1.25" Key="dCckRCkYlDKA8xSAxAAAAA=="/>
+							<air:TaxInfo Category="YR" Amount="EUR48.41" Key="dCckRCkYlDKA9xSAxAAAAA=="/>
+							<air:FareCalc>ADT IST TK DXB1.00NUC1.00END ROE1.00 TK</air:FareCalc>
+							<air:PassengerType Code="ADT" BookingTravelerRef="dCckRCkYlDKA5AOAxAAAAA=="/>
+							<common_v50_0:BookingTravelerRef Key="dCckRCkYlDKA5AOAxAAAAA=="/>
+							<air:AirPricingModifiers ProhibitAdvancePurchaseFares="false" ProhibitNonRefundableFares="false" ProhibitRestrictedFares="false" FaresIndicator="PublicAndPrivateFares" ProhibitMaxStayFares="false" ProhibitMinStayFares="false" AccountCodeFaresOnly="false"/>
+						</air:AirPricingInfo>
+					</air:AirReservation>
+					<common_v50_0:GeneralRemark Key="BNUZRCBAAA/B+v203AAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==">
+						<common_v50_0:RemarkData>ATTEMPTING TO PLACE PNR IN QUEUE 2020-02-29T22:32:33.941</common_v50_0:RemarkData>
+					</common_v50_0:GeneralRemark>
+					<common_v50_0:GeneralRemark Key="sGhhRCOc1BKAcCQOyAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==">
+						<common_v50_0:RemarkData>DN-/T2359434405141-001.01|S01</common_v50_0:RemarkData>
+					</common_v50_0:GeneralRemark>
+					<common_v50_0:GeneralRemark Key="OQghRCNc1BKAregzxAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==">
+						<common_v50_0:RemarkData>BOOKID 37137364</common_v50_0:RemarkData>
+					</common_v50_0:GeneralRemark>
+					<common_v50_0:GeneralRemark Key="OQghRCNc1BKAsegzxAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==">
+						<common_v50_0:RemarkData>NEWCC / NEWCC</common_v50_0:RemarkData>
+					</common_v50_0:GeneralRemark>
+					<common_v50_0:GeneralRemark Key="OQghRCNc1BKAzgizxAAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==">
+						<common_v50_0:RemarkData> BHARTI.DOE@GMAIL.COM</common_v50_0:RemarkData>
+					</common_v50_0:GeneralRemark>
+					<common_v50_0:AgencyInfo>
+						<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI5470321519-26243760" BranchCode="P7654321" AgencyCode="S2TRAVEL" EventTime="2020-02-29T22:32:31.581+00:00"/>
+						<common_v50_0:AgentAction ActionType="Modified" AgentCode="UAPI5470321519-26243760" BranchCode="P6543210" AgencyCode="S2TRAVEL" EventTime="2020-02-29T22:32:50.460+00:00"/>
+						<common_v50_0:AgentAction ActionType="Ticketed" AgentCode="UAPI5470321519-26243760" BranchCode="P6543210" AgencyCode="S2TRAVEL" EventTime="2020-02-29T22:32:46.522+00:00"/>
+					</common_v50_0:AgencyInfo>
+					<common_v50_0:AgencyContactInfo>
+						<common_v50_0:PhoneNumber Key="dCckRCkYlDKA2rTAxAAAAA==" Type="Agency" CountryCode="GR" Number="2109469299" Text="ALTAIRTRAVEL">
+							<common_v50_0:ProviderReservationInfoRef Key="dCckRCkYlDKAxrTAxAAAAA=="/>
+						</common_v50_0:PhoneNumber>
+					</common_v50_0:AgencyContactInfo>
+					<common_v50_0:CommissionRemark Key="BNUZRCBAAA/Bg8203AAAAA==" ProviderCode="1P" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA==">
+						<common_v50_0:ProviderReservationLevel Percentage="0.10"/>
+					</common_v50_0:CommissionRemark>
+					<common_v50_0:SSR Key="sGhhRCOc1BKAfCQOyAAAAA==" Type="****" FreeText="1PTOTK BY 04MAR 0032 IRC-2/ADV OTO TKT" Carrier="1P" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA=="/>
+					<common_v50_0:SSR Key="sGhhRCOc1BKAgCQOyAAAAA==" Type="****" FreeText="PLS ADV FQTV NUMBER IF AVAILABLE WITH SSR FORMAT" Carrier="1P" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA=="/>
+					<common_v50_0:SSR Key="sGhhRCOc1BKAhCQOyAAAAA==" Type="****" FreeText="PLS ADV PSGR MOBILE AND/OR EMAIL AS SSR CTCM/CTCE" Carrier="1P" ProviderReservationInfoRef="dCckRCkYlDKAxrTAxAAAAA=="/>
+				</universal:UniversalRecord>
+			</universal:UniversalRecordImportRsp>
+		</SOAP:Body>
+	</SOAP:Envelope>

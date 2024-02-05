@@ -1,0 +1,39 @@
+Hotel Rules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hotel:HotelRulesReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" TraceId="PP_1V_0329" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hotel:HotelRulesLookup RatePlanType="APND00" Base="">
+            <hotel:HotelProperty HotelChain="LC" HotelCode="14645" HotelLocation="BOM" Name="ITC GRAND CENTRAL MUMBAI" ParticipationLevel="2">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKAR ROA P</hotel:Address>
+                  <hotel:Address>MUMBAI MH 400012 IN</hotel:Address>
+               </hotel:PropertyAddress>
+               <com:PhoneNumber Type="Business" Number="91 22-24101010"/>
+               <com:PhoneNumber Type="Fax" Number="91 22-24101111"/>
+               <com:Distance Units="MI" Value="7" Direction="S"/>
+               <hotel:MarketingMessage>
+                  <hotel:Text>HOTELS THAT DEFINE THE DESTINATION</hotel:Text>
+               </hotel:MarketingMessage>
+            </hotel:HotelProperty>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-04-16</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-04-19</hotel:CheckoutDate>
+            </hotel:HotelStay>
+            <hotel:HotelRulesModifiers NumberOfAdults="1" NumberOfRooms="4"/>
+         </hotel:HotelRulesLookup>
+      </hotel:HotelRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Rules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelRulesRsp TraceId="PP_1V_0329" TransactionId="9DD3CD7B0A0764772606212BB3AF1C46" ResponseTime="11237" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="5000" Type="Warning">0176 BOOKING CODE IS NOT STORED ON ROOMMASTER</common_v50_0:ResponseMessage>
+      </hotel:HotelRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

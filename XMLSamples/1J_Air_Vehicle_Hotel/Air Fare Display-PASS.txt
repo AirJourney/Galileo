@@ -1,0 +1,146 @@
+Air Fare Display-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <air:AirFareDisplayReq TargetBranch="TP_WAB_031" AuthorizedBy="Test" Origin="DEN" Destination="ORD" ProviderCode="1J" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:PassengerType Code="ADT" Age="23" PricePTCOnly="true"/>
+         <air:AirFareDisplayModifiers MaxResponses="10" DepartureDate="2020-03-12" ReturnDate="2020-03-22" BaseFareOnly="false" UnrestrictedFaresOnly="false" CurrencyType="USD">
+<!--            <air:TripType>?</air:TripType>-->
+         </air:AirFareDisplayModifiers>
+      </air:AirFareDisplayReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Fare Display-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AirFareDisplayRsp TransactionId="9DCD54A10A07643B096D7BC3A7F223E8" ResponseTime="30407" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Info" ProviderCode="1J">US TAXES VARY</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Info" ProviderCode="1J">- SEG/PFC/FUEL CHARGES MAY APPLY</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Info" ProviderCode="1J">TICKETING FEE MAY APPLY</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="3045" Type="Warning" ProviderCode="1J">Airport Fare Exists</common_v50_0:ResponseMessage>
+         <air:FareDisplay Carrier="NK" FareBasis="UA3NR" Amount="USD1.00" TripType="OneWay" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="2020">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD1.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2020-01-09" EndDate="2020-05-20" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">/gmrHygYDjSw0oHpEqO7OEVezR+IZSU6H/a/fJFBxfDaH4yvsgX7l+5JOUV0fhnxJEVmaPRkXQQ=</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="U"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="NK" FareBasis="RA7NR" Amount="USD30.00" TripType="OneWay" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="2020">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD30.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-12-04"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">2p0Hezr7rqaw0oHpEqO7OEVezR+IZSU6H/a/fJFBxfDaH4yvsgX7l+5JOUV0fhnxJEVmaPRkXQQ=</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="R"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="UA" FareBasis="GXA3TWBN" Amount="USD68.00" TripType="ReturnOnly" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="BAW2">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD68.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-11-06" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">bXk/m9eSLBV0aDyrTBeaSC84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEEi2ymK1DJlWWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="N"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="UA" FareBasis="GXA3TWER" Amount="USD68.00" TripType="ReturnOnly" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="ECW2">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD68.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-11-06" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">bXk/m9eSLBWanrv6w3ycwi84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEEi2ymK1DJlWWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="G"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="UA" FareBasis="GXA4TWBN" Amount="USD68.00" TripType="ReturnOnly" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="BAW2">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD68.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-10-11" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">zLJ4R7DMy4x0aDyrTBeaSC84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEEi2ymK1DJlWWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="N"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="UA" FareBasis="GXA4TWER" Amount="USD68.00" TripType="ReturnOnly" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="ECW2">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD68.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-10-11" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">zLJ4R7DMy4yanrv6w3ycwi84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEEi2ymK1DJlWWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="G"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="UA" FareBasis="GXA7TWBN" Amount="USD68.00" TripType="ReturnOnly" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="BAW2">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD68.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-10-11" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">kMShQ+BcJ990aDyrTBeaSC84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEEi2ymK1DJlWWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="N"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="UA" FareBasis="GXA7TWER" Amount="USD68.00" TripType="ReturnOnly" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="ECW2">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD68.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-10-11" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">kMShQ+BcJ9+anrv6w3ycwi84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEEi2ymK1DJlWWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="G"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="AA" FareBasis="O3AUZNB3" Amount="USD34.00" TripType="OneWay" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="B11U">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD34.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-11-13" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">Aw4855L4GWZaTGTTEbTjAC84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEvcVaNpBbXteWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="B"/>
+         </air:FareDisplay>
+         <air:FareDisplay Carrier="UA" FareBasis="GXA4TWBN" Amount="USD92.00" TripType="ReturnOnly" BlackoutsExist="true" MileOrRouteBasedFare="Route" Origin="DEN" Destination="CHI">
+            <air:FareDisplayRule RuleNumber="BAW2">
+               <air:RuleAdvancedPurchase MoreRulesPresent="true"/>
+               <air:RuleCharges PenaltyType="Penalty" MoreRulesPresent="true"/>
+            </air:FareDisplayRule>
+            <air:FarePricing PassengerType="ADT" TotalFareAmount="USD92.00" PrivateFare="false" NegotiatedFare="false"/>
+            <air:FareRestriction>
+               <air:FareRestrictionDate StartDate="2019-10-11" EndDate="2020-08-09" EndDateIndicator="Complete"/>
+            </air:FareRestriction>
+            <air:AirFareDisplayRuleKey ProviderCode="1J">zLJ4R7DMy4x0aDyrTBeaSC84r3QjEnCg689sHnbVdT8PckfwodfxiEOIGU0G05vEEi2ymK1DJlWWavd23wn90Q==</air:AirFareDisplayRuleKey>
+            <air:BookingCode Code="N"/>
+         </air:FareDisplay>
+      </air:AirFareDisplayRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

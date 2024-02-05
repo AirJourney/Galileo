@@ -1,0 +1,779 @@
+Air Availability - Round Trip-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:AvailabilitySearchReq AuthorizedBy="SUSIL" TraceId="PP_1P_001" TargetBranch="TP_1P_SOA" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="ORD"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="SEA"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-01"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="SEA"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="ORD"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-16"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers>
+            <air:PreferredProviders>
+               <com:Provider Code="1P"/>
+            </air:PreferredProviders>
+            <air:PermittedCarriers>
+               <com:Carrier Code="UA"/>
+            </air:PermittedCarriers>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+         <com:SearchPassenger Code="ADT"/>
+      </air:AvailabilitySearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Availability - Round Trip-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AvailabilitySearchRsp TraceId="PP_1P_001" TransactionId="9DCC587D0A0764785B1483FC75B76E20" ResponseTime="4563" DistanceUnits="MI" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="xs/MMC4R2BKAZ8HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:42:00.000-05:00" FlightTime="284" TravelTime="284" Equipment="738" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAg8HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:42:00.000-05:00" FlightTime="284" TravelTime="284" Equipment="320" OnTimePerformance="90" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAl8HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:42:00.000-05:00" FlightTime="284" TravelTime="284" Equipment="320" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAt8HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:50:00.000-05:00" FlightTime="280" TravelTime="280" Equipment="73J" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA08HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:50:00.000-05:00" FlightTime="280" TravelTime="280" Equipment="73J" OnTimePerformance="60" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA58HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T18:26:00.000-05:00" FlightTime="271" TravelTime="271" Equipment="738" OnTimePerformance="90" OriginTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAA9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:20:00.000-05:00" FlightTime="281" TravelTime="281" Equipment="320" OnTimePerformance="80" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAF9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:05:00.000-05:00" FlightTime="281" TravelTime="281" Equipment="738" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAN9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:05:00.000-05:00" FlightTime="281" TravelTime="281" Equipment="738" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAY9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:05:00.000-05:00" FlightTime="281" TravelTime="281" Equipment="738" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAg9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T22:21:00.000-05:00" FlightTime="264" TravelTime="264" Equipment="32A" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAk9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T16:00:00.000-05:00" FlightTime="275" TravelTime="275" Equipment="738" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAr9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T16:00:00.000-05:00" FlightTime="275" TravelTime="275" Equipment="739" OnTimePerformance="90" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAw9HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T14:10:00.000-05:00" FlightTime="275" TravelTime="275" Equipment="73J" OnTimePerformance="90" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA19HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T14:00:00.000-05:00" FlightTime="276" TravelTime="276" Equipment="73G" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA69HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T13:45:00.000-05:00" FlightTime="261" TravelTime="261" Equipment="319" OnTimePerformance="80" OriginTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAA+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T11:50:00.000-05:00" FlightTime="281" TravelTime="281" Equipment="738" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAI+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T11:50:00.000-05:00" FlightTime="281" TravelTime="281" Equipment="738" OnTimePerformance="90" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAQ+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T11:50:00.000-05:00" FlightTime="281" TravelTime="281" Equipment="738" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAb+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:51:00.000-05:00" FlightTime="271" TravelTime="271" Equipment="73G" OriginTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAg+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:30:00.000-05:00" FlightTime="275" TravelTime="275" Equipment="320" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAl+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:24:00.000-05:00" FlightTime="282" TravelTime="282" Equipment="738" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAt+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:24:00.000-05:00" FlightTime="282" TravelTime="282" Equipment="738" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA1+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T06:10:00.000-05:00" FlightTime="262" TravelTime="262" Equipment="319" OnTimePerformance="80" OriginTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA7+HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T06:00:00.000-05:00" FlightTime="277" TravelTime="277" Equipment="320" OnTimePerformance="80" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAA/HKCAAAAA==" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T06:00:00.000-05:00" FlightTime="277" TravelTime="277" Equipment="320" OriginTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAH/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T17:50:00.000-07:00" FlightTime="247" TravelTime="247" Equipment="73J" OnTimePerformance="70" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAM/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T17:50:00.000-07:00" FlightTime="247" TravelTime="247" Equipment="73J" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAT/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T23:20:00.000-07:00" FlightTime="234" TravelTime="234" Equipment="739" OnTimePerformance="90" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAY/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T15:15:00.000-07:00" FlightTime="251" TravelTime="251" Equipment="319" OnTimePerformance="90" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAe/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T15:06:00.000-07:00" FlightTime="259" TravelTime="259" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAp/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T15:06:00.000-07:00" FlightTime="259" TravelTime="259" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAx/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T13:47:00.000-07:00" FlightTime="253" TravelTime="253" Equipment="738" OnTimePerformance="80" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA2/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T13:47:00.000-07:00" FlightTime="253" TravelTime="253" Equipment="738" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA+/HKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T12:30:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="73J" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAFAIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T12:30:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="73J" OnTimePerformance="50" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAKAIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:35:00.000-07:00" FlightTime="242" TravelTime="242" Equipment="752" OnTimePerformance="90" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAPAIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:35:00.000-07:00" FlightTime="242" TravelTime="242" Equipment="320" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAWAIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:23:00.000-07:00" FlightTime="261" TravelTime="261" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAeAIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:23:00.000-07:00" FlightTime="261" TravelTime="261" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAoAIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:05:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="320" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAtAIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA1AIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKA8AIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAHBIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="738" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAPBIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T07:09:00.000-07:00" FlightTime="250" TravelTime="250" Equipment="320" OnTimePerformance="90" DestinationTerminal="2"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAUBIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T07:00:00.000-07:00" FlightTime="238" TravelTime="238" Equipment="738" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAZBIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T07:00:00.000-07:00" FlightTime="238" TravelTime="238" Equipment="320" DestinationTerminal="1"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAgBIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T06:05:00.000-07:00" FlightTime="260" TravelTime="260" Equipment="32S" OnTimePerformance="90" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKAlBIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T01:40:00.000-07:00" FlightTime="243" TravelTime="243" Equipment="32A" DestinationTerminal="3"/>
+            <air:FlightDetails Key="xs/MMC4R2BKApBIKCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T00:20:00.000-07:00" FlightTime="245" TravelTime="245" Equipment="320" OnTimePerformance="80" DestinationTerminal="3"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="xs/MMC4R2BKAa8HKCAAAAA==" Group="0" Carrier="EI" FlightNumber="6238" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:42:00.000-05:00" ArrivalTime="2020-05-01T22:26:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAb8HKCAAAAA==">EI  6238UNITED AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAc8HKCAAAAA==">OPERATED BY UNITED AIRLINES -- UA262</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAd8HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAe8HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAf8HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA" OperatingFlightNumber="262"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="JC|CC|IC|DC|PC"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|H4|G4|K4|M4|V4|F4|N4|LC|EC|Q4|S4|OC|R4|WC|ZC|AC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAZ8HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAh8HKCAAAAA==" Group="0" Carrier="UA" FlightNumber="262" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:42:00.000-05:00" ArrivalTime="2020-05-01T22:26:00.000-07:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAi8HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAj8HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAk8HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C5|D2|ZL|PL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|L9|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAg8HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAm8HKCAAAAA==" Group="0" Carrier="TK" FlightNumber="8609" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:42:00.000-05:00" ArrivalTime="2020-05-01T22:26:00.000-07:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAn8HKCAAAAA==">TK  8609UNITED AIRLINES INC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAo8HKCAAAAA==">OPERATED BY UNITED AIRLINES INC -- UA262</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAp8HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAq8HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAr8HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAs8HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA" OperatingFlightNumber="262"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C2|D2|Z2|K2|J2"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|A4|H4|S4|O4|E4|Q4|T4|L4|V4|P4|W4|UL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAl8HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAu8HKCAAAAA==" Group="0" Carrier="SQ" FlightNumber="1717" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:50:00.000-05:00" ArrivalTime="2020-05-01T22:30:00.000-07:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAv8HKCAAAAA==">SQ  1717ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAw8HKCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS21</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAx8HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAy8HKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAz8HKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="21"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="Z4|C4|J4|U4|D4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|E4|M4|H4|W4|Q4|N4|V4|K4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAt8HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA18HKCAAAAA==" Group="0" Carrier="AS" FlightNumber="21" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T19:50:00.000-05:00" ArrivalTime="2020-05-01T22:30:00.000-07:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA28HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA38HKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA48HKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P7|I2|U1"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R7|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA08HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA68HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="521" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T18:26:00.000-05:00" ArrivalTime="2020-05-01T20:57:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA78HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA88HKCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA98HKCAAAAA==">POWER SOURCE / IN-SEAT VIDEO PLAYER/LIBRARY /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA+8HKCAAAAA==">WI-FI / NON-SMOKING / AMENITIES SUBJECT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA/8HKCAAAAA==">TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I5|Z2"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA58HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAB9HKCAAAAA==" Group="0" Carrier="AS" FlightNumber="51" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:20:00.000-05:00" ArrivalTime="2020-05-01T20:01:00.000-07:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAC9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAD9HKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAE9HKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P5|I2|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|RL|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAA9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAG9HKCAAAAA==" Group="0" Carrier="BA" FlightNumber="1810" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:05:00.000-05:00" ArrivalTime="2020-05-01T19:46:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAH9HKCAAAAA==">BA  1810AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAI9HKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1485</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAJ9HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAK9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAL9HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAM9HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1485"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C2|D4|R9|I9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B2|H9|K9|M9|L9|V9|N9|S9|O9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAF9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAO9HKCAAAAA==" Group="0" Carrier="MH" FlightNumber="9561" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:05:00.000-05:00" ArrivalTime="2020-05-01T19:46:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAP9HKCAAAAA==">MH  9561AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAQ9HKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1485</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAR9HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAS9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAT9HKCAAAAA==">MOVIE / AUDIO PROGRAMMING / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAU9HKCAAAAA==">SOURCE / WI-FI / 110V AC POWER / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAV9HKCAAAAA==">POWER FIRST / 110V AC POWER ECONOMY /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAW9HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAX9HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1485"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|C4|D4|Z4|I4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|H9|K9|M9|L9|V9|SC|NC|QC|OC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAN9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAZ9HKCAAAAA==" Group="0" Carrier="AA" FlightNumber="1485" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T17:05:00.000-05:00" ArrivalTime="2020-05-01T19:46:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAa9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAb9HKCAAAAA==">MOVIE / AUDIO PROGRAMMING / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAc9HKCAAAAA==">SOURCE / WI-FI / 110V AC POWER / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAd9HKCAAAAA==">POWER FIRST / 110V AC POWER ECONOMY /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAe9HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAf9HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C7|J7|R7|D7|I7|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|H7|K7|M7|L7|G7|V7|S1|NL|QL|O1|T1"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAY9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAh9HKCAAAAA==" Group="0" Carrier="NK" FlightNumber="2948" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T22:21:00.000-05:00" ArrivalTime="2020-05-02T00:45:00.000-07:00" ETicketability="Yes" Equipment="32A" ChangeOfPlane="false" ParticipantLevel="No Special Participant" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAi9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAj9HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="P4|Y4|B4|H4|Q4|M4|K4|L4|V4|T4|R4|W4|G4|U4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAg9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAl9HKCAAAAA==" Group="0" Carrier="EI" FlightNumber="6237" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T16:00:00.000-05:00" ArrivalTime="2020-05-01T18:35:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAm9HKCAAAAA==">EI  6237UNITED AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAn9HKCAAAAA==">OPERATED BY UNITED AIRLINES -- UA1928</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAo9HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAp9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAq9HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA" OperatingFlightNumber="1928"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|C4|I4|D4|P4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|H4|G4|K4|M4|V4|F4|N4|L4|E4|Q4|S4|O4|R4|W4|Z4|A4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAk9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAs9HKCAAAAA==" Group="0" Carrier="UA" FlightNumber="1928" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T16:00:00.000-05:00" ArrivalTime="2020-05-01T18:35:00.000-07:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAt9HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAu9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAv9HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z8|P7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|L9|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAr9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAx9HKCAAAAA==" Group="0" Carrier="AS" FlightNumber="1013" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T14:10:00.000-05:00" ArrivalTime="2020-05-01T16:45:00.000-07:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAy9HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAz9HKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA09HKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P7|I6|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|RL|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAw9HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA29HKCAAAAA==" Group="0" Carrier="UA" FlightNumber="2091" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T14:00:00.000-05:00" ArrivalTime="2020-05-01T16:36:00.000-07:00" ETicketability="Yes" Equipment="73G" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA39HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA49HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA59HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C5|DL|ZL|PL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|L1|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA19HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA79HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="3078" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T13:45:00.000-05:00" ArrivalTime="2020-05-01T16:06:00.000-07:00" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA89HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA99HKCAAAAA==">ENTERTAINMENT ON DEMAND / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA+9HKCAAAAA==">POWER / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA/9HKCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D4|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA69HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAB+HKCAAAAA==" Group="0" Carrier="BA" FlightNumber="2431" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T11:50:00.000-05:00" ArrivalTime="2020-05-01T14:31:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAC+HKCAAAAA==">BA  2431AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAD+HKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1213</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAE+HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAF+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAG+HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAH+HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1213"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C2|D4|R9|I9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B2|H9|K9|M9|L9|V9|N9|S9|O9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAA+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAJ+HKCAAAAA==" Group="0" Carrier="AA" FlightNumber="1213" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T11:50:00.000-05:00" ArrivalTime="2020-05-01T14:31:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAK+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAL+HKCAAAAA==">AUDIO PROGRAMMING / IN-SEAT POWER SOURCE /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAM+HKCAAAAA==">IN-SEAT VIDEO PLAYER/LIBRARY / WI-FI /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAN+HKCAAAAA==">110V AC POWER / 110V AC POWER FIRST /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAO+HKCAAAAA==">110V AC POWER ECONOMY / NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAP+HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C7|J7|R7|D7|I7|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|H7|K7|M7|L7|G6|V7|SL|NL|QL|OL|TL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAI+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAR+HKCAAAAA==" Group="0" Carrier="MH" FlightNumber="9385" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T11:50:00.000-05:00" ArrivalTime="2020-05-01T14:31:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAS+HKCAAAAA==">MH  9385AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAT+HKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1213</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAU+HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAV+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAW+HKCAAAAA==">AUDIO PROGRAMMING / IN-SEAT POWER SOURCE /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAX+HKCAAAAA==">IN-SEAT VIDEO PLAYER/LIBRARY / WI-FI /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAY+HKCAAAAA==">110V AC POWER / 110V AC POWER FIRST /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAZ+HKCAAAAA==">110V AC POWER ECONOMY / NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAa+HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1213"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|CL|DL|ZL|IL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|H9|K9|M9|L9|V9|SC|NC|QC|OC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAQ+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAc+HKCAAAAA==" Group="0" Carrier="UA" FlightNumber="1457" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:51:00.000-05:00" ArrivalTime="2020-05-01T10:22:00.000-07:00" ETicketability="Yes" Equipment="73G" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAd+HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAe+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAf+HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D5|Z4|P2"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|L5|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAb+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAh+HKCAAAAA==" Group="0" Carrier="AS" FlightNumber="27" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:30:00.000-05:00" ArrivalTime="2020-05-01T10:05:00.000-07:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAi+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAj+HKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAk+HKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P4|I2|U1"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R7|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAg+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAm+HKCAAAAA==" Group="0" Carrier="AA" FlightNumber="230" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:24:00.000-05:00" ArrivalTime="2020-05-01T10:06:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAn+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAo+HKCAAAAA==">MOVIE / AUDIO PROGRAMMING / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAp+HKCAAAAA==">SOURCE / WI-FI / 110V AC POWER / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAq+HKCAAAAA==">POWER FIRST / 110V AC POWER ECONOMY /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAr+HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAs+HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C7|J7|R7|D7|I7|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|H7|K7|M7|L7|G7|V7|S7|N7|QL|O7|T7"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAl+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAu+HKCAAAAA==" Group="0" Carrier="BA" FlightNumber="5719" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T07:24:00.000-05:00" ArrivalTime="2020-05-01T10:06:00.000-07:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAv+HKCAAAAA==">BA  5719AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAw+HKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA230</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAx+HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAy+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAz+HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA0+HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="230"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C2|D4|R9|I9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B2|H9|K9|M9|L9|V9|N9|S9|O9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAt+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA2+HKCAAAAA==" Group="0" Carrier="DL" FlightNumber="487" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T06:10:00.000-05:00" ArrivalTime="2020-05-01T08:32:00.000-07:00" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA3+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA4+HKCAAAAA==">ENTERTAINMENT ON DEMAND / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA5+HKCAAAAA==">POWER / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA6+HKCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D6|I2|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X1|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA1+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA8+HKCAAAAA==" Group="0" Carrier="AS" FlightNumber="23" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T06:00:00.000-05:00" ArrivalTime="2020-05-01T08:37:00.000-07:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA9+HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA++HKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA/+HKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P5|I3|U2"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R7|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA7+HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAB/HKCAAAAA==" Group="0" Carrier="KE" FlightNumber="6118" Origin="ORD" Destination="SEA" DepartureTime="2020-05-01T06:00:00.000-05:00" ArrivalTime="2020-05-01T08:37:00.000-07:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAC/HKCAAAAA==">KE  6118ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAD/HKCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS23</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAE/HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAF/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAG/HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="23"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|S9|H9|E9|K9|L9|U9|Q9|N9|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAA/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAI/HKCAAAAA==" Group="1" Carrier="AS" FlightNumber="26" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T17:50:00.000-07:00" ArrivalTime="2020-05-16T23:57:00.000-05:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAJ/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAK/HKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAL/HKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P7|I7|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R7|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAH/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAN/HKCAAAAA==" Group="1" Carrier="KE" FlightNumber="6117" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T17:50:00.000-07:00" ArrivalTime="2020-05-16T23:57:00.000-05:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAO/HKCAAAAA==">KE  6117ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAP/HKCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS26</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAQ/HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAR/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAS/HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="26"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|S9|H9|E9|K9|L9|U9|Q9|N9|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAM/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAU/HKCAAAAA==" Group="1" Carrier="UA" FlightNumber="2229" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T23:20:00.000-07:00" ArrivalTime="2020-05-17T05:14:00.000-05:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAV/HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAW/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAX/HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z9|P9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|LL|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAT/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAZ/HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="1562" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T15:15:00.000-07:00" ArrivalTime="2020-05-16T21:26:00.000-05:00" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAa/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAb/HKCAAAAA==">ENTERTAINMENT ON DEMAND / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAc/HKCAAAAA==">POWER / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAd/HKCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C7|D4|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L8|UL|TL|XL|VL|E8"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAY/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAf/HKCAAAAA==" Group="1" Carrier="MH" FlightNumber="9617" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T15:06:00.000-07:00" ArrivalTime="2020-05-16T21:25:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAg/HKCAAAAA==">MH  9617AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAh/HKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1213</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAi/HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAj/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAk/HKCAAAAA==">MOVIE / AUDIO PROGRAMMING / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAl/HKCAAAAA==">SOURCE / WI-FI / 110V AC POWER / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAm/HKCAAAAA==">POWER FIRST / 110V AC POWER ECONOMY /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAn/HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAo/HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1213"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|C4|D4|Z4|I4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|H9|K9|M9|L9|V9|S9|N9|Q9|O9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAe/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAq/HKCAAAAA==" Group="1" Carrier="BA" FlightNumber="5739" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T15:06:00.000-07:00" ArrivalTime="2020-05-16T21:25:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAr/HKCAAAAA==">BA  5739AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAs/HKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1213</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAt/HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAu/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAv/HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAw/HKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1213"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C2|D4|R9|I9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B2|H9|K9|M9|L9|V9|N9|S9|O9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAp/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAy/HKCAAAAA==" Group="1" Carrier="UA" FlightNumber="318" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T13:47:00.000-07:00" ArrivalTime="2020-05-16T20:00:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAz/HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA0/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA1/HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|Z9|P8"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|L9|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAx/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA3/HKCAAAAA==" Group="1" Carrier="TK" FlightNumber="8610" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T13:47:00.000-07:00" ArrivalTime="2020-05-16T20:00:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA4/HKCAAAAA==">TK  8610UNITED AIRLINES INC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA5/HKCAAAAA==">OPERATED BY UNITED AIRLINES INC -- UA318</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA6/HKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA7/HKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA8/HKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA9/HKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA" OperatingFlightNumber="318"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C2|DL|ZL|KL|JL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|A4|H4|S4|O4|E4|Q4|TL|LL|VL|PL|WL|UL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA2/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA//HKCAAAAA==" Group="1" Carrier="SQ" FlightNumber="1716" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T12:30:00.000-07:00" ArrivalTime="2020-05-16T18:50:00.000-05:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAAAIKCAAAAA==">SQ  1716ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKABAIKCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS22</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKACAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKADAIKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAEAIKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="22"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="Z4|C4|J4|U4|D4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|E4|M4|H4|W4|Q4|N4|VC|KC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA+/HKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAGAIKCAAAAA==" Group="1" Carrier="AS" FlightNumber="22" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T12:30:00.000-07:00" ArrivalTime="2020-05-16T18:50:00.000-05:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAHAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAIAIKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAJAIKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P7|I4|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|GL|TL|RL|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAFAIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKALAIKCAAAAA==" Group="1" Carrier="UA" FlightNumber="1525" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:35:00.000-07:00" ArrivalTime="2020-05-16T16:37:00.000-05:00" ETicketability="Yes" Equipment="752" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAMAIKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKANAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAOAIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C8|D4|Z3|PL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T7|LL|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAKAIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAQAIKCAAAAA==" Group="1" Carrier="EI" FlightNumber="6242" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:35:00.000-07:00" ArrivalTime="2020-05-16T16:37:00.000-05:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKARAIKCAAAAA==">EI  6242UNITED AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKASAIKCAAAAA==">OPERATED BY UNITED AIRLINES -- UA1525</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKATAIKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAUAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAVAIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA" OperatingFlightNumber="1525"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|C4|I4|D4|P4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|H4|G4|K4|M4|V4|F4|N4|LC|EC|X4|Q4|S4|OC|R4|W4|Z4|A4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAPAIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAXAIKCAAAAA==" Group="1" Carrier="BA" FlightNumber="4980" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:23:00.000-07:00" ArrivalTime="2020-05-16T16:44:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAYAIKCAAAAA==">BA  4980AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAZAIKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA861</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAaAIKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAbAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAcAIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAdAIKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="861"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C2|D4|R9|I9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B2|H9|K9|M9|L9|V9|N9|S9|O9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAWAIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAfAIKCAAAAA==" Group="1" Carrier="MH" FlightNumber="9374" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:23:00.000-07:00" ArrivalTime="2020-05-16T16:44:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAgAIKCAAAAA==">MH  9374AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAhAIKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA861</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAiAIKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAjAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAkAIKCAAAAA==">IN-SEAT POWER SOURCE / WI-FI / 110V AC POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAlAIKCAAAAA==">110V AC POWER FIRST / 110V AC POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAmAIKCAAAAA==">ECONOMY / NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAnAIKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="861"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|CL|DL|ZL|IL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|H9|K9|M9|L9|V9|SC|NC|QC|OC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAeAIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKApAIKCAAAAA==" Group="1" Carrier="AS" FlightNumber="34" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T10:05:00.000-07:00" ArrivalTime="2020-05-16T16:25:00.000-05:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAqAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKArAIKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAsAIKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F6|D6|P4|IL|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T2|RL|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAoAIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAuAIKCAAAAA==" Group="1" Carrier="BA" FlightNumber="5710" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" ArrivalTime="2020-05-16T14:20:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAvAIKCAAAAA==">BA  5710AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAwAIKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1540</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAxAIKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAyAIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAzAIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA0AIKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1540"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C2|D4|R9|I9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B2|H9|K9|M9|L9|V9|N9|S9|O9|Q9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAtAIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA2AIKCAAAAA==" Group="1" Carrier="AY" FlightNumber="4042" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" ArrivalTime="2020-05-16T14:20:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA3AIKCAAAAA==">AY  4042AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA4AIKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1540</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA5AIKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA6AIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA7AIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1540"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J7|C6|D4|I4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|H7|K7|M7|L7|V7|SC|NC|QC|OC|GC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA1AIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKA9AIKCAAAAA==" Group="1" Carrier="MH" FlightNumber="9522" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" ArrivalTime="2020-05-16T14:20:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA+AIKCAAAAA==">MH  9522AMERICAN AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA/AIKCAAAAA==">OPERATED BY AMERICAN AIRLINES -- AA1540</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAABIKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKABBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKACBIKCAAAAA==">MOVIE / AUDIO PROGRAMMING / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKADBIKCAAAAA==">SOURCE / WI-FI / 110V AC POWER / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAEBIKCAAAAA==">POWER FIRST / 110V AC POWER ECONOMY /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAFBIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAGBIKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AA" OperatingFlightNumber="1540"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|CL|DL|Z4|I4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|H9|K9|M9|L9|V9|SC|NC|QC|OC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKA8AIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAIBIKCAAAAA==" Group="1" Carrier="AA" FlightNumber="1540" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T08:00:00.000-07:00" ArrivalTime="2020-05-16T14:20:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAJBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAKBIKCAAAAA==">MOVIE / AUDIO PROGRAMMING / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKALBIKCAAAAA==">SOURCE / WI-FI / 110V AC POWER / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAMBIKCAAAAA==">POWER FIRST / 110V AC POWER ECONOMY /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKANBIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAOBIKCAAAAA==">O ONEWORLD</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C7|J7|R6|D4|I4|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|H7|K7|M7|L7|GL|V7|SL|NL|QL|OL|TL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAHBIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAQBIKCAAAAA==" Group="1" Carrier="DL" FlightNumber="3078" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T07:09:00.000-07:00" ArrivalTime="2020-05-16T13:19:00.000-05:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKARBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKASBIKCAAAAA==">ENTERTAINMENT ON DEMAND / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKATBIKCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I6|Z5"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V7|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAPBIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAVBIKCAAAAA==" Group="1" Carrier="UA" FlightNumber="578" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T07:00:00.000-07:00" ArrivalTime="2020-05-16T12:58:00.000-05:00" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAWBIKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAXBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAYBIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C7|D2|ZL|PL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|E9|U9|H9|Q9|V9|W9|S9|T9|L9|KL|GL|N9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAUBIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAaBIKCAAAAA==" Group="1" Carrier="EI" FlightNumber="6241" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T07:00:00.000-07:00" ArrivalTime="2020-05-16T12:58:00.000-05:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAbBIKCAAAAA==">EI  6241UNITED AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAcBIKCAAAAA==">OPERATED BY UNITED AIRLINES -- UA578</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAdBIKCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAeBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAfBIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA" OperatingFlightNumber="578"/>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="JC|CC|IC|DC|PC"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|H4|G4|K4|M4|VC|FC|NC|L4|E4|X4|Q4|S4|O4|R4|W4|Z4|A4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAZBIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAhBIKCAAAAA==" Group="1" Carrier="AS" FlightNumber="1014" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T06:05:00.000-07:00" ArrivalTime="2020-05-16T12:25:00.000-05:00" ETicketability="Yes" Equipment="32S" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAiBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAjBIKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAkBIKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F6|D6|P4|IL|UL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|RL|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAgBIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAmBIKCAAAAA==" Group="1" Carrier="NK" FlightNumber="2949" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T01:40:00.000-07:00" ArrivalTime="2020-05-16T07:43:00.000-05:00" ETicketability="Yes" Equipment="32A" ChangeOfPlane="false" ParticipantLevel="No Special Participant" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAnBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAoBIKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="P4|Y4|B4|H4|Q4|M4|K4|L4|V4|T4|R4|W4|G4|U4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKAlBIKCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAqBIKCAAAAA==" Group="1" Carrier="AS" FlightNumber="28" Origin="SEA" Destination="ORD" DepartureTime="2020-05-16T00:20:00.000-07:00" ArrivalTime="2020-05-16T06:25:00.000-05:00" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKArBIKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAsBIKCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAtBIKCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1P">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|D7|P2|I1|U1"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|Z7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|RL|X7|N7|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="xs/MMC4R2BKApBIKCAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:AirItinerarySolution Key="xs/MMC4R2BKAuBIKCAAAAA==">
+            <air:AirSegmentRef Key="xs/MMC4R2BKAa8HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAh8HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAm8HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAu8HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA18HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA68HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAB9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAG9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAO9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAZ9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAh9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAl9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAs9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAx9HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA29HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA79HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAB+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAJ+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAR+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAc+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAh+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAm+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAu+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA2+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA8+HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAB/HKCAAAAA=="/>
+         </air:AirItinerarySolution>
+         <air:AirItinerarySolution Key="xs/MMC4R2BKAvBIKCAAAAA==">
+            <air:AirSegmentRef Key="xs/MMC4R2BKAI/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAN/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAU/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAZ/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAf/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAq/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAy/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA3/HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA//HKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAGAIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKALAIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAQAIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAXAIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAfAIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKApAIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAuAIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA2AIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKA9AIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAIBIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAQBIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAVBIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAaBIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAhBIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAmBIKCAAAAA=="/>
+            <air:AirSegmentRef Key="xs/MMC4R2BKAqBIKCAAAAA=="/>
+         </air:AirItinerarySolution>
+      </air:AvailabilitySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

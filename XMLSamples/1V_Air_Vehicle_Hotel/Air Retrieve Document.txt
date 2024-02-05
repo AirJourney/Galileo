@@ -1,0 +1,101 @@
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<air:AirRetrieveDocumentReq ReturnRestrictions="true" ReturnPricing="true" UniversalRecordLocatorCode="3H9UOR" TraceId="047b8804162d4c74aea469ed52ebdfdd" TargetBranch="P2719157" xmlns:com="http://www.travelport.com/schema/common_v50_0"   xmlns:air="http://www.travelport.com/schema/air_v50_0">
+			<com:BillingPointOfSaleInfo OriginApplication="ABCDE"/>
+			<com:OverridePCC ProviderCode="1V" PseudoCityCode="1234"/>
+			<com:TicketNumber>1111114444445</com:TicketNumber>
+		</air:AirRetrieveDocumentReq>
+	</soap:Body>
+</soap:Envelope>
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<air:AirRetrieveDocumentRsp xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" TraceId="047b8804162d4c74aea469ed52ebdfdd" TransactionId="A8A8CD920A0759BB10ECDE876CF6D624" ResponseTime="459" UniversalRecordLocatorCode="3H9UOR">
+			<air:ETR Key="ADzVaCBAAA/BcNsIDEAAAA==" TotalPrice="USD482.80" BasePrice="USD434.83" Taxes="USD47.97" Refundable="false" Exchangeable="false" IssuedDate="2020-03-03T00:00:00.000-05:00" ProviderCode="1V" ProviderLocatorCode="KQLPPU" IATANumber="77777751" PseudoCityCode="1234" PlatingCarrier="HA">
+				<air:AirReservationLocatorCode>3H9UPI</air:AirReservationLocatorCode>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI5698869755-F647711B" BranchCode="P2719157" AgencyCode="S46922" EventTime="2020-03-03T05:00:00.000+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:BookingTraveler Key="ADzVaCBAAA/BLNsIDEAAAA==">
+					<common_v50_0:BookingTravelerName First="LIPING" Last="TEST"/>
+					<common_v50_0:DeliveryInfo>
+						<common_v50_0:ShippingAddress Key="ADzVaCBAAA/BMNsIDEAAAA==">
+							<common_v50_0:Street>***********************************************</common_v50_0:Street>
+							<common_v50_0:ProviderReservationInfoRef Key="ADzVaCBAAA/BtJqIDEAAAA=="/>
+						</common_v50_0:ShippingAddress>
+					</common_v50_0:DeliveryInfo>
+					<common_v50_0:PhoneNumber Key="ADzVaCBAAA/BPNsIDEAAAA==" Type="Email" Location="EML" Number="lhuangzheng@testtest.com">
+						<common_v50_0:ProviderReservationInfoRef Key="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:PhoneNumber Key="ADzVaCBAAA/BQNsIDEAAAA==" Type="Business" Location="WEB" Number="4153057195">
+						<common_v50_0:ProviderReservationInfoRef Key="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:PhoneNumber Key="ADzVaCBAAA/BRNsIDEAAAA==" Type="None" Location="WEB" Number="1-415-305-7195">
+						<common_v50_0:ProviderReservationInfoRef Key="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:PhoneNumber Key="ADzVaCBAAA/BSNsIDEAAAA==" Type="Hotel" Location="WEB" Number="1-415-305-7195">
+						<common_v50_0:ProviderReservationInfoRef Key="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:LoyaltyCard Key="ADzVaCBAAA/BNNsIDEAAAA==" SupplierCode="AS" CardNumber="*********" SupplierType="Air">
+						<common_v50_0:ProviderReservationSpecificInfo ProviderReservationLevel="true">
+							<common_v50_0:ProviderReservationInfoRef Key="ADzVaCBAAA/BtJqIDEAAAA=="/>
+						</common_v50_0:ProviderReservationSpecificInfo>
+					</common_v50_0:LoyaltyCard>
+					<common_v50_0:SSR Key="ADzVaCBAAA/BVNsIDEAAAA==" Status="HK" Type="****" FreeText="////*******/M//TEST/LIPING-1TEST/LIPING" Carrier="HA" ProviderReservationInfoRef="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					<common_v50_0:SSR Key="ADzVaCBAAA/BWNsIDEAAAA==" SegmentRef="ADzVaCBAAA/BYNsIDEAAAA==" Status="HK" Type="****" FreeText="1737516038945C1" Carrier="HA" ProviderReservationInfoRef="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					<common_v50_0:SSR Key="ADzVaCBAAA/BXNsIDEAAAA==" SegmentRef="ADzVaCBAAA/BaNsIDEAAAA==" Status="HK" Type="****" FreeText="1737516038945C2" Carrier="HA" ProviderReservationInfoRef="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					<common_v50_0:NameRemark Key="ADzVaCBAAA/BONsIDEAAAA==">
+						<common_v50_0:RemarkData>792</common_v50_0:RemarkData>
+						<common_v50_0:ProviderReservationInfoRef Key="ADzVaCBAAA/BtJqIDEAAAA=="/>
+					</common_v50_0:NameRemark>
+					<common_v50_0:AirSeatAssignment Key="ADzVaCBAAA/BTNsIDEAAAA==" Status="HK" Seat="39A" SegmentRef="ADzVaCBAAA/BYNsIDEAAAA==" FlightDetailsRef="ADzVaCBAAA/BZNsIDEAAAA=="/>
+					<common_v50_0:AirSeatAssignment Key="ADzVaCBAAA/BUNsIDEAAAA==" Status="HK" Seat="42J" SegmentRef="ADzVaCBAAA/BaNsIDEAAAA==" FlightDetailsRef="ADzVaCBAAA/BbNsIDEAAAA=="/>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:FormOfPayment Key="ADzVaCBAAA/BJitIDEAAAA==" Type="Credit" Reusable="true" ProfileKey="uv6mybFXTMWn9KONdsJpxQ==">
+					<common_v50_0:CreditCard Type="**" Number="************4086" ExpDate="*******"/>
+				</common_v50_0:FormOfPayment>
+				<common_v50_0:Payment Key="ADzVaCBAAA/BKitIDEAAAA==" Type="Itinerary" Amount="USD482.80" FormOfPaymentRef="ADzVaCBAAA/BJitIDEAAAA=="/>
+				<common_v50_0:CreditCardAuth PaymentRef="ADzVaCBAAA/BKitIDEAAAA==" Number="************4086" Amount="USD482.80" AuthCode="04189C" AuthResultCode="approved" FormOfPaymentRef="ADzVaCBAAA/BJitIDEAAAA=="/>
+				<common_v50_0:SupplierLocator SupplierCode="HA" SupplierLocatorCode="VCDVQS"/>
+				<air:FareCalc>FC 1APR SFO HA HNL 154.94HA SFO 279.89USD434.83END ZPSFOHNL XT 11.20AY 8.60ZP 9.00XFSFO4.5HNL4.5</air:FareCalc>
+				<air:Ticket Key="ADzVaCBAAA/BfNsIDEAAAA==" TicketNumber="1111114444445" TicketStatus="N">
+					<air:Coupon Key="ADzVaCBAAA/BgNsIDEAAAA==" CouponNumber="1" MarketingCarrier="HA" MarketingFlightNumber="53" Origin="SFO" Destination="HNL" DepartureTime="2020-04-01T07:10:00.000-07:00" StopoverCode="true" BookingClass="O" FareBasis="OHX0OTMN" NotValidBefore="2020-04-01" NotValidAfter="2020-04-01" Status="O" SegmentGroup="0" MarriageGroup="0"/>
+					<air:Coupon Key="ADzVaCBAAA/BhNsIDEAAAA==" CouponNumber="2" MarketingCarrier="HA" MarketingFlightNumber="12" Origin="HNL" Destination="SFO" DepartureTime="2020-04-04T14:05:00.000-10:00" StopoverCode="true" BookingClass="G" FareBasis="GHW0ODMN" NotValidBefore="2020-04-04" NotValidAfter="2020-04-04" Status="O" SegmentGroup="1" MarriageGroup="0"/>
+				</air:Ticket>
+				<air:AirPricingInfo Key="ADzVaCBAAA/B/MsIDEAAAA==" TotalPrice="USD482.80" BasePrice="USD434.83" ApproximateTotalPrice="USD482.80" ApproximateBasePrice="USD434.83" Taxes="USD47.97" LatestTicketingTime="2020-03-04T23:59:00.000-05:00" PricingMethod="Auto" ETicketability="Yes" ProviderReservationInfoRef="ADzVaCBAAA/BtJqIDEAAAA==" AirPricingInfoGroup="1" Ticketed="true" PricingType="StoredFare" FareCalculationInd="C">
+					<air:FareInfo Key="ADzVaCBAAA/BBNsIDEAAAA==" FareBasis="OHX0OTMN" PassengerTypeCode="ADT" Origin="SFO" Destination="HNL" EffectiveDate="2020-03-03T00:00:00.000-05:00" Amount="USD154.94" NotValidBefore="2020-04-01" NotValidAfter="2020-04-01">
+						<common_v50_0:Endorsement Value="HA ONLY/NONREF/FEE TO CHG"/>
+						<air:BaggageAllowance>
+							<air:NumberOfPieces>0</air:NumberOfPieces>
+						</air:BaggageAllowance>
+					</air:FareInfo>
+					<air:FareInfo Key="ADzVaCBAAA/BENsIDEAAAA==" FareBasis="GHW0ODMN" PassengerTypeCode="ADT" Origin="HNL" Destination="SFO" EffectiveDate="2020-03-03T00:00:00.000-05:00" Amount="USD279.89" NotValidBefore="2020-04-04" NotValidAfter="2020-04-04">
+						<common_v50_0:Endorsement Value="HA ONLY/NONREF/FEE TO CHG"/>
+						<air:BaggageAllowance>
+							<air:NumberOfPieces>0</air:NumberOfPieces>
+						</air:BaggageAllowance>
+					</air:FareInfo>
+					<air:FareStatus Code="Reprice"/>
+					<air:BookingInfo BookingCode="O" CabinClass="Economy" FareInfoRef="ADzVaCBAAA/BBNsIDEAAAA=="/>
+					<air:BookingInfo BookingCode="G" CabinClass="Economy" FareInfoRef="ADzVaCBAAA/BENsIDEAAAA=="/>
+					<air:TaxInfo Category="AY" Amount="USD11.20" Key="UKuSaCBAAA/BTvWKwHAAAA=="/>
+					<air:TaxInfo Category="US" Amount="USD19.17" Key="UKuSaCBAAA/BUvWKwHAAAA=="/>
+					<air:TaxInfo Category="XF" Amount="USD9.00" Key="UKuSaCBAAA/BVvWKwHAAAA==">
+						<common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="SFO"/>
+						<common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="HNL"/>
+					</air:TaxInfo>
+					<air:TaxInfo Category="ZP" Amount="USD8.60" Key="UKuSaCBAAA/BWvWKwHAAAA==">
+						<common_v50_0:TaxDetail Amount="USD4.30" OriginAirport="SFO"/>
+						<common_v50_0:TaxDetail Amount="USD4.30" OriginAirport="HNL"/>
+					</air:TaxInfo>
+					<air:FareCalc>SFO HA HNL 154.94HA SFO 279.89USD434.83END</air:FareCalc>
+					<air:PassengerType Code="ADT" BookingTravelerRef="ADzVaCBAAA/BLNsIDEAAAA==">
+						<air:FareGuaranteeInfo GuaranteeType="Auto"/>
+					</air:PassengerType>
+					<common_v50_0:BookingTravelerRef Key="ADzVaCBAAA/BLNsIDEAAAA=="/>
+				</air:AirPricingInfo>
+			</air:ETR>
+		</air:AirRetrieveDocumentRsp>
+	</SOAP:Body>
+</SOAP:Envelope>|

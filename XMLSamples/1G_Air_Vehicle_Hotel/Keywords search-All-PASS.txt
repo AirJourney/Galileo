@@ -1,0 +1,46 @@
+Keywords search-All-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelKeywordReq AuthorizedBy="SUSIL" TargetBranch="P7102538" TraceId="PP_1G_001" HotelChain="HI" HotelCode="25326" CheckinDate="2020-04-01" ReturnKeywordList="true" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+            </hot:HotelKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Keywords search-All-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelKeywordRsp TraceId="PP_1G_001" TransactionId="9C1850FF0A07643B096D7BC30644303E" ResponseTime="71" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="BOOK" Number="1" Description="BOOKING GUIDELINES"/>
+         <common_v50_0:Keyword Name="CANC" Number="2" Description="CANCELLATION POLICY"/>
+         <common_v50_0:Keyword Name="COMM" Number="3" Description="COMMISSION"/>
+         <common_v50_0:Keyword Name="CONT" Number="4" Description="CONTACTS"/>
+         <common_v50_0:Keyword Name="CORP" Number="5" Description="CORPORATE RATES"/>
+         <common_v50_0:Keyword Name="CRED" Number="6" Description="CREDIT CARD POLICIES"/>
+         <common_v50_0:Keyword Name="DIRS" Number="7" Description="DIRECTIONS TO HOTEL"/>
+         <common_v50_0:Keyword Name="DPST" Number="8" Description="DEPOSIT POLICY"/>
+         <common_v50_0:Keyword Name="FACI" Number="9" Description="FACILITIES"/>
+         <common_v50_0:Keyword Name="FAMI" Number="10" Description="FAMILY PLAN"/>
+         <common_v50_0:Keyword Name="FREQ" Number="11" Description="FREQUENT TRAVELER"/>
+         <common_v50_0:Keyword Name="GRPS" Number="12" Description="GROUP INFO"/>
+         <common_v50_0:Keyword Name="GUAR" Number="13" Description="GUARANTEE POLICY"/>
+         <common_v50_0:Keyword Name="HELP" Number="14" Description="CUSTOMER SERVICE"/>
+         <common_v50_0:Keyword Name="INDX" Number="15" Description="INDEX"/>
+         <common_v50_0:Keyword Name="LOCA" Number="16" Description="HOTEL LOCATION"/>
+         <common_v50_0:Keyword Name="MEAL" Number="17" Description="MEAL PLANS AVAILABLE"/>
+         <common_v50_0:Keyword Name="DESC" Number="18" Description="HOTEL DESCRIPTION"/>
+         <common_v50_0:Keyword Name="OTHR" Number="19" Description="OTHER"/>
+         <common_v50_0:Keyword Name="PROM" Number="20" Description="PROMOTIONAL INFO"/>
+         <common_v50_0:Keyword Name="RECR" Number="21" Description="RECREATION"/>
+         <common_v50_0:Keyword Name="ROOM" Number="22" Description="ROOM / UNIT TYPES"/>
+         <common_v50_0:Keyword Name="SERV" Number="23" Description="SERVICES AVAILABLE"/>
+         <common_v50_0:Keyword Name="TAXS" Number="24" Description="TAX INFORMATION"/>
+         <common_v50_0:Keyword Name="TRAN" Number="25" Description="AREA TRANSPORTATION"/>
+         <common_v50_0:Keyword Name="TRVL" Number="26" Description="TRAVEL INDUSTRY INFO"/>
+         <common_v50_0:Keyword Name="MULT" Number="27" Description="MULTILEVEL RATES"/>
+      </hotel:HotelKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

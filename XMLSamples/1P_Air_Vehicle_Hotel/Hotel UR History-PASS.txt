@@ -1,0 +1,248 @@
+Hotel UR History-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordHistorySearchReq AuthorizedBy="SUSIL" UniversalRecordLocatorCode="0T1ON5" TraceId="PP_1P_001" TargetBranch="TP_1P_SOA" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordHistorySearchReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel UR History-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordHistorySearchRsp TraceId="PP_1P_001" TransactionId="9DCF52AE0A07643CAB0E0A7C44DABD95" ResponseTime="315" LastResult="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:32:49.603+00:00" ElementType="URCreate" Action="URCreate">
+            <universal:New>UR RecLoc: 0T1ON5</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:32:49.605+00:00" ElementType="HotelReservation" Action="HotelCreate">
+            <universal:New>Universal Record Locator Code: 0T1ON5
+               ActionStatus:-
+               Type:ACTIVE
+               TicketDate:
+               BranchPCC:
+               AirportCode:
+               AccountCode:
+               AirVendor:
+               Remark:
+               Provider Code: 1P
+               Provider Locator Code: MEH245
+               
+               
+               
+               Provider Reservation:
+               
+               Provider Code: 1P
+               Provider Locator: MEH245
+               CustomCheckRule:
+               
+               
+               CustomerID:
+               Postscript:
+               
+               
+               UserAcceptance:
+               
+               
+               Booking Confirmation:87304738
+               
+               Status:HK
+               
+               
+               Traveler Info 1:
+               BookingTravelerRefKey : TuJJbrVu4hG1/9LlYIhwmw==
+               Booking Traveler First Name: Harry
+               Booking Traveler Last Name:  Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               
+               
+               Hotel Segment:
+               Status: HK
+               Hotel Chain:
+               Hotel Code:1540
+               Hotel Location:BOM
+               Hotel Address:
+               DR BABASAHEB AMBEDKAR ROA PARE
+               MUMBAI MH 400012
+               Hotel Phone Number:91 22 24101010
+               Hotel Fax Number:91 22 24101111
+               Hotel Other Number:
+               Check In Date:2020-05-01
+               Check Out:2020-05-16
+               
+               Rate Plan Type:REGA00
+               SurCharge :
+               Base:INR217500.00
+               Total :INR256650.00
+               
+               
+               
+               Tax:INR39150.00
+               Tax:
+               
+               NonRefundableStayIndicator:
+               
+               
+               Rate By Date 1:-
+               Effective Date:2020-05-01
+               Expire Date:2020-05-16
+               Base:INR14500.00
+               
+               Guarantee Detail:
+               Hold Time:
+               Guarantee Type:
+               Deposit Amount:
+               Approximate Deposit Amount:
+               
+               
+               
+               Reservation Name First:HARRY
+               Reservation Name Last:LOBO
+               
+               
+               
+               
+               
+               Hotel Commission: Y
+               
+               Guest Information:
+               ExtraAdult:
+               Amount :
+               Content:
+               AdultCount: 2
+               ChildCount:
+               Age:
+               Amount:
+               RoomCount: 1
+               
+               ExtraChild:
+               Count:
+               Content:
+               CreatedAt: 2020-03-03T00:32:49.605+00:00</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:32:54.594+00:00" ElementType="HotelReservation" Action="HotelCancel">
+            <universal:Old>Universal Record Locator Code: 0T1ON5
+               Provider Reservation:
+               Provider Code:1P
+               ProviderLocatorCode:MEH245
+               
+               Traveler Info 1:
+               Name: Harry Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               Booking Confirmation:87304738
+               Status:HK
+               
+               Hotel Chain:
+               Hotel Code:1540
+               Hotel Location:BOM
+               RateSupplier:$reservation.getFirstStay().rateSupplier
+               Check In Date:2020-05-01
+               Check Out:2020-05-16
+               Rate Plan Type:REGA00
+               
+               Rate By Date 1:-
+               Effective Date:2020-05-01
+               Expire Date:2020-05-16
+               
+               General Remark:
+               Category: MCT
+               TypeInGDS:
+               SupplierType:
+               Text: NotRequired
+               
+               General Remark:
+               Category: Advisory
+               TypeInGDS:
+               SupplierType:
+               Text:  ARC/IATA INVALID.  PLEASE VERIFY AND CORRECT OR INPUT  /BS-0000000 TO PROCESS YOUR ENTRY VIA LINK $L
+               
+               General Remark:
+               Category: A
+               TypeInGDS: Alpha
+               SupplierType:
+               Text: THIS IS A ALPHA GENERAL REMARK
+               
+               
+               
+               Total Rate:INR256650.00
+               Base:INR217500.00
+               Tax:
+               SurCharge:
+               Status: HK
+               Cancellation Number:
+               Reservation Name First:HARRY
+               Reservation Name Last:LOBO
+               Sell Message:ARC/IATA INVALID.  PLEASE VERIFY AND CORRECT OR INPUT  /BS-0000000 TO PROCESS YOUR ENTRY VIA LINK $L</universal:Old>
+            <universal:New>Universal Record Locator Code: 0T1ON5
+               Provider Reservation:
+               Provider Code:1P
+               ProviderLocatorCode:MEH245
+               
+               Traveler Info 1:
+               Name: Harry Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               Booking Confirmation:87304738
+               Status:XX
+               AggregatorBookingStatus:cancelled
+               
+               Hotel Chain:
+               Hotel Code:1540
+               Hotel Location:BOM
+               RateSupplier:$reservation.getFirstStay().rateSupplier
+               Check In Date:2020-05-01
+               Check Out:2020-05-16
+               Rate Plan Type:REGA00
+               
+               Rate By Date 1:-
+               Effective Date:2020-05-01
+               Expire Date:2020-05-16
+               
+               General Remark:
+               Category: MCT
+               TypeInGDS:
+               SupplierType:
+               Text: NotRequired
+               
+               General Remark:
+               Category: Advisory
+               TypeInGDS:
+               SupplierType:
+               Text:  ARC/IATA INVALID.  PLEASE VERIFY AND CORRECT OR INPUT  /BS-0000000 TO PROCESS YOUR ENTRY VIA LINK $L
+               
+               General Remark:
+               Category: A
+               TypeInGDS: Alpha
+               SupplierType:
+               Text: THIS IS A ALPHA GENERAL REMARK
+               
+               General Remark:
+               Category:
+               TypeInGDS:
+               SupplierType: Hotel
+               Text: Hotel Chain: LC Check In Date: 2020-05-01 Booking Confirmation Number: 87304738 Cancel Confirmation Num: 52695262
+               
+               
+               
+               Total Rate:INR256650.00
+               Base:INR217500.00
+               Tax:
+               SurCharge:
+               Status: XX
+               Cancellation Number: 52695262
+               Reservation Name First:HARRY
+               Reservation Name Last:LOBO
+               Sell Message:ARC/IATA INVALID.  PLEASE VERIFY AND CORRECT OR INPUT  /BS-0000000 TO PROCESS YOUR ENTRY VIA LINK $L</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+      </universal:UniversalRecordHistorySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,1509 @@
+
+	<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+		<SOAP:Header/>
+		<SOAP:Body>
+			<rail:RailAvailabilitySearchReq TargetBranch="P9898989" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:pass="http://www.travelport.com/schema/passive_v50_0" xmlns:univ="http://www.travelport.com/schema/universal_v50_0">
+				<com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+				<com:OverridePCC ProviderCode="1V" PseudoCityCode="2PCC"/>
+				<rail:SearchRailLeg>
+					<rail:SearchOrigin>
+						<com:RailLocation Code="T1200837"/>
+					</rail:SearchOrigin>
+					<rail:SearchDestination>
+						<com:RailLocation Code="T1200591"/>
+					</rail:SearchDestination>
+					<rail:SearchDepTime PreferredTime="2020-03-15"/>
+				</rail:SearchRailLeg>
+				<com:SearchPassenger Code="ADT" Age="21"/>
+				<rail:RailSearchModifiers>
+					<rail:PreferredSuppliers>
+						<rail:RailSupplier Code="2V"/>
+					</rail:PreferredSuppliers>
+				</rail:RailSearchModifiers>
+			</rail:RailAvailabilitySearchReq>
+		</SOAP:Body>
+	</SOAP:Envelope>
+	
+	<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+			<SOAP:Body>
+				<rail:RailAvailabilitySearchRsp xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" TransactionId="AC1C99BD0A0759BB10ECDE87B648F788" ResponseTime="6794" ResponseType="Availability">
+					<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="RCH" SupplierCode="2V">
+						<![CDATA[The fulfillment types provided may not all be applicable for some train segments. The requested fulfillment type will be validated at time of booking.]]>
+					</common_v50_0:ResponseMessage>
+					<rail:RailSegmentList>
+						<rail:RailSegment TrainNumber="156" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T14:20:00.000-04:00" ArrivalTime="2020-03-15T16:16:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BGXxcrJAAAA==" TravelTime="116">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YA" Quantity="75" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JA" Quantity="42" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="122" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T15:45:00.000-04:00" ArrivalTime="2020-03-15T17:28:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BOXxcrJAAAA==" TravelTime="103">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YD" Quantity="110" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JD" Quantity="59" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2256" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T15:00:00.000-04:00" ArrivalTime="2020-03-15T16:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BWXxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="35" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="35" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2250" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T08:50:00.000-04:00" ArrivalTime="2020-03-15T10:28:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BeXxcrJAAAA==" TravelTime="98">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="57" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="39" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="124" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T19:20:00.000-04:00" ArrivalTime="2020-03-15T21:17:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BmXxcrJAAAA==" TravelTime="117">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YB" Quantity="88" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JB" Quantity="59" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="140" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T12:25:00.000-04:00" ArrivalTime="2020-03-15T14:15:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BuXxcrJAAAA==" TravelTime="110">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YD" Quantity="24" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JD" Quantity="15" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2222" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T17:00:00.000-04:00" ArrivalTime="2020-03-15T18:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/B2XxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="57" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="42" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="126" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T16:25:00.000-04:00" ArrivalTime="2020-03-15T18:15:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/B+XxcrJAAAA==" TravelTime="110">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="44" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="44" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="152" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T08:22:00.000-04:00" ArrivalTime="2020-03-15T10:20:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BGYxcrJAAAA==" TravelTime="118">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="110" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="54" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="158" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T18:10:00.000-04:00" ArrivalTime="2020-03-15T20:02:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BOYxcrJAAAA==" TravelTime="112">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="2" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="2" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="162" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T06:20:00.000-04:00" ArrivalTime="2020-03-15T08:17:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BWYxcrJAAAA==" TravelTime="117">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="60" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="15" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="96" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T13:25:00.000-04:00" ArrivalTime="2020-03-15T15:20:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BeYxcrJAAAA==" TravelTime="115">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YB" Quantity="1" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JB" Quantity="1" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="66" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T21:40:00.000-04:00" ArrivalTime="2020-03-15T23:39:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BmYxcrJAAAA==" TravelTime="119">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Baggage</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="36" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="4" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="164" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T09:25:00.000-04:00" ArrivalTime="2020-03-15T11:17:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BvYxcrJAAAA==" TravelTime="112">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YD" Quantity="173" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JD" Quantity="30" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="150" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T03:15:00.000-04:00" ArrivalTime="2020-03-15T05:10:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/B3YxcrJAAAA==" TravelTime="115">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="140" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="6" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="88" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T11:25:00.000-04:00" ArrivalTime="2020-03-15T13:16:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/B/YxcrJAAAA==" TravelTime="111">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YD" Quantity="33" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JD" Quantity="16" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2260" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T14:00:00.000-04:00" ArrivalTime="2020-03-15T15:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BHZxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="39" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="39" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="90" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T20:30:00.000-04:00" ArrivalTime="2020-03-15T22:24:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BPZxcrJAAAA==" TravelTime="114">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Baggage</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Lounge</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YD" Quantity="14" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JD" Quantity="5" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="132" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T15:15:00.000-04:00" ArrivalTime="2020-03-15T17:05:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BWZxcrJAAAA==" TravelTime="110">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YD" Quantity="2" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JD" Quantity="2" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2228" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T20:00:00.000-04:00" ArrivalTime="2020-03-15T21:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BeZxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="78" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="43" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="54" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T07:30:00.000-04:00" ArrivalTime="2020-03-15T09:17:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BmZxcrJAAAA==" TravelTime="107">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="2" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="1" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2224" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T18:00:00.000-04:00" ArrivalTime="2020-03-15T19:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BtZxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="60" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="37" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2252" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T11:00:00.000-04:00" ArrivalTime="2020-03-15T12:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/B1ZxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="23" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="23" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="80" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T17:15:00.000-04:00" ArrivalTime="2020-03-15T19:00:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/B9ZxcrJAAAA==" TravelTime="105">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Baggage</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="80" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JD" Quantity="50" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="166" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T17:20:00.000-04:00" ArrivalTime="2020-03-15T19:16:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BEaxcrJAAAA==" TravelTime="116">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="100" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="49" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="92" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T15:10:00.000-04:00" ArrivalTime="2020-03-15T17:05:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BMaxcrJAAAA==" TravelTime="115">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Baggage</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Lounge</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2258" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T16:00:00.000-04:00" ArrivalTime="2020-03-15T17:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BTaxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="48" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="37" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="154" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T10:20:00.000-04:00" ArrivalTime="2020-03-15T12:15:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BbaxcrJAAAA==" TravelTime="115">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YB" Quantity="79" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JB" Quantity="59" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="2254" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T13:00:00.000-04:00" ArrivalTime="2020-03-15T14:36:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BjaxcrJAAAA==" TravelTime="96">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="KD" Quantity="34" CabinClass="Business"/>
+							<rail:RailAvailInfo ClassCode="PD" Quantity="34" CabinClass="First"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+						<rail:RailSegment TrainNumber="160" Origin="ZWU" Destination="ZFV" DepartureTime="2020-03-15T05:25:00.000-04:00" ArrivalTime="2020-03-15T07:16:00.000-04:00" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591" TrainType="Conventional" TrainTypeCode="63.TNP" TransportMode="Train" SeatAssignable="false" Key="UKuSaCBAAA/BraxcrJAAAA==" TravelTime="111">
+							<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+							<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+							<rail:RailAvailInfo ClassCode="YE" Quantity="121" CabinClass="Economy"/>
+							<rail:RailAvailInfo ClassCode="JE" Quantity="8" CabinClass="Business"/>
+							<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+							<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+							<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+							<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+						</rail:RailSegment>
+					</rail:RailSegmentList>
+					<rail:RailJourneyList>
+						<rail:RailJourney Key="UKuSaCBAAA/B4YxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T03:15:00.000-04:00" ArrivalTime="2020-03-15T05:10:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="115" ProviderCode="RCH" SupplierCode="2V" RouteReference="1">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/B3YxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/B5YxcrJAAAA==">PHhtbC1mcmFnbWVudCB+CiAgICAgICAgICAgICAgICA8L+CiAgICAgICAgICAgICAgICA8L25zMTpBcn=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BsaxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T05:25:00.000-04:00" ArrivalTime="2020-03-15T07:16:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="111" ProviderCode="RCH" SupplierCode="2V" RouteReference="2">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BraxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BtaxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTFNIiBBbHRlcm5hdGl2ZT0iZmFsc=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BXYxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T06:20:00.000-04:00" ArrivalTime="2020-03-15T08:17:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="117" ProviderCode="RCH" SupplierCode="2V" RouteReference="3">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BWYxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BYYxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTdNIiBBbHRlcm5hdGl2ZT0iZmFsc=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BnZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T07:30:00.000-04:00" ArrivalTime="2020-03-15T09:17:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="107" ProviderCode="RCH" SupplierCode="2V" RouteReference="4">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BmZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BoZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINDdNIiBBbHRlcm5hdGl2ZT0iZmFsc+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BHYxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T08:22:00.000-04:00" ArrivalTime="2020-03-15T10:20:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="118" ProviderCode="RCH" SupplierCode="2V" RouteReference="5">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BGYxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BIYxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINThNIiBBbHRlcm5hdGl2ZT0iZmFsc+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BfXxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T08:50:00.000-04:00" ArrivalTime="2020-03-15T10:28:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="98" ProviderCode="RCH" SupplierCode="2V" RouteReference="6">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BeXxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BgXxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzhNIiBBbHRlcm5hdGl2ZT0iZmFsc=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BwYxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T09:25:00.000-04:00" ArrivalTime="2020-03-15T11:17:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="112" ProviderCode="RCH" SupplierCode="2V" RouteReference="7">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BvYxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BxYxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzhNIiBBbHRlcm5hdGl2ZT0iZmFsc+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BcaxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T10:20:00.000-04:00" ArrivalTime="2020-03-15T12:15:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="115" ProviderCode="RCH" SupplierCode="2V" RouteReference="8">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BbaxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BdaxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTVNIiBBbHRlcm5hdGl2ZT0iZmFsc+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/B2ZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T11:00:00.000-04:00" ArrivalTime="2020-03-15T12:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="9">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/B1ZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/B3ZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFsc=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BAZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T11:25:00.000-04:00" ArrivalTime="2020-03-15T13:16:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="111" ProviderCode="RCH" SupplierCode="2V" RouteReference="10">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/B/YxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BBZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTFNIiBBbHRlcm5hdGl2ZT0iZmFsc==</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BvXxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T12:25:00.000-04:00" ArrivalTime="2020-03-15T14:15:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="110" ProviderCode="RCH" SupplierCode="2V" RouteReference="11">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BuXxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BwXxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTBNIiBBbHRlcm5hdGl2ZT0iZmFsc4=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BkaxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T13:00:00.000-04:00" ArrivalTime="2020-03-15T14:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="12">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BjaxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BlaxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFscD4=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BfYxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T13:25:00.000-04:00" ArrivalTime="2020-03-15T15:20:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="115" ProviderCode="RCH" SupplierCode="2V" RouteReference="13">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BeYxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BgYxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTVNIiBBbHRlcm5hdGl2ZT0iZmFsc2UQ+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BIZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T14:00:00.000-04:00" ArrivalTime="2020-03-15T15:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="14">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BHZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BJZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFsciIdD4=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BHXxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T14:20:00.000-04:00" ArrivalTime="2020-03-15T16:16:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="116" ProviderCode="RCH" SupplierCode="2V" RouteReference="15">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BGXxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BIXxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTZNIiBBbHRlcm5hdGl2ZT0iZmFsctb+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BXXxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T15:00:00.000-04:00" ArrivalTime="2020-03-15T16:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="16">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BWXxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BYXxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiOm=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BNaxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T15:10:00.000-04:00" ArrivalTime="2020-03-15T17:05:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="115" ProviderCode="RCH" SupplierCode="2V" RouteReference="17">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BMaxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BOaxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTVNIiBBbHRlcm5hdGl2ZT0iZmFscMD0g==</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BXZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T15:15:00.000-04:00" ArrivalTime="2020-03-15T17:05:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="110" ProviderCode="RCH" SupplierCode="2V" RouteReference="18">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BWZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BYZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTBNIiBBbHRlcm5hdGl2ZT0iZmFsc2Ui+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BPXxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T15:45:00.000-04:00" ArrivalTime="2020-03-15T17:28:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="103" ProviderCode="RCH" SupplierCode="2V" RouteReference="19">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BOXxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BQXxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINDNNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiDov+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BUaxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T16:00:00.000-04:00" ArrivalTime="2020-03-15T17:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="20">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BTaxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BVaxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHh=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/B/XxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T16:25:00.000-04:00" ArrivalTime="2020-03-15T18:15:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="110" ProviderCode="RCH" SupplierCode="2V" RouteReference="21">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/B+XxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BAYxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTBNIiBBbHRlcm5hdGl2ZT0iZmFscDov4=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/B3XxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T17:00:00.000-04:00" ArrivalTime="2020-03-15T18:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="22">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/B2XxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/B4XxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFscL3d3dyD4=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/B+ZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T17:15:00.000-04:00" ArrivalTime="2020-03-15T19:00:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="105" ProviderCode="RCH" SupplierCode="2V" RouteReference="23">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/B9ZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/B/ZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINDVNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHhtbG5g==</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BFaxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T17:20:00.000-04:00" ArrivalTime="2020-03-15T19:16:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="116" ProviderCode="RCH" SupplierCode="2V" RouteReference="24">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BEaxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BGaxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTZNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHhtbG5Y29Q+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BuZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T18:00:00.000-04:00" ArrivalTime="2020-03-15T19:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="25">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BtZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BvZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHhtbG5zOm5tL4=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BPYxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T18:10:00.000-04:00" ArrivalTime="2020-03-15T20:02:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="112" ProviderCode="RCH" SupplierCode="2V" RouteReference="26">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BOYxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BQYxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTJNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHnQ+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BnXxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T19:20:00.000-04:00" ArrivalTime="2020-03-15T21:17:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="117" ProviderCode="RCH" SupplierCode="2V" RouteReference="27">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BmXxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BoXxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTdNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHhtbG5zOm5Sm91cmlbnQ+</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BfZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T20:00:00.000-04:00" ArrivalTime="2020-03-15T21:36:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="96" ProviderCode="RCH" SupplierCode="2V" RouteReference="28">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BeZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BgZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFIMzZNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHhtbG5zOm5zMD0iaHR0=</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BQZxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T20:30:00.000-04:00" ArrivalTime="2020-03-15T22:24:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="114" ProviderCode="RCH" SupplierCode="2V" RouteReference="29">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BPZxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BRZxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTRNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHhtbG5zOm5zW50Pg==</common_v50_0:HostToken>
+						</rail:RailJourney>
+						<rail:RailJourney Key="UKuSaCBAAA/BnYxcrJAAAA==" Origin="ZWU" Destination="ZFV" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" DepartureTime="2020-03-15T21:40:00.000-04:00" ArrivalTime="2020-03-15T23:39:00.000-04:00" RailLocOrigin="T1200837" RailLocDestination="T1200591" JourneyDirection="Outward" JourneyDuration="119" ProviderCode="RCH" SupplierCode="2V" RouteReference="30">
+							<rail:RailSegmentRef Key="UKuSaCBAAA/BmYxcrJAAAA=="/>
+							<common_v50_0:HostToken Host="RCH" Key="UKuSaCBAAA/BoYxcrJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDFINTlNIiBBbHRlcm5hdGl2ZT0iZmFsc2UiIHhtbG5zOm5zMD0Pg==</common_v50_0:HostToken>
+						</rail:RailJourney>
+					</rail:RailJourneyList>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B+cxcrJAAAA==" OfferId="21" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BvXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B/cxcrJAAAA==" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BAdxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BAdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BvXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B/dxcrJAAAA==" OfferId="31" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BXXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BAexcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BBexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BBexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B0fxcrJAAAA==" OfferId="49" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BPYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B1fxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B2fxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B2fxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BPYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B2cxcrJAAAA==" OfferId="20" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BAZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B3cxcrJAAAA==" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B4cxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/B6cxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B4cxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BAZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B6cxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BAZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B3dxcrJAAAA==" OfferId="30" TotalPrice="USD133.00" ApproximateTotalPrice="USD133.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BHXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B4dxcrJAAAA==" TotalPrice="USD133.00" ApproximateTotalPrice="USD133.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B5dxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/B7dxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B5dxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BHXxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B7dxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BHXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B4excrJAAAA==" OfferId="40" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B/XxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B5excrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B6excrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/B8excrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B6excrJAAAA==" RailJourneyRef="UKuSaCBAAA/B/XxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B8excrJAAAA==" RailJourneyRef="UKuSaCBAAA/B/XxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B5fxcrJAAAA==" OfferId="50" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BPYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B6fxcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B7fxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/B9fxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B7fxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BPYxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B9fxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BPYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B6bxcrJAAAA==" OfferId="11" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BfXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B7bxcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B8bxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B8bxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/B7axcrJAAAA==" OfferId="2" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B4YxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B8axcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B9axcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BCbxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B9axcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B4YxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BCbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B4YxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BAfxcrJAAAA==" OfferId="41" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B3XxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BBfxcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BCfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BCfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B3XxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BBgxcrJAAAA==" OfferId="51" TotalPrice="USD79.00" ApproximateTotalPrice="USD79.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BnXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BCgxcrJAAAA==" TotalPrice="USD79.00" ApproximateTotalPrice="USD79.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BDgxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BDgxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BCcxcrJAAAA==" OfferId="12" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BfXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BDcxcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BEcxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BGcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BEcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfXxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BGcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BDdxcrJAAAA==" OfferId="22" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BvXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BEdxcrJAAAA==" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BFdxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BHdxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BFdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BvXxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BHdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BvXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BEexcrJAAAA==" OfferId="32" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BXXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BFexcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BGexcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BIexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BGexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXXxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BIexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BFfxcrJAAAA==" OfferId="42" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B3XxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BGfxcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BHfxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BJfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BHfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B3XxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BJfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B3XxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BGbxcrJAAAA==" OfferId="3" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BsaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BHbxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BIbxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BIbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BsaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BGgxcrJAAAA==" OfferId="52" TotalPrice="USD113.00" ApproximateTotalPrice="USD113.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BnXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BHgxcrJAAAA==" TotalPrice="USD113.00" ApproximateTotalPrice="USD113.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BIgxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BKgxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BIgxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnXxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BKgxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BKcxcrJAAAA==" OfferId="13" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BwYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BLcxcrJAAAA==" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BMcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BMcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BwYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BLbxcrJAAAA==" OfferId="4" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BsaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BMbxcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BNbxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BPbxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BNbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BsaxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BPbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BsaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BLdxcrJAAAA==" OfferId="23" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BkaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BMdxcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BNdxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BNdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BkaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BMexcrJAAAA==" OfferId="33" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BXZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BNexcrJAAAA==" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BOexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BOexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BNfxcrJAAAA==" OfferId="43" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B+ZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BOfxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BPfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BPfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B+ZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BOgxcrJAAAA==" OfferId="53" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BfZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BPgxcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BQgxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BQgxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BPcxcrJAAAA==" OfferId="14" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BwYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BQcxcrJAAAA==" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BRcxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BTcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BRcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BwYxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BTcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BwYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BQdxcrJAAAA==" OfferId="24" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BkaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BRdxcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BSdxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BUdxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BSdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BkaxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BUdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BkaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BRexcrJAAAA==" OfferId="34" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BXZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BSexcrJAAAA==" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BTexcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BVexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BTexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BVexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BSfxcrJAAAA==" OfferId="44" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B+ZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BTfxcrJAAAA==" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BUfxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BWfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BUfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B+ZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BWfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B+ZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BTbxcrJAAAA==" OfferId="5" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BXYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BUbxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BVbxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BVbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BTgxcrJAAAA==" OfferId="54" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BfZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BUgxcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BVgxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BXgxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BVgxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BXgxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BXcxcrJAAAA==" OfferId="15" TotalPrice="USD79.00" ApproximateTotalPrice="USD79.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BcaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BYcxcrJAAAA==" TotalPrice="USD79.00" ApproximateTotalPrice="USD79.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BZcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BZcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BcaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BYbxcrJAAAA==" OfferId="6" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BXYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BZbxcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BabxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BcbxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BabxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXYxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BcbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BXYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BYdxcrJAAAA==" OfferId="25" TotalPrice="USD79.00" ApproximateTotalPrice="USD79.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BfYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BZdxcrJAAAA==" TotalPrice="USD79.00" ApproximateTotalPrice="USD79.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BadxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BadxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BZexcrJAAAA==" OfferId="35" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BPXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BaexcrJAAAA==" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BbexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BbexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BPXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BafxcrJAAAA==" OfferId="45" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BFaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BbfxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BcfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BcfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BFaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BbgxcrJAAAA==" OfferId="55" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BQZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BcgxcrJAAAA==" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B+bxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B+bxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BQZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BccxcrJAAAA==" OfferId="16" TotalPrice="USD113.00" ApproximateTotalPrice="USD113.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BcaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BdcxcrJAAAA==" TotalPrice="USD113.00" ApproximateTotalPrice="USD113.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BecxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BgcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BecxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BcaxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BgcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BcaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BddxcrJAAAA==" OfferId="26" TotalPrice="USD113.00" ApproximateTotalPrice="USD113.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BfYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BedxcrJAAAA==" TotalPrice="USD113.00" ApproximateTotalPrice="USD113.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BfdxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BhdxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BfdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfYxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BhdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BfYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BeexcrJAAAA==" OfferId="36" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BPXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BfexcrJAAAA==" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BgexcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BiexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BgexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BPXxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BiexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BPXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BegxcrJAAAA==" OfferId="56" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BQZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BfgxcrJAAAA==" TotalPrice="USD96.00" ApproximateTotalPrice="USD96.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BggxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BigxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BggxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BQZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BigxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BQZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BffxcrJAAAA==" OfferId="46" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BFaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BgfxcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BhfxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BjfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BhfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BFaxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BjfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BFaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BgbxcrJAAAA==" OfferId="7" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BnZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BhbxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BibxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BibxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BkcxcrJAAAA==" OfferId="17" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B2ZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BlcxcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BmcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BmcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B2ZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BlbxcrJAAAA==" OfferId="8" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BnZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BmbxcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BnbxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BpbxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BnbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BpbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BldxcrJAAAA==" OfferId="27" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BIZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BmdxcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BndxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BndxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BIZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BmexcrJAAAA==" OfferId="37" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BUaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BnexcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BoexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BoexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BUaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BmgxcrJAAAA==" OfferId="57" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BnYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BngxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B3axcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B3axcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BnfxcrJAAAA==" OfferId="47" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BuZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BofxcrJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BpfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BpfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BuZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BpcxcrJAAAA==" OfferId="18" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B2ZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BqcxcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BrcxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BtcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BrcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B2ZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BtcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B2ZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BpgxcrJAAAA==" OfferId="58" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BnYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BqgxcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BrgxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/B/axcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BrgxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnYxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B/axcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BnYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BqdxcrJAAAA==" OfferId="28" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BIZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BrdxcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BsdxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BudxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BsdxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BIZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BudxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BIZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BrexcrJAAAA==" OfferId="38" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BUaxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BsexcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BtexcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BvexcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BtexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BUaxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BvexcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BUaxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BsfxcrJAAAA==" OfferId="48" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BuZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BtfxcrJAAAA==" TotalPrice="USD241.00" ApproximateTotalPrice="USD241.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BufxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/BwfxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BufxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BuZxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BwfxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BuZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BtbxcrJAAAA==" OfferId="9" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BHYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BubxcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BvbxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BvbxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BHYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BxcxcrJAAAA==" OfferId="19" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BAZxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BycxcrJAAAA==" TotalPrice="USD62.00" ApproximateTotalPrice="USD62.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/BzcxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/BzcxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BAZxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BybxcrJAAAA==" OfferId="10" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BHYxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BzbxcrJAAAA==" TotalPrice="USD90.00" ApproximateTotalPrice="USD90.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B0bxcrJAAAA=="/>
+							<rail:RailFareRef Key="UKuSaCBAAA/B2bxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B0bxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BHYxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B2bxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BHYxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BydxcrJAAAA==" OfferId="29" TotalPrice="USD99.00" ApproximateTotalPrice="USD99.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/BHXxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/BzdxcrJAAAA==" TotalPrice="USD99.00" ApproximateTotalPrice="USD99.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B0dxcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B0dxcrJAAAA==" RailJourneyRef="UKuSaCBAAA/BHXxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BzaxcrJAAAA==" OfferId="1" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B4YxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B0axcrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B1axcrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B1axcrJAAAA==" RailJourneyRef="UKuSaCBAAA/B4YxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailPricingSolution Key="UKuSaCBAAA/BzexcrJAAAA==" OfferId="39" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00" ProviderCode="RCH" SupplierCode="2V">
+						<rail:RailJourneyRef Key="UKuSaCBAAA/B/XxcrJAAAA=="/>
+						<rail:RailPricingInfo Key="UKuSaCBAAA/B0excrJAAAA==" TotalPrice="USD56.00" ApproximateTotalPrice="USD56.00">
+							<rail:RailFareRef Key="UKuSaCBAAA/B1excrJAAAA=="/>
+							<rail:RailBookingInfo RailFareRef="UKuSaCBAAA/B1excrJAAAA==" RailJourneyRef="UKuSaCBAAA/B/XxcrJAAAA=="/>
+							<rail:PassengerType Code="ADT" Age="21"/>
+						</rail:RailPricingInfo>
+					</rail:RailPricingSolution>
+					<rail:RailFareNoteList>
+						<rail:RailFareNote Key="UKuSaCBAAA/B+axcrJAAAA==" NoteName="Acela Express First class and non-Acela Express Business class tickets are fully refundable without a fee if canceled before the scheduled departure from the origin. If not canceled before the scheduled departure from the origin (&quot;no show&quot;), the entire amount is forfeited and cannot be applied toward future travel. A maximum cancellation fee of $250.00 will be applied per cancelation transaction."/>
+						<rail:RailFareNote Key="UKuSaCBAAA/B2axcrJAAAA==" NoteName="Saver Fares are the lowest available fares and include deeply discounted offers (14-day advance purchase, flash fares, web only). Saver Fares can be cancelled or change within 24 hours of purchase at full value. Canceled or changed more than 24 hours after purchase the fare is non-refundable, the entire amount is forfeited and cannot be applied toward future travel. The Saver Fare is not available on all trains and buses. The number of seats available on each train at the Saver Fare is limited."/>
+						<rail:RailFareNote Key="UKuSaCBAAA/B9bxcrJAAAA==" NoteName="Value Fares offer several refund options. Value Fares are fully refundable or can be applied to eVoucher if canceled within 24 hours of purchase. More than 24 hours after purchase and at least 15 days before scheduled departure fares are fully refundable. Within 14 days of scheduled departure, but prior to departure, a 25% cancellation fee or 15% change fee applies. If not canceled before the scheduled departure from the origin (&quot;no show&quot;), the entire amount is forfeited and cannot be applied toward future travel. Value Fare tickets can be canceled with the ticket value stored as a credit in an eVoucher, less cancellation or change fees that may apply, that can be used for future Amtrak travel. The Value Fare is available on all trains and buses. The number of seats available on each train at the Value Fare is limited. A maximum cancellation fee of $250.00 will be applied per reservation. A maximum change fee of $500.00 will be applied per reservation."/>
+					</rail:RailFareNoteList>
+					<rail:RailFareList>
+						<rail:RailFare Key="UKuSaCBAAA/B+bxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="YD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B/bxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B/axcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BAbxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B0bxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B1bxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B0dxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD99.00" TicketTypeCode="YA" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9Ij==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B1dxcrJAAAA==" Amount="USD99.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B1axcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIu+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B5axcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B1excrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B2excrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B2bxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0nQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B3bxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B2fxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuUmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B3fxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B3axcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VdD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B4axcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B4cxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhcb25zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B5cxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B5dxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD99.00" TicketTypeCode="JA" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmPg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B6dxcrJAAAA==" Amount="USD99.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B6cxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B7cxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B6excrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B7excrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B7dxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JA" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJVcGW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B8dxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B7fxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VW5nZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B8fxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B8bxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIimcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BAcxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B8excrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2G1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B9excrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B9axcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BBbxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/B9fxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9Ij==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B+fxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BAdxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="YD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9Ijlwd50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BBdxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BBexcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BCexcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BCbxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUm8L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BDbxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BCfxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BDfxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BDgxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD79.00" TicketTypeCode="YB" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VHIiBGY5zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BEgxcrJAAAA==" Amount="USD79.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BEcxcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIiBGZGl0aW9ucz48L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BFcxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BFdxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlP==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BGdxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BGcxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIiBGYXJlUuZGl0aW9ucz48L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BHcxcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BGexcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0V+PC94bWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BHexcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BHdxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BIdxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BHfxcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIiBGYXJlUmVmZXJlbmNbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BIfxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BIbxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VHIiBGYXJlUmVmZXJlbmhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BJbxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BIexcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BJexcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BIgxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD79.00" TicketTypeCode="JB" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBG9uPjwvYnVzOkZhcmVDb25kaXRpb25zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BJgxcrJAAAA==" Amount="USD79.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BJfxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BKfxcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BKgxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JB" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BLgxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BMcxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="YD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VHIiBGYXJlUmVmZXJlbmNlPS1lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BNcxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BNbxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BObxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BNdxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmlbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BOdxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BOexcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="YD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VHIiBGYXJlUmVmZXnVzOkZhcmVDb25kaXRpb25zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BPexcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BPbxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXQ29uZGl0aW9ucz48L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BQbxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BPfxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VHIiBGYXJlUmVmZX9uZGl0aW9ucz48L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BQfxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BQgxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BRgxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BRcxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0V4bWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BScxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BSdxcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BTdxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BTcxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BUcxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BTexcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3MyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BUexcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BUdxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIiBGYX21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BVdxcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BUfxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BVfxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BVbxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VHIiBGYXb25kaXRpb24+PC9idXM6RmFyZUNvbmRpdGlvbnM+PC94bWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BWbxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BVexcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BWexcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BVgxcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIiBGYXJlUmVmZbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BWgxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BWfxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BXfxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BXgxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIiBGYXJlUmVmZZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BYgxcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BZcxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD79.00" TicketTypeCode="YB" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BacxcrJAAAA==" Amount="USD79.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BabxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGZGl0aW9ucz48L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BbbxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BadxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD79.00" TicketTypeCode="YB" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBG8L2J1czpGYXJlQ29uZGl0aW9uPjwvYnVzOkZhcmVDb25kaXRpb25zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BbdxcrJAAAA==" Amount="USD79.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BbexcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="YD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BcexcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BcbxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGNhY3Rpb24uPC9idXM6RmFyZUNvbmRpdGlvbj48L2J1czpGYXJlQ29uZGl0aW9ucz48L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BdbxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BcfxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGFyZUNvbmRpdGlvbj48L2J1czpGYXJlQ29uZGl0aW9ucz48L3htbC1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BdfxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BecxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD79.00" TicketTypeCode="JB" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGmFyZUNvbmRpdGlvbnM+PC94bWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BfcxcrJAAAA==" Amount="USD79.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BfdxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD79.00" TicketTypeCode="JB" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBG25kaXRpb25zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BgdxcrJAAAA==" Amount="USD79.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BgcxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JB" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGRmFyZUNvbmRpdGlvbnM+PC94bWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BhcxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BgexcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmN5zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BhexcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BggxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BhgxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BhdxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JB" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BidxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BhfxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BifxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BibxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjIuU0VHIiBGYXJlUmVmZXJlbmNzPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BjbxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BiexcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJVsLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BjexcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BigxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJVcGeG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BjgxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BjfxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJVcGdyYWRlQ2xhc3MiIEZhcmVEZXNjcYXN0Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BkfxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BmcxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJMb3dGYXJlQ2xhc3MiIEZhcmdGlvbkNvZGU9IlFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BncxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BnbxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJVcGdyYWRlQ2xhcbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BobxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BndxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJMb3dGYXJlQ2nJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BodxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BoexcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BpexcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BpbxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD34.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlU+PC94bWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BqbxcrJAAAA==" Amount="USD34.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BpfxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJbWwtZnJhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BqfxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BrcxcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIiBGYcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BscxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BrgxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Business" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="JE" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BsgxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BsdxcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0VHIhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BtdxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BtcxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuU0V1mcmFnbWVudD4=</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BucxcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BtexcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEuUhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BuexcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BudxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjEhZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BvdxcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BufxcrJAAAA==" FareBasis="Rail Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD131.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IlbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BvfxcrJAAAA==" Amount="USD131.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BvbxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD56.00" TicketTypeCode="YE" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B2axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3MdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BwbxcrJAAAA==" Amount="USD56.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BvexcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc1lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BwexcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BwfxcrJAAAA==" FareBasis="Accommodation Fare" CabinClass="First" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD110.00" TicketTypeCode="PD" FareReference="UpgradeClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B+axcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhcZ21lbnQ+</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/BxfxcrJAAAA==" Amount="USD110.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+						<rail:RailFare Key="UKuSaCBAAA/BzcxcrJAAAA==" FareBasis="Rail Fare" CabinClass="Economy" Origin="ZWU" Destination="ZFV" EffectiveDate="2020-03-05T14:12:07.231-05:00" Amount="USD62.00" TicketTypeCode="YD" FareReference="LowFareClass" CrossCityFare="false" OriginStationName="Washington Union Station" DestinationStationName="Philadelphia 30th Street Station" RailLocOrigin="T1200837" RailLocDestination="T1200591">
+							<rail:RailFareNoteRef Key="UKuSaCBAAA/B9bxcrJAAAA=="/>
+							<common_v50_0:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xh5zPjwveG1sLWZyYWdtZW50Pg==</common_v50_0:HostToken>
+							<rail:RailFareComponent Key="UKuSaCBAAA/B0cxcrJAAAA==" Amount="USD62.00" SupplierPassengerType="F" Quantity="1"/>
+						</rail:RailFare>
+					</rail:RailFareList>
+				</rail:RailAvailabilitySearchRsp>
+			</SOAP:Body>
+		</SOAP:Envelope>
+		

@@ -1,0 +1,24 @@
+Air Flight Information-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:FlightInformationReq TargetBranch="TP_WAB_031" AuthorizedBy="PRODSMOKETEST" xmlns:air="http://www.travelport.com/schema/air_v46_0" xmlns:com="http://www.travelport.com/schema/common_v46_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:FlightInfoCriteria Key="30T" Carrier="EK" FlightNumber="432" Origin="DXB" Destination="SIN" DepartureDate="2020-03-26" />
+      </air:FlightInformationReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Flight Information-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightInformationRsp TransactionId="30487EED0A076478B0F921076AE7F3EA" ResponseTime="388" xmlns:air="http://www.travelport.com/schema/air_v46_0">
+         <air:FlightInfo CriteriaKey="2PmCDdOZRaio1Pvx32Lpng==" Carrier="EK" FlightNumber="432" Origin="DXB" Destination="SIN" DepartureDate="2020-03-26">
+            <air:FlightInfoDetail Origin="DXB" Destination="SIN" ScheduledDepartureTime="2020-03-26T21:15:00.000+04:00" ScheduledArrivalTime="2020-03-27T08:25:00.000+08:00" TravelTime="430" ETicketability="Yes" Equipment="77W" OriginTerminal="3" DestinationTerminal="1" AutomatedCheckin="false">
+               <air:InFlightServices>Non-smoking</air:InFlightServices>
+            </air:FlightInfoDetail>
+         </air:FlightInfo>
+      </air:FlightInformationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

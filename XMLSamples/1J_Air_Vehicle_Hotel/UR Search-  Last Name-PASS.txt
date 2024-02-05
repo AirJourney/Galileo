@@ -1,0 +1,23 @@
+UR Search-  Last Name-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <univ:UniversalRecordSearchReq ProviderCode="1J" TargetBranch="TP_WAB_031" RecordStatus="Current" AuthorizedBy="TEST" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:univ="http://www.travelport.com/schema/universal_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <!--univ:UniversalRecordSearchModifiers StartFromResult="1" MaxResults="99"/-->
+         <univ:TravelerCriteria>
+            <univ:NameCriteria LastName="LINDELOEV" FirstName="CARSTEN" />
+         </univ:TravelerCriteria>
+      </univ:UniversalRecordSearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+UR Search-  Last Name-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordSearchRsp TransactionId="9DCE90E60A07643B096D7BC3583CE70F" ResponseTime="350" MoreResults="false" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="13500" Type="Info">No matching records found for the given parameters.</common_v50_0:ResponseMessage>
+      </universal:UniversalRecordSearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

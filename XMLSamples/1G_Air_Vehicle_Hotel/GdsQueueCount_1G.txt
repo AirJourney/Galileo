@@ -1,0 +1,19 @@
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<ns2:GdsQueueCountReq ProviderCode="1G" TraceId="TravelSpends" AuthorizedBy="Suraj-Nair" TargetBranch="P5555555" xmlns:ns9="http://www.travelport.com/schema/hotel_v50_0" xmlns:ns8="http://www.travelport.com/schema/rail_v50_0" xmlns:ns7="http://www.travelport.com/schema/cruise_v50_0" xmlns:ns6="http://www.travelport.com/schema/air_v50_0" xmlns:ns5="http://www.travelport.com/schema/vehicle_v50_0" xmlns:ns4="http://www.travelport.com/schema/universal_v50_0" xmlns:ns3="http://www.travelport.com/schema/passive_v50_0" xmlns:ns2="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns="http://www.travelport.com/schema/common_v50_0">
+			<BillingPointOfSaleInfo OriginApplication="uAPI"/>
+			<ns2:QueuePseudoCitySelector PseudoCityCode="PCC7">
+				<QueueSelector Queue="91"/>
+			</ns2:QueuePseudoCitySelector>
+		</ns2:GdsQueueCountReq>
+	</soap:Body>
+</soap:Envelope> 
+
+	<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+		<SOAP:Body>
+			<gdsQueue:GdsQueueCountRsp xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" TraceId="TravelSpends" TransactionId="B24CD7750A0759C161619D4C335EC248" ResponseTime="78">
+				<gdsQueue:QueueInfo Queue="91" PseudoCityCode="PCC7" TotalPNRCount="0" PNRCount="0" Title="QUEUE 91"/>
+			</gdsQueue:GdsQueueCountRsp>
+		</SOAP:Body>
+	</SOAP:Envelope>|

@@ -1,0 +1,590 @@
+Air Availability - Round Trip-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:AvailabilitySearchReq AuthorizedBy="SUSIL" TraceId="PP_1J_001" TargetBranch="TP_WAB_031" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="ATL"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="SEA"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-01"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="SEA"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="ATL"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-16"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers>
+            <air:PreferredProviders>
+               <com:Provider Code="1J"/>
+            </air:PreferredProviders>
+            <air:PermittedCarriers>
+               <com:Carrier Code="UA"/>
+            </air:PermittedCarriers>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+         <com:SearchPassenger Code="ADT"/>
+      </air:AvailabilitySearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Availability - Round Trip-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AvailabilitySearchRsp TraceId="PP_1J_001" TransactionId="9DCC64680A0764772606212BD35F063A" ResponseTime="476" DistanceUnits="MI" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="sQTWMC3R2BKAtkvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T12:06:00.000-04:00" FlightTime="314" TravelTime="314" Equipment="752" OnTimePerformance="80" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAykvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T13:08:00.000-04:00" FlightTime="318" TravelTime="318" Equipment="739" OnTimePerformance="90" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA4kvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T10:00:00.000-04:00" FlightTime="319" TravelTime="319" Equipment="753" OnTimePerformance="90" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAAlvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T10:00:00.000-04:00" FlightTime="319" TravelTime="319" Equipment="757" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAHlvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T10:00:00.000-04:00" FlightTime="319" TravelTime="319" Equipment="753" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKANlvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T08:20:00.000-04:00" FlightTime="320" TravelTime="320" Equipment="757" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAUlvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T08:20:00.000-04:00" FlightTime="320" TravelTime="320" Equipment="757" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAalvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T08:20:00.000-04:00" FlightTime="320" TravelTime="320" Equipment="757" OnTimePerformance="70" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAhlvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T16:55:00.000-04:00" FlightTime="330" TravelTime="330" Equipment="73J" OnTimePerformance="80" OriginTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAmlvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T06:30:00.000-04:00" FlightTime="325" TravelTime="325" Equipment="73J" OriginTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAslvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T17:30:00.000-04:00" FlightTime="319" TravelTime="319" Equipment="757" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAzlvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T06:30:00.000-04:00" FlightTime="325" TravelTime="325" Equipment="73J" OriginTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA6lvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T17:30:00.000-04:00" FlightTime="319" TravelTime="319" Equipment="757" OnTimePerformance="80" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKABmvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T06:30:00.000-04:00" FlightTime="325" TravelTime="325" Equipment="73J" OnTimePerformance="60" OriginTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAGmvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T19:41:00.000-04:00" FlightTime="319" TravelTime="319" Equipment="753" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKANmvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T19:41:00.000-04:00" FlightTime="319" TravelTime="319" Equipment="753" OnTimePerformance="80" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAVmvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T21:41:00.000-04:00" FlightTime="317" TravelTime="317" Equipment="739" OnTimePerformance="80" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAbmvFCAAAAA==" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T21:41:00.000-04:00" FlightTime="317" TravelTime="317" Equipment="739" OriginTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAimvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T11:15:00.000-07:00" FlightTime="295" TravelTime="295" Equipment="757" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKApmvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T11:15:00.000-07:00" FlightTime="295" TravelTime="295" Equipment="757" OnTimePerformance="70" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAwmvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T11:15:00.000-07:00" FlightTime="295" TravelTime="295" Equipment="757" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA3mvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" FlightTime="291" TravelTime="291" Equipment="757" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA+mvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" FlightTime="291" TravelTime="291" Equipment="753" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAEnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" FlightTime="291" TravelTime="291" Equipment="753" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKALnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" FlightTime="291" TravelTime="291" Equipment="753" OnTimePerformance="80" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKATnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T15:04:00.000-07:00" FlightTime="291" TravelTime="291" Equipment="739" OnTimePerformance="90" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAZnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T15:04:00.000-07:00" FlightTime="291" TravelTime="291" Equipment="739" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAfnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T08:06:00.000-07:00" FlightTime="297" TravelTime="297" Equipment="752" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAmnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T08:06:00.000-07:00" FlightTime="297" TravelTime="297" Equipment="752" OnTimePerformance="90" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKArnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T07:50:00.000-07:00" FlightTime="300" TravelTime="300" Equipment="73J" OnTimePerformance="80" DestinationTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAwnvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T06:15:00.000-07:00" FlightTime="298" TravelTime="298" Equipment="757" OnTimePerformance="90" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA3nvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T06:15:00.000-07:00" FlightTime="298" TravelTime="298" Equipment="757" DestinationTerminal="S"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA+nvFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T21:20:00.000-07:00" FlightTime="295" TravelTime="295" Equipment="73J" DestinationTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAFovFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T21:20:00.000-07:00" FlightTime="295" TravelTime="295" Equipment="73J" OnTimePerformance="80" DestinationTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAKovFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T21:20:00.000-07:00" FlightTime="295" TravelTime="295" Equipment="73J" DestinationTerminal="N"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAQovFCAAAAA==" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T22:44:00.000-07:00" FlightTime="285" TravelTime="285" Equipment="739" OnTimePerformance="90" DestinationTerminal="S"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="sQTWMC3R2BKAukvFCAAAAA==" Group="0" Carrier="DL" FlightNumber="1437" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T12:06:00.000-04:00" ArrivalTime="2020-05-01T14:20:00.000-07:00" ETicketability="Yes" Equipment="752" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAvkvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAwkvFCAAAAA==">ENTERTAINMENT ON DEMAND / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAxkvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D3|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAtkvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAzkvFCAAAAA==" Group="0" Carrier="DL" FlightNumber="2329" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T13:08:00.000-04:00" ArrivalTime="2020-05-01T15:26:00.000-07:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA0kvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA1kvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA2kvFCAAAAA==">POWER SOURCE / WI-FI / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA3kvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D8|I2|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W4|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAykvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA5kvFCAAAAA==" Group="0" Carrier="DL" FlightNumber="2680" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T10:00:00.000-04:00" ArrivalTime="2020-05-01T12:19:00.000-07:00" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA6kvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA7kvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA8kvFCAAAAA==">VIDEO PLAYER/LIBRARY / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA9kvFCAAAAA==">POWER BUSINESS / 110V AC POWER PREMIUM</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA+kvFCAAAAA==">ECONOMY / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA/kvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U7|T7|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA4kvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKABlvFCAAAAA==" Group="0" Carrier="AR" FlightNumber="7058" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T10:00:00.000-04:00" ArrivalTime="2020-05-01T12:19:00.000-07:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="No Special Participant" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAClvFCAAAAA==">AR  7058DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKADlvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL2680</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAElvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAFlvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAGlvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="2680"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J7|C7|D7|I7|O7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|M7|U7|K7|H7|L7|Q7|T7|E7|N7|V7|A7|R7|G7|X7|P7"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAAlvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAIlvFCAAAAA==" Group="0" Carrier="KE" FlightNumber="3046" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T10:00:00.000-04:00" ArrivalTime="2020-05-01T12:19:00.000-07:00" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAJlvFCAAAAA==">KE  3046DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAKlvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL2680</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKALlvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAMlvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="2680"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="FC"/>
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C6|D3|IL|RL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="WC"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|S9|H9|E9|K9|L9|U3|QL|NC|TC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAHlvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAOlvFCAAAAA==" Group="0" Carrier="AR" FlightNumber="7022" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T08:20:00.000-04:00" ArrivalTime="2020-05-01T10:40:00.000-07:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="No Special Participant" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAPlvFCAAAAA==">AR  7022DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAQlvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL609</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKARlvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKASlvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKATlvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="609"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J7|C7|D7|I7|O7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|M7|U7|K7|H7|L7|Q7|T7|E7|N7|V7|A7|R7|G7|X7|P7"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKANlvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAVlvFCAAAAA==" Group="0" Carrier="KE" FlightNumber="3004" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T08:20:00.000-04:00" ArrivalTime="2020-05-01T10:40:00.000-07:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAWlvFCAAAAA==">KE  3004DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAXlvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL609</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAYlvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAZlvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="609"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="FC"/>
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J6|CL|DL|IL|RL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="WC"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|S9|H9|E9|K9|LL|UL|QL|NC|TC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAUlvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAblvFCAAAAA==" Group="0" Carrier="DL" FlightNumber="609" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T08:20:00.000-04:00" ArrivalTime="2020-05-01T10:40:00.000-07:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAclvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAdlvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAelvFCAAAAA==">VIDEO PLAYER/LIBRARY / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAflvFCAAAAA==">POWER / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAglvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C2|DL|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAalvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAilvFCAAAAA==" Group="0" Carrier="AS" FlightNumber="745" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T16:55:00.000-04:00" ArrivalTime="2020-05-01T19:25:00.000-07:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAjlvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAklvFCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAllvFCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|P4|I4|U7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R4|X4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAhlvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAnlvFCAAAAA==" Group="0" Carrier="JL" FlightNumber="6347" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T06:30:00.000-04:00" ArrivalTime="2020-05-01T08:55:00.000-07:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAolvFCAAAAA==">JL  6347ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAplvFCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS56</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAqlvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKArlvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="56"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F4|A4"/>
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|C4|D4|I4|X4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y5|B5|H5|K5|M5|L5|V5|S5|N5|Q5|O5|G5"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAmlvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAtlvFCAAAAA==" Group="0" Carrier="VS" FlightNumber="2686" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T17:30:00.000-04:00" ArrivalTime="2020-05-01T19:49:00.000-07:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAulvFCAAAAA==">VS  2686DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAvlvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL818</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAwlvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAxlvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAylvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="818"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C8|D4|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9|H9|K9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|R9|L9|U9|M9|EL|QL|XL|NL|OL|VL|TL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAslvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA0lvFCAAAAA==" Group="0" Carrier="SQ" FlightNumber="1213" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T06:30:00.000-04:00" ArrivalTime="2020-05-01T08:55:00.000-07:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA1lvFCAAAAA==">SQ  1213ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA2lvFCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS56</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA3lvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA4lvFCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA5lvFCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="56"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="Z4|C4|J4|U4|D4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|E4|M4|H4|W4|Q4|N4|V4|K4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAzlvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA7lvFCAAAAA==" Group="0" Carrier="DL" FlightNumber="818" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T17:30:00.000-04:00" ArrivalTime="2020-05-01T19:49:00.000-07:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA8lvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA9lvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA+lvFCAAAAA==">VIDEO PLAYER/LIBRARY / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA/lvFCAAAAA==">POWER / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAAmvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C8|D4|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|LL|UL|TL|XL|VL|EL"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA6lvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKACmvFCAAAAA==" Group="0" Carrier="AS" FlightNumber="56" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T06:30:00.000-04:00" ArrivalTime="2020-05-01T08:55:00.000-07:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKADmvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAEmvFCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAFmvFCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|P4|I4|U7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R4|X4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKABmvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAHmvFCAAAAA==" Group="0" Carrier="VS" FlightNumber="2684" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T19:41:00.000-04:00" ArrivalTime="2020-05-01T22:00:00.000-07:00" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAImvFCAAAAA==">VS  2684DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAJmvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL1115</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAKmvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKALmvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAMmvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="1115"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C9|D9|I9|Z6"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9|H9|K9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|R9|L9|U9|M9|E9|Q9|X9|N9|OL|VL|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAGmvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAOmvFCAAAAA==" Group="0" Carrier="DL" FlightNumber="1115" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T19:41:00.000-04:00" ArrivalTime="2020-05-01T22:00:00.000-07:00" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAPmvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAQmvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKARmvFCAAAAA==">VIDEO PLAYER/LIBRARY / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKASmvFCAAAAA==">POWER BUSINESS / 110V AC POWER PREMIUM</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKATmvFCAAAAA==">ECONOMY / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAUmvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9|Z6"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKANmvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAWmvFCAAAAA==" Group="0" Carrier="DL" FlightNumber="763" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T21:41:00.000-04:00" ArrivalTime="2020-05-01T23:58:00.000-07:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAXmvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAYmvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAZmvFCAAAAA==">POWER SOURCE / WI-FI / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAamvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAVmvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAcmvFCAAAAA==" Group="0" Carrier="VS" FlightNumber="2149" Origin="ATL" Destination="SEA" DepartureTime="2020-05-01T21:41:00.000-04:00" ArrivalTime="2020-05-01T23:58:00.000-07:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAdmvFCAAAAA==">VS  2149DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAemvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL763</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAfmvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAgmvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAhmvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="763"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C9|D9|I9|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9|H9|K9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|R9|L9|U9|M9|E9|QL|XL|NL|OL|V9|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAbmvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAjmvFCAAAAA==" Group="1" Carrier="AR" FlightNumber="7059" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T11:15:00.000-07:00" ArrivalTime="2020-05-16T19:10:00.000-04:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="No Special Participant" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAkmvFCAAAAA==">AR  7059DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAlmvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL2922</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAmmvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAnmvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAomvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="2922"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J7|C7|D7|I7|O7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|M7|U7|K7|H7|L7|Q7|T7|E7|N7|V7|A7|R7|G7|X7|P7"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAimvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAqmvFCAAAAA==" Group="1" Carrier="DL" FlightNumber="2922" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T11:15:00.000-07:00" ArrivalTime="2020-05-16T19:10:00.000-04:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKArmvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAsmvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAtmvFCAAAAA==">VIDEO PLAYER/LIBRARY / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAumvFCAAAAA==">POWER / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAvmvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|CL|DL|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKApmvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAxmvFCAAAAA==" Group="1" Carrier="VS" FlightNumber="2688" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T11:15:00.000-07:00" ArrivalTime="2020-05-16T19:10:00.000-04:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAymvFCAAAAA==">VS  2688DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAzmvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL2922</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA0mvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA1mvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA2mvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="2922"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|CL|DL|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9|H9|K9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|R9|L9|U9|M9|E9|QL|XL|NL|OL|VL|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAwmvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA4mvFCAAAAA==" Group="1" Carrier="AR" FlightNumber="7023" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" ArrivalTime="2020-05-16T21:23:00.000-04:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="No Special Participant" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA5mvFCAAAAA==">AR  7023DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA6mvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL436</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA7mvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA8mvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA9mvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="436"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J7|C7|D7|I7|O7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|B7|M7|U7|K7|H7|L7|Q7|T7|E7|N7|V7|A7|R7|G7|X7|P7"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA3mvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA/mvFCAAAAA==" Group="1" Carrier="KE" FlightNumber="3043" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" ArrivalTime="2020-05-16T21:23:00.000-04:00" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAAnvFCAAAAA==">KE  3043DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKABnvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL436</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKACnvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKADnvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="436"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="FC"/>
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C6|D3|IL|RL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="WC"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|S9|H9|E9|K9|L9|U9|QL|NC|TC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA+mvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAFnvFCAAAAA==" Group="1" Carrier="VS" FlightNumber="2690" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" ArrivalTime="2020-05-16T21:23:00.000-04:00" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAGnvFCAAAAA==">VS  2690DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAHnvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL436</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAInvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAJnvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAKnvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="436"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C8|D6|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W8|S8|H8|K8"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|R9|L9|U9|M9|E9|QL|XL|NL|OL|VL|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAEnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAMnvFCAAAAA==" Group="1" Carrier="DL" FlightNumber="436" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T13:32:00.000-07:00" ArrivalTime="2020-05-16T21:23:00.000-04:00" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKANnvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAOnvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAPnvFCAAAAA==">VIDEO PLAYER/LIBRARY / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAQnvFCAAAAA==">POWER BUSINESS / 110V AC POWER PREMIUM</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKARnvFCAAAAA==">ECONOMY / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKASnvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C8|D6|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W8|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKALnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAUnvFCAAAAA==" Group="1" Carrier="DL" FlightNumber="2580" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T15:04:00.000-07:00" ArrivalTime="2020-05-16T22:55:00.000-04:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAVnvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAWnvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAXnvFCAAAAA==">POWER SOURCE / WI-FI / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAYnvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C9|D9|I9|Z5"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|U9|T9|X9|V9|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKATnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAanvFCAAAAA==" Group="1" Carrier="KE" FlightNumber="3003" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T15:04:00.000-07:00" ArrivalTime="2020-05-16T22:55:00.000-04:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAbnvFCAAAAA==">KE  3003DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAcnvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL2580</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAdnvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAenvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="2580"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="FC"/>
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C9|D6|IL|RL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="WC"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|S9|H9|E9|K9|L9|UL|QL|NC|TC"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAZnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAgnvFCAAAAA==" Group="1" Carrier="VS" FlightNumber="3212" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T08:06:00.000-07:00" ArrivalTime="2020-05-16T16:03:00.000-04:00" ETicketability="Yes" Equipment="752" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAhnvFCAAAAA==">VS  3212DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAinvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL1870</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAjnvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAknvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAlnvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="1870"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C3|DL|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9|H9|K9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|R9|L9|U9|M9|E9|QL|XL|NL|OL|VL|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAfnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAnnvFCAAAAA==" Group="1" Carrier="DL" FlightNumber="1870" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T08:06:00.000-07:00" ArrivalTime="2020-05-16T16:03:00.000-04:00" ETicketability="Yes" Equipment="752" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAonvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKApnvFCAAAAA==">ENTERTAINMENT ON DEMAND / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAqnvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C3|DL|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAmnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAsnvFCAAAAA==" Group="1" Carrier="AS" FlightNumber="746" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T07:50:00.000-07:00" ArrivalTime="2020-05-16T15:50:00.000-04:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAtnvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAunvFCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAvnvFCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|P4|I4|U7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R4|X4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKArnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAxnvFCAAAAA==" Group="1" Carrier="DL" FlightNumber="1044" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T06:15:00.000-07:00" ArrivalTime="2020-05-16T14:13:00.000-04:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAynvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAznvFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA0nvFCAAAAA==">VIDEO PLAYER/LIBRARY / WI-FI / 110V AC</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA1nvFCAAAAA==">POWER / USB POWER / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA2nvFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C6|D1|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAwnvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA4nvFCAAAAA==" Group="1" Carrier="VS" FlightNumber="2268" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T06:15:00.000-07:00" ArrivalTime="2020-05-16T14:13:00.000-04:00" ETicketability="Yes" Equipment="757" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA5nvFCAAAAA==">VS  2268DELTA AIR LINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA6nvFCAAAAA==">OPERATED BY DELTA AIR LINES -- DL1044</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA7nvFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA8nvFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKA9nvFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="DL" OperatingFlightNumber="1044"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J9|C6|D1|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W9|S9|H9|K9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|R9|L9|U9|M9|E9|QL|XL|NL|OL|VL|T9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA3nvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA/nvFCAAAAA==" Group="1" Carrier="SQ" FlightNumber="1212" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T21:20:00.000-07:00" ArrivalTime="2020-05-17T05:15:00.000-04:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAAovFCAAAAA==">SQ  1212ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKABovFCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS750</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKACovFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKADovFCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAEovFCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="750"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="Z4|C4|J4|U4|D4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|E4|M4|H4|W4|Q4|N4|V4|K4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA+nvFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAGovFCAAAAA==" Group="1" Carrier="AS" FlightNumber="750" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T21:20:00.000-07:00" ArrivalTime="2020-05-17T05:15:00.000-04:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Direct Sell" OptionalServicesIndicator="false" AvailabilitySource="A">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAHovFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAIovFCAAAAA==">ENTERTAINMENT ON DEMAND / IN-SEAT POWER</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAJovFCAAAAA==">SOURCE / WI-FI / NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F7|P4|I4|U7"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y7|S7|B7|M7|H7|Q7|L7|V7|K7|G7|T7|R4|X4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAFovFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKALovFCAAAAA==" Group="1" Carrier="JL" FlightNumber="6346" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T21:20:00.000-07:00" ArrivalTime="2020-05-17T05:15:00.000-04:00" ETicketability="Yes" Equipment="73J" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAMovFCAAAAA==">JL  6346ALASKA AIRLINES</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKANovFCAAAAA==">OPERATED BY ALASKA AIRLINES -- AS750</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAOovFCAAAAA==">VALID FOR INTL ONLINE STOP/CONNECTIONS ONLY</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAPovFCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="AS" OperatingFlightNumber="750"/>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="F4|A4"/>
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="J4|C4|D4|I4|X4"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y5|B5|H5|K5|M5|L5|V5|S5|N5|Q5|O5|G5"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAKovFCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKARovFCAAAAA==" Group="1" Carrier="DL" FlightNumber="962" Origin="SEA" Destination="ATL" DepartureTime="2020-05-16T22:44:00.000-07:00" ArrivalTime="2020-05-17T06:29:00.000-04:00" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P">
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKASovFCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKATovFCAAAAA==">ENTERTAINMENT ON DEMAND / LIVE TV / IN-SEAT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAUovFCAAAAA==">POWER SOURCE / WI-FI / NON-SMOKING /</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="sQTWMC3R2BKAVovFCAAAAA==">AMENITIES SUBJECT TO CHANGE</common_v50_0:SegmentRemark>
+               <air:AirAvailInfo ProviderCode="1J">
+                  <air:BookingCodeInfo CabinClass="First" BookingCounts="J9|C7|D4|IL|ZL"/>
+                  <air:BookingCodeInfo CabinClass="PremiumEconomy" BookingCounts="W7|SL"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|H9|Q9|K9|L9|UL|TL|XL|VL|E9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAQovFCAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:AirItinerarySolution Key="sQTWMC3R2BKAWovFCAAAAA==">
+            <air:AirSegmentRef Key="sQTWMC3R2BKAukvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAzkvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA5kvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKABlvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAIlvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAOlvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAVlvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAblvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAilvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAnlvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAtlvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA0lvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA7lvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKACmvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAHmvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAOmvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAWmvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAcmvFCAAAAA=="/>
+         </air:AirItinerarySolution>
+         <air:AirItinerarySolution Key="sQTWMC3R2BKAXovFCAAAAA==">
+            <air:AirSegmentRef Key="sQTWMC3R2BKAjmvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAqmvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAxmvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA4mvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA/mvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAFnvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAMnvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAUnvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAanvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAgnvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAnnvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAsnvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAxnvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA4nvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA/nvFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAGovFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKALovFCAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKARovFCAAAAA=="/>
+         </air:AirItinerarySolution>
+      </air:AvailabilitySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

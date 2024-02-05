@@ -1,0 +1,48 @@
+Keywords search-All-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelKeywordReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" TraceId="PP_1P_001" HotelChain="LC" HotelCode="1540" CheckinDate="2020-04-01" ReturnKeywordList="true" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+            </hot:HotelKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Keywords search-All-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelKeywordRsp TraceId="PP_1P_001" TransactionId="9DCF40700A0764785B1483FC8AE68D7A" ResponseTime="364" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">NO DATA THIS KEYWORD-18</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">NO DATA THIS KEYWORD-24</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">NO DATA THIS KEYWORD-25</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">NO DATA THIS KEYWORD-26</common_v50_0:ResponseMessage>
+         <common_v50_0:Keyword Name="01" Number="1" Description="ADDRESS"/>
+         <common_v50_0:Keyword Name="02" Number="2" Description="PHONE"/>
+         <common_v50_0:Keyword Name="03" Number="3" Description="CHECK IN/OUT"/>
+         <common_v50_0:Keyword Name="04" Number="4" Description="ROOMS"/>
+         <common_v50_0:Keyword Name="05" Number="5" Description="PROPERTY TYPE"/>
+         <common_v50_0:Keyword Name="07" Number="6" Description="POLICY"/>
+         <common_v50_0:Keyword Name="08" Number="7" Description="CREDIT CARDS"/>
+         <common_v50_0:Keyword Name="09" Number="8" Description="CANCELLATION/REFUND"/>
+         <common_v50_0:Keyword Name="10" Number="9" Description="EXTRAS/OPTIONS"/>
+         <common_v50_0:Keyword Name="11" Number="10" Description="TRANSPORTATION"/>
+         <common_v50_0:Keyword Name="12" Number="11" Description="FACILITIES"/>
+         <common_v50_0:Keyword Name="13" Number="12" Description="SERVICES"/>
+         <common_v50_0:Keyword Name="14" Number="13" Description="PROPERTY DESCRIPTION"/>
+         <common_v50_0:Keyword Name="15" Number="14" Description="LOCATION"/>
+         <common_v50_0:Keyword Name="16" Number="15" Description="DIRECTIONS"/>
+         <common_v50_0:Keyword Name="17" Number="16" Description="CORPORATE LOCATIONS"/>
+         <common_v50_0:Keyword Name="18" Number="17" Description="MEETINGS AND CONVENTIONS"/>
+         <common_v50_0:Keyword Name="19" Number="18" Description="BUSINESS AND MEETING SERVICES"/>
+         <common_v50_0:Keyword Name="20" Number="19" Description="SAFETY"/>
+         <common_v50_0:Keyword Name="21" Number="20" Description="DINING"/>
+         <common_v50_0:Keyword Name="22" Number="21" Description="RECREATION"/>
+         <common_v50_0:Keyword Name="23" Number="22" Description="ROOM DESCRIPTIONS"/>
+         <common_v50_0:Keyword Name="24" Number="23" Description="PACKAGE DESCRIPTIONS"/>
+         <common_v50_0:Keyword Name="25" Number="24" Description="INCENTIVE PROGRAMS"/>
+         <common_v50_0:Keyword Name="26" Number="25" Description="MARKETING CAMPAIGNS"/>
+      </hotel:HotelKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

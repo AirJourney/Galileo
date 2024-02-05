@@ -1,0 +1,69 @@
+HotelRetrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelRetrieveReq RetrieveProviderReservationDetails="true" AuthorizedBy="SUSIL" TargetBranch="P7102538" TraceId="PP_1G_001" ProviderCode="1G" ProviderLocatorCode="48WKSI" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </hot:HotelRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelRetrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelRetrieveRsp TraceId="PP_1G_001" TransactionId="9C18540A0A07643CAB0E0A7C47658E41" ResponseTime="212" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:HotelReservation Status="HK" BookingConfirmation="25887920" LocatorCode="0098RZ5L" CreateDate="2020-03-02T16:33:22.291+00:00" ModifiedDate="2020-03-02T16:33:22.649+00:00" ProviderReservationInfoRef="sQTWMC3R2BKASWj7BAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="TuJJbrVu4hG1/9LlYIhwmw=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:BookingTravelerRef Key="TuJJbrVu4hG1/9LlYIhwmw=="/>
+            </common_v50_0:ReservationName>
+            <hotel:HotelProperty HotelChain="HI" HotelCode="25326" HotelLocation="DEN" Name="Holiday Inn And Suites Airport">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6900 TOWER ROAD</hotel:Address>
+                  <hotel:Address>DENVER US 80249 CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Hotel" Number="1-303-5741300"/>
+               <common_v50_0:PhoneNumber Type="Fax" Number="1-303-5741340"/>
+            </hotel:HotelProperty>
+            <hotel:HotelRateDetail RatePlanType="2QN08PG" Base="USD204.23" Total="USD3407.47" RateGuaranteed="true" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Two Queen Beds Nonsmoking You Can Email</hotel:Text>
+                  <hotel:Text>Vacation Photos Quickly With Free High Speed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Breakfast For 2 Adults Includes Breakfast For</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-08" ExpireDate="2020-05-09" Base="USD188.81"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD189.04"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-03" Base="USD200.68"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-03" ExpireDate="2020-05-04" Base="USD202.41"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-04" ExpireDate="2020-05-08" Base="USD204.23"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-09" ExpireDate="2020-05-10" Base="USD200.43"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-10" ExpireDate="2020-05-11" Base="USD152.36"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-11" ExpireDate="2020-05-12" Base="USD191.57"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-15" Base="USD204.23"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-15" ExpireDate="2020-05-16" Base="USD188.91"/>
+            </hotel:HotelRateDetail>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+            </hotel:HotelStay>
+            <common_v50_0:Guarantee Type="Deposit" Key="PDz8y7xu4hGfaM/wYIhwmw==" Reusable="true">
+               <common_v50_0:CreditCard Type="AX" Number="***********0000" ExpDate="2020-09"/>
+            </common_v50_0:Guarantee>
+            <common_v50_0:BookingSource Type="IataNumber" Code="77206275"/>
+            <hotel:GuestInformation NumberOfRooms="1">
+               <hotel:NumberOfAdults>1</hotel:NumberOfAdults>
+            </hotel:GuestInformation>
+            <common_v50_0:SellMessage>CXL:CXL AFTER 1800 30APR FORFEIT FIRST NITE STAY</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>ROOM DESCRIPTION:TWO QUEEN BEDS NONSMOKING</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>THANK YOU FOR BOOKING HOLIDAY INN HOTEL AND SUITES THE GUEST IS</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>CONFIRMED IN A NON-SMOKING ROOM *****NOTE-RATE CHANGE</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>APPLIES***** *</common_v50_0:SellMessage>
+            <hotel:HotelCommission>Y</hotel:HotelCommission>
+         </hotel:HotelReservation>
+      </hotel:HotelRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,175 @@
+Vehicle Media Links-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleMediaLinksReq AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehiclePickupLocation PickUpLocation="DEN">
+            <veh:Vendor Code="AD"/>
+            <!--<veh:VehicleModifier AirConditioning="true" TransmissionType="Automatic" VehicleClass="?" Category="?" DoorCount="?" FuelType="?"/>-->
+         </veh:VehiclePickupLocation>
+      </veh:VehicleMediaLinksReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Media Links-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleMediaLinksRsp TransactionId="9DCEE3390A0764785B1483FCE25F464B" ResponseTime="444" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="CCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5924.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="SUV" AcrissVehicleCode="CFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5925.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="FCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5927.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="SUV" AcrissVehicleCode="FFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5928.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="RegularCabPickup" AcrissVehicleCode="FPAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5929.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Van" AcrissVehicleCode="FVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5930.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="ICAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5931.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="AllTerrain" AcrissVehicleCode="IJAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5933.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="LCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5934.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="SUV" AcrissVehicleCode="LFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5935.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Special" AcrissVehicleCode="LXAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5936.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" AcrissVehicleCode="MVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5937.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="PCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5938.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Van" AcrissVehicleCode="PVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5939.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="AutomaticAWD" VehicleClass="Premium" Category="Van" AcrissVehicleCode="PVDR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5940.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="SCAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5941.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" AcrissVehicleCode="SFAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5942.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Convertible" AcrissVehicleCode="STAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5943.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+         <vehicle:VehicleWithMediaItems>
+            <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Van" AcrissVehicleCode="SVAR">
+               <vehicle:VehicleRate RatePeriod="Other">
+                  <vehicle:SupplierRate RateForPeriod="USD0.00" ExtraMileageCharge="USD0.00"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:MediaItem url="https://cdn.travelport.com/cmadvantage/AD_general_large_5944.jpg" sizeCode="S"/>
+         </vehicle:VehicleWithMediaItems>
+      </vehicle:VehicleMediaLinksRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

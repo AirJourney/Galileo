@@ -1,0 +1,2910 @@
+UR History-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordHistorySearchReq AuthorizedBy="UAPI" UniversalRecordLocatorCode="0T1OMT" TargetBranch="P7102538" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordHistorySearchReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR History-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordHistorySearchRsp TransactionId="9DCDE8370A0764785B1483FC4FE4A3ED" ResponseTime="514" LastResult="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-03T00:30:21.002+00:00" ElementType="URCreate" Action="URCreate">
+            <universal:New>UR RecLoc: 0T1OMT</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-03T00:30:21.009+00:00" ElementType="AirReservation" Action="AirCreate">
+            <universal:New>UR RecLoc: 0T1OMT
+               
+               ActionStatus:-
+               Type:TAU
+               TicketDate:2020-03-07T23:59:00.000+02:00
+               BranchPCC:
+               AirportCode:
+               AccountCode:
+               AirVendor:
+               Remark:
+               Provider Code: 1G
+               Provider Locator Code: 5BQFGA
+               
+               
+               AirReservation:
+               
+               
+               Provider Code: 1G
+               Provider Locator: 5BQFGA
+               CustomerID:
+               Postscript:
+               CustomCheckRule:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: LONG
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               FormOfPayment :-
+               ProviderReservationInfo:-
+               ProviderLocatorCode: 5BQFGA
+               Credit Card:-
+               Type: CA
+               Number: ************5557
+               ExpDate: *******
+               Name on Card: JAYA KUMAR
+               TravelerId:
+               CVV:
+               Extended Payment:
+               Customer Reference:
+               
+               
+               
+               
+               
+               AirSegment:
+               Origin: PHW
+               Destination: JNB
+               Carrier: SA
+               FltNum: 8854
+               DepTime: 2020-04-21T13:15:00.000+02:00
+               ArrTime: 2020-04-21T14:35:00.000+02:00
+               Class of Service: W
+               Availability Source: S
+               
+               AirSegment:
+               Origin: JNB
+               Destination: BFN
+               Carrier: SA
+               FltNum: 8411
+               DepTime: 2020-04-21T15:45:00.000+02:00
+               ArrTime: 2020-04-21T16:45:00.000+02:00
+               Class of Service: W
+               Availability Source: S
+               
+               AirSegment:
+               Origin: BFN
+               Destination: CPT
+               Carrier: SA
+               FltNum: 1058
+               DepTime: 2020-04-21T18:40:00.000+02:00
+               ArrTime: 2020-04-21T20:20:00.000+02:00
+               Class of Service: G
+               Availability Source: S
+               
+               AirSegment:
+               Origin: CPT
+               Destination: JNB
+               Carrier: SA
+               FltNum: 346
+               DepTime: 2020-04-26T15:05:00.000+02:00
+               ArrTime: 2020-04-26T17:00:00.000+02:00
+               Class of Service: G
+               Availability Source: S
+               
+               AirSegment:
+               Origin: JNB
+               Destination: PHW
+               Carrier: SA
+               FltNum: 8853
+               DepTime: 2020-04-27T11:45:00.000+02:00
+               ArrTime: 2020-04-27T12:55:00.000+02:00
+               Class of Service: W
+               Availability Source: S
+               
+               AirPricing:
+               PricingType: StoredFare
+               PricingMethod: Auto
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               
+               
+               
+               Total: ZAR7862.30
+               Base: ZAR2060.00
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               Taxes: ZAR5802.30
+               Air Pricing Info Group: 1
+               Ticketed: false
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Fare Info 1:
+               FareBasis: WOW4Z
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Checked baggage
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               Description List :
+               Description : Hand baggage
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Meals
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 2:
+               FareBasis: WOW4Z
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Checked baggage
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               Description List :
+               Description : Hand baggage
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Meals
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 3:
+               FareBasis: GSAX
+               NotValidBefore:
+               NotValidAfter:
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Checked baggage
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               Description List :
+               Description : Hand baggage
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Meals
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 4:
+               FareBasis: GSAOW
+               NotValidBefore: 2020-04-26T00:00:00.000+02:00
+               NotValidAfter: 2020-04-26T00:00:00.000+02:00
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piec...</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-03T00:31:20.473+00:00" ElementType="AirPricingInfo" Action="Sync">
+            <universal:Old>UR RecLoc: 0T1OMT
+               Provider Code:1G
+               Provider RecLoc:5BQFGA
+               
+               SupplierCode : SA
+               SupplierLocator: VVDJD9
+               
+               Traveler Info 1:
+               Name: CARSTEN LINDELOEV
+               Traveler Info 2:
+               Name: john Long
+               
+               Air Pricing Info:
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               
+               Total Price: ZAR7862.30
+               Base Price: ZAR2060.00
+               ApproximateAdjustedTotalPrice:
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               EquivalentBasePrice:
+               Taxes: ZAR5802.30
+               Fees:
+               PricingType: StoredFare
+               PricingMethod: Auto
+               WaiverCode:
+               Air Pricing Info Group: 1
+               Ticketed: false
+               
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Fare Info 1:
+               FareBasis: WOW4Z
+               PassengerTypeCode: ADT
+               Origin: PHW
+               Destination: JNB
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR390.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 2:
+               FareBasis: WOW4Z
+               PassengerTypeCode: ADT
+               Origin: JNB
+               Destination: BFN
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR150.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 3:
+               FareBasis: GSAX
+               PassengerTypeCode: ADT
+               Origin: BFN
+               Destination: CPT
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR500.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore:
+               NotValidAfter:
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 4:
+               FareBasis: GSAOW
+               PassengerTypeCode: ADT
+               Origin: CPT
+               Destination: JNB
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR630.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-26T00:00:00.000+02:00
+               NotValidAfter: 2020-04-26T00:00:00.000+02:00
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces: 1
+               Weight of Baggage:
+               Unit of Baggage :
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg ...</universal:Old>
+            <universal:New>UR RecLoc: 0T1OMT
+               Provider Code:1G
+               Provider RecLoc:5BQFGA
+               
+               SupplierCode : SA
+               SupplierLocator: VVDJD9
+               
+               Traveler Info 1:
+               Name: CARSTEN LINDELOEV
+               Traveler Info 2:
+               Name: john Long
+               
+               Air Pricing Info:
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               True Last Date to Purchase Ticket: 2020-03-04
+               
+               Total Price: ZAR7862.30
+               Base Price: ZAR2060.00
+               ApproximateAdjustedTotalPrice:
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               EquivalentBasePrice:
+               Taxes: ZAR5802.30
+               Fees:
+               PricingType: StoredFare
+               PricingMethod: Auto
+               WaiverCode:
+               Air Pricing Info Group: 1
+               Ticketed: false
+               
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Fare Info 1:
+               FareBasis: WOW4Z
+               PassengerTypeCode: ADT
+               Origin: PHW
+               Destination: JNB
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR390.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 2:
+               FareBasis: WOW4Z
+               PassengerTypeCode: ADT
+               Origin: JNB
+               Destination: BFN
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR150.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 3:
+               FareBasis: GSAX
+               PassengerTypeCode: ADT
+               Origin: BFN
+               Destination: CPT
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR500.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore:
+               NotValidAfter:
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable :
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 4:
+               FareBasis: GSAOW
+               PassengerTypeCode: ADT
+               Origin: CPT
+               Destination: JNB
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR630.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-26T00:00:00.000+02:00
+               NotValidAfter: 2020-04-26T00:00:00.000+02:00
+               PseudoCityCode:
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces: 1
+               Weight of Baggage:
+               Unit of Baggage :
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One p...</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-03T00:31:20.480+00:00" ElementType="AirPricingInfo" Action="Sync">
+            <universal:Old>UR RecLoc: 0T1OMT
+               Provider Code:1G
+               Provider RecLoc:5BQFGA
+               
+               SupplierCode : SA
+               SupplierLocator: VVDJD9
+               
+               Traveler Info 1:
+               Name: CARSTEN LINDELOEV
+               Traveler Info 2:
+               Name: john Long
+               
+               Air Pricing Info:
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               True Last Date to Purchase Ticket: 2020-03-04
+               
+               Total Price: ZAR7862.30
+               Base Price: ZAR2060.00
+               ApproximateAdjustedTotalPrice:
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               EquivalentBasePrice:
+               Taxes: ZAR5802.30
+               Fees:
+               PricingType: StoredFare
+               PricingMethod: Guaranteed
+               WaiverCode:
+               Air Pricing Info Group: 1
+               Ticketed: false
+               
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               
+               UR RecLoc: 0T1OMT
+               Provider Code:1G
+               Provider RecLoc:5BQFGA
+               
+               SupplierCode : SA
+               SupplierLocator: VVDJD9
+               
+               Traveler Info 1:
+               Name: CARSTEN LINDELOEV
+               Traveler Info 2:
+               Name: john Long
+               
+               Air Pricing Info:
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               True Last Date to Purchase Ticket: 2020-03-04
+               
+               Total Price: ZAR7862.30
+               Base Price: ZAR2060.00
+               ApproximateAdjustedTotalPrice:
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               EquivalentBasePrice:
+               Taxes: ZAR5802.30
+               Fees:
+               PricingType: StoredFare
+               PricingMethod: Guaranteed
+               WaiverCode:
+               Air Pricing Info Group: 1
+               Ticketed: false
+               
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:Guaranteed
+               FareGuaranteeDate:2020-03-03</universal:Old>
+            <universal:New>UR RecLoc: 0T1OMT
+               Provider Code:1G
+               Provider RecLoc:5BQFGA
+               
+               SupplierCode : SA
+               SupplierLocator: VVDJD9
+               
+               Traveler Info 1:
+               Name: CARSTEN LINDELOEV
+               Traveler Info 2:
+               Name: john Long
+               
+               Air Pricing Info:
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               True Last Date to Purchase Ticket: 2020-03-04
+               
+               Total Price: ZAR7862.30
+               Base Price: ZAR2060.00
+               ApproximateAdjustedTotalPrice:
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               EquivalentBasePrice:
+               Taxes: ZAR5802.30
+               Fees:
+               PricingType: StoredFare
+               PricingMethod: Guaranteed
+               WaiverCode:
+               Air Pricing Info Group: 1
+               Ticketed: false
+               
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:Guaranteed
+               FareGuaranteeDate:2020-03-03
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:Guaranteed
+               FareGuaranteeDate:2020-03-03
+               Fare Info 1:
+               FareBasis: WOW4Z
+               PassengerTypeCode: ADT
+               Origin: PHW
+               Destination: JNB
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR390.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               PseudoCityCode: 80EZ
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 2:
+               FareBasis: WOW4Z
+               PassengerTypeCode: ADT
+               Origin: JNB
+               Destination: BFN
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR150.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-21T00:00:00.000+02:00
+               NotValidAfter: 2020-04-21T00:00:00.000+02:00
+               PseudoCityCode: 80EZ
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 3:
+               FareBasis: GSAX
+               PassengerTypeCode: ADT
+               Origin: BFN
+               Destination: CPT
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR500.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore:
+               NotValidAfter:
+               PseudoCityCode: 80EZ
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces:
+               Weight of Baggage: 20
+               Unit of Baggage : Kilograms
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our best available fare
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : MealOrBeverage
+               SecondaryType :
+               AssociatedItem : Flight
+               
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 4:
+               FareBasis: GSAOW
+               PassengerTypeCode: ADT
+               Origin: CPT
+               Destination: JNB
+               EffectiveDate: 2020-03-03T00:00:00.000+02:00
+               TravelDate:
+               Amount: ZAR630.00
+               PrivateFare:
+               TourCode:
+               NotValidBefore: 2020-04-26T00:00:00.000+02:00
+               NotValidAfter: 2020-04-26T00:00:00.000+02:00
+               PseudoCityCode: 80EZ
+               FareTicketDesignator:
+               Value:
+               Account Code :
+               
+               
+               Baggage Allowance:
+               Number of Pieces: 1
+               Weight of Baggage:
+               Unit of Baggage :
+               
+               Branded Fares:
+               BrandID : 245008
+               Name : Saver
+               Carrier : SA
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Saver
+               BrandTitle :
+               Type : Short
+               Value : Saver
+               BrandText :
+               Type : MarketingConsumer
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complimentary onboard meals or snacks.
+               
+               • Refunds - partially/non-refundable within terms and conditions.
+               
+               • No show fee will apply.
+               
+               • Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+               
+               • One piece of cabin baggage, each not exceeding 8kg in weight.
+               
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : • Combinable with any other fare class.
+               
+               • Ticket payment period: as per fare rule.
+               
+               • Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available.
+               
+               • Upgrade permitted to the higher applicable fare.
+               
+               • No name changes allowed after ticketing.
+               
+               • Select seat at check-in only or purchase on flysaa.com.
+               
+               • 1 Voyager Mile for every R1.60 spent.
+               
+               • Re-routing permitted.
+               
+               • Standby not permitted.
+               
+               • Complime...</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-03T00:31:20.500+00:00" ElementType="AirReservation" Action="Sync">
+            <universal:Old>UR RecLoc: 0T1OMT
+               
+               AirReservation:
+               
+               
+               Provider Code: 1G
+               Provider Locator: 5BQFGA
+               CustomerID:
+               Postscript:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: LONG
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               
+               AirSegment:
+               Origin: PHW
+               Destination: JNB
+               Carrier: SA
+               Carrier RecLoc:
+               FltNum: 8854
+               ArrTime: 2020-04-21T14:35:00.000+02:00
+               DepTime: 2020-04-21T13:15:00.000+02:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: JNB
+               Destination: BFN
+               Carrier: SA
+               Carrier RecLoc:
+               FltNum: 8411
+               ArrTime: 2020-04-21T16:45:00.000+02:00
+               DepTime: 2020-04-21T15:45:00.000+02:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: BFN
+               Destination: CPT
+               Carrier: SA
+               Carrier RecLoc:
+               FltNum: 1058
+               ArrTime: 2020-04-21T20:20:00.000+02:00
+               DepTime: 2020-04-21T18:40:00.000+02:00
+               Class of Service: G
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: CPT
+               Destination: JNB
+               Carrier: SA
+               Carrier RecLoc:
+               FltNum: 346
+               ArrTime: 2020-04-26T17:00:00.000+02:00
+               DepTime: 2020-04-26T15:05:00.000+02:00
+               Class of Service: G
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: JNB
+               Destination: PHW
+               Carrier: SA
+               Carrier RecLoc:
+               FltNum: 8853
+               ArrTime: 2020-04-27T12:55:00.000+02:00
+               DepTime: 2020-04-27T11:45:00.000+02:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirPricing:
+               Total: ZAR7862.30
+               Base: ZAR2060.00
+               Taxes: ZAR5802.30
+               Yield:</universal:Old>
+            <universal:New>UR RecLoc: 0T1OMT
+               
+               AirReservation:
+               
+               SupplierCode : SA
+               SupplierLocator: VVDJD9
+               
+               Provider Code: 1G
+               Provider Locator: 5BQFGA
+               CustomerID:
+               Postscript:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: LONG
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               
+               AirSegment:
+               Origin: PHW
+               Destination: JNB
+               Carrier: SA
+               Carrier RecLoc: VVDJD9
+               FltNum: 8854
+               ArrTime: 2020-04-21T14:35:00.000+02:00
+               DepTime: 2020-04-21T13:15:00.000+02:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: JNB
+               Destination: BFN
+               Carrier: SA
+               Carrier RecLoc: VVDJD9
+               FltNum: 8411
+               ArrTime: 2020-04-21T16:45:00.000+02:00
+               DepTime: 2020-04-21T15:45:00.000+02:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: BFN
+               Destination: CPT
+               Carrier: SA
+               Carrier RecLoc: VVDJD9
+               FltNum: 1058
+               ArrTime: 2020-04-21T20:20:00.000+02:00
+               DepTime: 2020-04-21T18:40:00.000+02:00
+               Class of Service: G
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: CPT
+               Destination: JNB
+               Carrier: SA
+               Carrier RecLoc: VVDJD9
+               FltNum: 346
+               ArrTime: 2020-04-26T17:00:00.000+02:00
+               DepTime: 2020-04-26T15:05:00.000+02:00
+               Class of Service: G
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirSegment:
+               Origin: JNB
+               Destination: PHW
+               Carrier: SA
+               Carrier RecLoc: VVDJD9
+               FltNum: 8853
+               ArrTime: 2020-04-27T12:55:00.000+02:00
+               DepTime: 2020-04-27T11:45:00.000+02:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source: S
+               
+               AirPricing:
+               Total: ZAR7862.30
+               Base: ZAR2060.00
+               Taxes: ZAR5802.30
+               Yield:</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="uAPI9941435167-84c5554e" ModifiedDate="2020-03-03T00:31:20.505+00:00" ElementType="TicketingModifier" Action="Sync">
+            <universal:New>Provider Code:1G
+               Provider RecLoc:5BQFGA
+               Reservation LocatorCode:0T1OMW
+               
+               Traveler Info:
+               
+               TicketingModifiers:
+               
+               Primary:false
+               CommissionAmount:
+               CommissionPercent:
+               Plating Carrier:SA
+               ExemptVAT:
+               FreeTicket:
+               NetRemit Applied:
+               ActualSellingFare:
+               CorporateDiscount:
+               AccountingInfo:
+               BulkTicket:
+               NonRefundable:
+               GroupTour:
+               TourCode:
+               Passenger Receipt Override:
+               Invoice Fare:
+               Value Modifier:
+               Override Currency Code:
+               
+               Document Select:
+               BackOfficeHandOffType:
+               Location:
+               PseudoCityCode:
+               ItineraryType:
+               Option:
+               SeparateIndicator:
+               IssueTicketOnly:
+               IssueElectronicTicket:true
+               Fax Indicator:
+               
+               DocumentOption :
+               PassengerReceiptOverride:
+               SuppressItineraryRemarks:
+               GenerateItinNumbers:
+               OverrideOption:
+               
+               Waitlist segment select:
+               
+               Auxiliary Segment select:
+               
+               AllWaitlistedAir:
+               AllConfirmedAir:
+               AllHotel:
+               AllVehicle:
+               AllPassive:
+               AirSegmentRef:-
+               PassiveSegmentRef:-
+               VehicleReservationRef:-
+               HotelReservationRef:-
+               
+               TicketEndorsement:
+               
+               SegmentModifiers:-
+               
+               SupplierLocator:-
+               Locator:
+               Carrier:
+               
+               DestinationPurposeCode:-
+               Destination:
+               Purpose:
+               
+               LanguageOption:-
+               
+               LandCharges:-
+               Base          :
+               Total         :
+               Miscellaneous :
+               PrePaid       :
+               Deposit       :
+               Tax           :
+               
+               ItineraryBlankFormPrint:-
+               IncludeDescription:
+               IncludeHeader:</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+      </universal:UniversalRecordHistorySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

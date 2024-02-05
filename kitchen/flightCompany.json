@@ -1,0 +1,2252 @@
+[
+  {
+    "companyCode": "AE",
+    "companyEName": "MANDARIN AIRLINES",
+    "companyName": "華信航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ae.webp"
+  },
+  {
+    "companyCode": "AE",
+    "companyEName": "MANDARIN AIRLINES",
+    "companyName": "華信航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ae.webp"
+  },
+  {
+    "companyCode": "AE",
+    "companyEName": "MANDARIN AIRLINES",
+    "companyName": "華信航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ae.webp"
+  },
+  {
+    "companyCode": "BR",
+    "companyEName": "EVA AIRWAYS",
+    "companyName": "長榮航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/br.webp"
+  },
+  {
+    "companyCode": "BR",
+    "companyEName": "EVA AIRWAYS",
+    "companyName": "長榮航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/br.webp"
+  },
+  {
+    "companyCode": "BR",
+    "companyEName": "EVA AIRWAYS",
+    "companyName": "長榮航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/br.webp"
+  },
+  {
+    "companyCode": "B7",
+    "companyEName": "UNI AIRWAYS",
+    "companyName": "立榮航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/b7.webp"
+  },
+  {
+    "companyCode": "B7",
+    "companyEName": "UNI AIRWAYS",
+    "companyName": "立榮航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/b7.webp"
+  },
+  {
+    "companyCode": "B7",
+    "companyEName": "UNI AIRWAYS",
+    "companyName": "立榮航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/b7.webp"
+  },
+  {
+    "companyCode": "CI",
+    "companyEName": "CHINA AIRLINES",
+    "companyName": "中華航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ci.webp"
+  },
+  {
+    "companyCode": "CI",
+    "companyEName": "CHINA AIRLINES",
+    "companyName": "中華航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ci.webp"
+  },
+  {
+    "companyCode": "CI",
+    "companyEName": "CHINA AIRLINES",
+    "companyName": "中華航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ci.webp"
+  },
+  {
+    "companyCode": "FE",
+    "companyEName": "FAR EASTERN",
+    "companyName": "遠東航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fe.webp"
+  },
+  {
+    "companyCode": "FE",
+    "companyEName": "FAR EASTERN",
+    "companyName": "遠東航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fe.webp"
+  },
+  {
+    "companyCode": "FE",
+    "companyEName": "FAR EASTERN",
+    "companyName": "遠東航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fe.webp"
+  },
+  {
+    "companyCode": "GE",
+    "companyEName": "TRANSASIA AIRWAYS",
+    "companyName": "復興航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ge.webp"
+  },
+  {
+    "companyCode": "GE",
+    "companyEName": "TRANSASIA AIRWAYS",
+    "companyName": "復興航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ge.webp"
+  },
+  {
+    "companyCode": "GE",
+    "companyEName": "TRANSASIA AIRWAYS",
+    "companyName": "復興航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ge.webp"
+  },
+  {
+    "companyCode": "IT",
+    "companyEName": "TIGERAIR TAIWAN",
+    "companyName": "台灣虎航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/it.webp"
+  },
+  {
+    "companyCode": "IT",
+    "companyEName": "TIGERAIR TAIWAN",
+    "companyName": "台灣虎航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/it.webp"
+  },
+  {
+    "companyCode": "IT",
+    "companyEName": "TIGERAIR TAIWAN",
+    "companyName": "台灣虎航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/it.webp"
+  },
+  {
+    "companyCode": "KE",
+    "companyEName": "KOREAN AIR",
+    "companyName": "韓國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ke.webp"
+  },
+  {
+    "companyCode": "KE",
+    "companyEName": "KOREAN AIR",
+    "companyName": "韓國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ke.webp"
+  },
+  {
+    "companyCode": "KE",
+    "companyEName": "KOREAN AIR",
+    "companyName": "韓國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ke.webp"
+  },
+  {
+    "companyCode": "LJ",
+    "companyEName": "JIN AIR",
+    "companyName": "真航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lj.webp"
+  },
+  {
+    "companyCode": "LJ",
+    "companyEName": "JIN AIR",
+    "companyName": "真航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lj.webp"
+  },
+  {
+    "companyCode": "LJ",
+    "companyEName": "JIN AIR",
+    "companyName": "真航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lj.webp"
+  },
+  {
+    "companyCode": "OZ",
+    "companyEName": "ASIANA AIRLINES",
+    "companyName": "韓亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/oz.webp"
+  },
+  {
+    "companyCode": "OZ",
+    "companyEName": "ASIANA AIRLINES",
+    "companyName": "韓亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/oz.webp"
+  },
+  {
+    "companyCode": "OZ",
+    "companyEName": "ASIANA AIRLINES",
+    "companyName": "韓亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/oz.webp"
+  },
+  {
+    "companyCode": "JL",
+    "companyEName": "JAPAN AIRLINES",
+    "companyName": "日本航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/jl.webp"
+  },
+  {
+    "companyCode": "JL",
+    "companyEName": "JAPAN AIRLINES",
+    "companyName": "日本航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/jl.webp"
+  },
+  {
+    "companyCode": "JL",
+    "companyEName": "JAPAN AIRLINES",
+    "companyName": "日本航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/jl.webp"
+  },
+  {
+    "companyCode": "NH",
+    "companyEName": "ALL NIPPON AIRWAYS",
+    "companyName": "全日空航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nh.webp"
+  },
+  {
+    "companyCode": "NH",
+    "companyEName": "ALL NIPPON AIRWAYS",
+    "companyName": "全日空航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nh.webp"
+  },
+  {
+    "companyCode": "NH",
+    "companyEName": "ALL NIPPON AIRWAYS",
+    "companyName": "全日空航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nh.webp"
+  },
+  {
+    "companyCode": "TW",
+    "companyEName": "TWAY AIR",
+    "companyName": "德威航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tw.webp"
+  },
+  {
+    "companyCode": "TW",
+    "companyEName": "TWAY AIR",
+    "companyName": "德威航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tw.webp"
+  },
+  {
+    "companyCode": "TW",
+    "companyEName": "TWAY AIR",
+    "companyName": "德威航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tw.webp"
+  },
+  {
+    "companyCode": "CA",
+    "companyEName": "AIR CHINA",
+    "companyName": "中國國際航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ca.webp"
+  },
+  {
+    "companyCode": "CA",
+    "companyEName": "AIR CHINA",
+    "companyName": "中國國際航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ca.webp"
+  },
+  {
+    "companyCode": "CA",
+    "companyEName": "AIR CHINA",
+    "companyName": "中國國際航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ca.webp"
+  },
+  {
+    "companyCode": "CX",
+    "companyEName": "CATHAY PACIFIC",
+    "companyName": "國泰航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cx.webp"
+  },
+  {
+    "companyCode": "CX",
+    "companyEName": "CATHAY PACIFIC",
+    "companyName": "國泰航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cx.webp"
+  },
+  {
+    "companyCode": "CX",
+    "companyEName": "CATHAY PACIFIC",
+    "companyName": "國泰航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cx.webp"
+  },
+  {
+    "companyCode": "CZ",
+    "companyEName": "CHINA SOUTHERN AIRLINES",
+    "companyName": "中國南方航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cz.webp"
+  },
+  {
+    "companyCode": "CZ",
+    "companyEName": "CHINA SOUTHERN AIRLINES",
+    "companyName": "中國南方航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cz.webp"
+  },
+  {
+    "companyCode": "CZ",
+    "companyEName": "CHINA SOUTHERN AIRLINES",
+    "companyName": "中國南方航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cz.webp"
+  },
+  {
+    "companyCode": "FM",
+    "companyEName": "SHANGHAI AIRLINES",
+    "companyName": "上海航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fm.webp"
+  },
+  {
+    "companyCode": "FM",
+    "companyEName": "SHANGHAI AIRLINES",
+    "companyName": "上海航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fm.webp"
+  },
+  {
+    "companyCode": "FM",
+    "companyEName": "SHANGHAI AIRLINES",
+    "companyName": "上海航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fm.webp"
+  },
+  {
+    "companyCode": "HO",
+    "companyEName": "JUNEYAO AIRLINES",
+    "companyName": "吉祥航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ho.webp"
+  },
+  {
+    "companyCode": "HO",
+    "companyEName": "JUNEYAO AIRLINES",
+    "companyName": "吉祥航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ho.webp"
+  },
+  {
+    "companyCode": "HO",
+    "companyEName": "JUNEYAO AIRLINES",
+    "companyName": "吉祥航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ho.webp"
+  },
+  {
+    "companyCode": "HU",
+    "companyEName": "HAINAN AIRLINES",
+    "companyName": "海南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hu.webp"
+  },
+  {
+    "companyCode": "HU",
+    "companyEName": "HAINAN AIRLINES",
+    "companyName": "海南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hu.webp"
+  },
+  {
+    "companyCode": "HU",
+    "companyEName": "HAINAN AIRLINES",
+    "companyName": "海南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hu.webp"
+  },
+  {
+    "companyCode": "HX",
+    "companyEName": "HONG KONG AIRLINES",
+    "companyName": "香港航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hx.webp"
+  },
+  {
+    "companyCode": "HX",
+    "companyEName": "HONG KONG AIRLINES",
+    "companyName": "香港航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hx.webp"
+  },
+  {
+    "companyCode": "HX",
+    "companyEName": "HONG KONG AIRLINES",
+    "companyName": "香港航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hx.webp"
+  },
+  {
+    "companyCode": "KA",
+    "companyEName": "DRAGONAIR",
+    "companyName": "港龍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ka.webp"
+  },
+  {
+    "companyCode": "KA",
+    "companyEName": "DRAGONAIR",
+    "companyName": "港龍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ka.webp"
+  },
+  {
+    "companyCode": "KA",
+    "companyEName": "DRAGONAIR",
+    "companyName": "港龍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ka.webp"
+  },
+  {
+    "companyCode": "MF",
+    "companyEName": "XIAMEN AIRLINES",
+    "companyName": "廈門航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mf.webp"
+  },
+  {
+    "companyCode": "MF",
+    "companyEName": "XIAMEN AIRLINES",
+    "companyName": "廈門航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mf.webp"
+  },
+  {
+    "companyCode": "MF",
+    "companyEName": "XIAMEN AIRLINES",
+    "companyName": "廈門航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mf.webp"
+  },
+  {
+    "companyCode": "MU",
+    "companyEName": "CHINA EASTERN AIRLINES",
+    "companyName": "中國東方航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mu.webp"
+  },
+  {
+    "companyCode": "MU",
+    "companyEName": "CHINA EASTERN AIRLINES",
+    "companyName": "中國東方航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mu.webp"
+  },
+  {
+    "companyCode": "MU",
+    "companyEName": "CHINA EASTERN AIRLINES",
+    "companyName": "中國東方航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mu.webp"
+  },
+  {
+    "companyCode": "NX",
+    "companyEName": "AIR MACAU",
+    "companyName": "澳門航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nx.webp"
+  },
+  {
+    "companyCode": "NX",
+    "companyEName": "AIR MACAU",
+    "companyName": "澳門航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nx.webp"
+  },
+  {
+    "companyCode": "NX",
+    "companyEName": "AIR MACAU",
+    "companyName": "澳門航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nx.webp"
+  },
+  {
+    "companyCode": "OM",
+    "companyEName": "MIAT MOGOLIAN AIRLINES",
+    "companyName": "蒙古航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/om.webp"
+  },
+  {
+    "companyCode": "OM",
+    "companyEName": "MIAT MOGOLIAN AIRLINES",
+    "companyName": "蒙古航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/om.webp"
+  },
+  {
+    "companyCode": "OM",
+    "companyEName": "MIAT MOGOLIAN AIRLINES",
+    "companyName": "蒙古航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/om.webp"
+  },
+  {
+    "companyCode": "SC",
+    "companyEName": "SHANDONG AIRLINES",
+    "companyName": "山東航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sc.webp"
+  },
+  {
+    "companyCode": "SC",
+    "companyEName": "SHANDONG AIRLINES",
+    "companyName": "山東航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sc.webp"
+  },
+  {
+    "companyCode": "SC",
+    "companyEName": "SHANDONG AIRLINES",
+    "companyName": "山東航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sc.webp"
+  },
+  {
+    "companyCode": "UO",
+    "companyEName": "HONG KONG EXPRESS AIRWAYS",
+    "companyName": "香港快運航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/uo.webp"
+  },
+  {
+    "companyCode": "UO",
+    "companyEName": "HONG KONG EXPRESS AIRWAYS",
+    "companyName": "香港快運航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/uo.webp"
+  },
+  {
+    "companyCode": "UO",
+    "companyEName": "HONG KONG EXPRESS AIRWAYS",
+    "companyName": "香港快運航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/uo.webp"
+  },
+  {
+    "companyCode": "ZH",
+    "companyEName": "SHENZHEN AIRLINES",
+    "companyName": "深圳航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/zh.webp"
+  },
+  {
+    "companyCode": "ZH",
+    "companyEName": "SHENZHEN AIRLINES",
+    "companyName": "深圳航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/zh.webp"
+  },
+  {
+    "companyCode": "ZH",
+    "companyEName": "SHENZHEN AIRLINES",
+    "companyName": "深圳航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/zh.webp"
+  },
+  {
+    "companyCode": "3U",
+    "companyEName": "SICHUAN AIRLINES",
+    "companyName": "四川航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/3u.webp"
+  },
+  {
+    "companyCode": "3U",
+    "companyEName": "SICHUAN AIRLINES",
+    "companyName": "四川航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/3u.webp"
+  },
+  {
+    "companyCode": "3U",
+    "companyEName": "SICHUAN AIRLINES",
+    "companyName": "四川航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/3u.webp"
+  },
+  {
+    "companyCode": "AI",
+    "companyEName": "AIR INDIA LIMITED",
+    "companyName": "印度航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ai.webp"
+  },
+  {
+    "companyCode": "AI",
+    "companyEName": "AIR INDIA LIMITED",
+    "companyName": "印度航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ai.webp"
+  },
+  {
+    "companyCode": "AI",
+    "companyEName": "AIR INDIA LIMITED",
+    "companyName": "印度航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ai.webp"
+  },
+  {
+    "companyCode": "AK",
+    "companyEName": "AIRASIA SDN BHD",
+    "companyName": "亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ak.webp"
+  },
+  {
+    "companyCode": "AK",
+    "companyEName": "AIRASIA SDN BHD",
+    "companyName": "亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ak.webp"
+  },
+  {
+    "companyCode": "AK",
+    "companyEName": "AIRASIA SDN BHD",
+    "companyName": "亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ak.webp"
+  },
+  {
+    "companyCode": "BG",
+    "companyEName": "BIMAN BANGLADESH AIRLINE",
+    "companyName": "孟加拉航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bg.webp"
+  },
+  {
+    "companyCode": "BG",
+    "companyEName": "BIMAN BANGLADESH AIRLINE",
+    "companyName": "孟加拉航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bg.webp"
+  },
+  {
+    "companyCode": "BG",
+    "companyEName": "BIMAN BANGLADESH AIRLINE",
+    "companyName": "孟加拉航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bg.webp"
+  },
+  {
+    "companyCode": "BI",
+    "companyEName": "ROYAL BRUNEI",
+    "companyName": "汶萊皇家航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bi.webp"
+  },
+  {
+    "companyCode": "BI",
+    "companyEName": "ROYAL BRUNEI",
+    "companyName": "汶萊皇家航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bi.webp"
+  },
+  {
+    "companyCode": "BI",
+    "companyEName": "ROYAL BRUNEI",
+    "companyName": "汶萊皇家航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bi.webp"
+  },
+  {
+    "companyCode": "D7",
+    "companyEName": "AIRASIA X",
+    "companyName": "亞航X",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/d7.webp"
+  },
+  {
+    "companyCode": "D7",
+    "companyEName": "AIRASIA X",
+    "companyName": "亞航X",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/d7.webp"
+  },
+  {
+    "companyCode": "D7",
+    "companyEName": "AIRASIA X",
+    "companyName": "亞航X",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/d7.webp"
+  },
+  {
+    "companyCode": "FD",
+    "companyEName": "THAI AIRASIA",
+    "companyName": "泰國亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fd.webp"
+  },
+  {
+    "companyCode": "FD",
+    "companyEName": "THAI AIRASIA",
+    "companyName": "泰國亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fd.webp"
+  },
+  {
+    "companyCode": "FD",
+    "companyEName": "THAI AIRASIA",
+    "companyName": "泰國亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fd.webp"
+  },
+  {
+    "companyCode": "FJ",
+    "companyEName": "FIJI AIRWAYS",
+    "companyName": "斐濟航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fj.webp"
+  },
+  {
+    "companyCode": "FJ",
+    "companyEName": "FIJI AIRWAYS",
+    "companyName": "斐濟航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fj.webp"
+  },
+  {
+    "companyCode": "FJ",
+    "companyEName": "FIJI AIRWAYS",
+    "companyName": "斐濟航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fj.webp"
+  },
+  {
+    "companyCode": "GA",
+    "companyEName": "GARUDA INDONESIA",
+    "companyName": "印尼航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ga.webp"
+  },
+  {
+    "companyCode": "GA",
+    "companyEName": "GARUDA INDONESIA",
+    "companyName": "印尼航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ga.webp"
+  },
+  {
+    "companyCode": "GA",
+    "companyEName": "GARUDA INDONESIA",
+    "companyName": "印尼航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ga.webp"
+  },
+  {
+    "companyCode": "JQ",
+    "companyEName": "JETSTAR",
+    "companyName": "捷星航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/jq.webp"
+  },
+  {
+    "companyCode": "JQ",
+    "companyEName": "JETSTAR",
+    "companyName": "捷星航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/jq.webp"
+  },
+  {
+    "companyCode": "JQ",
+    "companyEName": "JETSTAR",
+    "companyName": "捷星航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/jq.webp"
+  },
+  {
+    "companyCode": "MH",
+    "companyEName": "MALAYSIA AIRLINES",
+    "companyName": "馬來西亞",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mh.webp"
+  },
+  {
+    "companyCode": "MH",
+    "companyEName": "MALAYSIA AIRLINES",
+    "companyName": "馬來西亞",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mh.webp"
+  },
+  {
+    "companyCode": "MH",
+    "companyEName": "MALAYSIA AIRLINES",
+    "companyName": "馬來西亞",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mh.webp"
+  },
+  {
+    "companyCode": "MI",
+    "companyEName": "SILKAIR",
+    "companyName": "勝安航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mi.webp"
+  },
+  {
+    "companyCode": "MI",
+    "companyEName": "SILKAIR",
+    "companyName": "勝安航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mi.webp"
+  },
+  {
+    "companyCode": "MI",
+    "companyEName": "SILKAIR",
+    "companyName": "勝安航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mi.webp"
+  },
+  {
+    "companyCode": "NZ",
+    "companyEName": "AIR NEW ZEALAND",
+    "companyName": "紐西蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nz.webp"
+  },
+  {
+    "companyCode": "NZ",
+    "companyEName": "AIR NEW ZEALAND",
+    "companyName": "紐西蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nz.webp"
+  },
+  {
+    "companyCode": "NZ",
+    "companyEName": "AIR NEW ZEALAND",
+    "companyName": "紐西蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/nz.webp"
+  },
+  {
+    "companyCode": "PG",
+    "companyEName": "BANGKOK AIRWAYS",
+    "companyName": "曼谷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/pg.webp"
+  },
+  {
+    "companyCode": "PG",
+    "companyEName": "BANGKOK AIRWAYS",
+    "companyName": "曼谷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/pg.webp"
+  },
+  {
+    "companyCode": "PG",
+    "companyEName": "BANGKOK AIRWAYS",
+    "companyName": "曼谷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/pg.webp"
+  },
+  {
+    "companyCode": "PR",
+    "companyEName": "PHILIPPINE AIRLINES",
+    "companyName": "菲律賓",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/pr.webp"
+  },
+  {
+    "companyCode": "PR",
+    "companyEName": "PHILIPPINE AIRLINES",
+    "companyName": "菲律賓",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/pr.webp"
+  },
+  {
+    "companyCode": "PR",
+    "companyEName": "PHILIPPINE AIRLINES",
+    "companyName": "菲律賓",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/pr.webp"
+  },
+  {
+    "companyCode": "QF",
+    "companyEName": "QANTAS AIRWAYS",
+    "companyName": "澳洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qf.webp"
+  },
+  {
+    "companyCode": "QF",
+    "companyEName": "QANTAS AIRWAYS",
+    "companyName": "澳洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qf.webp"
+  },
+  {
+    "companyCode": "QF",
+    "companyEName": "QANTAS AIRWAYS",
+    "companyName": "澳洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qf.webp"
+  },
+  {
+    "companyCode": "QV",
+    "companyEName": "LAO AIRLINES",
+    "companyName": "寮國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qv.webp"
+  },
+  {
+    "companyCode": "QV",
+    "companyEName": "LAO AIRLINES",
+    "companyName": "寮國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qv.webp"
+  },
+  {
+    "companyCode": "QV",
+    "companyEName": "LAO AIRLINES",
+    "companyName": "寮國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qv.webp"
+  },
+  {
+    "companyCode": "QZ",
+    "companyEName": "PT INDONESIA AIRASIA",
+    "companyName": "印尼亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qz.webp"
+  },
+  {
+    "companyCode": "QZ",
+    "companyEName": "PT INDONESIA AIRASIA",
+    "companyName": "印尼亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qz.webp"
+  },
+  {
+    "companyCode": "QZ",
+    "companyEName": "PT INDONESIA AIRASIA",
+    "companyName": "印尼亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qz.webp"
+  },
+  {
+    "companyCode": "RA",
+    "companyEName": "NEPAL AIRLINES",
+    "companyName": "尼泊爾航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ra.webp"
+  },
+  {
+    "companyCode": "RA",
+    "companyEName": "NEPAL AIRLINES",
+    "companyName": "尼泊爾航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ra.webp"
+  },
+  {
+    "companyCode": "RA",
+    "companyEName": "NEPAL AIRLINES",
+    "companyName": "尼泊爾航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ra.webp"
+  },
+  {
+    "companyCode": "SQ",
+    "companyEName": "SINGAPORE AIRLINES",
+    "companyName": "新加坡航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sq.webp"
+  },
+  {
+    "companyCode": "SQ",
+    "companyEName": "SINGAPORE AIRLINES",
+    "companyName": "新加坡航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sq.webp"
+  },
+  {
+    "companyCode": "SQ",
+    "companyEName": "SINGAPORE AIRLINES",
+    "companyName": "新加坡航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sq.webp"
+  },
+  {
+    "companyCode": "TG",
+    "companyEName": "THAI AIRWAYS INTERNATIONAL",
+    "companyName": "泰國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tg.webp"
+  },
+  {
+    "companyCode": "TG",
+    "companyEName": "THAI AIRWAYS INTERNATIONAL",
+    "companyName": "泰國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tg.webp"
+  },
+  {
+    "companyCode": "TG",
+    "companyEName": "THAI AIRWAYS INTERNATIONAL",
+    "companyName": "泰國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tg.webp"
+  },
+  {
+    "companyCode": "TN",
+    "companyEName": "AIR TAHITI NUI",
+    "companyName": "大溪地航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tn.webp"
+  },
+  {
+    "companyCode": "TN",
+    "companyEName": "AIR TAHITI NUI",
+    "companyName": "大溪地航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tn.webp"
+  },
+  {
+    "companyCode": "TN",
+    "companyEName": "AIR TAHITI NUI",
+    "companyName": "大溪地航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tn.webp"
+  },
+  {
+    "companyCode": "TR",
+    "companyEName": "TIGER AIRWAYS",
+    "companyName": "新加坡虎航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tr.webp"
+  },
+  {
+    "companyCode": "TR",
+    "companyEName": "TIGER AIRWAYS",
+    "companyName": "新加坡虎航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tr.webp"
+  },
+  {
+    "companyCode": "TR",
+    "companyEName": "TIGER AIRWAYS",
+    "companyName": "新加坡虎航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tr.webp"
+  },
+  {
+    "companyCode": "TZ",
+    "companyEName": "SCOOT",
+    "companyName": "酷航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tz.webp"
+  },
+  {
+    "companyCode": "TZ",
+    "companyEName": "SCOOT",
+    "companyName": "酷航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tz.webp"
+  },
+  {
+    "companyCode": "TZ",
+    "companyEName": "SCOOT",
+    "companyName": "酷航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tz.webp"
+  },
+  {
+    "companyCode": "VN",
+    "companyEName": "VIETNAM AIRLINES",
+    "companyName": "越南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/vn.webp"
+  },
+  {
+    "companyCode": "VN",
+    "companyEName": "VIETNAM AIRLINES",
+    "companyName": "越南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/vn.webp"
+  },
+  {
+    "companyCode": "VN",
+    "companyEName": "VIETNAM AIRLINES",
+    "companyName": "越南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/vn.webp"
+  },
+  {
+    "companyCode": "WE",
+    "companyEName": "THAI SMILE AIRWAYS",
+    "companyName": "微笑泰航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/we.webp"
+  },
+  {
+    "companyCode": "WE",
+    "companyEName": "THAI SMILE AIRWAYS",
+    "companyName": "微笑泰航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/we.webp"
+  },
+  {
+    "companyCode": "WE",
+    "companyEName": "THAI SMILE AIRWAYS",
+    "companyName": "微笑泰航",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/we.webp"
+  },
+  {
+    "companyCode": "3K",
+    "companyEName": "JETSTAR ASIA",
+    "companyName": "捷星亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/3k.webp"
+  },
+  {
+    "companyCode": "3K",
+    "companyEName": "JETSTAR ASIA",
+    "companyName": "捷星亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/3k.webp"
+  },
+  {
+    "companyCode": "3K",
+    "companyEName": "JETSTAR ASIA",
+    "companyName": "捷星亞洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/3k.webp"
+  },
+  {
+    "companyCode": "5J",
+    "companyEName": "CEBU AIR",
+    "companyName": "宿霧太平洋航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/5j.webp"
+  },
+  {
+    "companyCode": "5J",
+    "companyEName": "CEBU AIR",
+    "companyName": "宿霧太平洋航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/5j.webp"
+  },
+  {
+    "companyCode": "5J",
+    "companyEName": "CEBU AIR",
+    "companyName": "宿霧太平洋航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/5j.webp"
+  },
+  {
+    "companyCode": "8M",
+    "companyEName": "MYANMAR AIRWAYS INTL",
+    "companyName": "緬甸國際航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/8m.webp"
+  },
+  {
+    "companyCode": "8M",
+    "companyEName": "MYANMAR AIRWAYS INTL",
+    "companyName": "緬甸國際航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/8m.webp"
+  },
+  {
+    "companyCode": "8M",
+    "companyEName": "MYANMAR AIRWAYS INTL",
+    "companyName": "緬甸國際航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/8m.webp"
+  },
+  {
+    "companyCode": "9W",
+    "companyEName": "JET AIRWAYS",
+    "companyName": "印度捷特",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/9w.webp"
+  },
+  {
+    "companyCode": "9W",
+    "companyEName": "JET AIRWAYS",
+    "companyName": "印度捷特",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/9w.webp"
+  },
+  {
+    "companyCode": "9W",
+    "companyEName": "JET AIRWAYS",
+    "companyName": "印度捷特",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/9w.webp"
+  },
+  {
+    "companyCode": "AA",
+    "companyEName": "AMERICAN AIRLINES",
+    "companyName": "美國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/aa.webp"
+  },
+  {
+    "companyCode": "AA",
+    "companyEName": "AMERICAN AIRLINES",
+    "companyName": "美國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/aa.webp"
+  },
+  {
+    "companyCode": "AA",
+    "companyEName": "AMERICAN AIRLINES",
+    "companyName": "美國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/aa.webp"
+  },
+  {
+    "companyCode": "AC",
+    "companyEName": "AIR CANADA",
+    "companyName": "加拿大航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ac.webp"
+  },
+  {
+    "companyCode": "AC",
+    "companyEName": "AIR CANADA",
+    "companyName": "加拿大航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ac.webp"
+  },
+  {
+    "companyCode": "AC",
+    "companyEName": "AIR CANADA",
+    "companyName": "加拿大航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ac.webp"
+  },
+  {
+    "companyCode": "AM",
+    "companyEName": "AEROMEXICO",
+    "companyName": "墨西哥國際航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/am.webp"
+  },
+  {
+    "companyCode": "AM",
+    "companyEName": "AEROMEXICO",
+    "companyName": "墨西哥國際航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/am.webp"
+  },
+  {
+    "companyCode": "AM",
+    "companyEName": "AEROMEXICO",
+    "companyName": "墨西哥國際航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/am.webp"
+  },
+  {
+    "companyCode": "AR",
+    "companyEName": "AEROLINEAS ARGENTINAS",
+    "companyName": "阿根廷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ar.webp"
+  },
+  {
+    "companyCode": "AR",
+    "companyEName": "AEROLINEAS ARGENTINAS",
+    "companyName": "阿根廷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ar.webp"
+  },
+  {
+    "companyCode": "AR",
+    "companyEName": "AEROLINEAS ARGENTINAS",
+    "companyName": "阿根廷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ar.webp"
+  },
+  {
+    "companyCode": "AS",
+    "companyEName": "ALASKA AIRLINES",
+    "companyName": "阿拉斯加航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/as.webp"
+  },
+  {
+    "companyCode": "AS",
+    "companyEName": "ALASKA AIRLINES",
+    "companyName": "阿拉斯加航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/as.webp"
+  },
+  {
+    "companyCode": "AS",
+    "companyEName": "ALASKA AIRLINES",
+    "companyName": "阿拉斯加航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/as.webp"
+  },
+  {
+    "companyCode": "AV",
+    "companyEName": "AVIANCA",
+    "companyName": "哥倫比亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/av.webp"
+  },
+  {
+    "companyCode": "AV",
+    "companyEName": "AVIANCA",
+    "companyName": "哥倫比亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/av.webp"
+  },
+  {
+    "companyCode": "AV",
+    "companyEName": "AVIANCA",
+    "companyName": "哥倫比亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/av.webp"
+  },
+  {
+    "companyCode": "B6",
+    "companyEName": "JETBLUE AIRWAYS",
+    "companyName": "捷藍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/b6.webp"
+  },
+  {
+    "companyCode": "B6",
+    "companyEName": "JETBLUE AIRWAYS",
+    "companyName": "捷藍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/b6.webp"
+  },
+  {
+    "companyCode": "B6",
+    "companyEName": "JETBLUE AIRWAYS",
+    "companyName": "捷藍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/b6.webp"
+  },
+  {
+    "companyCode": "CM",
+    "companyEName": "COPA AIRLINES",
+    "companyName": "巴拿馬航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cm.webp"
+  },
+  {
+    "companyCode": "CM",
+    "companyEName": "COPA AIRLINES",
+    "companyName": "巴拿馬航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cm.webp"
+  },
+  {
+    "companyCode": "CM",
+    "companyEName": "COPA AIRLINES",
+    "companyName": "巴拿馬航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/cm.webp"
+  },
+  {
+    "companyCode": "DL",
+    "companyEName": "DELTA AIR LINES",
+    "companyName": "達美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/dl.webp"
+  },
+  {
+    "companyCode": "DL",
+    "companyEName": "DELTA AIR LINES",
+    "companyName": "達美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/dl.webp"
+  },
+  {
+    "companyCode": "DL",
+    "companyEName": "DELTA AIR LINES",
+    "companyName": "達美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/dl.webp"
+  },
+  {
+    "companyCode": "F9",
+    "companyEName": "FRONTIER AIRLINES",
+    "companyName": "FRONTIER AIRLINES",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/f9.webp"
+  },
+  {
+    "companyCode": "F9",
+    "companyEName": "FRONTIER AIRLINES",
+    "companyName": "FRONTIER AIRLINES",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/f9.webp"
+  },
+  {
+    "companyCode": "F9",
+    "companyEName": "FRONTIER AIRLINES",
+    "companyName": "FRONTIER AIRLINES",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/f9.webp"
+  },
+  {
+    "companyCode": "HA",
+    "companyEName": "HAWAIIAN AIRLINES",
+    "companyName": "夏威夷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ha.webp"
+  },
+  {
+    "companyCode": "HA",
+    "companyEName": "HAWAIIAN AIRLINES",
+    "companyName": "夏威夷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ha.webp"
+  },
+  {
+    "companyCode": "HA",
+    "companyEName": "HAWAIIAN AIRLINES",
+    "companyName": "夏威夷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ha.webp"
+  },
+  {
+    "companyCode": "LA",
+    "companyEName": "LAN AIRLINES",
+    "companyName": "南美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/la.webp"
+  },
+  {
+    "companyCode": "LA",
+    "companyEName": "LAN AIRLINES",
+    "companyName": "南美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/la.webp"
+  },
+  {
+    "companyCode": "LA",
+    "companyEName": "LAN AIRLINES",
+    "companyName": "南美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/la.webp"
+  },
+  {
+    "companyCode": "LP",
+    "companyEName": "LANPERU",
+    "companyName": "秘魯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lp.webp"
+  },
+  {
+    "companyCode": "LP",
+    "companyEName": "LANPERU",
+    "companyName": "秘魯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lp.webp"
+  },
+  {
+    "companyCode": "LP",
+    "companyEName": "LANPERU",
+    "companyName": "秘魯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lp.webp"
+  },
+  {
+    "companyCode": "MX",
+    "companyEName": "MEXICANA",
+    "companyName": "墨西哥航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mx.webp"
+  },
+  {
+    "companyCode": "MX",
+    "companyEName": "MEXICANA",
+    "companyName": "墨西哥航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mx.webp"
+  },
+  {
+    "companyCode": "MX",
+    "companyEName": "MEXICANA",
+    "companyName": "墨西哥航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mx.webp"
+  },
+  {
+    "companyCode": "TA",
+    "companyEName": "TACA INTERNATIONAL AIRLINES",
+    "companyName": "中美洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ta.webp"
+  },
+  {
+    "companyCode": "TA",
+    "companyEName": "TACA INTERNATIONAL AIRLINES",
+    "companyName": "中美洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ta.webp"
+  },
+  {
+    "companyCode": "TA",
+    "companyEName": "TACA INTERNATIONAL AIRLINES",
+    "companyName": "中美洲航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ta.webp"
+  },
+  {
+    "companyCode": "UA",
+    "companyEName": "UNITED AIRLINES",
+    "companyName": "聯合航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ua.webp"
+  },
+  {
+    "companyCode": "UA",
+    "companyEName": "UNITED AIRLINES",
+    "companyName": "聯合航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ua.webp"
+  },
+  {
+    "companyCode": "UA",
+    "companyEName": "UNITED AIRLINES",
+    "companyName": "聯合航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ua.webp"
+  },
+  {
+    "companyCode": "US",
+    "companyEName": "US AIRWAYS",
+    "companyName": "全美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/us.webp"
+  },
+  {
+    "companyCode": "US",
+    "companyEName": "US AIRWAYS",
+    "companyName": "全美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/us.webp"
+  },
+  {
+    "companyCode": "US",
+    "companyEName": "US AIRWAYS",
+    "companyName": "全美航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/us.webp"
+  },
+  {
+    "companyCode": "VS",
+    "companyEName": "VIRGIN ATLANTIC",
+    "companyName": "維珍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/vs.webp"
+  },
+  {
+    "companyCode": "VS",
+    "companyEName": "VIRGIN ATLANTIC",
+    "companyName": "維珍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/vs.webp"
+  },
+  {
+    "companyCode": "VS",
+    "companyEName": "VIRGIN ATLANTIC",
+    "companyName": "維珍航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/vs.webp"
+  },
+  {
+    "companyCode": "WN",
+    "companyEName": "SOUTHWEST AIRLINES",
+    "companyName": "西南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/wn.webp"
+  },
+  {
+    "companyCode": "WN",
+    "companyEName": "SOUTHWEST AIRLINES",
+    "companyName": "西南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/wn.webp"
+  },
+  {
+    "companyCode": "WN",
+    "companyEName": "SOUTHWEST AIRLINES",
+    "companyName": "西南航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/wn.webp"
+  },
+  {
+    "companyCode": "WS",
+    "companyEName": "WESTJET",
+    "companyName": "西捷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ws.webp"
+  },
+  {
+    "companyCode": "WS",
+    "companyEName": "WESTJET",
+    "companyName": "西捷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ws.webp"
+  },
+  {
+    "companyCode": "WS",
+    "companyEName": "WESTJET",
+    "companyName": "西捷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ws.webp"
+  },
+  {
+    "companyCode": "EK",
+    "companyEName": "EMIRATES",
+    "companyName": "阿聯酋航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ek.webp"
+  },
+  {
+    "companyCode": "EK",
+    "companyEName": "EMIRATES",
+    "companyName": "阿聯酋航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ek.webp"
+  },
+  {
+    "companyCode": "EK",
+    "companyEName": "EMIRATES",
+    "companyName": "阿聯酋航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ek.webp"
+  },
+  {
+    "companyCode": "EY",
+    "companyEName": "ETIHAD AIRWAYS",
+    "companyName": "阿提哈德航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ey.webp"
+  },
+  {
+    "companyCode": "EY",
+    "companyEName": "ETIHAD AIRWAYS",
+    "companyName": "阿提哈德航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ey.webp"
+  },
+  {
+    "companyCode": "EY",
+    "companyEName": "ETIHAD AIRWAYS",
+    "companyName": "阿提哈德航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ey.webp"
+  },
+  {
+    "companyCode": "ET",
+    "companyEName": "ETHIOPIAN AIRLINES",
+    "companyName": "衣索比亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/et.webp"
+  },
+  {
+    "companyCode": "ET",
+    "companyEName": "ETHIOPIAN AIRLINES",
+    "companyName": "衣索比亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/et.webp"
+  },
+  {
+    "companyCode": "ET",
+    "companyEName": "ETHIOPIAN AIRLINES",
+    "companyName": "衣索比亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/et.webp"
+  },
+  {
+    "companyCode": "GF",
+    "companyEName": "GULF AIR",
+    "companyName": "海灣航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/gf.webp"
+  },
+  {
+    "companyCode": "GF",
+    "companyEName": "GULF AIR",
+    "companyName": "海灣航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/gf.webp"
+  },
+  {
+    "companyCode": "GF",
+    "companyEName": "GULF AIR",
+    "companyName": "海灣航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/gf.webp"
+  },
+  {
+    "companyCode": "LY",
+    "companyEName": "EL AL ISRAEL AIRLINES",
+    "companyName": "以色列航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ly.webp"
+  },
+  {
+    "companyCode": "LY",
+    "companyEName": "EL AL ISRAEL AIRLINES",
+    "companyName": "以色列航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ly.webp"
+  },
+  {
+    "companyCode": "LY",
+    "companyEName": "EL AL ISRAEL AIRLINES",
+    "companyName": "以色列航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ly.webp"
+  },
+  {
+    "companyCode": "IR",
+    "companyEName": "IRAN AIR",
+    "companyName": "伊朗航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ir.webp"
+  },
+  {
+    "companyCode": "IR",
+    "companyEName": "IRAN AIR",
+    "companyName": "伊朗航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ir.webp"
+  },
+  {
+    "companyCode": "IR",
+    "companyEName": "IRAN AIR",
+    "companyName": "伊朗航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ir.webp"
+  },
+  {
+    "companyCode": "KK",
+    "companyEName": "ATLASJET AIRLINES",
+    "companyName": "土耳其亞特力斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kk.webp"
+  },
+  {
+    "companyCode": "KK",
+    "companyEName": "ATLASJET AIRLINES",
+    "companyName": "土耳其亞特力斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kk.webp"
+  },
+  {
+    "companyCode": "KK",
+    "companyEName": "ATLASJET AIRLINES",
+    "companyName": "土耳其亞特力斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kk.webp"
+  },
+  {
+    "companyCode": "KQ",
+    "companyEName": "KENYA AIRWAYS",
+    "companyName": "肯亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kq.webp"
+  },
+  {
+    "companyCode": "KQ",
+    "companyEName": "KENYA AIRWAYS",
+    "companyName": "肯亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kq.webp"
+  },
+  {
+    "companyCode": "KQ",
+    "companyEName": "KENYA AIRWAYS",
+    "companyName": "肯亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kq.webp"
+  },
+  {
+    "companyCode": "KU",
+    "companyEName": "KUWAIT AIRWAYS",
+    "companyName": "科威特航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ku.webp"
+  },
+  {
+    "companyCode": "KU",
+    "companyEName": "KUWAIT AIRWAYS",
+    "companyName": "科威特航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ku.webp"
+  },
+  {
+    "companyCode": "KU",
+    "companyEName": "KUWAIT AIRWAYS",
+    "companyName": "科威特航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ku.webp"
+  },
+  {
+    "companyCode": "MD",
+    "companyEName": "AIR MADAGASCAR",
+    "companyName": "馬達加斯加航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/md.webp"
+  },
+  {
+    "companyCode": "MD",
+    "companyEName": "AIR MADAGASCAR",
+    "companyName": "馬達加斯加航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/md.webp"
+  },
+  {
+    "companyCode": "MD",
+    "companyEName": "AIR MADAGASCAR",
+    "companyName": "馬達加斯加航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/md.webp"
+  },
+  {
+    "companyCode": "MK",
+    "companyEName": "AIR MAURITIUS",
+    "companyName": "模里西斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mk.webp"
+  },
+  {
+    "companyCode": "MK",
+    "companyEName": "AIR MAURITIUS",
+    "companyName": "模里西斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mk.webp"
+  },
+  {
+    "companyCode": "MK",
+    "companyEName": "AIR MAURITIUS",
+    "companyName": "模里西斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/mk.webp"
+  },
+  {
+    "companyCode": "MS",
+    "companyEName": "EGYPTAIR",
+    "companyName": "埃及航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ms.webp"
+  },
+  {
+    "companyCode": "MS",
+    "companyEName": "EGYPTAIR",
+    "companyName": "埃及航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ms.webp"
+  },
+  {
+    "companyCode": "MS",
+    "companyEName": "EGYPTAIR",
+    "companyName": "埃及航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ms.webp"
+  },
+  {
+    "companyCode": "QR",
+    "companyEName": "QATAR AIRWAYS",
+    "companyName": "卡達航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qr.webp"
+  },
+  {
+    "companyCode": "QR",
+    "companyEName": "QATAR AIRWAYS",
+    "companyName": "卡達航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qr.webp"
+  },
+  {
+    "companyCode": "QR",
+    "companyEName": "QATAR AIRWAYS",
+    "companyName": "卡達航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/qr.webp"
+  },
+  {
+    "companyCode": "RJ",
+    "companyEName": "ROYAL JORDANIAN",
+    "companyName": "皇家約旦航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/rj.webp"
+  },
+  {
+    "companyCode": "RJ",
+    "companyEName": "ROYAL JORDANIAN",
+    "companyName": "皇家約旦航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/rj.webp"
+  },
+  {
+    "companyCode": "RJ",
+    "companyEName": "ROYAL JORDANIAN",
+    "companyName": "皇家約旦航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/rj.webp"
+  },
+  {
+    "companyCode": "SA",
+    "companyEName": "SOUTH AFRICAN AIRWAYS",
+    "companyName": "南非航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sa.webp"
+  },
+  {
+    "companyCode": "SA",
+    "companyEName": "SOUTH AFRICAN AIRWAYS",
+    "companyName": "南非航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sa.webp"
+  },
+  {
+    "companyCode": "SA",
+    "companyEName": "SOUTH AFRICAN AIRWAYS",
+    "companyName": "南非航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sa.webp"
+  },
+  {
+    "companyCode": "SV",
+    "companyEName": "SAUDI ARABIAN AIRLINES",
+    "companyName": "沙烏地阿拉伯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sv.webp"
+  },
+  {
+    "companyCode": "SV",
+    "companyEName": "SAUDI ARABIAN AIRLINES",
+    "companyName": "沙烏地阿拉伯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sv.webp"
+  },
+  {
+    "companyCode": "SV",
+    "companyEName": "SAUDI ARABIAN AIRLINES",
+    "companyName": "沙烏地阿拉伯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sv.webp"
+  },
+  {
+    "companyCode": "TK",
+    "companyEName": "TURKISH AIRLINES",
+    "companyName": "土耳其航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tk.webp"
+  },
+  {
+    "companyCode": "TK",
+    "companyEName": "TURKISH AIRLINES",
+    "companyName": "土耳其航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tk.webp"
+  },
+  {
+    "companyCode": "TK",
+    "companyEName": "TURKISH AIRLINES",
+    "companyName": "土耳其航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tk.webp"
+  },
+  {
+    "companyCode": "UL",
+    "companyEName": "SRILANKAN AIRLINES",
+    "companyName": "斯里蘭卡航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ul.webp"
+  },
+  {
+    "companyCode": "UL",
+    "companyEName": "SRILANKAN AIRLINES",
+    "companyName": "斯里蘭卡航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ul.webp"
+  },
+  {
+    "companyCode": "UL",
+    "companyEName": "SRILANKAN AIRLINES",
+    "companyName": "斯里蘭卡航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ul.webp"
+  },
+  {
+    "companyCode": "W5",
+    "companyEName": "MAHAN AIRLINES",
+    "companyName": "伊朗滿漢航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/w5.webp"
+  },
+  {
+    "companyCode": "W5",
+    "companyEName": "MAHAN AIRLINES",
+    "companyName": "伊朗滿漢航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/w5.webp"
+  },
+  {
+    "companyCode": "W5",
+    "companyEName": "MAHAN AIRLINES",
+    "companyName": "伊朗滿漢航空 ",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/w5.webp"
+  },
+  {
+    "companyCode": "A3",
+    "companyEName": "AEGEAN AIRLINES",
+    "companyName": "愛琴海航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/a3.webp"
+  },
+  {
+    "companyCode": "A3",
+    "companyEName": "AEGEAN AIRLINES",
+    "companyName": "愛琴海航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/a3.webp"
+  },
+  {
+    "companyCode": "A3",
+    "companyEName": "AEGEAN AIRLINES",
+    "companyName": "愛琴海航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/a3.webp"
+  },
+  {
+    "companyCode": "AB",
+    "companyEName": "AIR BERLIN",
+    "companyName": "柏林航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ab.webp"
+  },
+  {
+    "companyCode": "AB",
+    "companyEName": "AIR BERLIN",
+    "companyName": "柏林航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ab.webp"
+  },
+  {
+    "companyCode": "AB",
+    "companyEName": "AIR BERLIN",
+    "companyName": "柏林航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ab.webp"
+  },
+  {
+    "companyCode": "AF",
+    "companyEName": "AIR FRANCE",
+    "companyName": "法國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/af.webp"
+  },
+  {
+    "companyCode": "AF",
+    "companyEName": "AIR FRANCE",
+    "companyName": "法國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/af.webp"
+  },
+  {
+    "companyCode": "AF",
+    "companyEName": "AIR FRANCE",
+    "companyName": "法國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/af.webp"
+  },
+  {
+    "companyCode": "AY",
+    "companyEName": "FINNAIR",
+    "companyName": "芬蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ay.webp"
+  },
+  {
+    "companyCode": "AY",
+    "companyEName": "FINNAIR",
+    "companyName": "芬蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ay.webp"
+  },
+  {
+    "companyCode": "AY",
+    "companyEName": "FINNAIR",
+    "companyName": "芬蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ay.webp"
+  },
+  {
+    "companyCode": "AZ",
+    "companyEName": "ALITALIA",
+    "companyName": "義大利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/az.webp"
+  },
+  {
+    "companyCode": "AZ",
+    "companyEName": "ALITALIA",
+    "companyName": "義大利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/az.webp"
+  },
+  {
+    "companyCode": "AZ",
+    "companyEName": "ALITALIA",
+    "companyName": "義大利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/az.webp"
+  },
+  {
+    "companyCode": "BA",
+    "companyEName": "BRITISH AIRWAYS",
+    "companyName": "英國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ba.webp"
+  },
+  {
+    "companyCode": "BA",
+    "companyEName": "BRITISH AIRWAYS",
+    "companyName": "英國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ba.webp"
+  },
+  {
+    "companyCode": "BA",
+    "companyEName": "BRITISH AIRWAYS",
+    "companyName": "英國航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ba.webp"
+  },
+  {
+    "companyCode": "BD",
+    "companyEName": "BRITISH MIDLAND INTERNATIONAL",
+    "companyName": "英倫航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bd.webp"
+  },
+  {
+    "companyCode": "BD",
+    "companyEName": "BRITISH MIDLAND INTERNATIONAL",
+    "companyName": "英倫航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bd.webp"
+  },
+  {
+    "companyCode": "BD",
+    "companyEName": "BRITISH MIDLAND INTERNATIONAL",
+    "companyName": "英倫航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/bd.webp"
+  },
+  {
+    "companyCode": "EI",
+    "companyEName": "AER LINGUS",
+    "companyName": "愛爾蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ei.webp"
+  },
+  {
+    "companyCode": "EI",
+    "companyEName": "AER LINGUS",
+    "companyName": "愛爾蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ei.webp"
+  },
+  {
+    "companyCode": "EI",
+    "companyEName": "AER LINGUS",
+    "companyName": "愛爾蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ei.webp"
+  },
+  {
+    "companyCode": "FI",
+    "companyEName": "ICELANDAIR",
+    "companyName": "冰島航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fi.webp"
+  },
+  {
+    "companyCode": "FI",
+    "companyEName": "ICELANDAIR",
+    "companyName": "冰島航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fi.webp"
+  },
+  {
+    "companyCode": "FI",
+    "companyEName": "ICELANDAIR",
+    "companyName": "冰島航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/fi.webp"
+  },
+  {
+    "companyCode": "HR",
+    "companyEName": "HAHN AIR",
+    "companyName": "漢恩航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hr.webp"
+  },
+  {
+    "companyCode": "HR",
+    "companyEName": "HAHN AIR",
+    "companyName": "漢恩航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hr.webp"
+  },
+  {
+    "companyCode": "HR",
+    "companyEName": "HAHN AIR",
+    "companyName": "漢恩航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/hr.webp"
+  },
+  {
+    "companyCode": "IB",
+    "companyEName": "IBERIA",
+    "companyName": "西班牙航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ib.webp"
+  },
+  {
+    "companyCode": "IB",
+    "companyEName": "IBERIA",
+    "companyName": "西班牙航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ib.webp"
+  },
+  {
+    "companyCode": "IB",
+    "companyEName": "IBERIA",
+    "companyName": "西班牙航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ib.webp"
+  },
+  {
+    "companyCode": "KC",
+    "companyEName": "AIR ASTANA",
+    "companyName": "哈薩克國家航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kc.webp"
+  },
+  {
+    "companyCode": "KC",
+    "companyEName": "AIR ASTANA",
+    "companyName": "哈薩克國家航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kc.webp"
+  },
+  {
+    "companyCode": "KC",
+    "companyEName": "AIR ASTANA",
+    "companyName": "哈薩克國家航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kc.webp"
+  },
+  {
+    "companyCode": "KL",
+    "companyEName": "KLM ROYAL DUTCH AIRLINES",
+    "companyName": "荷蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kl.webp"
+  },
+  {
+    "companyCode": "KL",
+    "companyEName": "KLM ROYAL DUTCH AIRLINES",
+    "companyName": "荷蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kl.webp"
+  },
+  {
+    "companyCode": "KL",
+    "companyEName": "KLM ROYAL DUTCH AIRLINES",
+    "companyName": "荷蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/kl.webp"
+  },
+  {
+    "companyCode": "LH",
+    "companyEName": "LUFTHANSA",
+    "companyName": "德國漢莎航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lh.webp"
+  },
+  {
+    "companyCode": "LH",
+    "companyEName": "LUFTHANSA",
+    "companyName": "德國漢莎航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lh.webp"
+  },
+  {
+    "companyCode": "LH",
+    "companyEName": "LUFTHANSA",
+    "companyName": "德國漢莎航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lh.webp"
+  },
+  {
+    "companyCode": "LO",
+    "companyEName": "POLISH AIRLINES",
+    "companyName": "波蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lo.webp"
+  },
+  {
+    "companyCode": "LO",
+    "companyEName": "POLISH AIRLINES",
+    "companyName": "波蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lo.webp"
+  },
+  {
+    "companyCode": "LO",
+    "companyEName": "POLISH AIRLINES",
+    "companyName": "波蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lo.webp"
+  },
+  {
+    "companyCode": "LX",
+    "companyEName": "SWISS INTERNATIONAL AIRLINES",
+    "companyName": "瑞士航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lx.webp"
+  },
+  {
+    "companyCode": "LX",
+    "companyEName": "SWISS INTERNATIONAL AIRLINES",
+    "companyName": "瑞士航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lx.webp"
+  },
+  {
+    "companyCode": "LX",
+    "companyEName": "SWISS INTERNATIONAL AIRLINES",
+    "companyName": "瑞士航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/lx.webp"
+  },
+  {
+    "companyCode": "MA",
+    "companyEName": "MALEV HUNGARIAN AIRLINES",
+    "companyName": "匈牙利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ma.webp"
+  },
+  {
+    "companyCode": "MA",
+    "companyEName": "MALEV HUNGARIAN AIRLINES",
+    "companyName": "匈牙利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ma.webp"
+  },
+  {
+    "companyCode": "MA",
+    "companyEName": "MALEV HUNGARIAN AIRLINES",
+    "companyName": "匈牙利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ma.webp"
+  },
+  {
+    "companyCode": "OA",
+    "companyEName": "OLYMPIC AIR",
+    "companyName": "奧林匹克航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/oa.webp"
+  },
+  {
+    "companyCode": "OA",
+    "companyEName": "OLYMPIC AIR",
+    "companyName": "奧林匹克航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/oa.webp"
+  },
+  {
+    "companyCode": "OA",
+    "companyEName": "OLYMPIC AIR",
+    "companyName": "奧林匹克航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/oa.webp"
+  },
+  {
+    "companyCode": "OK",
+    "companyEName": "CSA CZECH AIRLINES",
+    "companyName": "捷克航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ok.webp"
+  },
+  {
+    "companyCode": "OK",
+    "companyEName": "CSA CZECH AIRLINES",
+    "companyName": "捷克航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ok.webp"
+  },
+  {
+    "companyCode": "OK",
+    "companyEName": "CSA CZECH AIRLINES",
+    "companyName": "捷克航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ok.webp"
+  },
+  {
+    "companyCode": "OS",
+    "companyEName": "AUSTRIAN AIRLINES",
+    "companyName": "奧地利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/os.webp"
+  },
+  {
+    "companyCode": "OS",
+    "companyEName": "AUSTRIAN AIRLINES",
+    "companyName": "奧地利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/os.webp"
+  },
+  {
+    "companyCode": "OS",
+    "companyEName": "AUSTRIAN AIRLINES",
+    "companyName": "奧地利航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/os.webp"
+  },
+  {
+    "companyCode": "PS",
+    "companyEName": "UKRAINE INTL AIRLINES",
+    "companyName": "烏克蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ps.webp"
+  },
+  {
+    "companyCode": "PS",
+    "companyEName": "UKRAINE INTL AIRLINES",
+    "companyName": "烏克蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ps.webp"
+  },
+  {
+    "companyCode": "PS",
+    "companyEName": "UKRAINE INTL AIRLINES",
+    "companyName": "烏克蘭航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ps.webp"
+  },
+  {
+    "companyCode": "S7",
+    "companyEName": "SIBERIA AIRLINES",
+    "companyName": "西伯利亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/s7.webp"
+  },
+  {
+    "companyCode": "S7",
+    "companyEName": "SIBERIA AIRLINES",
+    "companyName": "西伯利亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/s7.webp"
+  },
+  {
+    "companyCode": "S7",
+    "companyEName": "SIBERIA AIRLINES",
+    "companyName": "西伯利亞航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/s7.webp"
+  },
+  {
+    "companyCode": "SK",
+    "companyEName": "SCANDINAVIAN AIRLINES",
+    "companyName": "北歐航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sk.webp"
+  },
+  {
+    "companyCode": "SK",
+    "companyEName": "SCANDINAVIAN AIRLINES",
+    "companyName": "北歐航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sk.webp"
+  },
+  {
+    "companyCode": "SK",
+    "companyEName": "SCANDINAVIAN AIRLINES",
+    "companyName": "北歐航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sk.webp"
+  },
+  {
+    "companyCode": "SN",
+    "companyEName": "BRUSSELS AIRLINES",
+    "companyName": "比利時航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sn.webp"
+  },
+  {
+    "companyCode": "SN",
+    "companyEName": "BRUSSELS AIRLINES",
+    "companyName": "比利時航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sn.webp"
+  },
+  {
+    "companyCode": "SN",
+    "companyEName": "BRUSSELS AIRLINES",
+    "companyName": "比利時航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/sn.webp"
+  },
+  {
+    "companyCode": "SU",
+    "companyEName": "AEROFLOT",
+    "companyName": "俄羅斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/su.webp"
+  },
+  {
+    "companyCode": "SU",
+    "companyEName": "AEROFLOT",
+    "companyName": "俄羅斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/su.webp"
+  },
+  {
+    "companyCode": "SU",
+    "companyEName": "AEROFLOT",
+    "companyName": "俄羅斯航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/su.webp"
+  },
+  {
+    "companyCode": "TP",
+    "companyEName": "TAP PORTUGAL",
+    "companyName": "葡萄牙航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tp.webp"
+  },
+  {
+    "companyCode": "TP",
+    "companyEName": "TAP PORTUGAL",
+    "companyName": "葡萄牙航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tp.webp"
+  },
+  {
+    "companyCode": "TP",
+    "companyEName": "TAP PORTUGAL",
+    "companyName": "葡萄牙航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/tp.webp"
+  },
+  {
+    "companyCode": "U2",
+    "companyEName": "EASYJET",
+    "companyName": "易捷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/u2.webp"
+  },
+  {
+    "companyCode": "U2",
+    "companyEName": "EASYJET",
+    "companyName": "易捷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/u2.webp"
+  },
+  {
+    "companyCode": "U2",
+    "companyEName": "EASYJET",
+    "companyName": "易捷航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/u2.webp"
+  },
+  {
+    "companyCode": "UX",
+    "companyEName": "AIR EUROPA",
+    "companyName": "歐羅巴航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ux.webp"
+  },
+  {
+    "companyCode": "UX",
+    "companyEName": "AIR EUROPA",
+    "companyName": "歐羅巴航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ux.webp"
+  },
+  {
+    "companyCode": "UX",
+    "companyEName": "AIR EUROPA",
+    "companyName": "歐羅巴航空",
+    "logoUrl": "https://pic.tripcdn.com/airline_logo/3x/ux.webp"
+  }
+]

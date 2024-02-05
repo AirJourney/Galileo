@@ -1,0 +1,32 @@
+Vehicle Keywords - Specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="AD"/>
+         <veh:PickupDateLocation Date="2020-04-01" Location="DEN"/>
+         <com:Keyword Name="AGE" Number="" Description="Age Requirements"/>
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords - Specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="9DCEE10C0A0764772606212B62BB9375" ResponseTime="349" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Description="Age Requirements">
+            <common_v50_0:Text>MINIMUM AGE 21 YEARS OF AGE WITH THE EXCEPTIO OF:-1-</common_v50_0:Text>
+            <common_v50_0:Text>U.S MILITARY PERSONNELL TRAVELING ON GOVERNMENT ORDERS|</common_v50_0:Text>
+            <common_v50_0:Text>AND -2- RENTERS IN NEW YORK STATE.                    *</common_v50_0:Text>
+            <common_v50_0:Text>AGE 21-24 YEARS OF AGE MAY USE A CREDIT OR DEBIT CARD</common_v50_0:Text>
+            <common_v50_0:Text>AND MUST MEET ALL PAYMENT POLICES.UNDERAGE CHARGE WILL</common_v50_0:Text>
+            <common_v50_0:Text>APPLY.</common_v50_0:Text>
+         </common_v50_0:Keyword>
+         <common_v50_0:Keyword Name="PHON" Description="Phone Number"/>
+         <common_v50_0:Keyword Name="HOURS" Description="Hour Information"/>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

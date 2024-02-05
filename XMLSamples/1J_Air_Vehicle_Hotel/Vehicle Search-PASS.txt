@@ -1,0 +1,712 @@
+Vehicle Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleSearchAvailabilityReq ReturnMediaLinks="true" AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehicleDateLocation Key="OngF/R9nSmGZOmAaefRUdg==" PickupLocationType="Terminal" PickupLocation="DEN" ReturnDateTime="2020-05-16T10:00:00" PickupDateTime="2020-05-01T10:00:00">
+<!--            <veh:VendorLocation VendorCode="AD" ProviderCode="1J"/>-->
+         </veh:VehicleDateLocation>
+<!--         <com:PointOfSale Key="pqlNZBdtSnG/ZnM6m5tZ7Q==" ProviderCode="1J" PseudoCityCode="5X19"/>-->
+      </veh:VehicleSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleSearchAvailabilityRsp TransactionId="9DCEBF780A07643CAB0E0A7CA804F8C8" ResponseTime="3134" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <vehicle:VehicleDateLocation PickupDateTime="2020-05-01T10:00:00.000-06:00" PickupLocation="DEN" ReturnDateTime="2020-05-16T10:00:00.000-06:00" ReturnLocation="DEN">
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZD" VendorLocationID="001" Key="VbtNMC8Q2BKAd8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZD" VendorLocationID="001" Key="VbtNMC8Q2BKAd8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZA" VendorLocationID="001" Key="VbtNMC8Q2BKAe8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZA" VendorLocationID="001" Key="VbtNMC8Q2BKAe8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="AD" VendorLocationID="001" Key="VbtNMC8Q2BKAf8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="AD" VendorLocationID="001" Key="VbtNMC8Q2BKAf8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="EZ" VendorLocationID="001" Key="VbtNMC8Q2BKAg8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="EZ" VendorLocationID="001" Key="VbtNMC8Q2BKAg8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZR" VendorLocationID="001" Key="VbtNMC8Q2BKAh8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZR" VendorLocationID="001" Key="VbtNMC8Q2BKAh8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZT" VendorLocationID="001" Key="VbtNMC8Q2BKAi8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZT" VendorLocationID="001" Key="VbtNMC8Q2BKAi8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZI" VendorLocationID="001" Key="VbtNMC8Q2BKAj8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZI" VendorLocationID="001" Key="VbtNMC8Q2BKAj8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="AL" VendorLocationID="071" Key="VbtNMC8Q2BKAk8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="AL" VendorLocationID="071" Key="VbtNMC8Q2BKAk8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ET" VendorLocationID="001" Key="VbtNMC8Q2BKAl8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ET" VendorLocationID="001" Key="VbtNMC8Q2BKAl8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZL" VendorLocationID="001" Key="VbtNMC8Q2BKAm8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Pickup"/>
+            <vehicle:VendorLocation ProviderCode="1J" VendorCode="ZL" VendorLocationID="001" Key="VbtNMC8Q2BKAm8AICAAAAA==" LocationType="Terminal" LocationCode="DEN" Type="Return"/>
+         </vehicle:VehicleDateLocation>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD150.00" BaseRate="USD330.00" EstimatedTotalAmount="USD498.88" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY16486" BaseRate="JPY36270" EstimatedTotalAmount="JPY54832" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD150.00" BaseRate="USD330.00" EstimatedTotalAmount="USD498.88" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY16486" BaseRate="JPY36270" EstimatedTotalAmount="JPY54832" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD153.75" BaseRate="USD338.25" EstimatedTotalAmount="USD509.26" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY16898" BaseRate="JPY37177" EstimatedTotalAmount="JPY55973" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD165.00" BaseRate="USD353.57" EstimatedTotalAmount="USD528.54" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY18135" BaseRate="JPY38861" EstimatedTotalAmount="JPY58092" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD169.99" BaseRate="USD364.26" EstimatedTotalAmount="USD541.99" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY18683" BaseRate="JPY40036" EstimatedTotalAmount="JPY59570" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD174.99" BaseRate="USD374.97" EstimatedTotalAmount="USD555.47" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY19233" BaseRate="JPY41213" EstimatedTotalAmount="JPY61052" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD175.00" BaseRate="USD385.00" EstimatedTotalAmount="USD568.08" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY19234" BaseRate="JPY42315" EstimatedTotalAmount="JPY62438" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD180.00" BaseRate="USD396.00" EstimatedTotalAmount="USD581.94" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY19783" BaseRate="JPY43524" EstimatedTotalAmount="JPY63961" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD185.00" BaseRate="USD396.42" EstimatedTotalAmount="USD582.46" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY20333" BaseRate="JPY43570" EstimatedTotalAmount="JPY64018" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="IFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD190.00" BaseRate="USD407.14" EstimatedTotalAmount="USD595.94" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY20883" BaseRate="JPY44749" EstimatedTotalAmount="JPY65500" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD190.00" BaseRate="USD407.14" EstimatedTotalAmount="USD595.94" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY20883" BaseRate="JPY44749" EstimatedTotalAmount="JPY65500" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD219.63" BaseRate="USD483.19" EstimatedTotalAmount="USD674.53" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY24139" BaseRate="JPY53107" EstimatedTotalAmount="JPY74138" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R01"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD219.63" BaseRate="USD483.19" EstimatedTotalAmount="USD674.53" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY24139" BaseRate="JPY53107" EstimatedTotalAmount="JPY74138" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R01"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD224.63" BaseRate="USD494.19" EstimatedTotalAmount="USD688.37" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY24689" BaseRate="JPY54316" EstimatedTotalAmount="JPY75659" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R02"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD224.64" BaseRate="USD494.21" EstimatedTotalAmount="USD688.40" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY24690" BaseRate="JPY54319" EstimatedTotalAmount="JPY75662" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R02"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="IFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD229.64" BaseRate="USD505.21" EstimatedTotalAmount="USD702.24" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25239" BaseRate="JPY55528" EstimatedTotalAmount="JPY77183" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R07"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="IFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD229.64" BaseRate="USD505.21" EstimatedTotalAmount="USD702.24" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25239" BaseRate="JPY55528" EstimatedTotalAmount="JPY77183" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R07"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD229.64" BaseRate="USD505.21" EstimatedTotalAmount="USD702.24" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25239" BaseRate="JPY55528" EstimatedTotalAmount="JPY77183" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R03"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD229.64" BaseRate="USD505.21" EstimatedTotalAmount="USD702.24" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25239" BaseRate="JPY55528" EstimatedTotalAmount="JPY77183" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R03"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="EDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD232.77" EstimatedTotalAmount="USD704.69" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25583" EstimatedTotalAmount="JPY77453" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="EDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD232.77" EstimatedTotalAmount="USD704.69" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25583" EstimatedTotalAmount="JPY77453" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="ECAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="EDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD232.77" EstimatedTotalAmount="USD704.69" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25583" EstimatedTotalAmount="JPY77453" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="EDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD232.77" EstimatedTotalAmount="USD704.69" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25583" EstimatedTotalAmount="JPY77453" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="ECAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="MVAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD230.96" BaseRate="USD508.11" EstimatedTotalAmount="USD705.89" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25385" BaseRate="JPY55846" EstimatedTotalAmount="JPY77585" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R06"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="MVAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD230.96" BaseRate="USD508.11" EstimatedTotalAmount="USD705.89" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25385" BaseRate="JPY55846" EstimatedTotalAmount="JPY77585" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R06"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="PCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD227.50" BaseRate="USD500.50" EstimatedTotalAmount="USD713.43" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25004" BaseRate="JPY55010" EstimatedTotalAmount="JPY78413" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD234.28" BaseRate="USD515.42" EstimatedTotalAmount="USD715.08" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25749" BaseRate="JPY56650" EstimatedTotalAmount="JPY78595" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R05"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD234.28" BaseRate="USD515.42" EstimatedTotalAmount="USD715.08" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25749" BaseRate="JPY56650" EstimatedTotalAmount="JPY78595" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R04"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD234.29" BaseRate="USD515.44" EstimatedTotalAmount="USD715.12" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25751" BaseRate="JPY56652" EstimatedTotalAmount="JPY78599" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R05"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD234.29" BaseRate="USD515.44" EstimatedTotalAmount="USD715.12" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY25751" BaseRate="JPY56652" EstimatedTotalAmount="JPY78599" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R04"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAj8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="J6" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD170.00" BaseRate="USD374.00" EstimatedTotalAmount="USD724.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY18684" BaseRate="JPY41106" EstimatedTotalAmount="JPY79611" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAj8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="J6" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD170.00" BaseRate="USD374.00" EstimatedTotalAmount="USD724.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY18684" BaseRate="JPY41106" EstimatedTotalAmount="JPY79611" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD239.63" BaseRate="USD527.19" EstimatedTotalAmount="USD729.90" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY26337" BaseRate="JPY57943" EstimatedTotalAmount="JPY80224" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R08"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD239.64" BaseRate="USD527.21" EstimatedTotalAmount="USD729.92" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY26339" BaseRate="JPY57946" EstimatedTotalAmount="JPY80226" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R08"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD240.00" BaseRate="USD514.28" EstimatedTotalAmount="USD730.77" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY26378" BaseRate="JPY56525" EstimatedTotalAmount="JPY80319" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAj8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="J6" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD173.75" BaseRate="USD382.25" EstimatedTotalAmount="USD733.50" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY19097" BaseRate="JPY42013" EstimatedTotalAmount="JPY80619" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAk8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="AW9" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD250.00" EstimatedTotalAmount="USD748.12" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY27477" EstimatedTotalAmount="JPY82226" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAj8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="J6" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD180.00" BaseRate="USD396.00" EstimatedTotalAmount="USD748.77" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY19783" BaseRate="JPY43524" EstimatedTotalAmount="JPY82298" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAj8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="J6" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD180.00" BaseRate="USD396.00" EstimatedTotalAmount="USD748.77" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY19783" BaseRate="JPY43524" EstimatedTotalAmount="JPY82298" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="StandardElite" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="RFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD247.00" BaseRate="USD529.28" EstimatedTotalAmount="USD749.64" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY27148" BaseRate="JPY58173" EstimatedTotalAmount="JPY82393" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ET" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="CNTR IN TERM-ARPT SHTTL TO CAR ON ARPT GRNDS" CounterLocationCode="TASA" VendorLocationKey="VbtNMC8Q2BKAl8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="EW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD249.00" EstimatedTotalAmount="USD752.31" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY27367" EstimatedTotalAmount="JPY82687" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ET" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="CNTR IN TERM-ARPT SHTTL TO CAR ON ARPT GRNDS" CounterLocationCode="TASA" VendorLocationKey="VbtNMC8Q2BKAl8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="EW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD249.00" EstimatedTotalAmount="USD756.08" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY27367" EstimatedTotalAmount="JPY83101" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="CDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD258.36" EstimatedTotalAmount="USD773.43" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28396" EstimatedTotalAmount="JPY85008" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="CDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Special" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="XXAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD258.36" EstimatedTotalAmount="USD773.43" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28396" EstimatedTotalAmount="JPY85008" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="XXAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="CDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD258.36" EstimatedTotalAmount="USD773.43" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28396" EstimatedTotalAmount="JPY85008" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="CDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD258.36" EstimatedTotalAmount="USD773.43" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28396" EstimatedTotalAmount="JPY85008" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="CCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD258.36" EstimatedTotalAmount="USD773.43" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28396" EstimatedTotalAmount="JPY85008" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="CCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Special" Category="Special" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="XXAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD258.36" EstimatedTotalAmount="USD773.43" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28396" EstimatedTotalAmount="JPY85008" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="XXAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAk8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="AW9" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD260.00" EstimatedTotalAmount="USD775.37" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28576" EstimatedTotalAmount="JPY85221" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAf8AICAAAAA==" AcrissVehicleCode="FFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD262.64" BaseRate="USD577.81" EstimatedTotalAmount="USD793.59" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28867" BaseRate="JPY63507" EstimatedTotalAmount="JPY87224" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="ADDEN00C" RateToken="R09"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="EZ" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="SUV" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAg8AICAAAAA==" AcrissVehicleCode="FFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="W14" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD262.64" BaseRate="USD577.81" EstimatedTotalAmount="USD793.59" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY28867" BaseRate="JPY63507" EstimatedTotalAmount="JPY87224" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="EZDENEZ00C" RateToken="R09"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZA" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAe8AICAAAAA==" AcrissVehicleCode="MVAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="WK" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD265.00" BaseRate="USD567.85" EstimatedTotalAmount="USD798.17" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29126" BaseRate="JPY62412" EstimatedTotalAmount="JPY87727" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAk8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="AW9" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD270.00" EstimatedTotalAmount="USD802.63" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29675" EstimatedTotalAmount="JPY88217" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="IDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW9" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD268.95" EstimatedTotalAmount="USD802.84" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29560" EstimatedTotalAmount="JPY88240" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="IDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="IDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW9" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD268.95" EstimatedTotalAmount="USD802.84" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29560" EstimatedTotalAmount="JPY88240" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="IDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW9" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD268.95" EstimatedTotalAmount="USD802.84" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29560" EstimatedTotalAmount="JPY88240" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="ICAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW9" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD268.95" EstimatedTotalAmount="USD802.84" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29560" EstimatedTotalAmount="JPY88240" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="ICAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="CFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW9" RateCategory="Standard" RateGuaranteed="true" RequiredPayment="Guarantee" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD270.08" EstimatedTotalAmount="USD805.71" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29684" EstimatedTotalAmount="JPY88556" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="CFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="IFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW9" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD270.08" EstimatedTotalAmount="USD805.71" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29684" EstimatedTotalAmount="JPY88556" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="IFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="IFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW9" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD270.08" EstimatedTotalAmount="USD805.71" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29684" EstimatedTotalAmount="JPY88556" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="IFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD267.50" BaseRate="USD588.50" EstimatedTotalAmount="USD824.15" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29401" BaseRate="JPY64682" EstimatedTotalAmount="JPY90583" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - WALK TO CAR" CounterLocationCode="TERM" VendorLocationKey="VbtNMC8Q2BKAm8AICAAAAA==" AcrissVehicleCode="ECAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="NW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD280.00" EstimatedTotalAmount="USD829.91" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY30775" EstimatedTotalAmount="JPY91216" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAk8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="AW9" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD280.00" EstimatedTotalAmount="USD829.91" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY30775" EstimatedTotalAmount="JPY91216" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="IFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="CP" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD279.00" BaseRate="USD604.50" EstimatedTotalAmount="USD844.29" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY30665" BaseRate="JPY66441" EstimatedTotalAmount="JPY92796" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="MVAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD277.50" BaseRate="USD610.50" EstimatedTotalAmount="USD851.84" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY30500" BaseRate="JPY67100" EstimatedTotalAmount="JPY93626" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - WALK TO CAR" CounterLocationCode="TERM" VendorLocationKey="VbtNMC8Q2BKAm8AICAAAAA==" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="NW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD290.00" EstimatedTotalAmount="USD857.17" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY31874" EstimatedTotalAmount="JPY94212" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAk8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="AW9" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD290.00" EstimatedTotalAmount="USD857.17" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY31874" EstimatedTotalAmount="JPY94212" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD296.02" EstimatedTotalAmount="USD875.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32535" EstimatedTotalAmount="JPY96208" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="FCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="FDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD296.02" EstimatedTotalAmount="USD875.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32535" EstimatedTotalAmount="JPY96208" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="FDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD296.02" EstimatedTotalAmount="USD875.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32535" EstimatedTotalAmount="JPY96208" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="SCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD296.02" EstimatedTotalAmount="USD875.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32535" EstimatedTotalAmount="JPY96208" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="SCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="SDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD296.02" EstimatedTotalAmount="USD875.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32535" EstimatedTotalAmount="JPY96208" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="SDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="FDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD296.02" EstimatedTotalAmount="USD875.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32535" EstimatedTotalAmount="JPY96208" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="FDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD296.02" EstimatedTotalAmount="USD875.33" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32535" EstimatedTotalAmount="JPY96208" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="FCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - WALK TO CAR" CounterLocationCode="TERM" VendorLocationKey="VbtNMC8Q2BKAm8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="NW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD300.00" EstimatedTotalAmount="USD884.44" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32973" EstimatedTotalAmount="JPY97209" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ET" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="CNTR IN TERM-ARPT SHTTL TO CAR ON ARPT GRNDS" CounterLocationCode="TASA" VendorLocationKey="VbtNMC8Q2BKAl8AICAAAAA==" AcrissVehicleCode="ICAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="EW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD299.00" EstimatedTotalAmount="USD884.44" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY32863" EstimatedTotalAmount="JPY97209" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="LCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD304.13" EstimatedTotalAmount="USD898.46" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY33427" EstimatedTotalAmount="JPY98750" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="LCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="LDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD304.13" EstimatedTotalAmount="USD898.46" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY33427" EstimatedTotalAmount="JPY98750" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="LDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="LCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD304.13" EstimatedTotalAmount="USD898.46" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY33427" EstimatedTotalAmount="JPY98750" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="LCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="FourToFiveDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="LDAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD304.13" EstimatedTotalAmount="USD898.46" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY33427" EstimatedTotalAmount="JPY98750" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="LDAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - WALK TO CAR" CounterLocationCode="TERM" VendorLocationKey="VbtNMC8Q2BKAm8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="NW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD310.00" EstimatedTotalAmount="USD911.70" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY34072" EstimatedTotalAmount="JPY100205" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="FFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD310.94" EstimatedTotalAmount="USD917.00" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY34175" EstimatedTotalAmount="JPY100788" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="FFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="FFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD310.94" EstimatedTotalAmount="USD917.00" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY34175" EstimatedTotalAmount="JPY100788" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="FFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD311.36" EstimatedTotalAmount="USD918.06" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY34221" EstimatedTotalAmount="JPY100904" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="SFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="SFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD311.36" EstimatedTotalAmount="USD918.06" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY34221" EstimatedTotalAmount="JPY100904" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="SFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="LCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD307.50" BaseRate="USD676.50" EstimatedTotalAmount="USD934.89" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY33797" BaseRate="JPY74354" EstimatedTotalAmount="JPY102754" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ET" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="CNTR IN TERM-ARPT SHTTL TO CAR ON ARPT GRNDS" CounterLocationCode="TASA" VendorLocationKey="VbtNMC8Q2BKAl8AICAAAAA==" AcrissVehicleCode="PCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="EW9" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD322.05" EstimatedTotalAmount="USD934.90" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY35396" EstimatedTotalAmount="JPY102755" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - WALK TO CAR" CounterLocationCode="TERM" VendorLocationKey="VbtNMC8Q2BKAm8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="NW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD320.00" EstimatedTotalAmount="USD938.95" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY35171" EstimatedTotalAmount="JPY103200" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="MVAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD324.08" EstimatedTotalAmount="USD951.62" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY35619" EstimatedTotalAmount="JPY104593" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="MVAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Mini" Category="Van" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="MVAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD324.08" EstimatedTotalAmount="USD951.62" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY35619" EstimatedTotalAmount="JPY104593" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="MVAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="PCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD324.91" EstimatedTotalAmount="USD955.00" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY35711" EstimatedTotalAmount="JPY104965" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="PCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="PCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD324.91" EstimatedTotalAmount="USD955.00" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY35711" EstimatedTotalAmount="JPY104965" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="PCAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAj8AICAAAAA==" AcrissVehicleCode="PCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="J6" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD265.00" BaseRate="USD583.00" EstimatedTotalAmount="USD956.55" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY29126" BaseRate="JPY64078" EstimatedTotalAmount="JPY105135" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ET" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="CNTR IN TERM-ARPT SHTTL TO CAR ON ARPT GRNDS" CounterLocationCode="TASA" VendorLocationKey="VbtNMC8Q2BKAl8AICAAAAA==" AcrissVehicleCode="SCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="EW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD329.00" EstimatedTotalAmount="USD963.70" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY36160" EstimatedTotalAmount="JPY105921" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="StandardElite" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="RFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="CP" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD339.00" BaseRate="USD726.43" EstimatedTotalAmount="USD997.72" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY37259" BaseRate="JPY79842" EstimatedTotalAmount="JPY109660" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZT" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAi8AICAAAAA==" AcrissVehicleCode="PFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD342.33" EstimatedTotalAmount="USD1001.73" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY37625" EstimatedTotalAmount="JPY110101" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703055" RateToken="PFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ZR" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="SUV" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAh8AICAAAAA==" AcrissVehicleCode="PFAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="RCUW8" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true">
+               <vehicle:SupplierRate RateForPeriod="USD342.33" EstimatedTotalAmount="USD1001.73" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY37625" EstimatedTotalAmount="JPY110101" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="7703056" RateToken="PFAR"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="AL" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="OFFSITE - SHUTTLE TO COUNTER AND CAR" CounterLocationCode="SHTL" VendorLocationKey="VbtNMC8Q2BKAk8AICAAAAA==" AcrissVehicleCode="PCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="AW9" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD345.00" EstimatedTotalAmount="USD1007.13" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY37919" EstimatedTotalAmount="JPY110694" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="ET" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="CNTR IN TERM-ARPT SHTTL TO CAR ON ARPT GRNDS" CounterLocationCode="TASA" VendorLocationKey="VbtNMC8Q2BKAl8AICAAAAA==" AcrissVehicleCode="FCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="EW8" RateCategory="Standard" RateGuaranteed="true">
+               <vehicle:SupplierRate RateForPeriod="USD345.00" EstimatedTotalAmount="USD1010.27" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY37919" EstimatedTotalAmount="JPY111039" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:RateHostIndicator InventoryToken="2NWXX" RateToken="W2"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+      </vehicle:VehicleSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

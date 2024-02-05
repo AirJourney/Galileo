@@ -1,0 +1,354 @@
+Air Availability - Round Trip-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:AvailabilitySearchReq AuthorizedBy="SUSIL" TraceId="PP_1G_001" TargetBranch="P7102538" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="PHW"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="CPT"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-01"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="CPT"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="PHW"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-16"/>
+            <air:AirLegModifiers></air:AirLegModifiers>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers>
+            <air:PreferredProviders>
+               <com:Provider Code="1G"/>
+            </air:PreferredProviders>
+            <air:PermittedCarriers>
+               <com:Carrier Code="SA"/>
+            </air:PermittedCarriers>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+         <com:SearchPassenger Code="ADT"/>
+      </air:AvailabilitySearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Availability - Round Trip-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AvailabilitySearchRsp TraceId="PP_1G_001" TransactionId="9C16412B0A0764772606212BA1C32D92" ResponseTime="1437" DistanceUnits="MI" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:NextResultReference>H4sIAAAAAAAAAJ1UzWsTQRR/SRqtNVr8KlLxC0W9dDcfNmmsF61VK1GLKQopPUyzk+3Uzc52dpJuRQS96MWzKHgSC4J/gCB4bS+CiDfxID37B3iqb6abpGvRoHuYffPm937vc+btD0j6AvbNkyYxGpI5xgUhyFKJ+TJ4+Pnw8xXyMgGxCejx2T0aeAAQX+xRKxoNVXndsLP+IpPVOcO2fINYxJNU+Aae1LlrjAdSkKqc4nepW3r09Shb37Mch95p2EmEmGJ1qvxIyEyX0MBsUZlIVecWdcwNGlMhyx6tshqrEsm4O4oMFvU6DMUuDJcdGrBZh25lKikmXzJXbyXsLalSmA5xbbMsBXNthCRtwRuehH2bDidcSW0q8HRHnQuqc1yAB5AswTYumM1au5QneJNZVIxhRKEuKdvwwGuIsAKRYur4W4XcGvfrY7c/fXhWeBoH0G0BZCl2YflzFb68nzl36PHaTIsthu3N/x8XbHyxOMRK0O9TIqpzeg4ukSVfgvH3RpWj+NFAgPFvlen476nAAPMnBa1RQS0FvMHlFdbEWYRdnlaHegknomGF0agLYV4iUmeJnU75oSe1V93rx+5LlG/hRCDLme5zrJGjWGSs8PFIZmFC+hK2fHaS2VaBlIXaVgoV6GdukzhMJ1DhLq3Abl6r+VR2ICkZSbp3nltEUUs4WOLCNtXeVJhIkjIkvEE2kky2R2IAjQxlZChMO8p35wNrfvrbTzU9Ao5GQbPEp8ZFXFro9fWf32/OGK/iEL8G29l15jjMx2vIxuYEd7nD7SUJg7/F1zlTtYPYwscnlirh6aizqoYZE+WbHYOTZdmYfbO6p7ZQmDydUAPubwmyFZtKW+OXzdiL+9nBNY1f3AHbx2XVvHJ9Kgg8ZX6q60zqPnfal8C64mg7DN+aTcPT56DjiCY6mFqJLj0l7McXKDE2OYW/I7l0Ol1IZ7P5TB6/wlD2bDp9djhXzOeGR0bSiJu8egcjVWbxhlp79RuhpD7dTCWlQP/2thUHUBCDK6ugNoOh/eEN76e8kFV7z232nitk8qH3fLqYCaP0gl+Mm1tWXQYAAA==</common_v50_0:NextResultReference>
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="sQTWMC3R2BKAe+c7BAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="280" GroundTime="0" Equipment="J41" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAg+c7BAAAAA==" Origin="JNB" Destination="CPT" DepartureTime="2020-05-01T15:45:00.000+02:00" ArrivalTime="2020-05-01T17:55:00.000+02:00" FlightTime="130" TravelTime="280" GroundTime="0" Equipment="738" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAi+c7BAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="340" GroundTime="0" Equipment="J41" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAk+c7BAAAAA==" Origin="JNB" Destination="CPT" DepartureTime="2020-05-01T16:45:00.000+02:00" ArrivalTime="2020-05-01T18:55:00.000+02:00" FlightTime="130" TravelTime="340" GroundTime="0" Equipment="738" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAm+c7BAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="385" GroundTime="0" Equipment="J41" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAo+c7BAAAAA==" Origin="JNB" Destination="CPT" DepartureTime="2020-05-01T17:30:00.000+02:00" ArrivalTime="2020-05-01T19:40:00.000+02:00" FlightTime="130" TravelTime="385" GroundTime="0" Equipment="738" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAq+c7BAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="400" GroundTime="0" Equipment="J41" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAs+c7BAAAAA==" Origin="JNB" Destination="BFN" DepartureTime="2020-05-01T15:45:00.000+02:00" ArrivalTime="2020-05-01T16:45:00.000+02:00" FlightTime="60" TravelTime="400" GroundTime="0" Equipment="ER3" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAu+c7BAAAAA==" Origin="BFN" Destination="CPT" DepartureTime="2020-05-01T18:15:00.000+02:00" ArrivalTime="2020-05-01T19:55:00.000+02:00" FlightTime="100" TravelTime="400" GroundTime="0" Equipment="738"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAw+c7BAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="405" GroundTime="0" Equipment="J41" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAy+c7BAAAAA==" Origin="JNB" Destination="KIM" DepartureTime="2020-05-01T16:30:00.000+02:00" ArrivalTime="2020-05-01T17:40:00.000+02:00" FlightTime="70" TravelTime="405" GroundTime="0" Equipment="E90" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA0+c7BAAAAA==" Origin="KIM" Destination="CPT" DepartureTime="2020-05-01T18:25:00.000+02:00" ArrivalTime="2020-05-01T20:00:00.000+02:00" FlightTime="95" TravelTime="405" GroundTime="0" Equipment="ER3"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA2+c7BAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="425" GroundTime="0" Equipment="J41" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA4+c7BAAAAA==" Origin="JNB" Destination="BFN" DepartureTime="2020-05-01T15:45:00.000+02:00" ArrivalTime="2020-05-01T16:45:00.000+02:00" FlightTime="60" TravelTime="425" GroundTime="0" Equipment="ER3" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA6+c7BAAAAA==" Origin="BFN" Destination="CPT" DepartureTime="2020-05-01T18:40:00.000+02:00" ArrivalTime="2020-05-01T20:20:00.000+02:00" FlightTime="100" TravelTime="425" GroundTime="0" Equipment="CR2"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA8+c7BAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T06:00:00.000+02:00" ArrivalTime="2020-05-16T07:55:00.000+02:00" FlightTime="115" TravelTime="415" GroundTime="0" Equipment="320" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKA++c7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-05-16T11:45:00.000+02:00" ArrivalTime="2020-05-16T12:55:00.000+02:00" FlightTime="70" TravelTime="415" GroundTime="0" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAA/c7BAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T17:00:00.000+02:00" ArrivalTime="2020-05-16T18:55:00.000+02:00" FlightTime="115" TravelTime="1195" GroundTime="0" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAC/c7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1195" GroundTime="0" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAE/c7BAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T16:50:00.000+02:00" ArrivalTime="2020-05-16T18:45:00.000+02:00" FlightTime="115" TravelTime="1205" GroundTime="0" Equipment="320" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAG/c7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1205" GroundTime="0" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAI/c7BAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T15:55:00.000+02:00" ArrivalTime="2020-05-16T17:50:00.000+02:00" FlightTime="115" TravelTime="1260" GroundTime="0" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAK/c7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1260" GroundTime="0" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAM/c7BAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T15:05:00.000+02:00" ArrivalTime="2020-05-16T17:00:00.000+02:00" FlightTime="115" TravelTime="1310" GroundTime="0" Equipment="343" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAO/c7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1310" GroundTime="0" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAQ/c7BAAAAA==" Origin="CPT" Destination="DUR" DepartureTime="2020-05-16T13:15:00.000+02:00" ArrivalTime="2020-05-16T15:10:00.000+02:00" FlightTime="115" TravelTime="1420" GroundTime="0" Equipment="738"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAS/c7BAAAAA==" Origin="DUR" Destination="JNB" DepartureTime="2020-05-17T07:30:00.000+02:00" ArrivalTime="2020-05-17T08:35:00.000+02:00" FlightTime="65" TravelTime="1420" GroundTime="0" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAU/c7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1420" GroundTime="0" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAW/c7BAAAAA==" Origin="CPT" Destination="DUR" DepartureTime="2020-05-16T13:15:00.000+02:00" ArrivalTime="2020-05-16T15:10:00.000+02:00" FlightTime="115" TravelTime="1420" GroundTime="0" Equipment="738"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAY/c7BAAAAA==" Origin="DUR" Destination="JNB" DepartureTime="2020-05-17T08:30:00.000+02:00" ArrivalTime="2020-05-17T09:35:00.000+02:00" FlightTime="65" TravelTime="1420" GroundTime="0" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="sQTWMC3R2BKAa/c7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1420" GroundTime="0" Equipment="J41" OriginTerminal="B"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="sQTWMC3R2BKAf+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="280" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAe+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAh+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="2019" Origin="JNB" Destination="CPT" DepartureTime="2020-05-01T15:45:00.000+02:00" ArrivalTime="2020-05-01T17:55:00.000+02:00" FlightTime="130" TravelTime="280" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="149">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|K4|H4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAg+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAj+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="340" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAi+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAl+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="2021" Origin="JNB" Destination="CPT" DepartureTime="2020-05-01T16:45:00.000+02:00" ArrivalTime="2020-05-01T18:55:00.000+02:00" FlightTime="130" TravelTime="340" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="151">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|K4|H4|S4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAk+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAn+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="385" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAm+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAp+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="2005" Origin="JNB" Destination="CPT" DepartureTime="2020-05-01T17:30:00.000+02:00" ArrivalTime="2020-05-01T19:40:00.000+02:00" FlightTime="130" TravelTime="385" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="157">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="B4|M4|K4|H4|S4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAo+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAr+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="400" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAq+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAt+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8411" Origin="JNB" Destination="BFN" DepartureTime="2020-05-01T15:45:00.000+02:00" ArrivalTime="2020-05-01T16:45:00.000+02:00" FlightTime="60" TravelTime="400" ETicketability="Yes" Equipment="ER3" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L9|W4|G9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAs+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAv+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="2069" Origin="BFN" Destination="CPT" DepartureTime="2020-05-01T18:15:00.000+02:00" ArrivalTime="2020-05-01T19:55:00.000+02:00" FlightTime="100" TravelTime="400" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="413">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|K4|H4|S4|Q4|T4|V4|L4|W4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAu+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAx+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="405" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAw+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAz+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8427" Origin="JNB" Destination="KIM" DepartureTime="2020-05-01T16:30:00.000+02:00" ArrivalTime="2020-05-01T17:40:00.000+02:00" FlightTime="70" TravelTime="405" ETicketability="Yes" Equipment="E90" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L9|W9|G9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAy+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA1+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8618" Origin="KIM" Destination="CPT" DepartureTime="2020-05-01T18:25:00.000+02:00" ArrivalTime="2020-05-01T20:00:00.000+02:00" FlightTime="95" TravelTime="405" ETicketability="Yes" Equipment="ER3" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L9|G2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA0+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA3+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" Origin="PHW" Destination="JNB" DepartureTime="2020-05-01T13:15:00.000+02:00" ArrivalTime="2020-05-01T14:35:00.000+02:00" FlightTime="80" TravelTime="425" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA2+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA5+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="8411" Origin="JNB" Destination="BFN" DepartureTime="2020-05-01T15:45:00.000+02:00" ArrivalTime="2020-05-01T16:45:00.000+02:00" FlightTime="60" TravelTime="425" ETicketability="Yes" Equipment="ER3" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L9|W4|G9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA4+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA7+c7BAAAAA==" Group="0" Carrier="SA" FlightNumber="1058" Origin="BFN" Destination="CPT" DepartureTime="2020-05-01T18:40:00.000+02:00" ArrivalTime="2020-05-01T20:20:00.000+02:00" FlightTime="100" TravelTime="425" ETicketability="Yes" Equipment="CR2" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="XZ">SOUTH AFRICAN EXPRESS</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|Q9|T9|V6|S2|L2|W2|G2"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA6+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA9+c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="302" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T06:00:00.000+02:00" ArrivalTime="2020-05-16T07:55:00.000+02:00" FlightTime="115" TravelTime="415" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C9|J9|Z9|D9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L9|W9|G9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA8+c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKA/+c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-05-16T11:45:00.000+02:00" ArrivalTime="2020-05-16T12:55:00.000+02:00" FlightTime="70" TravelTime="415" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L7|W2|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKA++c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAB/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="2024" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T17:00:00.000+02:00" ArrivalTime="2020-05-16T18:55:00.000+02:00" FlightTime="115" TravelTime="1195" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="158">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="B4|M4|K4|H4|S4|Q4|T4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAA/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAD/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1195" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L7|W2|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAC/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAF/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="354" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T16:50:00.000+02:00" ArrivalTime="2020-05-16T18:45:00.000+02:00" FlightTime="115" TravelTime="1205" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C9|J9|Z9|D9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L9|W9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAE/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAH/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1205" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L7|W2|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAG/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAJ/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="2004" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T15:55:00.000+02:00" ArrivalTime="2020-05-16T17:50:00.000+02:00" FlightTime="115" TravelTime="1260" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="156">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|K4|H4|S4|Q4|T4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAI/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAL/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1260" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L7|W2|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAK/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAN/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="346" Origin="CPT" Destination="JNB" DepartureTime="2020-05-16T15:05:00.000+02:00" ArrivalTime="2020-05-16T17:00:00.000+02:00" FlightTime="115" TravelTime="1310" ETicketability="Yes" Equipment="343" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Business" BookingCounts="C9|J9|Z9|D9"/>
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|V9|L9"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAM/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAP/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1310" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L7|W2|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAO/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAR/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="2118" Origin="CPT" Destination="DUR" DepartureTime="2020-05-16T13:15:00.000+02:00" ArrivalTime="2020-05-16T15:10:00.000+02:00" FlightTime="115" TravelTime="1420" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="348">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|K4|H4|S4|Q4|T4|V4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAQ/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAT/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="2032" Origin="DUR" Destination="JNB" DepartureTime="2020-05-17T07:30:00.000+02:00" ArrivalTime="2020-05-17T08:35:00.000+02:00" FlightTime="65" TravelTime="1420" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="242">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="B4|M4|K4|H4|S4|Q4|T4|V4|L4|W4|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAS/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAV/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1420" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L7|W2|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAU/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAX/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="2118" Origin="CPT" Destination="DUR" DepartureTime="2020-05-16T13:15:00.000+02:00" ArrivalTime="2020-05-16T15:10:00.000+02:00" FlightTime="115" TravelTime="1420" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="348">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y4|B4|M4|K4|H4|S4|Q4|T4|V4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAW/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAZ/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="2048" Origin="DUR" Destination="JNB" DepartureTime="2020-05-17T08:30:00.000+02:00" ArrivalTime="2020-05-17T09:35:00.000+02:00" FlightTime="65" TravelTime="1420" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="248">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="B4|M4|K4|H4|S4|Q4|T4|V4|L4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAY/c7BAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="sQTWMC3R2BKAb/c7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-05-17T11:45:00.000+02:00" ArrivalTime="2020-05-17T12:55:00.000+02:00" FlightTime="70" TravelTime="1420" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G">
+                  <air:BookingCodeInfo CabinClass="Economy" BookingCounts="Y9|B9|M9|K9|H9|S9|Q9|T9|V9|L7|W2|G4"/>
+               </air:AirAvailInfo>
+               <air:FlightDetailsRef Key="sQTWMC3R2BKAa/c7BAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:AirItinerarySolution Key="sQTWMC3R2BKAc/c7BAAAAA==">
+            <air:AirSegmentRef Key="sQTWMC3R2BKAf+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAh+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAj+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAl+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAn+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAp+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAr+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAt+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAv+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAx+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAz+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA1+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA3+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA5+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA7+c7BAAAAA=="/>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="2"/>
+            <air:Connection SegmentIndex="4"/>
+            <air:Connection SegmentIndex="6"/>
+            <air:Connection SegmentIndex="7"/>
+            <air:Connection SegmentIndex="9"/>
+            <air:Connection SegmentIndex="10"/>
+            <air:Connection SegmentIndex="12"/>
+            <air:Connection SegmentIndex="13"/>
+         </air:AirItinerarySolution>
+         <air:AirItinerarySolution Key="sQTWMC3R2BKAd/c7BAAAAA==">
+            <air:AirSegmentRef Key="sQTWMC3R2BKA9+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKA/+c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAB/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAD/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAF/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAH/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAJ/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAL/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAN/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAP/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAR/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAT/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAV/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAX/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAZ/c7BAAAAA=="/>
+            <air:AirSegmentRef Key="sQTWMC3R2BKAb/c7BAAAAA=="/>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="2"/>
+            <air:Connection SegmentIndex="4"/>
+            <air:Connection SegmentIndex="6"/>
+            <air:Connection SegmentIndex="8"/>
+            <air:Connection SegmentIndex="10"/>
+            <air:Connection SegmentIndex="11"/>
+            <air:Connection SegmentIndex="13"/>
+            <air:Connection SegmentIndex="14"/>
+         </air:AirItinerarySolution>
+      </air:AvailabilitySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

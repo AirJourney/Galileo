@@ -1,0 +1,44 @@
+Air Asynch LowFareSearch-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:LowFareSearchAsynchReq TargetBranch="P7102538" SolutionResult="true" TraceId="PP_1G_001" AuthorizedBy="SUSIL" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:CityOrAirport Code="LHR"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:CityOrAirport Code="JFK"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-05-31"/>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:CityOrAirport Code="JFK"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:CityOrAirport Code="LHR"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-06-05"/>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers DistanceType="MI" IncludeFlightDetails="true">
+            <air:DisfavoredProviders>
+               <com:Provider Code="RCH"/>
+            </air:DisfavoredProviders>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+      </air:LowFareSearchAsynchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Asynch LowFareSearch-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:LowFareSearchAsynchRsp TraceId="PP_1G_001" TransactionId="9DCDD5E00A07643CAB0E0A7CB6877C7C" ResponseTime="331" DistanceUnits="MI" SearchId="9DCDD5E00A07643CAB0E0A7CB6877C7C_RLHRJFK31May20JFKLHR05Jun20tftnull300-1-1MInullfADTff1788086" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Error" ProviderCode="1G"/>
+         <air:AsyncProviderSpecificResponse ProviderCode="1G" MoreResults="false"/>
+      </air:LowFareSearchAsynchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

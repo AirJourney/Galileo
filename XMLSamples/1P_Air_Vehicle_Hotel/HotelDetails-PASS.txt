@@ -1,0 +1,1252 @@
+HotelDetails-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Body>
+      <hotel:HotelDetailsReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" TraceId="PP_1P_001" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hotel:HotelProperty HotelChain="LC" HotelCode="1540" Name="ITC GRAND CENTRAL MUMBAI" VendorLocationKey="sQTWMC3R2BKAR80FCAAAAA==" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKAR ROA PARE</hotel:Address>
+                  <hotel:Address>MUMBAI MH 400012</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="91 22 24101111"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="91 22 24101010"/>
+               <common_v50_0:Distance Units="MI" Value="2" Direction="N"/>
+            </hotel:HotelProperty>
+         <hotel:HotelDetailsModifiers RateRuleDetail="Complete" NumberOfAdults="1" NumberOfRooms="1">
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+            </hotel:HotelStay>
+         </hotel:HotelDetailsModifiers>
+      </hotel:HotelDetailsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelDetails-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelDetailsRsp TraceId="PP_1P_001" TransactionId="9DCF2F250A07643CAB0E0A7C7B491F43" ResponseTime="485" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">0000000 NO DATA THIS KEYWORD-18</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">0000000 NO DATA THIS KEYWORD-24</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">0000000 NO DATA THIS KEYWORD-25</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">0000000 NO DATA THIS KEYWORD-26</common_v50_0:ResponseMessage>
+         <hotel:RequestedHotelDetails>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="1540" HotelLocation="BOM" Name="ITC GRAND CENTRAL MUMBAI" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKAR ROA PARE</hotel:Address>
+                  <hotel:Address>MUMBAI MH 400012</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="91 22 24101111"/>
+               <common_v50_0:PhoneNumber Type="Hotel" Number="91 22 24101010"/>
+            </hotel:HotelProperty>
+            <hotel:HotelDetailItem Name="BUSINESS AND MEETING SERVICES (19)">
+               <hotel:Text>BUSINESS SERVICES INCOMING FAX COMPLIMENTARY</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CANCELLATION/REFUND (09)">
+               <hotel:Text>** SEE RATE RULES FOR CANCELLATION/REFUND INFORMATION **</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CORPORATE LOCATIONS (17)">
+               <hotel:Text>ACCENTURE 7.00 KILOMETER AMERICAN EXPRESS BANK 3.00 KILOMETER CADBURY INDIA LTD. 3.00 KILOMETER CHHATRAPATI SHIVAJI INTERNATIONAL AIRPORT MUMBAI 15.00 KILOMETER N CHHATRAPATI SHIVAJI TERMINUS VICTORIA TERMINUS 4.00 KILOMETER CISCO SYSTEMS 4.00 KILOMETER CITIBANK 4.00 KILOMETER DEUTSCHE BANK 2.00 KILOMETER ERNST YOUNG 7.00 KILOMETER FLORA FOUNTAIN/FORT 5.00 KILOMETER GSK INDIA LTD. - GLAXO SMITHKLINE 3.00 KILOMETER HUTCHISON MAX TELECOM PVT. LTD. 2.00 KILOMETER IBM 4.00 KILOMETER INTEL 7.00 KILOMETER J. WALTER THOMPSON INDIA LTD. 2.00 KILOMETER JOHNSON AND JOHNSON 3.00 KILOMETER KPMG INDIA PVT. LTD. 2.00 KILOMETER KODAK 4.00 KILOMETER MTV INDIA LTD. 0.30 KILOMETER MCKINSEY CO. 7.00 KILOMETER MICROSOFT CORPORATION 7.00 KILOMETER MUMBAI 5.30 KILOMETER S NARIMAN POINT 8.05 KILOMETER NOVARTIS PHARMACEUTICALS 3.00 KILOMETER OGILVY MATHER INDIA LTD. 2.00 KILOMETER PRABHADEVI 2.00 KILOMETER SIEMENS INDIA LTD. 2.00 KILOMETER STANDARD CHARTERED BANK 2.00 KILOMETER STAR TV INDIA LTD. 3.00 KILOMETER STOCK EXCHANGE 6.44 KILOMETER SUN MICROSYSTEMS 4.00 KILOMETER WORLD TRADE CENTER 9.66 KILOMETER</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CREDIT CARDS (08)">
+               <hotel:Text>IK - INTERBANK MASTER CARD CA - MASTERCARD AX - AMERICAN EXPRESS VI - VISA DC - DINERS CLUB</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CheckInTime">
+               <hotel:Text>1400</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CheckOutTime">
+               <hotel:Text>1200</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="DINING (21)">
+               <hotel:Text>ROOM SERVICE POINT OF VIEW CUISINE TYPE - CAJUN NESTLED ON THE ROOFTOP THIS INVITING SPLIT-LEVEL LOUNGE OFFERS A LUXURIANT RETREAT WITH BREATHTAKING VIEWS OF THE CITY AND SEA. ITS ATTENTION TO DETAIL AND CARING ATTITUDE PROVIDE AN IDEAL ATMOSPHERE FOR INFORMAL OR FORMAL BUSINESS MEETINGS. KEBABS KURRIES CUISINE TYPE - INDIAN KEBABS KURRIES IS AN EXCLUSIVE INDIAN RESTAURANT SHOWCASING SCRUMPTIOUS HERITAGE CUISINE FINE-TUNED THROUGH YEARS OF RESEARCH BY THE CELEBRATED CHEFS OF ITC HOTELS. FREDERICKS LOUNGE CUISINE TYPE - CAJUN ATTIRE - CASUAL A LOBBY LEVEL LOUNGE OVERLOOKING THE CHARACTERFUL MILLSQUARE FREDERICKS LOUNGE OFFERS THE IDEAL SPOT FOR INFORMAL BUSINESS MEETINGS OR A CASUAL SIT BACK WITH FRIENDS. SHANGHAI CLUB CUISINE TYPE - CHINESE BE TRANSPORTED TO THE ORIENT AT THE SHANGHAI CLUB WHERE YOU WILL DISCOVER A DELICATE BALANCE BETWEEN YING AND YANG INGREDIENTS FROM OUR EXPATRIATE MASTER CHEF. DUBLIN CUISINE TYPE - CAJUN DUBLIN IS OUR TRENDY YET TRADITIONAL IRISH PUB OFFERING AN INTIMATE AND INFORMAL ATMOSPHERE. CLASSIC AND MODERN COCKTAIL MIXES AND DELECTABLE BAR SNACKS ARE SERVED IN A STIMULATING AMBIENCE. HORNBYS PAVILLION HORNBYS PAVILION IS AN INNOVATIVE AND STYLISH RESTAURANT OFFERING COSMOPOLITAN MENUS WITH SEASONAL TWISTS AS WELL AS TRADITIONAL INDIAN FAVOURITES. A SPECTACULAR BUFFET TAKES CENTRE STAGE AND ADDS TO THE CULINARY DRAMA.</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="DIRECTIONS (16)">
+               <hotel:Text>HOTEL IS NORTH OF CHHATRAPATI SHIVAJI INTERNATIONAL AIRPORT MUMBAI</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="EXTRAS/OPTIONS (10)">
+               <hotel:Text>TAXES AND SURCHARGES TAX INFORMATION TOTAL TAX 18.00 PCT PER ROOM PER NIGHT MISCELLANEOUS CHARGES EXTRA ADULT CHARGE INR 0.00 EXTRA CHILD CHARGE INR 0.00</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="FACILITIES (12)">
+               <hotel:Text>ON SITE FACILITIES - PARKING INCLUDED FACILITIES HEALTH CLUB                 SAUNA STEAM BATH                  ON-SITE PARKING ICE MACHINE                 POOL PARKING                     ELEVATORS PUBLIC AREA AIR CONDITIONED INTERIOR CORRIDORS          FREE PARKING ACCESSIBLE FACILITIES       INDOOR POOL EXERCISE GYM                NON-SMOKING ROOMS CHARGEABLE FACILITIES WIRELESS INTERNET CONNECTION IN PUBLIC AREAS GIFT/NEWS STAND             SHOE SHINE STAND RESTAURANT                  ONSITE LAUNDRY LOUNGES/BARS                SPA COFFEE SHOP                 BUSINESS CENTER HIGH SPEED INTERNET ACCESS OFF SITE FACILITIES - CHARGEABLE FACILITIES BOOKSTORE</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="LOCATION (15)">
+               <hotel:Text>CHHATRAPATI SHIVAJI INTERNATIONAL AIRPORT MUMBAI 15.00 KILOMETER N PRIMARY LOCAL POINT OF INTEREST - MUMBAI BANDRA KURLA COMPLEX 10.10 KILOMETER BANGANGA 11.60 KILOMETER CHHATRAPATI SHIVAJI TERMINUS CST/VT 6.00 KILOMETER CHOR BAZAAR 4.00 KILOMETER CUFFE PARADE 12.70 KILOMETER DHOBI GHAT 4.30 KILOMETER GATEWAY OF INDIA 11.40 KILOMETER HAJI ALIS TOMB 6.80 KILOMETER HANGING GARDEN BOOT HOUSE 8.70 KILOMETER HIGH STREET PHOENIX 3.22 KILOMETER JUHU BEACH 12.70 KILOMETER KPMG INDIA PVT. LTD. 2.90 KILOMETER MALABAR HILL 10.10 KILOMETER MINT 9.30 KILOMETER MUMBAI MUMBAI CENTRAL 3.00 KILOMETER MUMBAI MUNICIPAL CORPORATION BUILDING MMCB 8.70 KILOMETER NEHRU SCIENCE CENTRE 4.80 KILOMETER PENINSULA CORPORATE PARK 3.30 KILOMETER PRINCE OF WALES MUSEUM 6.44 KILOMETER RAJABHAI TOWERS 10.10 KILOMETER VICTORIA GARDENS AND MUSEUM 3.00 KILOMETER WORLI 3.22 KILOMETER</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="POLICY (07)">
+               <hotel:Text>GUARANTEE POLICY INFORMATION SEE INDIVIDUAL RATE AND RULES FOR GUARANTEE DEPOSIT POLICY CANCEL POLICY INFORMATION CANCEL POLICY MAY BE MORE RESTRICTIVE BASED ON RATE / ROOM BOOKED SEASON SPECIAL EVENTS CREDIT CARDS ACCEPTED CREDIT CARDS ACCEPTED FOR GUARANTEE IK - INTERBANK MASTER CARD CA - MASTERCARD VI - VISA AX - AMERICAN EXPRESS DC - DINERS CLUB CREDIT CARDS ACCEPTED FOR DEPOSIT IK - INTERBANK MASTER CARD CA - MASTERCARD AX - AMERICAN EXPRESS VI - VISA DC - DINERS CLUB CREDIT CARDS ACCEPTED FOR PAYMENT IK - INTERBANK MASTER CARD CA - MASTERCARD DC - DINERS CLUB AX - AMERICAN EXPRESS VI - VISA</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="PROPERTY DESCRIPTION (14)">
+               <hotel:Text>PROPERTY CATEGORY SPA                          HOTEL EXTENDED STAY                MEETING/CONVENTION PROPERTY TYPE CORPORATE BUSINESS TRANSIENT LUXURY EXTENDED STAY YEAR BUILT - 2004 ADDITIONAL PROPERTY DESCRIPTION ITC GRAND CENTRAL EXPRESSES ITS CHARACTER THROUGH A FINE BLEND OF RAJ ERA AND CONTEMPORARY DESIGN.WITH ELEGANTLY APPOINTED ROOMS AND LUXURY SUITES GUESTS ENJOY A PANORAMIC VIEW OF MUMBAI AND THE SEA. NESTLED IN OUR SKYZONE FLOORS ARE THE SPACIOUS EXECUTIVE CLUBITC ONE AND THE TOWERS ROOMSOFFERING THE FINEST IN-ROOM FACILITIES AND SERVICES THROUGH A HIGHLY TRAINED TEAM OF DEDICATED BUTLERSWITH DAILY COMPLIMENTARY BREAKFAST TEA COFFEE REFRESHMENTS AND COCKTAIL HOUR SELECT GUESTS HAVE ACCESS TO POINT OF VIEW THE ROOFTOP PREMIUM LOUNGE RESERVED EXCLUSIVELY FOR IN-HOUSE GUESTS. THIS WARMSPLIT-LEVEL LOUNGE OFFERS A LUXURIANT RETREAT WITH A BREATHTAKING 360-DEGREE VIEW OF THE CITY. KAYA KALP THE SPA CONSISTS OF TREATMENT ROOMS AN INDOOR SWIMMING POOL A GYM AND SALON. THE EXECUTIVE CLUB ROOMS PIONEER A TRADITION OF CORPORATE HOSPITALITY AND THE SPECIALLY DESIGNED EVA ROOMS CATER TO THE NEEDS OF THE SINGLE LADY TRAVELLER. THE HOTEL HOUSES 2 SPECIALITY RESTAURANTSA 247 COFFEE SHOP AND A BAR</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="RECREATION (22)">
+               <hotel:Text>ON SITE RECREATIONAL ACTIVITY INFORMATION ON SITE RECREATIONAL ACTIVITIES - NOT INCLUDED FITNESS CENTER ON-SITE- ONSITE GYM- ONSITE HEALTH CLUB- ONSITE INDOOR POOL POOL SPA- ONSITE OFF SITE RECREATIONAL ACTIVITY INFORMATION OFF SITE RECREATIONAL ACTIVITIES - NOT INCLUDED BEACH- NEARBY CHILDREN PROGRAM OFFSITE- NEARBY</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="ROOM DESCRIPTIONS (23)">
+               <hotel:Text>ROOM DESCRIPTIONS CORPORATE BUSINESS TRANSIENT LUXURY EXTENDED STAY TOTAL ROOMS - 240 SUITES - 2 FLOORS - 30 TOTAL ROOMS AND SUITES - 242 ACCESSIBILITY FEATURES ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR DISABLED PERSON GR1-GUEST ROOM MAX OCCUPANCY  2 THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS IN THIS HOTEL SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR CONDITIONING INDIVIDUALLY CONTROLLED IN ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS CHANNEL/DESK WITH ELECTRICAL OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE CONTROL TELEVISION/ELECTRICAL CURRENT VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED - BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="SAFETY (20)">
+               <hotel:Text>ROOM SAFETY AND SECURITY GRAB BARS IN BATHROOM- ALL ROOMS/SUITES RAISED TOILET SEAT WITH GRAB BARS ROLL-IN SHOWER AVAILABLE- SOME ROOMS/SUITES TOILET SEAT IN GUEST ROOMS FOR DISABLED PERSON- SOME ROOMS/SUITES</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="SERVICES (13)">
+               <hotel:Text>ON SITE SERVICES - INCLUDED SERVICES COMPLIMENTARY FULL AMERICAN BREAKFAST COMPLIMENTARY IN-ROOM COFFEE OR TEA VALET PARKING               COMPLIMENTARY SHOESHINE TURNDOWN SERVICE            BUFFET BREAKFAST FULL SERVICE HOUSEKEEPING   CONCIERGE DESK 24-HOUR ROOM SERVICE        FLORIST BOARDING PASS PRINT-OUT AVAILABLE 24-HOUR FRONT DESK          HOUSEKEEPING - DAILY COMPLIMENTARY BUFFET BREAKFAST COMPLIMENTARY NEWSPAPER DELIVERED TO ROOM SECURITY                    WEDDING SERVICES COMPLIMENTARY NEWSPAPER IN LOBBY WAKEUP SERVICE              FRONT DESK CHARGEABLE SERVICES CURRENCY EXCHANGE           BUSINESS SERVICES VALET SAME DAY DRY CLEANING ROOM SERVICE - FULL MENU    LAUNDRY/VALET SERVICE VALET CLEANING              ROOM SERVICE HAIRDRESSER/BARBER</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="TRANSPORTATION (11)">
+               <hotel:Text>TRANSPORTATION FROM CHHATRAPATI SHIVAJI INTERNATIONAL AIRPORT MUMBAI TO PROPERTY TRANSPORTATION FROM MUMBAI TO PROPERTY OTHER OR ALTERNATE TAXI OLA UBER TAXI TRAIN BUS AND OTHER PUBLIC TRANSPORT SHUTTLE 772.00 INR TRANSPORTATION FROM MUMBAI TO PROPERTY WALK SHUTTLE 772.00 INR</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelRateDetail RatePlanType="APND00" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Executive Club  Guest Room  1 King Or Twin</hotel:Text>
+                  <hotel:Text>Single Bed-s-</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Prepay In Full  Non-refundable  No Changes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel">
+                  <hotel:Text>Please reference the Cancellation Policy in Hotel Rules.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR11250.00" ApproximateBase="USD159.11"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGA00" RateGuaranteed="true" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules  Executive Club  Guest Room  1 King Or</hotel:Text>
+                  <hotel:Text>Twin Single Bed-s-</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate  Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR12500.00" ApproximateBase="USD176.79"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="APNN00" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Non-refundable  No Changes  Executive Club</hotel:Text>
+                  <hotel:Text>Exclusive  Executive Lounge Access  Skyline</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate  Prepay In Full</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel">
+                  <hotel:Text>Please reference the Cancellation Policy in Hotel Rules.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR12600.00" ApproximateBase="USD178.20"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="APNO00" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Non-refundable  No Changes  The Towers  Tower</hotel:Text>
+                  <hotel:Text>Lounge Access Level  Guest Room  Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate  Prepay In Full</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel">
+                  <hotel:Text>Please reference the Cancellation Policy in Hotel Rules.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR13950.00" ApproximateBase="USD197.29"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGD00" RateGuaranteed="true" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules  Executive Club Exclusive  Executive</hotel:Text>
+                  <hotel:Text>Lounge Access  Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate  Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR14000.00" ApproximateBase="USD198.00"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGE00" RateGuaranteed="true" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules  The Towers  Tower Lounge Access Level</hotel:Text>
+                  <hotel:Text>Guest Room  Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate  Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR15500.00" ApproximateBase="USD219.22"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="BUYM00" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Non-refundable  No Changes  Itc One  Larger</hotel:Text>
+                  <hotel:Text>Guest Room  1 King  Mumbai Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate  Prepay In Full</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel">
+                  <hotel:Text>Please reference the Cancellation Policy in Hotel Rules.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR16650.00" ApproximateBase="USD235.48"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGF00" RateGuaranteed="true" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules  Itc One  Larger Guest Room  1 King</hotel:Text>
+                  <hotel:Text>Mumbai Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate  Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR18500.00" ApproximateBase="USD261.65"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="XMIA00" RateGuaranteed="true" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>And Older Valid Id Required  Executive Club</hotel:Text>
+                  <hotel:Text>Guest Room  1 King Or Twin Single Bed-s-</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Marriott Senior Discount  Includes 62 Years</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR10625.00" ApproximateBase="USD150.27"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="BFKE00" RateGuaranteed="true" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Daily  See Rate Rules  The Towers  Tower Lounge</hotel:Text>
+                  <hotel:Text>Access Level  Guest Room  Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>The Long Stay Special  Includes Breakfast</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR15500.00" ApproximateBase="USD219.22"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-05-01T18:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="ZZLO00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Culinary Break  Executive Club  Guest Room</hotel:Text>
+                  <hotel:Text>1 King Or Twin Single Bed-s-</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR14000.00" ApproximateBase="USD198.00"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="ZZLQ00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>CULINARY BREAK  EXECUTIVE CLUB EXCLUSIVE</hotel:Text>
+                  <hotel:Text>EXECUTIVE LOUNGE ACCESS  SKYLINE VIEW</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR15500.00" ApproximateBase="USD219.22"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="ZZLR00" RateGuaranteed="true" RateChangeIndicator="true">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Access Level  Guest Room  Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>Culinary Break  The Towers  Tower Lounge</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR17000.00" ApproximateBase="USD240.43"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="ZZLS00" RateGuaranteed="true" RateChangeIndicator="false">
+               <hotel:RoomRateDescription Name="Total Includes">
+                  <hotel:Text>Hotel Total Base Rate, Total Tax and Total Amount are not returned by the Provider</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Culinary Break  Itc One  Larger Guest Room</hotel:Text>
+                  <hotel:Text>1 King  Mumbai Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancel Policy Exist">
+                  <hotel:Text>Yes</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Room Detail">
+                  <hotel:Text>ROOM DESCRIPTIONS</hotel:Text>
+                  <hotel:Text>CORPORATE BUSINESS TRANSIENT</hotel:Text>
+                  <hotel:Text>LUXURY</hotel:Text>
+                  <hotel:Text>EXTENDED STAY</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS - 240</hotel:Text>
+                  <hotel:Text>SUITES - 2</hotel:Text>
+                  <hotel:Text>FLOORS - 30</hotel:Text>
+                  <hotel:Text>TOTAL ROOMS AND SUITES - 242</hotel:Text>
+                  <hotel:Text>ACCESSIBILITY FEATURES</hotel:Text>
+                  <hotel:Text>ROLL-IN SHOWER AVAILABLE/GRAB BARS IN BATHROOM/RAISED</hotel:Text>
+                  <hotel:Text>TOILET SEAT WITH GRAB BARS/TOILET SEAT IN GUEST ROOMS FOR</hotel:Text>
+                  <hotel:Text>DISABLED PERSON</hotel:Text>
+                  <hotel:Text>GR1-GUEST ROOM</hotel:Text>
+                  <hotel:Text>MAX OCCUPANCY  2</hotel:Text>
+                  <hotel:Text>THE AMENITIES LISTED IN THIS DESCRIPTION REPRESENT A</hotel:Text>
+                  <hotel:Text>SAMPLE OF AMENITIES AVAILABLE IN SOME OR ALL GUEST ROOMS</hotel:Text>
+                  <hotel:Text>IN THIS HOTEL</hotel:Text>
+                  <hotel:Text>SPARE ELECTRICAL OUTLET AVAILABLE AT DESK/DOUBLE</hotel:Text>
+                  <hotel:Text>VANITY/HBO AVAILABLE/SMOKING/WALK-IN CLOSET/MINIBAR/VOICE</hotel:Text>
+                  <hotel:Text>MAIL/WIRELESS INTERNET CONNECTION/HIGH SPEED WIRELESS/AIR</hotel:Text>
+                  <hotel:Text>CONDITIONING INDIVIDUALLY CONTROLLED IN</hotel:Text>
+                  <hotel:Text>ROOM/REFRIGERATOR/CONVERTERS/ VOLTAGE</hotel:Text>
+                  <hotel:Text>ADAPTORS/DUVET/SLIPPERS/ESPN AVAILABLE/COFFEE/TEA</hotel:Text>
+                  <hotel:Text>MAKER/CLOSETS IN ROOM/PREMIUM MOVIE CHANNELS/FEATHER</hotel:Text>
+                  <hotel:Text>BED/STORAGE SPACE/AIR CONDITIONING/INSTANT HOT</hotel:Text>
+                  <hotel:Text>WATER/REFRIGERATOR WITH ICE MAKER/BOTTLED WATER/COLOR</hotel:Text>
+                  <hotel:Text>TELEVISION/LIGHTED MAKEUP MIRROR/CD PLAYER/ALL NEWS</hotel:Text>
+                  <hotel:Text>CHANNEL/DESK WITH ELECTRICAL</hotel:Text>
+                  <hotel:Text>OUTLET/MINI-REFRIGERATOR/WEIGHT SCALE/CABLE</hotel:Text>
+                  <hotel:Text>TELEVISION/SEPARATE MODEM LINE AVAILABLE/TWO-LINE</hotel:Text>
+                  <hotel:Text>PHONE/TURN DOWN SERVICE/INTERNET ACCESS/LARGE</hotel:Text>
+                  <hotel:Text>DESK/SPEAKER PHONE/LAUNDRY BASKET/CLOTHES HAMPER/REMOTE</hotel:Text>
+                  <hotel:Text>CONTROL TELEVISION/ELECTRICAL CURRENT</hotel:Text>
+                  <hotel:Text>VOLTAGE/DOWN/FEATHER PILLOWS/HIGH SPEED INTERNET</hotel:Text>
+                  <hotel:Text>CONNECTION/STEREO/INTERNATIONAL CHANNELS/CNN</hotel:Text>
+                  <hotel:Text>AVAILABLE/SATELLITE RADIO/BATHTUB/SHOWER</hotel:Text>
+                  <hotel:Text>COMBINATION/SILVERWARE/UTENSILS/AM/FM RADIO/CHAIR</hotel:Text>
+                  <hotel:Text>PROVIDED WITH DESK/DVD PLAYER/MULTI-LINE</hotel:Text>
+                  <hotel:Text>PHONE/IRON/CORDLESS PHONE/MEAL INCLUDED -</hotel:Text>
+                  <hotel:Text>BREAKFAST/ELECTRICAL ADAPTORS AVAILABLE/FOAM</hotel:Text>
+                  <hotel:Text>PILLOWS/PILLOW TOP MATTRESS/HAIRDRYER/MARBLE</hotel:Text>
+                  <hotel:Text>BATHROOM/PHONE IN BATHROOM/MICROWAVE/LOCAL CALLS/FREE</hotel:Text>
+                  <hotel:Text>MOVIES/VIDEO/BATHROBE/SAFE/PANTRY/KITCHENETTE/TELEPHONE/PR</hotel:Text>
+                  <hotel:Text>IVATE BATHROOM/FREE TOLL FREE CALLS/POTS AND PANS/TABLES</hotel:Text>
+                  <hotel:Text>AND CHAIRS/SEPARATE CLOSET</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR21000.00" ApproximateBase="USD297.00"/>
+               <hotel:AcceptedPayment PaymentCode="IK"/>
+               <hotel:AcceptedPayment PaymentCode="AX"/>
+               <hotel:AcceptedPayment PaymentCode="DC"/>
+               <hotel:AcceptedPayment PaymentCode="IB"/>
+               <hotel:AcceptedPayment PaymentCode="CA"/>
+               <hotel:AcceptedPayment PaymentCode="VI"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27">
+                     <hotel:Percentage>18.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+               <hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-29T00:00:00.000+00:00"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:ExtraCharges ExtraAdultAmount="USD0.00" ExtraChildAmount="USD0.00" CribAmount="USD0.00" AdultRollawayCharge="USD0.00" ChildRollawayCharge="USD0.00"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="false"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:RequestedHotelDetails>
+      </hotel:HotelDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

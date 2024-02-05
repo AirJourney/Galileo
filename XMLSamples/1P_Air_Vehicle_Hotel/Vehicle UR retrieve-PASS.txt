@@ -1,0 +1,74 @@
+Vehicle UR retrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordRetrieveReq TargetBranch="TP_1P_SOA" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <univ:UniversalRecordLocatorCode>0SQAI8</univ:UniversalRecordLocatorCode>
+      </univ:UniversalRecordRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle UR retrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordRetrieveRsp TransactionId="7D9452C60A07643C11981EA1120FB914" ResponseTime="395" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <universal:UniversalRecord LocatorCode="0SQAI8" Version="0" Status="Active">
+            <common_v50_0:BookingTraveler Key="2A5ezQhlRHeH8y/fwYDPhA==" NameNumber="1.1" TravelerType="ADT" Age="38" VIP="false" DOB="1980-02-22" Gender="M">
+               <common_v50_0:BookingTravelerName Prefix="MR" First="TEST" Middle="TEST" Last="TEST" Suffix="SR"/>
+               <common_v50_0:DeliveryInfo Type="Importatnt" SignatureRequired="Yes" TrackingNumber="4565">
+                  <common_v50_0:ShippingAddress Key="2A5ezQhlRHeH8y/fwYDPhA==">
+                     <common_v50_0:AddressName>Test Building</common_v50_0:AddressName>
+                     <common_v50_0:Street>St. Havana Street</common_v50_0:Street>
+                     <common_v50_0:City>Englewood</common_v50_0:City>
+                     <common_v50_0:State>Colorado</common_v50_0:State>
+                     <common_v50_0:PostalCode>80112</common_v50_0:PostalCode>
+                     <common_v50_0:Country>US</common_v50_0:Country>
+                     <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+                  </common_v50_0:ShippingAddress>
+                  <common_v50_0:PhoneNumber Key="WbWrlFoCQpmpssiH2btN7Q==" Type="Business" Location="Den" CountryCode="005" Number="25852589" Extension="1234" AreaCode="555" Text="Test Phone"/>
+                  <common_v50_0:Email Key="fK3ZnTdKQwiQnvJHmw4GLA==" Type="Home" Comment="Test Email" EmailID="TEST.ONly@test.COM">
+                     <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+                  </common_v50_0:Email>
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:DeliveryInfo>
+               <common_v50_0:PhoneNumber Key="0DjwH4fFTjiMlGNyzVfSFA==" Type="Business" Location="FRA" CountryCode="889" Number="84562584" Extension="1584" AreaCode="7896" Text="TestForWorkPhone">
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="l1XXy7udS0OVYWfTdylFMQ==" Type="Work" Comment="TEST EMAIL" EmailID="NewTEST.ONly@test.COM">
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:NameRemark Key="uG1M9B7Q2BKApdeDAAAAAA==">
+                  <common_v50_0:RemarkData>22FEB80</common_v50_0:RemarkData>
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:NameRemark>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="uG1M9B7Q2BKAkdeDAAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="uG1M9B7Q2BKAldeDAAAAAA==" ProviderCode="1P">
+               <common_v50_0:Remark>00</common_v50_0:Remark>
+            </common_v50_0:ActionStatus>
+            <universal:ProviderReservationInfo Key="uG1M9B7Q2BKAldeDAAAAAA==" ProviderCode="1P" LocatorCode="OE7F5N" CreateDate="2020-02-25T18:19:48.500+00:00" ModifiedDate="2020-02-25T18:19:48.500+00:00" HostCreateDate="2020-02-25" HostCreateTime="18:19:00.000+00:00" OwningPCC="XUF" AgentOverride="RS"/>
+            <vehicle:VehicleReservation SupplierCode="SX" BookingConfirmation="9889862991" LocatorCode="0097WPFH" Status="HK" CreateDate="2020-02-25T18:19:48.476+00:00" ModifiedDate="2020-02-25T18:19:48.500+00:00" ProviderReservationInfoRef="uG1M9B7Q2BKAldeDAAAAAA==" TravelOrder="1" ProviderSegmentOrder="1">
+               <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+               <common_v50_0:ReservationName>
+                  <common_v50_0:NameOverride First="TEST" Last="TEST"/>
+               </common_v50_0:ReservationName>
+               <vehicle:VehicleDateLocation PickupDateTime="2020-04-25T10:00:00.000+01:00" PickupLocation="LHR" PickupLocationType="Terminal" PickupLocationNumber="01" ReturnDateTime="2020-05-10T10:00:00.000+01:00" ReturnLocation="LHR"/>
+               <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Mini" Category="Car" DoorCount="TwoToThreeDoors" VendorName="SIXT GMBH" AcrissVehicleCode="MBMR">
+                  <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateCode="DU2" RateGuaranteed="true" RateGuaranteeType="Rate Guaranteed">
+                     <vehicle:SupplierRate RateForPeriod="GBP19.25" BaseRate="GBP19.25"/>
+                     <vehicle:VehicleRateDescription>
+                        <vehicle:Text>ESTIMATED TTL AMOUNT 415.80 GBP</vehicle:Text>
+                     </vehicle:VehicleRateDescription>
+                  </vehicle:VehicleRate>
+               </vehicle:Vehicle>
+               <common_v50_0:BookingSource Type="IataNumber" Code="05518015"/>
+               <common_v50_0:SellMessage>@ESTIMATED TTL AMOUNT 415.80 GBP THANK YOU FOR BOOKING SIXT $SX$</common_v50_0:SellMessage>
+            </vehicle:VehicleReservation>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="UD_AGT_PP" BranchCode="TP_1P_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-02-25T18:19:47.259+00:00"/>
+            </common_v50_0:AgencyInfo>
+         </universal:UniversalRecord>
+      </universal:UniversalRecordRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

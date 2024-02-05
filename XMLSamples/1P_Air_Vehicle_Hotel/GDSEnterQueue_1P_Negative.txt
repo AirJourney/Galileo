@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ns2:GdsEnterQueueReq PseudoCityCode="PCC9" ProviderCode="1P" TraceId="03061439025663" TargetBranch="P7777777" xmlns:ns3="http://www.travelport.com/schema/air_v50_0" xmlns:ns4="http://www.travelport.com/schema/rail_v50_0" xmlns:ns2="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns="http://www.travelport.com/schema/common_v50_0">
+			<BillingPointOfSaleInfo OriginApplication="UAPI"/>
+			<OverridePCC ProviderCode="1P" PseudoCityCode="PCC9"/>
+			<QueueSelector Queue="1*C0*D4"/>
+		</ns2:GdsEnterQueueReq>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+<XmlService=/kestrel/GdsQueueService>
+	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+		<SOAP:Body>
+			<SOAP:Fault>
+				<faultcode>Server.Data</faultcode>
+				<faultstring>Q EMPTY|</faultstring>
+				<detail>
+					<common_v50_0:ErrorInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+						<common_v50_0:Code>7035</common_v50_0:Code>
+						<common_v50_0:Service>QUESVC</common_v50_0:Service>
+						<common_v50_0:Type>Data</common_v50_0:Type>
+						<common_v50_0:Description>Requested queue is empty</common_v50_0:Description>
+						<common_v50_0:TransactionId>AE9198CC0A0759BB82AB919FCF1D27D1</common_v50_0:TransactionId>
+						<common_v50_0:TraceId>03061439025663</common_v50_0:TraceId>
+					</common_v50_0:ErrorInfo>
+				</detail>
+			</SOAP:Fault>
+		</SOAP:Body>
+	</SOAP:Envelope>|

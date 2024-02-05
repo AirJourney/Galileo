@@ -1,0 +1,33 @@
+Air Flight Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:FlightDetailsReq TargetBranch="TP_WAB_031" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirSegment Key="NgSNMC7Q2BKADlmBCAAAAA==" Group="0" Carrier="UA" FlightNumber="1900" Origin="ATL" Destination="SFO" DepartureTime="2020-05-31T07:20:00.000-04:00" ArrivalTime="2020-05-31T09:44:00.000-07:00" FlightTime="324" Distance="2133" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A" ProviderCode="1J" ClassOfService="T" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"/>
+      </air:FlightDetailsReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Flight Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightDetailsRsp TransactionId="9DCE3F920A07643B096D7BC3B36FC141" ResponseTime="111" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:AirSegment Key="NgSNMC7Q2BKADlmBCAAAAA==" Group="0" Carrier="UA" FlightNumber="1900" ProviderCode="1J" Origin="ATL" Destination="SFO" DepartureTime="2020-05-31T07:20:00.000-04:00" ArrivalTime="2020-05-31T09:44:00.000-07:00" FlightTime="324" Distance="2133" ClassOfService="T" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilitySource="A" ParticipantLevel="Airline Source">
+            <air:FlightDetails Key="NgSNMC7Q2BKAMhqBCAAAAA==" Origin="ATL" Destination="SFO" DepartureTime="2020-05-31T07:20:00.000-04:00" ArrivalTime="2020-05-31T09:44:00.000-07:00" FlightTime="324" TravelTime="324" Equipment="319" OriginTerminal="N" DestinationTerminal="3" AutomatedCheckin="false">
+               <air:Meals>Breakfast</air:Meals>
+               <air:Meals>FoodForPurchase</air:Meals>
+               <air:InFlightServices>TSA SECURED FLIGHT</air:InFlightServices>
+               <air:InFlightServices>Non-smoking</air:InFlightServices>
+            </air:FlightDetails>
+         </air:AirSegment>
+         <air:CO2Emissions TotalValue="350.15" Unit="KG/PerPerson" Category="Economy" Source="CLIMATENEUTRALGROUP.COM/OFFSET-NOW">
+            <air:CO2Emission AirSegmentRef="NgSNMC7Q2BKADlmBCAAAAA==" Value="350.15"/>
+         </air:CO2Emissions>
+         <air:CO2Emissions TotalValue="525.23" Unit="KG/PerPerson" Category="Premium" Source="CLIMATENEUTRALGROUP.COM/OFFSET-NOW">
+            <air:CO2Emission AirSegmentRef="NgSNMC7Q2BKADlmBCAAAAA==" Value="525.23"/>
+         </air:CO2Emissions>
+      </air:FlightDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,286 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<air:AirRetrieveDocumentReq TraceId="4ebf759d-c142-43a0-8af4-4c6c2e81a179" TargetBranch="P1239341" ReturnRestrictions="true" ReturnPricing="true" RetrieveMCO="true" ProviderCode="1G" ProviderLocatorCode="AB1CDE" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+			<com:BillingPointOfSaleInfo OriginApplication="Travel" />
+			<com:TicketNumber>1112222333234</air:TicketNumber>
+		</air:AirRetrieveDocumentReq>
+	</s:Body>
+</s:Envelope>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<air:AirRetrieveDocumentRsp xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" TraceId="4ebf759d-c142-43a0-8af4-4c6c2e81a179" TransactionId="A89F288A0A0759BB10ECDE87101C1B92" ResponseTime="1594" UniversalRecordLocatorCode="0QXYLY">
+			<air:ETR Key="Tcx8k/pYlDKA0wq4HOAAAA==" Taxes="EUR297.76" Refundable="false" Exchangeable="false" TourCode="123456789" IssuedDate="2020-01-31T00:00:00.000+01:00" ProviderCode="1G" ProviderLocatorCode="AB1CDE" IATANumber="00000091" PseudoCityCode="AE4" PlatingCarrier="TG">
+				<air:AirReservationLocatorCode>0QXYNI</air:AirReservationLocatorCode>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="uAPI4840040534-09a6e0fd" BranchCode="P1239341" AgencyCode="S1234567" EventTime="2020-01-30T23:00:00.000+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:BookingTraveler Key="Tcx8k/pYlDKATwq4HOAAAA==">
+					<common_v50_0:BookingTravelerName First="DOMINIEKMR" Last="TESTUSER"/>
+					<common_v50_0:SSR Key="Tcx8k/pYlDKAZwq4HOAAAA==" Status="HK" Type="****" FreeText="////*******/M//TESTUSER/DOMINIEK -1TESTUSER/DOMINIEKMR" Carrier="TG" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					<common_v50_0:SSR Key="Tcx8k/pYlDKAawq4HOAAAA==" Status="HK" Type="****" FreeText="////*******/M//TESTUSER/DOMINIEK -1TESTUSER/DOMINIEKMR" Carrier="NZ" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					<common_v50_0:SSR Key="Tcx8k/pYlDKAbwq4HOAAAA==" SegmentRef="Tcx8k/pYlDKAgwq4HOAAAA==" Status="HK" Type="****" FreeText="2173677076234C1/234-235" Carrier="TG" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					<common_v50_0:SSR Key="Tcx8k/pYlDKAcwq4HOAAAA==" SegmentRef="Tcx8k/pYlDKAiwq4HOAAAA==" Status="HK" Type="****" FreeText="2173677076234C2/234-235" Carrier="TG" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					<common_v50_0:SSR Key="Tcx8k/pYlDKAdwq4HOAAAA==" SegmentRef="Tcx8k/pYlDKAkwq4HOAAAA==" Status="HK" Type="****" FreeText="2173677076234C4/234-235" Carrier="NZ" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					<common_v50_0:SSR Key="Tcx8k/pYlDKAewq4HOAAAA==" SegmentRef="Tcx8k/pYlDKAmwq4HOAAAA==" Status="HK" Type="****" FreeText="2173677076235C1/234-235" Carrier="TG" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					<common_v50_0:SSR Key="Tcx8k/pYlDKAfwq4HOAAAA==" SegmentRef="Tcx8k/pYlDKAowq4HOAAAA==" Status="HK" Type="****" FreeText="2173677076235C2/234-235" Carrier="TG" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					<common_v50_0:NameRemark Key="Tcx8k/pYlDKAUwq4HOAAAA==">
+						<common_v50_0:RemarkData>P-ADT DOB10DEC76</common_v50_0:RemarkData>
+						<common_v50_0:ProviderReservationInfoRef Key="Tcx8k/pYlDKAi2n4HOAAAA=="/>
+					</common_v50_0:NameRemark>
+					<common_v50_0:AirSeatAssignment Key="Tcx8k/pYlDKAVwq4HOAAAA==" Status="HK" Seat="051B" SegmentRef="Tcx8k/pYlDKAgwq4HOAAAA==" FlightDetailsRef="Tcx8k/pYlDKAhwq4HOAAAA=="/>
+					<common_v50_0:AirSeatAssignment Key="Tcx8k/pYlDKAWwq4HOAAAA==" Status="HK" Seat="049B" SegmentRef="Tcx8k/pYlDKAiwq4HOAAAA==" FlightDetailsRef="Tcx8k/pYlDKAjwq4HOAAAA=="/>
+					<common_v50_0:AirSeatAssignment Key="0J0TlAYc1BKAVKBN2AAAAA==" Status="HK" Seat="015B" SegmentRef="Tcx8k/pYlDKAkwq4HOAAAA==" FlightDetailsRef="Tcx8k/pYlDKAlwq4HOAAAA=="/>
+					<common_v50_0:AirSeatAssignment Key="Tcx8k/pYlDKAXwq4HOAAAA==" Status="HK" Seat="050B" SegmentRef="Tcx8k/pYlDKAmwq4HOAAAA==" FlightDetailsRef="Tcx8k/pYlDKAnwq4HOAAAA=="/>
+					<common_v50_0:AirSeatAssignment Key="Tcx8k/pYlDKAYwq4HOAAAA==" Status="HK" Seat="051B" SegmentRef="Tcx8k/pYlDKAowq4HOAAAA==" FlightDetailsRef="Tcx8k/pYlDKApwq4HOAAAA=="/>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:FormOfPayment Key="Tcx8k/pYlDKAVxq4HOAAAA==" Type="Credit" Reusable="false" ProfileKey="xTk8YblfRy2cJnxBlXnwjA==">
+					<common_v50_0:CreditCard Type="**" Number="***********3224" ExpDate="*******"/>
+				</common_v50_0:FormOfPayment>
+				<common_v50_0:Payment Key="Tcx8k/pYlDKAYxq4HOAAAA==" Type="Itinerary" Amount="EUR1294.76" FormOfPaymentRef="Tcx8k/pYlDKAVxq4HOAAAA=="/>
+				<common_v50_0:SupplierLocator SupplierCode="NZ" SupplierLocatorCode="123456"/>
+				<common_v50_0:SupplierLocator SupplierCode="TG" SupplierLocatorCode="123456"/>
+				<air:FareCalc>BRU TG X/BKK TG AKL M/IT /-CHC NZ X/AKL TG BKK TG BRU M/IT END ROE0.903053 XT 4.12E71.35G841.16TS4.38CE11.94F19.68IA20.76KK1.10WX172.26YQ</air:FareCalc>
+				<air:Ticket Key="Tcx8k/pYlDKA3wq4HOAAAA==" TicketNumber="1112222333234" TicketStatus="N">
+					<air:Coupon Key="Tcx8k/pYlDKA4wq4HOAAAA==" CouponNumber="1" MarketingCarrier="TG" MarketingFlightNumber="935" Origin="BRU" Destination="BKK" DepartureTime="2020-10-16T13:30:00.000+02:00" StopoverCode="true" BookingClass="W" FareBasis="W1LYBET2" NotValidAfter="2021-10-16" Status="O" SegmentGroup="0" MarriageGroup="0"/>
+					<air:Coupon Key="Tcx8k/pYlDKA5wq4HOAAAA==" CouponNumber="2" MarketingCarrier="TG" MarketingFlightNumber="491" Origin="BKK" Destination="AKL" DepartureTime="2020-10-17T18:55:00.000+07:00" StopoverCode="false" BookingClass="W" FareBasis="W1LYBET2" NotValidAfter="2021-10-16" Status="O" SegmentGroup="1" MarriageGroup="0"/>
+					<air:Coupon Key="Tcx8k/pYlDKA6wq4HOAAAA==" CouponNumber="4" MarketingCarrier="NZ" MarketingFlightNumber="540" Origin="CHC" Destination="AKL" DepartureTime="2020-12-12T11:30:00.000+13:00" StopoverCode="true" BookingClass="W" FareBasis="Q1LYBET2" NotValidAfter="2021-10-16" Status="O" SegmentGroup="2" MarriageGroup="0"/>
+					<air:TourCode Value="123456789"/>
+				</air:Ticket>
+				<air:Ticket Key="Tcx8k/pYlDKA7wq4HOAAAA==" TicketNumber="1112222333234" TicketStatus="N">
+					<air:Coupon Key="Tcx8k/pYlDKA8wq4HOAAAA==" CouponNumber="1" MarketingCarrier="TG" MarketingFlightNumber="492" Origin="AKL" Destination="BKK" DepartureTime="2020-12-12T14:50:00.000+13:00" StopoverCode="true" BookingClass="Q" FareBasis="Q1LYBET2" NotValidAfter="2021-10-16" Status="O" SegmentGroup="2" MarriageGroup="0"/>
+					<air:Coupon Key="Tcx8k/pYlDKA9wq4HOAAAA==" CouponNumber="2" MarketingCarrier="TG" MarketingFlightNumber="934" Origin="BKK" Destination="BRU" DepartureTime="2021-01-01T00:30:00.000+07:00" StopoverCode="true" BookingClass="Q" FareBasis="Q1LYBET2" NotValidAfter="2021-10-16" Status="O" SegmentGroup="3" MarriageGroup="0"/>
+				</air:Ticket>
+				<air:AirPricingInfo Key="Tcx8k/pYlDKAfvq4HOAAAA==" TotalPrice="EUR1294.76" BasePrice="EUR997.00" ApproximateTotalPrice="EUR1294.76" ApproximateBasePrice="EUR997.00" Taxes="EUR297.76" TrueLastDateToTicket="2020-10-16T23:59:00.000+02:00" PricingMethod="GuaranteedUsingAirlinePrivateFare" ETicketability="Yes" ProviderReservationInfoRef="Tcx8k/pYlDKAi2n4HOAAAA==" AirPricingInfoGroup="1" Ticketed="true" PricingType="StoredFare" FareCalculationInd="A">
+					<air:FareInfo Key="Tcx8k/pYlDKAhvq4HOAAAA==" FareBasis="W1LYBET2" PassengerTypeCode="ADT" Origin="BRU" Destination="BKK" EffectiveDate="2020-01-31T00:00:00.000+01:00" NegotiatedFare="true" TourCode="123456789">
+						<air:ContractCode Code="BE05" ProviderCode="1G"/>
+						<common_v50_0:Endorsement Value="NO END/PENALTY FEE"/>
+						<common_v50_0:Endorsement Value="APPLIED/RFND"/>
+						<air:BaggageAllowance>
+							<air:MaxWeight Value="30" Unit="Kilograms"/>
+						</air:BaggageAllowance>
+						<common_v50_0:Commission Level="Fare" Type="PercentBase" Percentage="0.0"/>
+					</air:FareInfo>
+					<air:FareInfo Key="Tcx8k/pYlDKAlvq4HOAAAA==" FareBasis="W1LYBET2" PassengerTypeCode="ADT" Origin="BKK" Destination="AKL" EffectiveDate="2020-01-31T00:00:00.000+01:00" NegotiatedFare="true" TourCode="123456789">
+						<air:ContractCode Code="BE05" ProviderCode="1G"/>
+						<common_v50_0:Endorsement Value="NO END/PENALTY FEE"/>
+						<common_v50_0:Endorsement Value="APPLIED/RFND"/>
+						<air:BaggageAllowance>
+							<air:MaxWeight Value="30" Unit="Kilograms"/>
+						</air:BaggageAllowance>
+						<common_v50_0:Commission Level="Fare" Type="PercentBase" Percentage="0.0"/>
+					</air:FareInfo>
+					<air:FareInfo Key="Tcx8k/pYlDKApvq4HOAAAA==" FareBasis="Q1LYBET2" PassengerTypeCode="ADT" Origin="CHC" Destination="AKL" EffectiveDate="2020-01-31T00:00:00.000+01:00" NegotiatedFare="true" TourCode="123456789">
+						<air:ContractCode Code="BE05" ProviderCode="1G"/>
+						<common_v50_0:Endorsement Value="NO END/PENALTY FEE"/>
+						<common_v50_0:Endorsement Value="APPLIED/RFND"/>
+						<air:BaggageAllowance>
+							<air:MaxWeight Value="30" Unit="Kilograms"/>
+						</air:BaggageAllowance>
+					</air:FareInfo>
+					<air:FareInfo Key="Tcx8k/pYlDKAtvq4HOAAAA==" FareBasis="Q1LYBET2" PassengerTypeCode="ADT" Origin="AKL" Destination="BKK" EffectiveDate="2020-01-31T00:00:00.000+01:00" NegotiatedFare="true" TourCode="123456789">
+						<air:ContractCode Code="BE05" ProviderCode="1G"/>
+						<common_v50_0:Endorsement Value="NO END/PENALTY FEE"/>
+						<common_v50_0:Endorsement Value="APPLIED/RFND"/>
+						<air:BaggageAllowance>
+							<air:MaxWeight Value="30" Unit="Kilograms"/>
+						</air:BaggageAllowance>
+					</air:FareInfo>
+					<air:FareInfo Key="Tcx8k/pYlDKAxvq4HOAAAA==" FareBasis="Q1LYBET2" PassengerTypeCode="ADT" Origin="BKK" Destination="BRU" EffectiveDate="2020-01-31T00:00:00.000+01:00" NegotiatedFare="true" TourCode="123456789">
+						<air:ContractCode Code="BE05" ProviderCode="1G"/>
+						<common_v50_0:Endorsement Value="NO END/PENALTY FEE"/>
+						<common_v50_0:Endorsement Value="APPLIED/RFND"/>
+						<air:BaggageAllowance>
+							<air:MaxWeight Value="30" Unit="Kilograms"/>
+						</air:BaggageAllowance>
+					</air:FareInfo>
+					<air:BookingInfo BookingCode="W" CabinClass="Economy" FareInfoRef="Tcx8k/pYlDKAhvq4HOAAAA=="/>
+					<air:BookingInfo BookingCode="W" CabinClass="Economy" FareInfoRef="Tcx8k/pYlDKAlvq4HOAAAA=="/>
+					<air:BookingInfo BookingCode="W" CabinClass="Economy" FareInfoRef="Tcx8k/pYlDKApvq4HOAAAA=="/>
+					<air:BookingInfo BookingCode="Q" CabinClass="Economy" FareInfoRef="Tcx8k/pYlDKAtvq4HOAAAA=="/>
+					<air:BookingInfo BookingCode="Q" CabinClass="Economy" FareInfoRef="Tcx8k/pYlDKAxvq4HOAAAA=="/>
+					<air:TaxInfo Category="BE" Amount="EUR31.01" Key="UKuSaCBAAA/B9pXEvHAAAA=="/>
+					<air:TaxInfo Category="E7" Amount="EUR4.12" Key="UKuSaCBAAA/B+pXEvHAAAA=="/>
+					<air:TaxInfo Category="G8" Amount="EUR1.35" Key="UKuSaCBAAA/B/pXEvHAAAA=="/>
+					<air:TaxInfo Category="TS" Amount="EUR41.16" Key="UKuSaCBAAA/BAqXEvHAAAA=="/>
+					<air:TaxInfo Category="CE" Amount="EUR4.38" Key="UKuSaCBAAA/BBqXEvHAAAA=="/>
+					<air:TaxInfo Category="F1" Amount="EUR11.94" Key="UKuSaCBAAA/BCqXEvHAAAA=="/>
+					<air:TaxInfo Category="IA" Amount="EUR9.68" Key="UKuSaCBAAA/BDqXEvHAAAA=="/>
+					<air:TaxInfo Category="KK" Amount="EUR20.76" Key="UKuSaCBAAA/BEqXEvHAAAA=="/>
+					<air:TaxInfo Category="WX" Amount="EUR1.10" Key="UKuSaCBAAA/BFqXEvHAAAA=="/>
+					<air:TaxInfo Category="YQ" Amount="EUR172.26" Key="UKuSaCBAAA/BGqXEvHAAAA=="/>
+					<air:FareCalc>BRU TG X/BKK TG AKL 419.02W1LYBET2 /-CHC NZ X/AKL TG BKK TG BRU 684.20Q1LYBET2 NUC1103.22END ROE0.903053</air:FareCalc>
+					<air:PassengerType Code="ADT" BookingTravelerRef="Tcx8k/pYlDKAAwq4HOAAAA==">
+						<air:FareGuaranteeInfo GuaranteeType="GuaranteedUsingAirlinePrivateFare"/>
+					</air:PassengerType>
+					<air:PassengerType Code="ADT" BookingTravelerRef="Tcx8k/pYlDKATwq4HOAAAA==">
+						<air:FareGuaranteeInfo GuaranteeType="GuaranteedUsingAirlinePrivateFare"/>
+					</air:PassengerType>
+					<common_v50_0:BookingTravelerRef Key="Tcx8k/pYlDKAAwq4HOAAAA=="/>
+					<common_v50_0:BookingTravelerRef Key="Tcx8k/pYlDKATwq4HOAAAA=="/>
+					<air:PaymentRef Key="Tcx8k/pYlDKAWxq4HOAAAA=="/>
+				</air:AirPricingInfo>
+				<air:BaggageAllowances>
+					<air:BaggageAllowanceInfo TravelerType="ADT" Origin="BRU" Destination="AKL" Carrier="TG">
+						<air:URLInfo>
+							<air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/TG</air:URL>
+						</air:URLInfo>
+						<air:TextInfo>
+							<air:Text>30K</air:Text>
+							<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+						</air:TextInfo>
+						<air:BagDetails ApplicableBags="1stChecked">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:BagDetails>
+						<air:BagDetails ApplicableBags="2ndChecked">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:BagDetails>
+					</air:BaggageAllowanceInfo>
+					<air:BaggageAllowanceInfo TravelerType="ADT" Origin="CHC" Destination="BKK" Carrier="TG">
+						<air:URLInfo>
+							<air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/TG</air:URL>
+						</air:URLInfo>
+						<air:TextInfo>
+							<air:Text>30K</air:Text>
+							<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+						</air:TextInfo>
+						<air:BagDetails ApplicableBags="1stChecked">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:BagDetails>
+						<air:BagDetails ApplicableBags="2ndChecked">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:BagDetails>
+					</air:BaggageAllowanceInfo>
+					<air:BaggageAllowanceInfo TravelerType="ADT" Origin="BKK" Destination="BRU" Carrier="TG">
+						<air:URLInfo>
+							<air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/TG</air:URL>
+						</air:URLInfo>
+						<air:TextInfo>
+							<air:Text>30K</air:Text>
+							<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+						</air:TextInfo>
+						<air:BagDetails ApplicableBags="1stChecked">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:BagDetails>
+						<air:BagDetails ApplicableBags="2ndChecked">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:BagDetails>
+					</air:BaggageAllowanceInfo>
+					<air:CarryOnAllowanceInfo Origin="BRU" Destination="BKK" Carrier="TG">
+						<air:TextInfo>
+							<air:Text>7K</air:Text>
+						</air:TextInfo>
+						<air:CarryOnDetails ApplicableCarryOnBags="1">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+						<air:CarryOnDetails ApplicableCarryOnBags="2">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+					</air:CarryOnAllowanceInfo>
+					<air:CarryOnAllowanceInfo Origin="BKK" Destination="AKL" Carrier="TG">
+						<air:TextInfo>
+							<air:Text>7K</air:Text>
+						</air:TextInfo>
+						<air:CarryOnDetails ApplicableCarryOnBags="1">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+						<air:CarryOnDetails ApplicableCarryOnBags="2">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+					</air:CarryOnAllowanceInfo>
+					<air:CarryOnAllowanceInfo Origin="CHC" Destination="AKL" Carrier="NZ">
+						<air:TextInfo>
+							<air:Text>1P</air:Text>
+						</air:TextInfo>
+						<air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="USD0.00" TotalPrice="USD0.00">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CARRYON HAND BAGGAGE ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+					</air:CarryOnAllowanceInfo>
+					<air:CarryOnAllowanceInfo Origin="AKL" Destination="BKK" Carrier="TG">
+						<air:TextInfo>
+							<air:Text>7K</air:Text>
+						</air:TextInfo>
+						<air:CarryOnDetails ApplicableCarryOnBags="1">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+						<air:CarryOnDetails ApplicableCarryOnBags="2">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+					</air:CarryOnAllowanceInfo>
+					<air:CarryOnAllowanceInfo Origin="BKK" Destination="BRU" Carrier="TG">
+						<air:TextInfo>
+							<air:Text>7K</air:Text>
+						</air:TextInfo>
+						<air:CarryOnDetails ApplicableCarryOnBags="1">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+						<air:CarryOnDetails ApplicableCarryOnBags="2">
+							<air:BaggageRestriction>
+								<air:TextInfo>
+									<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+								</air:TextInfo>
+							</air:BaggageRestriction>
+						</air:CarryOnDetails>
+					</air:CarryOnAllowanceInfo>
+				</air:BaggageAllowances>
+			</air:ETR>
+		</air:AirRetrieveDocumentRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,18 @@
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Header/>
+	<SOAP:Body>
+		<rail:RailRefundQuoteReq TargetBranch="P6464646" LocatorCode="1IZRBO" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:pass="http://www.travelport.com/schema/passive_v50_0" xmlns:univ="http://www.travelport.com/schema/universal_v50_0">
+			<com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+		</rail:RailRefundQuoteReq>
+	</SOAP:Body>
+</SOAP:Envelope>
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<rail:RailRefundQuoteRsp xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" TransactionId="ABA800920A0759BB10ECDE8789688BB9" ResponseTime="5902">
+			<rail:RailRefundInfo RefundAmount="USD-147.00" CancellationFee="USD0.00" Refund="true" NetAmount="USD-147.00"/>
+			<rail:RailRefundInfo Retain="true" RetainAmount="USD-147.00" NetAmount="USD-147.00"/>
+		</rail:RailRefundQuoteRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

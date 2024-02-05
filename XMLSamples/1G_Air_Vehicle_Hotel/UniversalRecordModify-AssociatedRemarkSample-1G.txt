@@ -1,0 +1,124 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<universal:UniversalRecordModifyReq AuthorizedBy="TRAVELPORT" TargetBranch="TargetBranch" TraceId="trace" Version="2" ReturnRecord="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+			<common:BillingPointOfSaleInfo OriginApplication="uAPI"/>			
+			<universal:RecordIdentifier ProviderCode="1G" ProviderLocatorCode="ABCD1E" UniversalLocatorCode="1234A0"/>
+			<universal:UniversalModifyCmd Key="key1">
+				<universal:AirAdd ReservationLocatorCode="1234A1">
+					<air:AssociatedRemark SegmentRef="+sUqOkBqWDKA+ChKDAAAAA==">
+						<common:RemarkData>ASSOCIATED AIR REMARK</common:RemarkData>
+					</air:AssociatedRemark>
+				</universal:AirAdd>
+			</universal:UniversalModifyCmd>
+			<universal:UniversalModifyCmd Key="key2">
+				<universal:HotelAdd ReservationLocatorCode="00MG2K54">
+					<hotel:AssociatedRemark>
+						<common:RemarkData>ASSOCIATED HOTEL REMARK</common:RemarkData>
+					</hotel:AssociatedRemark>
+				</universal:HotelAdd>
+			</universal:UniversalModifyCmd>
+			<universal:UniversalModifyCmd Key="key3">
+				<universal:VehicleAdd ReservationLocatorCode="00MG2KS6">
+					<vehicle:AssociatedRemark>
+						<common:RemarkData>ASSOCIATED VEHICLE REMARK</common:RemarkData>
+					</vehicle:AssociatedRemark>
+				</universal:VehicleAdd>
+			</universal:UniversalModifyCmd>
+			
+		</universal:UniversalRecordModifyReq>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordModifyRsp TraceId="trace" TransactionId="3E177EB00A0D6A810867D1A5D8BA306F" ResponseTime="1034" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Info">Universal record successfully modified.</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="1234A0" Version="3" Status="Active">
+            <common_v50_0:BookingTraveler Key="+sUqOkBqWDKA8ChKDAAAAA==">
+               <common_v50_0:BookingTravelerName First="A" Last="TEST"/>
+               <common_v50_0:PhoneNumber Key="+sUqOkBqWDKA9ChKDAAAAA==" Type="None" Number="DENR1231231234">
+                  <common_v50_0:ProviderReservationInfoRef Key="+sUqOkBqWDKA5ChKDAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:OSI Key="+sUqOkBqWDKAJDhKDAAAAA==" Carrier="1G" Text="CP43102ARR26JUN CXL:FIRST NITE CANCEL OR NOSHOW PENALTY APPLIES" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA=="/>
+            <common_v50_0:ActionStatus Key="+sUqOkBqWDKA6ChKDAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" ProviderCode="1G"/>
+            <universal:ProviderReservationInfo Key="+sUqOkBqWDKA5ChKDAAAAA==" ProviderCode="1G" LocatorCode="ABCD1E" CreateDate="2021-05-05T19:51:10.077+00:00" ModifiedDate="2021-05-05T19:53:19.600+00:00" HostCreateDate="2021-05-05" OwningPCC="5X19"/>
+            <air:AirReservation LocatorCode="1234A1" CreateDate="2021-05-05T19:51:09.146+00:00" ModifiedDate="2021-05-05T19:53:19.600+00:00">
+               <common_v50_0:SupplierLocator SupplierCode="UA" SupplierLocatorCode="HNP0QT" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" CreateDateTime="2021-05-05T19:50:00.000+00:00"/>
+               <common_v50_0:BookingTravelerRef Key="+sUqOkBqWDKA8ChKDAAAAA=="/>
+               <common_v50_0:ProviderReservationInfoRef Key="+sUqOkBqWDKA5ChKDAAAAA=="/>
+               <air:AirSegment Key="+sUqOkBqWDKA+ChKDAAAAA==" Group="0" Carrier="UA" CabinClass="First" FlightNumber="532" ProviderCode="1G" Origin="DEN" Destination="ORD" DepartureTime="2021-06-25T06:55:00.000-06:00" ArrivalTime="2021-06-25T10:15:00.000-05:00" TravelTime="140" ClassOfService="C" ETicketability="Yes" Equipment="738" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false">
+                  <air:FlightDetails Key="+sUqOkBqWDKA/ChKDAAAAA==" Origin="DEN" Destination="ORD" DepartureTime="2021-06-25T06:55:00.000-06:00" ArrivalTime="2021-06-25T10:15:00.000-05:00" FlightTime="148" TravelTime="140" Equipment="738" DestinationTerminal="1" AutomatedCheckin="false"/>
+               </air:AirSegment>
+               <air:AssociatedRemark Key="+sUqOkBqWDKAKUiKDAAAAA==" ProviderCode="1G" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" ElStat="A" SegmentRef="+sUqOkBqWDKA+ChKDAAAAA==">
+                  <common_v50_0:RemarkData>ASSOCIATED AIR REMARK</common_v50_0:RemarkData>
+               </air:AssociatedRemark>
+            </air:AirReservation>
+            <hotel:HotelReservation Status="HK" BookingConfirmation="43515890" LocatorCode="00MG2K54" CreateDate="2021-05-05T19:51:09.151+00:00" ModifiedDate="2021-05-05T19:53:19.600+00:00" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" TravelOrder="2" ProviderSegmentOrder="2">
+               <common_v50_0:BookingTravelerRef Key="+sUqOkBqWDKA8ChKDAAAAA=="/>
+               <common_v50_0:ReservationName>
+                  <common_v50_0:BookingTravelerRef Key="+sUqOkBqWDKA8ChKDAAAAA=="/>
+               </common_v50_0:ReservationName>
+               <hotel:HotelProperty HotelChain="CP" HotelCode="43102" HotelLocation="CHI" Name="Crowne Plaza Northbrook">
+                  <hotel:PropertyAddress>
+                     <hotel:Address>2875 NORTH MILWAUKEE AVENUE</hotel:Address>
+                     <hotel:Address>NORTHBROOK IL 60062 US</hotel:Address>
+                  </hotel:PropertyAddress>
+                  <common_v50_0:PhoneNumber Type="Hotel" Number="1-847-2982525"/>
+                  <common_v50_0:PhoneNumber Type="Fax" Number="1-847-2985592"/>
+               </hotel:HotelProperty>
+               <hotel:HotelRateDetail RatePlanType="STN80HJ" Base="USD142.00" Total="USD1158.08" RateGuaranteed="true" RateChangeIndicator="true" ExtraFeesIncluded="false">
+                  <hotel:RoomRateDescription Name="Addl Rate Info">
+                     <hotel:Text>The Rate specified is an approximate amount</hotel:Text>
+                     <hotel:Text>There is a Rate change during the stay period</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:HotelRateByDate EffectiveDate="2021-06-26" ExpireDate="2021-06-27" Base="USD108.00"/>
+                  <hotel:HotelRateByDate EffectiveDate="2021-06-27" ExpireDate="2021-07-02" Base="USD142.00"/>
+                  <hotel:HotelRateByDate EffectiveDate="2021-07-02" ExpireDate="2021-07-04" Base="USD108.00"/>
+               </hotel:HotelRateDetail>
+               <hotel:HotelStay>
+                  <hotel:CheckinDate>2021-06-26</hotel:CheckinDate>
+                  <hotel:CheckoutDate>2021-07-04</hotel:CheckoutDate>
+               </hotel:HotelStay>
+               <common_v50_0:Guarantee Type="Deposit" Key="+sUqOkBqWDKAKDhKDAAAAA==" Reusable="true">
+                  <common_v50_0:CreditCard Type="VI" Number="4111111111111111" ExpDate="2021-11"/>
+               </common_v50_0:Guarantee>
+               <common_v50_0:BookingSource Type="IataNumber" Code="96823930"/>
+               <hotel:GuestInformation NumberOfRooms="1">
+                  <hotel:NumberOfAdults>1</hotel:NumberOfAdults>
+               </hotel:GuestInformation>
+               <hotel:AssociatedRemark Key="+sUqOkBqWDKALUiKDAAAAA==" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" ElStat="A">
+                  <common_v50_0:RemarkData>ASSOCIATED HOTEL REMARK</common_v50_0:RemarkData>
+               </hotel:AssociatedRemark>
+               <hotel:HotelCommission>Y</hotel:HotelCommission>
+            </hotel:HotelReservation>
+            <vehicle:VehicleReservation SupplierCode="ZI" BookingConfirmation="14621015AU3" LocatorCode="00MG2KS6" Status="HK" CreateDate="2021-05-05T19:51:09.155+00:00" ModifiedDate="2021-05-05T19:53:19.600+00:00" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" TravelOrder="3" ProviderSegmentOrder="3">
+               <common_v50_0:BookingTravelerRef Key="+sUqOkBqWDKA8ChKDAAAAA=="/>
+               <common_v50_0:ReservationName>
+                  <common_v50_0:BookingTravelerRef Key="+sUqOkBqWDKA8ChKDAAAAA=="/>
+               </common_v50_0:ReservationName>
+               <vehicle:VehicleDateLocation PickupDateTime="2021-06-27T10:15:00.000-05:00" PickupLocation="ORD" PickupLocationType="Terminal" PickupLocationNumber="1" ReturnDateTime="2021-06-28T10:15:00.000-05:00"/>
+               <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="ECAR">
+                  <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="MI" RequiredCharges="USD24.23" RateCode="IJ" RateGuaranteeType="Rate Quoted">
+                     <vehicle:SupplierRate RateForPeriod="USD28.00" EstimatedTotalAmount="USD52.23"/>
+                     <vehicle:HourlyLateCharge RateForPeriod="USD21.01" UnlimitedMileage="true" ExtraMileageCharge="USD0.00" Units="MI"/>
+                  </vehicle:VehicleRate>
+               </vehicle:Vehicle>
+               <vehicle:FlightArrivalInformation Carrier="UA" FlightNumber="532"/>
+               <common_v50_0:Guarantee Type="Guarantee" Key="+sUqOkBqWDKAMDhKDAAAAA==" Reusable="true">
+                  <common_v50_0:CreditCard Type="VI" Number="4111111111111111" ExpDate="2023-11"/>
+               </common_v50_0:Guarantee>
+               <vehicle:AssociatedRemark Key="+sUqOkBqWDKAMUiKDAAAAA==" ProviderReservationInfoRef="+sUqOkBqWDKA5ChKDAAAAA==" ElStat="A">
+                  <common_v50_0:RemarkData>ASSOCIATED VEHICLE REMARK</common_v50_0:RemarkData>
+               </vehicle:AssociatedRemark>
+               <common_v50_0:BookingSource Type="IataNumber" Code="96823930"/>
+            </vehicle:VehicleReservation>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="BOOKINGAGENT" BranchCode="TargetBranch" AgencyCode="UAPITESTAGENCY" EventTime="2021-05-05T19:51:08.950+00:00"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="BOOKINGAGENT" BranchCode="TargetBranch" AgencyCode="UAPITESTAGENCY" EventTime="2021-05-05T19:53:19.600+00:00"/>
+            </common_v50_0:AgencyInfo>
+         </universal:UniversalRecord>
+      </universal:UniversalRecordModifyRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

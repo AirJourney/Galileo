@@ -1,0 +1,42 @@
+Vehicle Keywords-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" KeywordList="true" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:PickupDateLocation Date="2020-04-01" Location="ATL"/>
+         <!--<com:Keyword Name="?" Number="?" Description="?"></com:Keyword>-->
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="9DD3A4110A0764785B1483FCF30F4C01" ResponseTime="220" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT"/>
+         <common_v50_0:Keyword Name="CARS" Number="02" Description="CAR/VEHICLE TYPES"/>
+         <common_v50_0:Keyword Name="DROP" Number="04" Description="DROPOFF/ONEWAYS"/>
+         <common_v50_0:Keyword Name="GAS" Number="06" Description="REFUELING POLICY"/>
+         <common_v50_0:Keyword Name="HOURS" Number="07" Description="HOURS-OPER/BUSNS"/>
+         <common_v50_0:Keyword Name="INS" Number="08" Description="INSURANCE/COVERAGE"/>
+         <common_v50_0:Keyword Name="TAX" Number="12" Description="TAX-STATE/LOCAL"/>
+         <common_v50_0:Keyword Name="COMM" Number="15" Description="COMMISSION AGENTS"/>
+         <common_v50_0:Keyword Name="EQUIP" Number="17" Description="SPCL EQUIP RQSTS"/>
+         <common_v50_0:Keyword Name="MISC" Number="19" Description="MISCELLANEOUS INFO"/>
+         <common_v50_0:Keyword Name="PYMNT" Number="21" Description="PAYMENT ACCEPTED"/>
+         <common_v50_0:Keyword Name="PHON" Number="24" Description="LOCAL PHONE INFO"/>
+         <common_v50_0:Keyword Name="POLY" Number="25" Description="POLICIES/RQIRMENTS"/>
+         <common_v50_0:Keyword Name="VALID" Number="30" Description="DRIVER LICS RQMENT"/>
+         <common_v50_0:Keyword Name="ADDR" Number="32" Description="LOCATION ADDRESS"/>
+         <common_v50_0:Keyword Name="CLUB" Number="33" Description="CLUB/MEMBERSHIP"/>
+         <common_v50_0:Keyword Name="CONT" Number="34" Description="CONTACTS"/>
+         <common_v50_0:Keyword Name="HELP" Number="46" Description="HOW TO BOOK-HELP"/>
+         <common_v50_0:Keyword Name="TITLE" Number="55" Description="VNDR OFFICIAL NAME"/>
+         <common_v50_0:Keyword Name="ARRV" Number="56" Description="ARRIVAL INFO"/>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

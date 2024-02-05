@@ -1,0 +1,197 @@
+Air Fuzzy Search-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <LowFareSearchReq TargetBranch="TP_1G_SOA" TraceId="PP_1G_001" PreferCompleteItinerary="false" SolutionResult="true" xmlns="http://www.travelport.com/schema/air_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <SearchAirLeg>
+            <SearchOrigin>
+               <CityOrAirport Code="MEL" PreferCity="true" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </SearchOrigin>
+            <SearchDestination>
+               <CityOrAirport Code="SYD" PreferCity="true" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </SearchDestination>
+            <SearchDepTime PreferredTime="2020-05-19">
+               <SearchExtraDays DaysBefore="2" DaysAfter="2" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </SearchDepTime>
+         </SearchAirLeg>
+         <AirSearchModifiers>
+            <PreferredProviders>
+               <Provider Code="1G" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+            </PreferredProviders>
+         </AirSearchModifiers>
+         <SearchPassenger Code="ADT" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <!--<FlexExploreModifiers Type="Destination">
+            <Destination>SEA</Destination>
+            <Destination>PDX</Destination>
+            <Destination>LAX</Destination>
+            <Destination>SDG</Destination>
+         </FlexExploreModifiers>-->
+      </LowFareSearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Fuzzy Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:LowFareSearchRsp TraceId="PP_1G_001" TransactionId="5F07E6350A076478B0F92107E957A53F" ResponseTime="5849" DistanceUnits="MI" CurrencyType="AUD" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="RBPMiA4R2BKAK1UoGAAAAA==" Origin="AVV" Destination="SYD" DepartureTime="2020-05-17T13:10:00.000+10:00" ArrivalTime="2020-05-17T14:30:00.000+10:00" FlightTime="80" TravelTime="80" Equipment="320" DestinationTerminal="2"/>
+            <air:FlightDetails Key="RBPMiA4R2BKAU1UoGAAAAA==" Origin="AVV" Destination="SYD" DepartureTime="2020-05-18T13:10:00.000+10:00" ArrivalTime="2020-05-18T14:30:00.000+10:00" FlightTime="80" TravelTime="80" Equipment="320" DestinationTerminal="2"/>
+            <air:FlightDetails Key="RBPMiA4R2BKAd1UoGAAAAA==" Origin="AVV" Destination="SYD" DepartureTime="2020-05-19T15:45:00.000+10:00" ArrivalTime="2020-05-19T17:05:00.000+10:00" FlightTime="80" TravelTime="80" Equipment="320" DestinationTerminal="2"/>
+            <air:FlightDetails Key="RBPMiA4R2BKAm1UoGAAAAA==" Origin="AVV" Destination="SYD" DepartureTime="2020-05-20T13:10:00.000+10:00" ArrivalTime="2020-05-20T14:30:00.000+10:00" FlightTime="80" TravelTime="80" Equipment="320" DestinationTerminal="2"/>
+            <air:FlightDetails Key="RBPMiA4R2BKAv1UoGAAAAA==" Origin="AVV" Destination="SYD" DepartureTime="2020-05-21T15:45:00.000+10:00" ArrivalTime="2020-05-21T17:05:00.000+10:00" FlightTime="80" TravelTime="80" Equipment="320" DestinationTerminal="2"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="RBPMiA4R2BKAJ1UoGAAAAA==" Group="0" Carrier="JQ" FlightNumber="604" Origin="AVV" Destination="SYD" DepartureTime="2020-05-17T13:10:00.000+10:00" ArrivalTime="2020-05-17T14:30:00.000+10:00" FlightTime="80" Distance="456" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="RBPMiA4R2BKAK1UoGAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="RBPMiA4R2BKAT1UoGAAAAA==" Group="0" Carrier="JQ" FlightNumber="604" Origin="AVV" Destination="SYD" DepartureTime="2020-05-18T13:10:00.000+10:00" ArrivalTime="2020-05-18T14:30:00.000+10:00" FlightTime="80" Distance="456" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="RBPMiA4R2BKAU1UoGAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="RBPMiA4R2BKAc1UoGAAAAA==" Group="0" Carrier="JQ" FlightNumber="606" Origin="AVV" Destination="SYD" DepartureTime="2020-05-19T15:45:00.000+10:00" ArrivalTime="2020-05-19T17:05:00.000+10:00" FlightTime="80" Distance="456" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="RBPMiA4R2BKAd1UoGAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="RBPMiA4R2BKAl1UoGAAAAA==" Group="0" Carrier="JQ" FlightNumber="604" Origin="AVV" Destination="SYD" DepartureTime="2020-05-20T13:10:00.000+10:00" ArrivalTime="2020-05-20T14:30:00.000+10:00" FlightTime="80" Distance="456" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="RBPMiA4R2BKAm1UoGAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="RBPMiA4R2BKAu1UoGAAAAA==" Group="0" Carrier="JQ" FlightNumber="606" Origin="AVV" Destination="SYD" DepartureTime="2020-05-21T15:45:00.000+10:00" ArrivalTime="2020-05-21T17:05:00.000+10:00" FlightTime="80" Distance="456" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Guar against alpha AVS" PolledAvailabilityOption="No polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="RBPMiA4R2BKAv1UoGAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:FareInfoList>
+            <air:FareInfo Key="RBPMiA4R2BKAQ1UoGAAAAA==" FareBasis="HLOW" PassengerTypeCode="ADT" Origin="AVV" Destination="SYD" EffectiveDate="2020-02-21T05:58:00.000+10:00" DepartureDate="2020-05-17" Amount="AUD89.87" NegotiatedFare="false" NotValidBefore="2020-05-17" NotValidAfter="2020-05-17">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="RBPMiA4R2BKAQ1UoGAAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zR3TaMpLcE0lDKyBjtOnLZ/58xxdtggkRyZMVOKZmYiJmkf0x4Tdsd+VGABuPZe0GcY4Cy6BC1Bev19oTnLxr43Nz6sI4mqVaFhCpktwbQ/c7nSU/8V7JiTMWQTOAnlpWy5XKY13EmvpYEcMk3txMqZQ==</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="RBPMiA4R2BKAZ1UoGAAAAA==" FareBasis="HLOW" PassengerTypeCode="ADT" Origin="AVV" Destination="SYD" EffectiveDate="2020-02-21T05:58:00.000+10:00" DepartureDate="2020-05-18" Amount="AUD89.87" NegotiatedFare="false" NotValidBefore="2020-05-18" NotValidAfter="2020-05-18">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="RBPMiA4R2BKAZ1UoGAAAAA==" ProviderCode="1G">gws-eJxNTtEKwjAQ+5iR9/RA1r210JUxpCLqpC/+/2eYngoG2uSaS+9SSkYjzZj+MeE17VfkRwEaTOfWC+ISZwQVHQy2YjtfnvD8KUQ9N7c+HEYTq1WKUCl2awDd73wc8ui/igPGVAypBH5i3SRbLnfzOi7C1+IMLfkGt40qZg==</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="RBPMiA4R2BKAi1UoGAAAAA==" FareBasis="HLOW" PassengerTypeCode="ADT" Origin="AVV" Destination="SYD" EffectiveDate="2020-02-21T05:58:00.000+10:00" DepartureDate="2020-05-19" Amount="AUD89.87" NegotiatedFare="false" NotValidBefore="2020-05-19" NotValidAfter="2020-05-19">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="RBPMiA4R2BKAi1UoGAAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zR3TaMJrcE0lDKyBjtOnLZ/58xxdtggkRyZMVOKZmYiJmkf0x4Tdsd+VGABuPZe0GIYYay6BC1Bev19oTnLxr53Nz6sI4mqVaFhCpktwbQ/c7nSU/8V7JiTMWQTOAnlpWy5XKY1yESX0tmcMk3uAcqZw==</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="RBPMiA4R2BKAr1UoGAAAAA==" FareBasis="HLOW" PassengerTypeCode="ADT" Origin="AVV" Destination="SYD" EffectiveDate="2020-02-21T05:58:00.000+10:00" DepartureDate="2020-05-20" Amount="AUD89.87" NegotiatedFare="false" NotValidBefore="2020-05-20" NotValidAfter="2020-05-20">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="RBPMiA4R2BKAr1UoGAAAAA==" ProviderCode="1G">gws-eJxNTtEKwjAQ+5iR9/RA1r210JUxpCLqpC/+/2eYngoG2uSaS+9SSkYjzZj+MeE17VfkRwEaTOfWC+ISZwQVHQy2YjtfnvD8yajn5taHw2hitUoRKsVuDaD7nY9DHv1XccCYiiGVwE+sm2TL5W5ex0X4WpyhJd+0OCpf</air:FareRuleKey>
+            </air:FareInfo>
+            <air:FareInfo Key="RBPMiA4R2BKA01UoGAAAAA==" FareBasis="HLOW" PassengerTypeCode="ADT" Origin="AVV" Destination="SYD" EffectiveDate="2020-02-21T05:58:00.000+10:00" DepartureDate="2020-05-21" Amount="AUD89.87" NegotiatedFare="false" NotValidBefore="2020-05-21" NotValidAfter="2020-05-21">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="RBPMiA4R2BKA01UoGAAAAA==" ProviderCode="1G">gws-eJxNTtEKwjAQ+5iR9/RA1r210JUxpCLqpC/+/2eYngoG2uSaS+9SSkYjzZj+MeE17VfkRwEaTOfWC+ISZwQVHQy2YjtfnvD8ycZzc+vDYTSxWqUIlWK3BtD9zschj/6rOGBMxZBK4CfWTbLlcjev4yJ8Lc7Qkm+0sipg</air:FareRuleKey>
+            </air:FareInfo>
+         </air:FareInfoList>
+         <air:RouteList>
+            <air:Route Key="RBPMiA4R2BKA21UoGAAAAA==">
+               <air:Leg Key="RBPMiA4R2BKAL1UoGAAAAA==" Group="0" Origin="MEL" Destination="SYD"/>
+            </air:Route>
+         </air:RouteList>
+         <air:AirPricingSolution Key="RBPMiA4R2BKAI1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13">
+            <air:Journey TravelTime="P0DT1H20M0S">
+               <air:AirSegmentRef Key="RBPMiA4R2BKAJ1UoGAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="RBPMiA4R2BKAL1UoGAAAAA=="/>
+            <air:AirPricingInfo Key="RBPMiA4R2BKAM1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13" LatestTicketingTime="2020-02-25T23:59:00.000+10:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="JQ" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="RBPMiA4R2BKAQ1UoGAAAAA=="/>
+               <air:BookingInfo BookingCode="H" BookingCount="9" CabinClass="Economy" FareInfoRef="RBPMiA4R2BKAQ1UoGAAAAA==" SegmentRef="RBPMiA4R2BKAJ1UoGAAAAA=="/>
+               <air:TaxInfo Category="QR" Amount="AUD7.41" Key="RBPMiA4R2BKAN1UoGAAAAAAA"/>
+               <air:TaxInfo Category="WG" Amount="AUD1.81" Key="RBPMiA4R2BKAO1UoGAAAAAAA"/>
+               <air:TaxInfo Category="UO" Amount="AUD9.91" Key="RBPMiA4R2BKAP1UoGAAAAAAA"/>
+               <air:FareCalc>MEL JQ SYD 89.87HLOW AUD89.87END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="After Departure">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:ChangePenalty>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="RBPMiA4R2BKAS1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13">
+            <air:Journey TravelTime="P0DT1H20M0S">
+               <air:AirSegmentRef Key="RBPMiA4R2BKAT1UoGAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="RBPMiA4R2BKAL1UoGAAAAA=="/>
+            <air:AirPricingInfo Key="RBPMiA4R2BKAV1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13" LatestTicketingTime="2020-02-25T23:59:00.000+10:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="JQ" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="RBPMiA4R2BKAZ1UoGAAAAA=="/>
+               <air:BookingInfo BookingCode="H" BookingCount="9" CabinClass="Economy" FareInfoRef="RBPMiA4R2BKAZ1UoGAAAAA==" SegmentRef="RBPMiA4R2BKAT1UoGAAAAA=="/>
+               <air:TaxInfo Category="QR" Amount="AUD7.41" Key="RBPMiA4R2BKAW1UoGAAAAAAA"/>
+               <air:TaxInfo Category="WG" Amount="AUD1.81" Key="RBPMiA4R2BKAX1UoGAAAAAAA"/>
+               <air:TaxInfo Category="UO" Amount="AUD9.91" Key="RBPMiA4R2BKAY1UoGAAAAAAA"/>
+               <air:FareCalc>MEL JQ SYD 89.87HLOW AUD89.87END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="After Departure">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:ChangePenalty>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="RBPMiA4R2BKAb1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13">
+            <air:Journey TravelTime="P0DT1H20M0S">
+               <air:AirSegmentRef Key="RBPMiA4R2BKAc1UoGAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="RBPMiA4R2BKAL1UoGAAAAA=="/>
+            <air:AirPricingInfo Key="RBPMiA4R2BKAe1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13" LatestTicketingTime="2020-02-25T23:59:00.000+10:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="JQ" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="RBPMiA4R2BKAi1UoGAAAAA=="/>
+               <air:BookingInfo BookingCode="H" BookingCount="9" CabinClass="Economy" FareInfoRef="RBPMiA4R2BKAi1UoGAAAAA==" SegmentRef="RBPMiA4R2BKAc1UoGAAAAA=="/>
+               <air:TaxInfo Category="QR" Amount="AUD7.41" Key="RBPMiA4R2BKAf1UoGAAAAAAA"/>
+               <air:TaxInfo Category="WG" Amount="AUD1.81" Key="RBPMiA4R2BKAg1UoGAAAAAAA"/>
+               <air:TaxInfo Category="UO" Amount="AUD9.91" Key="RBPMiA4R2BKAh1UoGAAAAAAA"/>
+               <air:FareCalc>MEL JQ SYD 89.87HLOW AUD89.87END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="After Departure">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:ChangePenalty>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="RBPMiA4R2BKAk1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13">
+            <air:Journey TravelTime="P0DT1H20M0S">
+               <air:AirSegmentRef Key="RBPMiA4R2BKAl1UoGAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="RBPMiA4R2BKAL1UoGAAAAA=="/>
+            <air:AirPricingInfo Key="RBPMiA4R2BKAn1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13" LatestTicketingTime="2020-02-25T23:59:00.000+10:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="JQ" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="RBPMiA4R2BKAr1UoGAAAAA=="/>
+               <air:BookingInfo BookingCode="H" BookingCount="9" CabinClass="Economy" FareInfoRef="RBPMiA4R2BKAr1UoGAAAAA==" SegmentRef="RBPMiA4R2BKAl1UoGAAAAA=="/>
+               <air:TaxInfo Category="QR" Amount="AUD7.41" Key="RBPMiA4R2BKAo1UoGAAAAAAA"/>
+               <air:TaxInfo Category="WG" Amount="AUD1.81" Key="RBPMiA4R2BKAp1UoGAAAAAAA"/>
+               <air:TaxInfo Category="UO" Amount="AUD9.91" Key="RBPMiA4R2BKAq1UoGAAAAAAA"/>
+               <air:FareCalc>MEL JQ SYD 89.87HLOW AUD89.87END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="After Departure">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:ChangePenalty>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="RBPMiA4R2BKAt1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13">
+            <air:Journey TravelTime="P0DT1H20M0S">
+               <air:AirSegmentRef Key="RBPMiA4R2BKAu1UoGAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="RBPMiA4R2BKAL1UoGAAAAA=="/>
+            <air:AirPricingInfo Key="RBPMiA4R2BKAw1UoGAAAAA==" TotalPrice="AUD109.00" BasePrice="AUD89.87" ApproximateTotalPrice="AUD109.00" ApproximateBasePrice="AUD89.87" Taxes="AUD19.13" ApproximateTaxes="AUD19.13" LatestTicketingTime="2020-02-25T23:59:00.000+10:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="JQ" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="RBPMiA4R2BKA01UoGAAAAA=="/>
+               <air:BookingInfo BookingCode="H" BookingCount="9" CabinClass="Economy" FareInfoRef="RBPMiA4R2BKA01UoGAAAAA==" SegmentRef="RBPMiA4R2BKAu1UoGAAAAA=="/>
+               <air:TaxInfo Category="QR" Amount="AUD7.41" Key="RBPMiA4R2BKAx1UoGAAAAAAA"/>
+               <air:TaxInfo Category="WG" Amount="AUD1.81" Key="RBPMiA4R2BKAy1UoGAAAAAAA"/>
+               <air:TaxInfo Category="UO" Amount="AUD9.91" Key="RBPMiA4R2BKAz1UoGAAAAAAA"/>
+               <air:FareCalc>MEL JQ SYD 89.87HLOW AUD89.87END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="After Departure">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:ChangePenalty>
+            </air:AirPricingInfo>
+         </air:AirPricingSolution>
+      </air:LowFareSearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

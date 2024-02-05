@@ -1,0 +1,140 @@
+Hotel Rules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hotel:HotelRulesReq AuthorizedBy="SUSIL" TargetBranch="P7102538" TraceId="PP_1G_001" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hotel:HotelRulesLookup RatePlanType="2QN08PG" Base="USD2943.82">
+            <hotel:HotelProperty HotelChain="HI" HotelCode="25326" HotelLocation="DEN" Name="HOLIDAY INN AND SUITES AIRPORT" ParticipationLevel="4">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6900 TOWER ROAD</hotel:Address>
+                  <hotel:Address>DENVER CO 80249 US</hotel:Address>
+               </hotel:PropertyAddress>
+               <com:PhoneNumber Type="Business" Number="1-303-5741300"/>
+               <com:PhoneNumber Type="Fax" Number="1-303-5741340"/>
+               <com:Distance Units="KM" Value="9" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+               <hotel:MarketingMessage>
+                  <hotel:Text>CHECK OUT * WWW.IHGAGENT.COM *</hotel:Text>
+               </hotel:MarketingMessage>
+            </hotel:HotelProperty>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+            </hotel:HotelStay>
+            <hotel:HotelRulesModifiers NumberOfAdults="1" NumberOfRooms="4"/>
+         </hotel:HotelRulesLookup>
+      </hotel:HotelRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Rules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelRulesRsp TraceId="PP_1G_001" TransactionId="9C184CB50A07643CAB0E0A7CE91E3CDA" ResponseTime="929" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0">
+         <hotel:HotelRateDetail RatePlanType="2QN08PG" Base="USD2943.82" Total="USD3407.47">
+            <hotel:RoomRateDescription Name="Rate comment">
+               <hotel:Text>PER NIGHT STARTING 01MAY FOR 1 NIGHT USD189.04</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 02MAY FOR 1 NIGHT USD200.68</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 03MAY FOR 1 NIGHT USD202.41</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 04MAY FOR 4 NIGHTS USD204.23</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 08MAY FOR 1 NIGHT USD188.81</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 09MAY FOR 1 NIGHT USD200.43</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 10MAY FOR 1 NIGHT USD152.36</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 11MAY FOR 1 NIGHT USD191.57</hotel:Text>
+               <hotel:Text>PER NIGHT STARTING 12MAY FOR 4 NIGHTS USD200.40</hotel:Text>
+               <hotel:Text>TOTAL RATE STARTING 01MAY FOR 15 NIGHTS USD2943.82</hotel:Text>
+               <hotel:Text>SUB TOTAL FOR STAY USD2943.82</hotel:Text>
+               <hotel:Text>APPROX TOTAL INCL ALL KNOWN TAXES/FEES USD3407.47</hotel:Text>
+            </hotel:RoomRateDescription>
+            <hotel:RoomRateDescription Name="Rate description">
+               <hotel:Text>2qn08pg: Breakfast For 2 Adults</hotel:Text>
+            </hotel:RoomRateDescription>
+            <hotel:RoomRateDescription Name="Room rate">
+               <hotel:Text>COMMISSIONABLE</hotel:Text>
+               <hotel:Text>YOU CAN EMAIL VACATION PHOTOS QUICKLY WITH FREE HIGH SPEED</hotel:Text>
+               <hotel:Text>INTERNET ACCESS. SPEND AN EVENING WATCHING YOUR FAVORITE MOVIES</hotel:Text>
+               <hotel:Text>ON THE 32 INCH FLAT SCREEN TV. THE TWO COZY TRIPLE SHEETED QUEEN</hotel:Text>
+               <hotel:Text>SIZE BEDS CAN ACCOMMODATE YOUR FAMILYS NEEDS. THIS ROOM ALSO</hotel:Text>
+               <hotel:Text>FEATURES AN ACTIVITY TABLE WITH CHAIRS.</hotel:Text>
+               <hotel:Text>INCLUDES BREAKFAST FOR ONE OR TWO ADULTS SHARING A ROOM.</hotel:Text>
+               <hotel:Text>TAXES -</hotel:Text>
+               <hotel:Text>SALES TX - 15.75PCT P/ROOM P/NIGHT</hotel:Text>
+               <hotel:Text>TWO QUEEN BEDS NONSMOKING</hotel:Text>
+            </hotel:RoomRateDescription>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD189.04"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-03" Base="USD200.68"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-03" ExpireDate="2020-05-04" Base="USD202.41"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-04" ExpireDate="2020-05-08" Base="USD204.23"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-08" ExpireDate="2020-05-09" Base="USD188.81"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-09" ExpireDate="2020-05-10" Base="USD200.43"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-10" ExpireDate="2020-05-11" Base="USD152.36"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-11" ExpireDate="2020-05-12" Base="USD191.57"/>
+            <hotel:HotelRateByDate EffectiveDate="2020-05-12" ExpireDate="2020-05-16" Base="USD200.40"/>
+            <hotel:AcceptedPayment PaymentCode="AX"/>
+            <hotel:AcceptedPayment PaymentCode="VI"/>
+            <hotel:AcceptedPayment PaymentCode="CA"/>
+            <hotel:AcceptedPayment PaymentCode="DC"/>
+            <hotel:AcceptedPayment PaymentCode="CB"/>
+            <hotel:AcceptedPayment PaymentCode="JC"/>
+            <hotel:AcceptedPayment PaymentCode="DS"/>
+            <hotel:Commission Indicator="true"/>
+            <hotel:CancelInfo NonRefundableStayIndicator="false"/>
+            <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+            <hotel:Inclusions SmokingRoomIndicator="false">
+               <hotel:BedTypes Code="248"/>
+               <hotel:MealPlans Breakfast="true" Lunch="false" Dinner="false"/>
+            </hotel:Inclusions>
+         </hotel:HotelRateDetail>
+         <hotel:HotelRuleItem Name="Cancellation">
+            <hotel:Text>CXL: PENALITY AMOUNT 218.81 CANCEL BY 2020-04-30T18:00:00 CXL</hotel:Text>
+            <hotel:Text>AFTER 1800 30APR FORFEIT FIRST NITE STAY</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelRuleItem Name="Checkin Checkout">
+            <hotel:Text>15.75 PCT TAX PER NIGHT STATE AND CITY TAXES EXCLUDES GRATUITY</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelRuleItem Name="Guarantee">
+            <hotel:Text>GUARANTEE REQUIRED GUARANTEE METHOD: ACCEPTED CREDIT CARDS</hotel:Text>
+            <hotel:Text>PRE-APRVD ARC-IATA NBR</hotel:Text>
+            <hotel:Text>CC ACCEPTED AX VI CA DC CB JC DS</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelRuleItem Name="Location Text">
+            <hotel:Text>ENJOY YOUR STAY AT OUR HOTEL NEAR THE DENVER AIRPORT DEN. IF YOU</hotel:Text>
+            <hotel:Text>ARE LOOKING FOR A FULL-SERVICE HOTEL NEAR THE DENVER AIRPORT</hotel:Text>
+            <hotel:Text>LOOK NO FURTHER THAN THE HOLIDAY INN  SUITES DENVER AIRPORT</hotel:Text>
+            <hotel:Text>HOTEL. WITH CONVENIENT ACCESS TO I-25 I-70 AND E-470 ITS EASY TO</hotel:Text>
+            <hotel:Text>ENJOY AN ASSORTMENT OF DOWNTOWN DENVER ATTRACTIONS. FOR YOUR</hotel:Text>
+            <hotel:Text>CONVENIENCE OUR DENVER AIRPORT HOTEL IS JUST MINUTES AWAY FROM</hotel:Text>
+            <hotel:Text>DENVER INTERNATIONAL AIRPORT OFFERING COMPLIMENTARY 24-HOUR</hotel:Text>
+            <hotel:Text>AIRPORT SHUTTLE SERVICE. HOTEL GUESTS SHOULD HEAD TO THE BEAUTY</hotel:Text>
+            <hotel:Text>OF SCENIC DENVER. SPORTS FANS LOVE THAT WE ARE NEAR THE VENUES</hotel:Text>
+            <hotel:Text>OF THE DENVER BRONCOS DENVER NUGGETS COLORADO AVALANCHE AND</hotel:Text>
+            <hotel:Text>COLORADO ROCKIES. OTHER ATTRACTIONS INCLUDE RED ROCKS</hotel:Text>
+            <hotel:Text>AMPHITHEATER DENVER ZOO BOTANICAL GARDENS AND THE DENVER ART</hotel:Text>
+            <hotel:Text>MUSEUM. CORPORATE TRAVELERS LOOKING FOR A HOTEL NEAR DENVER</hotel:Text>
+            <hotel:Text>INTERNATIONAL AIRPORT ARE PLEASED TO KNOW WE ARE JUST MINUTES</hotel:Text>
+            <hotel:Text>FROM LOCKHEED RAYTHEON BAE BUCKELY AIR FORCE BASE AND UNIVERSITY</hotel:Text>
+            <hotel:Text>OF COLORADO MEDICAL COMPLEX. WITH SPACIOUS EVENT FACILITIES A</hotel:Text>
+            <hotel:Text>24-HOUR BUSINESS CENTER AND A COMPLIMENTARY 24-HOUR AIRPORT</hotel:Text>
+            <hotel:Text>SHUTTLE OUR HOTEL OFFERS CONVENIENCES THAT CATER TO YOUR NEEDS.</hotel:Text>
+            <hotel:Text>WHILE STAYING IN DENVER VISITORS CAN ENJOY AMENITIES LIKE FREE</hotel:Text>
+            <hotel:Text>HIGH-SPEED INTERNET ACCESS A 24 HOUR FITNESS CENTER INDOOR POOL</hotel:Text>
+            <hotel:Text>JACUZZI AND CAR RENTAL SERVICE. BE SURE TO VISIT SPORTING NEWS</hotel:Text>
+            <hotel:Text>BAR OUR ON-SITE RESTAURANT AS WELL. THE HOLIDAY INN  SUITES</hotel:Text>
+            <hotel:Text>DENVER AIRPORT HOTEL IS THE PERFECT DESTINATION FOR YOUR</hotel:Text>
+            <hotel:Text>CORPORATE AND PERSONAL NEEDS.</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelRuleItem Name="Miscellaneous">
+            <hotel:Text>CHECK IN: 1500  CHECK OUT: 1200 MINIMUM LENGTH OF STAY: 1 DAYS</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelRuleItem Name="Promotional">
+            <hotel:Text>CHECK OUT * WWW.IHGAGENT.COM *</hotel:Text>
+         </hotel:HotelRuleItem>
+         <hotel:HotelType SourceLink="true"/>
+      </hotel:HotelRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

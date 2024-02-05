@@ -1,0 +1,71 @@
+HotelRetrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelRetrieveReq RetrieveProviderReservationDetails="true" AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" TraceId="PP_1P_001" ProviderCode="1P" ProviderLocatorCode="MEH245" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </hot:HotelRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelRetrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelRetrieveRsp TraceId="PP_1P_001" TransactionId="9DCF47B10A07643CAB0E0A7CFE8B647D" ResponseTime="178" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:HotelReservation Status="HK" BookingConfirmation="87304738" LocatorCode="0098S7YC" CreateDate="2020-03-03T00:32:48.943+00:00" ModifiedDate="2020-03-03T00:32:49.460+00:00" ProviderReservationInfoRef="VbtNMC8Q2BKAvLBICAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="TuJJbrVu4hG1/9LlYIhwmw=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:NameOverride First="HARRY" Last="LOBO"/>
+            </common_v50_0:ReservationName>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="1540" HotelLocation="BOM" Name="ITC GRAND CENTRAL MUMBAI">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKAR ROA PARE</hotel:Address>
+                  <hotel:Address>MUMBAI MH 400012</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Hotel" Number="91 22 24101010"/>
+               <common_v50_0:PhoneNumber Type="Fax" Number="91 22 24101111"/>
+            </hotel:HotelProperty>
+            <hotel:HotelRateDetail RatePlanType="REGA00" Base="INR217500.00" Total="INR256650.00">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules  Executive Club  Guest Room  1 King Or</hotel:Text>
+                  <hotel:Text>Twin Single Bed-s-</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancellation">
+                  <hotel:Text>CANCEL PERMITTED UP TO 02 DAYS BEFORE ARRIVAL.  17110.00 CANCEL FEE PER ROOM.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Late Arrival Guarantee">
+                  <hotel:Text>DEPCCAX373900000000000EXP*****</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate  Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-16" Base="INR14500.00"/>
+               <common_v50_0:CorporateDiscountID>288480</common_v50_0:CorporateDiscountID>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="15" Term="Night" CollectionFreq="Compound">
+                     <hotel:Percentage>9.0</hotel:Percentage>
+                  </hotel:Tax>
+                  <hotel:Tax Code="3" Term="Night" CollectionFreq="Compound">
+                     <hotel:Percentage>9.0</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+            </hotel:HotelRateDetail>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+            </hotel:HotelStay>
+            <common_v50_0:Guarantee Type="Deposit" Key="PDz8y7xu4hGfaM/wYIhwmw==" Reusable="true">
+               <common_v50_0:CreditCard Type="AX" Number="***********0000" ExpDate="2020-09"/>
+            </common_v50_0:Guarantee>
+            <common_v50_0:BookingSource Type="IataNumber" Code="1P"/>
+            <hotel:GuestInformation NumberOfRooms="1">
+               <hotel:NumberOfAdults>2</hotel:NumberOfAdults>
+            </hotel:GuestInformation>
+            <common_v50_0:SellMessage>ARC/IATA INVALID.  PLEASE VERIFY AND CORRECT OR INPUT  /BS-0000000 TO PROCESS YOUR ENTRY VIA LINK $L</common_v50_0:SellMessage>
+            <hotel:HotelCommission>Y</hotel:HotelCommission>
+         </hotel:HotelReservation>
+      </hotel:HotelRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

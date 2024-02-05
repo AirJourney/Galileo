@@ -1,0 +1,816 @@
+<soap:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Body>
+		<GdsNextOnQueueReq TraceId="trace" AuthorizedBy="user" TargetBranch="P4444444" RemoveCurrent="false" QueueSessionToken="AD80C8CD0A0759D4E688D64355685C99" ProviderCode="1G" xmlns="http://www.travelport.com/schema/gdsQueue_v50_0">
+			<BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+			<OverridePCC ProviderCode="1G" PseudoCityCode="7PCC" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+		</GdsNextOnQueueReq>
+	</soap:Body>
+</soap:Envelope>
+
+
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<gdsQueue:GdsNextOnQueueRsp xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" TraceId="trace" TransactionId="AD80CC340A0759BD8A9E97C2082D21ED" ResponseTime="1987" QueueSessionToken="AD80D1310A0759BD8A9E97C2ED49577B">
+			<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="0" Type="Info">
+				<![CDATA[Universal Record 3KUI0Y still on queue 10]]>
+			</common_v50_0:ResponseMessage>
+			<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="6211" Type="Info">
+				<![CDATA[PNR in Queue Mode: 1G-ELDMSQ]]>
+			</common_v50_0:ResponseMessage>
+			<universal:UniversalRecord xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" LocatorCode="3L5NSI" Version="363" Status="Active">
+				<common_v50_0:BookingTraveler Key="GyfZaCYc1BKAjcBBpJAAAA==">
+					<common_v50_0:BookingTravelerName First="FABIOLA MRS" Last="DOE"/>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:BookingTraveler Key="GyfZaCYc1BKAkcBBpJAAAA==">
+					<common_v50_0:BookingTravelerName First="ROSANE MRS" Last="SMITH"/>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:ActionStatus Key="GyfZaCYc1BKABcBBpJAAAA==" Type="TAU" TicketDate="2020-03-06T23:59:00.000-03:00" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" ProviderCode="1G">
+					<common_v50_0:Remark>2300</common_v50_0:Remark>
+				</common_v50_0:ActionStatus>
+				<universal:ProviderReservationInfo Key="GyfZaCYc1BKAB5+ApJAAAA==" ProviderCode="1G" LocatorCode="ELDMSQ" CreateDate="2020-03-05T19:30:46.648+00:00" ModifiedDate="2020-03-06T01:41:05.336+00:00" HostCreateDate="2020-03-05" Imported="true" InQueueMode="true" OwningPCC="7PCC"/>
+				<air:AirReservation xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" LocatorCode="3L5NU1" CreateDate="2020-03-05T19:30:46.160+00:00" ModifiedDate="2020-03-06T01:41:05.336+00:00">
+					<common_v50_0:SupplierLocator SupplierCode="UA" SupplierLocatorCode="NVFEXD" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" CreateDateTime="2020-03-05T19:29:00.000+00:00"/>
+					<common_v50_0:BookingTravelerRef Key="GyfZaCYc1BKAjcBBpJAAAA=="/>
+					<common_v50_0:BookingTravelerRef Key="GyfZaCYc1BKAkcBBpJAAAA=="/>
+					<common_v50_0:ProviderReservationInfoRef Key="GyfZaCYc1BKAB5+ApJAAAA=="/>
+					<air:AirSegment Key="GyfZaCYc1BKAlcBBpJAAAA==" Group="0" Carrier="UA" CabinClass="Economy" FlightNumber="128" ProviderCode="1G" Origin="GIG" Destination="IAH" DepartureTime="2020-04-12T20:55:00.000-03:00" ArrivalTime="2020-04-13T05:25:00.000-05:00" TravelTime="630" ClassOfService="L" ETicketability="Yes" Equipment="764" MarriageGroup="1" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" TravelOrder="1" OptionalServicesIndicator="false">
+						<air:FlightDetails Key="GyfZaCYc1BKAmcBBpJAAAA==" Origin="GIG" Destination="IAH" DepartureTime="2020-04-12T20:55:00.000-03:00" ArrivalTime="2020-04-13T05:25:00.000-05:00" FlightTime="630" TravelTime="630" Equipment="764" OriginTerminal="2" DestinationTerminal="E"/>
+					</air:AirSegment>
+					<air:AirSegment Key="GyfZaCYc1BKAncBBpJAAAA==" Group="1" Carrier="UA" CabinClass="Economy" FlightNumber="707" ProviderCode="1G" Origin="IAH" Destination="SJD" DepartureTime="2020-04-13T09:43:00.000-05:00" ArrivalTime="2020-04-13T11:40:00.000-07:00" TravelTime="237" ClassOfService="L" ETicketability="Yes" Equipment="739" MarriageGroup="1" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" TravelOrder="2" OptionalServicesIndicator="false">
+						<air:FlightDetails Key="GyfZaCYc1BKAocBBpJAAAA==" Origin="IAH" Destination="SJD" DepartureTime="2020-04-13T09:43:00.000-05:00" ArrivalTime="2020-04-13T11:40:00.000-07:00" FlightTime="177" TravelTime="237" Equipment="739" OriginTerminal="E" DestinationTerminal="2"/>
+					</air:AirSegment>
+					<air:AirSegment Key="GyfZaCYc1BKApcBBpJAAAA==" Group="2" Carrier="UA" CabinClass="Economy" FlightNumber="2103" ProviderCode="1G" Origin="SJD" Destination="IAH" DepartureTime="2020-04-18T14:38:00.000-07:00" ArrivalTime="2020-04-18T18:15:00.000-05:00" TravelTime="97" ClassOfService="L" ETicketability="Yes" Equipment="739" MarriageGroup="2" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" TravelOrder="3" OptionalServicesIndicator="false">
+						<air:FlightDetails Key="GyfZaCYc1BKAqcBBpJAAAA==" Origin="SJD" Destination="IAH" DepartureTime="2020-04-18T14:38:00.000-07:00" ArrivalTime="2020-04-18T18:15:00.000-05:00" FlightTime="157" TravelTime="97" Equipment="739" OriginTerminal="2" DestinationTerminal="E"/>
+						<air:Connection Duration="235"/>
+					</air:AirSegment>
+					<air:AirSegment Key="GyfZaCYc1BKArcBBpJAAAA==" Group="2" Carrier="UA" CabinClass="Economy" FlightNumber="129" ProviderCode="1G" Origin="IAH" Destination="GIG" DepartureTime="2020-04-18T22:10:00.000-05:00" ArrivalTime="2020-04-19T10:15:00.000-03:00" TravelTime="605" ClassOfService="L" ETicketability="Yes" Equipment="764" MarriageGroup="2" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" TravelOrder="4" OptionalServicesIndicator="false">
+						<air:FlightDetails Key="GyfZaCYc1BKAscBBpJAAAA==" Origin="IAH" Destination="GIG" DepartureTime="2020-04-18T22:10:00.000-05:00" ArrivalTime="2020-04-19T10:15:00.000-03:00" FlightTime="605" TravelTime="605" Equipment="764" OriginTerminal="E" DestinationTerminal="2"/>
+					</air:AirSegment>
+					<air:AirPricingInfo Key="GyfZaCYc1BKAFcBBpJAAAA==" TotalPrice="BRL3214.11" BasePrice="USD550.00" ApproximateTotalPrice="BRL3214.11" ApproximateBasePrice="BRL2489.19" EquivalentBasePrice="BRL2489.19" Taxes="BRL724.92" LatestTicketingTime="2020-03-06T23:59:00.000-03:00" TrueLastDateToTicket="2020-03-08T23:59:00.000-03:00" PricingMethod="Guaranteed" ETicketability="Yes" ProviderCode="1G" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" AirPricingInfoGroup="1" PricingType="StoredFare" FareCalculationInd="G">
+						<air:FareInfo Key="GyfZaCYc1BKAHcBBpJAAAA==" FareBasis="LNA0R9LN" PassengerTypeCode="ADT" Origin="GIG" Destination="IAH" EffectiveDate="2020-03-05T00:00:00.000-03:00" NotValidBefore="2020-04-12" NotValidAfter="2020-04-12" PseudoCityCode="7PCC">
+							<common_v50_0:Endorsement Value="NONREF/0VALUAFTDPT/CHGFEE"/>
+							<air:BaggageAllowance>
+								<air:NumberOfPieces>1</air:NumberOfPieces>
+							</air:BaggageAllowance>
+							<air:Brand BrandID="361770" Name="United Economy®" Carrier="UA">
+								<air:Title Type="External" LanguageCode="EN">United Economy®</air:Title>
+								<air:Title Type="Short" LanguageCode="EN">UAECO</air:Title>
+								<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="Strapline" LanguageCode="EN">Our lowest available fare with options to customize travel and without the restrictions of Budget E</air:Text>
+								<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="2000" ImageHeight="1529">https://cdn.travelport.com/united/UA_general_large_42309.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.190+00:00" Key="GyfZaCYc1BKAG5+ApJAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Full sized carry on bag</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Full sized carry on bag</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Carry bag</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.190+00:00" Key="GyfZaCYc1BKAH5+ApJAAAA==" SecondaryType="Specialty Item" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Personal Item (9 in x 10 in x 17 in)</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Personal item that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in)</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">PSNL ITEM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.190+00:00" Key="GyfZaCYc1BKAM5+ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Beverages</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Enjoy a variety of beverages</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Beverages</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">BVR</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.190+00:00" Key="GyfZaCYc1BKAN5+ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Intl long-haul upper cabin meal</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Customized dining experience!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Intl long-haul upper cabin meal</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">GFM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.190+00:00" Key="GyfZaCYc1BKAO5+ApJAAAA==" SecondaryType="Snack" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Choice Menu and Bistro On Board</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">So many options to take advantage of!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Choice Menu and Bistro On Board</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">CHME</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.190+00:00" Key="GyfZaCYc1BKAP5+ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>In-Flight Entertainment</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">On-demand entertainment</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Title Type="External" LanguageCode="EN">In-Flight Entertainment</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Video</air:Title>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:FareInfo Key="GyfZaCYc1BKAScBBpJAAAA==" FareBasis="LNA0R9LN" PassengerTypeCode="ADT" Origin="IAH" Destination="SJD" EffectiveDate="2020-03-05T00:00:00.000-03:00" NotValidBefore="2020-04-13" NotValidAfter="2020-04-13" PseudoCityCode="7PCC">
+							<common_v50_0:Endorsement Value="NONREF/0VALUAFTDPT/CHGFEE"/>
+							<air:BaggageAllowance>
+								<air:NumberOfPieces>1</air:NumberOfPieces>
+							</air:BaggageAllowance>
+							<air:Brand BrandID="361770" Name="United Economy®" Carrier="UA">
+								<air:Title Type="External" LanguageCode="EN">United Economy®</air:Title>
+								<air:Title Type="Short" LanguageCode="EN">UAECO</air:Title>
+								<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="Strapline" LanguageCode="EN">Our lowest available fare with options to customize travel and without the restrictions of Budget E</air:Text>
+								<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="2000" ImageHeight="1529">https://cdn.travelport.com/united/UA_general_large_42309.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.213+00:00" Key="GyfZaCYc1BKAX5+ApJAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Full sized carry on bag</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+										<air:Title Type="Short" LanguageCode="EN">Carry bag</air:Title>
+										<air:Title Type="External" LanguageCode="EN">Full sized carry on bag</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.213+00:00" Key="GyfZaCYc1BKAY5+ApJAAAA==" SecondaryType="Specialty Item" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Personal Item (9 in x 10 in x 17 in)</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Personal item that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in)</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">PSNL ITEM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.213+00:00" Key="GyfZaCYc1BKAd5+ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Beverages</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Enjoy a variety of beverages</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Beverages</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">BVR</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.213+00:00" Key="GyfZaCYc1BKAe5+ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Intl long-haul upper cabin meal</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Customized dining experience!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Intl long-haul upper cabin meal</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">GFM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.213+00:00" Key="GyfZaCYc1BKAf5+ApJAAAA==" SecondaryType="Snack" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Choice Menu and Bistro On Board</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">So many options to take advantage of!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Choice Menu and Bistro On Board</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">CHME</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.213+00:00" Key="GyfZaCYc1BKAg5+ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>In-Flight Entertainment</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">On-demand entertainment</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Title Type="External" LanguageCode="EN">In-Flight Entertainment</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Video</air:Title>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:FareInfo Key="GyfZaCYc1BKAVcBBpJAAAA==" FareBasis="LNA0R9LN" PassengerTypeCode="ADT" Origin="SJD" Destination="IAH" EffectiveDate="2020-03-05T00:00:00.000-03:00" NotValidBefore="2020-04-18" NotValidAfter="2020-04-18" PseudoCityCode="7PCC">
+							<common_v50_0:Endorsement Value="NONREF/0VALUAFTDPT/CHGFEE"/>
+							<air:BaggageAllowance>
+								<air:NumberOfPieces>1</air:NumberOfPieces>
+							</air:BaggageAllowance>
+							<air:Brand BrandID="361770" Name="United Economy®" Carrier="UA">
+								<air:Title Type="External" LanguageCode="EN">United Economy®</air:Title>
+								<air:Title Type="Short" LanguageCode="EN">UAECO</air:Title>
+								<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="Strapline" LanguageCode="EN">Our lowest available fare with options to customize travel and without the restrictions of Budget E</air:Text>
+								<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="2000" ImageHeight="1529">https://cdn.travelport.com/united/UA_general_large_42309.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.235+00:00" Key="GyfZaCYc1BKAIH/ApJAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Full sized carry on bag</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Full sized carry on bag</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Carry bag</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.235+00:00" Key="GyfZaCYc1BKAJH/ApJAAAA==" SecondaryType="Specialty Item" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Personal Item (9 in x 10 in x 17 in)</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Personal item that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in)</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">PSNL ITEM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.235+00:00" Key="GyfZaCYc1BKAOH/ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Beverages</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Enjoy a variety of beverages</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Beverages</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">BVR</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.235+00:00" Key="GyfZaCYc1BKAPH/ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Intl long-haul upper cabin meal</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Customized dining experience!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Intl long-haul upper cabin meal</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">GFM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.235+00:00" Key="GyfZaCYc1BKAQH/ApJAAAA==" SecondaryType="Snack" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Choice Menu and Bistro On Board</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">So many options to take advantage of!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Choice Menu and Bistro On Board</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">CHME</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.235+00:00" Key="GyfZaCYc1BKARH/ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>In-Flight Entertainment</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">On-demand entertainment</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Title Type="External" LanguageCode="EN">In-Flight Entertainment</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Video</air:Title>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:FareInfo Key="GyfZaCYc1BKAYcBBpJAAAA==" FareBasis="LNA0R9LN" PassengerTypeCode="ADT" Origin="IAH" Destination="GIG" EffectiveDate="2020-03-05T00:00:00.000-03:00" NotValidBefore="2020-04-18" NotValidAfter="2020-04-18" PseudoCityCode="7PCC">
+							<common_v50_0:Endorsement Value="NONREF/0VALUAFTDPT/CHGFEE"/>
+							<air:BaggageAllowance>
+								<air:NumberOfPieces>1</air:NumberOfPieces>
+							</air:BaggageAllowance>
+							<air:Brand BrandID="361770" Name="United Economy®" Carrier="UA">
+								<air:Title Type="External" LanguageCode="EN">United Economy®</air:Title>
+								<air:Title Type="Short" LanguageCode="EN">UAECO</air:Title>
+								<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee
+
+Spirits available for purchase (free wine and beer on international flights beginning in June)
+
+Complimentary meal service and mid-flight snack
+
+A variety of entertainment options, including audio selections and movies
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="Strapline" LanguageCode="EN">Our lowest available fare with options to customize travel and without the restrictions of Budget E</air:Text>
+								<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1595.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Consumer" ImageWidth="2000" ImageHeight="1529">https://cdn.travelport.com/united/UA_general_large_42309.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.258+00:00" Key="GyfZaCYc1BKAZH/ApJAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Full sized carry on bag</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Full sized carry on bag</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Carry bag</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.258+00:00" Key="GyfZaCYc1BKAaH/ApJAAAA==" SecondaryType="Specialty Item" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Personal Item (9 in x 10 in x 17 in)</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Personal item that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in)</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">PSNL ITEM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.258+00:00" Key="GyfZaCYc1BKAfH/ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Beverages</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_85124.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Enjoy a variety of beverages</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary soft drinks, juices, tea and freshly brewed coffee.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Beverages</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">BVR</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.258+00:00" Key="GyfZaCYc1BKAgH/ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Intl long-haul upper cabin meal</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">Customized dining experience!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+- Pre-departure beverage service.
+- Hot towel service.
+- Printed menu.
+- Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+- Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after-dinner liqueurs.
+- Mid-flight snack service on longer flights.
+- Light meal service prior to arrival.
+- A variety of cocktails, beer, international wines and freshly brewed coffee.
+- Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Intl long-haul upper cabin meal</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">GFM</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.258+00:00" Key="GyfZaCYc1BKAhH/ApJAAAA==" SecondaryType="Snack" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Choice Menu and Bistro On Board</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">So many options to take advantage of!</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Choice Menu:
+Available all day on most North America and Latin America flights (excluding Argentina, Brazil, Peru and Venezuela) over 2 hours and between Honolulu and Guam. All flights accept credit and debit cards only.
+
+Bistro On Board:
+Available on flights over 3.5 hours within North America and to Latin America (excluding Argentina, Brazil, Peru and Venezuela) and between Honolulu and Guam. Fresh selections may vary due to product availability. All flights accept credit and debit cards only.
+
+Select Markets:
+Warm meals are available on most flights between Hawaii and Chicago, Houston, Newark and Washington, D.C.; p.s. flights between New York JFK and Los Angeles or San Francisco; and between Honolulu and Guam.</air:Text>
+										<air:Title Type="External" LanguageCode="EN">Choice Menu and Bistro On Board</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">CHME</air:Title>
+									</air:OptionalService>
+									<air:OptionalService Type="InFlightEntertainment" SupplierCode="UA" CreateDate="2020-03-05T19:30:46.258+00:00" Key="GyfZaCYc1BKAiH/ApJAAAA==" Chargeable="Included in the brand">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>In-Flight Entertainment</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_88953.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+										<air:Text Type="Strapline" LanguageCode="EN">On-demand entertainment</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">Seatback on-Demand
+- 747 (Only Global First and Business First)
+- 757
+- 767
+- 777
+- 787
+
+DIRECTV (Complimentary in United First, available for purchase in Economy)
+- 737
+- Select 757
+
+Personal Device Entertainment (Requires United app or laptop)
+- Airbus (A319/A320)
+- 747
+- 777 (Flying primarily between continental US and Hawaii)
+- 757 (Select aircraft)
+- 767 (Select aircraft)
+
+* Visit the inflight entertainment page on United.com for more information</air:Text>
+										<air:Title Type="External" LanguageCode="EN">In-Flight Entertainment</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Video</air:Title>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="GyfZaCYc1BKAHcBBpJAAAA==" SegmentRef="GyfZaCYc1BKAlcBBpJAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="GyfZaCYc1BKAScBBpJAAAA==" SegmentRef="GyfZaCYc1BKAncBBpJAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="GyfZaCYc1BKAVcBBpJAAAA==" SegmentRef="GyfZaCYc1BKApcBBpJAAAA=="/>
+						<air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="GyfZaCYc1BKAYcBBpJAAAA==" SegmentRef="GyfZaCYc1BKArcBBpJAAAA=="/>
+						<air:TaxInfo Category="BR" Amount="BRL127.43" Key="GyfZaCYc1BKAbcBBpJAAAA=="/>
+						<air:TaxInfo Category="AY" Amount="BRL50.68" Key="GyfZaCYc1BKAccBBpJAAAA=="/>
+						<air:TaxInfo Category="XA" Amount="BRL35.84" Key="GyfZaCYc1BKAdcBBpJAAAA=="/>
+						<air:TaxInfo Category="XF" Amount="BRL20.36" Key="GyfZaCYc1BKAecBBpJAAAA==">
+							<common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="IAH"/>
+						</air:TaxInfo>
+						<air:TaxInfo Category="XY" Amount="BRL63.36" Key="GyfZaCYc1BKAfcBBpJAAAA=="/>
+						<air:TaxInfo Category="YC" Amount="BRL53.30" Key="GyfZaCYc1BKAgcBBpJAAAA=="/>
+						<air:TaxInfo Category="UK" Amount="BRL138.57" Key="GyfZaCYc1BKAhcBBpJAAAA=="/>
+						<air:TaxInfo Category="XD" Amount="BRL235.38" Key="GyfZaCYc1BKAicBBpJAAAA=="/>
+						<air:FareCalc>RIO UA X/HOU UA SJD Q RIOSJD175.00 100.00LNA0R9LN UA X/HOU UA RIO Q SJDRIO175.00 100.00LNA0R9LN NUC550.00END ROE1.0</air:FareCalc>
+						<air:PassengerType Code="ADT" BookingTravelerRef="GyfZaCYc1BKAjcBBpJAAAA==">
+							<air:FareGuaranteeInfo GuaranteeDate="2020-03-06" GuaranteeType="Guaranteed"/>
+						</air:PassengerType>
+						<air:PassengerType Code="ADT" BookingTravelerRef="GyfZaCYc1BKAkcBBpJAAAA==">
+							<air:FareGuaranteeInfo GuaranteeDate="2020-03-06" GuaranteeType="Guaranteed"/>
+						</air:PassengerType>
+						<common_v50_0:BookingTravelerRef Key="GyfZaCYc1BKAjcBBpJAAAA=="/>
+						<common_v50_0:BookingTravelerRef Key="GyfZaCYc1BKAkcBBpJAAAA=="/>
+						<air:TicketingModifiersRef Key="GyfZaCYc1BKAGcBBpJAAAA=="/>
+					</air:AirPricingInfo>
+					<air:TicketingModifiers PlatingCarrier="UA" Key="GyfZaCYc1BKAGcBBpJAAAA==">
+						<air:DocumentSelect IssueElectronicTicket="true"/>
+					</air:TicketingModifiers>
+				</air:AirReservation>
+				<common_v50_0:GeneralRemark Key="fwoXaCnB0BKAuePNtJAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" SupplierCode="UA" Direction="Incoming" CreateDate="2020-03-05T19:44:00.000+00:00">
+					<common_v50_0:RemarkData>ADTK1GKK2 .TKT UA SEGS BY 08MAR20 TO AVOID AUTO CXL /EARLIER</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="fwoXaCnB0BKAvePNtJAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" SupplierCode="UA" Direction="Incoming" CreateDate="2020-03-05T19:44:00.000+00:00">
+					<common_v50_0:RemarkData>ADTK1GKK2 .TICKETING MAY BE REQUIRED BY FARE RULE</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="i6fZaCTc1BKAAP96tJAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" SupplierCode="UA" Direction="Incoming" CreateDate="2020-03-05T20:04:00.000+00:00">
+					<common_v50_0:RemarkData>KK2 .POSSIBLE DUPLICATE WITH ADDTL RECORD SUBJECT TO</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="i6fZaCTc1BKABP96tJAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="GyfZaCYc1BKAB5+ApJAAAA==" SupplierCode="UA" Direction="Incoming" CreateDate="2020-03-05T20:04:00.000+00:00">
+					<common_v50_0:RemarkData>KK2 .REVIEW OR CANCEL - SUBMIT SSRDOCS TO VERIFY</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI6244123163-0E4B7B95" BranchCode="jg2geTO3QASCxKOMnqtsOA==" AgencyCode="TVPORTDYNASKLTONWABAGENCY" EventTime="2020-03-05T19:30:45.944+00:00"/>
+					<common_v50_0:AgentAction ActionType="Modified" AgentCode="UAPI6244123163-0E4B7B95" BranchCode="P4444444" AgencyCode="S6TRAVEL" EventTime="2020-03-06T01:41:05.336+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:AgencyContactInfo>
+					<common_v50_0:PhoneNumber Key="GyfZaCYc1BKADcBBpJAAAA==" Type="Agency" Location="RIO" Number="MARTHA RIO AC TAITNA">
+						<common_v50_0:ProviderReservationInfoRef Key="GyfZaCYc1BKAB5+ApJAAAA=="/>
+					</common_v50_0:PhoneNumber>
+				</common_v50_0:AgencyContactInfo>
+			</universal:UniversalRecord>
+		</gdsQueue:GdsNextOnQueueRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,129 @@
+[
+  {
+    "type": "uAPI",
+    "pnr": "4SNZZ5",
+    "version": 0,
+    "uapi_ur_locator": "V23QNP",
+    "uapi_reservation_locator": "V242G7",
+    "airlineLocatorInfo": [
+      {
+        "createDate": "2023-06-14T09:17:00.000+00:00",
+        "supplierCode": "UA",
+        "locatorCode": "DTZVG8"
+      }
+    ],
+    "createdAt": "2023-06-14T09:17:19.846+00:00",
+    "hostCreatedAt": "2023-06-14",
+    "modifiedAt": "2023-06-14T09:17:19.846+00:00",
+    "fareQuotes": [
+      {
+        "pricingInfos": [
+          {
+            "uapi_pricing_info_ref": "hsS4cicEuDKAIfOwmNAAAA==",
+            "passengers": [
+              {
+                "uapi_passenger_ref": "tZNyciEDuDKAb0sSnNAAAA==",
+                "isTicketed": false
+              }
+            ],
+            "uapi_pricing_info_group": "1",
+            "farePricingMethod": "Guaranteed",
+            "farePricingType": "StoredFare",
+            "totalPrice": "GBP354.80",
+            "basePrice": "USD400.00",
+            "equivalentBasePrice": "GBP319.00",
+            "taxes": "GBP35.80",
+            "passengersCount": { "ADT": 1 },
+            "taxesInfo": [
+              { "value": "GBP4.50", "type": "AY" },
+              { "value": "GBP23.90", "type": "US" },
+              {
+                "value": "GBP3.60",
+                "type": "XF",
+                "details": [{ "airport": "EWR", "value": "USD4.50" }]
+              },
+              {
+                "value": "GBP3.80",
+                "type": "ZP",
+                "details": [{ "airport": "EWR", "value": "USD4.80" }]
+              }
+            ],
+            "baggage": [{ "units": "piece", "amount": 0 }],
+            "timeToReprice": "2023-06-15T23:59:00.000+01:00",
+            "fareCalculation": "EWR UA LAX 400.00TAA3OFIN USD400.00",
+            "firstOrigin": "EWR"
+          }
+        ],
+        "uapi_passenger_refs": ["tZNyciEDuDKAb0sSnNAAAA=="],
+        "uapi_segment_refs": ["hsS4cicEuDKAEfOwmNAAAA=="],
+        "effectiveDate": "2023-06-14T00:00:00.000+01:00",
+        "endorsement": "NONREF/0VALUAFTDPT",
+        "tourCode": null,
+        "platingCarrier": "UA",
+        "index": 1
+      }
+    ],
+    "segments": [
+      {
+        "from": "EWR",
+        "to": "LAX",
+        "group": 0,
+        "departure": "2023-06-19T10:30:00.000-04:00",
+        "arrival": "2023-06-19T13:26:00.000-07:00",
+        "airline": "UA",
+        "flightNumber": "1745",
+        "uapi_segment_ref": "hsS4cicEuDKAEfOwmNAAAA==",
+        "uapiSegmentReference": "hsS4cicEuDKAEfOwmNAAAA==",
+        "details": [
+          {
+            "origin": "EWR",
+            "originTerminal": "C",
+            "destination": "LAX",
+            "destinationTerminal": "7",
+            "departure": "2023-06-19T10:30:00.000-04:00",
+            "flightTime": "356",
+            "travelTime": "356",
+            "equipment": "752",
+            "stat": "A"
+          }
+        ],
+        "serviceClass": "Economy",
+        "plane": ["752"],
+        "duration": ["356"],
+        "techStops": [],
+        "index": 1,
+        "status": "HK",
+        "bookingClass": "B",
+        "nextSegmentReference": null
+      }
+    ],
+    "serviceSegments": [],
+    "passengers": [
+      {
+        "lastName": "YE",
+        "firstName": "JIA",
+        "uapi_passenger_ref": "tZNyciEDuDKAb0sSnNAAAA==",
+        "birthDate": "1986-11-20",
+        "ageCategory": "ADT",
+        "gender": "M"
+      }
+    ],
+    "emails": [],
+    "bookingPCC": "7E0R",
+    "tickets": [],
+    "messages": [
+      {
+        "_": "Brand optional services were filtered out as they are not offered in the brand or are only available at a charge.",
+        "Code": "13566",
+        "Type": "Warning",
+        "ProviderCode": "1G"
+      },
+      {
+        "_": "The fare HostToken has been ignored. The BrandTier has been applied.",
+        "Code": "3824",
+        "Type": "Warning",
+        "ProviderCode": "1G"
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+Vehicle Location Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <veh:VehicleLocationDetailReq TargetBranch="TP_1P_SOA" AuthorizedBy="SUSIL" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:VehicleDateLocation PickupDateTime="2020-04-25T10:00:00" PickupLocation="LHR" ReturnDateTime="2020-05-10T10:00:00"/>
+      </veh:VehicleLocationDetailReq>
+   </soap:Body>
+</soap:Envelope>
+
+Vehicle Location Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationDetailRsp TransactionId="7D939C6C0A0764779F0019AA34902108" ResponseTime="131" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">Location Type not supported by provider.</common_v50_0:ResponseMessage>
+         <vehicle:VendorInfo Name="SIXT GMBH" Code="SX"/>
+         <vehicle:LocationInfo Name="LONDON HEATHROW T2 T3 T4" CounterLocation="Terminal">
+            <common_v50_0:LocationAddress>
+               <common_v50_0:Street>GREAT SOUTH WEST ROAD</common_v50_0:Street>
+               <common_v50_0:Street>FELTHAM</common_v50_0:Street>
+               <common_v50_0:Street>GB</common_v50_0:Street>
+               <common_v50_0:Street>TW14 0PR</common_v50_0:Street>
+               <common_v50_0:Country>GB</common_v50_0:Country>
+            </common_v50_0:LocationAddress>
+            <common_v50_0:PhoneNumber Type="Business" Number="0044 2070188246"/>
+            <common_v50_0:PhoneNumber Type="Reservations" Number="0049 8966060060"/>
+            <vehicle:OperationTime>Arrival 0500 - 2359</vehicle:OperationTime>
+            <vehicle:OperationTime>Departure 0500 - 2359</vehicle:OperationTime>
+         </vehicle:LocationInfo>
+         <vehicle:VehiclePolicy>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="5" Class="Compact" Category="Car" AirConditioning="true" Transmission="Manual" MakeModel="VAUXHALL CORSA 5 DOOR" AcrissVehicleCode="CBMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="3" Class="Economy" Category="Car" AirConditioning="true" Transmission="Manual" MakeModel="VAUXHALL CORSA 3 DOOR" AcrissVehicleCode="ECMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="2" Class="Compact" Category="Car" AirConditioning="true" Transmission="Manual" MakeModel="AUDI A1" AcrissVehicleCode="CCMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="2" Class="Compact" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="MINI 3 DOOR AUT" AcrissVehicleCode="CCAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Compact" Category="Car" AirConditioning="true" Transmission="Manual" MakeModel="CITROEN C4 CACTUS AUT" AcrissVehicleCode="CDMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Compact" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CITROEN C4 CACTUS AUT" AcrissVehicleCode="CDAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="Car" AirConditioning="true" Transmission="Manual" MakeModel="SKODA OCTAVIA" AcrissVehicleCode="IDMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="SKODA OCTAVIA" AcrissVehicleCode="IDAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Standard" Category="Car" AirConditioning="true" Transmission="Manual" MakeModel="SKODA SUPERB" AcrissVehicleCode="SDMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Standard" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 2 SERIES ACT TOURER" AcrissVehicleCode="SDAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Fullsize" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ C-CLASS AUT" AcrissVehicleCode="FDAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Premium" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 520 AUT" AcrissVehicleCode="PDAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="4" Class="Luxury" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="AUDI A6" AcrissVehicleCode="LDAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="4" Class="Special" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 6 SERIES GRAN TURISM" AcrissVehicleCode="XDAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Compact" Category="StationWagon" AirConditioning="true" Transmission="Manual" MakeModel="VAUXHALL ASTRA ESTATE" AcrissVehicleCode="CWMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Compact" Category="StationWagon" AirConditioning="true" Transmission="Automatic" MakeModel="VAUXHALL ASTRA ESTATE AUT" AcrissVehicleCode="CWAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="StationWagon" AirConditioning="true" Transmission="Manual" MakeModel="SKODA OCTAVIA ESTATE" AcrissVehicleCode="IWMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="StationWagon" AirConditioning="true" Transmission="Automatic" MakeModel="SKODA OCTAVIA ESTATE AUT" AcrissVehicleCode="IWAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Standard" Category="StationWagon" AirConditioning="true" Transmission="Manual" MakeModel="SKODA SUPERB ESTATE" AcrissVehicleCode="SWMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Standard" Category="StationWagon" AirConditioning="true" Transmission="Automatic" MakeModel="SKODA SUPERB ESTATE AUT" AcrissVehicleCode="SWAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Fullsize" Category="StationWagon" AirConditioning="true" Transmission="Automatic" MakeModel="AUDI A4 AVANT AUT" AcrissVehicleCode="FWAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Premium" Category="StationWagon" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ E-CLASS ESTATE AUT" AcrissVehicleCode="PWAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="Van" AirConditioning="true" Transmission="Manual" MakeModel="CITROEN C4 GRAND PICASSO" AcrissVehicleCode="IVMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 2 SERIES GRAN TOURER" AcrissVehicleCode="IVAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="7" NumberOfDoors="5" Class="Standard" Category="Van" AirConditioning="true" Transmission="Manual" MakeModel="SEAT ALHAMBRA 7 SEATER" AcrissVehicleCode="SVMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="7" NumberOfDoors="5" Class="Standard" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="VW CADDY 7 SEATER AUT" AcrissVehicleCode="SVAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="9" NumberOfDoors="5" Class="Fullsize" Category="Van" AirConditioning="true" Transmission="Manual" MakeModel="FORD TOURNEO" AcrissVehicleCode="FVMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Compact" Category="Limo" AirConditioning="true" Transmission="Manual" MakeModel="SEAT LEON" AcrissVehicleCode="CLMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Compact" Category="Limo" AirConditioning="true" Transmission="Automatic" MakeModel="SEAT LEON AUT" AcrissVehicleCode="CLAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="Limo" AirConditioning="true" Transmission="Manual" MakeModel="MERCEDES-BENZ A-CLASS" AcrissVehicleCode="ILMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="Limo" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 1 SEIRES AUT" AcrissVehicleCode="ILAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="3" Class="Luxury" Category="Sport" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 4 SERIES GRAN COUPE" AcrissVehicleCode="LSAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="2" NumberOfDoors="2" Class="Standard" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 2 SERIES CONVERTIBLE" AcrissVehicleCode="STAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="2" Class="Premium" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="RANGE ROVER EVOQUE CONVERTIBLE" AcrissVehicleCode="PTAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="2" Class="Luxury" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 4 SERIES CONVERTIBLE" AcrissVehicleCode="LTAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="4" Class="Compact" Category="SUV" AirConditioning="true" Transmission="Manual" MakeModel="VAUXHALL MOKKA" AcrissVehicleCode="CFMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="SUV" AirConditioning="true" Transmission="Manual" MakeModel="PEUGEOT 3008" AcrissVehicleCode="IFMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Fullsize" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="BMW X1" AcrissVehicleCode="FFAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Premium" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="RANGE ROVER EVOQUE AUT" AcrissVehicleCode="PFAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Luxury" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="RAND ROVER DISCOVERY SPORT AUT" AcrissVehicleCode="LFAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Special" Category="SUV" AirConditioning="true" Transmission="Manual" MakeModel="RANGE ROVER DISCOVERY AUT" AcrissVehicleCode="XFMR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Special" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="LAND ROVER DISCOVERY AUT" AcrissVehicleCode="XFAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Special" Category="AllTerrain" AirConditioning="false" Transmission="Automatic" MakeModel="RANGE ROVER SPORT AUT" AcrissVehicleCode="XJAN"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="4" NumberOfDoors="5" Class="Luxury" Category="RegularCabPickup" AirConditioning="true" Transmission="Automatic" MakeModel="MASERATI GHIBLI" AcrissVehicleCode="LPAR"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="5" NumberOfDoors="5" Class="Special" Category="SpecialOffer" AirConditioning="false" Transmission="Automatic" MakeModel="MASERATI LEVANTE" AcrissVehicleCode="XZAN"/>
+            <vehicle:VehicleDetail Code="SX" PassengerCount="15" NumberOfDoors="5" Class="Compact" Category="Roadster" AirConditioning="false" Transmission="Manual" MakeModel="FORD TRANSIT MINIBUS" AcrissVehicleCode="CNMN"/>
+         </vehicle:VehiclePolicy>
+      </vehicle:VehicleLocationDetailRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

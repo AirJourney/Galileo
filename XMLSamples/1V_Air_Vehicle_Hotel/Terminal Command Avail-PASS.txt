@@ -1,0 +1,34 @@
+Terminal Command Avail-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ter:TerminalReq AuthorizedBy="PRODSMOKETEST" TargetBranch="TP_1V_SOA" xmlns:ter="http://www.travelport.com/schema/terminal_v33_0" xmlns:com="http://www.travelport.com/schema/common_v33_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:HostToken Host="1V" Key="1T">7CCF787F-49E8-4F61-5061-512089B74093</com:HostToken>
+         <ter:TerminalCommand>ADENATL</ter:TerminalCommand>
+      </ter:TerminalReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Terminal Command Avail-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <terminal:TerminalRsp TransactionId="9DD420BD0A0764772606212BE5DBDE6B" ResponseTime="422" xmlns:terminal="http://www.travelport.com/schema/terminal_v33_0">
+         <terminal:TerminalCommandResponse>
+            <terminal:Text>NEUTRAL DISPLAY*   MO 02MAR DENATL| 2:00 HR</terminal:Text>
+            <terminal:Text>1: F9 418  PAST SKED DEPARTURE          DENATL1259A  553A 320 80</terminal:Text>
+            <terminal:Text>2| DL2608 J9 C9 D9 I9 Z9 W9 S9 Y9 B9 M9|DENATL 600A 1058A 739 90</terminal:Text>
+            <terminal:Text>3| DL 920 J9 C9 D9 I8 Z6 W7 S7 Y9 B9 M9|DENATL 705A 1159A 739 90</terminal:Text>
+            <terminal:Text>4| UA3444  FLT DEPARTED                 DENATL 758A 1259P E7W*N0</terminal:Text>
+            <terminal:Text>5| UA 307  FLT DEPARTED                 DENATL1010A  304P 319 N0</terminal:Text>
+            <terminal:Text>6| DL1816 J4 C4 D2 I0 Z0 W0 S0 Y9 B9 M9|DENATL1040A  326P 739 90</terminal:Text>
+            <terminal:Text>7| VS5082  FLT DEPARTED                 DENATL1040A  326P 739* 0</terminal:Text>
+            <terminal:Text>8* AR7041  PAST SKED DEPARTURE          DENATL1219P  506P 757* 0</terminal:Text>
+            <terminal:Text>NEW NONSTOP FLIGHTS TO THE PALM BEACHES FLORIDA          >AH*1;</terminal:Text>
+            <terminal:Text>MEALS>A*M;  CLASSES>A*C;..  >&lt;</terminal:Text>
+         </terminal:TerminalCommandResponse>
+      </terminal:TerminalRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

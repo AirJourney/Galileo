@@ -1,0 +1,41 @@
+Vehicle Keywords - Specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:PickupDateLocation Date="2020-04-01" Location="ATL"/>
+         <com:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT"/>
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords - Specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="9DD3A5930A07643B096D7BC3DB9298D6" ResponseTime="187" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT">
+            <common_v50_0:Text>Certain regulations apply related to minimum age</common_v50_0:Text>
+            <common_v50_0:Text>and possession of driver's license which can be</common_v50_0:Text>
+            <common_v50_0:Text>found during the booking process depending on the</common_v50_0:Text>
+            <common_v50_0:Text>booked vehicle. The minimum age to rent a vehicle</common_v50_0:Text>
+            <common_v50_0:Text>in most locations is 21 and the driver must have</common_v50_0:Text>
+            <common_v50_0:Text>a valid driver's license. For certain specialty</common_v50_0:Text>
+            <common_v50_0:Text>and larger-sized vehicles the minimum age of 25</common_v50_0:Text>
+            <common_v50_0:Text>years of age applies.</common_v50_0:Text>
+            <common_v50_0:Text>21 years +: CCAR, CFAR, ECAR, FCAR, ICAR, IFAR,</common_v50_0:Text>
+            <common_v50_0:Text>ILAE, ISAR, MBAR, MCAR, MVAR, SCAR, SSAR, B</common_v50_0:Text>
+            <common_v50_0:Text>25 years +: CTAR, FFAR, FVAR, GFAR, ITAR, LCAR,</common_v50_0:Text>
+            <common_v50_0:Text>LFAR, LTAR, PCAR, PFAR, PPAR, PTAR, PVAR, PWAR,</common_v50_0:Text>
+            <common_v50_0:Text>RFAR, SFAR, SPAR, STAR, XCAR, XDAR, XFAR, XJAN,</common_v50_0:Text>
+            <common_v50_0:Text>XSAE, XSAM, XSAR, XTAN, XTAR, XXAR</common_v50_0:Text>
+            <common_v50_0:Text>An Underage Driver Surcharge of USD 19.99 - 39.99</common_v50_0:Text>
+            <common_v50_0:Text>per day or maximum of USD 236.99-474.99 per month</common_v50_0:Text>
+            <common_v50_0:Text>applies for drivers under 25 years.</common_v50_0:Text>
+         </common_v50_0:Keyword>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,927 @@
+LowFareSearch-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:LowFareSearchReq TargetBranch="P7102538" TraceId="PP_1G_001" SolutionResult="true" AuthorizedBy="SUSIL" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="PHW"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="CPT"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-04-21"/>
+         </air:SearchAirLeg>
+         <air:SearchAirLeg>
+            <air:SearchOrigin>
+               <com:Airport Code="CPT"/>
+            </air:SearchOrigin>
+            <air:SearchDestination>
+               <com:Airport Code="PHW"/>
+            </air:SearchDestination>
+            <air:SearchDepTime PreferredTime="2020-04-26"/>
+         </air:SearchAirLeg>
+         <air:AirSearchModifiers>
+            <air:PreferredProviders>
+               <com:Provider Code="1G"/>
+            </air:PreferredProviders>
+            <air:PermittedCarriers>
+               <com:Carrier Code="SA"/>
+            </air:PermittedCarriers>
+         </air:AirSearchModifiers>
+         <com:SearchPassenger Code="ADT"/>
+         <com:SearchPassenger Code="CNN" Age="10"/>
+      </air:LowFareSearchReq>
+   </soap:Body>
+</soap:Envelope>
+
+LowFareSearch-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:LowFareSearchRsp TraceId="PP_1G_001" TransactionId="9DCC5D710A07643CAB0E0A7C438BD677" ResponseTime="20963" DistanceUnits="MI" CurrencyType="ZAR" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:FlightDetailsList>
+            <air:FlightDetails Key="VbtNMC8Q2BKAMg9HCAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-04-21T13:15:00.000+02:00" ArrivalTime="2020-04-21T14:35:00.000+02:00" FlightTime="80" TravelTime="425" Equipment="J41" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAOg9HCAAAAA==" Origin="JNB" Destination="BFN" DepartureTime="2020-04-21T15:45:00.000+02:00" ArrivalTime="2020-04-21T16:45:00.000+02:00" FlightTime="60" TravelTime="425" Equipment="ER3" OriginTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAQg9HCAAAAA==" Origin="BFN" Destination="CPT" DepartureTime="2020-04-21T18:40:00.000+02:00" ArrivalTime="2020-04-21T20:20:00.000+02:00" FlightTime="100" TravelTime="425" Equipment="CR2"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKASg9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:05:00.000+02:00" ArrivalTime="2020-04-26T17:00:00.000+02:00" FlightTime="115" TravelTime="1310" Equipment="359" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAUg9HCAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-04-27T11:45:00.000+02:00" ArrivalTime="2020-04-27T12:55:00.000+02:00" FlightTime="70" TravelTime="1310" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKANi9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T20:15:00.000+02:00" ArrivalTime="2020-04-26T22:10:00.000+02:00" FlightTime="115" TravelTime="1000" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAmi9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T19:00:00.000+02:00" ArrivalTime="2020-04-26T20:55:00.000+02:00" FlightTime="115" TravelTime="1075" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKA/i9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T17:50:00.000+02:00" ArrivalTime="2020-04-26T19:45:00.000+02:00" FlightTime="115" TravelTime="1145" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAYj9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:55:00.000+02:00" ArrivalTime="2020-04-26T17:50:00.000+02:00" FlightTime="115" TravelTime="1260" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAxj9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T13:10:00.000+02:00" ArrivalTime="2020-04-26T15:05:00.000+02:00" FlightTime="115" TravelTime="1425" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAOh9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T10:40:00.000+02:00" ArrivalTime="2020-04-26T12:35:00.000+02:00" FlightTime="115" TravelTime="1575" Equipment="738" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAAh9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T06:00:00.000+02:00" ArrivalTime="2020-04-26T07:55:00.000+02:00" FlightTime="115" TravelTime="415" Equipment="320" DestinationTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAyg9HCAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-04-26T11:45:00.000+02:00" ArrivalTime="2020-04-26T12:55:00.000+02:00" FlightTime="70" TravelTime="415" Equipment="J41" OriginTerminal="B"/>
+            <air:FlightDetails Key="VbtNMC8Q2BKAvg9HCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T08:10:00.000+02:00" ArrivalTime="2020-04-26T10:05:00.000+02:00" FlightTime="115" TravelTime="285" Equipment="738" DestinationTerminal="B"/>
+         </air:FlightDetailsList>
+         <air:AirSegmentList>
+            <air:AirSegment Key="VbtNMC8Q2BKALg9HCAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" Origin="PHW" Destination="JNB" DepartureTime="2020-04-21T13:15:00.000+02:00" ArrivalTime="2020-04-21T14:35:00.000+02:00" FlightTime="80" Distance="243" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAMg9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKANg9HCAAAAA==" Group="0" Carrier="SA" FlightNumber="8411" Origin="JNB" Destination="BFN" DepartureTime="2020-04-21T15:45:00.000+02:00" ArrivalTime="2020-04-21T16:45:00.000+02:00" FlightTime="60" Distance="238" ETicketability="Yes" Equipment="ER3" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAOg9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKAPg9HCAAAAA==" Group="0" Carrier="SA" FlightNumber="1058" Origin="BFN" Destination="CPT" DepartureTime="2020-04-21T18:40:00.000+02:00" ArrivalTime="2020-04-21T20:20:00.000+02:00" FlightTime="100" Distance="564" ETicketability="Yes" Equipment="CR2" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="XZ">SOUTH AFRICAN EXPRESS</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAQg9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKARg9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="346" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:05:00.000+02:00" ArrivalTime="2020-04-26T17:00:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="359" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKASg9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKATg9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-04-27T11:45:00.000+02:00" ArrivalTime="2020-04-27T12:55:00.000+02:00" FlightTime="70" Distance="243" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAUg9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKAMi9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="2030" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T20:15:00.000+02:00" ArrivalTime="2020-04-26T22:10:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="P" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="174">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKANi9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKAli9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="2008" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T19:00:00.000+02:00" ArrivalTime="2020-04-26T20:55:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="168">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAmi9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKA+i9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="2006" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T17:50:00.000+02:00" ArrivalTime="2020-04-26T19:45:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="162">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKA/i9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKAXj9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="2004" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:55:00.000+02:00" ArrivalTime="2020-04-26T17:50:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="156">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAYj9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKAwj9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="2014" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T13:10:00.000+02:00" ArrivalTime="2020-04-26T15:05:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="P" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="152">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAxj9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKANh9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="2026" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T10:40:00.000+02:00" ArrivalTime="2020-04-26T12:35:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="146">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAOh9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKA/g9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="302" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T06:00:00.000+02:00" ArrivalTime="2020-04-26T07:55:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="320" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="P" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAAh9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKAxg9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="8853" Origin="JNB" Destination="PHW" DepartureTime="2020-04-26T11:45:00.000+02:00" ArrivalTime="2020-04-26T12:55:00.000+02:00" FlightTime="70" Distance="243" ETicketability="Yes" Equipment="J41" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="P" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="4Z">SA AIRLINK</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAyg9HCAAAAA=="/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKAug9HCAAAAA==" Group="1" Carrier="SA" FlightNumber="2012" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T08:10:00.000+02:00" ArrivalTime="2020-04-26T10:05:00.000+02:00" FlightTime="115" Distance="788" ETicketability="Yes" Equipment="738" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Cached status used. Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="P" AvailabilityDisplayType="Fare Shop/Optimal Shop">
+               <air:CodeshareInfo OperatingCarrier="JE" OperatingFlightNumber="144">MANGO</air:CodeshareInfo>
+               <air:AirAvailInfo ProviderCode="1G"/>
+               <air:FlightDetailsRef Key="VbtNMC8Q2BKAvg9HCAAAAA=="/>
+            </air:AirSegment>
+         </air:AirSegmentList>
+         <air:FareInfoList>
+            <air:FareInfo Key="VbtNMC8Q2BKAch9HCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="CNN" Origin="PHW" Destination="JNB" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-21" Amount="ZAR390.00" NegotiatedFare="false" NotValidBefore="2020-04-21" NotValidAfter="2020-04-21">
+               <air:FareTicketDesignator Value="CH"/>
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEOwjAMe8zku5tUYtw6ylDFIUNwqLYD/38GaQsSkRI7cRQnpSQUUqnpPya8p9eCY3kCBvG82wV6Jong3Q4GFdStxgP9QpQ2t64NlLbFrHl2QI63MKQW2Ht9lOraOOspaL5o1Af4kbU4tWyWyzVQ3YzhK/EEf/MD/Kgqvg==</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKANk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAjh9HCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="CNN" Origin="JNB" Destination="BFN" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-21" Amount="ZAR150.00" NegotiatedFare="false" NotValidBefore="2020-04-21" NotValidAfter="2020-04-21">
+               <air:FareTicketDesignator Value="CH"/>
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEOwzAIe0zluyGZumNatqragUrboWoP+/8zRpJNGhLYYIQppSiVTEzlPwa8h9eEc3oCDo2cF4dcSLbuACUp9m3PJ9qFrBJzb1pHrVu0ZNcAWF6kSzVwtPrwObR+NlJRfVFpDPAj9zWom7utN2EKM8pX4oh48wPv/Sqa</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAPk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAkh9HCAAAAA==" FareBasis="GSAX" PassengerTypeCode="CNN" Origin="BFN" Destination="CPT" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-21" Amount="ZAR380.00" NegotiatedFare="false" NotValidAfter="2020-10-21">
+               <air:FareTicketDesignator Value="CH"/>
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEOwjAMe8zku5uAxrGlKuwUIQpo48D/n0HagrRIiZ04ihNjFAqp1LiPCZ+pJrzTHTCIZ749oCeSUO82MKjgWtOKfuAgwcfWpYHSllgkBweUY5mH1AJbr+eLuTauegqaLRr1Af6kLE4tm9X0WqluxvD8aZzhb34B9Hgq8w==</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKARk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAth9HCAAAAA==" FareBasis="GSAOW" PassengerTypeCode="CNN" Origin="CPT" Destination="JNB" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR480.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:FareTicketDesignator Value="CH"/>
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAth9HCAAAAA==" ProviderCode="1G">gws-eJxNTkkOAjEMe8zIdzcty7GlVCAOAVEEGg78/xl4FiQiJXbiKE7O2WhkZMz/MeAz9IJ3uQMOU178gLQniaRuBEM0nHq5vjBfSLbV3GdtQZu22KwGAdqmplkaXbHWentIW84qDZMvJqoBfqSdRb269/I8MsqMYZW4g978Av9+Kuo=</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKATk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKA6h9HCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="CNN" Origin="JNB" Destination="PHW" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR390.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:FareTicketDesignator Value="CH"/>
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEOwjAMe8zku5uUAbeOwlRxCAgO1Xbg/88g7YZEpMROHMVJKQmFVGr6jwGf4T1hnV6AQTyfpULPJHHwbgGDCuqjxhX9QpTR59a1DaVtMWs+OSDHOXRpMY+93u3i2nbWU9B80agP8CO34tSyWS7XQHUzhl3iEf7mFwvrKtI=</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAVk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAeg9HCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="ADT" Origin="PHW" Destination="JNB" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-21" Amount="ZAR390.00" NegotiatedFare="false" NotValidBefore="2020-04-21" NotValidAfter="2020-04-21">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEKAjEMfMwy90lSUG+tXaV4qKJC2T34/2eYtggGJplkhiQxRqWSRov/seCzvBL29AQq1HGrZ9iJJMS7DRRTtHsLO8aGoH1ehzardBez5aMX5HCVKfXANvKjNNfmWoeg30WnPsCPXIrTmtZ3LqvQdDinxAP8zS/7Yiq2</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAXk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAlg9HCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="ADT" Origin="JNB" Destination="BFN" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-21" Amount="ZAR150.00" NegotiatedFare="false" NotValidBefore="2020-04-21" NotValidAfter="2020-04-21">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEKwzAMe0zRXXYy1mPStKXskMI2KO1h/3/GHIfBDLJlS9hOKSmVDAzpPwZ8hlfGlZ9AhRqmtUJuJL07QQmKYz/iBd8QVWxeXetVmosllNEKSlylSy1wen7UybS+1iBod9GoDfAjy2a05vldtlkY1J1d4h325hfutyqS</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAZk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAmg9HCAAAAA==" FareBasis="GSAX" PassengerTypeCode="ADT" Origin="BFN" Destination="CPT" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-21" Amount="ZAR500.00" NegotiatedFare="false" NotValidAfter="2020-10-21">
+               <air:BaggageAllowance>
+                  <air:MaxWeight Value="20" Unit="Kilograms"/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" ProviderCode="1G">gws-eJxNTssOwkAI/Jhm7jxsel2sqz1tjFtN68H//wxhV5NOAgzMBEgpCQmRkqYjBnyGanjbAygQj/m+YiQH1LsdxCq4VdvQFpyEfVya1CuHibLM7AV5zFOXAthbPl+La32rByPOIqgP8Cd5cVrsslZ7baQSzudPown+5hfuHirf</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAbk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAzg9HCAAAAA==" FareBasis="GSAOW" PassengerTypeCode="ADT" Origin="CPT" Destination="JNB" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR630.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAzg9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEOwjAMe8zku5uWcW3oqiEOBdEJNA78/xmkLUhEcuLEVpIYo1BITx//Y8J7qoqX3oECMVzKCbMniWDdDjovWKten+gbgsw2L10b1TUXsyRnBfmQQpf2YvHN6baZNtYaHNpdNGoD/Eg+Gy26bFUfC71055B4hL35Afu3Ktw=</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAdk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKACh9HCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="ADT" Origin="JNB" Destination="PHW" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR390.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" ProviderCode="1G">gws-eJxNTssKAjEM/Jhl7tOkvm6tXaV4qKJC2T34/5+xaatgYJJJZkgSQhAKqdTwHxM+0ytijU+gQAyPXKEnkthZt4BOBfVe/Yq+wcve5qVro7rmYtJ0tILkr65LS7H45ls5mzbWGhzaXTRqA/zIJRstcX6nPDuqdOeQeIC9uQEKpSrK</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAfk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAlh9HCAAAAA==" FareBasis="TJEOW" PassengerTypeCode="CNN" Origin="CPT" Destination="JNB" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR1470.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:FareSurcharge Key="VbtNMC8Q2BKAmh9HCAAAAA==" Type="Weekend Surcharge" Amount="ZAR50.00"/>
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" ProviderCode="1G">gws-eJxNTtEKwzAI/Jhy70bD8pquCZRQbNk6Rvew//+MabrBBPX0jtOcMxMTCUn+jwHv4T7iNd4ABVs2vSJEkxKijQcoCGNvdX2iW0S+2F47d3Z2FZVUxBpqLOGkPHD0Om27GcXktpYMPwyHtsAP1NmgTqrb8mgk/kT4UpRgf34AJzYrIw==</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAhk9HCAAAAA==" BrandID="245011" BrandTier="0002"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAng9HCAAAAA==" FareBasis="TJEOW" PassengerTypeCode="ADT" Origin="CPT" Destination="JNB" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR1470.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:FareSurcharge Key="VbtNMC8Q2BKAog9HCAAAAA==" Type="Weekend Surcharge" Amount="ZAR50.00"/>
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" ProviderCode="1G">gws-eJxNTssKAyEM/Jhl7nlIvWqrsEhxl62lbA/9/89oVAoNJJlkhklCCEJCpKThPxZ8lkfEOx5AhViWegU7kxKcjSeIVdBK3l4YFk4utq+Dm527ipJPag3ZJZ5UD5yj3vZmRs53W0tGP4wObYEfyKvBGlPb789CKkM5KfKwP78l8Csb</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAjk9HCAAAAA==" BrandID="245011" BrandTier="0002"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKAnh9HCAAAAA==" FareBasis="GOW4Z" PassengerTypeCode="CNN" Origin="JNB" Destination="PHW" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR500.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:FareTicketDesignator Value="CH"/>
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAnh9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEOwkAIfEwzdwpUPW7dqhsPaPTQtAf//wxntzVxEpiBIUBKSUVFTCz9o8One49YxxcQUMazzBiEwMBqgfSmuD1mX9E2uB7Yj+ZtrHVKsuUTCdmv3qwliD3f40xvW8tQ1Luokg38xKVQRo7IZXIxHpN+t+QIvvkF/tkqug==</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAlk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+            <air:FareInfo Key="VbtNMC8Q2BKApg9HCAAAAA==" FareBasis="GOW4Z" PassengerTypeCode="ADT" Origin="JNB" Destination="PHW" EffectiveDate="2020-03-03T02:30:00.000+02:00" DepartureDate="2020-04-26" Amount="ZAR660.00" NegotiatedFare="false" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26">
+               <air:BaggageAllowance>
+                  <air:NumberOfPieces>1</air:NumberOfPieces>
+                  <air:MaxWeight/>
+               </air:BaggageAllowance>
+               <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKApg9HCAAAAA==" ProviderCode="1G">gws-eJxNTkEOwjAMe8zku5uUwrGlAyoOBQHStB34/zNIW5CI5MSJrSQxRqGQSo3/MeE9PRO29AAqxHAvC0IgiZ11K+hUcLktfkPf4CXYvHZtVNdczJoPVpD92XdprRbffK1H08Zag0O7i0ZtgB85FaM1za9cZk+V7hwS97A3PwOFKsA=</air:FareRuleKey>
+               <air:Brand Key="VbtNMC8Q2BKAnk9HCAAAAA==" BrandID="245008" BrandTier="0001"/>
+            </air:FareInfo>
+         </air:FareInfoList>
+         <air:RouteList>
+            <air:Route Key="VbtNMC8Q2BKALk9HCAAAAA==">
+               <air:Leg Key="VbtNMC8Q2BKAVg9HCAAAAA==" Group="0" Origin="PHW" Destination="CPT"/>
+               <air:Leg Key="VbtNMC8Q2BKAWg9HCAAAAA==" Group="1" Origin="CPT" Destination="PHW"/>
+            </air:Route>
+         </air:RouteList>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAKg9HCAAAAA==" TotalPrice="ZAR15414.10" BasePrice="ZAR3850.00" ApproximateTotalPrice="ZAR15414.10" ApproximateBasePrice="ZAR3850.00" Taxes="ZAR11564.10" ApproximateTaxes="ZAR11564.10">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT21H50M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKARg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKATg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAXg9HCAAAAA==" TotalPrice="ZAR7862.30" BasePrice="ZAR2060.00" ApproximateTotalPrice="ZAR7862.30" ApproximateBasePrice="ZAR2060.00" Taxes="ZAR5802.30" ApproximateTaxes="ZAR5802.30" LatestTicketingTime="2020-03-04T23:59:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAzg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKACh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="9" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAzg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKARg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAYg9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAZg9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAag9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR309.00" Key="VbtNMC8Q2BKAbg9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAcg9HCAAAAAAA"/>
+               <air:TaxInfo Category="YR" Amount="ZAR934.00" Key="VbtNMC8Q2BKAdg9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB 630.00GSAOW SA PHW 390.00WOW4Z ZAR2060.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAVh9HCAAAAA==" TotalPrice="ZAR7551.80" BasePrice="ZAR1790.00" ApproximateTotalPrice="ZAR7551.80" ApproximateBasePrice="ZAR1790.00" Taxes="ZAR5761.80" ApproximateTaxes="ZAR5761.80" LatestTicketingTime="2020-03-04T23:59:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAth9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKA6h9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="9" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAth9HCAAAAA==" SegmentRef="VbtNMC8Q2BKARg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAWh9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAXh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAYh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR268.50" Key="VbtNMC8Q2BKAZh9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAah9HCAAAAAAA"/>
+               <air:TaxInfo Category="YR" Amount="ZAR934.00" Key="VbtNMC8Q2BKAbh9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB 480.00GSAOW/CH SA PHW 390.00WOW4Z/CH ZAR1790.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKALi9HCAAAAA==" TotalPrice="ZAR15650.60" BasePrice="ZAR5680.00" ApproximateTotalPrice="ZAR15650.60" ApproximateBasePrice="ZAR5680.00" Taxes="ZAR9970.60" ApproximateTaxes="ZAR9970.60">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT16H40M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAMi9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKATg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAOi9HCAAAAA==" TotalPrice="ZAR7894.30" BasePrice="ZAR2900.00" ApproximateTotalPrice="ZAR7894.30" ApproximateBasePrice="ZAR2900.00" Taxes="ZAR4994.30" ApproximateTaxes="ZAR4994.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAng9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKACh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAMi9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAPi9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAQi9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKARi9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR435.00" Key="VbtNMC8Q2BKASi9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKATi9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z ZAR2900.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAZi9HCAAAAA==" TotalPrice="ZAR7756.30" BasePrice="ZAR2780.00" ApproximateTotalPrice="ZAR7756.30" ApproximateBasePrice="ZAR2780.00" Taxes="ZAR4976.30" ApproximateTaxes="ZAR4976.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKA6h9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAMi9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAai9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAbi9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAci9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR417.00" Key="VbtNMC8Q2BKAdi9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAei9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z/CH ZAR2780.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAki9HCAAAAA==" TotalPrice="ZAR15650.60" BasePrice="ZAR5680.00" ApproximateTotalPrice="ZAR15650.60" ApproximateBasePrice="ZAR5680.00" Taxes="ZAR9970.60" ApproximateTaxes="ZAR9970.60">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT17H55M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAli9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKATg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAni9HCAAAAA==" TotalPrice="ZAR7894.30" BasePrice="ZAR2900.00" ApproximateTotalPrice="ZAR7894.30" ApproximateBasePrice="ZAR2900.00" Taxes="ZAR4994.30" ApproximateTaxes="ZAR4994.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAng9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKACh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAli9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAoi9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKApi9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAqi9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR435.00" Key="VbtNMC8Q2BKAri9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAsi9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z ZAR2900.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAyi9HCAAAAA==" TotalPrice="ZAR7756.30" BasePrice="ZAR2780.00" ApproximateTotalPrice="ZAR7756.30" ApproximateBasePrice="ZAR2780.00" Taxes="ZAR4976.30" ApproximateTaxes="ZAR4976.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKA6h9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAli9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAzi9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKA0i9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKA1i9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR417.00" Key="VbtNMC8Q2BKA2i9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKA3i9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z/CH ZAR2780.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKA9i9HCAAAAA==" TotalPrice="ZAR15650.60" BasePrice="ZAR5680.00" ApproximateTotalPrice="ZAR15650.60" ApproximateBasePrice="ZAR5680.00" Taxes="ZAR9970.60" ApproximateTaxes="ZAR9970.60">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT19H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKA+i9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKATg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAAj9HCAAAAA==" TotalPrice="ZAR7894.30" BasePrice="ZAR2900.00" ApproximateTotalPrice="ZAR7894.30" ApproximateBasePrice="ZAR2900.00" Taxes="ZAR4994.30" ApproximateTaxes="ZAR4994.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAng9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKACh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" SegmentRef="VbtNMC8Q2BKA+i9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKABj9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKACj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKADj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR435.00" Key="VbtNMC8Q2BKAEj9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAFj9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z ZAR2900.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKALj9HCAAAAA==" TotalPrice="ZAR7756.30" BasePrice="ZAR2780.00" ApproximateTotalPrice="ZAR7756.30" ApproximateBasePrice="ZAR2780.00" Taxes="ZAR4976.30" ApproximateTaxes="ZAR4976.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKA6h9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKA+i9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAMj9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKANj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAOj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR417.00" Key="VbtNMC8Q2BKAPj9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAQj9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z/CH ZAR2780.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAWj9HCAAAAA==" TotalPrice="ZAR15650.60" BasePrice="ZAR5680.00" ApproximateTotalPrice="ZAR15650.60" ApproximateBasePrice="ZAR5680.00" Taxes="ZAR9970.60" ApproximateTaxes="ZAR9970.60">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT21H0M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAXj9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKATg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAZj9HCAAAAA==" TotalPrice="ZAR7894.30" BasePrice="ZAR2900.00" ApproximateTotalPrice="ZAR7894.30" ApproximateBasePrice="ZAR2900.00" Taxes="ZAR4994.30" ApproximateTaxes="ZAR4994.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAng9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKACh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAXj9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAaj9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAbj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAcj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR435.00" Key="VbtNMC8Q2BKAdj9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAej9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z ZAR2900.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAkj9HCAAAAA==" TotalPrice="ZAR7756.30" BasePrice="ZAR2780.00" ApproximateTotalPrice="ZAR7756.30" ApproximateBasePrice="ZAR2780.00" Taxes="ZAR4976.30" ApproximateTaxes="ZAR4976.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKA6h9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAXj9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAlj9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAmj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAnj9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR417.00" Key="VbtNMC8Q2BKAoj9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKApj9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z/CH ZAR2780.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAvj9HCAAAAA==" TotalPrice="ZAR15650.60" BasePrice="ZAR5680.00" ApproximateTotalPrice="ZAR15650.60" ApproximateBasePrice="ZAR5680.00" Taxes="ZAR9970.60" ApproximateTaxes="ZAR9970.60">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT23H45M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAwj9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKATg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAyj9HCAAAAA==" TotalPrice="ZAR7894.30" BasePrice="ZAR2900.00" ApproximateTotalPrice="ZAR7894.30" ApproximateBasePrice="ZAR2900.00" Taxes="ZAR4994.30" ApproximateTaxes="ZAR4994.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAng9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKACh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAwj9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAzj9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKA0j9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKA1j9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR435.00" Key="VbtNMC8Q2BKA2j9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKA3j9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z ZAR2900.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKA9j9HCAAAAA==" TotalPrice="ZAR7756.30" BasePrice="ZAR2780.00" ApproximateTotalPrice="ZAR7756.30" ApproximateBasePrice="ZAR2780.00" Taxes="ZAR4976.30" ApproximateTaxes="ZAR4976.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKA6h9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAwj9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKA-j9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKA/j9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAAk9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR417.00" Key="VbtNMC8Q2BKABk9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKACk9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z/CH ZAR2780.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAIk9HCAAAAA==" TotalPrice="ZAR15650.60" BasePrice="ZAR5680.00" ApproximateTotalPrice="ZAR15650.60" ApproximateBasePrice="ZAR5680.00" Taxes="ZAR9970.60" ApproximateTaxes="ZAR9970.60">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P1DT2H15M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANh9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKATg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKADh9HCAAAAA==" TotalPrice="ZAR7894.30" BasePrice="ZAR2900.00" ApproximateTotalPrice="ZAR7894.30" ApproximateBasePrice="ZAR2900.00" Taxes="ZAR4994.30" ApproximateTaxes="ZAR4994.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAng9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKACh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKACh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAEh9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAFh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAGh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR435.00" Key="VbtNMC8Q2BKAHh9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAIh9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z ZAR2900.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKA7h9HCAAAAA==" TotalPrice="ZAR7756.30" BasePrice="ZAR2780.00" ApproximateTotalPrice="ZAR7756.30" ApproximateBasePrice="ZAR2780.00" Taxes="ZAR4976.30" ApproximateTaxes="ZAR4976.30" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKA6h9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKA6h9HCAAAAA==" SegmentRef="VbtNMC8Q2BKATg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKA8h9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKA9h9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKA-h9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR417.00" Key="VbtNMC8Q2BKA/h9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAAi9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB Q50.00 1420.00TJEOW SA PHW 390.00WOW4Z/CH ZAR2780.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAJk9HCAAAAA==" TotalPrice="ZAR15851.10" BasePrice="ZAR4230.00" ApproximateTotalPrice="ZAR15851.10" ApproximateBasePrice="ZAR4230.00" Taxes="ZAR11621.10" ApproximateTaxes="ZAR11621.10">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT6H55M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKA/g9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAxg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKA0g9HCAAAAA==" TotalPrice="ZAR8172.80" BasePrice="ZAR2330.00" ApproximateTotalPrice="ZAR8172.80" ApproximateBasePrice="ZAR2330.00" Taxes="ZAR5842.80" ApproximateTaxes="ZAR5842.80" LatestTicketingTime="2020-03-04T23:59:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAzg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKApg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="7" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAzg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKA/g9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="3" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKApg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAxg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKA1g9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKA2g9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKA3g9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR349.50" Key="VbtNMC8Q2BKA4g9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKA5g9HCAAAAAAA"/>
+               <air:TaxInfo Category="YR" Amount="ZAR934.00" Key="VbtNMC8Q2BKA6g9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB 630.00GSAOW SA PHW 660.00GOW4Z ZAR2330.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAuh9HCAAAAA==" TotalPrice="ZAR7678.30" BasePrice="ZAR1900.00" ApproximateTotalPrice="ZAR7678.30" ApproximateBasePrice="ZAR1900.00" Taxes="ZAR5778.30" ApproximateTaxes="ZAR5778.30" LatestTicketingTime="2020-03-04T23:59:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAth9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAnh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="7" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAth9HCAAAAA==" SegmentRef="VbtNMC8Q2BKA/g9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="3" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAnh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAxg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAvh9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAwh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAxh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR285.00" Key="VbtNMC8Q2BKAyh9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAzh9HCAAAAAAA"/>
+               <air:TaxInfo Category="YR" Amount="ZAR934.00" Key="VbtNMC8Q2BKA0h9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB 480.00GSAOW/CH SA PHW 500.00GOW4Z/CH ZAR1900.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAKk9HCAAAAA==" TotalPrice="ZAR16087.60" BasePrice="ZAR6060.00" ApproximateTotalPrice="ZAR16087.60" ApproximateBasePrice="ZAR6060.00" Taxes="ZAR10027.60" ApproximateTaxes="ZAR10027.60">
+            <air:Journey TravelTime="P0DT7H5M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+            </air:Journey>
+            <air:Journey TravelTime="P0DT4H45M0S">
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAug9HCAAAAA=="/>
+               <air:AirSegmentRef Key="VbtNMC8Q2BKAxg9HCAAAAA=="/>
+            </air:Journey>
+            <air:LegRef Key="VbtNMC8Q2BKAVg9HCAAAAA=="/>
+            <air:LegRef Key="VbtNMC8Q2BKAWg9HCAAAAA=="/>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAfg9HCAAAAA==" TotalPrice="ZAR8204.80" BasePrice="ZAR3170.00" ApproximateTotalPrice="ZAR8204.80" ApproximateBasePrice="ZAR3170.00" Taxes="ZAR5034.80" ApproximateTaxes="ZAR5034.80" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAeg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAmg9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAng9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKApg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAeg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAmg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAng9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAug9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="3" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKApg9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAxg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAgg9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAhg9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAig9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR475.50" Key="VbtNMC8Q2BKAjg9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAkg9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB Q50.00 1420.00TJEOW SA PHW 660.00GOW4Z ZAR3170.00END</air:FareCalc>
+               <air:PassengerType Code="ADT"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAdh9HCAAAAA==" TotalPrice="ZAR7882.80" BasePrice="ZAR2890.00" ApproximateTotalPrice="ZAR7882.80" ApproximateBasePrice="ZAR2890.00" Taxes="ZAR4992.80" ApproximateTaxes="ZAR4992.80" LatestTicketingTime="2020-03-05T02:29:00.000+02:00" PricingMethod="Guaranteed" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" Cat35Indicator="false">
+               <air:FareInfoRef Key="VbtNMC8Q2BKAch9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAjh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAkh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAlh9HCAAAAA=="/>
+               <air:FareInfoRef Key="VbtNMC8Q2BKAnh9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAch9HCAAAAA==" SegmentRef="VbtNMC8Q2BKALg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="W" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAjh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKANg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="2" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAkh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAPg9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="T" BookingCount="4" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAlh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAug9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="G" BookingCount="3" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAnh9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAxg9HCAAAAA=="/>
+               <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="VbtNMC8Q2BKAeh9HCAAAAAAA"/>
+               <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="VbtNMC8Q2BKAfh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="VbtNMC8Q2BKAgh9HCAAAAAAA"/>
+               <air:TaxInfo Category="ZV" Amount="ZAR433.50" Key="VbtNMC8Q2BKAhh9HCAAAAAAA"/>
+               <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="VbtNMC8Q2BKAih9HCAAAAAAA"/>
+               <air:FareCalc>PHW SA JNB 390.00WOW4Z/CH SA BFN 150.00WOW4Z/CH SA CPT 380.00GSAX/CH SA JNB Q50.00 1420.00TJEOW SA PHW 500.00GOW4Z/CH ZAR2890.00END</air:FareCalc>
+               <air:PassengerType Code="CNN" Age="10"/>
+               <air:ChangePenalty PenaltyApplies="Anytime">
+                  <air:Amount>ZAR410.00</air:Amount>
+               </air:ChangePenalty>
+               <air:CancelPenalty PenaltyApplies="Anytime">
+                  <air:Percentage>100.00</air:Percentage>
+               </air:CancelPenalty>
+            </air:AirPricingInfo>
+            <air:Connection SegmentIndex="0"/>
+            <air:Connection SegmentIndex="1"/>
+            <air:Connection SegmentIndex="3"/>
+         </air:AirPricingSolution>
+         <air:BrandList>
+            <air:Brand Key="VbtNMC8Q2BKApk9HCAAAAA==" BrandID="245011" Name="Plus" BrandedDetailsAvailable="true" Carrier="SA">
+               <air:Title Type="External" LanguageCode="EN">Plus</air:Title>
+               <air:Title Type="Short" LanguageCode="EN">Plus</air:Title>
+               <air:Text Type="Upsell" LanguageCode="EN">This fare is for the cost-conscious traveller who just wants a little bit extra, with a flexible and partially refundable ticket</air:Text>
+               <air:Text Type="MarketingAgent" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+               <air:Text Type="Strapline" LanguageCode="EN">Includes partial refunds</air:Text>
+               <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/southafricanairways/SA_general_large_88418.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/southafrican/SA_general_medium_485.jpg</air:ImageLocation>
+            </air:Brand>
+            <air:Brand Key="VbtNMC8Q2BKArk9HCAAAAA==" BrandID="245008" Name="Saver" BrandedDetailsAvailable="true" Carrier="SA">
+               <air:Title Type="External" LanguageCode="EN">Saver</air:Title>
+               <air:Title Type="Short" LanguageCode="EN">Saver</air:Title>
+               <air:Text Type="MarketingAgent" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+               <air:Text Type="Strapline" LanguageCode="EN">Our best available fare</air:Text>
+               <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/southafrican/SA_general_large_45797.jpg</air:ImageLocation>
+               <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/southafrican/SA_general_medium_484.jpg</air:ImageLocation>
+            </air:Brand>
+         </air:BrandList>
+      </air:LowFareSearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

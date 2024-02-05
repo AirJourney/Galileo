@@ -1,0 +1,135 @@
+	<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+		<soap:Body>
+			<ns2:GdsQueuePlaceReq PseudoCityCode="PCC7" ProviderCode="1G" ProviderLocatorCode="123456" TargetBranch="P5555555" xmlns:ns9="http://www.travelport.com/schema/hotel_v50_0" xmlns:ns8="http://www.travelport.com/schema/rail_v50_0" xmlns:ns7="http://www.travelport.com/schema/cruise_v50_0" xmlns:ns6="http://www.travelport.com/schema/air_v50_0" xmlns:ns5="http://www.travelport.com/schema/vehicle_v50_0" xmlns:ns4="http://www.travelport.com/schema/universal_v50_0" xmlns:ns3="http://www.travelport.com/schema/passive_v50_0" xmlns:ns2="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns="http://www.travelport.com/schema/common_v50_0">
+				<BillingPointOfSaleInfo OriginApplication="uAPI"/>
+				<QueueSelector Queue="92"/>
+			</ns2:GdsQueuePlaceReq>
+		</soap:Body>
+	</soap:Envelope>
+
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+			<SOAP:Body>
+				<gdsQueue:GdsQueuePlaceRsp xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" TransactionId="B1417E1E0A0759BFAD610628687B97BF" ResponseTime="754">
+					<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="7020" Type="Info">
+						<![CDATA[Booking successfully placed on Queue 92 for Pseudo City PCC7]]>
+					</common_v50_0:ResponseMessage>
+					<universal:UniversalRecord xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle_37_1="http://www.travelport.com/schema/vehicle_v37_1" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" LocatorCode="1PSIC9" Version="114" Status="Active">
+						<common_v50_0:BookingTraveler Key="NTvYlAzYlDKA29khoNAAAA==" TravelerType="ADT">
+							<common_v50_0:BookingTravelerName Prefix="MS" First="SINDU" Last="SMITH"/>
+							<common_v50_0:PhoneNumber Key="NTvYlAzYlDKA39khoNAAAA==" Type="Mobile" Location="BOM" Number="7259999999">
+								<common_v50_0:ProviderReservationInfoRef Key="NTvYlAzYlDKAoeohoNAAAA=="/>
+							</common_v50_0:PhoneNumber>
+							<common_v50_0:Email Key="NTvYlAzYlDKA89khoNAAAA==" EmailID="sindu.SMITH@tatacommunications.com">
+								<common_v50_0:ProviderReservationInfoRef Key="NTvYlAzYlDKAoeohoNAAAA=="/>
+							</common_v50_0:Email>
+						</common_v50_0:BookingTraveler>
+						<common_v50_0:ActionStatus Key="NTvYlAzYlDKA3qohoNAAAA==" Type="ACTIVE" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" ProviderCode="1G"/>
+						<universal:ProviderReservationInfo Key="NTvYlAzYlDKAoeohoNAAAA==" ProviderCode="1G" LocatorCode="123456" CreateDate="2020-02-13T10:58:09.087+00:00" ModifiedDate="2020-03-06T19:10:23.110+00:00" HostCreateDate="2020-02-13" OwningPCC="52FV">
+							<universal:ProviderReservationDetails ProviderReservationDetail="false" CustomCheck="true" ProviderProfile="false" DivideDetails="false" EnhancedItinModifiers="false" IntegratedContent="false" Cruise="false" RailSegment="false"/>
+						</universal:ProviderReservationInfo>
+						<passive:PassiveReservation xmlns:passive="http://www.travelport.com/schema/passive_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" LocatorCode="1PSICQ" CreateDate="2020-02-13T10:58:09.007+00:00" ModifiedDate="2020-03-06T19:10:23.099+00:00" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:BookingTravelerRef Key="NTvYlAzYlDKA29khoNAAAA=="/>
+							<passive:PassiveSegment NumberOfItems="1" FlightNumber="1063" SegmentType="Air" Status="AK" SupplierCode="SG" ClassOfService="Y" Origin="BLR" Destination="HYD" StartDate="2020-02-18T08:50:00.000+05:30" EndDate="2020-02-18T10:10:00.000+05:30" Key="NTvYlAzYlDKA99khoNAAAA==" Group="0" ProviderSegmentOrder="1"/>
+							<passive:PassiveSegment NumberOfItems="1" SegmentType="Tour" Status="AK" SupplierCode="SG" Origin="BLR" StartDate="2021-01-07T16:28:09.000+05:30" Key="wh6MlABAAA/B0LpstNAAAA==" Group="1" ProviderSegmentOrder="2"/>
+							<passive:PassiveRemark PassiveSegmentRef="wh6MlABAAA/B0LpstNAAAA==">
+								<passive:Text>TCID  925699 TCNAME  AMEY BANDKAR</passive:Text>
+							</passive:PassiveRemark>
+						</passive:PassiveReservation>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKA+9khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>AIRLINEPNR JH14YX</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKA/9khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>ORIGINAL FARE - 3259/TOTAL FARE - 3259/NET FARE - 3259</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAA+khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>DICCODE-DIC416 DICNAME-TATA COMMUNICATIONS LTD</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAB+khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>LCCMASTERID-DELDIA6763 PROMOCODE-C202TG06</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAC+khoNAAAA==" Category="DC" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>HYD</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAD+khoNAAAA==" Category="P" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>DELM 7259384848</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAE+khoNAAAA==" Category="MT" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>SINDU.SMITH//TATACOMMUNICATIONS.COM</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAG+khoNAAAA==" Category="RT" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>OW</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAH+khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>HFINR 3333</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAI+khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>LFINR 3259</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAJ+khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>FAINR 3259</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAK+khoNAAAA==" Category="F" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>ALT INR 0</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAL+khoNAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>NO</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAM+khoNAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>CF</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAN+khoNAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>ECO</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAO+khoNAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>RT</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="NTvYlAzYlDKAP+khoNAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==" CreateDate="2020-02-13T10:58:00.000+00:00">
+							<common_v50_0:RemarkData>OFFLINE</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="lj6MlABAAA/BO7WpUQAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>** CONFIDENTIAL **</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAQ+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>REF3/6027000</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAR+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>REF2/DIC416</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAS+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>REF4/IOTSIINDIN</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAT+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>REF5/HUJV</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAU+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>REF6/B3-2</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAV+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>CUST/TCL</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAW+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>DMSID/OUTLOOK</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAX+khoNAAAA==" Category="FT" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>S*LA</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AccountingRemark Key="NTvYlAzYlDKAY+khoNAAAA==" Category="X*" TypeInGds="Other" ProviderCode="1G" ProviderReservationInfoRef="NTvYlAzYlDKAoeohoNAAAA==">
+							<common_v50_0:RemarkData>HRC/HOTEL NOT REQUIRED</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AgencyInfo>
+							<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI7599224455-7AED6507" BranchCode="P5656565" AgencyCode="S7TRAVEL" EventTime="2020-02-13T10:58:08.625+00:00"/>
+							<common_v50_0:AgentAction ActionType="Modified" AgentCode="uAPI8394445405-a73e573f" BranchCode="P5555555" AgencyCode="S8TRAVEL" EventTime="2020-03-06T19:10:23.110+00:00"/>
+						</common_v50_0:AgencyInfo>
+						<common_v50_0:AgencyContactInfo>
+							<common_v50_0:PhoneNumber Key="NTvYlAzYlDKA5qohoNAAAA==" Type="Agency" Location="DEL" Number="01206763666" Text="HRG dnata REF Amey/PAX REF 7259384848">
+								<common_v50_0:ProviderReservationInfoRef Key="NTvYlAzYlDKAoeohoNAAAA=="/>
+							</common_v50_0:PhoneNumber>
+						</common_v50_0:AgencyContactInfo>
+						<common_v50_0:FormOfPayment Key="lj6MlABAAA/BP7WpUQAAAA==" Type="Cash" Reusable="false" ProfileKey="ZgeC2E5pQWmKedvXItKWFA==">
+							<common_v50_0:ProviderReservationInfoRef Key="NTvYlAzYlDKAoeohoNAAAA=="/>
+						</common_v50_0:FormOfPayment>
+					</universal:UniversalRecord>
+				</gdsQueue:GdsQueuePlaceRsp>
+			</SOAP:Body>
+		</SOAP:Envelope>

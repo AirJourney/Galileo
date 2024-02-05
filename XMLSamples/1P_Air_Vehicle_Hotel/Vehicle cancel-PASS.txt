@@ -1,0 +1,60 @@
+Vehicle cancel-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:VehicleCancelReq TargetBranch="TP_1P_SOA" AuthorizedBy="SUSIL" SupplierCode="SX" SupplierLocatorCode="0097WPFH" Version="0" ProviderCode="1P" ProviderLocatorCode="OE7F5N" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:VehicleCancelReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle cancel-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:VehicleCancelRsp TransactionId="7D94735A0A076478D3ABDD5C113883F8" ResponseTime="994" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <universal:UniversalRecord LocatorCode="0SQAI8" Version="1" Status="Active">
+            <common_v50_0:BookingTraveler Key="2A5ezQhlRHeH8y/fwYDPhA==" NameNumber="1.1" TravelerType="ADT" Age="38" VIP="false" DOB="1980-02-22" Gender="M">
+               <common_v50_0:BookingTravelerName Prefix="MR" First="TEST" Middle="TEST" Last="TEST" Suffix="SR"/>
+               <common_v50_0:DeliveryInfo Type="Importatnt" SignatureRequired="Yes" TrackingNumber="4565">
+                  <common_v50_0:ShippingAddress Key="2A5ezQhlRHeH8y/fwYDPhA==">
+                     <common_v50_0:AddressName>Test Building</common_v50_0:AddressName>
+                     <common_v50_0:Street>St. Havana Street</common_v50_0:Street>
+                     <common_v50_0:City>Englewood</common_v50_0:City>
+                     <common_v50_0:State>Colorado</common_v50_0:State>
+                     <common_v50_0:PostalCode>80112</common_v50_0:PostalCode>
+                     <common_v50_0:Country>US</common_v50_0:Country>
+                     <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+                  </common_v50_0:ShippingAddress>
+                  <common_v50_0:PhoneNumber Key="WbWrlFoCQpmpssiH2btN7Q==" Type="Business" Location="Den" CountryCode="005" Number="25852589" Extension="1234" AreaCode="555" Text="Test Phone"/>
+                  <common_v50_0:Email Key="fK3ZnTdKQwiQnvJHmw4GLA==" Type="Home" Comment="Test Email" EmailID="TEST.ONly@test.COM">
+                     <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+                  </common_v50_0:Email>
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:DeliveryInfo>
+               <common_v50_0:PhoneNumber Key="0DjwH4fFTjiMlGNyzVfSFA==" Type="Business" Location="FRA" CountryCode="889" Number="84562584" Extension="1584" AreaCode="7896" Text="TestForWorkPhone">
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="l1XXy7udS0OVYWfTdylFMQ==" Type="Work" Comment="TEST EMAIL" EmailID="NewTEST.ONly@test.COM">
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:NameRemark Key="uG1M9B7Q2BKApdeDAAAAAA==">
+                  <common_v50_0:RemarkData>22FEB80</common_v50_0:RemarkData>
+                  <common_v50_0:ProviderReservationInfoRef Key="uG1M9B7Q2BKAldeDAAAAAA=="/>
+               </common_v50_0:NameRemark>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="uG1M9B7Q2BKAkdeDAAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="uG1M9B7Q2BKAldeDAAAAAA==" ProviderCode="1P">
+               <common_v50_0:Remark>00</common_v50_0:Remark>
+            </common_v50_0:ActionStatus>
+            <universal:ProviderReservationInfo Key="uG1M9B7Q2BKAldeDAAAAAA==" ProviderCode="1P" LocatorCode="OE7F5N" CreateDate="2020-02-25T18:19:48.500+00:00" ModifiedDate="2020-02-25T18:19:48.500+00:00" HostCreateDate="2020-02-25" HostCreateTime="18:19:00.000+00:00" OwningPCC="XUF" AgentOverride="RS"/>
+            <common_v50_0:GeneralRemark Key="xIaV9B4R2BKA8XFCAAAAAA==" SupplierType="Vehicle" ProviderCode="1P" ProviderReservationInfoRef="uG1M9B7Q2BKAldeDAAAAAA==" ElStat="A">
+               <common_v50_0:RemarkData>Vehicle Cancellation Details - Vendor: SX PickUp Date: 2020-04-25T10:00:00.000+01:00 Booking Confirmation Number: 9889862991</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="UD_AGT_PP" BranchCode="TP_1P_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-02-25T18:19:47.259+00:00"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="UD_AGT_PP" BranchCode="TP_1P_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-02-25T18:20:46.691+00:00"/>
+            </common_v50_0:AgencyInfo>
+         </universal:UniversalRecord>
+      </universal:VehicleCancelRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

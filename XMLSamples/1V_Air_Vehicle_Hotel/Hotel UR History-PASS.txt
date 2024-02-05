@@ -1,0 +1,218 @@
+Hotel UR History-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordHistorySearchReq AuthorizedBy="SUsil" UniversalRecordLocatorCode="0T1ONP" TraceId="PP_1V_0329" TargetBranch="TP_1V_SOA" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordHistorySearchReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel UR History-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordHistorySearchRsp TraceId="PP_1V_0329" TransactionId="9DD4198F0A0764772606212B1D5D89FB" ResponseTime="255" LastResult="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:37:48.347+00:00" ElementType="URCreate" Action="URCreate">
+            <universal:New>UR RecLoc: 0T1ONP</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:37:48.349+00:00" ElementType="HotelReservation" Action="HotelCreate">
+            <universal:New>Universal Record Locator Code: 0T1ONP
+               
+               
+               Provider Reservation:
+               
+               Provider Code: 1V
+               Provider Locator: RVNV5A
+               CustomCheckRule:
+               
+               
+               CustomerID:
+               Postscript:
+               
+               
+               UserAcceptance:
+               
+               
+               Booking Confirmation:87304753
+               
+               Status:HK
+               
+               
+               Traveler Info 1:
+               BookingTravelerRefKey : TuJJbrVu4hG1/9LlYIhwmw==
+               Booking Traveler First Name: Harry
+               Booking Traveler Last Name:  Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               
+               
+               Hotel Segment:
+               Status: HK
+               Hotel Chain:
+               Hotel Code:14645
+               Hotel Location:BOM
+               Hotel Address:
+               DR BABASAHEB AMBEDKAR ROA
+               MUMBAI  400012
+               Hotel Phone Number:91-22-24101010
+               Hotel Fax Number:91-22-24101111
+               Hotel Other Number:
+               Check In Date:2020-04-16
+               Check Out:2020-04-19
+               
+               Rate Plan Type:APND00
+               SurCharge :
+               Base:INR13050.00
+               Total :INR46197.00
+               
+               
+               
+               Tax:INR33147.00
+               Tax:
+               
+               NonRefundableStayIndicator:
+               
+               
+               Guarantee Detail:
+               Hold Time:
+               Guarantee Type:
+               Deposit Amount:
+               Approximate Deposit Amount:
+               
+               
+               
+               Reservation Name First:HARRY
+               Reservation Name Last:LOBO
+               
+               
+               
+               
+               
+               Hotel Commission: Y
+               
+               Guest Information:
+               ExtraAdult:
+               Amount :
+               Content:
+               AdultCount: 2
+               ChildCount:
+               Age:
+               Amount:
+               RoomCount: 1
+               
+               ExtraChild:
+               Count:
+               Content:
+               CreatedAt: 2020-03-03T00:37:48.349+00:00</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:38:06.309+00:00" ElementType="HotelReservation" Action="HotelCancel">
+            <universal:Old>Universal Record Locator Code: 0T1ONP
+               Provider Reservation:
+               Provider Code:1V
+               ProviderLocatorCode:RVNV5A
+               
+               Traveler Info 1:
+               Name: Harry Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               Booking Confirmation:87304753
+               Status:HK
+               
+               Hotel Chain:
+               Hotel Code:14645
+               Hotel Location:BOM
+               RateSupplier:$reservation.getFirstStay().rateSupplier
+               Check In Date:2020-04-16
+               Check Out:2020-04-19
+               Rate Plan Type:APND00
+               
+               
+               General Remark:
+               Category: MCT
+               TypeInGDS:
+               SupplierType:
+               Text: NotRequired
+               
+               General Remark:
+               Category: A
+               TypeInGDS: Alpha
+               SupplierType:
+               Text: THIS IS A ;;ALPHA ;;;;GENERAL;;;; REMARK
+               
+               
+               
+               Total Rate:INR46197.00
+               Base:INR13050.00
+               Tax:
+               SurCharge:
+               Status: HK
+               Cancellation Number:
+               Reservation Name First:HARRY
+               Reservation Name Last:LOBO
+               Sell Message:APPROX TOTAL WITH ALL KNOWN TAXES/FEES
+               Sell Message:CXL:PERMITTED UP TO 01 DAYS AFTER BOOKING
+               Sell Message:ADVANCE PURCHASE/NON-REFUNDABLE RATE- SEE RATE RULES *</universal:Old>
+            <universal:New>Universal Record Locator Code: 0T1ONP
+               Provider Reservation:
+               Provider Code:1V
+               ProviderLocatorCode:RVNV5A
+               
+               Traveler Info 1:
+               Name: Harry Lobo
+               Type: Home
+               Email Address:K.solomon@travelporttest.com
+               Email Comments:
+               
+               Booking Confirmation:87304753
+               Status:XX
+               AggregatorBookingStatus:cancelled
+               
+               Hotel Chain:
+               Hotel Code:14645
+               Hotel Location:BOM
+               RateSupplier:$reservation.getFirstStay().rateSupplier
+               Check In Date:2020-04-16
+               Check Out:2020-04-19
+               Rate Plan Type:APND00
+               
+               
+               General Remark:
+               Category: MCT
+               TypeInGDS:
+               SupplierType:
+               Text: NotRequired
+               
+               General Remark:
+               Category: A
+               TypeInGDS: Alpha
+               SupplierType:
+               Text: THIS IS A ;;ALPHA ;;;;GENERAL;;;; REMARK
+               
+               General Remark:
+               Category:
+               TypeInGDS:
+               SupplierType: Hotel
+               Text: Hotel Chain: LC Check In Date: 2020-04-16 Booking Confirmation Number: 87304753 Cancel Confirmation Num: 52695247
+               
+               
+               
+               Total Rate:INR46197.00
+               Base:INR13050.00
+               Tax:
+               SurCharge:
+               Status: XX
+               Cancellation Number: 52695247
+               Reservation Name First:HARRY
+               Reservation Name Last:LOBO
+               Sell Message:APPROX TOTAL WITH ALL KNOWN TAXES/FEES
+               Sell Message:CXL:PERMITTED UP TO 01 DAYS AFTER BOOKING
+               Sell Message:ADVANCE PURCHASE/NON-REFUNDABLE RATE- SEE RATE RULES *</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+      </universal:UniversalRecordHistorySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

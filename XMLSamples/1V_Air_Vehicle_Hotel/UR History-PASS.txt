@@ -1,0 +1,314 @@
+UR History-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordHistorySearchReq AuthorizedBy="UAPI" UniversalRecordLocatorCode="0T1ONL" TargetBranch="TP_1V_SOA" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordHistorySearchReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR History-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordHistorySearchRsp TransactionId="9DD342820A07643CAB0E0A7C63CE2293" ResponseTime="584" LastResult="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:36:35.710+00:00" ElementType="URCreate" Action="URCreate">
+            <universal:New>UR RecLoc: 0T1ONL</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:36:35.713+00:00" ElementType="AirReservation" Action="AirCreate">
+            <universal:New>UR RecLoc: 0T1ONL
+               
+               ActionStatus:-
+               Type:TAU
+               TicketDate:2020-03-07T23:59:00.000-07:00
+               BranchPCC:
+               AirportCode:
+               AccountCode:
+               AirVendor:
+               Remark:
+               Provider Code: 1V
+               Provider Locator Code: RVZRXQ
+               
+               
+               AirReservation:
+               
+               SupplierCode : DL
+               SupplierLocator: HO8ERE
+               
+               Provider Code: 1V
+               Provider Locator: RVZRXQ
+               CustomerID:
+               Postscript:
+               CustomCheckRule:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: LONG
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               FormOfPayment :-
+               ProviderReservationInfo:-
+               ProviderLocatorCode: RVZRXQ
+               Credit Card:-
+               Type: CA
+               Number: ************5557
+               ExpDate: *******
+               Name on Card: JAYA KUMAR
+               TravelerId:
+               CVV:
+               Extended Payment:
+               Customer Reference:
+               
+               
+               
+               
+               
+               AirSegment:
+               Origin: SEA
+               Destination: SFO
+               Carrier: DL
+               FltNum: 2490
+               DepTime: 2020-04-16T06:30:00.000-07:00
+               ArrTime: 2020-04-16T08:46:00.000-07:00
+               Class of Service: E
+               Availability Source: S
+               
+               AirSegment:
+               Origin: SFO
+               Destination: SEA
+               Carrier: DL
+               FltNum: 2703
+               DepTime: 2020-04-19T06:20:00.000-07:00
+               ArrTime: 2020-04-19T08:43:00.000-07:00
+               Class of Service: E
+               Availability Source: S
+               
+               AirPricing:
+               PricingType: StoredFare
+               PricingMethod: Auto
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               
+               
+               
+               Total: USD156.79
+               Base: USD119.06
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               Taxes: USD37.73
+               Air Pricing Info Group: 1
+               Ticketed: false
+               Fare Status Info:
+               Status Code: ReadyToTicket
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:Auto
+               FareGuaranteeDate:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:Auto
+               FareGuaranteeDate:
+               Fare Info 1:
+               FareBasis: XAVUA0BC
+               NotValidBefore: 2020-04-16T00:00:00.000-06:00
+               NotValidAfter: 2020-04-16T00:00:00.000-06:00
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 268330
+               Name : Basic Economy
+               Carrier : DL
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Basic Economy
+               BrandTitle :
+               Type : Short
+               Value : Basic Econ
+               BrandText :
+               Type : MarketingConsumer
+               Value : Basic Economy restrictions:
+               
+               • No seat assignment is available until after check-in
+               • Refunds and any ticket changes, including same-day changes, are not permitted
+               • No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : Basic Economy restrictions:
+               
+               • No seat assignment is available until after check-in
+               • Refunds and any ticket changes, including same-day changes, are not permitted
+               • No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Basic Economy
+               ImageLocation :
+               Type : Upsell
+               ImageWidth : 150
+               ImageHeight : 150
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               Description List :
+               Description : Carry on bags
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88855.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88855.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : FrequentFlyer
+               SecondaryType : MG
+               AssociatedItem : Flight
+               Description List :
+               Description : Miles
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88860.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88860.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 2:
+               FareBasis: XAVUA0BC
+               NotValidBefore: 2020-04-19T00:00:00.000-06:00
+               NotValidAfter: 2020-04-19T00:00:00.000-06:00
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 268330
+               Name : Basic Economy
+               Carrier : DL
+               BrandTier : 0001
+               BrandTitle :
+               Type : External
+               Value : Basic Economy
+               BrandTitle :
+               Type : Short
+               Value : Basic Econ
+               BrandText :
+               Type : MarketingConsumer
+               Value : Basic Economy restrictions:
+               
+               • No seat assignment is available until after check-in
+               • Refunds and any ticket changes, including same-day changes, are not permitted
+               • No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : Basic Economy restrictions:
+               
+               • No seat assignment is available until after check-in
+               • Refunds and any ticket changes, including same-day changes, are not permitted
+               • No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Basic Economy
+               ImageLocation :
+               Type : Upsell
+               ImageWidth : 150
+               ImageHeight : 150
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 1400
+               ImageHeight : 800
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               Description List :
+               Description : Carry on bags
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88855.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88855.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : FrequentFlyer
+               SecondaryType : MG
+               AssociatedItem : Flight
+               Description List :
+               Description : Miles
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88860.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/delta/DL_general_medium_88860.jpg
+               caption : Consumer
+               width : 60
+               height : 60</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+      </universal:UniversalRecordHistorySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

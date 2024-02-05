@@ -1,0 +1,31 @@
+ProviderReservationDisplayDetails-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <univ:ProviderReservationDisplayDetailsReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" ProviderCode="1V" ProviderLocatorCode="RVZRXQ" ProviderReservationDetail="true" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:ProviderReservationDisplayDetailsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+ProviderReservationDisplayDetails-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:ProviderReservationDisplayDetailsRsp TransactionId="9DD348760A0764785B1483FC123113A0" ResponseTime="532" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:DisplayDetails ProviderReservationDetail="true">
+            <universal:DisplayDetail Name="OwningAgencyPCC" Value="29BD"/>
+            <universal:DisplayDetail Name="CreatingAgentSignOn" Value="29BDGWS"/>
+            <universal:DisplayDetail Name="CreatingAgentDuty" Value="AG"/>
+            <universal:DisplayDetail Name="CreatingAgencyIATA" Value="06512376"/>
+            <universal:DisplayDetail Name="PrepaidTicketAdviceIndicator" Value="N"/>
+            <universal:DisplayDetail Name="BFBorrowed" Value="N"/>
+            <universal:DisplayDetail Name="GlobalPNR" Value="N"/>
+            <universal:DisplayDetail Name="PastDateQuickRetrievedPNR" Value="N"/>
+            <universal:DisplayDetail Name="PNRPurgeDate" Value="20200421"/>
+            <universal:DisplayDetail Name="OriginalReceivedFieldValue" Value="NOKEYSUPPLIEDUAPITESTING"/>
+         </universal:DisplayDetails>
+      </universal:ProviderReservationDisplayDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,203 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Header/>
+	<SOAP:Body>
+		<univ:RailCreateReservationReq TargetBranch="P7878787" BookingActionType="FinalTicket" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:pass="http://www.travelport.com/schema/passive_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0">
+			<com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+			<com:OverridePCC ProviderCode="1V" PseudoCityCode="PCC"/>
+			<com:BookingTraveler Key="Msy59JOHFEuydQ2M85Zybw==" TravelerType="ADT" Age="21">
+				<com:BookingTravelerName First="WILLIAM LEO" Last="DOE" Suffix="1V-3HD"/>
+				<com:PhoneNumber Type="Mobile" AreaCode="857" Number="2222222"/>
+				<com:PhoneNumber Type="Business" AreaCode="617" Number="4494444"/>
+				<com:PhoneNumber Type="Business" AreaCode="212" Number="3537353"/>
+				<com:Email Type="Business" EmailID="L.DOE@AWESOMO.COM"/>
+				<com:Email Type="Business" EmailID="D.QUIRKE@AWESOMO.COM"/>
+				<com:Email Type="Business" EmailID="rkater@AWESOMETRAVECO.com"/>
+				<com:LoyaltyCard SupplierCode="2V" MembershipProgram="164.DIS" CardNumber="**********"/>
+				<com:Address>
+					<com:Street>***********</com:Street>
+					<com:City>NEW YORK</com:City>
+					<com:State>NY</com:State>
+					<com:PostalCode>10003</com:PostalCode>
+					<com:Country>US</com:Country>
+				</com:Address>
+			</com:BookingTraveler>
+			<com:ContinuityCheckOverride>Yes</com:ContinuityCheckOverride>
+			<com:FormOfPayment Key="2_MbtrjRyE2t-4-TnFyV5A==" Type="Credit" FulfillmentType="Ticketless" Reusable="true">
+				<com:CreditCard Type="**" Number="***********1007" ExpDate="*******" Name="WILLIAM LEO DOE">
+					<com:BillingAddress>
+						<com:AddressName>*********************</com:AddressName>
+						<com:Street>***********</com:Street>
+						<com:City>NEW YORK</com:City>
+						<com:State>NY</com:State>
+						<com:PostalCode>10003</com:PostalCode>
+						<com:Country>US</com:Country>
+					</com:BillingAddress>
+				</com:CreditCard>
+			</com:FormOfPayment>
+			<rail:RailPricingSolution Key="fcZcvR5a2ke8HfnBXs3EVQ==" OfferId="27" TotalPrice="USD356.00" ApproximateTotalPrice="USD356.00" ProviderCode="RCH" SupplierCode="2V">
+				<rail:RailJourney Key="uVhZaCcc1BKA5+eCnJAAAA==" Destination="ZYP" DepartureTime="2020-05-14T05:09:00.000-04:00" ArrivalTime="2020-05-14T08:50:00.000-04:00" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" RailLocOrigin="T1200667" RailLocDestination="T1200545" JourneyDirection="Outward" JourneyDuration="221" ProviderCode="RCH" SupplierCode="2V" RouteReference="1">
+					<rail:RailSegment Key="uVhZaCcc1BKA4+eCnJAAAA==" TrainNumber="2151" Destination="ZYP" DepartureTime="2020-05-14T05:09:00.000-04:00" ArrivalTime="2020-05-14T08:50:00.000-04:00" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" RailLocOrigin="T1200667" RailLocDestination="T1200545" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" TravelTime="221">
+						<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+						<rail:RailAvailInfo ClassCode="KD" Quantity="98" CabinClass="Business"/>
+						<rail:RailAvailInfo ClassCode="PD" Quantity="41" CabinClass="First"/>
+						<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+						<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+						<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+						<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+					</rail:RailSegment>
+					<com:HostToken Host="RCH" Key="uVhZaCcc1BKA6+eCnJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUMDNINDFNPg==</com:HostToken>
+				</rail:RailJourney>
+				<rail:RailJourney Key="bZGbaCeYlDKALNHUnJAAAA==" Origin="ZYP" DepartureTime="2020-05-15T16:00:00.000-04:00" ArrivalTime="2020-05-15T19:31:00.000-04:00" OriginStationName="New York Pennsylvania Station" DestinationStationName="Westwood Rail Station" RailLocOrigin="T1200545" RailLocDestination="T1200667" JourneyDirection="Outward" JourneyDuration="211" ProviderCode="RCH" SupplierCode="2V" RouteReference="14">
+					<rail:RailSegment Key="bZGbaCeYlDKAKNHUnJAAAA==" TrainNumber="2166" Origin="ZYP" DepartureTime="2020-05-15T16:00:00.000-04:00" ArrivalTime="2020-05-15T19:31:00.000-04:00" OriginStationName="New York Pennsylvania Station" DestinationStationName="Westwood Rail Station" RailLocOrigin="T1200545" RailLocDestination="T1200667" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" TransportMode="Train" SeatAssignable="false" TravelTime="211">
+						<rail:RailSegmentInfo Category="FulfilmentType" Type="Extra">1.DTB 4.DTB 5.DTB 7.DTB</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">Snack</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">QuietCar</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">Network</rail:RailSegmentInfo>
+						<rail:RailSegmentInfo Type="Vendor">SeatAsgn</rail:RailSegmentInfo>
+						<rail:RailAvailInfo ClassCode="K" Quantity="256" CabinClass="Business"/>
+						<rail:RailAvailInfo ClassCode="PK" Quantity="41" CabinClass="First"/>
+						<rail:FulFillmentType>Ticket on Departure</rail:FulFillmentType>
+						<rail:FulFillmentType>Standard Mail</rail:FulFillmentType>
+						<rail:FulFillmentType>Ticketless</rail:FulFillmentType>
+						<rail:FulFillmentType>Express Mail</rail:FulFillmentType>
+					</rail:RailSegment>
+					<com:HostToken Host="RCH" Key="bZGbaCeYlDKAMNHUnJAAAA==">PHhtbC1mcmFnbWVudCBKb3VybmV5RHVyYXRpb249IlAwMERUM0Pg==</com:HostToken>
+				</rail:RailJourney>
+				<rail:RailPricingInfo Key="uVhZaCcc1BKAKAfCnJAAAA==" TotalPrice="USD131.00" ApproximateTotalPrice="USD131.00">
+					<rail:RailFare Key="uVhZaCcc1BKALAfCnJAAAA==" FareBasis="Rail Fare" CabinClass="Business" PassengerTypeCode="ADT" Destination="ZYP" EffectiveDate="2020-03-05T14:30:04.368-05:00" Amount="USD131.00" TicketTypeCode="KD" FareReference="LowFareClass" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" RailLocOrigin="T1200667" RailLocDestination="T1200545">
+						<com:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJMb3dGYXJlQ2xhc3MiIEZhcmVEZXNPg==</com:HostToken>
+					</rail:RailFare>
+					<rail:RailBookingInfo RailFareRef="uVhZaCcc1BKALAfCnJAAAA==" RailJourneyRef="uVhZaCcc1BKA5+eCnJAAAA=="/>
+					<rail:PassengerType Code="ADT" Age="21"/>
+				</rail:RailPricingInfo>
+				<rail:RailPricingInfo Key="bZGbaCeYlDKAQQHUnJAAAA==" TotalPrice="USD225.00" ApproximateTotalPrice="USD225.00">
+					<rail:RailFare Key="bZGbaCeYlDKA2PHUnJAAAA==" FareBasis="Rail Fare" CabinClass="Business" PassengerTypeCode="ADT" Origin="ZYP" EffectiveDate="2020-03-05T14:30:02.914-05:00" Amount="USD225.00" TicketTypeCode="K" FareReference="LowFareClass" OriginStationName="New York Pennsylvania Station" DestinationStationName="Westwood Rail Station" RailLocOrigin="T1200545" RailLocDestination="T1200667">
+						<com:HostToken>PHhtbC1mcmFnbWVudCBGYXJlQ2xhc3M9IjMuU0VHIiBGYXJlUmVmZXJlbmNlPSJMb3dGYXJlQ2xhc3MiIEZhcmVEZXNdtZW50Pg==</com:HostToken>
+					</rail:RailFare>
+					<rail:RailBookingInfo RailFareRef="bZGbaCeYlDKA2PHUnJAAAA==" RailJourneyRef="bZGbaCeYlDKALNHUnJAAAA=="/>
+					<rail:PassengerType Code="ADT" Age="21"/>
+				</rail:RailPricingInfo>
+			</rail:RailPricingSolution>
+			<com:Payment Key="PeXQUnGYYUSyiMZg29DAYQ==" Type="Itinerary" FormOfPaymentRef="2_MbtrjRyE2t-4-TnFyV5A==" BookingTravelerRef="Msy59JOHFEuydQ2M85Zybw==" Amount="USD356.00" ApproximateAmount="USD356.00"/>
+		</univ:RailCreateReservationReq>
+	</SOAP:Body>
+</SOAP:Envelope>
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<universal:RailCreateReservationRsp xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" TransactionId="AC2DA6AB0A0759BF41CDFB7FDCC64E0C" ResponseTime="9915">
+			<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="RCH" SupplierCode="2V">
+				<![CDATA[PassengerList/Passenger/@RPH is not supported by the distributor, ignored]]>
+			</common_v50_0:ResponseMessage>
+			<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="RCH" SupplierCode="2V">
+				<![CDATA[Unsupported telephone location found the phone number has been saved as a Customer Mobile Phone.]]>
+			</common_v50_0:ResponseMessage>
+			<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="RCH" SupplierCode="2V">
+				<![CDATA[Booking is Modifiable]]>
+			</common_v50_0:ResponseMessage>
+			<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">
+				<![CDATA[Passive Book Creation failed for 3L5N1H-RESTRICTED]]>
+			</common_v50_0:ResponseMessage>
+			<universal:UniversalRecord LocatorCode="3L5N1H" Version="0" Status="Active">
+				<common_v50_0:BookingTraveler Key="Msy59JOHFEuydQ2M85Zybw==" TravelerType="ADT" Age="21" ElStat="A">
+					<common_v50_0:BookingTravelerName First="WILLIAM LEO" Last="DOE" Suffix="1V-PCC"/>
+					<common_v50_0:PhoneNumber Key="eqvSaCBAAA/BXO4JtJAAAA==" Type="Mobile" Location="CLE" Number="2222222" AreaCode="857" ElStat="A">
+						<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:PhoneNumber Key="eqvSaCBAAA/BYO4JtJAAAA==" Type="Business" Location="CLE" Number="4494444" AreaCode="617" ElStat="A">
+						<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:PhoneNumber Key="eqvSaCBAAA/BZO4JtJAAAA==" Type="Business" Location="CLE" Number="3537353" AreaCode="212" ElStat="A">
+						<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:Email Key="eqvSaCBAAA/BaO4JtJAAAA==" Type="Business" EmailID="L.DOE@AWESOMO.COM" ElStat="A">
+						<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:Email Key="eqvSaCBAAA/BbO4JtJAAAA==" Type="Business" EmailID="D.QUIRKE@AWESOMO.COM" ElStat="A">
+						<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:Email Key="eqvSaCBAAA/BcO4JtJAAAA==" Type="Business" EmailID="rkater@AWESOMETRAVECO.com" ElStat="A">
+						<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:LoyaltyCard Key="eqvSaCBAAA/BfSULtJAAAA==" SupplierCode="2V" CardNumber="**********" MembershipProgram="164.DIS" ElStat="A">
+						<common_v50_0:ProviderReservationSpecificInfo>
+							<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+						</common_v50_0:ProviderReservationSpecificInfo>
+					</common_v50_0:LoyaltyCard>
+					<common_v50_0:Address Key="eqvSaCBAAA/BeO4JtJAAAA==" ElStat="A">
+						<common_v50_0:Street>***********</common_v50_0:Street>
+						<common_v50_0:City>NEW YORK</common_v50_0:City>
+						<common_v50_0:State>NY</common_v50_0:State>
+						<common_v50_0:PostalCode>10003</common_v50_0:PostalCode>
+						<common_v50_0:Country>US</common_v50_0:Country>
+						<common_v50_0:ProviderReservationInfoRef Key="eqvSaCBAAA/BjSULtJAAAA=="/>
+					</common_v50_0:Address>
+				</common_v50_0:BookingTraveler>
+				<universal:ProviderReservationInfo Key="eqvSaCBAAA/BjSULtJAAAA==" ProviderCode="RCH" LocatorCode="AD60FC" CreateDate="2020-03-05T19:30:47.434+00:00" ModifiedDate="2020-03-05T19:30:47.434+00:00"/>
+				<rail:RailReservation xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" LocatorCode="3L5O01" CreateDate="2020-03-05T19:30:47.420+00:00" ModifiedDate="2020-03-05T19:30:47.420+00:00" BookingStatus="Ticketed">
+					<common_v50_0:BookingTravelerRef Key="Msy59JOHFEuydQ2M85Zybw==">
+						<common_v50_0:LoyaltyCardRef Key="eqvSaCBAAA/BfSULtJAAAA=="/>
+					</common_v50_0:BookingTravelerRef>
+					<rail:RailJourney Key="uVhZaCcc1BKA5+eCnJAAAA==" Destination="ZYP" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" DepartureTime="2020-05-14T05:09:00.000-04:00" ArrivalTime="2020-05-14T08:50:00.000-04:00" RailLocOrigin="T1200667" RailLocDestination="T1200545" SupplierCode="2V" Status="HK" ProviderReservationInfoRef="eqvSaCBAAA/BjSULtJAAAA==" TravelOrder="1" RouteReference="1">
+						<rail:RailSegment TrainNumber="2151" Destination="ZYP" DepartureTime="2020-05-14T05:09:00.000-04:00" ArrivalTime="2020-05-14T08:50:00.000-04:00" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" RailLocOrigin="T1200667" RailLocDestination="T1200545" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" Key="eqvSaCBAAA/BnSULtJAAAA==" Status="HK" CabinClass="Business" ClassCode="KD"/>
+						<rail:JourneyRemark>Journey is Modifiable</rail:JourneyRemark>
+					</rail:RailJourney>
+					<rail:RailJourney Key="bZGbaCeYlDKALNHUnJAAAA==" Origin="ZYP" OriginStationName="New York Pennsylvania Station" DestinationStationName="Westwood Rail Station" DepartureTime="2020-05-15T16:00:00.000-04:00" ArrivalTime="2020-05-15T19:31:00.000-04:00" RailLocOrigin="T1200545" RailLocDestination="T1200667" SupplierCode="2V" Status="HK" ProviderReservationInfoRef="eqvSaCBAAA/BjSULtJAAAA==" TravelOrder="2" RouteReference="2">
+						<rail:RailSegment TrainNumber="2166" Origin="ZYP" DepartureTime="2020-05-15T16:00:00.000-04:00" ArrivalTime="2020-05-15T19:31:00.000-04:00" OriginStationName="New York Pennsylvania Station" DestinationStationName="Westwood Rail Station" RailLocOrigin="T1200545" RailLocDestination="T1200667" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" Key="eqvSaCBAAA/BpSULtJAAAA==" Status="HK" CabinClass="Business" ClassCode="K"/>
+						<rail:JourneyRemark>Journey is Modifiable</rail:JourneyRemark>
+					</rail:RailJourney>
+					<rail:RailPricingInfo Key="eqvSaCBAAA/BqSULtJAAAA==" TotalPrice="USD356.00" ApproximateTotalPrice="USD356.00">
+						<rail:RailFare Key="uVhZaCcc1BKALAfCnJAAAA==" FareBasis="Rail Fare" CabinClass="Business" PassengerTypeCode="ADT" Destination="ZYP" EffectiveDate="2020-03-05T14:30:47.435-05:00" Amount="USD356.00" TicketTypeCode="KD/K" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" RailLocOrigin="T1200667" RailLocDestination="T1200545"/>
+						<rail:RailBookingInfo RailFareRef="uVhZaCcc1BKALAfCnJAAAA==" RailJourneyRef="uVhZaCcc1BKA5+eCnJAAAA=="/>
+						<rail:RailBookingInfo RailFareRef="uVhZaCcc1BKALAfCnJAAAA==" RailJourneyRef="bZGbaCeYlDKALNHUnJAAAA=="/>
+						<rail:PassengerType Code="ADT"/>
+						<common_v50_0:BookingTravelerRef Key="Msy59JOHFEuydQ2M85Zybw=="/>
+					</rail:RailPricingInfo>
+					<common_v50_0:Payment Key="eqvSaCBAAA/BiSULtJAAAA==" Type="Itinerary" Amount="USD356.00" ApproximateAmount="USD356.00" FormOfPaymentRef="eqvSaCBAAA/BgSULtJAAAA=="/>
+					<rail:RailTicketInfo Number="0650955555612" IssueLocation="505b021f"/>
+					<rail:RailTicketInfo Number="0650955555620" IssueLocation="505b021f"/>
+					<common_v50_0:SupplierLocator SupplierCode="2V" SupplierLocatorCode="AD60FC" ProviderReservationInfoRef="eqvSaCBAAA/BjSULtJAAAA=="/>
+				</rail:RailReservation>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI1365541846-A6A2A1AE" BranchCode="P7878787" AgencyCode="S0000000" EventTime="2020-03-05T19:30:38.006+00:00"/>
+					<common_v50_0:AgentAction ActionType="Ticketed" AgentCode="UAPI1365541846-A6A2A1AE" BranchCode="P7878787" AgencyCode="S0000000" EventTime="2020-03-05T19:30:47.420+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:FormOfPayment Key="eqvSaCBAAA/BgSULtJAAAA==" Type="Credit" FulfillmentType="Ticketless" Reusable="true" ProfileKey="ON7ZYQHrT6+Dx49ADwYckA==" ElStat="A">
+					<common_v50_0:CreditCard Type="**" Number="***********1007" ExpDate="*******" Name="WILLIAM LEO DOE">
+						<common_v50_0:BillingAddress Key="eqvSaCBAAA/BhSULtJAAAA==" ElStat="A">
+							<common_v50_0:AddressName>*********************</common_v50_0:AddressName>
+							<common_v50_0:Street>***********</common_v50_0:Street>
+							<common_v50_0:City>NEW YORK</common_v50_0:City>
+							<common_v50_0:State>NY</common_v50_0:State>
+							<common_v50_0:PostalCode>10003</common_v50_0:PostalCode>
+							<common_v50_0:Country>US</common_v50_0:Country>
+						</common_v50_0:BillingAddress>
+					</common_v50_0:CreditCard>
+				</common_v50_0:FormOfPayment>
+			</universal:UniversalRecord>
+			<rail:RailSolutionChangedInfo xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" ReasonCode="Price">
+				<rail:RailPricingSolution Key="eqvSaCBAAA/BXRXLtJAAAA==" OfferId="1" TotalPrice="USD356.00" ApproximateTotalPrice="USD356.00" ProviderCode="RCH" SupplierCode="2V">
+					<rail:RailJourney Key="uVhZaCcc1BKA5+eCnJAAAA==" Destination="ZYP" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" DepartureTime="2020-05-14T05:09:00.000-04:00" ArrivalTime="2020-05-14T08:50:00.000-04:00" RailLocOrigin="T1200667" RailLocDestination="T1200545" SupplierCode="2V" Status="HK" ProviderReservationInfoRef="eqvSaCBAAA/BjSULtJAAAA==" TravelOrder="1" RouteReference="1">
+						<rail:RailSegment TrainNumber="2151" Destination="ZYP" DepartureTime="2020-05-14T05:09:00.000-04:00" ArrivalTime="2020-05-14T08:50:00.000-04:00" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" RailLocOrigin="T1200667" RailLocDestination="T1200545" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" Key="eqvSaCBAAA/BnSULtJAAAA==" Status="HK" CabinClass="Business" ClassCode="KD"/>
+						<rail:JourneyRemark>Journey is Modifiable</rail:JourneyRemark>
+					</rail:RailJourney>
+					<rail:RailJourney Key="bZGbaCeYlDKALNHUnJAAAA==" Origin="ZYP" OriginStationName="New York Pennsylvania Station" DestinationStationName="Westwood Rail Station" DepartureTime="2020-05-15T16:00:00.000-04:00" ArrivalTime="2020-05-15T19:31:00.000-04:00" RailLocOrigin="T1200545" RailLocDestination="T1200667" SupplierCode="2V" Status="HK" ProviderReservationInfoRef="eqvSaCBAAA/BjSULtJAAAA==" TravelOrder="2" RouteReference="2">
+						<rail:RailSegment TrainNumber="2166" Origin="ZYP" DepartureTime="2020-05-15T16:00:00.000-04:00" ArrivalTime="2020-05-15T19:31:00.000-04:00" OriginStationName="New York Pennsylvania Station" DestinationStationName="Westwood Rail Station" RailLocOrigin="T1200545" RailLocDestination="T1200667" TrainType="Metroliner/Acela Express" TrainTypeCode="61.TNP" Key="eqvSaCBAAA/BpSULtJAAAA==" Status="HK" CabinClass="Business" ClassCode="K"/>
+						<rail:JourneyRemark>Journey is Modifiable</rail:JourneyRemark>
+					</rail:RailJourney>
+					<rail:RailPricingInfo Key="eqvSaCBAAA/BqSULtJAAAA==" TotalPrice="USD356.00" ApproximateTotalPrice="USD356.00">
+						<rail:RailFare Key="uVhZaCcc1BKALAfCnJAAAA==" FareBasis="Rail Fare" CabinClass="Business" PassengerTypeCode="ADT" Destination="ZYP" EffectiveDate="2020-03-05T14:30:47.435-05:00" Amount="USD356.00" TicketTypeCode="KD/K" OriginStationName="Westwood Rail Station" DestinationStationName="New York Pennsylvania Station" RailLocOrigin="T1200667" RailLocDestination="T1200545"/>
+						<rail:RailBookingInfo RailFareRef="uVhZaCcc1BKALAfCnJAAAA==" RailJourneyRef="uVhZaCcc1BKA5+eCnJAAAA=="/>
+						<rail:RailBookingInfo RailFareRef="uVhZaCcc1BKALAfCnJAAAA==" RailJourneyRef="bZGbaCeYlDKALNHUnJAAAA=="/>
+						<rail:PassengerType Code="ADT"/>
+						<common_v50_0:BookingTravelerRef Key="Msy59JOHFEuydQ2M85Zybw=="/>
+					</rail:RailPricingInfo>
+				</rail:RailPricingSolution>
+			</rail:RailSolutionChangedInfo>
+		</universal:RailCreateReservationRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,191 @@
+Air Fare Rules using AirFareDisplayRuleKey-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:AirFareRulesReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" FareRuleType="long" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:AirFareDisplayRuleKey ProviderCode="1V">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</air:AirFareDisplayRuleKey>
+      </air:AirFareRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Fare Rules using AirFareDisplayRuleKey-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AirFareRulesRsp TransactionId="9DCE80480A0764772606212B17506E93" ResponseTime="11570" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">FARES LAST UPDATED 16JAN  2:20 P</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">DEPART 12MAR                      AIRPORT FARES</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">PUBLIC/PRIVATE FARES FOR 29BD</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">U.S. PASSENGER FACILITY CHARGES MAY APPLY</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">TAXES AND FEES MAY VARY DEPENDING ON THE BOOKED ITINERARY</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">USD     FARE         MIN/   XL  TVL DATES    TKT DATES</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">CX  FARE    BASIS    AP    MAX  FE  FIRST/LAST   FIRST/LAST</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">OTHER FARES EXIST-DO MORE SPECIFIC $D</common_v50_0:ResponseMessage>
+         <air:FareRule RuleNumber="0" Source="ATPCO">
+            <air:FareRuleLong Category="0" Type="RULE">RULE - 011/DFRN
+UNLESS OTHERWISE SPECIFIED
+DISCOUNT ECONOMY FARES
+ APPLICATION
+   CLASS OF SERVICE
+     THESE FARES APPLY FOR ECONOMY CLASS SERVICE.</air:FareRuleLong>
+            <air:FareRuleLong Category="2" Type="RULE">FOR -14P TYPE FARES
+  PERMITTED 1201AM TO MIDNIGHT DAILY.</air:FareRuleLong>
+            <air:FareRuleLong Category="5" Type="RULE">FOR -14 TYPE FARES
+  RESERVATIONS FOR ALL SECTORS ARE REQUIRED AT LEAST 14 DAYS
+  BEFORE DEPARTURE.
+  WAITLIST NOT PERMITTED.
+  TICKETING MUST BE COMPLETED WITHIN 4 HOURS AFTER
+  RESERVATIONS ARE MADE OR AT LEAST 14 DAYS BEFORE DEPARTURE
+  WHICHEVER IS EARLIER.</air:FareRuleLong>
+            <air:FareRuleLong Category="6" Type="RULE">UNLESS OTHERWISE SPECIFIED   NOTE - RULE DFRN IN DGR APPLIES
+FOR -XS5A TYPE FARES
+  TRAVEL FROM LAST STOPOVER MUST COMMENCE NO EARLIER THAN 1
+  DAY AFTER DEPARTURE FROM FARE ORIGIN.</air:FareRuleLong>
+            <air:FareRuleLong Category="7" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TRAVEL FROM ARRIVAL AT FARE DESTINATION MUST COMMENCE NO
+  LATER THAN 330 DAYS AFTER DEPARTURE FROM FARE ORIGIN.</air:FareRuleLong>
+            <air:FareRuleLong Category="8" Type="RULE">WITHIN THE UNITED STATES
+  1 FREE STOPOVER PERMITTED ON THE PRICING UNIT IN DEN.
+     A STOPOVER MAY NOT EXCEED 19 HOURS.
+  OR - 1 FREE STOPOVER PERMITTED ON THE PRICING UNIT.
+          A STOPOVER MAY NOT EXCEED 8 HOURS.</air:FareRuleLong>
+            <air:FareRuleLong Category="10" Type="RULE">UNLESS OTHERWISE SPECIFIED
+   SINGLE/DOUBLE OPEN JAWS/MULTI-COMPONENT CIRCLE TRIPS NOT
+   PERMITTED.
+   END-ON-END NOT PERMITTED. SIDE TRIPS PERMITTED.
+   APPLICABLE ADD-ON CONSTRUCTION IS ADDRESSED IN
+   MISCELLANEOUS PROVISIONS - CATEGORY 23.
+  2-COMPONENT CIRCLE TRIPS
+    FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS WITH F9
+    FARES
+    -TO FORM 2-COMPONENT CIRCLE TRIPS.
+   PROVIDED -
+     COMBINATIONS ARE WITH ANY FARE FOR CARRIER F9 IN ANY
+     RULE AND TARIFF.</air:FareRuleLong>
+            <air:FareRuleLong Category="11" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TRAVEL IS NOT PERMITTED 06MAR 20 THROUGH 08MAR 20 OR
+  13MAR 20 THROUGH 15MAR 20 OR 20MAR 20 THROUGH 22MAR 20 OR
+  27MAR 20 THROUGH 29MAR 20 OR 03APR 20 THROUGH 05APR 20 OR
+  10APR 20 THROUGH 13APR 20 OR 17APR 20 THROUGH 19APR 20.</air:FareRuleLong>
+            <air:FareRuleLong Category="12" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  IF INFANT UNDER 02 WITHOUT A SEAT.
+    THERE IS NO FUEL SURCHARGE PER FARE COMPONENT.
+  A SURCHARGE OF USD 19.53 PER COUPON WILL BE ADDED TO THE
+  APPLICABLE FARE FOR TRAVEL.
+  AND - A SURCHARGE OF USD 4.65 PER FARE COMPONENT WILL BE
+        ADDED TO THE APPLICABLE FARE FOR TRAVEL.</air:FareRuleLong>
+            <air:FareRuleLong Category="14" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TRAVEL ON THIS FARE COMPONENT ON EACH TRIP MUST COMMENCE
+  BY MIDNIGHT ON 22APR 20.</air:FareRuleLong>
+            <air:FareRuleLong Category="15" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TICKETS MAY BE ISSUED BY PTA/ELECTRONIC TICKETING. PTA
+  CONSTITUTES TICKETING.
+         NOTE -
+          TEXT BELOW NOT VALIDATED FOR AUTOPRICING.
+          --------------------------------------------------
+              ALL TICKETS WILL BE ISSUED AS ELECTRONIC
+               TICKETS.  PAPER TICKETS NOT PERMITTED
+          --------------------------------------------------
+          NOTE-FOR PURPOSES OF SAME DAY CONFIRMED CHANGES
+          AND INVOLUNTARY REROUTE - THE FOLLOWING GROUPS
+          OF CITIES ARE CONSIDERED TO BE THE SAME POINT---
+          IAD-DCA / MDW-MKE-ORD-RFD / FLL-PBI /
+          LGA-TTN-PHL / LAX-SNA / MKE-MSN-RFD / MCO-TPA /
+          MCO-UST / SAN-SNA / ILG-PHL-TTN</air:FareRuleLong>
+            <air:FareRuleLong Category="16" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  CANCELLATIONS
+    TICKET IS NON-REFUNDABLE.
+         NOTE -
+          WAIVED FOR DEATH OF PASSENGER.
+          NOTE-IF TICKET IS BEING APPLIED TOWARDS THE
+          PURCHASE OF A NEW TICKET-ORIGINAL NONREFUNDABLE
+          AMOUNT WILL REMAIN NONREFUNDABLE ON NEW TICKET AND
+          ANY FUTURE REISSUES.
+          --------------------------------------------------
+          CUSTOMERS WHO PURCHASE AN INSTANT PURCHASE TICKET
+          FOR TRAVEL ON FRONTIER VIA F9 CHANNELS MAY
+          CANCEL THEIR RESERVATION/REFUND TICKET WITHOUT
+          PENALTY WITHIN 24 HOURS OF PURCHASE.
+          EXCEPTION--
+          STANDARD CANCELLATION POLICY/FEES APPLY TO
+          TICKETS PURCHASED FOR TRAVEL WITHIN 7 DAYS OF
+          DEPARTURE.
+    TICKET IS NON-REFUNDABLE.
+         NOTE -
+          --CHANGES--
+          CHANGE FEE APPLIES FOR REISSUE/REVALIDATION
+          FULLY OR PARTIALLY UNUSED TICKETS MAY BE REBOOKED
+          AND TRAVEL COMMENCED FOR TRAVEL UP TO 90 DAYS
+          FROM THE DATE OF CANCELLATION OF THE TICKET.
+          FLIGHT SEGMENT OR SEGMENTS MUST BE CANCELLED
+          ON/OR PRIOR TO SCHEDULED FLIGHT DEPARTURE TIME.
+          IF PASSENGER FAILS TO CANCEL FLIGHT SEGMENT/
+          SEGMENTS WITH FRONTIER PRIOR TO SCHEDULED
+          DEPARTURE TIME COUPON/COUPONS AND ANY SUBSEQUENT
+          COUPONS WILL BE FORFEITED.  ALL MONIES ARE
+          FORFIETED AND NOT REFUNDED TO THE PASSENGER.
+          --------------------------------------------------
+            --CHANGES TO WHOLLY UNUSED TICKETS BEFORE
+            DEPARTURE OR PARTIALLY USED TICKETS AFTER
+            DEPARTURE OR CHANGING THE OUTBOUND/RETURN--
+          REPRICE THE CHANGED SEGMENTS AT THE CURRENT FARE
+          AND GUARANTEE THE FARE FOR ALL UNCHANGED SEGMENTS
+          CHANGED SEGMENTS MUST BE PRICED ACCORDING TO
+          CURRENT AVAILABILITY AND FARES.
+          --------------------------------------------------
+            --NAME CHANGES--
+          NAME CHANGES PERMITTED - ITINERARY CHANGE FEE IF
+          APPLICABLE - PLUS NAME CHANGE FEE AND FARE
+          DIFFERENCE APPLIES.
+          --------------------------------------------------
+            --STANDBY--
+          STANDBY NOT PERMITTED.
+          --------------------------------------------------
+            --SAME DAY CONFIRMED--
+          PASSENGERS HOLDING CONFIRMED RESERVATIONS AND
+          TICKETS MAY CONFIRM EARLIER/LATER SAME DAY FLIGHT
+          BETWEEN SAME ORIGIN/DESTINATION FOR A NON-
+          REFUNDABLE FEE PER DIRECTION. NEW
+          ITINERARY MAY ONLY BE CONFIRMED ON THE DAY OF
+          DEPARTURE THROUGH FRONTIER RESERVATIONS OR A
+          FRONTIER TICKET COUNTER/GATE. REQUESTS MAY NOT BE
+          MADE VIA WEB/SELF-SERVICE KIOSK OR TRAVEL AGENCY.
+          ---------------------------------------------</air:FareRuleLong>
+            <air:FareRuleLong Category="18" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  THE ORIGINAL TICKET MUST BE ANNOTATED - NON-REF - AND -
+  CHG/PEN FEE APPLIES - IN THE ENDORSEMENT BOX.</air:FareRuleLong>
+            <air:FareRuleLong Category="19" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  UNACCOMPANIED CHILD 5-14 - NO DISCOUNT
+  OR - 1ST INFANT UNDER 2 WITHOUT A SEAT - NO CHARGE
+         MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+           COMPARTMENT AT THIS RULE BY ADULT 15 OR OLDER.
+         NOTE -
+          1ST INFANT OVER 14 DAYS AND UNDER 2 YEARS OF AGE
+          WITHOUT A SEAT - NO CHARGE
+  OR - 1ST INE UNDER 2 - NO CHARGE
+         MUST BE ACCOMPANIED ON ALL FLIGHTS BY ADULT 15 OR
+           OLDER.
+         NOTE -
+          1ST INFANT OVER 14 DAYS AND UNDER 2 YEARS OF AGE
+          WITHOUT A SEAT - NO CHARGE
+  1ST INFANT UNDER 2 WITH A SEAT - NO DISCOUNT.
+         NOTE -
+          NOTE-
+                INS PSGR TYPE NO DISCOUNT
+  OR -
+         NOTE -
+          UNACCOMPANIED CHILD 2-4 - NOT ACCEPTED</air:FareRuleLong>
+            <air:FareRuleLong Category="20" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  TOUR CONDUCTOR - NO DISCOUNT.</air:FareRuleLong>
+            <air:FareRuleLong Category="21" Type="RULE">UNLESS OTHERWISE SPECIFIED
+  AGENT - NO DISCOUNT.</air:FareRuleLong>
+            <air:FareRuleLong Category="22" Type="RULE">UNLESS OTHERWISE SPECIFIED
+         NOTE -
+          SENIOR DISCOUNT DOES NOT APPLY.
+          OTHER DISCOUNTS DO NOT APPLY.</air:FareRuleLong>
+         </air:FareRule>
+      </air:AirFareRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

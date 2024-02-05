@@ -1,0 +1,32 @@
+Air Flight Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:FlightDetailsReq TargetBranch="P7102538" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirSegment xmlns:air="http://www.travelport.com/schema/air_v50_0" Key="nFB3GxBAAA/BTvXBAAAAAA==" Group="1" Carrier="UA" FlightNumber="241" Origin="ATL" Destination="ORD" DepartureTime="2020-04-14T06:20:00.000-07:00" ArrivalTime="2020-04-14T09:57:00.000-06:00" FlightTime="157" TravelTime="157" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="General" ProviderCode="1G" ClassOfService="Y"/> 
+      </air:FlightDetailsReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Flight Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightDetailsRsp TransactionId="9C174E810A07643B096D7BC34F9321B2" ResponseTime="158" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:AirSegment Key="nFB3GxBAAA/BTvXBAAAAAA==" Group="1" Carrier="UA" FlightNumber="241" ProviderCode="1G" Origin="ATL" Destination="ORD" DepartureTime="2020-04-14T06:20:00.000-04:00" ArrivalTime="2020-04-14T09:57:00.000-05:00" FlightTime="157" TravelTime="157" ClassOfService="Y" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilitySource="A" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" AvailabilityDisplayType="General">
+            <air:FlightDetails Key="NgSNMC7Q2BKAIaw2BAAAAA==" Origin="ATL" Destination="ORD" DepartureTime="2020-04-14T10:45:00.000-04:00" ArrivalTime="2020-04-14T12:03:00.000-05:00" FlightTime="138" TravelTime="277" OriginTerminal="N" DestinationTerminal="1" AutomatedCheckin="false">
+               <air:Meals>FoodAndBeveragesForPurchase</air:Meals>
+               <air:InFlightServices>Non-smoking</air:InFlightServices>
+               <air:InFlightServices>TSA SECURED FLIGHT</air:InFlightServices>
+            </air:FlightDetails>
+         </air:AirSegment>
+         <air:CO2Emissions TotalValue="185.25" Unit="KG/PerPerson" Category="Economy" Source="CLIMATENEUTRALGROUP.COM/OFFSET-NOW">
+            <air:CO2Emission AirSegmentRef="nFB3GxBAAA/BTvXBAAAAAA==" Value="185.25"/>
+         </air:CO2Emissions>
+         <air:CO2Emissions TotalValue="185.25" Unit="KG/PerPerson" Category="Premium" Source="CLIMATENEUTRALGROUP.COM/OFFSET-NOW">
+            <air:CO2Emission AirSegmentRef="nFB3GxBAAA/BTvXBAAAAAA==" Value="185.25"/>
+         </air:CO2Emissions>
+      </air:FlightDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,31 @@
+Vehicle Location-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleLocationReq AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="AD"/>
+         <veh:PickupDateLocation Date="2020-04-01" Location="DEN"/>
+      </veh:VehicleLocationReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Location-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationRsp TransactionId="9DCEDBC10A0764785B1483FCBDC25027" ResponseTime="531" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1J" VendorCode="AD" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="U" Location="DEN" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>DENVER</common_v50_0:AddressName>
+                  <common_v50_0:Street>23790 EAST 78TH AVENUE</common_v50_0:Street>
+                  <common_v50_0:City>DEN</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+      </vehicle:VehicleLocationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

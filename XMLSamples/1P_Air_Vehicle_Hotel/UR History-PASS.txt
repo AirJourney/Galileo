@@ -1,0 +1,508 @@
+UR History-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordHistorySearchReq AuthorizedBy="UAPI" UniversalRecordLocatorCode="0T1OMR" TargetBranch="TP_1P_SOA" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordHistorySearchReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR History-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordHistorySearchRsp TransactionId="9DCE9A600A0764772606212B55AED927" ResponseTime="655" LastResult="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:30:10.435+00:00" ElementType="URCreate" Action="URCreate">
+            <universal:New>UR RecLoc: 0T1OMR</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:30:10.440+00:00" ElementType="AirReservation" Action="AirCreate">
+            <universal:New>UR RecLoc: 0T1OMR
+               
+               ActionStatus:-
+               Type:TAU
+               TicketDate:2020-03-07T00:00:00.000-05:00
+               BranchPCC:
+               AirportCode:
+               AccountCode:
+               AirVendor:
+               Remark:
+               Provider Code: 1P
+               Provider Locator Code: MEH249
+               
+               
+               AirReservation:
+               
+               
+               Provider Code: 1P
+               Provider Locator: MEH249
+               CustomerID:
+               Postscript:
+               CustomCheckRule:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: LONG
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               FormOfPayment :-
+               ProviderReservationInfo:-
+               ProviderLocatorCode: MEH249
+               Credit Card:-
+               Type: CA
+               Number: ************5557
+               ExpDate: *******
+               Name on Card: JAYA KUMAR
+               TravelerId:
+               CVV:
+               Extended Payment:
+               Customer Reference:
+               
+               
+               
+               
+               
+               AirSegment:
+               Origin: ORD
+               Destination: DEN
+               Carrier: UA
+               FltNum: 1715
+               DepTime: 2020-05-31T17:51:00.000-05:00
+               ArrTime: 2020-05-31T19:37:00.000-06:00
+               Class of Service: W
+               Availability Source:
+               
+               AirSegment:
+               Origin: DEN
+               Destination: SEA
+               Carrier: UA
+               FltNum: 2305
+               DepTime: 2020-05-31T22:26:00.000-06:00
+               ArrTime: 2020-06-01T00:28:00.000-07:00
+               Class of Service: W
+               Availability Source:
+               
+               AirSegment:
+               Origin: SEA
+               Destination: ORD
+               Carrier: UA
+               FltNum: 2229
+               DepTime: 2020-06-05T23:02:00.000-07:00
+               ArrTime: 2020-06-06T04:59:00.000-05:00
+               Class of Service: L
+               Availability Source:
+               
+               AirPricing:
+               PricingType: TicketRecord
+               PricingMethod: VerifyPrice
+               
+               
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               AppliedOn:
+               AdjustmentType:
+               Value:
+               TicketDesignator:
+               FareType:
+               
+               
+               
+               
+               Total: USD465.60
+               Base: USD398.14
+               ApproximateTotalPrice:
+               ApproximateBasePrice:
+               Taxes: USD67.46
+               Air Pricing Info Group: 1
+               Ticketed: false
+               Fare Status Info:
+               Status Code:
+               Failure Code:
+               Failure Reason:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Passenger Type Info:
+               Code: ADT
+               FareGuaranteeType:
+               FareGuaranteeDate:
+               Fare Info 1:
+               FareBasis: WAA3AKEN
+               NotValidBefore:
+               NotValidAfter:
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 169914
+               Name : Economy
+               Carrier : UA
+               BrandTier : 0002
+               BrandTitle :
+               Type : External
+               Value : Economy
+               BrandTitle :
+               Type : Short
+               Value : ECONOMY
+               BrandText :
+               Type : MarketingConsumer
+               Value : Our standard Economy fare; choose your seats and enjoy other options for customizing your travel
+               
+               • Seat selection at booking, if seats are available
+               • Eligible to change ticket1
+               • Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+               • One personal item and one full-size carry-on bag
+               • Earn award miles and lifetime miles, and toward Premier® qualification
+               • 1Fees may apply.
+               ---
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : Our standard Economy fare; choose your seats and enjoy other options for customizing your travel
+               
+               • Seat selection at booking, if seats are available
+               • Eligible to change ticket1
+               • Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+               • One personal item and one full-size carry-on bag
+               • Earn award miles and lifetime miles, and toward Premier® qualification
+               • 1Fees may apply.
+               ---
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our lowest available fare with options to customize travel and without the restrictions of Budget E
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 2000
+               ImageHeight : 1529
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               Description List :
+               Description : Carry on bags
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1544.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1544.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : SI
+               AssociatedItem : Flight
+               Description List :
+               Description : Personal Item (9 in x 10 in x 17 in)
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_82230.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_82230.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : PreReservedSeatAssignment
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Advanced seat assignment
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1556.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1556.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               Fare Info 2:
+               FareBasis: LXA4AQER
+               NotValidBefore:
+               NotValidAfter:
+               FareTicketDesignator:
+               Value:
+               TourCode :
+               SupplierCode:
+               
+               
+               Branded Fares:
+               BrandID : 169914
+               Name : Economy
+               Carrier : UA
+               BrandTier : 0002
+               BrandTitle :
+               Type : External
+               Value : Economy
+               BrandTitle :
+               Type : Short
+               Value : ECONOMY
+               BrandText :
+               Type : MarketingConsumer
+               Value : Our standard Economy fare; choose your seats and enjoy other options for customizing your travel
+               
+               • Seat selection at booking, if seats are available
+               • Eligible to change ticket1
+               • Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+               • One personal item and one full-size carry-on bag
+               • Earn award miles and lifetime miles, and toward Premier® qualification
+               • 1Fees may apply.
+               ---
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : MarketingAgent
+               Value : Our standard Economy fare; choose your seats and enjoy other options for customizing your travel
+               
+               • Seat selection at booking, if seats are available
+               • Eligible to change ticket1
+               • Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+               • One personal item and one full-size carry-on bag
+               • Earn award miles and lifetime miles, and toward Premier® qualification
+               • 1Fees may apply.
+               ---
+               • Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.
+               BrandText :
+               Type : Strapline
+               Value : Our lowest available fare with options to customize travel and without the restrictions of Budget E
+               ImageLocation :
+               Type : Consumer
+               ImageWidth : 2000
+               ImageHeight : 1529
+               ImageLocation :
+               Type : Agent
+               ImageWidth : 150
+               ImageHeight : 150
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : CY
+               AssociatedItem : Flight
+               Description List :
+               Description : Carry on bags
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1544.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1544.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : Baggage
+               SecondaryType : SI
+               AssociatedItem : Flight
+               Description List :
+               Description : Personal Item (9 in x 10 in x 17 in)
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_82230.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_82230.jpg
+               caption : Consumer
+               width : 60
+               height : 60
+               OptionalService :
+               ServiceSubCode :
+               Chargeable : Included in the brand
+               Type : PreReservedSeatAssignment
+               SecondaryType :
+               AssociatedItem : Flight
+               Description List :
+               Description : Advanced seat assignment
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1556.jpg
+               caption : Agent
+               width : 60
+               height : 60
+               MediaItems :
+               url : https://cdn.travelport.com/united/UA_general_medium_1556.jpg
+               caption : Consumer
+               width : 60
+               height : 60</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+         <universal:UniversalRecordHistorySearchResult ModifiedBy="UD_AGT_PP" ModifiedDate="2020-03-03T00:32:06.086+00:00" ElementType="AirReservation" Action="Sync">
+            <universal:Old>UR RecLoc: 0T1OMR
+               
+               AirReservation:
+               
+               
+               Provider Code: 1P
+               Provider Locator: MEH249
+               CustomerID:
+               Postscript:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: LONG
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               
+               AirSegment:
+               Origin: ORD
+               Destination: DEN
+               Carrier: UA
+               Carrier RecLoc:
+               FltNum: 1715
+               ArrTime: 2020-05-31T19:37:00.000-06:00
+               DepTime: 2020-05-31T17:51:00.000-05:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source:
+               
+               AirSegment:
+               Origin: DEN
+               Destination: SEA
+               Carrier: UA
+               Carrier RecLoc:
+               FltNum: 2305
+               ArrTime: 2020-06-01T00:28:00.000-07:00
+               DepTime: 2020-05-31T22:26:00.000-06:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source:
+               
+               AirSegment:
+               Origin: SEA
+               Destination: ORD
+               Carrier: UA
+               Carrier RecLoc:
+               FltNum: 2229
+               ArrTime: 2020-06-06T04:59:00.000-05:00
+               DepTime: 2020-06-05T23:02:00.000-07:00
+               Class of Service: L
+               Status: HK
+               Stopover:
+               Availability Source:
+               
+               AirPricing:
+               Total: USD465.60
+               Base: USD398.14
+               Taxes: USD67.46
+               Yield:</universal:Old>
+            <universal:New>UR RecLoc: 0T1OMR
+               
+               AirReservation:
+               
+               SupplierCode : UA
+               SupplierLocator: MDVLEB
+               
+               Provider Code: 1P
+               Provider Locator: MEH249
+               CustomerID:
+               Postscript:
+               
+               Traveler Info 1:
+               First Name: CARSTENMR
+               Last Name: LINDELOEV
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               Traveler Info 2:
+               First Name: JOHNMR
+               Last Name: LONG
+               Type: Home
+               Email Address:jtestora@travelport.com
+               Email Comments:
+               
+               
+               
+               AirSegment:
+               Origin: ORD
+               Destination: DEN
+               Carrier: UA
+               Carrier RecLoc: MDVLEB
+               FltNum: 1715
+               ArrTime: 2020-05-31T19:37:00.000-06:00
+               DepTime: 2020-05-31T17:51:00.000-05:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source:
+               
+               AirSegment:
+               Origin: DEN
+               Destination: SEA
+               Carrier: UA
+               Carrier RecLoc: MDVLEB
+               FltNum: 2305
+               ArrTime: 2020-06-01T00:28:00.000-07:00
+               DepTime: 2020-05-31T22:26:00.000-06:00
+               Class of Service: W
+               Status: HK
+               Stopover:
+               Availability Source:
+               
+               AirSegment:
+               Origin: SEA
+               Destination: ORD
+               Carrier: UA
+               Carrier RecLoc: MDVLEB
+               FltNum: 2229
+               ArrTime: 2020-06-06T04:59:00.000-05:00
+               DepTime: 2020-06-05T23:02:00.000-07:00
+               Class of Service: L
+               Status: HK
+               Stopover:
+               Availability Source:
+               
+               AirPricing:
+               Total: USD465.60
+               Base: USD398.14
+               Taxes: USD67.46
+               Yield:</universal:New>
+         </universal:UniversalRecordHistorySearchResult>
+      </universal:UniversalRecordHistorySearchRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

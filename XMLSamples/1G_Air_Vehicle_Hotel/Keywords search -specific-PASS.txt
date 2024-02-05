@@ -1,0 +1,125 @@
+Keywords search -specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelKeywordReq AuthorizedBy="SUSIL" TargetBranch="P7102538" TraceId="PP_1G_001" HotelChain="HY" HotelCode="07320" CheckinDate="2020-04-01" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:Keyword Name="COMM" Number="3" Description="COMMISSION"/>
+      </hot:HotelKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Keywords search -specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelKeywordRsp TraceId="PP_1G_001" TransactionId="9DCEA26C0A07643CAB0E0A7C693CB67E" ResponseTime="504" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="COMM" Number="1" Description="COMMISSION">
+            <common_v50_0:Text>*************************************************************** 
+*  HYATT*S COMMISSION STATEMENT                               * 
+*  HYATT HOTELS AND....THE HOTEL CLEARING CORPORATION         * 
+*                                                             * 
+*************************************************************** 
+                                                                
+HYATT*S COMMISSION STATEMENT...........................SEE BELOW
+THE HOTEL CLEARING CORPORATION /HCC/...................SEE BELOW
+HYATT*S COMMISSION MAILED PROMPTLY.....................SEE BELOW
+TOLL-FREE COMMISSION LINE, U.S.A. AND CANADA...........SEE BELOW
+                                                                
+            *** HYATT*S  COMMISSION  STATEMENT ***              
+                                                                
+HYATT HOTELS AROUND THE WORLD PAY 10 PERCENT ON THE             
+FOLLOWING RATES --                                              
+                                                                
+* CORPORATE     *WEEKEND                                        
+* RACK          *PACKAGES **BASED ON INDIVIDUAL HOTEL POLICIES**
+* WEEKEND * GROUP RATE NEGOTIATED /AS COMMISSIONABLE/           
+                       BY TRAVEL AGENTS.                        
+* AWARD STAYS-- THE TEN PERCENT COMMISSION WILL ONLY APPLY TO   
+THE PORTION OF THE RATE PAID BY THE GUEST.  AND IS EFFECTIVE    
+AT HYATT HOTELS AND RESORTS IN US, CANADA, HAWAII AND THE       
+CARIBBEAN.                                                      
+                                                                
+                                                                
+*** NOTE *** HYATT INTERNATIONAL HOTELS DO NOT PAY COMMISSION   
+ON AWARDS.                                                      
+   **COMMISSION IS NOT PAID ON MOST CONVENTION BOOKINGS**       
+     **GOVERNMENT RATES** ARE NET/NON-COMMISSIONABLE**          
+                                                                
+                                                                
+** Exception ** The following hotels pay eight /8/ percent      
+COMMISSION ONLY....                                             
+                                                                
+*HYATT REGENCY BIRMINGHAM / *HYATT REGENCY CASABLANCA           
+                                                                
+*HYATT REGENCY ISTANBUL - MUST SUBMIT INVOICE FOR COMMISSION....
+DUE TO THE LAW IN TURKEY, MONEY CANNOT BE SENT FROM THE COUNTRY 
+WITHOUT AN INVOICE. THEREFORE AGENTS MUST APPLY FOR THEIR       
+COMMISSION.                                                     
+TRAVEL AGENTS COMMISSION* THE TRAVEL AGENT MUST SEND AN         
+INVOICE DATED ON THE DAY OF CHECK OUT AND ADDRESSED ON THE      
+INVOICE AS:                                                     
+             ***THIS IS FOR INVOICE ONLY***                     
+                GOKTRANS TURIZM VE TIC. A.S.                    
+                AZAR PALAS 80090 TAKSIM-ISTANBUL                
+                BEYOGLU VERGI DAIRESI V.D. 4069890021           
+                                                                
+BUT MAIL TO HYATT REGENCY ISTANBUL **ENVELOPE**                 
+       TASKISLA CAD                                             
+       TAKSIM ISTANBUL 80090                                    
+                                                                
+            ********* H C C ********                            
+   **CASH WILL VIRTUALLY ELIMINATE THE OVERRIDING COMPLAINT BY  
+AGENTS THAT UP TO 50 PERCENT OF HOTEL COMMISSIONS GO UNPAID,    
+BECAUSE HCC DEBITS MEMBER HOTEL COMPANIES FOR COMMISSION PAYMENT
+RATHER THAN THE INDIVIDUAL HOTEL*, DAVIS SAID. *THIS SHOULD     
+RESULT IN SUBSTANTIAL BOTTOM-LINE GAIN FOR AGENTS USING HCC AND</common_v50_0:Text>
+            <common_v50_0:Text>WILL MOVE THE TYPICAL HOTEL BOOKING FROM BEING MARGINALLY PRO-  
+FITABLE TO A CLEAR MONEYMAKER FOR THEM.**                       
+                                                                
+   ALONG WITH A SINGLE MONTHLY COMMISSION PAYMENT TO AGENTS IN  
+THEIR LOCAL CURRENCIES, HCC WILL ALSO PROVIDE COMPLETE ACCOUNT- 
+ING STATEMENTS FOR HOTEL BOOKINGS THAT WILL INCLUDE CHAIN AND   
+PROPERTY VOLUMES AND RATES BY CLIENT, CANCELLATIONS AND NO-SHOWS
+SUCH DETAILED BOOKING INFORMATION HAS BEEN UNAVAILABLE FROM A   
+SINGLE SOURCE UNTIL NOW.                                        
+                                                                
+   HCC WILL ALSO PROVIDE AUTOMATIC BOOKING RECONCILIATION AND   
+OPERATE A CUSTOMER SERVICE CENTER TO RESOLVE COMMISSION DISPUTES
+                                                                
+   TRAVEL AGENTS WISHING TO JOIN HCC CAN CALL 1-800-HCC-1212... 
+WHICH IS ALSO THE NUMBER FOR THE HCC CUSTOMER SERVICE CENTER.   
+                                                                
+   ALL HYATT HOTELS IN THE U.S., CANADA AND THE CARIBBEAN WILL  
+BE PARTICIPATING IN HCC FROM IT*S START DATE OF 5/1/92.         
+   *NOTE* -- ALL ELEMENTS INCLUSIVE IN PACKAGE PRICE, I.E. ROOM,
+FOOD AND BEVERAGE, GOLF FEES, SKI LIFT PASSES, RENTAL OF SPORTS 
+EQUIPMENT, SPA FEES, ETC., ARE COMMISSIONABLE.  TAXES AND       
+GRATUITIES *ARE NOT* COMMISSIONABLE.                            
+                                                                
+  HYATT INTENDS TO CONTINUE PAYING COMMISSION ON THE ABOVE LIST-
+ED RATES.  HYATT HAS ALWAYS PRICED OUR INVENTORY WITH THE RETAIL
+TRAVEL AGENT IN MIND AND WILL CONTINUE TO DO SO IN THE FUTURE.  
+                                                                
+         *** HYATT*S COMMISSION MAILED PROMPTLY ***             
+                                                                
+   HYATT HOTELS AND RESORTS PAY 10 PERCENT COMMISSION PROMPTLY  
+TO APPROVED TRAVEL AGENCIES FOR ALL INDIVIDUAL TRAVEL BOOKINGS  
+INCLUDING HYATT PACKAGES.                                       
+                                                                
+*** TOLL-FREE COMMISSION LINE ** -- TO REQUEST INFORMATION ON   
+COMMISSION PAYMENTS, INCLUDING THE DATES COMMISSION CHECKS WERE 
+ISSUED, CLIENT CHANGES WHICH AFFECT COMMISSION PAYMENTS AND     
+QUESTIONS REGARDING NO-SHOWS....                                
+                                                                
+            U.S.A. AND CANADA --   1-800-423-2400               
+ PLEASE INCLUDE - -                                             
+                    YOUR NAME                                   
+                    AGENCY NAME                                 
+                    ADDRESS                                     
+                    TELEPHONE NUMBER AND FAX</common_v50_0:Text>
+         </common_v50_0:Keyword>
+      </hotel:HotelKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

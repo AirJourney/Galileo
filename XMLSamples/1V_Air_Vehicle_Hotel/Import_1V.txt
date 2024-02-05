@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header/>
+	<soap:Body>
+		<univ:UniversalRecordImportReq AuthorizedBy="user" TraceId="" TargetBranch="P1111111" ProviderCode="1V" ProviderLocatorCode="123456" xmlns:univ="http://www.travelport.com/schema/universal_v50_0"> 
+			<com:BillingPointOfSaleInfo OriginApplication="uAPI" xmlns:com="http://www.travelport.com/schema/common_v50_0"/>
+		</univ:UniversalRecordImportReq>
+	</soap:Body>
+</soap:Envelope>
+
+
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<universal:UniversalRecordImportRsp xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" TraceId="" TransactionId="938918000A0759D43C141B209E1C6ACD" ResponseTime="473">
+			<common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1V">
+				<![CDATA[PNR already exists in Universal Record 0HTIN1]]>
+			</common_v50_0:ResponseMessage>
+			<universal:UniversalRecord LocatorCode="0HTIN1" Version="1" Status="Active">
+				<common_v50_0:BookingTraveler Key="vv9yk/BAAA/BFe4T2BAAAA==">
+					<common_v50_0:BookingTravelerName First="HUGUES" Last="DOE"/>
+					<common_v50_0:PhoneNumber Key="vv9yk/BAAA/BSl/T2BAAAA==" Type="Home" Location="XXX" Number="408-3456789">
+						<common_v50_0:ProviderReservationInfoRef Key="vv9yk/BAAA/BMe4T2BAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:PhoneNumber Key="vv9yk/BAAA/BTl/T2BAAAA==" Type="Home" Location="XXX" Number="819-9876543">
+						<common_v50_0:ProviderReservationInfoRef Key="vv9yk/BAAA/BMe4T2BAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:PhoneNumber Key="QwQHl/lJ0BKALnIwxBAAAA==" Type="Business" Location="CHI" Number="877 5858585">
+						<common_v50_0:ProviderReservationInfoRef Key="vv9yk/BAAA/BMe4T2BAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:Email Key="QwQHl/lJ0BKAKnIwxBAAAA==" Type="To" EmailID="HDEMERS@AWESOMOTRAV.COM">
+						<common_v50_0:ProviderReservationInfoRef Key="vv9yk/BAAA/BMe4T2BAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:Address Key="QwQHl/lJ0BKAAVIwxBAAAA==">
+						<common_v50_0:Street>***************************************************</common_v50_0:Street>
+						<common_v50_0:ProviderReservationInfoRef Key="vv9yk/BAAA/BMe4T2BAAAA=="/>
+					</common_v50_0:Address>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:OSI Key="vv9yk/BAAA/BXe4T2BAAAA==" Carrier="1V" Text="-BT9442ARR26APR CXL:CXL 1800 HTL TIME ON 26APR20-FEE 1 NIGHT-EXCL" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA=="/>
+				<universal:ProviderReservationInfo Key="vv9yk/BAAA/BMe4T2BAAAA==" ProviderCode="1V" LocatorCode="123456" CreateDate="2020-01-27T16:45:07.141+00:00" ModifiedDate="2020-03-01T00:40:00.626+00:00" HostCreateDate="2020-01-27" Imported="true" OwningPCC="2H41">
+					<universal:ProviderReservationDetails ProviderReservationDetail="false" CustomCheck="false" ProviderProfile="true" DivideDetails="false" EnhancedItinModifiers="false" IntegratedContent="false" Cruise="false" RailSegment="false"/>
+				</universal:ProviderReservationInfo>
+				<hotel:HotelReservation xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Status="HK" BookingConfirmation="75615SC004608" LocatorCode="022NFLBR" CreateDate="2020-01-27T16:45:06.370+00:00" ModifiedDate="2020-01-27T17:25:04.275+00:00" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==" TravelOrder="1">
+					<common_v50_0:BookingTravelerRef Key="vv9yk/BAAA/BFe4T2BAAAA=="/>
+					<common_v50_0:ReservationName>
+						<common_v50_0:BookingTravelerRef Key="vv9yk/BAAA/BFe4T2BAAAA=="/>
+					</common_v50_0:ReservationName>
+					<hotel:HotelProperty HotelChain="BT" HotelCode="09442" HotelLocation="CHI" Name="STAYPINEAPPLE THE L">
+						<hotel:PropertyAddress>
+							<hotel:Address>1 W Washington Street </hotel:Address>
+							<hotel:Address>Chicago IL 60602 US </hotel:Address>
+						</hotel:PropertyAddress>
+						<common_v50_0:PhoneNumber Type="Hotel" Number="1-312-9407997"/>
+						<common_v50_0:PhoneNumber Type="Fax" Number="1-312-2764293"/>
+					</hotel:HotelProperty>
+					<hotel:HotelRateDetail RatePlanType="A1QTBK" Base="USD229.00" Tax="USD183.22" Total="USD1324.27" Surcharge="USD88.05" RateGuaranteed="true" RateChangeIndicator="true" ExtraFeesIncluded="false">
+						<hotel:RoomRateDescription Name="Addl Rate Info">
+							<hotel:Text>The Rate specified is an approximate amount</hotel:Text>
+							<hotel:Text>There is a Rate change during the stay period</hotel:Text>
+						</hotel:RoomRateDescription>
+						<hotel:HotelRateByDate EffectiveDate="2020-04-26" ExpireDate="2020-04-27" Base="USD195.00"/>
+						<hotel:HotelRateByDate EffectiveDate="2020-04-27" ExpireDate="2020-04-28" Base="USD221.00"/>
+						<hotel:HotelRateByDate EffectiveDate="2020-04-28" ExpireDate="2020-04-29" Base="USD229.00"/>
+						<hotel:HotelRateByDate EffectiveDate="2020-04-29" ExpireDate="2020-04-30" Base="USD221.00"/>
+						<hotel:HotelRateByDate EffectiveDate="2020-04-30" ExpireDate="2020-05-01" Base="USD187.00"/>
+						<common_v50_0:CorporateDiscountID>121839065</common_v50_0:CorporateDiscountID>
+						<hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2020-04-26T18:00:00.000+00:00"/>
+					</hotel:HotelRateDetail>
+					<hotel:HotelStay>
+						<hotel:CheckinDate>2020-04-26</hotel:CheckinDate>
+						<hotel:CheckoutDate>2020-05-01</hotel:CheckoutDate>
+					</hotel:HotelStay>
+					<common_v50_0:Guarantee Type="Guarantee" Key="vv9yk/BAAA/BYe4T2BAAAA==" Reusable="false">
+						<common_v50_0:CreditCard Type="**" Number="************5846" ExpDate="*******"/>
+					</common_v50_0:Guarantee>
+					<common_v50_0:BookingSource Type="IataNumber" Code="12343210"/>
+					<hotel:HotelBedding Type="Queen" NumberOfBeds="1"/>
+					<hotel:GuestInformation NumberOfRooms="1">
+						<hotel:NumberOfAdults>1</hotel:NumberOfAdults>
+					</hotel:GuestInformation>
+					<hotel:AssociatedRemark Key="vv9yk/BAAA/BNe4T2BAAAA==" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+						<common_v50_0:RemarkData>BT9442ARR26APR CXL:CXL 1800 HTL TIME ON 26APR20-FEE 1 NIGHT-EXCL</common_v50_0:RemarkData>
+					</hotel:AssociatedRemark>
+					<hotel:HotelCommission>10</hotel:HotelCommission>
+				</hotel:HotelReservation>
+				<passive:PassiveReservation xmlns:passive="http://www.travelport.com/schema/passive_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" LocatorCode="0HTIN2" CreateDate="2020-01-27T16:45:07.141+00:00" ModifiedDate="2020-01-27T17:25:04.073+00:00" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:BookingTravelerRef Key="vv9yk/BAAA/BFe4T2BAAAA=="/>
+					<passive:PassiveSegment NumberOfItems="1" SegmentType="Other" Status="BK" SupplierCode="ZO" Origin="XXX" StartDate="2020-10-23T00:00:00.000+07:00" Key="vv9yk/BAAA/Bce4T2BAAAA==" Group="0" TravelOrder="2" PassiveGroup="0"/>
+					<passive:PassiveRemark PassiveSegmentRef="vv9yk/BAAA/Bce4T2BAAAA==">
+						<passive:Text>-**THANK YOU FOR CHOOSING TRAVELBANK**</passive:Text>
+					</passive:PassiveRemark>
+				</passive:PassiveReservation>
+				<common_v50_0:GeneralRemark Key="vv9yk/BAAA/BGe4T2BAAAA==" Category="Q" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>27JAN/0942 AM 82493-ALERT/MISSING ACCT NBR</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="vv9yk/BAAA/BHe4T2BAAAA==" Category="T" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>SF/NONE</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="vv9yk/BAAA/BIe4T2BAAAA==" Category="Q" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>IQCX 27JAN/0942 AM RECORD PROCESSED - QC/PNR NOT OK</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="vv9yk/BAAA/BJe4T2BAAAA==" Category="Q" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>SENT NON APP PNR TO Q49</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAK2GwxBAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>I************************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAL2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>***************************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAM2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** TRAVEL POLICY**</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAN2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>**NO APPROVAL NEEDED EMPLOYEES JUDGEMENT**</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAO2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>*ECONOMY ONLY</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAP2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>*SEAT PURCHASE IS APPROVED FOR STANDARD SEAT</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAQ2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>*UPGRADES SHOULD BE ON PERSONAL EXPENSE</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAR2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>*********************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAS2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>********************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAT2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>FOR PRIVATE FARE CODES SEE >S*GRUB AIR</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAU2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>VIP CAN TRAVEL BIZ CLASS. SEE LIST:</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAV2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>>S*GRUB VIPS</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAW2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>**************************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAX2GwxBAAAA==" Category="I" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>TB CSM - COREY WALKER</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAY2GwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>********************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAa2GwxBAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>FOR ALL DISCOUNTED HOTELS:</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAV6GwxBAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>FOR ALL GRUBHUB HOTELS SEE >S*GRUB HOTELS</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKApDHwxBAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>GCA5569320001318264 EXP 1021</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKA1HHwxBAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>ONLY USE THIS CREDIT CARD IF WE CANT GET ONE FROM CLIENT</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAadHwxBAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>ALEX DOE NAME ON CARD CVV 009</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAWnHwxBAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>PLEASE USE ABOVE CARD FOR GTD PURPOSES GDS HOTELS</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAB0HwxBAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>H** MODERATE HOTELS ONLY</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAQGIwxBAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>*****************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAlGIwxBAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** AIR CONTRACTS**</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAmGIwxBAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** FOR ALL AIR DISCOUNTS SEE:</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAjHIwxBAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** >S*GRUB AIR</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKA4HIwxBAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>***************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKA5HIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** CAR POLICY</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKA6HIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>**ICAR UNLESS MORE THAN 3</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKA7HIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>**DECLINE INSURANCE</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAEIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>**GPS NO COVERED</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAFIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** EMPLOYEES CAN BOOK ANY VENDOR THEY LIKE**</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAGIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** HERTZ** DIRECT BILL CONTRACT**</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAHIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** ALL ZE RES MUST BE DIRECT BILLED**</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAIIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>** ZE CD-1979603 ID-44077505-ADD FOR DIRECT BILL</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKARIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>USE SAMPLE FORMAT BELOW FOR DIRECT SELL</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKASIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>0CARZESFO14FEB-15FEBICAR/ARR-11A-UA123/DT-3P/CD-197960/ID-44077505/RC-BEST</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKATIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>NOTE:IF PAX WANTS TO USE ZE GOLD ID FOR EXPRESS SVC</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAVIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>IT WILL NOT BE SET AS DIRECT BILL</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAWIIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>PAX WILL NEED TO PAY AND EXPENSE TO GH</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="QwQHl/lJ0BKAfKIwxBAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>************************</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:AccountingRemark Key="QwQHl/lJ0BKAH2GwxBAAAA==" Category="CA" TypeInGds="Account" ProviderCode="1V" ProviderReservationInfoRef="vv9yk/BAAA/BMe4T2BAAAA==">
+					<common_v50_0:RemarkData>ACCT-01@GRUBHUB@CW</common_v50_0:RemarkData>
+				</common_v50_0:AccountingRemark>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI3087480403-7411E459" BranchCode="P1111111" AgencyCode="S3TRAVEL" EventTime="2020-01-27T16:45:06.258+00:00"/>
+					<common_v50_0:AgentAction ActionType="Modified" AgentCode="UAPI3087480403-7411E459" BranchCode="P1111111" AgencyCode="S3TRAVEL" EventTime="2020-01-27T17:25:04.275+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:AgencyContactInfo>
+					<common_v50_0:PhoneNumber Key="QwQHl/lJ0BKAJ2GwxBAAAA==" Type="Agency" Location="SFO" Number="866-682-8785 - TRAVELBANK - 12343210">
+						<common_v50_0:ProviderReservationInfoRef Key="vv9yk/BAAA/BMe4T2BAAAA=="/>
+					</common_v50_0:PhoneNumber>
+				</common_v50_0:AgencyContactInfo>
+				<common_v50_0:FormOfPayment Key="QwQHl/lJ0BKAzRIwxBAAAA==" Type="Credit" Reusable="false" ProfileKey="bDpWraIpTjyTQYfwqOYXuQ==">
+					<common_v50_0:CreditCard Type="**" Number="************1476" ExpDate="*******"/>
+					<common_v50_0:ProviderReservationInfoRef Key="vv9yk/BAAA/BMe4T2BAAAA=="/>
+				</common_v50_0:FormOfPayment>
+			</universal:UniversalRecord>
+		</universal:UniversalRecordImportRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

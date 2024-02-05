@@ -1,0 +1,233 @@
+Air Seat Map-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:SeatMapReq TargetBranch="TP_1V_SOA" AuthorizedBy="Test" ReturnSeatPricing="false" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirSegment xmlns:air="http://www.travelport.com/schema/air_v50_0" Key="xs/MMC4R2BKAL7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2703" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" ETicketability="Yes" Equipment="221" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used" OptionalServicesIndicator="false" AvailabilitySource="S" AvailabilityDisplayType="General" ProviderCode="1V" ClassOfService="Y"/>
+
+      </air:SeatMapReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Seat Map-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:SeatMapRsp TransactionId="9DCEAE180A07643CAB0E0A7C07BABCA6" ResponseTime="1575" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:AirSegment Key="xs/MMC4R2BKAL7HKCAAAAA==" Group="1" Carrier="DL" FlightNumber="2703" ProviderCode="1V" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" ClassOfService="Y" ETicketability="Yes" Equipment="221" Status="NN" ChangeOfPlane="false" SupplierCode="DL" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail used"/>
+         <air:Rows SegmentRef="xs/MMC4R2BKAL7HKCAAAAA==">
+            <air:Row Number="13">
+               <air:Facility Type="Seat" SeatCode="13-A" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="13-B" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="13-C" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="13-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="13-E" Availability="Occupied">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="14">
+               <air:Facility Type="Seat" SeatCode="14-A" Availability="Available">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="14-B" Availability="Available">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="14-C" Availability="Available">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="14-D" Availability="Available">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="14-E" Availability="Available">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="15">
+               <air:Facility Type="Seat" SeatCode="15-A" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+                  <air:Characteristic Value="ExitRow" PADISCode="E"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="15-B" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+                  <air:Characteristic Value="ExitRow" PADISCode="E"/>
+               </air:Facility>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="15-C" Availability="Available">
+                  <air:Characteristic Value="ExitRow" PADISCode="E"/>
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="15-D" Availability="Available">
+                  <air:Characteristic Value="ExitRow" PADISCode="E"/>
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="15-E" Availability="NoSeat"/>
+               <air:Characteristic Value="ExitRow" PADISCode="E"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="16">
+               <air:Facility Type="Seat" SeatCode="16-A" Availability="Occupied">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="16-B" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="16-C" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+                  <air:Characteristic Value="ExitRow" PADISCode="E"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="16-D" Availability="Available">
+                  <air:Characteristic Value="ExitRow" PADISCode="E"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="16-E" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+                  <air:Characteristic Value="ExitRow" PADISCode="E"/>
+               </air:Facility>
+               <air:Characteristic Value="ExitRow" PADISCode="E"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="17">
+               <air:Facility Type="Seat" SeatCode="17-A" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="17-B" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="17-C" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="17-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="17-E" Availability="Available">
+                  <air:Characteristic Value="Preferential" PADISCode="O"/>
+               </air:Facility>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="18">
+               <air:Facility Type="Seat" SeatCode="18-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="18-B" Availability="Occupied"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="18-C" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="18-D" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="18-E" Availability="Occupied"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="19">
+               <air:Facility Type="Seat" SeatCode="19-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="19-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="19-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="19-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="19-E" Availability="Available"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="20">
+               <air:Facility Type="Seat" SeatCode="20-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="20-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="20-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="20-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="20-E" Availability="Available"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+               <air:Characteristic Value="Wing" PADISCode="K"/>
+            </air:Row>
+            <air:Row Number="21">
+               <air:Facility Type="Seat" SeatCode="21-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="21-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="21-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="21-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="21-E" Availability="Available"/>
+            </air:Row>
+            <air:Row Number="22">
+               <air:Facility Type="Seat" SeatCode="22-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="22-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="22-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="22-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="22-E" Availability="Available"/>
+            </air:Row>
+            <air:Row Number="23">
+               <air:Facility Type="Seat" SeatCode="23-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="23-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="23-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="23-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="23-E" Availability="Available"/>
+            </air:Row>
+            <air:Row Number="24">
+               <air:Facility Type="Seat" SeatCode="24-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="24-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="24-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="24-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="24-E" Availability="Available"/>
+            </air:Row>
+            <air:Row Number="25">
+               <air:Facility Type="Seat" SeatCode="25-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="25-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="25-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="25-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="25-E" Availability="Available"/>
+            </air:Row>
+            <air:Row Number="26">
+               <air:Facility Type="Seat" SeatCode="26-A" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="26-B" Availability="Available"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="26-C" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="26-D" Availability="Available"/>
+               <air:Facility Type="Seat" SeatCode="26-E" Availability="Available"/>
+            </air:Row>
+            <air:Row Number="27">
+               <air:Facility Type="Seat" SeatCode="27-A" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="27-B" Availability="Occupied"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="27-C" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="27-D" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="27-E" Availability="Occupied"/>
+            </air:Row>
+            <air:Row Number="28">
+               <air:Facility Type="Seat" SeatCode="28-A" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="28-B" Availability="Occupied"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="28-C" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="28-D" Availability="Occupied"/>
+               <air:Facility Type="Seat" SeatCode="28-E" Availability="Occupied"/>
+            </air:Row>
+            <air:Row Number="29">
+               <air:Facility Type="Seat" SeatCode="29-A" Availability="NoSeat"/>
+               <air:Facility Type="Seat" SeatCode="29-B" Availability="NoSeat"/>
+               <air:Facility Type="Aisle"/>
+               <air:Facility Type="Seat" SeatCode="29-C" Availability="Occupied">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="29-D" Availability="Occupied">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+               <air:Facility Type="Seat" SeatCode="29-E" Availability="Occupied">
+                  <air:Characteristic Value="RestrictedRecline" PADISCode="1D"/>
+               </air:Facility>
+            </air:Row>
+         </air:Rows>
+      </air:SeatMapRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,45 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Header/>
+	<SOAP:Body>
+		<rail:RailExchangeQuoteReq TargetBranch="P6767676" LocatorCode="32IEMK" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:pass="http://www.travelport.com/schema/passive_v50_0" xmlns:univ="http://www.travelport.com/schema/universal_v50_0">
+			<com:BillingPointOfSaleInfo OriginApplication="E946000B-TBAAmtrak"/>
+			<rail:SearchRailLeg>
+				<rail:SearchOrigin>
+					<com:RailLocation Code="T1200807"/>
+				</rail:SearchOrigin>
+				<rail:SearchDestination>
+					<com:RailLocation Code="T1200837"/>
+				</rail:SearchDestination>
+				<rail:SearchDepTime PreferredTime="2020-03-05T00:00:00.000-07:00"/>
+			</rail:SearchRailLeg>
+			<rail:SearchRailLeg>
+				<rail:SearchOrigin>
+					<com:RailLocation Code="T1200837"/>
+				</rail:SearchOrigin>
+				<rail:SearchDestination>
+					<com:RailLocation Code="T1200807"/>
+				</rail:SearchDestination>
+				<rail:SearchDepTime PreferredTime="2020-03-05T16:00:00.000-07:00"/>
+			</rail:SearchRailLeg>
+			<com:SearchPassenger Code="ADT"/>
+		</rail:RailExchangeQuoteReq>
+	</SOAP:Body>
+</SOAP:Envelope>
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<SOAP:Fault>
+			<faultcode>Server.Business</faultcode>
+			<faultstring>Request errored at RCH end. reason: Journey is not permitted to modify. Request rejected.</faultstring>
+			<detail>
+				<common_v50_0:ErrorInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+					<common_v50_0:Code>22634</common_v50_0:Code>
+					<common_v50_0:Service>RCH</common_v50_0:Service>
+					<common_v50_0:Type>Business</common_v50_0:Type>
+					<common_v50_0:Description>Request errored at RCH end. reason: Journey is not permitted to modify. Request rejected.</common_v50_0:Description>
+					<common_v50_0:TransactionId>AC3834C60A0759CDCC629D37A14A2905</common_v50_0:TransactionId>
+				</common_v50_0:ErrorInfo>
+			</detail>
+		</SOAP:Fault>
+	</SOAP:Body>
+</SOAP:Envelope>|

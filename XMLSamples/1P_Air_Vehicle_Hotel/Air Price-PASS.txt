@@ -1,0 +1,1728 @@
+Air Price-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <air:AirPriceReq AuthorizedBy="JAN" TargetBranch="TP_1P_SOA" FareRuleType="long" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <BillingPointOfSaleInfo OriginApplication="UAPI" xmlns="http://www.travelport.com/schema/common_v50_0"/>
+         <air:AirItinerary>
+            <air:AirSegment Key="xs/MMC4R2BKAn2IKCAAAAA==" Group="0" Carrier="UA" FlightNumber="1715" Origin="ORD" Destination="DEN" DepartureTime="2020-05-31T17:51:00.000-05:00" ArrivalTime="2020-05-31T19:37:00.000-06:00" FlightTime="166" Distance="885" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A" ProviderCode="1P" ClassOfService="W"/>
+            <air:AirSegment Key="xs/MMC4R2BKAp2IKCAAAAA==" Group="0" Carrier="UA" FlightNumber="2305" Origin="DEN" Destination="SEA" DepartureTime="2020-05-31T22:26:00.000-06:00" ArrivalTime="2020-06-01T00:28:00.000-07:00" FlightTime="182" Distance="1022" ETicketability="Yes" Equipment="319" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A" ProviderCode="1P" ClassOfService="W"/>
+            <air:AirSegment Key="xs/MMC4R2BKAr2IKCAAAAA==" Group="1" Carrier="UA" FlightNumber="2229" Origin="SEA" Destination="ORD" DepartureTime="2020-06-05T23:02:00.000-07:00" ArrivalTime="2020-06-06T04:59:00.000-05:00" FlightTime="237" Distance="1715" ETicketability="Yes" Equipment="739" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="A" ProviderCode="1P" ClassOfService="L"/>
+         </air:AirItinerary>
+         <air:AirPricingModifiers/>
+         <com:SearchPassenger Key="1" Code="ADT" xmlns:com="http://www.travelport.com/schema/common_v50_0"/>
+         <com:SearchPassenger Key="2" Code="ADT" xmlns:com="http://www.travelport.com/schema/common_v50_0"/>
+         <air:AirPricingCommand/>
+      </air:AirPriceReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Price-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:AirPriceRsp TransactionId="9DCCB57F0A0764785B1483FCF97F5915" ResponseTime="2120" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Info" ProviderCode="1P">* NONREF/0VALUAFTDPT/CHGFEE</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="0" Type="Info" ProviderCode="1P">* PRICING RULES VALIDATING CARRIER DEFAULT UA</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="710401" Type="Warning" ProviderCode="1P">Taxes returned at the FareInfo level are for informational purposes only, and may differ from those returned at the Itinerary/Passenger Type levels.</common_v50_0:ResponseMessage>
+         <air:AirItinerary>
+            <air:AirSegment Key="xs/MMC4R2BKAHuKKCAAAAA==" Group="0" Carrier="UA" FlightNumber="1715" ProviderCode="1P" Origin="ORD" Destination="DEN" DepartureTime="2020-05-31T17:51:00.000-05:00" ArrivalTime="2020-05-31T19:37:00.000-06:00" ClassOfService="W" Equipment="753" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Airline Source">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAIuKKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAJuKKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAKuKKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA">United Airlines Inc</air:CodeshareInfo>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKALuKKCAAAAA==" Group="0" Carrier="UA" FlightNumber="2305" ProviderCode="1P" Origin="DEN" Destination="SEA" DepartureTime="2020-05-31T22:26:00.000-06:00" ArrivalTime="2020-06-01T00:28:00.000-07:00" ClassOfService="W" Equipment="319" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Airline Source">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAMuKKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKANuKKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAOuKKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA">United Airlines Inc</air:CodeshareInfo>
+            </air:AirSegment>
+            <air:AirSegment Key="xs/MMC4R2BKAPuKKCAAAAA==" Group="1" Carrier="UA" FlightNumber="2229" ProviderCode="1P" Origin="SEA" Destination="ORD" DepartureTime="2020-06-05T23:02:00.000-07:00" ArrivalTime="2020-06-06T04:59:00.000-05:00" ClassOfService="L" Equipment="739" ChangeOfPlane="false" OptionalServicesIndicator="false" ParticipantLevel="Airline Source">
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAQuKKCAAAAA==">MCT STATUS OVERRIDE - D/D</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKARuKKCAAAAA==">TSA SECURED FLIGHT</common_v50_0:SegmentRemark>
+               <common_v50_0:SegmentRemark Key="xs/MMC4R2BKASuKKCAAAAA==">NON-SMOKING</common_v50_0:SegmentRemark>
+               <air:CodeshareInfo OperatingCarrier="UA">United Airlines Inc</air:CodeshareInfo>
+            </air:AirSegment>
+         </air:AirItinerary>
+         <air:AirPriceResult>
+            <air:AirPricingSolution Key="xs/MMC4R2BKATuKKCAAAAA==" TotalPrice="USD931.20" BasePrice="USD796.28" ApproximateTotalPrice="USD931.20" ApproximateBasePrice="USD796.28" EquivalentBasePrice="USD796.28" Taxes="USD134.92" ApproximateTaxes="USD134.92">
+               <air:AirSegmentRef Key="xs/MMC4R2BKAHuKKCAAAAA=="/>
+               <air:AirSegmentRef Key="xs/MMC4R2BKALuKKCAAAAA=="/>
+               <air:AirSegmentRef Key="xs/MMC4R2BKAPuKKCAAAAA=="/>
+               <air:AirPricingInfo Key="xs/MMC4R2BKAWuKKCAAAAA==" TotalPrice="USD465.60" BasePrice="USD398.14" ApproximateTotalPrice="USD465.60" ApproximateBasePrice="USD398.14" ApproximateTaxes="USD67.46" Taxes="USD67.46" LatestTicketingTime="2020-03-03T23:59:00.000-05:00" PricingMethod="Auto" PlatingCarrier="UA" ProviderCode="1P">
+                  <air:FareInfo Key="xs/MMC4R2BKAbuKKCAAAAA==" FareBasis="WAA3AKEN" PassengerTypeCode="ADT" Origin="ORD" Destination="SEA" EffectiveDate="2020-03-02T19:30:05.300-05:00" Amount="USD244.65" TaxAmount="USD41.50">
+                     <air:FareRuleKey FareInfoRef="xs/MMC4R2BKAbuKKCAAAAA==" ProviderCode="1P">N7BMu8v+9xJbJUFKf+Lx+vlGMAfsHNcbdWUYfyV1OcfSmEaXfqAZCj1IYIungRNzz2piKZ2fMHSKCwK+XChfKWw12/ZJcxO6</air:FareRuleKey>
+                     <air:Brand Key="xs/MMC4R2BKAbuKKCAAAAA==" BrandID="169914" Name="Economy" UpSellBrandFound="false" Carrier="UA" BrandTier="0002">
+                        <air:Title Type="External" LanguageCode="EN">Economy</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">ECONOMY</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">Our standard Economy fare; choose your seats and enjoy other options for customizing your travel 
+
+• Seat selection at booking, if seats are available
+• Eligible to change ticket1
+• Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+• One personal item and one full-size carry-on bag
+• Earn award miles and lifetime miles, and toward Premier® qualification
+• 1Fees may apply.
+---
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">Our standard Economy fare; choose your seats and enjoy other options for customizing your travel 
+
+• Seat selection at booking, if seats are available
+• Eligible to change ticket1
+• Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+• One personal item and one full-size carry-on bag
+• Earn award miles and lifetime miles, and toward Premier® qualification
+• 1Fees may apply.
+---
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our lowest available fare with options to customize travel and without the restrictions of Budget E</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="2000" ImageHeight="1529">https://cdn.travelport.com/united/UA_general_large_42309.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1662.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAquKKCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="xs/MMC4R2BKAruKKCAAAAA==" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Carry on bags</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Carry On Bags</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">You are not allowed a full sized carry on bag unless you are a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full sized carry on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">You are not allowed a full sized carry on bag unless you are a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full sized carry on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Carry_on</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAsuKKCAAAAA==" SecondaryType="SI" Chargeable="Included in the brand" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Personal Item (9 in x 10 in x 17 in)</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Personal item that can fit under the seat in front of you.</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in)</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">PSNL ITEM</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAtuKKCAAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="xs/MMC4R2BKAuuKKCAAAAA==" Tag="Checked Baggage" DisplayOrder="2">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Checked bags</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1545.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1545.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Checked first bag</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Baggage dimensions
+- 62 linear inches (158 cm) L+W+H
+
+Baggage weight
+- based on the class of service and on the traveler's MileagePlus Premier® status.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage dimensions
+- 62 linear inches (158 cm) L+W+H
+
+Baggage weight
+- based on the class of service and on the traveler's MileagePlus Premier® status.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" StartPrice="USD30.000"/>
+                              <air:Title Type="External" LanguageCode="EN">Checked bags</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:05.835+00:00" ServiceSubCode="" Key="xs/MMC4R2BKAvuKKCAAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Rebooking</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1554.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1554.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Rebooking</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Rebooking</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Rebooking</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Rebooking</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:05.835+00:00" ServiceSubCode="" Key="xs/MMC4R2BKAwuKKCAAAAA==" SecondaryType="RF" Chargeable="Not offered" Tag="REFUNDABLE TICKET" DisplayOrder="22">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Refunds</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1555.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1555.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Cancelling your reservation</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Refunds</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Refunds</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Refunds</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Refunds</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAxuKKCAAAAA==" Chargeable="Included in the brand" Tag="Seat Assignment" DisplayOrder="5">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Advanced seat assignment</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1556.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1556.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Pre book your favourite seat in advance</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Do you prefer a window, aisle, or just seats together? 
+
+Prebook your preferred seat in advance.
+
+Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Do you prefer a window, aisle, or just seats together? 
+
+Prebook your preferred seat in advance.
+
+Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Advanced seat assignment</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAyuKKCAAAAA==" SecondaryType="EA" Chargeable="Available for a charge" Tag="Extra Legroom" DisplayOrder="19">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Extra legroom seating</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1557.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1557.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Additional space and comfort</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Nothing gets your trip started on the right foot like extra legroom. Purchase Economy Plus® for your next flight or for all available flights for an entire year. Stretch out with more room to work and relax, sit near the front of the cabin so you can exit the plane easier at your destination and more. You'll also earn Premier® qualifying dollars.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Nothing gets your trip started on the right foot like extra legroom. Purchase Economy Plus® for your next flight or for all available flights for an entire year. Stretch out with more room to work and relax, sit near the front of the cabin so you can exit the plane easier at your destination and more. You'll also earn Premier® qualifying dollars.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" StartPrice="USD9.000" EndPrice="USD299.000"/>
+                              <air:Title Type="External" LanguageCode="EN">Extra legroom seating</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">EXTRLGRM</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAzuKKCAAAAA==" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Alcoholic Drinks</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82231.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82231.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Relax with a cocktail in the air</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Alcoholic beverages are complimentary in premium cabins on all flights.
+
+Beer is complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.
+
+House wines are complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Alcoholic beverages are complimentary in premium cabins on all flights.
+
+Beer is complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.
+
+House wines are complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Alcoholic Drinks</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">ADECO</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKA0uKKCAAAAA==" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Meal</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Customized dining experience!</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+Pre-departure beverage service.
+
+Hot towel service.
+
+Printed menu.
+
+Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+
+Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after dinner liqueurs.
+
+Mid-flight snack service on longer flights.
+
+Light meal service prior to arrival.
+
+A variety of cocktails, beer, international wines and freshly brewed coffee
+Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+Pre-departure beverage service.
+
+Hot towel service.
+
+Printed menu.
+
+Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+
+Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after dinner liqueurs.
+
+Mid-flight snack service on longer flights.
+
+Light meal service prior to arrival.
+
+A variety of cocktails, beer, international wines and freshly brewed coffee
+Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Meal</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">GFM</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="InFlightEntertainment" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKA1uKKCAAAAA==" SecondaryType="IT" Chargeable="Available for a charge" Tag="WiFi" DisplayOrder="7">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>United Wi-Fi / per flight</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1551.jpg"/>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1551.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Stay connected during your flight</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Buy United Wi-Fi? to stay productive or have fun during your flight.
+
+Wi-Fi internet access is now available on more than 800 United mainline and United Express aircraft.
+
+Please note: Coverage may experience outages for reasons such as government regulations, weather and switching between coverage regions.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Buy United Wi-Fi? to stay productive or have fun during your flight.
+
+Wi-Fi internet access is now available on more than 800 United mainline and United Express aircraft.
+
+Please note: Coverage may experience outages for reasons such as government regulations, weather and switching between coverage regions.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" StartPrice="USD0.000" EndPrice="USD0.000"/>
+                              <air:Title Type="External" LanguageCode="EN">United Wi-Fi / per flight</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Wi-Fi/Flt</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Upgrades" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKA2uKKCAAAAA==" SecondaryType="ME" Chargeable="Available for a charge" Tag="Upgrades" DisplayOrder="11">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAHuKKCAAAAA=="/>
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Upgrade eligibility</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1548.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1548.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Use your miles to upgrade</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Upgrades are available based on your status with United Airlines and availability.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Upgrades are available based on your status with United Airlines and availability.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" EndPrice="USD0.000"/>
+                              <air:Title Type="External" LanguageCode="EN">Upgrade eligibility</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Upgrades</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalServiceRules Key="xs/MMC4R2BKAruKKCAAAAA==">
+                              <common_v50_0:Remarks>Youre not allowed a full-sized carry-on bag unless youre a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full-sized carry-on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</common_v50_0:Remarks>
+                           </air:OptionalServiceRules>
+                           <air:OptionalServiceRules Key="xs/MMC4R2BKAuuKKCAAAAA==">
+                              <common_v50_0:Remarks>Y,1,KG,23,BAG</common_v50_0:Remarks>
+                           </air:OptionalServiceRules>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareInfo Key="xs/MMC4R2BKA3uKKCAAAAA==" FareBasis="LXA4AQER" PassengerTypeCode="ADT" Origin="SEA" Destination="ORD" EffectiveDate="2020-03-02T19:30:05.301-05:00" Amount="USD153.49" TaxAmount="USD25.96">
+                     <air:FareRuleKey FareInfoRef="xs/MMC4R2BKA3uKKCAAAAA==" ProviderCode="1P">SfmoWSVKbc2MngzVIchh6PlGMAfsHNcbQTXR5IiOM4XSmEaXfqAZCj1IYIungRNzz2piKZ2fMHSKCwK+XChfKWw12/ZJcxO6</air:FareRuleKey>
+                     <air:Brand Key="xs/MMC4R2BKA3uKKCAAAAA==" BrandID="169914" Name="Economy" UpSellBrandFound="false" Carrier="UA" BrandTier="0002">
+                        <air:Title Type="External" LanguageCode="EN">Economy</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">ECONOMY</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">Our standard Economy fare; choose your seats and enjoy other options for customizing your travel 
+
+• Seat selection at booking, if seats are available
+• Eligible to change ticket1
+• Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+• One personal item and one full-size carry-on bag
+• Earn award miles and lifetime miles, and toward Premier® qualification
+• 1Fees may apply.
+---
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">Our standard Economy fare; choose your seats and enjoy other options for customizing your travel 
+
+• Seat selection at booking, if seats are available
+• Eligible to change ticket1
+• Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+• One personal item and one full-size carry-on bag
+• Earn award miles and lifetime miles, and toward Premier® qualification
+• 1Fees may apply.
+---
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our lowest available fare with options to customize travel and without the restrictions of Budget E</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="2000" ImageHeight="1529">https://cdn.travelport.com/united/UA_general_large_42309.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1662.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAGvKKCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="xs/MMC4R2BKAHvKKCAAAAA==" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Carry on bags</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Carry On Bags</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">You are not allowed a full sized carry on bag unless you are a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full sized carry on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">You are not allowed a full sized carry on bag unless you are a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full sized carry on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Carry_on</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAIvKKCAAAAA==" SecondaryType="SI" Chargeable="Included in the brand" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Personal Item (9 in x 10 in x 17 in)</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Personal item that can fit under the seat in front of you.</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in)</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">PSNL ITEM</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAJvKKCAAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="xs/MMC4R2BKAKvKKCAAAAA==" Tag="Checked Baggage" DisplayOrder="2">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Checked bags</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1545.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1545.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Checked first bag</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Baggage dimensions
+- 62 linear inches (158 cm) L+W+H
+
+Baggage weight
+- based on the class of service and on the traveler's MileagePlus Premier® status.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage dimensions
+- 62 linear inches (158 cm) L+W+H
+
+Baggage weight
+- based on the class of service and on the traveler's MileagePlus Premier® status.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" StartPrice="USD30.000"/>
+                              <air:Title Type="External" LanguageCode="EN">Checked bags</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:05.835+00:00" ServiceSubCode="" Key="xs/MMC4R2BKALvKKCAAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Rebooking</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1554.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1554.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Rebooking</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Rebooking</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Rebooking</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Rebooking</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:05.835+00:00" ServiceSubCode="" Key="xs/MMC4R2BKAMvKKCAAAAA==" SecondaryType="RF" Chargeable="Not offered" Tag="REFUNDABLE TICKET" DisplayOrder="22">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Refunds</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1555.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1555.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Cancelling your reservation</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Refunds</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Refunds</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Refunds</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Refunds</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKANvKKCAAAAA==" Chargeable="Included in the brand" Tag="Seat Assignment" DisplayOrder="5">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Advanced seat assignment</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1556.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1556.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Pre book your favourite seat in advance</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Do you prefer a window, aisle, or just seats together? 
+
+Prebook your preferred seat in advance.
+
+Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Do you prefer a window, aisle, or just seats together? 
+
+Prebook your preferred seat in advance.
+
+Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Advanced seat assignment</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAOvKKCAAAAA==" SecondaryType="EA" Chargeable="Available for a charge" Tag="Extra Legroom" DisplayOrder="19">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Extra legroom seating</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1557.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1557.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Additional space and comfort</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Nothing gets your trip started on the right foot like extra legroom. Purchase Economy Plus® for your next flight or for all available flights for an entire year. Stretch out with more room to work and relax, sit near the front of the cabin so you can exit the plane easier at your destination and more. You'll also earn Premier® qualifying dollars.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Nothing gets your trip started on the right foot like extra legroom. Purchase Economy Plus® for your next flight or for all available flights for an entire year. Stretch out with more room to work and relax, sit near the front of the cabin so you can exit the plane easier at your destination and more. You'll also earn Premier® qualifying dollars.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" StartPrice="USD9.000" EndPrice="USD299.000"/>
+                              <air:Title Type="External" LanguageCode="EN">Extra legroom seating</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">EXTRLGRM</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAPvKKCAAAAA==" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Alcoholic Drinks</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82231.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82231.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Relax with a cocktail in the air</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Alcoholic beverages are complimentary in premium cabins on all flights.
+
+Beer is complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.
+
+House wines are complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Alcoholic beverages are complimentary in premium cabins on all flights.
+
+Beer is complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.
+
+House wines are complimentary in United Economy® on trans-Atlantic flights; flights between the United States and Argentina, Brazil and Chile; and trans-Pacific flights between the United States and Australia, China, Japan, Korea and Taiwan.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Alcoholic Drinks</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">ADECO</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAQvKKCAAAAA==" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Meal</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1553.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Customized dining experience!</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+Pre-departure beverage service.
+
+Hot towel service.
+
+Printed menu.
+
+Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+
+Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after dinner liqueurs.
+
+Mid-flight snack service on longer flights.
+
+Light meal service prior to arrival.
+
+A variety of cocktails, beer, international wines and freshly brewed coffee
+Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Most flights to or from Africa, Asia, Europe, India, the Middle East, South America and the South Pacific, and flights between Tokyo and Singapore (Select features are not available on flights between Tokyo and Singapore.)
+
+Pre-departure beverage service.
+
+Hot towel service.
+
+Printed menu.
+
+Customized dining experience with menus featuring appetizer, salad and choice of entrée, including local cuisine where available.
+
+Dessert selections including signature ice cream sundaes, fresh fruit and cheeses, port, and after dinner liqueurs.
+
+Mid-flight snack service on longer flights.
+
+Light meal service prior to arrival.
+
+A variety of cocktails, beer, international wines and freshly brewed coffee
+Traditional Japanese meals served on flights between the U.S. and Japan.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Meal</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">GFM</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="InFlightEntertainment" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKARvKKCAAAAA==" SecondaryType="IT" Chargeable="Available for a charge" Tag="WiFi" DisplayOrder="7">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>United Wi-Fi / per flight</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1551.jpg"/>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1551.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Stay connected during your flight</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Buy United Wi-Fi? to stay productive or have fun during your flight.
+
+Wi-Fi internet access is now available on more than 800 United mainline and United Express aircraft.
+
+Please note: Coverage may experience outages for reasons such as government regulations, weather and switching between coverage regions.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Buy United Wi-Fi? to stay productive or have fun during your flight.
+
+Wi-Fi internet access is now available on more than 800 United mainline and United Express aircraft.
+
+Please note: Coverage may experience outages for reasons such as government regulations, weather and switching between coverage regions.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" StartPrice="USD0.000" EndPrice="USD0.000"/>
+                              <air:Title Type="External" LanguageCode="EN">United Wi-Fi / per flight</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Wi-Fi/Flt</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Upgrades" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKASvKKCAAAAA==" SecondaryType="ME" Chargeable="Available for a charge" Tag="Upgrades" DisplayOrder="11">
+                              <common_v50_0:ServiceData AirSegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Upgrade eligibility</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1548.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1548.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Use your miles to upgrade</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Upgrades are available based on your status with United Airlines and availability.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Upgrades are available based on your status with United Airlines and availability.</air:Text>
+                              <air:PriceRange DefaultCurrency="true" EndPrice="USD0.000"/>
+                              <air:Title Type="External" LanguageCode="EN">Upgrade eligibility</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Upgrades</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalServiceRules Key="xs/MMC4R2BKAHvKKCAAAAA==">
+                              <common_v50_0:Remarks>Youre not allowed a full-sized carry-on bag unless youre a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full-sized carry-on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</common_v50_0:Remarks>
+                           </air:OptionalServiceRules>
+                           <air:OptionalServiceRules Key="xs/MMC4R2BKAKvKKCAAAAA==">
+                              <common_v50_0:Remarks>Y,1,KG,23,BAG</common_v50_0:Remarks>
+                           </air:OptionalServiceRules>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:BookingInfo BookingCode="W" CabinClass="Economy" FareInfoRef="xs/MMC4R2BKAbuKKCAAAAA==" SegmentRef="xs/MMC4R2BKAHuKKCAAAAA==" HostTokenRef="xs/MMC4R2BKAUuKKCAAAAA=="/>
+                  <air:BookingInfo BookingCode="W" CabinClass="Economy" FareInfoRef="xs/MMC4R2BKAbuKKCAAAAA==" SegmentRef="xs/MMC4R2BKALuKKCAAAAA==" HostTokenRef="xs/MMC4R2BKAUuKKCAAAAA=="/>
+                  <air:BookingInfo BookingCode="L" CabinClass="Economy" FareInfoRef="xs/MMC4R2BKA3uKKCAAAAA==" SegmentRef="xs/MMC4R2BKAPuKKCAAAAA==" HostTokenRef="xs/MMC4R2BKAVuKKCAAAAA=="/>
+                  <air:TaxInfo Category="US" Amount="USD29.86" Key="xs/MMC4R2BKAXuKKCAAAAA=="/>
+                  <air:TaxInfo Category="ZP" Amount="USD12.90" Key="xs/MMC4R2BKAYuKKCAAAAA=="/>
+                  <air:TaxInfo Category="AY" Amount="USD11.20" Key="xs/MMC4R2BKAZuKKCAAAAA=="/>
+                  <air:TaxInfo Category="XF" Amount="USD13.50" Key="xs/MMC4R2BKAauKKCAAAAA=="/>
+                  <air:FareCalc>ADT CHI UA X/DEN UA SEA244.65UA CHI153.49USD398.14END UA ZPORDDENSEA XF ORD4.5DEN4.5SEA4.5</air:FareCalc>
+                  <air:PassengerType Code="ADT"/>
+                  <air:PassengerType Code="ADT"/>
+                  <air:ChangePenalty PenaltyApplies="Anytime">
+                     <air:Amount>USD200.00</air:Amount>
+                  </air:ChangePenalty>
+                  <air:CancelPenalty NoShow="true" PenaltyApplies="Anytime">
+                     <air:Percentage>100.00</air:Percentage>
+                  </air:CancelPenalty>
+                  <air:BaggageAllowances>
+                     <air:BaggageAllowanceInfo TravelerType="ADT" Origin="ORD" Destination="SEA" Carrier="UA">
+                        <air:URLInfo>
+                           <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/UA</air:URL>
+                        </air:URLInfo>
+                        <air:TextInfo>
+                           <air:Text>0P</air:Text>
+                           <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+                        </air:TextInfo>
+                        <air:BagDetails ApplicableBags="1stChecked" BasePrice="USD35.00" ApproximateBasePrice="USD35.00" TotalPrice="USD35.00" ApproximateTotalPrice="USD35.00">
+                           <air:BaggageRestriction>
+                              <air:TextInfo>
+                                 <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                              </air:TextInfo>
+                           </air:BaggageRestriction>
+                        </air:BagDetails>
+                        <air:BagDetails ApplicableBags="2ndChecked" BasePrice="USD45.00" ApproximateBasePrice="USD45.00" TotalPrice="USD45.00" ApproximateTotalPrice="USD45.00">
+                           <air:BaggageRestriction>
+                              <air:TextInfo>
+                                 <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                              </air:TextInfo>
+                           </air:BaggageRestriction>
+                        </air:BagDetails>
+                     </air:BaggageAllowanceInfo>
+                     <air:BaggageAllowanceInfo TravelerType="ADT" Origin="SEA" Destination="ORD" Carrier="UA">
+                        <air:URLInfo>
+                           <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/UA</air:URL>
+                        </air:URLInfo>
+                        <air:TextInfo>
+                           <air:Text>0P</air:Text>
+                           <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+                        </air:TextInfo>
+                        <air:BagDetails ApplicableBags="1stChecked" BasePrice="USD35.00" ApproximateBasePrice="USD35.00" TotalPrice="USD35.00" ApproximateTotalPrice="USD35.00">
+                           <air:BaggageRestriction>
+                              <air:TextInfo>
+                                 <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                              </air:TextInfo>
+                           </air:BaggageRestriction>
+                        </air:BagDetails>
+                        <air:BagDetails ApplicableBags="2ndChecked" BasePrice="USD45.00" ApproximateBasePrice="USD45.00" TotalPrice="USD45.00" ApproximateTotalPrice="USD45.00">
+                           <air:BaggageRestriction>
+                              <air:TextInfo>
+                                 <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                              </air:TextInfo>
+                           </air:BaggageRestriction>
+                        </air:BagDetails>
+                     </air:BaggageAllowanceInfo>
+                     <air:CarryOnAllowanceInfo Origin="ORD" Destination="DEN" Carrier="UA">
+                        <air:URLInfo/>
+                        <air:TextInfo>
+                           <air:Text>1P</air:Text>
+                        </air:TextInfo>
+                        <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="USD0.00" ApproximateBasePrice="USD0.00" TotalPrice="USD0.00" ApproximateTotalPrice="USD0.00">
+                           <air:BaggageRestriction>
+                              <air:TextInfo>
+                                 <air:Text>CARRY ON HAND BAGGAGE</air:Text>
+                              </air:TextInfo>
+                           </air:BaggageRestriction>
+                        </air:CarryOnDetails>
+                     </air:CarryOnAllowanceInfo>
+                     <air:CarryOnAllowanceInfo Origin="DEN" Destination="SEA" Carrier="UA">
+                        <air:URLInfo/>
+                        <air:TextInfo>
+                           <air:Text>1P</air:Text>
+                        </air:TextInfo>
+                        <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="USD0.00" ApproximateBasePrice="USD0.00" TotalPrice="USD0.00" ApproximateTotalPrice="USD0.00">
+                           <air:BaggageRestriction>
+                              <air:TextInfo>
+                                 <air:Text>CARRY ON HAND BAGGAGE</air:Text>
+                              </air:TextInfo>
+                           </air:BaggageRestriction>
+                        </air:CarryOnDetails>
+                     </air:CarryOnAllowanceInfo>
+                     <air:CarryOnAllowanceInfo Origin="SEA" Destination="ORD" Carrier="UA">
+                        <air:URLInfo/>
+                        <air:TextInfo>
+                           <air:Text>1P</air:Text>
+                        </air:TextInfo>
+                        <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="USD0.00" ApproximateBasePrice="USD0.00" TotalPrice="USD0.00" ApproximateTotalPrice="USD0.00">
+                           <air:BaggageRestriction>
+                              <air:TextInfo>
+                                 <air:Text>CARRY ON HAND BAGGAGE</air:Text>
+                              </air:TextInfo>
+                           </air:BaggageRestriction>
+                        </air:CarryOnDetails>
+                     </air:CarryOnAllowanceInfo>
+                  </air:BaggageAllowances>
+               </air:AirPricingInfo>
+               <air:FareNote Key="xs/MMC4R2BKAWvKKCAAAAA==">LOWEST FARE ALREADY BOOKED IN THIS COMPARTMENT</air:FareNote>
+               <common_v50_0:HostToken Key="xs/MMC4R2BKAUuKKCAAAAA==">0077GFB1000F00020101ADT00  01WAA3AKEN                              02000100020047GFB2000F000200010101NADTV3000ECK20010001099#GFMCSIP011NECK2 UA ADTWAA3AKEN</common_v50_0:HostToken>
+               <common_v50_0:HostToken Key="xs/MMC4R2BKAVuKKCAAAAA==">0073GFB1000F00020101ADT00  02LXA4AQER                              0100030047GFB2000F000200010102NADTV3000ECQ20010000199#GFMCSIP011NECK2 UA ADTLXA4AQER</common_v50_0:HostToken>
+            </air:AirPricingSolution>
+            <air:FareRule FareInfoRef="xs/MMC4R2BKAbuKKCAAAAA==" RuleNumber="ECQ2" TariffNumber="0011" ProviderCode="1P">
+               <air:FareRuleLong Category="2" Type="RULE">DAY/TIME
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 02CT IN DGR
+APPLIES</air:FareRuleLong>
+               <air:FareRuleLong Category="4" Type="RULE">FLIGHT APPLIC
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 4CAT IN DGR
+APPLIES</air:FareRuleLong>
+               <air:FareRuleLong Category="5" Type="RULE">ADVANCE RES/TKTG
+FARE RULES TEXT
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 5CAT IN DGR
+APPLIES
+GENERAL RULES TEXT
+FOR -4 TYPE FARES
+RESERVATIONS FOR ALL SECTORS ARE REQUIRED AT LEAST 14
+DAYS
+BEFORE DEPARTURE OF EACH TRIP.
+TICKETING FOR DEPARTURE OF EACH TRIP MUST BE COMPLETED
+WITHIN 1 DAY AFTER RESERVATIONS ARE MADE OR AT LEAST 14
+DAYS BEFORE DEPARTURE WHICHEVER IS EARLIER.
+NOTE -
+THE FLIGHT NUMBER AND DATE MUST BE INDICATED
+ON THE TICKET.</air:FareRuleLong>
+               <air:FareRuleLong Category="6" Type="RULE">MINIMUM STAY
+FARE RULES TEXT
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 6CAT IN DGR
+APPLIES
+GENERAL RULES TEXT
+NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+               <air:FareRuleLong Category="9" Type="RULE">TRANSFERS
+GENERAL RULES TEXT
+WITHIN CONTIGUOUS U.S.A. FOR ROUND TRIP FARES
+2 TRANSFERS PERMITTED IN EACH DIRECTION
+FARE BREAK SURFACE SECTORS NOT PERMITTED AND EMBEDDED
+SURFACE SECTORS PERMITTED ON THE FARE COMPONENT.
+NOTE -
+FARE BREAK SURFACE SECTORS ARE NOT PERMITTED.</air:FareRuleLong>
+               <air:FareRuleLong Category="10" Type="RULE">COMBINABILITY
+FOR ROUND TRIP 2ND LEVEL ECONOMY RESTRICTED FARES
+DOUBLE OPEN JAWS/MULTI-COMPONENT CIRCLE TRIPS NOT
+PERMITTED.
+APPLICABLE ADD-ON CONSTRUCTION IS ADDRESSED IN
+MISCELLANEOUS PROVISIONS - CATEGORY 23.
+MIRROR IMAGE NOT PERMITTED.
+END-ON-END
+END-ON-END COMBINATIONS NOT PERMITTED WITH DOMESTIC/
+INTERNATIONAL FARES FROM/TO VENEZUELA. VALIDATE ALL
+FARE
+COMPONENTS. SIDE TRIPS PERMITTED.
+END-ON-END
+END-ON-END COMBINATIONS PERMITTED. VALIDATE ALL FARE
+COMPONENTS. ROUND TRIP EXCURSION FARES MAY NOT BE
+COMBINED END-ON-END WITH ANY ROUND TRIP FARE WHEN THESE
+FARES HAVE OVERLAPPING TRAVEL PERIODS AND ARE TO/FROM
+THE SAME CITIES OF ORIGIN AND DESTINATION AS A STOPOVER
+OR FARE BREAK POINT. SIDE TRIPS PERMITTED.
+PROVIDED -
+COMBINATIONS ARE WITH ANY 4TH LEVEL ECONOMY
+UNRESTRICTED-TYPE FARES FOR CARRIER UA.
+END-ON-END
+END-ON-END COMBINATIONS PERMITTED. VALIDATE ALL FARE
+COMPONENTS. IF THE FARE IS USED END-ON-END MUST BE AN
+A-
+B-A COMBINATION. ROUND TRIP EXCURSION FARES MAY NOT BE
+COMBINED END-ON-END WITH ANY ROUND TRIP FARE WHEN THESE
+FARES HAVE OVERLAPPING TRAVEL PERIODS AND ARE TO/FROM
+THE SAME CITIES OF ORIGIN AND DESTINATION AS A STOPOVER
+OR FARE BREAK POINT. SIDE TRIPS PERMITTED.
+PROVIDED -
+COMBINATIONS ARE NOT WITH ANY 2ND LEVEL ECONOMY
+RESTRICTED/2ND LEVEL OW INSTANT PURCHASE/INSTANT
+PURCHASE NONREF 2ND LEVEL/FIRST CLASS SELL-UP OW NON-
+REF/FIRST CLASS SELL-UP OW REF/FIRST CLASS SELL-UP RT
+NON-REF/PREMIUM ECONOMY ADVANCE PURCHASE/PREMIUM ECON
+OW ADVANCE PURCHASE/FIRST CLASS SELL-UP RT REF/PREM
+ECON SELL-UP OW NON-REF/PREM ECON SELL-UP RT NON-REF/
+PREM ECON SELL-UP OW REF/PREM ECON SELL-UP RT REF/
+PREMIUM ECONOMY UNRESTRICTED/BUSINESS SELL-UP OW NON-
+REF-TYPE FARES FOR CARRIER UA IN ANY RULE IN TARIFF
+DFR     - WITHIN THE UNITED STATES
+FBRNAPV - WITHIN NORTH AMERICA EXCEPT MEXICO.
+EXCEPT AS PROVIDED ABOVE COMBINATIONS ARE FOR CARRIER
+UA IN ANY RULE IN TARIFF
+DFR     - WITHIN THE UNITED STATES
+FBRNAPV - WITHIN NORTH AMERICA EXCEPT MEXICO.
+OPEN JAWS
+FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+-TO FORM SINGLE OPEN JAWS.
+A MAXIMUM OF 2 FARE COMPONENTS PERMITTED.
+MILEAGE OF THE OPEN SEGMENT MUST BE EQUAL/LESS THAN
+MILEAGE OF THE SHORTEST FLOWN FARE COMPONENT.
+PROVIDED -
+THE OPEN SEGMENT MUST BE
+WITHIN
+-WITHIN THE UNITED STATES
+COMBINATIONS ARE NOT WITH ANY 2ND LEVEL ECONOMY
+RESTRICTED/2ND LEVEL OW INSTANT PURCHASE/INSTANT
+PURCHASE NONREF 2ND LEVEL/FIRST CLASS SELL-UP OW NON-
+REF/FIRST CLASS SELL-UP OW REF/FIRST CLASS SELL-UP RT
+NON-REF/PREMIUM ECONOMY ADVANCE PURCHASE/PREMIUM ECON
+OW ADVANCE PURCHASE/FIRST CLASS SELL-UP RT REF/PREM
+ECON SELL-UP OW NON-REF/PREM ECON SELL-UP RT NON-REF/
+PREM ECON SELL-UP OW REF/PREM ECON SELL-UP RT REF/
+PREMIUM ECONOMY UNRESTRICTED/BUSINESS SELL-UP OW NON-
+REF-TYPE FARES FOR CARRIER UA IN ANY RULE IN TARIFF
+DFR     - WITHIN THE UNITED STATES
+FBRNAPV - WITHIN NORTH AMERICA EXCEPT MEXICO.
+EXCEPT AS PROVIDED ABOVE THE OPEN SEGMENT MUST BE
+WITHIN
+-WITHIN THE UNITED STATES
+COMBINATIONS ARE WITH ANY FARE FOR CARRIER UA IN ANY
+RULE IN TARIFF
+DFR     - WITHIN THE UNITED STATES
+FBRNAPV - WITHIN NORTH AMERICA EXCEPT MEXICO.
+2-COMPONENT CIRCLE TRIPS
+FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+-TO FORM 2-COMPONENT CIRCLE TRIPS.
+PROVIDED -
+COMBINATIONS ARE NOT WITH ANY 2ND LEVEL ECONOMY
+RESTRICTED/2ND LEVEL OW INSTANT PURCHASE/INSTANT
+PURCHASE NONREF 2ND LEVEL/FIRST CLASS SELL-UP OW NON-
+REF/FIRST CLASS SELL-UP OW REF/FIRST CLASS SELL-UP RT
+NON-REF/PREMIUM ECONOMY ADVANCE PURCHASE/PREMIUM ECON
+OW ADVANCE PURCHASE/FIRST CLASS SELL-UP RT REF/PREM
+ECON SELL-UP OW NON-REF/PREM ECON SELL-UP RT NON-REF/
+PREM ECON SELL-UP OW REF/PREM ECON SELL-UP RT REF/
+PREMIUM ECONOMY UNRESTRICTED/BUSINESS SELL-UP OW NON-
+REF-TYPE FARES FOR CARRIER UA IN ANY RULE IN TARIFF
+DFR     - WITHIN THE UNITED STATES
+FBRNAPV - WITHIN NORTH AMERICA EXCEPT MEXICO.
+COMBINATIONS ARE WITH ANY FARE FOR CARRIER UA IN ANY
+RULE IN TARIFF
+DFR     - WITHIN THE UNITED STATES
+FBRNAPV - WITHIN NORTH AMERICA EXCEPT MEXICO.
+NOTE - THE CITY PAIRS BELOW ARE CONSIDERED THE SAME POINT-
+BWI-WAS  FLL-MIA  FLL-PBI  MIA-PBI  BUR-LAX  BUR
+-ONT
+BUR-SNA  LAX-ONT  LAX-SNA  ONT-SNA  OAK-SFO  OAK
+-SJC
+SFO-SJC  EWR-HVN  EWR-ISP  EWR-NYC  EWR-HPN  HVN
+-ISP
+HVN-NYC  HVN-HPN  ISP-NYC  ISP-HPN  NYC-HPN  EFD
+-HOU
+EFD-IAH  IAD-DCA  MDW-ORD  LGA-JFK</air:FareRuleLong>
+               <air:FareRuleLong Category="12" Type="RULE">SURCHARGES
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 12SC IN DGR ALSO
+APPLIES
+IF INFANT 0-1 WITHOUT A SEAT.
+OR - EMF 0-1.
+THERE IS NO CHARGE FOR TRAVEL PER FARE COMPONENT.
+THE PROVISIONS BELOW APPLY ONLY AS FOLLOWS -
+TICKETS MUST BE ISSUED ON UA.
+THERE IS NO CHARGE FOR TRAVEL PER FARE COMPONENT.
+OTHERWISE
+A SURCHARGE OF USD 93.02 PER FARE COMPONENT WILL BE
+ADDED TO THE APPLICABLE FARE FOR TRAVEL.</air:FareRuleLong>
+               <air:FareRuleLong Category="15" Type="RULE">SALE RESTRICTION
+FARE RULES TEXT
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE CT15 IN DGR
+APPLIES
+GENERAL RULES TEXT
+FOR 2ND LEVEL ECONOMY RESTRICTED FARES
+TICKETS MAY BE ISSUED BY PTA. PTA CONSTITUTES TICKETING.
+TICKETS MAY NOT BE SOLD IN NIGERIA/VENEZUELA/LEBANON/
+ANGOLA/SOUTH SUDAN/SUDAN/IRAN,ISLAMIC REPUBLIC OF.
+TICKETS MAY ONLY BE SOLD IN THE UNITED STATES.
+NOTE -
+FOR ITINERARIES SOLD OUTSIDE OF VE - CREDIT
+CARDS ISSUED IN VE ARE NOT ACCEPTED.
+----------------------
+EXTENSION OF TICKET VALIDITY PERMITTED UNDER
+GUIDELINES SET FORTH BY CARRIER.  CONTACT
+CARRIER FOR DETAILS.</air:FareRuleLong>
+               <air:FareRuleLong Category="16" Type="RULE">PENALTIES
+FARE RULES TEXT
+FOR ROUND TRIP FARES   NOTE - RULE DOMX IN DGR APPLIES
+GENERAL RULES TEXT
+FOR ROUND TRIP FARES
+CANCELLATIONS
+TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/NO-SHOW.
+WAIVED FOR SCHEDULE CHANGE.
+NOTE -
+--
+TAX/CHARGE - US/ZP/XF - WILL NOT BE
+REFUNDED ON NON-REFUNDABLE FARE TICKETS
+--
+A.  WHOLLY UNUSED TICKET -
+--
+A WHOLLY UNUSED TICKET MAY BE APPLIED TOWARD THE
+PURCHASE OF MOST DOMESTIC OR INTERNATIONAL FARES/
+EXCLUSIONS APPLY / TICKET PRICED AT -CURRENT-
+QUALIFYING FARE LEVELS FOLLOWING ALL FARE RULE
+PROVISIONS
+--
+TICKET HAS NO VALUE UNLESS PASSENGER CANCELS
+TICKETED FLIGHT RESERVATIONS PRIOR TO TICKETED
+DEPARTURE TIME
+--
+TICKET VALIDITY FOR A WHOLLY UNUSED TICKET -
+TRAVEL MUST BEGIN WITHIN ONE YEAR OF THE
+ORIGINAL TICKET ISSUE DATE OR TICKET HAS NO VALUE
+--
+THE NON-REFUNDABLE VALUE OF THE UNUSED TICKET
+MUST BE CARRIED FORWARD IN THE ENDORSEMENT BOX OF
+THE NEW TICKET AND DESIGNATED AS NON REFUNDABLE
+--
+AN ADMINISTRATIVE SERVICE FEE EQUAL TO THE CHANGE
+FEE WILL BE ASSESSED PER TRANSACTION
+--
+RESIDUAL VALUE / IF ANY / WILL BE RETURNED IN THE
+FORM OF A NON-REFUNDABLE EMD/MCO VALID FOR TRAVEL
+ON UNITED AIRLINES
+--
+PASSENGERS TRAVELING ON COMPANION FARES MUST
+PRESENT ALL TICKETS AT THE SAME TIME
+--
+B.  BOOKING CODE CHANGE PERMITTED  -
+--
+WHEN A NEW FARE IS INTRODUCED INTO THE MARKET OR
+A CURRENT FARE IS REDUCED OR BECOMES AVAILABLE /
+THE TICKETED PASSENGER MAY QUALIFY FOR ONE OF
+THE ABOVE OPTIONS
+--
+ALL PROVISIONS OF THE NEW FARE MUST BE MET
+BEFORE DEPARTURE
+--
+NO CHANGE TO ORIGIN/DESTINATION/DATES/FLIGHTS
+---ONLY BOOKING CODE CHANGE IS PERMITTED---
+--
+AN ADMINISTRATIVE SERVICE FEE EQUAL TO THE CHANGE
+FEE WILL BE ASSESSED
+--
+RESIDUAL VALUE /IF ANY/ WILL BE RETURNED IN THE
+FORM OF A NON-REFUNDABLE EMD/MCO VALID FOR TRAVEL
+ON UNITED AIRLINES
+--
+C. IF MULTIPLE CHANGES ARE MADE AT THE SAME TIME
+--
+ONLY ONE SERVICE CHARGE / CHANGE FEE WILL
+APPLY PER TICKET.
+IF FARES WITH DIFFERENT SERVICE CHARGES /
+CHANGE FEES ARE COMBINED ON THE SAME TICKET
+THE HIGHEST FEE OF ONLY THE CHANGED FARE
+COMPONENTS WILL APPLY TO THE JOURNEY.
+IF CHANGED FARE COMPONENT HAS NO SERVICE
+CHARGE / CHANGE FEE AND THAT IS THE ONLY FARE
+COMPONENT CHANGED THERE WOULD BE NO SERVICE
+CHARGE / CHANGE FEE.
+---
+D. FARES COMBINED END-ON-END ON THE SAME TICKET
+--
+// FARES THAT COULD STAND ALONE IF ISSUED ON
+A SEPARATE TICKET//  MAY BE CHANGED SEPARATELY
+ACCORDING TO ASSOCIATED FARE RULE
+--
+IF CHANGED FARE COMPONENT HAS NO SERVICE
+CHARGE AND THAT IS THE ONLY FARE COMPONENT
+CHANGED THERE WOULD BE NO SERVICE CHARGE
+---
+CHANGES
+BEFORE DEPARTURE
+CHARGE USD 200.00 FOR REISSUE.
+WAIVED FOR SCHEDULE CHANGE.
+NOTE -
+--
+BEFORE DEPARTURE CHANGE OPTIONS -
+--
+BEFORE DEPARTURE OF JOURNEY AND WITHIN TICKET
+VALIDITY OF A WHOLLY UNUSED TICKET -
+TRAVEL MUST BEGIN WITHIN ONE YEAR OF THE
+ORIGINAL TICKET ISSUE DATE
+--
+CERTAIN DOMESTIC REISSUE PROVISIONS
+MAY BE OVERRIDDEN BY THOSE OF UA INTERNATIONAL
+FARES
+--
+CHARGE HIGHEST FEE OF ONLY CHANGED FARE
+COMPONENTS WITHIN JOURNEY
+--
+--
+WHEN A FARE IS INTRODUCED INTO THE MARKET //
+TICKETED FARE IS REDUCED / BOOKING CODE
+BECOMES AVAILABLE - REPRICE USING CURRENT FARES
+--
+-- ONLY BOOKING CODE CHANGE PERMITTED --
+--
+PROVIDED ALL THE FOLLOWING CONDITIONS ANDFARE
+RULES ARE MET
+--
+1.  NO CHANGE TO FARE BREAK POINTS
+2.  CHANGE IS BEFORE ORIGINAL SCHEDULED FLIGHT
+3.  SAME TRAVEL DATES / FLIGHTS
+4.  UA  FARES ARE USED
+5.  VALIDATE ADVANCE RESERVATIONS REQUIREMENTS
+6.  ADVANCE RESERVATION IS MEASURED FROM REISSUE
+DATE TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FARE DIFFERENCE IF APPLICABLE
+CHARGE FULL CHANGE FEE
+--
+QUALIFYING CURRENT DAY FARE
+WHOLLY UNUSED TICKET / CHANGE TO 1ST
+TICKETED FLIGHT COUPON
+--
+REPRICE USING --CURRENT FARES-- IN EFFECT TODAY
+--
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET-
+1.  UA FARES ARE USED
+2.  FARE BREAK POINT CHANGES ARE PERMITTED
+3.  VALIDATE ADVANCE RESERVATION REQUIREMENTS
+4.  ADVANCE RESERVATION/TKG IS MEASURED FROM
+REISSUE DATE TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FARE DIFFERENCE IF APPLICABLE
+CHARGE FULL CHANGE FEE
+--
+DOWNLINE DATE CHANGE/ FLIGHT CHANGE
+SAME BOOKING CODE / SAME FARE BASIS CODE /
+KEEP THE FARE
+--
+REPRICE USING CURRENTLY TICKETED/HISTORICAL FARE
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET
+-
+--
+1. NO CHANGE 1ST FLIGHT COUPON / NO CHANGE TO
+FARE BREAKS
+2. ALL TRAVEL REMAINS DOMESTIC
+3. SAME UA FARE USED
+4. ALL RULE AND BOOKING CODE PROVISIONS ARE MET
+IGNORING RES/TKG
+5. VALIDATE ADVANCE RES/TICKETING FROM ORIGINAL
+TICKET DATE TO DEPARTURE OF PRICING UNIT
+--
+--
+REFUND NOT APPLICABLE
+EVEN REISSUE
+CHARGE FULL CHANGE FEE
+--
+FARE BREAK POINT CHANGE PERMITTED / OR REMAIN
+THE SAME / BOOKING CODE CHANGE
+--
+A.  CHANGED FARE COMPONENTS - USE FARE IN
+EFFECT TODAY - CURRENT - DAY TARIFF
+B.  ALL OTHER FARE COMPONENTS - USE TICKETED
+FARE.
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET
+--
+1. NO CHANGE TO FARE BREAKS UP TO THE FIRST
+CHANGED FARE COMPONENET
+2. WHEN NO INTL COUPONS REMAIN - ALL NEW TRAVEL
+MUST BE DOMESTIC
+3. UA FARES ARE USED
+4. ALL RULE AND BOOKING CODE PROVISIONS ARE MET
+5. ADV RES IS MEASURED FROM NEW TKT ISSUE DATE IF
+CURRENT FARES / FROM PREVIOUS TKT ISSUE DATE
+IF
+HISTORICAL FARES TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FULL CHANGE FEE / FARE DIFFERENCE IF
+APPLICABLE
+--
+AFTER DEPARTURE
+CHARGE USD 200.00 FOR REISSUE.
+WAIVED FOR SCHEDULE CHANGE.
+NOTE -
+--
+AFTER DEPARTURE CHANGE OPTIONS -
+--
+AFTER DEPARTURE OF JOURNEY AND WITHIN TICKET
+VALIDITY OF A PARTIALLY USED TICKET -
+TRAVEL WILL BE VALID FOR TRANSPORTATION FOR
+ONE YEAR FROM THE DATE ON WHICH TRANSPORTATION
+COMMENCES AT THE POINT OF ORIGIN AS DESIGNATED
+ON THE ORIGINAL TICKET
+--
+CERTAIN DOMESTIC REISSUE PROVISIONS MAY BE
+OVERRIDDEN BY THOSE OF UA INTERNATIONAL FARES
+--
+CHARGE HIGHEST FEE OF ONLY CHANGED FARE
+COMPONENTS WITHIN JOURNEY -
+REPRICE USING CURRENLTY TICKETED / HISTORICAL
+FARES
+--
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET-
+--
+DOWNLINE DATE CHANGE / FLIGHT CHANGE
+SAME BOOKING CODE / SAME FARE BASIS CODE /
+KEEP THE FARE
+--
+1. NO CHANGE TO FARE BREAKS
+2. ALL TRAVEL REMAINS DOMESTIC
+3. FULLY FLOWN FARE NOT REPRICED TO FURTHER POINT
+4. UA FARES ARE USED
+5. ALL RULE AND BOOKING CODE PROVISIONS ARE
+IGNORING ADVANCE RESERVATION/TICKETING
+6. ADV RES IS MEASURED FROM ORIGINAL TKT DATE TO
+DEPARTURE OF PRICING UNIT
+--
+REFUND NOT APPLICABLE
+EVEN REISSUE
+--
+CHARGE FULL CHANGE FEE
+--
+--
+FARE BREAK POINT CHANGE PERMITTED / OR REMAIN
+THE SAME / BOOKING CODE CHANGE
+--
+REPRICE AS FOLLOWS -
+--
+A.  FULLY FLOWN FARE COMPONENTS - USE FARES IN
+EFFECT WHEN TICKET WAS ISSUED
+B.  CHANGED FARE COMPONENTS - USE CURRENT
+FARES IN EFFECT TODAY
+C.  UNCHANGED FARE COMPONENTS  - USE CURRENTLY
+TICKETED FARES
+--
+1. ALL TRAVEL REMAINS DOMESTIC
+2. UA FARES ARE USED
+3. ALL RULE AND BOOKING CODE PROVISIONS ARE MET
+4. ADV RES IS MEASURED FROM NEW TKT ISSUE DATE IF
+CURRENT FARES
+5. FROM PREVIOUS TICKET ISSUE DATE IF HISTORICAL
+FARES TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FARE DIFFERENCE IF APPLICABLE
+CHARGE FULL CHANGE FEE
+--</air:FareRuleLong>
+               <air:FareRuleLong Category="18" Type="RULE">ENDORSEMENTS
+FARE RULES TEXT
+FOR ROUND TRIP FARES   NOTE - RULE DOMX IN DGR APPLIES
+GENERAL RULES TEXT
+UNLESS OTHERWISE SPECIFIED
+THE ORIGINAL AND THE REISSUED TICKET MUST BE ANNOTATED -
+NONREF/0VALUAFTDPT/CHGFEE - IN THE ENDORSEMENT BOX.</air:FareRuleLong>
+               <air:FareRuleLong Category="19" Type="RULE">CHILD DISCOUNT
+GENERAL RULES TEXT
+UNLESS OTHERWISE SPECIFIED
+ACCOMPANIED CHILD 2-11 - CHARGE 100 PERCENT OF THE FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME COMPARTMENT
+BY ADULT 18 OR OLDER
+OR - 1ST INFANT UNDER 2 WITHOUT A SEAT - NO CHARGE
+TICKET DESIGNATOR - IN.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY ADULT 18 OR OLDER
+OR - INFANT UNDER 2 WITH A SEAT - CHARGE 100 PERCENT OF
+THE FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY ADULT 18 OR OLDER.
+CONTRACT BULK CHILD 2-11 - CHARGE 100 PERCENT OF THE
+FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY CONTRACT BULK ADULT 18 OR OLDER
+OR - 1ST CONTRACT BULK INFANT WITHOUT A SEAT UNDER 2 - NO
+CHARGE
+TICKET DESIGNATOR - IN.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY CONTRACT BULK ADULT 18 OR OLDER
+OR - CONTRACT BULK INFANT WITH A SEAT UNDER 2 - CHARGE
+100
+PERCENT OF THE FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY CONTRACT BULK ADULT 18 OR OLDER
+OR - UNACCOMPANIED CHILD 5-11 - CHARGE 100 PERCENT OF THE
+FARE.</air:FareRuleLong>
+               <air:FareRuleLong Category="23" Type="RULE">MISC PROVISIONS
+GENERAL RULES TEXT
+UNLESS OTHERWISE SPECIFIED
+THIS FARE MUST NOT BE USED AS THE HIGH OR THE LOW FARE
+WHEN CALCULATING A DIFFERENTIAL. THIS FARE MUST NOT BE
+USED AS THE THROUGH FARE WHEN PRICING A FARE COMPONENT
+WITH A DIFFERENTIAL.</air:FareRuleLong>
+               <air:FareRuleLong Category="31" Type="RULE">VOLUNTARY CHANGE
+DO A CATEGORY 31 SPECIFIC TEXT ENTRY TO VIEW CONTENTS
+ALSO REFERENCE 16 PENALTIES - FOR ADDITIONAL CHANGE
+INFORMATION</air:FareRuleLong>
+               <air:FareRuleLong Category="50" Type="RULE">APPLICATION RULE
+UNLESS OTHERWISE SPECIFIED
+NORMAL  / EXCURSION FARES
+APPLICATION
+CLASS OF SERVICE
+THESE FARES APPLY FOR FIRST/BUSINESS/PREMIUM ECONOMY/
+ECONOMY/OFF-PEAK ECONOMY CLASS SERVICE.
+TYPES OF TRANSPORTATION
+THIS RULE GOVERNS ONE-WAY AND ROUND-TRIP FARES.
+FARES GOVERNED BY THIS RULE CAN BE USED TO CREATE
+ONE-WAY/ROUND-TRIP/CIRCLE-TRIP/OPEN-JAW JOURNEYS.
+CAPACITY LIMITATIONS
+SEATS ARE LIMITED</air:FareRuleLong>
+            </air:FareRule>
+            <air:FareRule FareInfoRef="xs/MMC4R2BKA3uKKCAAAAA==" RuleNumber="ECK2" TariffNumber="0011" ProviderCode="1P">
+               <air:FareRuleLong Category="2" Type="RULE">DAY/TIME
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 02CT IN DGR
+APPLIES</air:FareRuleLong>
+               <air:FareRuleLong Category="4" Type="RULE">FLIGHT APPLIC
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 4CAT IN DGR
+APPLIES</air:FareRuleLong>
+               <air:FareRuleLong Category="5" Type="RULE">ADVANCE RES/TKTG
+FARE RULES TEXT
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 5CAT IN DGR
+APPLIES
+GENERAL RULES TEXT
+FOR -3 TYPE FARES
+RESERVATIONS FOR ALL SECTORS ARE REQUIRED AT LEAST 3 DAYS
+BEFORE DEPARTURE OF EACH TRIP.
+TICKETING FOR DEPARTURE OF EACH TRIP MUST BE COMPLETED
+WITHIN 1 DAY AFTER RESERVATIONS ARE MADE OR AT LEAST 3
+DAYS BEFORE DEPARTURE WHICHEVER IS EARLIER.
+NOTE -
+THE FLIGHT NUMBER AND DATE MUST BE INDICATED
+ON THE TICKET.</air:FareRuleLong>
+               <air:FareRuleLong Category="6" Type="RULE">MINIMUM STAY
+FARE RULES TEXT
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 6CAT IN DGR
+APPLIES
+GENERAL RULES TEXT
+NONE UNLESS OTHERWISE SPECIFIED</air:FareRuleLong>
+               <air:FareRuleLong Category="9" Type="RULE">TRANSFERS
+GENERAL RULES TEXT
+WITHIN CONTIGUOUS U.S.A. FOR ONE WAY FARES
+2 TRANSFERS PERMITTED IN EACH DIRECTION
+FARE BREAK SURFACE SECTORS NOT PERMITTED AND EMBEDDED
+SURFACE SECTORS PERMITTED ON THE FARE COMPONENT.
+NOTE -
+FARE BREAK SURFACE SECTORS ARE NOT PERMITTED.</air:FareRuleLong>
+               <air:FareRuleLong Category="10" Type="RULE">COMBINABILITY
+FOR ONE WAY W- TYPE FARES
+DOUBLE OPEN JAWS NOT PERMITTED.
+APPLICABLE ADD-ON CONSTRUCTION IS ADDRESSED IN
+MISCELLANEOUS PROVISIONS - CATEGORY 23.
+END-ON-END
+END-ON-END COMBINATIONS NOT PERMITTED WITH DOMESTIC/
+INTERNATIONAL FARES FROM/TO VENEZUELA. VALIDATE ALL
+FARE
+COMPONENTS. SIDE TRIPS PERMITTED.
+END-ON-END
+END-ON-END COMBINATIONS PERMITTED. VALIDATE ALL FARE
+COMPONENTS. SIDE TRIPS PERMITTED.
+PROVIDED -
+COMBINATIONS ARE WITH ANY 4TH LEVEL ECONOMY
+UNRESTRICTED-TYPE FARES FOR CARRIER UA.
+COMBINATIONS ARE FOR CARRIER UA/AC/3M/4B/KG IN ANY
+RULE
+IN TARIFF
+CDR     - WITHIN CANADA
+CPR     - BETWEEN THE UNITED STATES-CANADA
+DFR     - WITHIN THE UNITED STATES
+OR RULE ECC2/ECW2/UPP1 IN TARIFF
+DR01    - WITHIN THE UNITED STATES.
+COMBINATIONS ARE FOR CARRIER UA/AC/3M/4B/KG IN ANY
+RULE
+IN TARIFF
+IPRW    - BETWEEN THE USA/CANADA-AREA 1
+VPCR    - BETWEEN PUERTO RICO/VIRGIN ISLANDS-CANADA
+VPDR    - BETWEEN PUERTO RICO/VIRGIN ISLANDS-THE USA.
+COMBINATIONS ARE FOR CARRIER UA/AC/3M/4B/KG IN ANY
+RULE
+IN TARIFF
+FBRINPV - BETWEEN USA/CA-AREA 1/2/3.
+COMBINATIONS ARE FOR CARRIER UA/AC/3M/4B/KG IN ANY
+RULE
+IN TARIFF
+FBRNAPV - WITHIN NORTH AMERICA EXCEPT MEXICO.
+COMBINATIONS ARE FOR CARRIER UA/LH/AC/LX/VO/SN/OS
+PUBLISHED FOR TRAVEL VIA THE ATLANTIC.
+COMBINATIONS ARE FOR CARRIER UA/NH PUBLISHED FOR
+TRAVEL
+VIA THE PACIFIC.
+OPEN JAWS
+FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+-TO FORM SINGLE OPEN JAWS.
+A MAXIMUM OF 2 FARE COMPONENTS PERMITTED.
+MILEAGE OF THE OPEN SEGMENT MUST BE EQUAL/LESS THAN
+MILEAGE OF THE SHORTEST FLOWN FARE COMPONENT.
+PROVIDED -
+THE OPEN SEGMENT MUST BE
+-BETWEEN THE UNITED STATES AND CANADA/BETWEEN THE
+UNITED STATES AND PUERTO RICO/BETWEEN CANADA AND
+PUERTO RICO/BETWEEN THE UNITED STATES AND US VIRGIN
+ISLANDS/BETWEEN CANADA AND US VIRGIN ISLANDS/BETWEEN
+PUERTO RICO AND US VIRGIN ISLANDS
+-WITHIN THE UNITED STATES OR WITHIN PUERTO RICO OR
+WITHIN US VIRGIN ISLANDS
+COMBINATIONS ARE WITH ANY FARE FOR CARRIER UA/AC/3M/
+4B/KG IN ANY RULE AND TARIFF.
+2-COMPONENT CIRCLE TRIPS/MULTI-COMPONENT CIRCLE TRIPS
+FARES MAY BE COMBINED ON A HALF ROUND TRIP BASIS
+-TO FORM 2-COMPONENT CIRCLE TRIPS/MULTI-COMPONENT
+CIRCLE
+TRIPS.
+PROVIDED -
+COMBINATIONS ARE WITH ANY FARE FOR CARRIER UA/AC/3M/
+4B/
+KG IN ANY RULE IN ANY TARIFF.
+NOTE - THE CITY PAIRS BELOW ARE CONSIDERED THE SAME POINT-
+BWI-WAS  FLL-MIA  FLL-PBI  MIA-PBI  BUR-LAX  BUR
+-ONT
+BUR-SNA  LAX-ONT  LAX-SNA  ONT-SNA  OAK-SFO  OAK
+-SJC
+SFO-SJC  EWR-HVN  EWR-ISP  EWR-NYC  EWR-HPN  HVN
+-ISP
+HVN-NYC  HVN-HPN  ISP-NYC  ISP-HPN  NYC-HPN  EFD
+-HOU
+EFD-IAH  IAD-DCA  MDW-ORD  LGA-JFK</air:FareRuleLong>
+               <air:FareRuleLong Category="12" Type="RULE">SURCHARGES
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE 12SC IN DGR ALSO
+APPLIES
+IF INFANT 0-1 WITHOUT A SEAT.
+OR - EMF 0-1.
+OR - PIF 0-1.
+OR - CONTRACT BULK INFANT WITHOUT A SEAT 0-1.
+OR - CBI 0-1.
+OR - INCLUSIVE TOUR INFANT WITHOUT A SEAT 0-1.
+OR - SEAMAN INFANT WITHOUT A SEAT 0-1.
+THERE IS NO CHARGE FOR TRAVEL PER FARE COMPONENT.
+THE PROVISIONS BELOW APPLY ONLY AS FOLLOWS -
+TICKETS MUST BE ISSUED ON UA.
+THERE IS NO CHARGE FOR TRAVEL PER FARE COMPONENT.
+OTHERWISE
+A SURCHARGE OF USD 93.02 PER FARE COMPONENT WILL BE
+ADDED TO THE APPLICABLE FARE FOR TRAVEL.</air:FareRuleLong>
+               <air:FareRuleLong Category="15" Type="RULE">SALE RESTRICTION
+FARE RULES TEXT
+UNLESS OTHERWISE SPECIFIED   NOTE - RULE CT15 IN DGR
+APPLIES
+GENERAL RULES TEXT
+UNLESS OTHERWISE SPECIFIED
+TICKETS MAY BE ISSUED BY PTA. PTA CONSTITUTES TICKETING.
+TICKETS MAY NOT BE SOLD IN NIGERIA/VENEZUELA/LEBANON/
+ANGOLA/SOUTH SUDAN/SUDAN/IRAN,ISLAMIC REPUBLIC OF.
+TICKETS MAY ONLY BE SOLD IN AREA 1/AREA 2/AREA 3.
+NOTE -
+FOR ITINERARIES SOLD OUTSIDE OF VE - CREDIT
+CARDS ISSUED IN VE ARE NOT ACCEPTED.
+----------------------
+EXTENSION OF TICKET VALIDITY PERMITTED UNDER
+GUIDELINES SET FORTH BY CARRIER.  CONTACT
+CARRIER FOR DETAILS.</air:FareRuleLong>
+               <air:FareRuleLong Category="16" Type="RULE">PENALTIES
+FARE RULES TEXT
+FOR ONE WAY FARES   NOTE - RULE DOMX IN DGR APPLIES
+GENERAL RULES TEXT
+FOR ONE WAY FARES
+CANCELLATIONS
+TICKET IS NON-REFUNDABLE IN CASE OF CANCEL/NO-SHOW.
+WAIVED FOR SCHEDULE CHANGE.
+NOTE -
+--
+TAX/CHARGE - US/ZP/XF - WILL NOT BE
+REFUNDED ON NON-REFUNDABLE FARE TICKETS
+--
+A.  WHOLLY UNUSED TICKET -
+--
+A WHOLLY UNUSED TICKET MAY BE APPLIED TOWARD THE
+PURCHASE OF MOST DOMESTIC OR INTERNATIONAL FARES/
+EXCLUSIONS APPLY / TICKET PRICED AT -CURRENT-
+QUALIFYING FARE LEVELS FOLLOWING ALL FARE RULE
+PROVISIONS
+--
+TICKET HAS NO VALUE UNLESS PASSENGER CANCELS
+TICKETED FLIGHT RESERVATIONS PRIOR TO TICKETED
+DEPARTURE TIME
+--
+TICKET VALIDITY FOR A WHOLLY UNUSED TICKET -
+TRAVEL MUST BEGIN WITHIN ONE YEAR OF THE
+ORIGINAL TICKET ISSUE DATE OR TICKET HAS NO VALUE
+--
+THE NON-REFUNDABLE VALUE OF THE UNUSED TICKET
+MUST BE CARRIED FORWARD IN THE ENDORSEMENT BOX OF
+THE NEW TICKET AND DESIGNATED AS NON REFUNDABLE
+--
+AN ADMINISTRATIVE SERVICE FEE EQUAL TO THE CHANGE
+FEE WILL BE ASSESSED PER TRANSACTION
+--
+RESIDUAL VALUE / IF ANY / WILL BE RETURNED IN THE
+FORM OF A NON-REFUNDABLE EMD/MCO VALID FOR TRAVEL
+ON UNITED AIRLINES
+--
+PASSENGERS TRAVELING ON COMPANION FARES MUST
+PRESENT ALL TICKETS AT THE SAME TIME
+--
+B.  BOOKING CODE CHANGE PERMITTED  -
+--
+WHEN A NEW FARE IS INTRODUCED INTO THE MARKET OR
+A CURRENT FARE IS REDUCED OR BECOMES AVAILABLE /
+THE TICKETED PASSENGER MAY QUALIFY FOR ONE OF
+THE ABOVE OPTIONS
+--
+ALL PROVISIONS OF THE NEW FARE MUST BE MET
+BEFORE DEPARTURE
+--
+NO CHANGE TO ORIGIN/DESTINATION/DATES/FLIGHTS
+---ONLY BOOKING CODE CHANGE IS PERMITTED---
+--
+AN ADMINISTRATIVE SERVICE FEE EQUAL TO THE CHANGE
+FEE WILL BE ASSESSED
+--
+RESIDUAL VALUE /IF ANY/ WILL BE RETURNED IN THE
+FORM OF A NON-REFUNDABLE EMD/MCO VALID FOR TRAVEL
+ON UNITED AIRLINES
+--
+C. IF MULTIPLE CHANGES ARE MADE AT THE SAME TIME
+--
+ONLY ONE SERVICE CHARGE / CHANGE FEE WILL
+APPLY PER TICKET.
+IF FARES WITH DIFFERENT SERVICE CHARGES /
+CHANGE FEES ARE COMBINED ON THE SAME TICKET
+THE HIGHEST FEE OF ONLY THE CHANGED FARE
+COMPONENTS WILL APPLY TO THE JOURNEY.
+IF CHANGED FARE COMPONENT HAS NO SERVICE
+CHARGE / CHANGE FEE AND THAT IS THE ONLY FARE
+COMPONENT CHANGED THERE WOULD BE NO SERVICE
+CHARGE / CHANGE FEE.
+---
+D. FARES COMBINED END-ON-END ON THE SAME TICKET
+--
+// FARES THAT COULD STAND ALONE IF ISSUED ON
+A SEPARATE TICKET//  MAY BE CHANGED SEPARATELY
+ACCORDING TO ASSOCIATED FARE RULE
+--
+IF CHANGED FARE COMPONENT HAS NO SERVICE
+CHARGE AND THAT IS THE ONLY FARE COMPONENT
+CHANGED THERE WOULD BE NO SERVICE CHARGE
+---
+CHANGES
+BEFORE DEPARTURE
+CHARGE USD 200.00 FOR REISSUE.
+WAIVED FOR SCHEDULE CHANGE.
+NOTE -
+--
+BEFORE DEPARTURE CHANGE OPTIONS -
+--
+BEFORE DEPARTURE OF JOURNEY AND WITHIN TICKET
+VALIDITY OF A WHOLLY UNUSED TICKET -
+TRAVEL MUST BEGIN WITHIN ONE YEAR OF THE
+ORIGINAL TICKET ISSUE DATE
+--
+CERTAIN DOMESTIC REISSUE PROVISIONS
+MAY BE OVERRIDDEN BY THOSE OF UA INTERNATIONAL
+FARES
+--
+CHARGE HIGHEST FEE OF ONLY CHANGED FARE
+COMPONENTS WITHIN JOURNEY
+--
+--
+WHEN A FARE IS INTRODUCED INTO THE MARKET //
+TICKETED FARE IS REDUCED / BOOKING CODE
+BECOMES AVAILABLE - REPRICE USING CURRENT FARES
+--
+-- ONLY BOOKING CODE CHANGE PERMITTED --
+--
+PROVIDED ALL THE FOLLOWING CONDITIONS ANDFARE
+RULES ARE MET
+--
+1.  NO CHANGE TO FARE BREAK POINTS
+2.  CHANGE IS BEFORE ORIGINAL SCHEDULED FLIGHT
+3.  SAME TRAVEL DATES / FLIGHTS
+4.  UA  FARES ARE USED
+5.  VALIDATE ADVANCE RESERVATIONS REQUIREMENTS
+6.  ADVANCE RESERVATION IS MEASURED FROM REISSUE
+DATE TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FARE DIFFERENCE IF APPLICABLE
+CHARGE FULL CHANGE FEE
+--
+QUALIFYING CURRENT DAY FARE
+WHOLLY UNUSED TICKET / CHANGE TO 1ST
+TICKETED FLIGHT COUPON
+--
+REPRICE USING --CURRENT FARES-- IN EFFECT TODAY
+--
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET-
+1.  UA FARES ARE USED
+2.  FARE BREAK POINT CHANGES ARE PERMITTED
+3.  VALIDATE ADVANCE RESERVATION REQUIREMENTS
+4.  ADVANCE RESERVATION/TKG IS MEASURED FROM
+REISSUE DATE TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FARE DIFFERENCE IF APPLICABLE
+CHARGE FULL CHANGE FEE
+--
+DOWNLINE DATE CHANGE/ FLIGHT CHANGE
+SAME BOOKING CODE / SAME FARE BASIS CODE /
+KEEP THE FARE
+--
+REPRICE USING CURRENTLY TICKETED/HISTORICAL FARE
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET
+-
+--
+1. NO CHANGE 1ST FLIGHT COUPON / NO CHANGE TO
+FARE BREAKS
+2. ALL TRAVEL REMAINS DOMESTIC
+3. SAME UA FARE USED
+4. ALL RULE AND BOOKING CODE PROVISIONS ARE MET
+INCLUDING RES/TKG
+5. VALIDATE ADVANCE RES/TICKETING FROM ORIGINAL
+TICKET DATE TO DEPARTURE OF PRICING UNIT
+--
+--
+REFUND NOT APPLICABLE
+EVEN REISSUE
+CHARGE FULL CHANGE FEE
+--
+FARE BREAK POINT CHANGE PERMITTED / OR REMAIN
+THE SAME / BOOKING CODE CHANGE
+--
+A.  CHANGED FARE COMPONENTS - USE FARE IN
+EFFECT TODAY - CURRENT - DAY TARIFF
+B.  ALL OTHER FARE COMPONENTS - USE TICKETED
+FARE.
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET
+--
+1. NO CHANGE TO FARE BREAKS UP TO THE FIRST
+CHANGED FARE COMPONENET
+2. WHEN NO INTL COUPONS REMAIN - ALL NEW TRAVEL
+MUST BE DOMESTIC
+3. UA FARES ARE USED
+4. ALL RULE AND BOOKING CODE PROVISIONS ARE MET
+5. ADV RES IS MEASURED FROM NEW TKT ISSUE DATE IF
+CURRENT FARES / FROM PREVIOUS TKT ISSUE DATE
+IF
+HISTORICAL FARES TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FULL CHANGE FEE / FARE DIFFERENCE IF
+APPLICABLE
+--
+AFTER DEPARTURE
+CHARGE USD 200.00 FOR REISSUE.
+WAIVED FOR SCHEDULE CHANGE.
+NOTE -
+--
+AFTER DEPARTURE CHANGE OPTIONS -
+--
+AFTER DEPARTURE OF JOURNEY AND WITHIN TICKET
+VALIDITY OF A PARTIALLY USED TICKET -
+TRAVEL WILL BE VALID FOR TRANSPORTATION FOR
+ONE YEAR FROM THE DATE ON WHICH TRANSPORTATION
+COMMENCES AT THE POINT OF ORIGIN AS DESIGNATED
+ON THE ORIGINAL TICKET
+--
+CERTAIN DOMESTIC REISSUE PROVISIONS MAY BE
+OVERRIDDEN BY THOSE OF UA INTERNATIONAL FARES
+--
+CHARGE HIGHEST FEE OF ONLY CHANGED FARE
+COMPONENTS WITHIN JOURNEY -
+REPRICE USING CURRENLTY TICKETED / HISTORICAL
+FARES
+--
+PROVIDED ALL OF THE FOLLOWING CONDITIONS ARE MET-
+--
+DOWNLINE DATE CHANGE / FLIGHT CHANGE
+SAME BOOKING CODE / SAME FARE BASIS CODE /
+KEEP THE FARE
+--
+1. NO CHANGE TO FARE BREAKS
+2. ALL TRAVEL REMAINS DOMESTIC
+3. FULLY FLOWN FARE NOT REPRICED TO FURTHER POINT
+4. UA FARES ARE USED
+5. ALL RULE AND BOOKING CODE PROVISIONS ARE
+INCLUDING ADVANCE RESERVATION/TICKETING
+6. ADV RES IS MEASURED FROM ORIGINAL TKT DATE TO
+DEPARTURE OF PRICING UNIT
+--
+REFUND NOT APPLICABLE
+EVEN REISSUE
+--
+CHARGE FULL CHANGE FEE
+--
+--
+FARE BREAK POINT CHANGE PERMITTED / OR REMAIN
+THE SAME / BOOKING CODE CHANGE
+--
+REPRICE AS FOLLOWS -
+--
+A.  FULLY FLOWN FARE COMPONENTS - USE FARES IN
+EFFECT WHEN TICKET WAS ISSUED
+B.  CHANGED FARE COMPONENTS - USE CURRENT
+FARES IN EFFECT TODAY
+C.  UNCHANGED FARE COMPONENTS  - USE CURRENTLY
+TICKETED FARES
+--
+1. ALL TRAVEL REMAINS DOMESTIC
+2. UA FARES ARE USED
+3. ALL RULE AND BOOKING CODE PROVISIONS ARE MET
+4. ADV RES IS MEASURED FROM NEW TKT ISSUE DATE IF
+CURRENT FARES
+5. FROM PREVIOUS TICKET ISSUE DATE IF HISTORICAL
+FARES TO DEPARTURE OF PRICING UNIT
+--
+WHEN CHANGE RESULTS IN FARE DIFFERENCE -
+FOLLOW THE 2 STEP PROCESS
+--
+RETURN RESIDUAL VALUE / IF ANY / VIA EMD/MCO
+--
+RESIDUAL VALUE MAY NOT BE USED TOWARD CHANGE FEE
+--
+COLLECT FARE DIFFERENCE IF APPLICABLE
+CHARGE FULL CHANGE FEE
+--</air:FareRuleLong>
+               <air:FareRuleLong Category="18" Type="RULE">ENDORSEMENTS
+FARE RULES TEXT
+FOR ONE WAY FARES   NOTE - RULE DOMX IN DGR APPLIES
+GENERAL RULES TEXT
+UNLESS OTHERWISE SPECIFIED
+THE ORIGINAL AND THE REISSUED TICKET MUST BE ANNOTATED -
+NONREF/0VALUAFTDPT/CHGFEE - IN THE ENDORSEMENT BOX.</air:FareRuleLong>
+               <air:FareRuleLong Category="19" Type="RULE">CHILD DISCOUNT
+GENERAL RULES TEXT
+UNLESS OTHERWISE SPECIFIED
+ACCOMPANIED CHILD 2-11 - CHARGE 100 PERCENT OF THE FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME COMPARTMENT
+BY ADULT 18 OR OLDER
+OR - 1ST INFANT UNDER 2 WITHOUT A SEAT - NO CHARGE
+TICKET DESIGNATOR - IN.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY ADULT 18 OR OLDER
+OR - INFANT UNDER 2 WITH A SEAT - CHARGE 100 PERCENT OF
+THE FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY ADULT 18 OR OLDER.
+CONTRACT BULK CHILD 2-11 - CHARGE 100 PERCENT OF THE
+FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY CONTRACT BULK ADULT 18 OR OLDER
+OR - 1ST CONTRACT BULK INFANT WITHOUT A SEAT UNDER 2 - NO
+CHARGE
+TICKET DESIGNATOR - IN.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY CONTRACT BULK ADULT 18 OR OLDER
+OR - CONTRACT BULK INFANT WITH A SEAT UNDER 2 - CHARGE
+100
+PERCENT OF THE FARE.
+TICKET DESIGNATOR - CH.
+MUST BE ACCOMPANIED ON ALL FLIGHTS IN SAME
+COMPARTMENT BY CONTRACT BULK ADULT 18 OR OLDER
+OR - UNACCOMPANIED CHILD 5-11 - CHARGE 100 PERCENT OF THE
+FARE.</air:FareRuleLong>
+               <air:FareRuleLong Category="23" Type="RULE">MISC PROVISIONS
+GENERAL RULES TEXT
+UNLESS OTHERWISE SPECIFIED
+THIS FARE MUST NOT BE USED AS THE HIGH OR THE LOW FARE
+WHEN CALCULATING A DIFFERENTIAL. THIS FARE MUST NOT BE
+USED AS THE THROUGH FARE WHEN PRICING A FARE COMPONENT
+WITH A DIFFERENTIAL.</air:FareRuleLong>
+               <air:FareRuleLong Category="31" Type="RULE">VOLUNTARY CHANGE
+DO A CATEGORY 31 SPECIFIC TEXT ENTRY TO VIEW CONTENTS
+ALSO REFERENCE 16 PENALTIES - FOR ADDITIONAL CHANGE
+INFORMATION</air:FareRuleLong>
+               <air:FareRuleLong Category="50" Type="RULE">APPLICATION RULE
+UNLESS OTHERWISE SPECIFIED
+NORMAL  / EXCURSION FARES
+APPLICATION
+CLASS OF SERVICE
+THESE FARES APPLY FOR FIRST/BUSINESS/PREMIUM ECONOMY/
+ECONOMY/OFF-PEAK ECONOMY CLASS SERVICE.
+TYPES OF TRANSPORTATION
+THIS RULE GOVERNS ONE-WAY AND ROUND-TRIP FARES.
+FARES GOVERNED BY THIS RULE CAN BE USED TO CREATE
+ONE-WAY/ROUND-TRIP/CIRCLE-TRIP/OPEN-JAW JOURNEYS.
+CAPACITY LIMITATIONS
+SEATS ARE LIMITED</air:FareRuleLong>
+            </air:FareRule>
+         </air:AirPriceResult>
+      </air:AirPriceRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

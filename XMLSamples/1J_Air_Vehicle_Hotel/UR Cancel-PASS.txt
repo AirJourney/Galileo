@@ -1,0 +1,22 @@
+UR Cancel-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <univ:UniversalRecordCancelReq TargetBranch="TP_WAB_031" AuthorizedBy="SUSIL" UniversalRecordLocatorCode="0T1JKO" Version="3">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordCancelReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR Cancel-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordCancelRsp TransactionId="9C1820C30A0764772606212B4E8F83F4" ResponseTime="1238" xmlns:universal="http://www.travelport.com/schema/universal_v50_0">
+         <universal:ProviderReservationStatus CreateDate="2020-03-02T16:31:46.400+00:00" ModifiedDate="2020-03-02T16:33:13.540+00:00" ProviderCode="1J" LocatorCode="2EHIU4" Cancelled="true">
+            <universal:CancelInfo Code="0" Type="Warning">The reservation returned by the host changed. The segment information is now updated and the pricing data has not changed.</universal:CancelInfo>
+         </universal:ProviderReservationStatus>
+      </universal:UniversalRecordCancelRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

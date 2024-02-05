@@ -1,0 +1,156 @@
+<soapenv:Envelope xmlns:soapenv="http://scheSMITHs.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ns2:GdsNextOnQueueReq QueueSessionToken="B11450DD0A07406A79D1EF54009FE2B3" ProviderCode="1P" RemoveCurrent="true" TraceId="03070221028971" TargetBranch="P7777777" xmlns:ns3="http://www.travelport.com/scheSMITH/air_v50_0" xmlns:ns4="http://www.travelport.com/scheSMITH/rail_v50_0" xmlns:ns2="http://www.travelport.com/scheSMITH/gdsQueue_v50_0" xmlns="http://www.travelport.com/scheSMITH/common_v50_0">
+			<BillingPointOfSaleInfo OriginApplication="UAPI"/>
+		</ns2:GdsNextOnQueueReq>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+<SOAP:Envelope xmlns:SOAP="http://scheSMITHs.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<gdsQueue:GdsNextOnQueueRsp xmlns:gdsQueue="http://www.travelport.com/scheSMITH/gdsQueue_v50_0" xmlns:common="http://www.travelport.com/scheSMITH/common_v50_0" TraceId="03070221028971" TransactionId="B11452DB0A0759BB82AB919F90E6A7FC" ResponseTime="3302" QueueSessionToken="B11450DD0A07406A79D1EF54009FE2B3">
+			<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/scheSMITH/common_v50_0" Code="0" Type="Info">
+				<![CDATA[Universal Record FY41Q0 successfully removed]]>
+			</common_v50_0:ResponseMessage>
+			<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/scheSMITH/common_v50_0" Code="6211" Type="Info">
+				<![CDATA[PNR in Queue Mode: 1P-OFMOG5]]>
+			</common_v50_0:ResponseMessage>
+			<universal:UniversalRecord xmlns:universal="http://www.travelport.com/scheSMITH/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/scheSMITH/common_v50_0" xmlns:vehicle_37_1="http://www.travelport.com/scheSMITH/vehicle_v37_1" xmlns:vehicle="http://www.travelport.com/scheSMITH/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/scheSMITH/hotel_v50_0" xmlns:rail="http://www.travelport.com/scheSMITH/rail_v50_0" xmlns:air="http://www.travelport.com/scheSMITH/air_v50_0" xmlns:passive="http://www.travelport.com/scheSMITH/passive_v50_0" LocatorCode="FY41Q0" Version="10" Status="Active">
+				<common_v50_0:BookingTraveler Key="MjTSy9Qc1BKA0PHSpAAAAA==" NameNumber="1.1" TravelerType="ADT" DOB="1970-12-04">
+					<common_v50_0:BookingTravelerName Prefix="MR" First="SIU KEUNG" Last="SMITH"/>
+					<common_v50_0:PhoneNumber Key="MjTSy9Qc1BKA1PHSpAAAAA==" CountryCode="86" Number="12345676543">
+						<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:Email Key="MjTSy9Qc1BKA4PHSpAAAAA==" EmailID="qyjhb2@163.com">
+						<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKAZHUSpAAAAA==" Status="HK" Type="****" FreeText="1/P/**/K07352761/**/04DEC70/*/04MAY29/SMITH/SIU KEUNG" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKAaHUSpAAAAA==" Status="HK" Type="****" FreeText="*/K07352761/**/04DEC70/M" Carrier="YY" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKA3PHSpAAAAA==" Status="HK" Type="****" FreeText="1/15989069797" Carrier="YY" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKA2PHSpAAAAA==" Status="HK" Type="****" FreeText="1/P/**/K07352761/**/04DEC70/*/04MAY29/SMITH/SIU KEUNG" Carrier="YY" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="YFAOy9BAAA/BeCopuAAAAA==" SegmentRef="MjTSy9Qc1BKAxPHSpAAAAA==" Status="HK" Type="****" FreeText="1769481085384C1" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="YFAOy9BAAA/BgCopuAAAAA==" SegmentRef="MjTSy9Qc1BKAzPHSpAAAAA==" Status="HK" Type="****" FreeText="1769481085384C2" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="k39XsCBAAA/BqMRDPCAAAA==" SegmentRef="MjTSy9Qc1BKAzPHSpAAAAA==" Status="UN" Type="****" FreeText="1769481085384C2" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:NameRemark Key="MjTSy9Qc1BKAbHUSpAAAAA==">
+						<common_v50_0:RemarkData>04DEC70</common_v50_0:RemarkData>
+						<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					</common_v50_0:NameRemark>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:BookingTraveler Key="MjTSy9Qc1BKA5PHSpAAAAA==" NameNumber="2.1" TravelerType="ADT" DOB="1977-01-01">
+					<common_v50_0:BookingTravelerName Prefix="MS" First="YUK MEI" Last="SUE"/>
+					<common_v50_0:PhoneNumber Key="MjTSy9Qc1BKA6PHSpAAAAA==" CountryCode="86" Number="12345676543">
+						<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					</common_v50_0:PhoneNumber>
+					<common_v50_0:Email Key="MjTSy9Qc1BKA9PHSpAAAAA==" EmailID="qyjhb2@163.com">
+						<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					</common_v50_0:Email>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKAcHUSpAAAAA==" Status="HK" Type="****" FreeText="1/P/**/H20154046/**/01JAN77/*/27JUL29/SUE/YUK MEI" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKAdHUSpAAAAA==" Status="HK" Type="****" FreeText="*/H20154046/**/01JAN77/F" Carrier="YY" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKA8PHSpAAAAA==" Status="HK" Type="****" FreeText="1/15989069797" Carrier="YY" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="MjTSy9Qc1BKA7PHSpAAAAA==" Status="HK" Type="****" FreeText="1/P/**/H20154046/**/01JAN77/*/27JUL29/SUE/YUK MEI" Carrier="YY" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="YFAOy9BAAA/BfCopuAAAAA==" SegmentRef="MjTSy9Qc1BKAxPHSpAAAAA==" Status="HK" Type="****" FreeText="1769481085385C1" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="YFAOy9BAAA/BhCopuAAAAA==" SegmentRef="MjTSy9Qc1BKAzPHSpAAAAA==" Status="HK" Type="****" FreeText="1769481085385C2" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="T/kywCkJ0BKAGJu4CAAAAA==" Status="HK" Type="****" FreeText="1/R/HKG" Carrier="YY" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:SSR Key="k39XsCBAAA/BrMRDPCAAAA==" SegmentRef="MjTSy9Qc1BKAzPHSpAAAAA==" Status="UN" Type="****" FreeText="1769481085385C2" Carrier="EK" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<common_v50_0:NameRemark Key="MjTSy9Qc1BKAeHUSpAAAAA==">
+						<common_v50_0:RemarkData>01JAN77</common_v50_0:RemarkData>
+						<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					</common_v50_0:NameRemark>
+				</common_v50_0:BookingTraveler>
+				<common_v50_0:ActionStatus Key="MjTSy9Qc1BKAfHUSpAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==" ProviderCode="1P">
+					<common_v50_0:Remark>05JAN 0839  1P/PCC0/RS DOCUMENTATION COMPLETE</common_v50_0:Remark>
+				</common_v50_0:ActionStatus>
+				<universal:ProviderReservationInfo Key="MjTSy9Qc1BKAYHUSpAAAAA==" ProviderCode="1P" LocatorCode="OFMOG5" CreateDate="2020-01-05T00:38:09.831+00:00" ModifiedDate="2020-03-06T18:21:07.271+00:00" HostCreateDate="2020-01-05" HostCreateTime="00:38:00.000+00:00" InQueueMode="true" OwningPCC="6E4" AgentOverride="RS" TicketingModifiersRef="8bHOy9BAAA/Bba/GuAAAAA==">
+					<universal:ProviderReservationDetails ProviderReservationDetail="false" CustomCheck="false" ProviderProfile="false" DivideDetails="false" EnhancedItinModifiers="true" IntegratedContent="false" Cruise="false" RailSegment="false"/>
+				</universal:ProviderReservationInfo>
+				<air:AirReservation xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" LocatorCode="UTHHAX" CreateDate="2020-01-05T00:38:09.701+00:00" ModifiedDate="2020-03-06T18:21:07.271+00:00">
+					<common_v50_0:SupplierLocator SupplierCode="EK" SupplierLocatorCode="FE8XWW" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==">
+						<common_v50_0:SegmentRef Key="MjTSy9Qc1BKAxPHSpAAAAA=="/>
+						<common_v50_0:SegmentRef Key="MjTSy9Qc1BKAzPHSpAAAAA=="/>
+					</common_v50_0:SupplierLocator>
+					<air:DocumentInfo>
+						<air:TicketInfo Number="1769481085384" CountryCode="HK" BulkTicket="true" Status="N" BookingTravelerRef="MjTSy9Qc1BKA0PHSpAAAAA==" AirPricingInfoRef="VcCNy9BAAA/BTQjNvAAAAA==">
+							<common_v50_0:Name Prefix="MR" First="SIU KEUNG" Last="SMITH"/>
+						</air:TicketInfo>
+						<air:TicketInfo Number="1769481085385" CountryCode="HK" BulkTicket="true" Status="N" BookingTravelerRef="MjTSy9Qc1BKA5PHSpAAAAA==" AirPricingInfoRef="VcCNy9BAAA/BTQjNvAAAAA==">
+							<common_v50_0:Name Prefix="MS" First="YUK MEI" Last="SUE"/>
+						</air:TicketInfo>
+					</air:DocumentInfo>
+					<common_v50_0:BookingTravelerRef Key="MjTSy9Qc1BKA0PHSpAAAAA=="/>
+					<common_v50_0:BookingTravelerRef Key="MjTSy9Qc1BKA5PHSpAAAAA=="/>
+					<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+					<air:AirSegment Key="MjTSy9Qc1BKAxPHSpAAAAA==" Group="0" Carrier="EK" CabinClass="Economy" FlightNumber="385" ProviderCode="1P" Origin="HKG" Destination="BKK" DepartureTime="2020-03-12T21:00:00.000+08:00" ArrivalTime="2020-03-12T23:15:00.000+07:00" TravelTime="195" Distance="1049" ClassOfService="L" ETicketability="Yes" Equipment="388" Status="UN" ChangeOfPlane="false" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false"/>
+					<air:AirSegment Key="MjTSy9Qc1BKAzPHSpAAAAA==" Group="1" Carrier="EK" CabinClass="Economy" FlightNumber="384" ProviderCode="1P" Origin="BKK" Destination="HKG" DepartureTime="2020-03-18T13:45:00.000+07:00" ArrivalTime="2020-03-18T17:40:00.000+08:00" TravelTime="175" Distance="1049" ClassOfService="L" ETicketability="Yes" Equipment="388" Status="UN" ChangeOfPlane="false" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==" TravelOrder="2" ProviderSegmentOrder="2" OptionalServicesIndicator="false"/>
+					<air:AirPricingInfo Key="VcCNy9BAAA/BTQjNvAAAAA==" TotalPrice="HKD1410" BasePrice="HKD710" ApproximateTotalPrice="HKD1410" ApproximateBasePrice="HKD710" Taxes="HKD700" LatestTicketingTime="2020-01-08T23:59:00.000+08:00" PricingMethod="Ticketed" PlatingCarrier="EK" ProviderCode="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==" AirPricingInfoGroup="1" PricingType="TicketRecord" FareCalculationInd="6">
+						<air:FareInfo Key="k46Ky9BAAA/B4darxAAAAA==" FareBasis="LLX9PHK2" PassengerTypeCode="ADT" Origin="HKG" Destination="BKK" EffectiveDate="2020-01-05T00:00:00.000+08:00" TravelDate="2020-03-12" DepartureDate="2020-03-12" Amount="NUC45.34" PrivateFare="PrivateFare" NotValidBefore="2020-03-12" NotValidAfter="2020-03-12">
+							<air:BaggageAllowance>
+								<air:MaxWeight Value="25" Unit="Kilograms"/>
+							</air:BaggageAllowance>
+						</air:FareInfo>
+						<air:FareInfo Key="k46Ky9BAAA/B5darxAAAAA==" FareBasis="LLX9PHK2" PassengerTypeCode="ADT" Origin="BKK" Destination="HKG" EffectiveDate="2020-01-05T00:00:00.000+07:00" TravelDate="2020-03-18" DepartureDate="2020-03-12" Amount="NUC45.34" PrivateFare="PrivateFare" NotValidBefore="2020-03-18" NotValidAfter="2020-03-18">
+							<air:BaggageAllowance>
+								<air:MaxWeight Value="25" Unit="Kilograms"/>
+							</air:BaggageAllowance>
+						</air:FareInfo>
+						<air:BookingInfo BookingCode="L" FareInfoRef="k46Ky9BAAA/B4darxAAAAA==" SegmentRef="MjTSy9Qc1BKAxPHSpAAAAA=="/>
+						<air:BookingInfo BookingCode="L" FareInfoRef="k46Ky9BAAA/B5darxAAAAA==" SegmentRef="MjTSy9Qc1BKAzPHSpAAAAA=="/>
+						<air:TaxInfo Category="HK" Amount="HKD120" Key="k46Ky9BAAA/B6darxAAAAA=="/>
+						<air:TaxInfo Category="G3" Amount="HKD90" Key="k46Ky9BAAA/B7darxAAAAA=="/>
+						<air:TaxInfo Category="I5" Amount="HKD50" Key="k46Ky9BAAA/B8darxAAAAA=="/>
+						<air:TaxInfo Category="E7" Amount="HKD18" Key="k46Ky9BAAA/B9darxAAAAA=="/>
+						<air:TaxInfo Category="G8" Amount="HKD8" Key="k46Ky9BAAA/B+darxAAAAA=="/>
+						<air:TaxInfo Category="TS" Amount="HKD182" Key="k46Ky9BAAA/B/darxAAAAA=="/>
+						<air:TaxInfo Category="YQ" Amount="HKD232" Key="k46Ky9BAAA/BAearxAAAAA=="/>
+						<air:FareCalc>ADT HKG EK BKK45.34EK HKG45.34NUC90.68END ROE7.829515 EK</air:FareCalc>
+						<air:PassengerType Code="ADT" BookingTravelerRef="MjTSy9Qc1BKA0PHSpAAAAA=="/>
+						<air:PassengerType Code="ADT" BookingTravelerRef="MjTSy9Qc1BKA5PHSpAAAAA=="/>
+						<common_v50_0:BookingTravelerRef Key="MjTSy9Qc1BKA0PHSpAAAAA=="/>
+						<common_v50_0:BookingTravelerRef Key="MjTSy9Qc1BKA5PHSpAAAAA=="/>
+						<air:AirPricingModifiers CurrencyType="HKD" ProhibitAdvancePurchaseFares="false" ProhibitNonRefundableFares="false" ProhibitRestrictedFares="false" FaresIndicator="PrivateFaresOnly" ProhibitMaxStayFares="false" ProhibitMinStayFares="false" AccountCodeFaresOnly="false"/>
+						<air:ActionDetails PseudoCityCode="PCC0" AgentSine="RS" EventDate="2020-01-05" EventTime="00:39:00.000+00:00" Text="4P*PADT|FSR.SR|EHKD|CEK|TR|BO"/>
+					</air:AirPricingInfo>
+					<air:TicketingModifiers Key="8bHOy9BAAA/Bba/GuAAAAA==" FreeText="|*IX|DR|RL|TC|FT|SI-" DocumentInstructionNumber="*">
+						<air:DocumentOptions>
+							<air:OverrideOption>PrintDirectAccessRecordLocator</air:OverrideOption>
+							<air:OverrideOption>PrintProviderReservationRecordLocator</air:OverrideOption>
+							<air:OverrideOption>PrintTerminalCodes</air:OverrideOption>
+							<air:OverrideOption>PrintFrequentTravelerNumber</air:OverrideOption>
+							<air:OverrideOption>SuppressInvoiceNumberPrinting</air:OverrideOption>
+							<air:OverrideOption>PrintItineraryInvoicePerTraveler</air:OverrideOption>
+						</air:DocumentOptions>
+					</air:TicketingModifiers>
+				</air:AirReservation>
+				<common_v50_0:GeneralRemark Key="YFAOy9BAAA/BcVnpuAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==">
+					<common_v50_0:RemarkData>DN-/T1769481085384-001.01|S01</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="YFAOy9BAAA/BdVnpuAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==">
+					<common_v50_0:RemarkData>DN-/T1769481085384-001.01|S02</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="YFAOy9BAAA/BeVnpuAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==">
+					<common_v50_0:RemarkData>DN-/T1769481085385-002.01|S01</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:GeneralRemark Key="YFAOy9BAAA/BfVnpuAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA==">
+					<common_v50_0:RemarkData>DN-/T1769481085385-002.01|S02</common_v50_0:RemarkData>
+				</common_v50_0:GeneralRemark>
+				<common_v50_0:AgencyInfo>
+					<common_v50_0:AgentAction ActionType="Created" AgentCode="uAPI4910977962-fb02980a" BranchCode="P7777777" AgencyCode="S9TRAVEL" EventTime="2020-01-05T00:38:08.709+00:00"/>
+					<common_v50_0:AgentAction ActionType="Modified" AgentCode="uAPI4910977962-fb02980a" BranchCode="P7777777" AgencyCode="S9TRAVEL" EventTime="2020-03-06T18:21:07.271+00:00"/>
+					<common_v50_0:AgentAction ActionType="Ticketed" AgentCode="UAPI4148021271-CB277887" BranchCode="P7878787" AgencyCode="S0TRAVEL" EventTime="2020-01-05T00:39:54.893+00:00"/>
+				</common_v50_0:AgencyInfo>
+				<common_v50_0:SSR Key="fc7Py9hB0BKAfd76rAAAAA==" Type="****" FreeText="PLEASE ADV CUSTOMER AND REFER EMIRATES.COM FOR" Carrier="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				<common_v50_0:SSR Key="fc7Py9hB0BKAgd76rAAAAA==" Type="****" FreeText="PRE SEATING FEES AND/OR FREE BAGGAGE ALLOWANCE" Carrier="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				<common_v50_0:SSR Key="I2iMy9BAAA/B/6sEwAAAAA==" Type="****" FreeText="/ADTKT BY 04FEB 0938 HKG LT    " Carrier="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				<common_v50_0:SSR Key="T/kywCkJ0BKAFFu4CAAAAA==" Type="****" FreeText="1EK0384L18MARBKKHKG.FLIGHT CANCELLED/REBOOK" Carrier="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				<common_v50_0:SSR Key="T/kywCkJ0BKADHu4CAAAAA==" Type="****" FreeText="ALTERNATE FLIGHTS" Carrier="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				<common_v50_0:SSR Key="k39XsCBAAA/BoMRDPCAAAA==" Type="****" FreeText="1EK0385L12MARHKGBKK.FLIGHT CANCELLED/REBOOK" Carrier="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				<common_v50_0:SSR Key="k39XsCBAAA/BpMRDPCAAAA==" Type="****" FreeText="ALTERNATE FLIGHTS" Carrier="1P" ProviderReservationInfoRef="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				<common_v50_0:FormOfPayment Key="K9gQy9oB0BKAFLXUrAAAAA==" Type="MiscFormOfPayment" Reusable="false" ProfileKey="6vtN+kR6RcOZMNIPENpQsQ==">
+					<common_v50_0:MiscFormOfPayment Text="INVAGT" Category="Cash"/>
+					<common_v50_0:ProviderReservationInfoRef Key="MjTSy9Qc1BKAYHUSpAAAAA=="/>
+				</common_v50_0:FormOfPayment>
+			</universal:UniversalRecord>
+		</gdsQueue:GdsNextOnQueueRsp>
+	</SOAP:Body>
+</SOAP:Envelope>

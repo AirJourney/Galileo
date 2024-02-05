@@ -1,0 +1,60 @@
+HotelRetrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelRetrieveReq RetrieveProviderReservationDetails="true" AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" TraceId="PP_1V_0329" ProviderCode="1V" ProviderLocatorCode="RVNV5A" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </hot:HotelRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelRetrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelRetrieveRsp TraceId="PP_1V_0329" TransactionId="9DD409200A07643B096D7BC3B2CCA764" ResponseTime="208" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:HotelReservation Status="HK" BookingConfirmation="87304753" LocatorCode="0098SDLV" CreateDate="2020-03-03T00:37:47.860+00:00" ModifiedDate="2020-03-03T00:37:48.223+00:00" ProviderReservationInfoRef="sQTWMC3R2BKAO23FCAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="TuJJbrVu4hG1/9LlYIhwmw=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:BookingTravelerRef Key="TuJJbrVu4hG1/9LlYIhwmw=="/>
+            </common_v50_0:ReservationName>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="14645" HotelLocation="BOM" Name="Itc Grand Central  Mumbai">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKAR ROA</hotel:Address>
+                  <hotel:Address>MUMBAI  400012</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Hotel" Number="91-22-24101010"/>
+               <common_v50_0:PhoneNumber Type="Fax" Number="91-22-24101111"/>
+            </hotel:HotelProperty>
+            <hotel:HotelRateDetail RatePlanType="APND00" Base="INR13050.00" Total="INR46197.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Executive Club, Guest Room, 1 King Or</hotel:Text>
+                  <hotel:Text>Twin/single Bed S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Prepay In Full, Non-refundable, No Changes,</hotel:Text>
+               </hotel:RoomRateDescription>
+            </hotel:HotelRateDetail>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-04-16</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-04-19</hotel:CheckoutDate>
+            </hotel:HotelStay>
+            <common_v50_0:Guarantee Type="Deposit" Key="PDz8y7xu4hGfaM/wYIhwmw==" Reusable="true">
+               <common_v50_0:CreditCard Type="AX" Number="***********0000" ExpDate="2020-09"/>
+            </common_v50_0:Guarantee>
+            <common_v50_0:BookingSource Type="IataNumber" Code="06512376"/>
+            <hotel:GuestInformation NumberOfRooms="1">
+               <hotel:NumberOfAdults>2</hotel:NumberOfAdults>
+            </hotel:GuestInformation>
+            <hotel:AssociatedRemark Key="sQTWMC3R2BKAP23FCAAAAA==" ProviderReservationInfoRef="sQTWMC3R2BKAO23FCAAAAA==">
+               <common_v50_0:RemarkData>LC14645ARR16APR CXL:PERMITTED UP TO 01 DAYS AFTER BOOKING</common_v50_0:RemarkData>
+            </hotel:AssociatedRemark>
+            <common_v50_0:SellMessage>APPROX TOTAL WITH ALL KNOWN TAXES/FEES</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>CXL:PERMITTED UP TO 01 DAYS AFTER BOOKING</common_v50_0:SellMessage>
+            <common_v50_0:SellMessage>ADVANCE PURCHASE/NON-REFUNDABLE RATE- SEE RATE RULES *</common_v50_0:SellMessage>
+            <hotel:HotelCommission>Y</hotel:HotelCommission>
+         </hotel:HotelReservation>
+      </hotel:HotelRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

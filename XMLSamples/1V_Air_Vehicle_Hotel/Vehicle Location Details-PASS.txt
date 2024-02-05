@@ -1,0 +1,75 @@
+Vehicle Location Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <veh:VehicleLocationDetailReq TargetBranch="TP_1V_SOA" AuthorizedBy="SUsil" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:VehicleDateLocation PickupDateTime="2020-04-16T10:00:00" PickupLocation="ATL" ReturnDateTime="2020-04-19T10:00:00"/>
+      </veh:VehicleLocationDetailReq>
+   </soap:Body>
+</soap:Envelope>
+
+Vehicle Location Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationDetailRsp TransactionId="9DD3A9420A0764772606212B81188E2A" ResponseTime="99" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VendorInfo Code="SX"/>
+         <vehicle:LocationInfo Name="HARTSFIELD JACKSON INTL ARPT" CounterLocation="TERMINAL">
+            <common_v50_0:LocationAddress>
+               <common_v50_0:Street>ATLANTA HARTSFIELD INT AP</common_v50_0:Street>
+               <common_v50_0:City>HARTSFIELD JACKSON INTL ARPT</common_v50_0:City>
+            </common_v50_0:LocationAddress>
+            <common_v50_0:PhoneNumber Type="Business" Number="001 4046984787"/>
+            <vehicle:OperationTime>MON-SUN 0001-2359</vehicle:OperationTime>
+         </vehicle:LocationInfo>
+         <vehicle:VehiclePolicy>
+            <vehicle:VehicleDisclaimer Type="Vehicles" Description="CAR/VEHICLE TYPES" SubType=""/>
+            <vehicle:VehicleDetail Code="MCAR" PassengerCount="2" NumberOfDoors="2" Class="Mini" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="SMART FORTWO" AcrissVehicleCode="MCAR"/>
+            <vehicle:VehicleDetail Code="MVAR" PassengerCount="7" NumberOfDoors="4" Class="Mini" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ METRIS" AcrissVehicleCode="MVAR"/>
+            <vehicle:VehicleDetail Code="ECAR" PassengerCount="5" NumberOfDoors="4" Class="Economy" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="KIA RIO" AcrissVehicleCode="ECAR"/>
+            <vehicle:VehicleDetail Code="CCAR" PassengerCount="4" NumberOfDoors="4" Class="Compact" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA YARIS IA" AcrissVehicleCode="CCAR"/>
+            <vehicle:VehicleDetail Code="CTAR" PassengerCount="4" NumberOfDoors="2" Class="Compact" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="VW BEETLE CONVERTIBLE" AcrissVehicleCode="CTAR"/>
+            <vehicle:VehicleDetail Code="CFAR" PassengerCount="4" NumberOfDoors="4" Class="Compact" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="JEEP RENEGATE" AcrissVehicleCode="CFAR"/>
+            <vehicle:VehicleDetail Code="ICAR" PassengerCount="5" NumberOfDoors="4" Class="Intermediate" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET CRUZE" AcrissVehicleCode="ICAR"/>
+            <vehicle:VehicleDetail Code="ITAR" PassengerCount="4" NumberOfDoors="2" Class="Intermediate" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="BUICK CASCADA CONVERTIBLE" AcrissVehicleCode="ITAR"/>
+            <vehicle:VehicleDetail Code="IFAR" PassengerCount="5" NumberOfDoors="4" Class="Intermediate" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="KIA SPORTAGE" AcrissVehicleCode="IFAR"/>
+            <vehicle:VehicleDetail Code="SCAR" PassengerCount="5" NumberOfDoors="4" Class="Standard" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA COROLLA" AcrissVehicleCode="SCAR"/>
+            <vehicle:VehicleDetail Code="STAR" PassengerCount="4" NumberOfDoors="2" Class="Standard" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="FORD MUSTANG CONVERTIBLE" AcrissVehicleCode="STAR"/>
+            <vehicle:VehicleDetail Code="SFAR" PassengerCount="5" NumberOfDoors="4" Class="Standard" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA 4RUNNER" AcrissVehicleCode="SFAR"/>
+            <vehicle:VehicleDetail Code="SPAR" PassengerCount="5" NumberOfDoors="4" Class="Standard" Category="RegularCabPickup" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA TACOMA" AcrissVehicleCode="SPAR"/>
+            <vehicle:VehicleDetail Code="FCAR" PassengerCount="5" NumberOfDoors="4" Class="Fullsize" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET MALIBU" AcrissVehicleCode="FCAR"/>
+            <vehicle:VehicleDetail Code="FVAR" PassengerCount="12" NumberOfDoors="4" Class="Fullsize" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET EXPRESS" AcrissVehicleCode="FVAR"/>
+            <vehicle:VehicleDetail Code="FFAR" PassengerCount="7" NumberOfDoors="4" Class="Fullsize" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="GMC YUKON" AcrissVehicleCode="FFAR"/>
+            <vehicle:VehicleDetail Code="PCAR" PassengerCount="5" NumberOfDoors="4" Class="Premium" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ CLA" AcrissVehicleCode="PCAR"/>
+            <vehicle:VehicleDetail Code="PVAR" PassengerCount="15" NumberOfDoors="4" Class="Premium" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET EXP 15 PSGR" AcrissVehicleCode="PVAR"/>
+            <vehicle:VehicleDetail Code="PFAR" PassengerCount="5" NumberOfDoors="4" Class="Premium" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ GLA" AcrissVehicleCode="PFAR"/>
+            <vehicle:VehicleDetail Code="PPAR" PassengerCount="5" NumberOfDoors="4" Class="Premium" Category="RegularCabPickup" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET SILVERADO CREW CAB" AcrissVehicleCode="PPAR"/>
+            <vehicle:VehicleDetail Code="LCAR" PassengerCount="5" NumberOfDoors="4" Class="Luxury" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ C-CLASS" AcrissVehicleCode="LCAR"/>
+            <vehicle:VehicleDetail Code="LCAV" PassengerCount="5" NumberOfDoors="4" Class="Luxury" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CADILLAC ATS" FuelType="Petrol" AcrissVehicleCode="LCAV"/>
+            <vehicle:VehicleDetail Code="LDAV" PassengerCount="5" NumberOfDoors="4" Class="Luxury" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CADILLAC ATS-V" FuelType="Petrol" AcrissVehicleCode="LDAV"/>
+            <vehicle:VehicleDetail Code="LTAR" PassengerCount="4" NumberOfDoors="2" Class="Luxury" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 4 SERIES CONVERTIBLE" AcrissVehicleCode="LTAR"/>
+            <vehicle:VehicleDetail Code="LFAR" PassengerCount="5" NumberOfDoors="4" Class="Luxury" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ GLC" AcrissVehicleCode="LFAR"/>
+            <vehicle:VehicleDetail Code="LFAV" PassengerCount="5" NumberOfDoors="4" Class="Luxury" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="CADILLAC XT5" FuelType="Petrol" AcrissVehicleCode="LFAV"/>
+            <vehicle:VehicleDetail Code="XCAR" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ E-CLASS" AcrissVehicleCode="XCAR"/>
+            <vehicle:VehicleDetail Code="XCAV" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CADILLAC CTS" FuelType="Petrol" AcrissVehicleCode="XCAV"/>
+            <vehicle:VehicleDetail Code="XDAR" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="MERCEDES-BENZ S-CLASS" AcrissVehicleCode="XDAR"/>
+            <vehicle:VehicleDetail Code="XDAV" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CADILLAC CTS-V" FuelType="Petrol" AcrissVehicleCode="XDAV"/>
+            <vehicle:VehicleDetail Code="XSAJ" PassengerCount="2" NumberOfDoors="2" Class="Special" Category="Sport" AirConditioning="false" Transmission="Automatic" MakeModel="JAGUAR F-TYPE" AcrissVehicleCode="XSAJ"/>
+            <vehicle:VehicleDetail Code="XTAN" PassengerCount="4" NumberOfDoors="2" Class="Special" Category="Convertible" AirConditioning="false" Transmission="Automatic" MakeModel="FORD MUSTANG GT CONVERTIBLE" AcrissVehicleCode="XTAN"/>
+            <vehicle:VehicleDetail Code="XTAR" PassengerCount="4" NumberOfDoors="2" Class="Special" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="BMW 6 SERIES CONVERTIBLE" AcrissVehicleCode="XTAR"/>
+            <vehicle:VehicleDetail Code="XTAJ" PassengerCount="2" NumberOfDoors="2" Class="Special" Category="Convertible" AirConditioning="false" Transmission="Automatic" MakeModel="JAGUAR F-TYPE CONVERTIBLE" AcrissVehicleCode="XTAJ"/>
+            <vehicle:VehicleDetail Code="XFAN" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="SUV" AirConditioning="false" Transmission="Automatic" MakeModel="MERCEDES BENZ G-CLASS" AcrissVehicleCode="XFAN"/>
+            <vehicle:VehicleDetail Code="XFAR" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="RANGE ROVER VELAR" AcrissVehicleCode="XFAR"/>
+            <vehicle:VehicleDetail Code="XFAZ" PassengerCount="7" NumberOfDoors="4" Class="Special" Category="SUV" AirConditioning="false" Transmission="Automatic" MakeModel="MERCEDES-BENZ GLS" FuelType="Petrol" AcrissVehicleCode="XFAZ"/>
+            <vehicle:VehicleDetail Code="XFAV" PassengerCount="7" NumberOfDoors="4" Class="Special" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="CADILLAC ESCALADE" FuelType="Petrol" AcrissVehicleCode="XFAV"/>
+            <vehicle:VehicleDetail Code="XJAN" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="AllTerrain" AirConditioning="false" Transmission="Automatic" MakeModel="RANGE ROVER SPORT" AcrissVehicleCode="XJAN"/>
+            <vehicle:VehicleDetail Code="XZAN" PassengerCount="5" NumberOfDoors="4" Class="Special" Category="SpecialOffer" AirConditioning="false" Transmission="Automatic" MakeModel="RANGE ROVER" AcrissVehicleCode="XZAN"/>
+            <vehicle:VehicleDetail Code="GFAR" PassengerCount="7" NumberOfDoors="4" Class="FullsizeElite" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET SUBURBAN" AcrissVehicleCode="GFAR"/>
+            <vehicle:VehicleDetail Code="RFAR" PassengerCount="7" NumberOfDoors="4" Class="StandardElite" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="GMC ACADIA" AcrissVehicleCode="RFAR"/>
+            <vehicle:VehicleDetail Code="JFAR" PassengerCount="5" NumberOfDoors="4" Class="IntermediateElite" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="JEEP WRANGLER" AcrissVehicleCode="JFAR"/>
+         </vehicle:VehiclePolicy>
+      </vehicle:VehicleLocationDetailRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

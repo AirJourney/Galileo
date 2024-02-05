@@ -1,0 +1,47 @@
+Terminal Command Avail-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ter:TerminalReq AuthorizedBy="PRODSMOKETEST" TargetBranch="TP_WAB_031" xmlns:ter="http://www.travelport.com/schema/terminal_v33_0" xmlns:com="http://www.travelport.com/schema/common_v33_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:HostToken Host="1J" Key="1T">7EF87A7D-49E8-4A65-5065-A170E9979023</com:HostToken>
+         <ter:TerminalCommand>ADENATL</ter:TerminalCommand>
+      </ter:TerminalReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Terminal Command Avail-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <terminal:TerminalRsp TransactionId="9DCF8D5E0A0764785B1483FCE5733983" ResponseTime="552" xmlns:terminal="http://www.travelport.com/schema/terminal_v33_0">
+         <terminal:TerminalCommandResponse>
+            <terminal:Text>03MAR-TU-0933 DEN ATL  MT ET</terminal:Text>
+            <terminal:Text>DEN ALTERNATE APA BJC/ATL ALTERNATE FTY PDK</terminal:Text>
+            <terminal:Text>1*A#UA 307 J3 C2 D0 Z0 P0 Y9 B9 M9 DENATL 1010 1504    N 319 0E</terminal:Text>
+            <terminal:Text>E9 U9 H9 Q9 V9 W9 S8 T0 L0 K0 G0 N9</terminal:Text>
+            <terminal:Text>2  #VS5082 J9 C9 D8 I5 Z3 W1 S1 H1 DENATL 1040 1526   *  739 0E</terminal:Text>
+            <terminal:Text>K1 Y9 B9 R9 L9 U9 M9 E9 Q9 X0 N0 O0 V1 T9</terminal:Text>
+            <terminal:Text>VS5082 INTL ONL CNX/STP TFC</terminal:Text>
+            <terminal:Text>3*S#DL1816 J9 C9 D8 I5 Z3 W1 S1 Y9 DENATL 1040 1526    9 739 0E</terminal:Text>
+            <terminal:Text>B9 M9 H9 Q9 K9 L9 U9 T0 X0 V0 E9</terminal:Text>
+            <terminal:Text>4*A#UA3444 J9 C9 D7 Z6 P6 Y9 B9 M9 DENATL 0758 1259   *N E7W 0E</terminal:Text>
+            <terminal:Text>E9 U9 H9 Q9 V9 W9 S4 T0 L0 K0 G0 N9</terminal:Text>
+            <terminal:Text>5*S#DL 920 J9 C9 D9 I9 Z7 W9 S0 Y9 DENATL 0705 1159    9 739 0E</terminal:Text>
+            <terminal:Text>B9 M9 H9 Q9 K9 L9 U9 T9 X0 V0 E9</terminal:Text>
+            <terminal:Text>6*S#DL1547 J9 C9 D7 I4 Z2 W2 S2 Y9 DENATL 1219 1706    8 757 0E</terminal:Text>
+            <terminal:Text>B9 M9 H9 Q9 K9 L9 U9 T9 X0 V0 E9</terminal:Text>
+            <terminal:Text>7  #VS5078 J9 C9 D7 I4 Z2 W2 S2 H2 DENATL 1219 1706   *  757 0E</terminal:Text>
+            <terminal:Text>K2 Y9 B9 R9 L9 U9 M9 E9 Q9 X9 N0 O0 V2 T9</terminal:Text>
+            <terminal:Text>VS5078 INTL ONL CNX/STP TFC</terminal:Text>
+            <terminal:Text>8*S AR7041 J7 C7 D7 I7 O7 Y7 B7 M7 DENATL 1219 1706   *  757 0E</terminal:Text>
+            <terminal:Text>U7 K7 H7 L7 Q7 T7 E7 N7 V7 A7 R7 G7 X7 P7</terminal:Text>
+            <terminal:Text>AR7041 INTL ONL CNX/STP TFC</terminal:Text>
+            <terminal:Text>9*S#DL2608 J8 C8 D7 I6 Z4 W9 S9 Y9 DENATL 0600 1058    9 739 0E</terminal:Text>
+            <terminal:Text>B9 M9 H9 Q9 K9 L9 U9 T9 X9 V9 E9</terminal:Text>
+            <terminal:Text/>
+         </terminal:TerminalCommandResponse>
+      </terminal:TerminalRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

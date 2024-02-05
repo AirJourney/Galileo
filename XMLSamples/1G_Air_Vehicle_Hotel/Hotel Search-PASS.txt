@@ -1,0 +1,387 @@
+Hotel Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelSearchAvailabilityReq AuthorizedBy="SUSIL" TargetBranch="P7102538" TraceId="PP_1G_001" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hot:HotelSearchLocation>
+            <hot:HotelLocation Location="DEN"/>
+         </hot:HotelSearchLocation>
+         <hot:HotelSearchModifiers NumberOfAdults="2" NumberOfRooms="1" AvailableHotelsOnly="true" ReturnAmenities="false">
+<!--            <hot:PermittedChains>-->
+<!--               <hot:HotelChain Code="HY"/>-->
+<!--            </hot:PermittedChains>-->
+            <com:PermittedProviders>
+               <com:Provider Code="1G"/>
+            </com:PermittedProviders>
+         </hot:HotelSearchModifiers>
+         <hot:HotelStay>
+            <hot:CheckinDate>2020-05-01</hot:CheckinDate>
+            <hot:CheckoutDate>2020-05-16</hot:CheckoutDate>
+         </hot:HotelStay>
+      </hot:HotelSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelSearchAvailabilityRsp TraceId="PP_1G_001" TransactionId="9DCE666D0A07643B096D7BC390BB30A6" ResponseTime="9750" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:NextResultReference ProviderCode="1G">GvCe60ac0/ca8J7rRpzT9z5MphVSyCUpuPnDvrR9vlPLwMniR4vaWfezX5Pgo/m2T5HAS/BkKLQL5e75TsXfQtG9LIq3cki6DnCDubYq+QhxMlQ4lodk9A==</common_v50_0:NextResultReference>
+         <hotel:ReferencePoint State="CO">DENVER INTL ARPT</hotel:ReferencePoint>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="07320" Key="NgSNMC7Q2BKA7ErBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HY" HotelCode="07320" HotelLocation="DEN" Name="HYATT HOUSE DENVER AIRPORT" VendorLocationKey="NgSNMC7Q2BKA7ErBCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>18741 EAST 71ST AVEN</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD129.00" MinAmountRateChanged="false" MaximumAmount="USD350.33" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HY" VendorLocationID="86178" Key="NgSNMC7Q2BKA8ErBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HY" HotelCode="86178" HotelLocation="DEN" Name="HYATT PLACE DENVER AIRPORT" VendorLocationKey="NgSNMC7Q2BKA8ErBCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>16250 EAST 40TH AVEN</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD179.00" MinAmountRateChanged="false" MaximumAmount="USD229.00" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="BW" VendorLocationID="05257" Key="NgSNMC7Q2BKA9ErBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="BW" HotelCode="05257" HotelLocation="DEN" Name="BEST WESTERN PLUS DENVER INTL" VendorLocationKey="NgSNMC7Q2BKA9ErBCAAAAA==" HotelTransportation="9" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DENVER CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>2</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD103.20" MinAmountRateChanged="false" MaximumAmount="USD139.00" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="25326" Key="NgSNMC7Q2BKA+ErBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HI" HotelCode="25326" HotelLocation="DEN" Name="HOLIDAY INN AND SUITES AIRPORT" VendorLocationKey="NgSNMC7Q2BKA+ErBCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6900 TOWER ROAD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD174.42" MinAmountRateChanged="false" MaximumAmount="USD234.59" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="25337" Key="NgSNMC7Q2BKA/ErBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HI" HotelCode="25337" HotelLocation="DEN" Name="HOLIDAY INN EXP DENVER AIRPORT" VendorLocationKey="NgSNMC7Q2BKA/ErBCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6910 TOWER ROAD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>0</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD158.11" MinAmountRateChanged="false" MaximumAmount="USD191.35" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HX" VendorLocationID="78973" Key="NgSNMC7Q2BKAAFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HX" HotelCode="78973" HotelLocation="DEN" Name="HAMPTON INN DENVER INTL ARPT" VendorLocationKey="NgSNMC7Q2BKAAFrBCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6290 TOWER ROAD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="7" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD145.03" MaximumAmount="USD159.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="XV" VendorLocationID="15234" Key="NgSNMC7Q2BKABFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="XV" HotelCode="15234" HotelLocation="DEN" Name="SPRINGHILL STES ARPT MARRIOTT" VendorLocationKey="NgSNMC7Q2BKABFrBCAAAAA==" HotelTransportation="7" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>18350 EAST 68TH AVEN</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="7" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD139.00" MaximumAmount="USD139.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="WI" VendorLocationID="B2095" Key="NgSNMC7Q2BKACFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="WI" HotelCode="B2095" HotelLocation="DEN" Name="THE WESTIN DENVER INTL AIRPORT" VendorLocationKey="NgSNMC7Q2BKACFrBCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>8300 PENA BOULEVARD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="0" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>4</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD279.00" MaximumAmount="USD889.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="YZ" VendorLocationID="83392" Key="NgSNMC7Q2BKADFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="YZ" HotelCode="83392" HotelLocation="DEN" Name="STAYBRIDGE SUITES DENVER ARPT" VendorLocationKey="NgSNMC7Q2BKADFrBCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6951 TOWER ROAD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD202.60" MinAmountRateChanged="false" MaximumAmount="USD301.87" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="AL" VendorLocationID="96767" Key="NgSNMC7Q2BKAEFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="AL" HotelCode="96767" HotelLocation="DEN" Name="ALOFT DENVER ARPT GATEWAY PARK" VendorLocationKey="NgSNMC7Q2BKAEFrBCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>AURORA</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD141.55" MaximumAmount="USD294.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="CY" VendorLocationID="86902" Key="NgSNMC7Q2BKAFFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="CY" HotelCode="86902" HotelLocation="DEN" Name="COURTYARD MARRIOTT DENVER ARPT" VendorLocationKey="NgSNMC7Q2BKAFFrBCAAAAA==" HotelTransportation="7" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6901 TOWER ROAD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD189.00" MaximumAmount="USD189.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="GI" VendorLocationID="01500" Key="NgSNMC7Q2BKAGFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="GI" HotelCode="01500" HotelLocation="DEN" Name="HILTON GARDEN INN DEN AIRPORT" VendorLocationKey="NgSNMC7Q2BKAGFrBCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>16475 EAST 40TH CIRC</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD162.71" MaximumAmount="USD206.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HT" VendorLocationID="C6136" Key="NgSNMC7Q2BKAHFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HT" HotelCode="C6136" HotelLocation="DEN" Name="HOME2 SUITES DENVER INTL APT" VendorLocationKey="NgSNMC7Q2BKAHFrBCAAAAA==" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6792 TOWER ROAD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>0</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD125.56" MaximumAmount="USD144.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="MC" VendorLocationID="97336" Key="NgSNMC7Q2BKAIFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="MC" HotelCode="97336" HotelLocation="DEN" Name="DENVER AIRPORT MARRIOTT" VendorLocationKey="NgSNMC7Q2BKAIFrBCAAAAA==" HotelTransportation="7" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>AURORA CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD116.00" MaximumAmount="USD334.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="RC" VendorLocationID="78130" Key="NgSNMC7Q2BKAJFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="78130" HotelLocation="DEN" Name="RESIDENCE INN AIRPORT MARRIOTT" VendorLocationKey="NgSNMC7Q2BKAJFrBCAAAAA==" HotelTransportation="7" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>AURORA CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD149.00" MaximumAmount="USD194.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="TO" VendorLocationID="53177" Key="NgSNMC7Q2BKAKFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="TO" HotelCode="53177" HotelLocation="DEN" Name="TOWNEPLACE STES GATEW MARRIOTT" VendorLocationKey="NgSNMC7Q2BKAKFrBCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DENVER CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD119.00" MaximumAmount="USD239.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="FN" VendorLocationID="70954" Key="NgSNMC7Q2BKALFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="FN" HotelCode="70954" HotelLocation="DEN" Name="FAIRFIELD INN N STES MARRIOTT" VendorLocationKey="NgSNMC7Q2BKALFrBCAAAAA==" HotelTransportation="7" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>6851 TOWER ROAD</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD139.00" MaximumAmount="USD159.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HX" VendorLocationID="60159" Key="NgSNMC7Q2BKAMFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HX" HotelCode="60159" HotelLocation="DEN" Name="HAMPTON STS DENVER AIRPORT-GATEWAY" VendorLocationKey="NgSNMC7Q2BKAMFrBCAAAAA==" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>4310 AIRPORT WAY</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD144.30" MaximumAmount="USD180.33"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ES" VendorLocationID="52557" Key="NgSNMC7Q2BKANFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="ES" HotelCode="52557" HotelLocation="DEN" Name="EMBASSY SUITES DENVER INTL ARPT" VendorLocationKey="NgSNMC7Q2BKANFrBCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>7001 YAMPA STREET</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="6" Direction="W"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD195.18" MaximumAmount="USD296.87"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HG" VendorLocationID="79474" Key="NgSNMC7Q2BKAOFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HG" HotelCode="79474" HotelLocation="DEN" Name="HOMEWOOD STE DENVER INTL ARPT" VendorLocationKey="NgSNMC7Q2BKAOFrBCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>4210 AIRPORT WAY</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="10" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD143.04" MaximumAmount="USD231.53"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HI" VendorLocationID="30956" Key="NgSNMC7Q2BKAPFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HI" HotelCode="30956" HotelLocation="DEN" Name="HOLIDAY INN EAST STAPLETON" VendorLocationKey="NgSNMC7Q2BKAPFrBCAAAAA==" HotelTransportation="31" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>3333 QUEBEC STREET</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="16" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD144.00" MinAmountRateChanged="false" MaximumAmount="USD185.67" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="YO" VendorLocationID="99927" Key="NgSNMC7Q2BKAQFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="YO" HotelCode="99927" HotelLocation="DEN" Name="CANDLEWOOD SUITES BRIGHTON" VendorLocationKey="NgSNMC7Q2BKAQFrBCAAAAA==" ReserveRequirement="Other" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>BRIGHTON  CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="11" Direction="NW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>0</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD114.99" MinAmountRateChanged="false" MaximumAmount="USD190.32" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="HX" VendorLocationID="71674" Key="NgSNMC7Q2BKARFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="HX" HotelCode="71674" HotelLocation="DEN" Name="HAMPTON DENVER NE BRIGHTON" VendorLocationKey="NgSNMC7Q2BKARFrBCAAAAA==" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>BRIGHTON  CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="14" Direction="NW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD145.60" MaximumAmount="USD155.67"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="BW" VendorLocationID="72805" Key="NgSNMC7Q2BKASFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="BW" HotelCode="72805" HotelLocation="DEN" Name="BEST WESTERN BRIGHTON INN" VendorLocationKey="NgSNMC7Q2BKASFrBCAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>BRIGHTON CO</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="14" Direction="NW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>2</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD127.99" MinAmountRateChanged="false" MaximumAmount="USD169.99" MaxAmountRateChanged="false"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="ES" VendorLocationID="24413" Key="NgSNMC7Q2BKATFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="ES" HotelCode="24413" HotelLocation="DEN" Name="EMBASSY SUITES DENVER STAPLETON" VendorLocationKey="NgSNMC7Q2BKATFrBCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>4444 NORTH HAVANA ST</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="13" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD156.16" MaximumAmount="USD204.67"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="BR" VendorLocationID="09899" Key="NgSNMC7Q2BKAUFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="BR" HotelCode="09899" HotelLocation="DEN" Name="RENAISSANCE DENVER STAPLETON" VendorLocationKey="NgSNMC7Q2BKAUFrBCAAAAA==" HotelTransportation="7" ReserveRequirement="Guarantee" ParticipationLevel="4" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>3801 QUEBEC STREET</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="16" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD109.00" MaximumAmount="USD1329.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1G" VendorCode="DT" VendorLocationID="19001" Key="NgSNMC7Q2BKAVFrBCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="DT" HotelCode="19001" HotelLocation="DEN" Name="DOUBLETREE BY HILTON DENVER SE" VendorLocationKey="NgSNMC7Q2BKAVFrBCAAAAA==" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>13696 EAST ILIFF PLA</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:Distance Units="KM" Value="18" Direction="SW"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>3</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="USD133.44" MaximumAmount="USD209.00"/>
+         </hotel:HotelSearchResult>
+      </hotel:HotelSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

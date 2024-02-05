@@ -1,0 +1,44 @@
+Vehicle Keywords-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" KeywordList="true" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:PickupDateLocation Date="2020-03-26" Location="LHR"/>
+         <!--<com:Keyword Name="?" Number="?" Description="?"></com:Keyword>-->
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="7D9397200A076478D3ABDD5C4E248C24" ResponseTime="64" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Description="Age Requirements"/>
+         <common_v50_0:Keyword Name="ARRIV" Description="Arrival Information"/>
+         <common_v50_0:Keyword Name="CDW" Description="Collision Damage Waiver"/>
+         <common_v50_0:Keyword Name="COMMS" Description="Agency Commission"/>
+         <common_v50_0:Keyword Name="CRED" Description="Credit Card Information for Guarantees/Deposits"/>
+         <common_v50_0:Keyword Name="DROP" Description=" Drop Off Charges"/>
+         <common_v50_0:Keyword Name="EQUIP" Description="Special Equipment Requests"/>
+         <common_v50_0:Keyword Name="EXPR" Description="Express Service Availability"/>
+         <common_v50_0:Keyword Name="SPRATE" Description="Special Rates"/>
+         <common_v50_0:Keyword Name="GAS" Description="Refueling Requirements on Return"/>
+         <common_v50_0:Keyword Name="GUAR" Description="Guarantee"/>
+         <common_v50_0:Keyword Name="INS" Description="Insurance"/>
+         <common_v50_0:Keyword Name="CARS" Description="Makes Associated with Vehicle Codes"/>
+         <common_v50_0:Keyword Name="OTHER" Description="Miscellaneous"/>
+         <common_v50_0:Keyword Name="PAI" Description="Personal Accident Insurance"/>
+         <common_v50_0:Keyword Name="PKUP" Description="Pickup"/>
+         <common_v50_0:Keyword Name="PYMT" Description="Acceptable Forms of Payment"/>
+         <common_v50_0:Keyword Name="SHTTL" Description="Shuttle Service Availability"/>
+         <common_v50_0:Keyword Name="TAX" Description="State and Local Tax Information"/>
+         <common_v50_0:Keyword Name="VALID" Description="Drivers License Requirements"/>
+         <common_v50_0:Keyword Name="PHON" Description="Phone Number"/>
+         <common_v50_0:Keyword Name="HOURS" Description="Hour Information"/>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

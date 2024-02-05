@@ -1,0 +1,74 @@
+Hotel Cancel-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:HotelCancelReq AuthorizedBy="UAPITesting" TargetBranch="TP_1P_SOA" TraceId="PP_1P_001" RetrieveProviderReservationDetails="true" SupplierCode="LC" SupplierLocatorCode="" ProviderCode="1P" ProviderLocatorCode="MEH245" Version="0" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:HotelCancelReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Cancel-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:HotelCancelRsp TraceId="PP_1P_001" TransactionId="9DCF49000A0764785B1483FC06FD4FA5" ResponseTime="1269" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <universal:UniversalRecord LocatorCode="0T1ON5" Version="1" Status="Active">
+            <common_v50_0:BookingTraveler Key="TuJJbrVu4hG1/9LlYIhwmw==" NameNumber="1.1" TravelerType="ADT" VIP="true">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="Harry" Middle="J" Last="Lobo"/>
+               <common_v50_0:PhoneNumber Key="PDz3y7xu4hGfaM/wYIhwmw==" Type="Home" Location="DEN" Number="1123456789">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvLBICAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:PhoneNumber Key="PDz9y7xu4hGfaM/wYIhwmw==" Type="Mobile" Location="DEN" Number="2123456789">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvLBICAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:PhoneNumber Key="PDf1y7xu4hGfaM/wYIhwmw==" Type="Business" Location="DEN" Number="3123456789">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvLBICAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="VbtNMC8Q2BKAlLBICAAAAA==" Type="Home" EmailID="K.solomon@travelporttest.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvLBICAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:Address Key="QDz8y7xu4hDfaM/wYIhwmw==">
+                  <common_v50_0:AddressName>Home Address</common_v50_0:AddressName>
+                  <common_v50_0:Street>Street1</common_v50_0:Street>
+                  <common_v50_0:Street>NearApp</common_v50_0:Street>
+                  <common_v50_0:City>Okhalama City</common_v50_0:City>
+                  <common_v50_0:State>OK</common_v50_0:State>
+                  <common_v50_0:PostalCode>73107</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvLBICAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="VbtNMC8Q2BKArLBICAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="VbtNMC8Q2BKAvLBICAAAAA==" ProviderCode="1P">
+               <common_v50_0:Remark>00</common_v50_0:Remark>
+            </common_v50_0:ActionStatus>
+            <universal:ProviderReservationInfo Key="VbtNMC8Q2BKAvLBICAAAAA==" ProviderCode="1P" LocatorCode="MEH245" CreateDate="2020-03-03T00:32:49.460+00:00" ModifiedDate="2020-03-03T00:32:49.460+00:00" HostCreateDate="2020-03-03" HostCreateTime="00:32:00.000+00:00" OwningPCC="XUF" AgentOverride="RS">
+               <universal:ProviderReservationDisplayDetailsList>
+                  <universal:DisplayDetails ProviderReservationDetail="true">
+                     <universal:DisplayDetail Name="OwningAgencyPCC" Value="XUF"/>
+                     <universal:DisplayDetail Name="CreatingAgentSignOn" Value="RS"/>
+                     <universal:DisplayDetail Name="CreatingAgentDuty" Value="GS"/>
+                     <universal:DisplayDetail Name="PrepaidTicketAdviceIndicator" Value="N"/>
+                     <universal:DisplayDetail Name="BFBorrowed" Value="N"/>
+                     <universal:DisplayDetail Name="PNRPurgeDate" Value="20200615"/>
+                     <universal:DisplayDetail Name="OriginalReceivedFieldValue" Value="SUSIL-DIR"/>
+                  </universal:DisplayDetails>
+               </universal:ProviderReservationDisplayDetailsList>
+            </universal:ProviderReservationInfo>
+            <common_v50_0:GeneralRemark Key="VbtNMC8Q2BKAsLBICAAAAA==" Category="Advisory" ProviderReservationInfoRef="VbtNMC8Q2BKAvLBICAAAAA==">
+               <common_v50_0:RemarkData>ARC/IATA INVALID.  PLEASE VERIFY AND CORRECT OR INPUT  /BS-0000000 TO PROCESS YOUR ENTRY VIA LINK $L</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="VbtNMC8Q2BKAtLBICAAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="VbtNMC8Q2BKAvLBICAAAAA==">
+               <common_v50_0:RemarkData>THIS IS A ALPHA GENERAL REMARK</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="xs/MMC4R2BKAAYUKCAAAAA==" SupplierType="Hotel" ProviderCode="1P" ProviderReservationInfoRef="VbtNMC8Q2BKAvLBICAAAAA==" ElStat="A">
+               <common_v50_0:RemarkData>Hotel Chain: LC Check In Date: 2020-05-01 Booking Confirmation Number: 87304738 Cancel Confirmation Num: 52695262</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="UD_AGT_PP" BranchCode="TP_1P_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-03-03T00:32:47.725+00:00"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="UD_AGT_PP" BranchCode="TP_1P_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-03-03T00:32:53.683+00:00"/>
+            </common_v50_0:AgencyInfo>
+         </universal:UniversalRecord>
+      </universal:HotelCancelRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

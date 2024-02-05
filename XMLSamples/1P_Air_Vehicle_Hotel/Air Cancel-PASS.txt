@@ -1,0 +1,229 @@
+Air Cancel-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+   <soapenv:Header>
+      <univ:SupportedVersions/>
+   </soapenv:Header>
+   <soapenv:Body>
+      <univ:AirCancelReq Version="2" TargetBranch="TP_1P_SOA" AuthorizedBy="SUSIL">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirReservationLocatorCode>0T1OMS</air:AirReservationLocatorCode>
+         <!--<air:AirSegment xmlns:air="http://www.travelport.com/schema/air_v50_0" Key="zEQfulBAAA/BdsfAAAAAAA==" Group="1" Carrier="UA" FlightNumber="4565" Origin="ATL" Destination="DEN" DepartureTime="2019-05-26T16:40:00.000-04:00" ArrivalTime="2019-05-26T18:07:00.000-06:00" ETicketability="Yes" Equipment="CR7" ChangeOfPlane="false" ParticipantLevel="Airline Source" OptionalServicesIndicator="false" AvailabilitySource="P" ProviderCode="1P" ClassOfService="Y">
+  <common_v50_0:SegmentRemark xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Key="zEQfulBAAA/BesfAAAAAAA==">
+    UA  4565GOJET AIRLINES DBA UNITED EXPRESS
+  </common_v50_0:SegmentRemark>
+  <common_v50_0:SegmentRemark xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Key="zEQfulBAAA/BfsfAAAAAAA==">
+    OPERATED BY GOJET AIRLINES DBA UNITED EXPRESS
+  </common_v50_0:SegmentRemark>
+  <common_v50_0:SegmentRemark xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Key="zEQfulBAAA/BgsfAAAAAAA==">
+    MCT STATUS OVERRIDE - D/D
+  </common_v50_0:SegmentRemark>
+  <common_v50_0:SegmentRemark xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Key="zEQfulBAAA/BhsfAAAAAAA==">
+    TSA SECURED FLIGHT
+  </common_v50_0:SegmentRemark>
+  <common_v50_0:SegmentRemark xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Key="zEQfulBAAA/BisfAAAAAAA==">
+    NON-SMOKING
+  </common_v50_0:SegmentRemark>
+</air:AirSegment>
+-->
+         <air:AirSegment Key="xs/MMC4R2BKAHuKKCAAAAA==" Group="1" Carrier="UA" FlightNumber="1715" ProviderCode="1P" Origin="ORD" Destination="DEN" DepartureTime="2020-05-31T17:51:00.000-05:00" ArrivalTime="2020-05-31T19:37:00.000-06:00" ClassOfService="W" Status="HK"/>
+      </univ:AirCancelReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Cancel-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:AirCancelRsp TransactionId="9DCECEC60A07643CAB0E0A7C98D108C7" ResponseTime="2363" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Info">AirSegment Cancelled Successfully</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="3007" Type="Warning" ProviderCode="1P">The reservation returned by the host changed. The segment information is now updated and the pricing data has not changed.</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="0T1OMR" Version="3" Status="Active">
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMQ==" NameNumber="1.1" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="CARSTEN" Last="LINDELOEV"/>
+               <common_v50_0:PhoneNumber Key="NgSNMC7Q2BKASymBCAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-722-2454" Extension="22" AreaCode="222" Text="Abc-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="NgSNMC7Q2BKA4ymBCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="NgSNMC7Q2BKAbymBCAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="NgSNMC7Q2BKA4ymBCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="NgSNMC7Q2BKATymBCAAAAA==" Status="HK" Type="DOCS" FreeText="1/P/CA/@--@0356/GB/@-----@/M/01JAN14/LINDELOEV/CARSTENGJELLERUPMR" Carrier="UA" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" ElStat="M"/>
+               <common_v50_0:SSR Key="NgSNMC7Q2BKA5ymBCAAAAA==" Status="HK" Type="PSPT" FreeText="1/@--@0356/CA/@-----@/M" Carrier="UA" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" ElStat="M"/>
+               <common_v50_0:Address Key="NgSNMC7Q2BKAcymBCAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="NgSNMC7Q2BKA4ymBCAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMg==" NameNumber="2.1" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="john" Last="Long"/>
+               <common_v50_0:PhoneNumber Key="NgSNMC7Q2BKAWymBCAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-702-2454" Extension="22" AreaCode="222" Text="Abd-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="NgSNMC7Q2BKA4ymBCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="NgSNMC7Q2BKAdymBCAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="NgSNMC7Q2BKA4ymBCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="NgSNMC7Q2BKAXymBCAAAAA==" Status="HK" Type="DOCS" FreeText="1/P/CA/@--@0356/GB/@-----@/M/01JAN14/LONG/JHONJELLERUPMR" Carrier="UA" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" ElStat="M"/>
+               <common_v50_0:SSR Key="NgSNMC7Q2BKABzmBCAAAAA==" Status="HK" Type="PSPT" FreeText="1/@--@0356/CA/@-----@/M" Carrier="UA" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" ElStat="M"/>
+               <common_v50_0:Address Key="NgSNMC7Q2BKAeymBCAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="NgSNMC7Q2BKAiymBCAAAAA==" Type="TAU" TicketDate="2020-03-07T00:00:00.000-05:00" QueueCategory="00" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" ProviderCode="1P">
+               <common_v50_0:Remark>07MAR</common_v50_0:Remark>
+            </common_v50_0:ActionStatus>
+            <universal:ProviderReservationInfo Key="NgSNMC7Q2BKA4ymBCAAAAA==" ProviderCode="1P" LocatorCode="MEH249" CreateDate="2020-03-03T00:30:09.640+00:00" ModifiedDate="2020-03-03T00:32:24.349+00:00" HostCreateDate="2020-03-03" HostCreateTime="00:30:00.000+00:00" OwningPCC="XUF" AgentOverride="RS"/>
+            <air:AirReservation LocatorCode="0T1OMS" CreateDate="2020-03-03T00:30:09.392+00:00" ModifiedDate="2020-03-03T00:32:24.349+00:00">
+               <common_v50_0:SupplierLocator SupplierCode="UA" SupplierLocatorCode="MDVLEB" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==">
+                  <common_v50_0:SegmentRef Key="xs/MMC4R2BKALuKKCAAAAA=="/>
+                  <common_v50_0:SegmentRef Key="xs/MMC4R2BKAPuKKCAAAAA=="/>
+               </common_v50_0:SupplierLocator>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+               <common_v50_0:ProviderReservationInfoRef Key="NgSNMC7Q2BKA4ymBCAAAAA=="/>
+               <air:AirSegment Key="xs/MMC4R2BKALuKKCAAAAA==" Group="0" Carrier="UA" CabinClass="Economy" FlightNumber="2305" ProviderCode="1P" Origin="DEN" Destination="SEA" DepartureTime="2020-05-31T22:26:00.000-06:00" ArrivalTime="2020-06-01T00:28:00.000-07:00" TravelTime="182" Distance="1017" ClassOfService="W" ETicketability="Yes" Equipment="319" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false" ParticipantLevel="Airline Source">
+                  <air:FlightDetails Key="NgSNMC7Q2BKA9ymBCAAAAA==" Origin="DEN" Destination="SEA" DepartureTime="2020-05-31T22:26:00.000-06:00" ArrivalTime="2020-06-01T00:28:00.000-07:00" FlightTime="182" TravelTime="182" Distance="1022" Equipment="319" AutomatedCheckin="false"/>
+               </air:AirSegment>
+               <air:AirSegment Key="xs/MMC4R2BKAPuKKCAAAAA==" Group="1" Carrier="UA" CabinClass="Economy" FlightNumber="2229" ProviderCode="1P" Origin="SEA" Destination="ORD" DepartureTime="2020-06-05T23:02:00.000-07:00" ArrivalTime="2020-06-06T04:59:00.000-05:00" TravelTime="237" Distance="1723" ClassOfService="L" ETicketability="Yes" Equipment="739" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" TravelOrder="2" ProviderSegmentOrder="2" OptionalServicesIndicator="false" ParticipantLevel="Airline Source">
+                  <air:FlightDetails Key="NgSNMC7Q2BKA/ymBCAAAAA==" Origin="SEA" Destination="ORD" DepartureTime="2020-06-05T23:02:00.000-07:00" ArrivalTime="2020-06-06T04:59:00.000-05:00" FlightTime="237" TravelTime="237" Distance="1716" Equipment="739" OnTimePerformance="90" DestinationTerminal="1" AutomatedCheckin="false"/>
+               </air:AirSegment>
+               <air:AirPricingInfo Key="xs/MMC4R2BKAWuKKCAAAAA==" TotalPrice="USD465.60" BasePrice="USD398.14" Taxes="USD67.46" LatestTicketingTime="2020-03-03T23:59:00.000-05:00" PricingMethod="Reprice" PlatingCarrier="UA" ProviderCode="1P" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==" AirPricingInfoGroup="1" PricingType="TicketRecord" FareCalculationInd="9">
+                  <air:FareInfo Key="NgSNMC7Q2BKAyymBCAAAAA==" FareBasis="WAA3AKEN" PassengerTypeCode="ADT" Origin="CHI" Destination="SEA" EffectiveDate="2020-03-02T19:30:09.539-05:00" TravelDate="2020-05-31" DepartureDate="2020-05-31" Amount="USD244.65">
+                     <air:Brand BrandID="169914" Name="Economy" Carrier="UA" BrandTier="0002">
+                        <air:Title Type="External" LanguageCode="EN">Economy</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">ECONOMY</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">Our standard Economy fare; choose your seats and enjoy other options for customizing your travel 
+
+• Seat selection at booking, if seats are available
+• Eligible to change ticket1
+• Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+• One personal item and one full-size carry-on bag
+• Earn award miles and lifetime miles, and toward Premier® qualification
+• 1Fees may apply.
+---
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">Our standard Economy fare; choose your seats and enjoy other options for customizing your travel 
+
+• Seat selection at booking, if seats are available
+• Eligible to change ticket1
+• Eligible for Economy Plus®1, paid upgrades and complimentary upgrades
+• One personal item and one full-size carry-on bag
+• Earn award miles and lifetime miles, and toward Premier® qualification
+• 1Fees may apply.
+---
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our lowest available fare with options to customize travel and without the restrictions of Budget E</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="2000" ImageHeight="1529">https://cdn.travelport.com/united/UA_general_large_42309.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/united/UA_general_medium_1662.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAquKKCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Carry on bags</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1544.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Carry On Bags</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">You are not allowed a full sized carry on bag unless you are a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full sized carry on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">You are not allowed a full sized carry on bag unless you are a MileagePlus Premier member or companion traveling on the same reservation, the primary cardmember of a qualifying MileagePlus credit card or a Star Alliance™ Gold member. 
+
+Everyone else who brings a full sized carry on bag to the gate will be required to check their bag and pay the applicable checked bag fee plus a $25 gate handling charge.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Carry_on</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAsuKKCAAAAA==" SecondaryType="SI" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Personal Item (9 in x 10 in x 17 in)</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_82230.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Personal item that can fit under the seat in front of you.</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in) that can fit under the seat in front of you.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Personal Item (9 in x 10 in x 17 in)</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">PSNL ITEM</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:05.835+00:00" Key="xs/MMC4R2BKAxuKKCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Advanced seat assignment</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1556.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/united/UA_general_medium_1556.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Pre book your favourite seat in advance</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Do you prefer a window, aisle, or just seats together? 
+
+Prebook your preferred seat in advance.
+
+Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Do you prefer a window, aisle, or just seats together? 
+
+Prebook your preferred seat in advance.
+
+Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Advanced seat assignment</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareInfo Key="NgSNMC7Q2BKAzymBCAAAAA==" FareBasis="LXA4AQER" PassengerTypeCode="ADT" Origin="SEA" Destination="CHI" EffectiveDate="2020-03-02T19:30:09.539-05:00" TravelDate="2020-06-05" DepartureDate="2020-05-31" Amount="USD153.49"/>
+                  <air:BookingInfo BookingCode="W" FareInfoRef="NgSNMC7Q2BKAyymBCAAAAA==" SegmentRef="xs/MMC4R2BKALuKKCAAAAA=="/>
+                  <air:BookingInfo BookingCode="L" FareInfoRef="NgSNMC7Q2BKAzymBCAAAAA==" SegmentRef="xs/MMC4R2BKAPuKKCAAAAA=="/>
+                  <air:TaxInfo Category="US" Amount="USD29.86" Key="xs/MMC4R2BKAXuKKCAAAAA=="/>
+                  <air:TaxInfo Category="ZP" Amount="USD12.90" Key="xs/MMC4R2BKAYuKKCAAAAA=="/>
+                  <air:TaxInfo Category="AY" Amount="USD11.20" Key="xs/MMC4R2BKAZuKKCAAAAA=="/>
+                  <air:TaxInfo Category="XF" Amount="USD13.50" Key="xs/MMC4R2BKAauKKCAAAAA=="/>
+                  <air:FareCalc>ADT CHI UA X/DEN UA SEA244.65UA CHI153.49USD398.14END UA ZPORDDENSEA XF ORD4.5DEN4.5SEA4.5</air:FareCalc>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMg=="/>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+                  <air:ActionDetails PseudoCityCode="XUF" AgentSine="RS" EventDate="2020-03-07" EventTime="00:30:00.000+00:00" Text="4P*PADT|S1/2/3:BF0002|CUA|TR|BO"/>
+               </air:AirPricingInfo>
+            </air:AirReservation>
+            <common_v50_0:GeneralRemark Key="NgSNMC7Q2BKAfymBCAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==">
+               <common_v50_0:RemarkData>Booking 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="NgSNMC7Q2BKAgymBCAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==">
+               <common_v50_0:RemarkData>Re- Booking 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="UD_AGT_PP" BranchCode="TP_1P_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-03-03T00:30:07.809+00:00"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="UD_AGT_PP" BranchCode="TP_1P_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-03-03T00:32:22.272+00:00"/>
+            </common_v50_0:AgencyInfo>
+            <common_v50_0:InvoiceRemark Key="sQTWMC3R2BKA/v0FCAAAAA==" ProviderReservationInfoRef="NgSNMC7Q2BKA4ymBCAAAAA==">
+               <common_v50_0:RemarkData>AP-5555123456789013/PK-45689</common_v50_0:RemarkData>
+            </common_v50_0:InvoiceRemark>
+            <common_v50_0:FormOfPayment Key="PDz8y7xu4hGfaM/wYIhwmw==" Type="Credit" Reusable="true" ProfileKey="H/cEU9MUSkigZMXUywBdaA==">
+               <common_v50_0:CreditCard Type="CA" Number="5555555555555557" ExpDate="2021-01" Name="JAYA KUMAR">
+                  <common_v50_0:BillingAddress Key="NgSNMC7Q2BKACzmBCAAAAA==">
+                     <common_v50_0:AddressName>JAN TESTORA</common_v50_0:AddressName>
+                     <common_v50_0:Street>6901 S. HAVANA</common_v50_0:Street>
+                     <common_v50_0:Street>APT 2</common_v50_0:Street>
+                     <common_v50_0:City>ENGLEWOOD</common_v50_0:City>
+                     <common_v50_0:State>CO</common_v50_0:State>
+                     <common_v50_0:PostalCode>8011</common_v50_0:PostalCode>
+                     <common_v50_0:Country>AU</common_v50_0:Country>
+                  </common_v50_0:BillingAddress>
+               </common_v50_0:CreditCard>
+               <common_v50_0:ProviderReservationInfoRef Key="NgSNMC7Q2BKA4ymBCAAAAA=="/>
+            </common_v50_0:FormOfPayment>
+         </universal:UniversalRecord>
+      </universal:AirCancelRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

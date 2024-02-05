@@ -1,0 +1,61 @@
+Vehicle Keywords - Specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:PickupDateLocation Date="2020-03-26" Location="LHR"/>
+<!--         <com:Keyword Name="AGE"  Description="Age Requirements"/>-->
+      <com:Keyword Name="AGE" Description="Age Requirements"/>
+        
+      
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords - Specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="7D9398050A07643C11981EA13952F9AD" ResponseTime="94" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Description="Age Requirements">
+            <common_v50_0:Text>CERTAIN REGULATIONS APPLY RELATED TO MINIMUM AGE AND</common_v50_0:Text>
+            <common_v50_0:Text>POSSESSION OF DRIVERS LICENSE WHICH CAN BE FOUND</common_v50_0:Text>
+            <common_v50_0:Text>DURING THE BOOKING PROCESS DEPENDING ON THE BOOKED</common_v50_0:Text>
+            <common_v50_0:Text>VEHICLE.</common_v50_0:Text>
+            <common_v50_0:Text>IN GREAT BRITAIN  THE FOLLOWING RULES APPLY FOR THE</common_v50_0:Text>
+            <common_v50_0:Text>MINIMUM AGE AND POSSESSION OF A DRIVERS LICENCE</common_v50_0:Text>
+            <common_v50_0:Text>21 YEARS/1 YEAR FOR VEHICLES IN GROUPS</common_v50_0:Text>
+            <common_v50_0:Text>M***  E***  CB**  CD**  CF**  CL**  CW**</common_v50_0:Text>
+            <common_v50_0:Text>23 YEARS/1 YEAR FOR VEHICLES IN GROUPS</common_v50_0:Text>
+            <common_v50_0:Text>I***  CC**</common_v50_0:Text>
+            <common_v50_0:Text>25 YEARS/1 YEAR FOR VEHICLES IN GROUPS</common_v50_0:Text>
+            <common_v50_0:Text>S***  F***  P*** L***</common_v50_0:Text>
+            <common_v50_0:Text>25 YEARS/3 YEARS FOR VEHICLES IN GROUPS</common_v50_0:Text>
+            <common_v50_0:Text>COMN  CNMN</common_v50_0:Text>
+            <common_v50_0:Text>30 YEARS/3 YEARS FOR VEHICLES IN GROUPS X***</common_v50_0:Text>
+            <common_v50_0:Text>DRIVING LICENCE FOR VEHICLE GROUPS COMN AND CNMN MUST</common_v50_0:Text>
+            <common_v50_0:Text>INCLUDE APPROVAL FOR CATEGORY D1. A DRIVER CPC</common_v50_0:Text>
+            <common_v50_0:Text>CERTIFICATE IS REQUIRED IF COMN AND CNMN ARE HIRED FOR</common_v50_0:Text>
+            <common_v50_0:Text>COMMERCIAL USE. IF YOU DO NOT HOLD A BRITISH LICENSE</common_v50_0:Text>
+            <common_v50_0:Text>BUT WISH TO RENT A COMN OR CNMN PLEASE CALL TO CHECK</common_v50_0:Text>
+            <common_v50_0:Text>FOR ANY RESTRICTIONS.</common_v50_0:Text>
+            <common_v50_0:Text>NON-EU CITIZENS CAN DRIVE VEHICLES WITH UP TO 9</common_v50_0:Text>
+            <common_v50_0:Text>PASSENGER SEATS -FVMR-.</common_v50_0:Text>
+            <common_v50_0:Text>PLEASE CONTACT YOUR LOCAL SIXT RENTAL STATION OR OUR</common_v50_0:Text>
+            <common_v50_0:Text>HOTLINE PLUS44 -0-844 499 3399.</common_v50_0:Text>
+            <common_v50_0:Text>A YOUNG DRIVER SURCHARGE APPLIES FOR DRIVERS UNDER 25</common_v50_0:Text>
+            <common_v50_0:Text>YEARS.</common_v50_0:Text>
+            <common_v50_0:Text>GBP PER DAY</common_v50_0:Text>
+            <common_v50_0:Text>YOUNG DRIVER SURCHARGE -FOR VEHICLE GROUPS M***  E***</common_v50_0:Text>
+            <common_v50_0:Text>CB**  CD**  CF**  CL**  CW**  CT**  I***-?36.00</common_v50_0:Text>
+            <common_v50_0:Text>VEHICLE GROUPS NOT LISTED ARE NOT AVAILABLE FOR</common_v50_0:Text>
+            <common_v50_0:Text>DRIVERS UNDER 23 YEARS OF AGE -SEE ABOVE-.</common_v50_0:Text>
+         </common_v50_0:Keyword>
+         <common_v50_0:Keyword Name="PHON" Description="Phone Number"/>
+         <common_v50_0:Keyword Name="HOURS" Description="Hour Information"/>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

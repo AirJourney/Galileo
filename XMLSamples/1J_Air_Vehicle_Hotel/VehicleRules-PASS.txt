@@ -1,0 +1,112 @@
+VehicleRules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <Vehicle:VehicleRulesReq AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:Vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <Vehicle:VehicleRulesLookup>
+            <Vehicle:VehicleDateLocation ReturnLocation="DEN" ReturnDateTime="2020-05-16T10:00:00" PickupLocation="DEN" PickupDateTime="2020-05-01T10:00:00">
+               <Vehicle:VendorLocation Key="n3Y7ONgbROaAyGU5duDUOw==" VendorLocationID="1" VendorCode="AD" ProviderCode="1J"/>
+            </Vehicle:VehicleDateLocation>
+            <Vehicle:VehicleSearchModifiers RatePeriod="Daily" RateCategory="Standard">
+               <Vehicle:VehicleModifier DoorCount="TwoToFourDoors" Category="Car" VehicleClass="Compact" TransmissionType="Automatic" AirConditioning="true"/>
+               <Vehicle:RateModifiers VendorCode="ZD" RateCode="GP"/>
+               <Vehicle:RateHostIndicator RateToken=""/>
+            </Vehicle:VehicleSearchModifiers>
+         </Vehicle:VehicleRulesLookup>
+      </Vehicle:VehicleRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+VehicleRules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRulesRsp TransactionId="9DCECCB80A0764785B1483FC905FC000" ResponseTime="581" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Weekly" NumberOfPeriods="2" UnlimitedMileage="true" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD150.00" BaseRate="USD330.00" EstimatedTotalAmount="USD498.88" MandatoryChargeTotal="USD168.88"/>
+               <vehicle:VehicleRateDescription Name="General">
+                  <vehicle:Text>RATE SUBJECT TO CHANGE</vehicle:Text>
+                  <vehicle:Text>MICRO FOCUS</vehicle:Text>
+                  <vehicle:Text>MUST RETURN TO REQUESTED CITY</vehicle:Text>
+                  <vehicle:Text>TO USE A DEBIT CARD AT A LOCATION THAT ACCEPTS</vehicle:Text>
+                  <vehicle:Text>THEM YOU ARE SUBJECT TO ADDITIONAL CREDIT CHECKS</vehicle:Text>
+                  <vehicle:Text>OR MUST PRESENT ADDITIONAL IDENTIFICATION.</vehicle:Text>
+                  <vehicle:Text>THE MINIMUM RENTAL PERIOD IS 001 DAYS</vehicle:Text>
+                  <vehicle:Text>MIN AGE 21. 21-24 UA SURCHARGE   27.00DY</vehicle:Text>
+                  <vehicle:Text>OTHER RESTRICTIONS MAY APPLY.</vehicle:Text>
+                  <vehicle:Text>CONTACT LOCAL REP FOR DETAILS</vehicle:Text>
+                  <vehicle:Text>10.00     EXTENSION FEE MAY APPLY</vehicle:Text>
+                  <vehicle:Text>20.00     LATE FEE MAY APPLY</vehicle:Text>
+                  <vehicle:Text>FUEL POLICY FULL TO FULL</vehicle:Text>
+                  <vehicle:Text>11.11PCT CONCESSION RECOVERY FEE</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:VehicleRateDescription Name="Advisory">
+                  <vehicle:Text>ADVISORY: CHARGES ASSOCIATED WITH THE BASE RATE ARE THOSE WHICH ARE APPLICABLE AT THE TIME OF BOOKING AND COULD BE SUBJECT TO   CHANGE.  ONLY THOSE CHARGES LISTED AS MANDATORY ARE INCLUDED IN THE TOTAL RATE FOR THE DISPLAYED RENTAL.</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:HourlyLateCharge RateForPeriod="USD22.51" UnlimitedMileage="true"/>
+               <vehicle:DailyLateCharge RateForPeriod="USD30.00" UnlimitedMileage="true" NumberOfPeriods="1"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:OperationTime>ArrivalTimeInformation -OpenTime/Check-in time 0000-CloseTime/Check-out time 2400</vehicle:OperationTime>
+         <vehicle:OperationTime>DepartureTimeInformation -OpenTime/Check-in time 0000-CloseTime/Check-out time 2400</vehicle:OperationTime>
+         <vehicle:RentalPeriodRules>
+            <vehicle:MinRental RentalUnit="Days" Length="1"/>
+         </vehicle:RentalPeriodRules>
+         <vehicle:VehicleCharge Category="Surcharge" Name="CUSTOMER FACILITY FEE" Type="Rental">
+            <vehicle:Amount>USD32.25</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="VEHICLE LICENSEE FEE" Type="Rental">
+            <vehicle:Amount>USD5.70</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="ENERGY RECOVERY FEE" Type="Rental">
+            <vehicle:Amount>USD7.90</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="ROAD SAFETY FEE" Type="Rental">
+            <vehicle:Amount>USD30.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Tax" Name="SALES TAX" Type="Rental">
+            <vehicle:Amount>USD54.86</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="CONCESSION RECOVERY FEE" Type="Rental">
+            <vehicle:Amount>USD38.17</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="PERSONAL ACCIDENT/EFFECTS" Type="PerDay">
+            <vehicle:Amount>USD6.95</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="EMERGENCY SICKNESS PROTECTION" Type="PerDay">
+            <vehicle:Amount>USD5.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="SUPPLEMENTAL LIABILITY INSURANCE" Type="PerDay">
+            <vehicle:Amount>USD15.75</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="LOSS DAMAGE WAIVER" Type="PerDay">
+            <vehicle:Amount>USD29.99</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Name="InfantSeat" Description="CHILD SEAT/INFANT" Type="PerDay">
+            <vehicle:Amount>USD14.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Name="NavigationalSystem" Description="NAVIGATIONAL SYSTEM" Type="PerDay">
+            <vehicle:Amount>USD16.99</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Name="SkiRack" Description="SKI RACK" Type="PerDay">
+            <vehicle:Amount>USD15.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:PickupLocationInformation LocationName="DIA DENVER,CO A" CounterLocation="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" VendorCode="ZD" LocationCode="DEN" LocationType="Terminal" LocationNumber="001">
+            <vehicle:Address>
+               <common_v50_0:Street>24050 E 78TH AVE</common_v50_0:Street>
+               <common_v50_0:Street>DENVER</common_v50_0:Street>
+               <common_v50_0:Street>CO US</common_v50_0:Street>
+               <common_v50_0:Street>80249-6385</common_v50_0:Street>
+               <common_v50_0:State>US</common_v50_0:State>
+            </vehicle:Address>
+            <common_v50_0:PhoneNumber Type="Business" Number=" 303-342-9001"/>
+            <common_v50_0:PhoneNumber Type="Reservations" Number=" 855-283-4384"/>
+            <vehicle:OperationTime>Arrival 0000-2400</vehicle:OperationTime>
+            <vehicle:OperationTime>Departure 0000-2400</vehicle:OperationTime>
+         </vehicle:PickupLocationInformation>
+      </vehicle:VehicleRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

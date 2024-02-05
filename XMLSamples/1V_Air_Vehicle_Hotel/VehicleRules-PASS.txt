@@ -1,0 +1,58 @@
+VehicleRules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <Vehicle:VehicleRulesReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:Vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <Vehicle:VehicleRulesLookup>
+            <Vehicle:VehicleDateLocation ReturnLocation="ATL" ReturnDateTime="2020-04-19T10:00:00" PickupLocation="ATL" PickupDateTime="2020-04-16T10:00:00">
+               <Vehicle:VendorLocation Key="n3Y7ONgbROaAyGU5duDUOw==" VendorLocationID="1" VendorCode="SX" ProviderCode="1V"/>
+            </Vehicle:VehicleDateLocation>
+            <Vehicle:VehicleSearchModifiers RatePeriod="Daily" RateCategory="Standard">
+               <Vehicle:VehicleModifier DoorCount="TwoToFourDoors" Category="Car" VehicleClass="Compact" TransmissionType="Automatic" AirConditioning="true"/>
+               <Vehicle:RateModifiers VendorCode="SX" RateCode="CXA"/>
+               <Vehicle:RateHostIndicator RateToken="4548429804"/>
+            </Vehicle:VehicleSearchModifiers>
+         </Vehicle:VehicleRulesLookup>
+      </Vehicle:VehicleRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+VehicleRules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRulesRsp TransactionId="9DD3914E0A07643B096D7BC3C0BE599B" ResponseTime="230" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" NumberOfPeriods="3" UnlimitedMileage="true" Units="KM" RateCode="CXA" RateCategory="Standard" AdvancedBooking="000H">
+               <vehicle:SupplierRate RateForPeriod="USD60.02" BaseRate="USD180.07" EstimatedTotalAmount="USD241.39" DropOffCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription Name="STANDARD PUBLIC R">
+                  <vehicle:Text>PickUp - ** STANDARD PUBLIC RATE **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:OperationTime>Drop Off Hours OPEN: 0001 - 2359</vehicle:OperationTime>
+         <vehicle:OperationTime>Hours of Operation OPEN: 0001 - 2359</vehicle:OperationTime>
+         <vehicle:RentalPeriodRules>
+            <vehicle:AbsoluteMax RentalUnit="Days" Length="365"/>
+         </vehicle:RentalPeriodRules>
+         <vehicle:PaymentCreditCard>DV</vehicle:PaymentCreditCard>
+         <vehicle:VehicleCharge Category="Surcharge" Name="YOUNG DRIVER SURCHAR" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD22.99</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="AIRPORT ACCESS FEE" Type="Percent" IncludedInRate="IncludedInTotal">
+            <vehicle:Percentage>11.11</vehicle:Percentage>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="LDW" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD26.99</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="PAI" Type="PerDay" IncludedInRate="NotIncluded">
+            <vehicle:Amount>USD5.49</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <common_v50_0:MarketingInformation>
+            <common_v50_0:Text>**</common_v50_0:Text>
+         </common_v50_0:MarketingInformation>
+      </vehicle:VehicleRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

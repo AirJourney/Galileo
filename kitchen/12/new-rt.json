@@ -1,0 +1,202 @@
+[
+  {
+    "from": "HKT",
+    "to": "UTH"
+  },
+  {
+    "from": "HKT",
+    "to": "BKK"
+  },
+  {
+    "from": "HKT",
+    "to": "SIN"
+  },
+  {
+    "from": "HKT",
+    "to": "USM"
+  },
+  {
+    "from": "HKT",
+    "to": "BOM"
+  },
+  {
+    "from": "HKT",
+    "to": "KKC"
+  },
+  {
+    "from": "BKK",
+    "to": "HKT"
+  },
+  {
+    "from": "BKK",
+    "to": "BAH"
+  },
+  {
+    "from": "BKK",
+    "to": "TBS"
+  },
+  {
+    "from": "BKK",
+    "to": "BFV"
+  },
+  {
+    "from": "BKK",
+    "to": "CNX"
+  },
+  {
+    "from": "BKK",
+    "to": "PAR"
+  },
+  {
+    "from": "BKK",
+    "to": "PHS"
+  },
+  {
+    "from": "BKK",
+    "to": "UTH"
+  },
+  {
+    "from": "BKK",
+    "to": "NST"
+  },
+  {
+    "from": "BKK",
+    "to": "ULN"
+  },
+  {
+    "from": "BKK",
+    "to": "MNL"
+  },
+  {
+    "from": "BKK",
+    "to": "ACC"
+  },
+  {
+    "from": "BKK",
+    "to": "TPE"
+  },
+  {
+    "from": "BKK",
+    "to": "KKC"
+  },
+  {
+    "from": "BKK",
+    "to": "DXB"
+  },
+  {
+    "from": "BKK",
+    "to": "CEI"
+  },
+  {
+    "from": "BKK",
+    "to": "ROI"
+  },
+  {
+    "from": "BKK",
+    "to": "URT"
+  },
+  {
+    "from": "BKK",
+    "to": "NAW"
+  },
+  {
+    "from": "BKK",
+    "to": "IST"
+  },
+  {
+    "from": "BKK",
+    "to": "BNE"
+  },
+  {
+    "from": "BKK",
+    "to": "HDY"
+  },
+  {
+    "from": "BKK",
+    "to": "NYC"
+  },
+  {
+    "from": "BKK",
+    "to": "UBP"
+  },
+  {
+    "from": "BKK",
+    "to": "CEB"
+  },
+  {
+    "from": "BKK",
+    "to": "ALA"
+  },
+  {
+    "from": "BKK",
+    "to": "NNT"
+  },
+  {
+    "from": "BKK",
+    "to": "SYD"
+  },
+  {
+    "from": "BKK",
+    "to": "USM"
+  },
+  {
+    "from": "BKK",
+    "to": "KOP"
+  },
+  {
+    "from": "BKK",
+    "to": "LON"
+  },
+  {
+    "from": "BKK",
+    "to": "ZRH"
+  },
+  {
+    "from": "BKK",
+    "to": "BOS"
+  },
+  {
+    "from": "BKK",
+    "to": "KBV"
+  },
+  {
+    "from": "CEI",
+    "to": "BKK"
+  },
+  {
+    "from": "KKC",
+    "to": "BKK"
+  },
+  {
+    "from": "CNX",
+    "to": "BKK"
+  },
+  {
+    "from": "CNX",
+    "to": "UBP"
+  },
+  {
+    "from": "CNX",
+    "to": "HKT"
+  },
+  {
+    "from": "KBV",
+    "to": "BKK"
+  },
+  {
+    "from": "SGN",
+    "to": "BKK"
+  },
+  {
+    "from": "SGN",
+    "to": "DAD"
+  },
+  {
+    "from": "SGN",
+    "to": "LON"
+  },
+  {
+    "from": "SGN",
+    "to": "HKT"
+  }
+]

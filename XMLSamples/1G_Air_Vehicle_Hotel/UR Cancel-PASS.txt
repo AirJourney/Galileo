@@ -1,0 +1,23 @@
+UR Cancel-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <univ:UniversalRecordCancelReq TargetBranch="P7102538" AuthorizedBy="SUSIL" UniversalRecordLocatorCode="0T1OMT" Version="1">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </univ:UniversalRecordCancelReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR Cancel-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordCancelRsp TransactionId="9DCE19370A07643CAB0E0A7CC6D5DC84" ResponseTime="662" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">Unable to Synch the Partial Universal Record for the Provider :1G</common_v50_0:ResponseMessage>
+         <universal:ProviderReservationStatus CreateDate="2020-03-03T00:30:20.043+00:00" ModifiedDate="2020-03-03T00:31:36.251+00:00" ProviderCode="1G" LocatorCode="5BQFGA" Cancelled="false">
+            <universal:CancelInfo Code="0" Type="Warning">null : Error from HCA: ZHCO: LEID-4A03B7 WRITE ERROR: NO ROTIP SOCKETS AVAILABLE TO HOST CRE CPU-B</universal:CancelInfo>
+         </universal:ProviderReservationStatus>
+      </universal:UniversalRecordCancelRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

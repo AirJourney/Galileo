@@ -1,0 +1,58 @@
+Vehicle Keywords - Specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleKeywordReq AuthorizedBy="SUSIL" TargetBranch="P7102538" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="SX"/>
+         <veh:PickupDateLocation Date="2020-04-01" Location="LHR"/>
+         <com:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT"/>
+      </veh:VehicleKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Keywords - Specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleKeywordRsp TransactionId="9DCE48710A0764772606212BE0A95108" ResponseTime="370" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:Keyword Name="AGE" Number="01" Description="AGE REQUIREMENT">
+            <common_v50_0:Text>Certain regulations apply related to minimum age</common_v50_0:Text>
+            <common_v50_0:Text>and possession of driver's license which can be</common_v50_0:Text>
+            <common_v50_0:Text>found during the booking process depending on the</common_v50_0:Text>
+            <common_v50_0:Text>booked vehicle.</common_v50_0:Text>
+            <common_v50_0:Text>In Great Britain, the following rules apply for</common_v50_0:Text>
+            <common_v50_0:Text>the minimum age and possession of a driver's</common_v50_0:Text>
+            <common_v50_0:Text>licence:</common_v50_0:Text>
+            <common_v50_0:Text>21 years/1 year for vehicles in groups</common_v50_0:Text>
+            <common_v50_0:Text>M***, E***, CB**, CD**, CF**, CL**, CW**</common_v50_0:Text>
+            <common_v50_0:Text>23 years/1 year for vehicles in groups</common_v50_0:Text>
+            <common_v50_0:Text>I***, CC**</common_v50_0:Text>
+            <common_v50_0:Text>25 years/1 year for vehicles in groups</common_v50_0:Text>
+            <common_v50_0:Text>S***, F***, P***,L***</common_v50_0:Text>
+            <common_v50_0:Text>25 years/3 years for vehicles in groups</common_v50_0:Text>
+            <common_v50_0:Text>COMN, CNMN</common_v50_0:Text>
+            <common_v50_0:Text>30 years/3 years for vehicles in groups</common_v50_0:Text>
+            <common_v50_0:Text>X***</common_v50_0:Text>
+            <common_v50_0:Text>Driving licence for vehicle groups COMN and CNMN</common_v50_0:Text>
+            <common_v50_0:Text>must include approval for category D1. A Driver</common_v50_0:Text>
+            <common_v50_0:Text>CPC certificate is required if COMN and CNMN are</common_v50_0:Text>
+            <common_v50_0:Text>hired for commercial use. If you do not hold a</common_v50_0:Text>
+            <common_v50_0:Text>British license but wish to rent a COMN or CNMN</common_v50_0:Text>
+            <common_v50_0:Text>please call to check for any restrictions.</common_v50_0:Text>
+            <common_v50_0:Text>Non-EU citizens can drive vehicles with up to 9</common_v50_0:Text>
+            <common_v50_0:Text>passenger seats (FVMR).</common_v50_0:Text>
+            <common_v50_0:Text>Please contact your local Sixt rental station or</common_v50_0:Text>
+            <common_v50_0:Text>our hotline +44 (0)844 499 3399.</common_v50_0:Text>
+            <common_v50_0:Text>A young driver surcharge applies for drivers</common_v50_0:Text>
+            <common_v50_0:Text>under 25 years</common_v50_0:Text>
+            <common_v50_0:Text>Young Driver Surcharge (for vehicle groups M***,</common_v50_0:Text>
+            <common_v50_0:Text>E***, CB**, CD**, CF**, CL**, CW**, CT**, I***):</common_v50_0:Text>
+            <common_v50_0:Text>GBP 36.00/Day</common_v50_0:Text>
+            <common_v50_0:Text>Vehicle groups not listed are not available for</common_v50_0:Text>
+            <common_v50_0:Text>drivers under 23 years of age (see above).</common_v50_0:Text>
+         </common_v50_0:Keyword>
+      </vehicle:VehicleKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

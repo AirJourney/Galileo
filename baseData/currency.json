@@ -1,0 +1,92 @@
+{
+  "CNY": {
+    "name": "人民币",
+    "name_en": "Chinese Yuan",
+    "code": "CNY"
+  },
+  "USD": {
+    "name": "美元",
+    "name_en": "United States Dollar",
+    "code": "USD"
+  },
+  "EUR": {
+    "name": "欧元",
+    "name_en": "Euro",
+    "code": "EUR"
+  },
+  "GBP": {
+    "name": "英镑",
+    "name_en": "British Pound",
+    "code": "GBP"
+  },
+  "JPY": {
+    "name": "日元",
+    "name_en": "Japanese Yen",
+    "code": "JPY"
+  },
+  "KRW": {
+    "name": "韩元",
+    "name_en": "South Korean Won",
+    "code": "KRW"
+  },
+  "AUD": {
+    "name": "澳元",
+    "name_en": "Australian Dollar",
+    "code": "AUD"
+  },
+  "CAD": {
+    "name": "加元",
+    "name_en": "Canadian Dollar",
+    "code": "CAD"
+  },
+  "SGD": {
+    "name": "新加坡元",
+    "name_en": "Singapore Dollar",
+    "code": "SGD"
+  },
+  "MYR": {
+    "name": "马来西亚林吉特",
+    "name_en": "Malaysian Ringgit",
+    "code": "MYR"
+  },
+  "THB": {
+    "name": "泰铢",
+    "name_en": "Thai Baht",
+    "code": "THB"
+  },
+  "RUB": {
+    "name": "俄罗斯卢布",
+    "name_en": "Russian Ruble",
+    "code": "RUB"
+  },
+  "INR": {
+    "name": "印度卢比",
+    "name_en": "Indian Rupee",
+    "code": "INR"
+  },
+  "AED": {
+    "name": "阿联酋迪拉姆",
+    "name_en": "United Arab Emirates Dirham",
+    "code": "AED"
+  },
+  "PHP": {
+    "name": "菲律宾比索",
+    "name_en": "Philippine Peso",
+    "code": "PHP"
+  },
+  "IDR": {
+    "name": "印度尼西亚盾",
+    "name_en": "Indonesian Rupiah",
+    "code": "IDR"
+  },
+  "TWD": {
+    "name": "新台币",
+    "name_en": "New Taiwan Dollar",
+    "code": "TWD"
+  },
+  "HKD": {
+    "name": "港币",
+    "name_en": "Hong Kong Dollar",
+    "code": "HKD"
+  }
+}

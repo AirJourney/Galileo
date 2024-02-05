@@ -1,0 +1,909 @@
+Air Book-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <univ:AirCreateReservationReq RetrieveProviderReservationDetails="true" TraceId="1232346" TargetBranch="TP_1V_SOA" AuthorizedBy="UAPITESTING" Version="0" xmlns:univ="http://www.travelport.com/schema/universal_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI" xmlns:com="http://www.travelport.com/schema/common_v50_0"/>
+         <com:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMQ==" TravelerType="ADT" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+            <com:BookingTravelerName Prefix="Mr" First="CARSTEN" Last="LINDELOEV"/>
+            <com:PhoneNumber Key="1005359" CountryCode="011" Location="DEN" Number="227-722-2454" Extension="22" AreaCode="222" Type="Home" Text="Abc-Xy"/>
+            <com:Email Type="Home" EmailID="jtestora@travelport.com"/>
+            <com:SSR Key="1" Type="DOCS" Status="HK" Carrier="DL" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/LINDELOEV/CARSTENGJELLERUPMr"/>
+            <com:Address>
+               <com:AddressName>Jan Restora</com:AddressName>
+               <com:Street>6901 S. Havana</com:Street>
+               <com:Street>Apt 3</com:Street>
+               <com:City>Englewood</com:City>
+               <com:State>CO</com:State>
+               <com:PostalCode>80111</com:PostalCode>
+               <com:Country>US</com:Country>
+            </com:Address>
+         </com:BookingTraveler>
+         <com:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMg==" TravelerType="ADT" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+            <com:BookingTravelerName Prefix="Mr" First="john" Last="Long"/>
+            <com:PhoneNumber Key="1015359" CountryCode="011" Location="DEN" Number="227-702-2454" Extension="22" AreaCode="222" Type="Home" Text="Abd-Xy"/>
+            <com:Email Type="Home" EmailID="jtestora@travelport.com"/>
+            <com:SSR Key="2" Type="DOCS" Status="HK" Carrier="DL" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/Long/JhonJELLERUPMr"/>
+            <com:Address>
+               <com:AddressName>Jan Restora</com:AddressName>
+               <com:Street>6901 S. Havana</com:Street>
+               <com:Street>Apt 3</com:Street>
+               <com:City>Englewood</com:City>
+               <com:State>CO</com:State>
+               <com:PostalCode>80111</com:PostalCode>
+               <com:Country>US</com:Country>
+            </com:Address>
+         </com:BookingTraveler>
+         <GeneralRemark UseProviderNativeMode="true" TypeInGds="Basic" xmlns="http://www.travelport.com/schema/common_v50_0">
+            <RemarkData>Booking 1</RemarkData>
+         </GeneralRemark>
+         <GeneralRemark UseProviderNativeMode="true" TypeInGds="Basic" xmlns="http://www.travelport.com/schema/common_v50_0">
+            <RemarkData>Re- Booking 1</RemarkData>
+         </GeneralRemark>
+         <com:ContinuityCheckOverride Key="1T" xmlns:com="http://www.travelport.com/schema/common_v50_0">true</com:ContinuityCheckOverride>
+         <com:FormOfPayment Key="PDz8y7xu4hGfaM/wYIhwmw==" Type="Credit" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+            <com:CreditCard Type="CA" Number="5555555555555557" ExpDate="2021-01" Name="JAYA KUMAR" CVV="123" Key="GAJOYrVu4hGShsrlYIhwmw==">
+               <com:BillingAddress>
+                  <com:AddressName>Jan Testora</com:AddressName>
+                  <com:Street>6901 S. Havana</com:Street>
+                  <com:Street>Apt 2</com:Street>
+                  <com:City>Englewood</com:City>
+                  <com:State>CO</com:State>
+                  <com:PostalCode>8011</com:PostalCode>
+                  <com:Country>AU</com:Country>
+               </com:BillingAddress>
+            </com:CreditCard>
+         </com:FormOfPayment>
+         <air:AirPricingSolution Key="VbtNMC8Q2BKAro9HCAAAAA==" TotalPrice="USD313.58" BasePrice="USD238.12" ApproximateTotalPrice="USD313.58" ApproximateBasePrice="USD238.12" Taxes="USD75.46" ApproximateTaxes="USD75.46" QuoteDate="2020-03-02" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+            <air:AirSegment Key="VbtNMC8Q2BKAno9HCAAAAA==" Group="0" Carrier="DL" FlightNumber="2490" ProviderCode="1V" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T06:30:00.000-07:00" ArrivalTime="2020-04-16T08:46:00.000-07:00" FlightTime="136" TravelTime="136" Distance="679" ClassOfService="E" Equipment="221" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilitySource="Q" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+               <air:CodeshareInfo OperatingCarrier="DL">Delta Air Lines</air:CodeshareInfo>
+               <air:FlightDetails Key="VbtNMC8Q2BKAoo9HCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T06:30:00.000-07:00" ArrivalTime="2020-04-16T08:46:00.000-07:00" FlightTime="136" TravelTime="136" Distance="679"/>
+            </air:AirSegment>
+            <air:AirSegment Key="VbtNMC8Q2BKApo9HCAAAAA==" Group="1" Carrier="DL" FlightNumber="2703" ProviderCode="1V" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" Distance="679" ClassOfService="E" Equipment="221" ChangeOfPlane="false" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+               <air:CodeshareInfo OperatingCarrier="DL">Delta Air Lines</air:CodeshareInfo>
+               <air:FlightDetails Key="VbtNMC8Q2BKAqo9HCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" Distance="679"/>
+            </air:AirSegment>
+            <air:AirPricingInfo Key="VbtNMC8Q2BKAuo9HCAAAAA==" TotalPrice="USD156.79" BasePrice="USD119.06" ApproximateTotalPrice="USD156.79" ApproximateBasePrice="USD119.06" ApproximateTaxes="USD37.73" Taxes="USD37.73" LatestTicketingTime="2020-03-03T23:59:00.000-07:00" PricingMethod="Auto" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="DL" ProviderCode="1V">
+               <air:FareInfo Key="VbtNMC8Q2BKAzo9HCAAAAA==" FareBasis="XAVUA0BC" PassengerTypeCode="ADT" Origin="SEA" Destination="SFO" EffectiveDate="2020-03-01T17:30:00.000-07:00" DepartureDate="2020-04-16" Amount="USD59.53" NotValidBefore="2020-04-16" NotValidAfter="2020-04-16" TaxAmount="USD18.90">
+                  <common_v50_0:Endorsement Value="NONREF/NOCHGS" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                  <common_v50_0:Endorsement Value="NOPRE RSVDSEAT" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                  <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKAzo9HCAAAAA==" ProviderCode="1V">6UUVoSldxwj5RjAH7BzXG8bKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAyaJReT3cYHCfTobKkhimR/zd/VTAJtvZSOKRa78AiG2RJ9BjYIO3atPVx+f5U+LkClBM/nSMA/KSwp66q98OO2xGgtFJoNYUur/bRGkSYBehf6E18cRejF6+WRr8tqYPOT8s8tLq1CgE6DKLVhukgavBBiBw5uY0E8OCBM1TtKcEjml+FU+V6DpbxcVkYsGDs5MiWy/SfVExcBl7vKLULIDi4tOncr2YLwVrt9K3HfiXmtEMKkpnigfxA+19zslRqaMw5RztH/h94+IeiNOLbXk/LPLS6tQoLTNrnWhL8Bga0D5zMDGIuHebX5ydcom5+qMRNVC/eOA/AFKEXb03hK/he9va7VDH7+F729rtUMfcLoW3ikf0Lo=</air:FareRuleKey>
+                  <air:Brand Key="VbtNMC8Q2BKAzo9HCAAAAA==" BrandID="268330" UpSellBrandID="268332" Name="Basic Economy" Carrier="DL" BrandTier="0001">
+                     <air:Title Type="External" LanguageCode="EN">Basic Economy</air:Title>
+                     <air:Title Type="Short" LanguageCode="EN">Basic Econ</air:Title>
+                     <air:Text Type="MarketingConsumer" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                     <air:Text Type="MarketingAgent" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                     <air:Text Type="Strapline" LanguageCode="EN">Basic Economy</air:Text>
+                     <air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+                     <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45991.jpg</air:ImageLocation>
+                     <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_45.jpg</air:ImageLocation>
+                     <air:OptionalServices>
+                        <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAEp9HCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="VbtNMC8Q2BKAFp9HCAAAAA==" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Carry on bags</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAGp9HCAAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="VbtNMC8Q2BKAHp9HCAAAAA==" Tag="Checked Baggage" DisplayOrder="2">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Checked bags</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88838.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88838.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">To better assist you with finding baggage information, please go to :
+
+https://www.delta.com/content/www/en_US/traveling-with-us/baggage/before-your-trip/checked.html
+
+From here select from the routes listed. You’ll find information on fees and size requirements sorted by the general routes where you plan to travel. Exceptions for Active Military, Medallion Members, and Delta SkyMiles Credit Card by American Express Members apply. Please reference Baggage Fee Details &amp; Rules, Baggage Fee Exceptions or the Regions page for more details.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">To better assist you with finding baggage information, please go to :
+
+https://www.delta.com/content/www/en_US/traveling-with-us/baggage/before-your-trip/checked.html
+
+From here select from the routes listed. You’ll find information on fees and size requirements sorted by the general routes where you plan to travel. Exceptions for Active Military, Medallion Members, and Delta SkyMiles Credit Card by American Express Members apply. Please reference Baggage Fee Details &amp; Rules, Baggage Fee Exceptions or the Regions page for more details.</air:Text>
+                           <air:PriceRange DefaultCurrency="true" StartPrice="USD30.000"/>
+                           <air:Title Type="External" LanguageCode="EN">Checked bags</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:12.603+00:00" ServiceSubCode="" Key="VbtNMC8Q2BKAIp9HCAAAAA==" SecondaryType="RF" Chargeable="Not offered" Tag="REFUNDABLE TICKET" DisplayOrder="22">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Refunds</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88854.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88854.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Cancelling your reservation</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Refunds</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Refunds</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:12.603+00:00" ServiceSubCode="" Key="VbtNMC8Q2BKAJp9HCAAAAA==" SecondaryType="VC" Chargeable="Not offered" Tag="Rebooking" DisplayOrder="3">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Rebooking</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88853.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88853.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Rebooking</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Rebooking</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAKp9HCAAAAA==" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Seat Selection</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Select a seat before check-in</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Seat Selection</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Seat Selec</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKALp9HCAAAAA==" SecondaryType="EA" Chargeable="Not offered" Tag="Extra Legroom" DisplayOrder="19">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Extra Legroom Seat</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88846.jpg"/>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88846.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Your Seat, Your Way</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Enjoy bulkhead seats, exit row seats, or aisle and window seats towards the front of the plane. 
+
+Preferred Seats are complimentary for Medallion® members and select partner airline elite members at ticketing. 
+
+Other customers can purchase available Preferred Seats starting at 24 hours prior to departure.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Enjoy bulkhead seats, exit row seats, or aisle and window seats towards the front of the plane. 
+
+Preferred Seats are complimentary for Medallion® members and select partner airline elite members at ticketing. 
+
+Other customers can purchase available Preferred Seats starting at 24 hours prior to departure.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Extra Legroom Seat</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Extra Legr</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAMp9HCAAAAA==" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Snack</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88856.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88856.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">TREAT YOUR TASTEBUDS
+
+Conquer your cravings and enjoy classic snacks and meals for purchase on domestic flights. Or, savor delicious new selections on long-haul international flights, including enhanced meals, snacks and ice cream* paired with a complimentary large water bottle, beer, wine and spirits.
+
+For more information on the meal options available on your flight, click "Details" and select "Meal Services." Dining offerings are based on flight distance.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">TREAT YOUR TASTEBUDS
+
+Conquer your cravings and enjoy classic snacks and meals for purchase on domestic flights. Or, savor delicious new selections on long-haul international flights, including enhanced meals, snacks and ice cream* paired with a complimentary large water bottle, beer, wine and spirits.
+
+For more information on the meal options available on your flight, click "Details" and select "Meal Services." Dining offerings are based on flight distance.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Snack</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Snack</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKANp9HCAAAAA==" SecondaryType="DR" Chargeable="Available for a charge" Tag="Meals and Beverages" DisplayOrder="6">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Complimentary Premium Beverages</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88844.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88844.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Beverages on board</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Enjoy a selection of complimentary beers, wines, and spirits onboard your flight in Delta OneTM, First Class, and Delta Comfort+TM and on most long-haul international flights in the Main Cabin. 
+
+On Delta Shuttle ® flights, complimentary beer and wine is offered throughout the Main Cabin and with complimentary beer, wine and spirits offered in First Class.
+
+Delta Shuttle flights may be operated be Delta Shuttle carriers Compass Airlines and Shuttle America.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Enjoy a selection of complimentary beers, wines, and spirits onboard your flight in Delta OneTM, First Class, and Delta Comfort+TM and on most long-haul international flights in the Main Cabin. 
+
+On Delta Shuttle ® flights, complimentary beer and wine is offered throughout the Main Cabin and with complimentary beer, wine and spirits offered in First Class.
+
+Delta Shuttle flights may be operated be Delta Shuttle carriers Compass Airlines and Shuttle America.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Complimentary Premium Beverages</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Alcoholic</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="InFlightEntertainment" CreateDate="2020-03-03T00:30:12.603+00:00" ServiceSubCode="0AE" Key="VbtNMC8Q2BKAOp9HCAAAAA==" SecondaryType="HS" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Headset</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88857.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88857.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">On board entertainment</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Earbuds are available for purchase for $2 for Basic Economy and Coach and complimentary for Delta Comfort +™ and First Class.  
+
+Noise Cancelling headsets are complimentary for First Class/Delta One</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Earbuds are available for purchase for $2 for Basic Economy and Coach and complimentary for Delta Comfort +™ and First Class.  
+
+Noise Cancelling headsets are complimentary for First Class/Delta One</air:Text>
+                           <air:PriceRange DefaultCurrency="true" StartPrice="USD3.000"/>
+                           <air:Title Type="External" LanguageCode="EN">Headset</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Headset</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="InFlightEntertainment" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAPp9HCAAAAA==" SecondaryType="IT" Chargeable="Available for a charge" Tag="WiFi" DisplayOrder="7">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Wi-FI Service</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88347.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88347.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Staying connected is even easier</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Throughout the Delta fleet, we have the technology and entertainment that help your trip fly by. 
+
+Delta is one of the largest providers of in-flight WiFi in the world, and with more than 1,100 enabled aircraft, WiFi access is offered on nearly all flights. 
+
+InFlight WiFi powered by Gogo® is installed on all aircraft with two or more cabins.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Throughout the Delta fleet, we have the technology and entertainment that help your trip fly by. 
+
+Delta is one of the largest providers of in-flight WiFi in the world, and with more than 1,100 enabled aircraft, WiFi access is offered on nearly all flights. 
+
+InFlight WiFi powered by Gogo® is installed on all aircraft with two or more cabins.</air:Text>
+                           <air:PriceRange DefaultCurrency="true" StartPrice="USD16.000"/>
+                           <air:Title Type="External" LanguageCode="EN">Wi-FI Service</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">WIFI</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="FrequentFlyer" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAQp9HCAAAAA==" SecondaryType="MG" Chargeable="Included in the brand" Tag="Mileage Accrual" DisplayOrder="10">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Miles</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="TravelServices" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKARp9HCAAAAA==" Chargeable="Not offered" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Priority Boarding</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88852.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88852.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Be amongst the first to board the aircraft</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Air travel is about getting you there. And Delta Sky Priority helps you get there faster with exclusive services designed to improve your travel experience at every step. 
+
+Now instead of waiting, you’ll always go first ; whether it’s through the airport, onto the plane or exiting baggage claim.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Air travel is about getting you there. And Delta Sky Priority helps you get there faster with exclusive services designed to improve your travel experience at every step. 
+
+Now instead of waiting, you’ll always go first ; whether it’s through the airport, onto the plane or exiting baggage claim.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Priority Boarding</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">PB</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalServiceRules Key="VbtNMC8Q2BKAFp9HCAAAAA==">
+                           <common_v50_0:Remarks xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">Y,1,X,X,CY - W23,H35,L56,CM</common_v50_0:Remarks>
+                        </air:OptionalServiceRules>
+                        <air:OptionalServiceRules Key="VbtNMC8Q2BKAHp9HCAAAAA==">
+                           <common_v50_0:Remarks xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">Y,1,KG,23,BAG</common_v50_0:Remarks>
+                        </air:OptionalServiceRules>
+                     </air:OptionalServices>
+                  </air:Brand>
+               </air:FareInfo>
+               <air:FareInfo Key="VbtNMC8Q2BKASp9HCAAAAA==" FareBasis="XAVUA0BC" PassengerTypeCode="ADT" Origin="SFO" Destination="SEA" EffectiveDate="2020-03-01T17:30:00.000-07:00" DepartureDate="2020-04-19" Amount="USD59.53" NotValidBefore="2020-04-19" NotValidAfter="2020-04-19" TaxAmount="USD18.83">
+                  <common_v50_0:Endorsement Value="NONREF/NOCHGS" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                  <common_v50_0:Endorsement Value="NOPRE RSVDSEAT" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                  <air:FareRuleKey FareInfoRef="VbtNMC8Q2BKASp9HCAAAAA==" ProviderCode="1V">6UUVoSldxwj5RjAH7BzXG8bKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAyaJReT3cYHCfTobKkhimR/zd/VTAJtvZZhVznGDa9ItpsLg4CsL0DdPVx+f5U+LkClBM/nSMA/KSwp66q98OO0y3Zon+9Xtvur/bRGkSYBehf6E18cRejF6+WRr8tqYPOT8s8tLq1CgE6DKLVhukgavBBiBw5uY0E8OCBM1TtKcb9Gh0V86rTL9HkEKcuUzr85MiWy/SfVExcBl7vKLULIDi4tOncr2YLwVrt9K3HfiXmtEMKkpnigfxA+19zslRqaMw5RztH/h94+IeiNOLbXk/LPLS6tQoLTNrnWhL8Bga0D5zMDGIuHebX5ydcom5+qMRNVC/eOA/AFKEXb03hK/he9va7VDH7+F729rtUMfcLoW3ikf0Lo=</air:FareRuleKey>
+                  <air:Brand Key="VbtNMC8Q2BKASp9HCAAAAA==" BrandID="268330" UpSellBrandID="268332" Name="Basic Economy" Carrier="DL" BrandTier="0001">
+                     <air:Title Type="External" LanguageCode="EN">Basic Economy</air:Title>
+                     <air:Title Type="Short" LanguageCode="EN">Basic Econ</air:Title>
+                     <air:Text Type="MarketingConsumer" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                     <air:Text Type="MarketingAgent" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                     <air:Text Type="Strapline" LanguageCode="EN">Basic Economy</air:Text>
+                     <air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+                     <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45991.jpg</air:ImageLocation>
+                     <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_45.jpg</air:ImageLocation>
+                     <air:OptionalServices>
+                        <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAjp9HCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="VbtNMC8Q2BKAkp9HCAAAAA==" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Carry on bags</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAlp9HCAAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="VbtNMC8Q2BKAmp9HCAAAAA==" Tag="Checked Baggage" DisplayOrder="2">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Checked bags</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88838.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88838.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">To better assist you with finding baggage information, please go to :
+
+https://www.delta.com/content/www/en_US/traveling-with-us/baggage/before-your-trip/checked.html
+
+From here select from the routes listed. You’ll find information on fees and size requirements sorted by the general routes where you plan to travel. Exceptions for Active Military, Medallion Members, and Delta SkyMiles Credit Card by American Express Members apply. Please reference Baggage Fee Details &amp; Rules, Baggage Fee Exceptions or the Regions page for more details.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">To better assist you with finding baggage information, please go to :
+
+https://www.delta.com/content/www/en_US/traveling-with-us/baggage/before-your-trip/checked.html
+
+From here select from the routes listed. You’ll find information on fees and size requirements sorted by the general routes where you plan to travel. Exceptions for Active Military, Medallion Members, and Delta SkyMiles Credit Card by American Express Members apply. Please reference Baggage Fee Details &amp; Rules, Baggage Fee Exceptions or the Regions page for more details.</air:Text>
+                           <air:PriceRange DefaultCurrency="true" StartPrice="USD30.000"/>
+                           <air:Title Type="External" LanguageCode="EN">Checked bags</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:12.603+00:00" ServiceSubCode="" Key="VbtNMC8Q2BKAnp9HCAAAAA==" SecondaryType="RF" Chargeable="Not offered" Tag="REFUNDABLE TICKET" DisplayOrder="22">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Refunds</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88854.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88854.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Cancelling your reservation</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Refunds</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Refunds</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="Branded Fares" CreateDate="2020-03-03T00:30:12.603+00:00" ServiceSubCode="" Key="VbtNMC8Q2BKAop9HCAAAAA==" SecondaryType="VC" Chargeable="Not offered" Tag="Rebooking" DisplayOrder="3">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Rebooking</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88853.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88853.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Rebooking</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Rebooking</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKApp9HCAAAAA==" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Seat Selection</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Select a seat before check-in</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Seat Selection</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Seat Selec</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAqp9HCAAAAA==" SecondaryType="EA" Chargeable="Not offered" Tag="Extra Legroom" DisplayOrder="19">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Extra Legroom Seat</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88846.jpg"/>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88846.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Your Seat, Your Way</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Enjoy bulkhead seats, exit row seats, or aisle and window seats towards the front of the plane. 
+
+Preferred Seats are complimentary for Medallion® members and select partner airline elite members at ticketing. 
+
+Other customers can purchase available Preferred Seats starting at 24 hours prior to departure.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Enjoy bulkhead seats, exit row seats, or aisle and window seats towards the front of the plane. 
+
+Preferred Seats are complimentary for Medallion® members and select partner airline elite members at ticketing. 
+
+Other customers can purchase available Preferred Seats starting at 24 hours prior to departure.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Extra Legroom Seat</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Extra Legr</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKArp9HCAAAAA==" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Snack</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88856.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88856.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">TREAT YOUR TASTEBUDS
+
+Conquer your cravings and enjoy classic snacks and meals for purchase on domestic flights. Or, savor delicious new selections on long-haul international flights, including enhanced meals, snacks and ice cream* paired with a complimentary large water bottle, beer, wine and spirits.
+
+For more information on the meal options available on your flight, click "Details" and select "Meal Services." Dining offerings are based on flight distance.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">TREAT YOUR TASTEBUDS
+
+Conquer your cravings and enjoy classic snacks and meals for purchase on domestic flights. Or, savor delicious new selections on long-haul international flights, including enhanced meals, snacks and ice cream* paired with a complimentary large water bottle, beer, wine and spirits.
+
+For more information on the meal options available on your flight, click "Details" and select "Meal Services." Dining offerings are based on flight distance.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Snack</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Snack</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAsp9HCAAAAA==" SecondaryType="DR" Chargeable="Available for a charge" Tag="Meals and Beverages" DisplayOrder="6">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Complimentary Premium Beverages</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88844.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88844.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Beverages on board</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Enjoy a selection of complimentary beers, wines, and spirits onboard your flight in Delta OneTM, First Class, and Delta Comfort+TM and on most long-haul international flights in the Main Cabin. 
+
+On Delta Shuttle ® flights, complimentary beer and wine is offered throughout the Main Cabin and with complimentary beer, wine and spirits offered in First Class.
+
+Delta Shuttle flights may be operated be Delta Shuttle carriers Compass Airlines and Shuttle America.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Enjoy a selection of complimentary beers, wines, and spirits onboard your flight in Delta OneTM, First Class, and Delta Comfort+TM and on most long-haul international flights in the Main Cabin. 
+
+On Delta Shuttle ® flights, complimentary beer and wine is offered throughout the Main Cabin and with complimentary beer, wine and spirits offered in First Class.
+
+Delta Shuttle flights may be operated be Delta Shuttle carriers Compass Airlines and Shuttle America.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Complimentary Premium Beverages</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Alcoholic</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="InFlightEntertainment" CreateDate="2020-03-03T00:30:12.603+00:00" ServiceSubCode="0AE" Key="VbtNMC8Q2BKAtp9HCAAAAA==" SecondaryType="HS" Chargeable="Available for a charge" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Headset</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88857.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88857.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">On board entertainment</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Earbuds are available for purchase for $2 for Basic Economy and Coach and complimentary for Delta Comfort +™ and First Class.  
+
+Noise Cancelling headsets are complimentary for First Class/Delta One</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Earbuds are available for purchase for $2 for Basic Economy and Coach and complimentary for Delta Comfort +™ and First Class.  
+
+Noise Cancelling headsets are complimentary for First Class/Delta One</air:Text>
+                           <air:PriceRange DefaultCurrency="true" StartPrice="USD3.000"/>
+                           <air:Title Type="External" LanguageCode="EN">Headset</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Headset</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="InFlightEntertainment" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAup9HCAAAAA==" SecondaryType="IT" Chargeable="Available for a charge" Tag="WiFi" DisplayOrder="7">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Wi-FI Service</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88347.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88347.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Staying connected is even easier</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Throughout the Delta fleet, we have the technology and entertainment that help your trip fly by. 
+
+Delta is one of the largest providers of in-flight WiFi in the world, and with more than 1,100 enabled aircraft, WiFi access is offered on nearly all flights. 
+
+InFlight WiFi powered by Gogo® is installed on all aircraft with two or more cabins.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Throughout the Delta fleet, we have the technology and entertainment that help your trip fly by. 
+
+Delta is one of the largest providers of in-flight WiFi in the world, and with more than 1,100 enabled aircraft, WiFi access is offered on nearly all flights. 
+
+InFlight WiFi powered by Gogo® is installed on all aircraft with two or more cabins.</air:Text>
+                           <air:PriceRange DefaultCurrency="true" StartPrice="USD16.000"/>
+                           <air:Title Type="External" LanguageCode="EN">Wi-FI Service</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">WIFI</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="FrequentFlyer" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAvp9HCAAAAA==" SecondaryType="MG" Chargeable="Included in the brand" Tag="Mileage Accrual" DisplayOrder="10">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Miles</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalService Type="TravelServices" CreateDate="2020-03-03T00:30:12.603+00:00" Key="VbtNMC8Q2BKAwp9HCAAAAA==" Chargeable="Not offered" Tag="Other" DisplayOrder="999">
+                           <common_v50_0:ServiceData AirSegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                           <common_v50_0:ServiceInfo xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+                              <common_v50_0:Description>Priority Boarding</common_v50_0:Description>
+                              <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88852.jpg"/>
+                              <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88852.jpg"/>
+                           </common_v50_0:ServiceInfo>
+                           <air:EMD AssociatedItem="Flight"/>
+                           <air:Text Type="Strapline" LanguageCode="EN">Be amongst the first to board the aircraft</air:Text>
+                           <air:Text Type="MarketingAgent" LanguageCode="EN">Air travel is about getting you there. And Delta Sky Priority helps you get there faster with exclusive services designed to improve your travel experience at every step. 
+
+Now instead of waiting, you’ll always go first ; whether it’s through the airport, onto the plane or exiting baggage claim.</air:Text>
+                           <air:Text Type="MarketingConsumer" LanguageCode="EN">Air travel is about getting you there. And Delta Sky Priority helps you get there faster with exclusive services designed to improve your travel experience at every step. 
+
+Now instead of waiting, you’ll always go first ; whether it’s through the airport, onto the plane or exiting baggage claim.</air:Text>
+                           <air:Title Type="External" LanguageCode="EN">Priority Boarding</air:Title>
+                           <air:Title Type="Short" LanguageCode="EN">PB</air:Title>
+                        </air:OptionalService>
+                        <air:OptionalServiceRules Key="VbtNMC8Q2BKAkp9HCAAAAA==">
+                           <common_v50_0:Remarks xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">Y,1,X,X,CY - W23,H35,L56,CM</common_v50_0:Remarks>
+                        </air:OptionalServiceRules>
+                        <air:OptionalServiceRules Key="VbtNMC8Q2BKAmp9HCAAAAA==">
+                           <common_v50_0:Remarks xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">Y,1,KG,23,BAG</common_v50_0:Remarks>
+                        </air:OptionalServiceRules>
+                     </air:OptionalServices>
+                  </air:Brand>
+               </air:FareInfo>
+               <air:BookingInfo BookingCode="E" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKAzo9HCAAAAA==" SegmentRef="VbtNMC8Q2BKAno9HCAAAAA==" HostTokenRef="VbtNMC8Q2BKAso9HCAAAAA=="/>
+               <air:BookingInfo BookingCode="E" CabinClass="Economy" FareInfoRef="VbtNMC8Q2BKASp9HCAAAAA==" SegmentRef="VbtNMC8Q2BKApo9HCAAAAA==" HostTokenRef="VbtNMC8Q2BKAto9HCAAAAA=="/>
+               <air:TaxInfo Category="AY" Amount="USD11.20" Key="VbtNMC8Q2BKAvo9HCAAAAA=="/>
+               <air:TaxInfo Category="US" Amount="USD8.93" Key="VbtNMC8Q2BKAwo9HCAAAAA=="/>
+               <air:TaxInfo Category="XF" Amount="USD9.00" Key="VbtNMC8Q2BKAxo9HCAAAAA==">
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="SEA" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                  <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="SFO" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+               </air:TaxInfo>
+               <air:TaxInfo Category="ZP" Amount="USD8.60" Key="VbtNMC8Q2BKAyo9HCAAAAA==">
+                  <common_v50_0:TaxDetail Amount="USD4.30" OriginAirport="SEA" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+                  <common_v50_0:TaxDetail Amount="USD4.30" OriginAirport="SFO" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0"/>
+               </air:TaxInfo>
+               <air:FareCalc>SEA DL SFO 59.53XAVUA0BC DL SEA 59.53XAVUA0BC USD119.06END</air:FareCalc>
+               <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+               <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMg=="/>
+            </air:AirPricingInfo>
+            <air:FareNote Key="VbtNMC8Q2BKAzp9HCAAAAA==">LAST DATE TO PURCHASE TICKET: 03MAR20 DEN</air:FareNote>
+            <air:FareNote Key="VbtNMC8Q2BKA0p9HCAAAAA==">TICKETING AGENCY 29BD</air:FareNote>
+            <air:FareNote Key="VbtNMC8Q2BKA1p9HCAAAAA==">DEFAULT PLATING CARRIER DL</air:FareNote>
+            <air:FareNote Key="VbtNMC8Q2BKA2p9HCAAAAA==">E-TKT REQUIRED</air:FareNote>
+            <common_v50_0:HostToken Key="VbtNMC8Q2BKAso9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">GFB10101ADT00  01XAVUA0BC                              010001#GFB200010101NADTV30009B570040000899#GFMCEOU011N9B57 DL ADTXAVUA0BC</common_v50_0:HostToken>
+            <common_v50_0:HostToken Key="VbtNMC8Q2BKAto9HCAAAAA==" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">GFB10101ADT00  02XAVUA0BC                              010002#GFB200010102NADTV30009B570040000899#GFMCEOU011N9B57 DL ADTXAVUA0BC</common_v50_0:HostToken>
+         </air:AirPricingSolution>
+         <com:ActionStatus TicketDate="2020-03-07" Type="TAU" ProviderCode="1V" xmlns:com="http://www.travelport.com/schema/common_v50_0"/>
+      </univ:AirCreateReservationReq>
+   </soap:Body>
+</soap:Envelope>
+
+Air Book-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:AirCreateReservationRsp TraceId="1232346" TransactionId="9DD26D140A0764772606212B8CBF0A92" ResponseTime="16544" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <common_v50_0:ResponseMessage Code="3068" Type="Warning" ProviderCode="1V">Additional details like Billing Address, Phone Number is saved locally for the requested provider.</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="13566" Type="Warning" ProviderCode="1V">Brand optional services were filtered out as they are not offered in the brand or are only available at a charge.</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="3715" Type="Warning" ProviderCode="1V">Host only allows one Address/Delivery Address. Only one sent in request.</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="3824" Type="Warning" ProviderCode="1V">The fare HostToken has been ignored. The BrandTier has been applied.</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="13565" Type="Warning" ProviderCode="1V">UpsellBrandID has been ignored.</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="0T1ONL" Version="0" Status="Active">
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMQ==" TravelerType="ADT" ElStat="A">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="CARSTEN" Last="LINDELOEV"/>
+               <common_v50_0:PhoneNumber Key="sQTWMC3R2BKA8V2FCAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-722-2454" Extension="22" AreaCode="222" Text="Abc-Xy" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAce2FCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="sQTWMC3R2BKAKW2FCAAAAA==" Type="Home" EmailID="jtestora@travelport.com" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAce2FCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="sQTWMC3R2BKA9V2FCAAAAA==" Status="HK" Type="DOCS" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/LINDELOEV/CARSTENGJELLERUPMR-1LINDELOEV/CARSTENMR" Carrier="DL" ProviderReservationInfoRef="sQTWMC3R2BKAce2FCAAAAA==" ElStat="A"/>
+               <common_v50_0:Address Key="sQTWMC3R2BKALW2FCAAAAA==" ElStat="A">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAce2FCAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMg==" TravelerType="ADT" ElStat="A">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="john" Last="Long"/>
+               <common_v50_0:PhoneNumber Key="sQTWMC3R2BKAAW2FCAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-702-2454" Extension="22" AreaCode="222" Text="Abd-Xy" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAce2FCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="sQTWMC3R2BKAMW2FCAAAAA==" Type="Home" EmailID="jtestora@travelport.com" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAce2FCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="sQTWMC3R2BKABW2FCAAAAA==" Status="HK" Type="DOCS" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/LONG/JHONJELLERUPMR-1LONG/JOHNMR" Carrier="DL" ProviderReservationInfoRef="sQTWMC3R2BKAce2FCAAAAA==" ElStat="A"/>
+               <common_v50_0:Address Key="sQTWMC3R2BKANW2FCAAAAA==" ElStat="A">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="sQTWMC3R2BKAPW2FCAAAAA==" Type="TAU" TicketDate="2020-03-07T23:59:00.000-07:00" ProviderReservationInfoRef="sQTWMC3R2BKAce2FCAAAAA==" ProviderCode="1V" ElStat="A"/>
+            <universal:ProviderReservationInfo Key="sQTWMC3R2BKAce2FCAAAAA==" ProviderCode="1V" LocatorCode="RVZRXQ" CreateDate="2020-03-03T00:36:34.582+00:00" ModifiedDate="2020-03-03T00:36:34.582+00:00" HostCreateDate="2020-03-02" OwningPCC="29BD">
+               <universal:ProviderReservationDisplayDetailsList>
+                  <universal:DisplayDetails ProviderReservationDetail="true">
+                     <universal:DisplayDetail Name="OwningAgencyPCC" Value="29BD"/>
+                     <universal:DisplayDetail Name="CreatingAgentSignOn" Value="29BDGWS"/>
+                     <universal:DisplayDetail Name="CreatingAgentDuty" Value="AG"/>
+                     <universal:DisplayDetail Name="CreatingAgencyIATA" Value="06512376"/>
+                     <universal:DisplayDetail Name="PrepaidTicketAdviceIndicator" Value="N"/>
+                     <universal:DisplayDetail Name="BFBorrowed" Value="N"/>
+                     <universal:DisplayDetail Name="GlobalPNR" Value="N"/>
+                     <universal:DisplayDetail Name="PastDateQuickRetrievedPNR" Value="N"/>
+                     <universal:DisplayDetail Name="PNRPurgeDate" Value="20200421"/>
+                     <universal:DisplayDetail Name="OriginalReceivedFieldValue" Value="NOKEYSUPPLIEDUAPITESTING"/>
+                  </universal:DisplayDetails>
+               </universal:ProviderReservationDisplayDetailsList>
+            </universal:ProviderReservationInfo>
+            <air:AirReservation LocatorCode="0T1ONM" CreateDate="2020-03-03T00:36:33.273+00:00" ModifiedDate="2020-03-03T00:36:34.582+00:00">
+               <common_v50_0:SupplierLocator SupplierCode="DL" SupplierLocatorCode="HO8ERE" ProviderReservationInfoRef="sQTWMC3R2BKAce2FCAAAAA==" CreateDateTime="2020-03-03T00:36:00.000+00:00"/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+               <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAce2FCAAAAA=="/>
+               <air:AirSegment Key="VbtNMC8Q2BKAno9HCAAAAA==" Group="0" Carrier="DL" CabinClass="Economy" FlightNumber="2490" ProviderCode="1V" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T06:30:00.000-07:00" ArrivalTime="2020-04-16T08:46:00.000-07:00" TravelTime="136" Distance="679" ClassOfService="E" ETicketability="Yes" Equipment="221" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="sQTWMC3R2BKAce2FCAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status" ElStat="A">
+                  <air:FlightDetails Key="sQTWMC3R2BKATe2FCAAAAA==" Origin="SEA" Destination="SFO" DepartureTime="2020-04-16T06:30:00.000-07:00" ArrivalTime="2020-04-16T08:46:00.000-07:00" FlightTime="136" TravelTime="136" Equipment="221" DestinationTerminal="1" AutomatedCheckin="false" ElStat="C"/>
+                  <common_v50_0:SellMessage>ARRIVES SFO TERMINAL 1</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirSegment Key="VbtNMC8Q2BKApo9HCAAAAA==" Group="1" Carrier="DL" CabinClass="Economy" FlightNumber="2703" ProviderCode="1V" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" TravelTime="143" Distance="679" ClassOfService="E" ETicketability="Yes" Equipment="221" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="sQTWMC3R2BKAce2FCAAAAA==" TravelOrder="2" ProviderSegmentOrder="2" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status" ElStat="A">
+                  <air:FlightDetails Key="sQTWMC3R2BKAUe2FCAAAAA==" Origin="SFO" Destination="SEA" DepartureTime="2020-04-19T06:20:00.000-07:00" ArrivalTime="2020-04-19T08:43:00.000-07:00" FlightTime="143" TravelTime="143" Equipment="221" OriginTerminal="1" AutomatedCheckin="false" ElStat="C"/>
+                  <common_v50_0:SellMessage>OFFER CAR/HOTEL    >CAL	     >HOA</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>DEPARTS SFO TERMINAL 1</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirPricingInfo Key="VbtNMC8Q2BKAuo9HCAAAAA==" TotalPrice="USD156.79" BasePrice="USD119.06" ApproximateTotalPrice="USD156.79" ApproximateBasePrice="USD119.06" Taxes="USD37.73" LatestTicketingTime="2020-03-03T23:59:00.000-07:00" PricingMethod="Auto" Exchangeable="true" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="DL" ProviderCode="1V" ProviderReservationInfoRef="sQTWMC3R2BKAce2FCAAAAA==" AirPricingInfoGroup="1" PricingType="StoredFare" ElStat="A" FareCalculationInd="C">
+                  <air:FareInfo Key="sQTWMC3R2BKAOe2FCAAAAA==" FareBasis="XAVUA0BC" PassengerTypeCode="ADT" Origin="SEA" Destination="SFO" EffectiveDate="2020-03-02T00:00:00.000-07:00" Amount="USD59.53" NotValidBefore="2020-04-16" NotValidAfter="2020-04-16" ElStat="C">
+                     <common_v50_0:Endorsement Value="NONREF/NOCHGS"/>
+                     <common_v50_0:Endorsement Value="NOPRE RSVDSEAT"/>
+                     <air:BaggageAllowance>
+                        <air:NumberOfPieces>0</air:NumberOfPieces>
+                     </air:BaggageAllowance>
+                     <air:Brand Key="sQTWMC3R2BKAOe2FCAAAAA==" BrandID="268330" Name="Basic Economy" Carrier="DL" BrandTier="0001">
+                        <air:Title Type="External" LanguageCode="EN">Basic Economy</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">Basic Econ</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Basic Economy</air:Text>
+                        <air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45991.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_45.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:12.603+00:00" ElStat="A" Key="VbtNMC8Q2BKAEp9HCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="VbtNMC8Q2BKAFp9HCAAAAA==" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Carry on bags</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="FrequentFlyer" CreateDate="2020-03-03T00:30:12.603+00:00" ElStat="A" Key="VbtNMC8Q2BKAQp9HCAAAAA==" SecondaryType="MG" Chargeable="Included in the brand" Tag="Mileage Accrual" DisplayOrder="10">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Miles</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareInfo Key="sQTWMC3R2BKAPe2FCAAAAA==" FareBasis="XAVUA0BC" PassengerTypeCode="ADT" Origin="SFO" Destination="SEA" EffectiveDate="2020-03-02T00:00:00.000-07:00" Amount="USD59.53" NotValidBefore="2020-04-19" NotValidAfter="2020-04-19" ElStat="C">
+                     <common_v50_0:Endorsement Value="NONREF/NOCHGS"/>
+                     <common_v50_0:Endorsement Value="NOPRE RSVDSEAT"/>
+                     <air:BaggageAllowance>
+                        <air:NumberOfPieces>0</air:NumberOfPieces>
+                     </air:BaggageAllowance>
+                     <air:Brand Key="sQTWMC3R2BKAPe2FCAAAAA==" BrandID="268330" Name="Basic Economy" Carrier="DL" BrandTier="0001">
+                        <air:Title Type="External" LanguageCode="EN">Basic Economy</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">Basic Econ</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">Basic Economy restrictions:
+
+• No seat assignment is available until after check-in
+• Refunds and any ticket changes, including same-day changes, are not permitted
+• No paid or complimentary access or upgrades to premium seats or products, including Delta Comfort+™ or Preferred Seats, and no paid access to Priority Boarding
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Basic Economy</air:Text>
+                        <air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45991.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_45.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:12.603+00:00" ElStat="A" Key="VbtNMC8Q2BKAjp9HCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="VbtNMC8Q2BKAkp9HCAAAAA==" Tag="Other" DisplayOrder="999">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Carry on bags</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="FrequentFlyer" CreateDate="2020-03-03T00:30:12.603+00:00" ElStat="A" Key="VbtNMC8Q2BKAvp9HCAAAAA==" SecondaryType="MG" Chargeable="Included in the brand" Tag="Mileage Accrual" DisplayOrder="10">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Miles</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks. 
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members. 
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareStatus Code="ReadyToTicket"/>
+                  <air:BookingInfo BookingCode="E" CabinClass="Economy" FareInfoRef="sQTWMC3R2BKAOe2FCAAAAA==" SegmentRef="VbtNMC8Q2BKAno9HCAAAAA=="/>
+                  <air:BookingInfo BookingCode="E" CabinClass="Economy" FareInfoRef="sQTWMC3R2BKAPe2FCAAAAA==" SegmentRef="VbtNMC8Q2BKApo9HCAAAAA=="/>
+                  <air:TaxInfo Category="AY" Amount="USD11.20" Key="VbtNMC8Q2BKAvo9HCAAAAA=="/>
+                  <air:TaxInfo Category="US" Amount="USD8.93" Key="VbtNMC8Q2BKAwo9HCAAAAA=="/>
+                  <air:TaxInfo Category="XF" Amount="USD9.00" Key="VbtNMC8Q2BKAxo9HCAAAAA==">
+                     <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="SEA"/>
+                     <common_v50_0:TaxDetail Amount="USD4.50" OriginAirport="SFO"/>
+                  </air:TaxInfo>
+                  <air:TaxInfo Category="ZP" Amount="USD8.60" Key="VbtNMC8Q2BKAyo9HCAAAAA==">
+                     <common_v50_0:TaxDetail Amount="USD4.30" OriginAirport="SEA"/>
+                     <common_v50_0:TaxDetail Amount="USD4.30" OriginAirport="SFO"/>
+                  </air:TaxInfo>
+                  <air:FareCalc>SEA DL SFO 59.53XAVUA0BC DL SEA 59.53XAVUA0BC USD119.06END</air:FareCalc>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMQ==">
+                     <air:FareGuaranteeInfo GuaranteeType="Auto"/>
+                  </air:PassengerType>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMg==">
+                     <air:FareGuaranteeInfo GuaranteeType="Auto"/>
+                  </air:PassengerType>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+                  <air:ChangePenalty PenaltyApplies="Anytime">
+                     <air:Percentage>100.00</air:Percentage>
+                  </air:ChangePenalty>
+                  <air:CancelPenalty NoShow="true" PenaltyApplies="Anytime">
+                     <air:Percentage>100.00</air:Percentage>
+                  </air:CancelPenalty>
+                  <air:TicketingModifiersRef Key="sQTWMC3R2BKAle2FCAAAAA=="/>
+               </air:AirPricingInfo>
+               <air:TicketingModifiers PlatingCarrier="DL" Key="sQTWMC3R2BKAle2FCAAAAA==" ElStat="A">
+                  <air:DocumentSelect IssueElectronicTicket="true"/>
+               </air:TicketingModifiers>
+            </air:AirReservation>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="UD_AGT_PP" BranchCode="TP_1V_SOA" AgencyCode="AGENCYNAME34331" EventTime="2020-03-03T00:36:19.221+00:00"/>
+            </common_v50_0:AgencyInfo>
+            <common_v50_0:FormOfPayment Key="PDz8y7xu4hGfaM/wYIhwmw==" Type="Credit" Reusable="true" ProfileKey="GAJOYrVu4hGShsrlYIhwmw==" ElStat="A">
+               <common_v50_0:CreditCard Type="CA" Number="5555555555555557" ExpDate="2021-01" Name="JAYA KUMAR">
+                  <common_v50_0:BillingAddress Key="sQTWMC3R2BKAOW2FCAAAAA==" ElStat="A">
+                     <common_v50_0:AddressName>Jan Testora</common_v50_0:AddressName>
+                     <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                     <common_v50_0:Street>Apt 2</common_v50_0:Street>
+                     <common_v50_0:City>Englewood</common_v50_0:City>
+                     <common_v50_0:State>CO</common_v50_0:State>
+                     <common_v50_0:PostalCode>8011</common_v50_0:PostalCode>
+                     <common_v50_0:Country>AU</common_v50_0:Country>
+                  </common_v50_0:BillingAddress>
+               </common_v50_0:CreditCard>
+               <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAce2FCAAAAA=="/>
+            </common_v50_0:FormOfPayment>
+         </universal:UniversalRecord>
+      </universal:AirCreateReservationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

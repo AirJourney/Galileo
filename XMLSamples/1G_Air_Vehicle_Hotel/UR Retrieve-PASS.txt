@@ -1,0 +1,840 @@
+UR Retrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordRetrieveReq TargetBranch="P7102538" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <univ:UniversalRecordLocatorCode>0T1OMT</univ:UniversalRecordLocatorCode>
+      </univ:UniversalRecordRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR Retrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordRetrieveRsp TransactionId="9DCDD82D0A07643B096D7BC3AA71ACCC" ResponseTime="2081" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">Unable to Synch the Partial Universal Record for the Provider :1G</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="0T1OMT" Version="1" Status="Active">
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMQ==" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="CARSTEN" Last="LINDELOEV"/>
+               <common_v50_0:PhoneNumber Key="xs/MMC4R2BKA0wKKCAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-722-2454" Extension="22" AreaCode="222" Text="Abc-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="xs/MMC4R2BKAGxKKCAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="xs/MMC4R2BKA1wKKCAAAAA==" Status="HK" Type="DOCS" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/LINDELOEV/CARSTENGJELLERUPMR -1LINDELOEV/CARSTENMR" Carrier="SA" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               <common_v50_0:Address Key="xs/MMC4R2BKAHxKKCAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMg==" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="john" Last="Long"/>
+               <common_v50_0:PhoneNumber Key="xs/MMC4R2BKA4wKKCAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-702-2454" Extension="22" AreaCode="222" Text="Abd-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="xs/MMC4R2BKAIxKKCAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="xs/MMC4R2BKA5wKKCAAAAA==" Status="HK" Type="DOCS" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/LONG/JHONJELLERUPMR -1LONG/JOHNMR" Carrier="SA" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               <common_v50_0:Address Key="xs/MMC4R2BKAJxKKCAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="xs/MMC4R2BKANxKKCAAAAA==" Type="TAU" TicketDate="2020-03-07T23:59:00.000+02:00" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" ProviderCode="1G"/>
+            <universal:ProviderReservationInfo Key="xs/MMC4R2BKAtzKKCAAAAA==" ProviderCode="1G" LocatorCode="5BQFGA" CreateDate="2020-03-03T00:30:20.043+00:00" ModifiedDate="2020-03-03T00:31:20.824+00:00" HostCreateDate="2020-03-03" OwningPCC="80EZ"/>
+            <air:AirReservation LocatorCode="0T1OMW" CreateDate="2020-03-03T00:30:19.356+00:00" ModifiedDate="2020-03-03T00:31:20.824+00:00">
+               <common_v50_0:SupplierLocator SupplierCode="SA" SupplierLocatorCode="VVDJD9" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" CreateDateTime="2020-03-03T00:30:00.000+00:00"/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+               <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAtzKKCAAAAA=="/>
+               <air:AirSegment Key="sQTWMC3R2BKAPsvFCAAAAA==" Group="0" Carrier="SA" FlightNumber="8854" ProviderCode="1G" Origin="PHW" Destination="JNB" DepartureTime="2020-04-21T13:15:00.000+02:00" ArrivalTime="2020-04-21T14:35:00.000+02:00" TravelTime="80" Distance="243" ClassOfService="W" ETicketability="Yes" Equipment="J41" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status">
+                  <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAvzKKCAAAAA==">SA AIRLINK</common_v50_0:SegmentRemark>
+                  <air:CodeshareInfo OperatingCarrier="4Z"/>
+                  <air:FlightDetails Key="xs/MMC4R2BKAgzKKCAAAAA==" Origin="PHW" Destination="JNB" DepartureTime="2020-04-21T13:15:00.000+02:00" ArrivalTime="2020-04-21T14:35:00.000+02:00" FlightTime="80" TravelTime="80" Distance="243"/>
+                  <air:Connection Duration="70"/>
+                  <common_v50_0:SellMessage>OPERATED BY SA AIRLINK</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>ARRIVES JNB TERMINAL B</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>*OPERATED BY 4Z*</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>*NO SHOW AND FIREARM RULES APPLIES*</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirSegment Key="sQTWMC3R2BKARsvFCAAAAA==" Group="0" Carrier="SA" FlightNumber="8411" ProviderCode="1G" Origin="JNB" Destination="BFN" DepartureTime="2020-04-21T15:45:00.000+02:00" ArrivalTime="2020-04-21T16:45:00.000+02:00" TravelTime="60" Distance="238" ClassOfService="W" ETicketability="Yes" Equipment="ER3" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" TravelOrder="2" ProviderSegmentOrder="2" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status">
+                  <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA1zKKCAAAAA==">SA AIRLINK</common_v50_0:SegmentRemark>
+                  <air:CodeshareInfo OperatingCarrier="4Z"/>
+                  <air:FlightDetails Key="xs/MMC4R2BKAhzKKCAAAAA==" Origin="JNB" Destination="BFN" DepartureTime="2020-04-21T15:45:00.000+02:00" ArrivalTime="2020-04-21T16:45:00.000+02:00" FlightTime="60" TravelTime="60" Distance="238"/>
+                  <air:Connection Duration="115"/>
+                  <common_v50_0:SellMessage>OPERATED BY SA AIRLINK</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>DEPARTS JNB TERMINAL B</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>*OPERATED BY 4Z*</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>*NO SHOW AND FIREARM RULES APPLIES*</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirSegment Key="sQTWMC3R2BKATsvFCAAAAA==" Group="0" Carrier="SA" FlightNumber="1058" ProviderCode="1G" Origin="BFN" Destination="CPT" DepartureTime="2020-04-21T18:40:00.000+02:00" ArrivalTime="2020-04-21T20:20:00.000+02:00" TravelTime="100" Distance="564" ClassOfService="G" ETicketability="Yes" Equipment="CR2" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" TravelOrder="3" ProviderSegmentOrder="3" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status">
+                  <common_v50_0:SegmentRemark Key="xs/MMC4R2BKA7zKKCAAAAA==">SOUTH AFRICAN EXPRESS</common_v50_0:SegmentRemark>
+                  <air:CodeshareInfo OperatingCarrier="XZ"/>
+                  <air:FlightDetails Key="xs/MMC4R2BKAizKKCAAAAA==" Origin="BFN" Destination="CPT" DepartureTime="2020-04-21T18:40:00.000+02:00" ArrivalTime="2020-04-21T20:20:00.000+02:00" FlightTime="100" TravelTime="100" Distance="564"/>
+                  <common_v50_0:SellMessage>OPERATED BY SOUTH AFRICAN EXPRESS</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>*OPERATED BY XZ*</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirSegment Key="sQTWMC3R2BKAVsvFCAAAAA==" Group="1" Carrier="SA" FlightNumber="346" ProviderCode="1G" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:05:00.000+02:00" ArrivalTime="2020-04-26T17:00:00.000+02:00" TravelTime="115" Distance="788" ClassOfService="G" ETicketability="Yes" Equipment="359" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" TravelOrder="4" ProviderSegmentOrder="4" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status">
+                  <air:FlightDetails Key="xs/MMC4R2BKAjzKKCAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:05:00.000+02:00" ArrivalTime="2020-04-26T17:00:00.000+02:00" FlightTime="115" TravelTime="115" Distance="788"/>
+                  <common_v50_0:SellMessage>ARRIVES JNB TERMINAL B</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirSegment Key="sQTWMC3R2BKAXsvFCAAAAA==" Group="2" Carrier="SA" FlightNumber="8853" ProviderCode="1G" Origin="JNB" Destination="PHW" DepartureTime="2020-04-27T11:45:00.000+02:00" ArrivalTime="2020-04-27T12:55:00.000+02:00" TravelTime="70" Distance="243" ClassOfService="W" ETicketability="Yes" Equipment="J41" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" TravelOrder="5" ProviderSegmentOrder="5" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="O and D cache or polled status used with different local status">
+                  <common_v50_0:SegmentRemark Key="xs/MMC4R2BKAG0KKCAAAAA==">SA AIRLINK</common_v50_0:SegmentRemark>
+                  <air:CodeshareInfo OperatingCarrier="4Z"/>
+                  <air:FlightDetails Key="xs/MMC4R2BKAkzKKCAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-04-27T11:45:00.000+02:00" ArrivalTime="2020-04-27T12:55:00.000+02:00" FlightTime="70" TravelTime="70" Distance="243"/>
+                  <common_v50_0:SellMessage>OPERATED BY SA AIRLINK</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>DEPARTS JNB TERMINAL B</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>*OPERATED BY 4Z*</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>*NO SHOW AND FIREARM RULES APPLIES*</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirPricingInfo Key="sQTWMC3R2BKAfsvFCAAAAA==" TotalPrice="ZAR7862.30" BasePrice="ZAR2060.00" ApproximateTotalPrice="ZAR7862.30" ApproximateBasePrice="ZAR2060.00" Taxes="ZAR5802.30" LatestTicketingTime="2020-03-04T23:59:00.000+02:00" TrueLastDateToTicket="2020-03-04T23:59:00.000+02:00" PricingMethod="Guaranteed" Exchangeable="true" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="SA" ProviderCode="1G" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" AirPricingInfoGroup="1" PricingType="StoredFare" FareCalculationInd="G">
+                  <air:FareInfo Key="xs/MMC4R2BKAlzKKCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="ADT" Origin="PHW" Destination="JNB" EffectiveDate="2020-03-03T00:00:00.000+02:00" Amount="ZAR390.00" NotValidBefore="2020-04-21" NotValidAfter="2020-04-21" PseudoCityCode="80EZ">
+                     <common_v50_0:Endorsement Value="NONEND"/>
+                     <common_v50_0:Endorsement Value="NONREF/CHG PENALTY APPLY"/>
+                     <common_v50_0:Endorsement Value="NONEND/NONREF VLD SA ONLY"/>
+                     <common_v50_0:Endorsement Value="NONEND-/REF"/>
+                     <air:BaggageAllowance>
+                        <air:MaxWeight Value="20" Unit="Kilograms"/>
+                     </air:BaggageAllowance>
+                     <air:Brand Key="xs/MMC4R2BKAlzKKCAAAAA==" BrandID="245008" Name="Saver" Carrier="SA" BrandTier="0001">
+                        <air:Title Type="External" LanguageCode="EN">Saver</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">Saver</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our best available fare</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/southafrican/SA_general_large_45797.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/southafrican/SA_general_medium_484.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.337+00:00" Key="sQTWMC3R2BKArsvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Checked baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Checked baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.337+00:00" Key="sQTWMC3R2BKAtsvFCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Hand baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Hand baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,8,CY</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:10.337+00:00" Key="sQTWMC3R2BKAysvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Meals</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Meals</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Meals</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareInfo Key="xs/MMC4R2BKAmzKKCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="ADT" Origin="JNB" Destination="BFN" EffectiveDate="2020-03-03T00:00:00.000+02:00" Amount="ZAR150.00" NotValidBefore="2020-04-21" NotValidAfter="2020-04-21" PseudoCityCode="80EZ">
+                     <common_v50_0:Endorsement Value="NONEND"/>
+                     <common_v50_0:Endorsement Value="NONREF/CHG PENALTY APPLY"/>
+                     <common_v50_0:Endorsement Value="NONEND/NONREF VLD SA ONLY"/>
+                     <common_v50_0:Endorsement Value="NONEND-/REF"/>
+                     <air:BaggageAllowance>
+                        <air:MaxWeight Value="20" Unit="Kilograms"/>
+                     </air:BaggageAllowance>
+                     <air:Brand Key="xs/MMC4R2BKAmzKKCAAAAA==" BrandID="245008" Name="Saver" Carrier="SA" BrandTier="0001">
+                        <air:Title Type="External" LanguageCode="EN">Saver</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">Saver</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our best available fare</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/southafrican/SA_general_large_45797.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/southafrican/SA_general_medium_484.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKA+svFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Checked baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Checked baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKAAtvFCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Hand baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Hand baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,8,CY</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKAFtvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Meals</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Meals</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Meals</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareInfo Key="xs/MMC4R2BKAnzKKCAAAAA==" FareBasis="GSAX" PassengerTypeCode="ADT" Origin="BFN" Destination="CPT" EffectiveDate="2020-03-03T00:00:00.000+02:00" Amount="ZAR500.00" PseudoCityCode="80EZ">
+                     <common_v50_0:Endorsement Value="NONEND"/>
+                     <common_v50_0:Endorsement Value="NONREF/CHG PENALTY APPLY"/>
+                     <common_v50_0:Endorsement Value="NONEND/NONREF VLD SA ONLY"/>
+                     <common_v50_0:Endorsement Value="NONEND-/REF"/>
+                     <air:BaggageAllowance>
+                        <air:MaxWeight Value="20" Unit="Kilograms"/>
+                     </air:BaggageAllowance>
+                     <air:Brand Key="xs/MMC4R2BKAnzKKCAAAAA==" BrandID="245008" Name="Saver" Carrier="SA" BrandTier="0001">
+                        <air:Title Type="External" LanguageCode="EN">Saver</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">Saver</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our best available fare</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/southafrican/SA_general_large_45797.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/southafrican/SA_general_medium_484.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKARtvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Checked baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Checked baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKATtvFCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Hand baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Hand baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,8,CY</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKAYtvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Meals</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Meals</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Meals</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareInfo Key="xs/MMC4R2BKAozKKCAAAAA==" FareBasis="GSAOW" PassengerTypeCode="ADT" Origin="CPT" Destination="JNB" EffectiveDate="2020-03-03T00:00:00.000+02:00" Amount="ZAR630.00" NotValidBefore="2020-04-26" NotValidAfter="2020-04-26" PseudoCityCode="80EZ">
+                     <common_v50_0:Endorsement Value="NONEND"/>
+                     <common_v50_0:Endorsement Value="NONREF/CHG PENALTY APPLY"/>
+                     <common_v50_0:Endorsement Value="NONEND/NONREF VLD SA ONLY"/>
+                     <common_v50_0:Endorsement Value="NONEND-/REF"/>
+                     <air:BaggageAllowance>
+                        <air:NumberOfPieces>1</air:NumberOfPieces>
+                     </air:BaggageAllowance>
+                     <air:Brand Key="xs/MMC4R2BKAozKKCAAAAA==" BrandID="245008" Name="Saver" Carrier="SA" BrandTier="0001">
+                        <air:Title Type="External" LanguageCode="EN">Saver</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">Saver</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our best available fare</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/southafrican/SA_general_large_45797.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/southafrican/SA_general_medium_484.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKAktvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Checked baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Checked baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKAmtvFCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Hand baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Hand baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,8,CY</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKArtvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Meals</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Meals</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Meals</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:FareInfo Key="xs/MMC4R2BKApzKKCAAAAA==" FareBasis="WOW4Z" PassengerTypeCode="ADT" Origin="JNB" Destination="PHW" EffectiveDate="2020-03-03T00:00:00.000+02:00" Amount="ZAR390.00" NotValidBefore="2020-04-27" NotValidAfter="2020-04-27" PseudoCityCode="80EZ">
+                     <common_v50_0:Endorsement Value="NONEND"/>
+                     <common_v50_0:Endorsement Value="NONREF/CHG PENALTY APPLY"/>
+                     <common_v50_0:Endorsement Value="NONEND/NONREF VLD SA ONLY"/>
+                     <common_v50_0:Endorsement Value="NONEND-/REF"/>
+                     <air:BaggageAllowance>
+                        <air:NumberOfPieces>1</air:NumberOfPieces>
+                     </air:BaggageAllowance>
+                     <air:Brand Key="xs/MMC4R2BKApzKKCAAAAA==" BrandID="245008" Name="Saver" Carrier="SA" BrandTier="0001">
+                        <air:Title Type="External" LanguageCode="EN">Saver</air:Title>
+                        <air:Title Type="Short" LanguageCode="EN">Saver</air:Title>
+                        <air:Text Type="MarketingConsumer" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="MarketingAgent" LanguageCode="EN">• Combinable with any other fare class.
+
+• Ticket payment period: as per fare rule.
+
+• Flight changes allowed at no charge subject to the applicable booking class being available, If the applicable booking class is not available. 
+
+• Upgrade permitted to the higher applicable fare.
+
+• No name changes allowed after ticketing.
+
+• Select seat at check-in only or purchase on flysaa.com.
+
+• 1 Voyager Mile for every R1.60 spent.
+
+• Re-routing permitted.
+
+• Standby not permitted.
+
+• Complimentary onboard meals or snacks.
+
+• Refunds - partially/non-refundable within terms and conditions.
+
+• No show fee will apply.
+
+• Checked-in baggage allowance from 1 piece up to 23kg (depending on destination - refer to flysaa.com for full details).
+
+• One piece of cabin baggage, each not exceeding 8kg in weight.
+
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+                        <air:Text Type="Strapline" LanguageCode="EN">Our best available fare</air:Text>
+                        <air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/southafrican/SA_general_large_45797.jpg</air:ImageLocation>
+                        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/southafrican/SA_general_medium_484.jpg</air:ImageLocation>
+                        <air:OptionalServices>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKA3tvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Checked baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105382.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver passengers can check in 1 piece of baggage up to 23kg.
+
+• Plus passengers can check in 1 piece of baggage up to 23kg.
+
+• Select passengers can check in 1 piece of baggage up to 23kg.
+
+• Priority passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.
+
+• Premium passengers can check in 1 piece of baggage up to 32kg for domestic routes and 2 pieces of baggage up to 32kg each for international routes.</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Checked baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,23,Bag</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="Baggage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKA5tvFCAAAAA==" SecondaryType="CY" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Hand baggage</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105388.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">1x8kg (max 56 x 36 x 23cm).</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Hand baggage</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Y,1,8,CY</air:Title>
+                           </air:OptionalService>
+                           <air:OptionalService Type="MealOrBeverage" CreateDate="2020-03-03T00:30:10.338+00:00" Key="sQTWMC3R2BKA+tvFCAAAAA==" Chargeable="Included in the brand">
+                              <common_v50_0:ServiceInfo>
+                                 <common_v50_0:Description>Meals</common_v50_0:Description>
+                                 <common_v50_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                                 <common_v50_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/southafricanairways/SA_general_medium_105386.jpg"/>
+                              </common_v50_0:ServiceInfo>
+                              <air:EMD AssociatedItem="Flight"/>
+                              <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                              <air:Text Type="MarketingAgent" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Text Type="MarketingConsumer" LanguageCode="EN">• Saver, Plus and Select passengers can enjoy a complementary meal and a variety of beverages.
+
+• Priority and Premium passengers can enjoy award-winning cuisine prepared by world-renowned chefs</air:Text>
+                              <air:Title Type="External" LanguageCode="EN">Meals</air:Title>
+                              <air:Title Type="Short" LanguageCode="EN">Meals</air:Title>
+                           </air:OptionalService>
+                        </air:OptionalServices>
+                     </air:Brand>
+                  </air:FareInfo>
+                  <air:BookingInfo BookingCode="W" FareInfoRef="xs/MMC4R2BKAlzKKCAAAAA==" SegmentRef="sQTWMC3R2BKAPsvFCAAAAA=="/>
+                  <air:BookingInfo BookingCode="W" FareInfoRef="xs/MMC4R2BKAmzKKCAAAAA==" SegmentRef="sQTWMC3R2BKARsvFCAAAAA=="/>
+                  <air:BookingInfo BookingCode="G" FareInfoRef="xs/MMC4R2BKAnzKKCAAAAA==" SegmentRef="sQTWMC3R2BKATsvFCAAAAA=="/>
+                  <air:BookingInfo BookingCode="G" FareInfoRef="xs/MMC4R2BKAozKKCAAAAA==" SegmentRef="sQTWMC3R2BKAVsvFCAAAAA=="/>
+                  <air:BookingInfo BookingCode="W" FareInfoRef="xs/MMC4R2BKApzKKCAAAAA==" SegmentRef="sQTWMC3R2BKAXsvFCAAAAA=="/>
+                  <air:TaxInfo Category="EV" Amount="ZAR124.30" Key="sQTWMC3R2BKAgsvFCAAAAA=="/>
+                  <air:TaxInfo Category="UM" Amount="ZAR100.00" Key="sQTWMC3R2BKAhsvFCAAAAA=="/>
+                  <air:TaxInfo Category="ZA" Amount="ZAR497.00" Key="sQTWMC3R2BKAisvFCAAAAA=="/>
+                  <air:TaxInfo Category="ZV" Amount="ZAR309.00" Key="sQTWMC3R2BKAjsvFCAAAAA=="/>
+                  <air:TaxInfo Category="YQ" Amount="ZAR3838.00" Key="sQTWMC3R2BKAksvFCAAAAA=="/>
+                  <air:TaxInfo Category="YR" Amount="ZAR934.00" Key="sQTWMC3R2BKAlsvFCAAAAA=="/>
+                  <air:FareCalc>PHW SA JNB 390.00WOW4Z SA BFN 150.00WOW4Z SA CPT 500.00GSAX SA JNB 630.00GSAOW SA PHW 390.00WOW4Z ZAR2060.00END</air:FareCalc>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMQ==">
+                     <air:FareGuaranteeInfo GuaranteeDate="2020-03-03" GuaranteeType="Guaranteed"/>
+                  </air:PassengerType>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMg==">
+                     <air:FareGuaranteeInfo GuaranteeDate="2020-03-03" GuaranteeType="Guaranteed"/>
+                  </air:PassengerType>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+                  <air:ChangePenalty PenaltyApplies="Anytime">
+                     <air:Amount>ZAR410.00</air:Amount>
+                  </air:ChangePenalty>
+                  <air:CancelPenalty PenaltyApplies="Anytime">
+                     <air:Percentage>100.00</air:Percentage>
+                  </air:CancelPenalty>
+                  <air:TicketingModifiersRef Key="NgSNMC7Q2BKAR/nBCAAAAA=="/>
+               </air:AirPricingInfo>
+               <air:TicketingModifiers PlatingCarrier="SA" Key="NgSNMC7Q2BKAR/nBCAAAAA==" ElStat="A">
+                  <air:DocumentSelect IssueElectronicTicket="true"/>
+               </air:TicketingModifiers>
+            </air:AirReservation>
+            <common_v50_0:GeneralRemark Key="xs/MMC4R2BKAKxKKCAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" CreateDate="2020-03-03T00:30:00.000+00:00">
+               <common_v50_0:RemarkData>BOOKING 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="xs/MMC4R2BKALxKKCAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="xs/MMC4R2BKAtzKKCAAAAA==" CreateDate="2020-03-03T00:30:00.000+00:00">
+               <common_v50_0:RemarkData>RE- BOOKING 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="uAPI9941435167-84c5554e" BranchCode="P7102538" AgencyCode="S7082994" EventTime="2020-03-03T00:30:12.495+00:00"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="uAPI9941435167-84c5554e" BranchCode="P7102538" AgencyCode="S7082994" EventTime="2020-03-03T00:31:20.824+00:00"/>
+            </common_v50_0:AgencyInfo>
+            <common_v50_0:FormOfPayment Key="PDz8y7xu4hGfaM/wYIhwmw==" Type="Credit" Reusable="true" ProfileKey="7BFuW/avTEmuQPFz4ZWY/w==">
+               <common_v50_0:CreditCard Type="CA" Number="5555555555555557" ExpDate="2021-01" Name="JAYA KUMAR">
+                  <common_v50_0:BillingAddress Key="xs/MMC4R2BKAMxKKCAAAAA==">
+                     <common_v50_0:AddressName>Jan Testora</common_v50_0:AddressName>
+                     <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                     <common_v50_0:Street>Apt 2</common_v50_0:Street>
+                     <common_v50_0:City>Englewood</common_v50_0:City>
+                     <common_v50_0:State>CO</common_v50_0:State>
+                     <common_v50_0:PostalCode>8011</common_v50_0:PostalCode>
+                     <common_v50_0:Country>AU</common_v50_0:Country>
+                  </common_v50_0:BillingAddress>
+               </common_v50_0:CreditCard>
+               <common_v50_0:ProviderReservationInfoRef Key="xs/MMC4R2BKAtzKKCAAAAA=="/>
+            </common_v50_0:FormOfPayment>
+         </universal:UniversalRecord>
+      </universal:UniversalRecordRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,36 @@
+Vehicle Retrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleRetrieveReq TargetBranch="TP_1P_SOA" ProviderCode="1P" ProviderLocatorCode="OE7F5N" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </veh:VehicleRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Retrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRetrieveRsp TransactionId="7D941AD10A076478D3ABDD5CD7FB6C03" ResponseTime="212" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleReservation SupplierCode="SX" BookingConfirmation="9889862991" LocatorCode="0097WPFH" Status="HK" CreateDate="2020-02-25T18:19:48.476+00:00" ModifiedDate="2020-02-25T18:19:48.500+00:00" ProviderReservationInfoRef="uG1M9B7Q2BKAldeDAAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:NameOverride First="TEST" Last="TEST"/>
+            </common_v50_0:ReservationName>
+            <vehicle:VehicleDateLocation PickupDateTime="2020-04-25T10:00:00.000+01:00" PickupLocation="LHR" PickupLocationType="Terminal" PickupLocationNumber="01" ReturnDateTime="2020-05-10T10:00:00.000+01:00" ReturnLocation="LHR"/>
+            <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Manual" VehicleClass="Mini" Category="Car" DoorCount="TwoToThreeDoors" VendorName="SIXT GMBH" AcrissVehicleCode="MBMR">
+               <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateCode="DU2" RateGuaranteed="true" RateGuaranteeType="Rate Guaranteed">
+                  <vehicle:SupplierRate RateForPeriod="GBP19.25" BaseRate="GBP19.25"/>
+                  <vehicle:VehicleRateDescription>
+                     <vehicle:Text>ESTIMATED TTL AMOUNT 415.80 GBP</vehicle:Text>
+                  </vehicle:VehicleRateDescription>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:BookingSource Type="IataNumber" Code="05518015"/>
+            <common_v50_0:SellMessage>@ESTIMATED TTL AMOUNT 415.80 GBP THANK YOU FOR BOOKING SIXT $SX$</common_v50_0:SellMessage>
+         </vehicle:VehicleReservation>
+      </vehicle:VehicleRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

@@ -1,0 +1,768 @@
+	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+		<SOAP-ENV:Header/>
+		<SOAP-ENV:Body>
+			<gdsQueue:GdsQueuePlaceReq ProviderCode="1P" ProviderLocatorCode="123456" PseudoCityCode="PCC" TargetBranch="P8888888"  xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0"  >
+				<com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+				<com:QueueSelector Category="12" Queue="57"/>
+			</gdsQueue:GdsQueuePlaceReq>
+		</SOAP-ENV:Body>
+	</SOAP-ENV:Envelope>
+
+
+	<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+			<SOAP:Body>
+				<gdsQueue:GdsQueuePlaceRsp xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" TransactionId="AD291B210A0759BB82AB919FDEE9B7A0" ResponseTime="700">
+					<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="7020" Type="Info">
+						<![CDATA[Booking successfully placed on Queue 57,12 for Pseudo City K1L]]>
+					</common_v50_0:ResponseMessage>
+					<universal:UniversalRecord xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" LocatorCode="2PEOYS" Version="11" Status="Active">
+						<common_v50_0:BookingTraveler Key="k3HVtBvYlDKAnmcTpDAAAA==" TravelerType="ADT">
+							<common_v50_0:BookingTravelerName Prefix="L" First="JENNIFER" Last="DOE"/>
+							<common_v50_0:PhoneNumber Key="k3HVtBvYlDKA6ycTpDAAAA==" Type="Hotel" CountryCode="859" Number="5373" AreaCode="313">
+								<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							</common_v50_0:PhoneNumber>
+							<common_v50_0:PhoneNumber Key="k3HVtBvYlDKA7ycTpDAAAA==" Type="None" Number="502-564-1234-B X3165 KAREN SMITH">
+								<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							</common_v50_0:PhoneNumber>
+							<common_v50_0:PhoneNumber Key="k3HVtBvYlDKA10cTpDAAAA==" Type="None" Number="502-564-4567 X3142-B CRYSTAL CHAMPAGNE">
+								<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							</common_v50_0:PhoneNumber>
+							<common_v50_0:PhoneNumber Key="k3HVtBvYlDKA21cTpDAAAA==" Type="None" Number="LEX 502-564-7890 X2078-H">
+								<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							</common_v50_0:PhoneNumber>
+							<common_v50_0:SSR Key="k3HVtBvYlDKAK4cTpDAAAA==" Status="HK" Type="****" FreeText="1/////19MAY72/*//DOE/JENNIFER/L" Carrier="DL" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<common_v50_0:SSR Key="k3HVtBvYlDKA7DdTpDAAAA==" Status="HK" Type="****" FreeText="*///19MAY72/F" Carrier="YY" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<common_v50_0:SSR Key="k3HVtBvYlDKAAEdTpDAAAA==" Status="HK" Type="****" FreeText="1/////19MAY72/*//DOE/JENNIFER/L" Carrier="YY" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<common_v50_0:SSR Key="k3HVtBvYlDKAVEdTpDAAAA==" SegmentRef="k3HVtBvYlDKAZEdTpDAAAA==" Status="HK" Type="****" FreeText="0067416763970C1" Carrier="DL" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<common_v50_0:SSR Key="k3HVtBvYlDKAWEdTpDAAAA==" SegmentRef="k3HVtBvYlDKAbEdTpDAAAA==" Status="HK" Type="****" FreeText="0067416763970C2" Carrier="DL" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<common_v50_0:SSR Key="k3HVtBvYlDKAXEdTpDAAAA==" SegmentRef="k3HVtBvYlDKAdEdTpDAAAA==" Status="HK" Type="****" FreeText="0067416763970C3" Carrier="DL" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<common_v50_0:SSR Key="k3HVtBvYlDKAYEdTpDAAAA==" SegmentRef="k3HVtBvYlDKAjEdTpDAAAA==" Status="HK" Type="****" FreeText="0067416763970C4" Carrier="DL" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<common_v50_0:NameRemark Key="k3HVtBvYlDKA5ycTpDAAAA==">
+								<common_v50_0:RemarkData>TE20*3564</common_v50_0:RemarkData>
+								<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							</common_v50_0:NameRemark>
+							<common_v50_0:AirSeatAssignment Key="k3HVtBvYlDKAv2cTpDAAAA==" Status="HK" Seat="14-D" SeatTypeCode="SEAT" SegmentRef="k3HVtBvYlDKAZEdTpDAAAA==" FlightDetailsRef="k3HVtBvYlDKAaEdTpDAAAA=="/>
+							<common_v50_0:AirSeatAssignment Key="k3HVtBvYlDKAO3cTpDAAAA==" Status="HK" Seat="23-C" SeatTypeCode="SEAT" SegmentRef="k3HVtBvYlDKAbEdTpDAAAA==" FlightDetailsRef="k3HVtBvYlDKAcEdTpDAAAA=="/>
+							<common_v50_0:AirSeatAssignment Key="k3HVtBvYlDKAo3cTpDAAAA==" Status="HK" Seat="23-F" SeatTypeCode="SEAT" SegmentRef="k3HVtBvYlDKAdEdTpDAAAA==" FlightDetailsRef="k3HVtBvYlDKAiEdTpDAAAA=="/>
+							<common_v50_0:AirSeatAssignment Key="k3HVtBvYlDKAJ4cTpDAAAA==" Status="HK" Seat="14-D" SeatTypeCode="SEAT" SegmentRef="k3HVtBvYlDKAjEdTpDAAAA==" FlightDetailsRef="k3HVtBvYlDKAkEdTpDAAAA=="/>
+							<common_v50_0:Address Key="k3HVtBvYlDKAomcTpDAAAA==">
+								<common_v50_0:AddressName>**********************</common_v50_0:AddressName>
+								<common_v50_0:Street>********************</common_v50_0:Street>
+								<common_v50_0:Street>******************</common_v50_0:Street>
+								<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							</common_v50_0:Address>
+							<common_v50_0:CustomizedNameData Key="XsfWsCBAAA/BFQf6YAAAAA==" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">TE20*3564</common_v50_0:CustomizedNameData>
+						</common_v50_0:BookingTraveler>
+						<common_v50_0:OSI Key="k3HVtBvYlDKA8QdTpDAAAA==" Carrier="YY" Text="CTC 859-313-5373-A" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+						<common_v50_0:OSI Key="k3HVtBvYlDKA9QdTpDAAAA==" Carrier="BA" Text="DTID.US9228AA" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA=="/>
+						<common_v50_0:ActionStatus Key="k3HVtBvYlDKAGYcTpDAAAA==" Type="ACTIVE" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==" ProviderCode="1P">
+							<common_v50_0:Remark>19FEB1625  1P/K1L/QA/1855827*E0067416763970 I655019 *I</common_v50_0:Remark>
+						</common_v50_0:ActionStatus>
+						<universal:ProviderReservationInfo Key="k3HVtBvYlDKAdgXTpDAAAA==" ProviderCode="1P" LocatorCode="123456" CreateDate="2020-02-23T21:22:53.929+00:00" ModifiedDate="2020-03-06T00:04:56.957+00:00" HostCreateDate="2020-02-19" OwningPCC="80U" AgentOverride="HC" TicketingModifiersRef="k3HVtBvYlDKAlEdTpDAAAA==">
+							<universal:ProviderReservationDetails ProviderReservationDetail="false" CustomCheck="true" ProviderProfile="true" DivideDetails="false" EnhancedItinModifiers="true" IntegratedContent="false" Cruise="false" RailSegment="false"/>
+						</universal:ProviderReservationInfo>
+						<air:AirReservation xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" LocatorCode="2PEOYU" CreateDate="2020-02-23T21:22:53.405+00:00" ModifiedDate="2020-03-06T00:04:57.405+00:00">
+							<common_v50_0:SupplierLocator SupplierCode="DL" SupplierLocatorCode="JNG5LU" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+								<common_v50_0:SegmentRef Key="k3HVtBvYlDKAbEdTpDAAAA=="/>
+								<common_v50_0:SegmentRef Key="k3HVtBvYlDKAdEdTpDAAAA=="/>
+								<common_v50_0:SegmentRef Key="k3HVtBvYlDKAjEdTpDAAAA=="/>
+								<common_v50_0:SegmentRef Key="k3HVtBvYlDKAZEdTpDAAAA=="/>
+							</common_v50_0:SupplierLocator>
+							<air:DocumentInfo>
+								<air:TicketInfo Number="0067416763970" Status="N" BookingTravelerRef="k3HVtBvYlDKAnmcTpDAAAA==" AirPricingInfoRef="k3HVtBvYlDKAIYcTpDAAAA==">
+									<common_v50_0:Name Prefix="L" First="JENNIFER" Last="DOE"/>
+								</air:TicketInfo>
+							</air:DocumentInfo>
+							<common_v50_0:BookingTravelerRef Key="k3HVtBvYlDKAnmcTpDAAAA=="/>
+							<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+							<air:AirSegment Key="k3HVtBvYlDKAZEdTpDAAAA==" Group="0" Carrier="DL" CabinClass="Economy" FlightNumber="5378" ProviderCode="1P" Origin="LEX" Destination="ATL" DepartureTime="2020-04-26T10:00:00.000-04:00" ArrivalTime="2020-04-26T11:30:00.000-04:00" TravelTime="90" Distance="305" ClassOfService="M" ETicketability="Yes" Equipment="CR7" MarriageGroup="1" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==" ProviderSegmentOrder="1" OptionalServicesIndicator="false">
+								<air:CodeshareInfo>OPERATED BY ENDEAVOR AIR DBA DELTA CONNECTION</air:CodeshareInfo>
+								<air:FlightDetails Key="k3HVtBvYlDKAaEdTpDAAAA==" Origin="LEX" Destination="ATL" DepartureTime="2020-04-26T10:00:00.000-04:00" ArrivalTime="2020-04-26T11:30:00.000-04:00" FlightTime="90" TravelTime="90" Distance="303" Equipment="CR7" OnTimePerformance="90" DestinationTerminal="S" AutomatedCheckin="false"/>
+								<air:Connection Duration="35" IncludeStopOverToFareQuote="NoStopOver"/>
+							</air:AirSegment>
+							<air:AirSegment Key="k3HVtBvYlDKAbEdTpDAAAA==" Group="0" Carrier="DL" CabinClass="Economy" FlightNumber="2219" ProviderCode="1P" Origin="ATL" Destination="BWI" DepartureTime="2020-04-26T12:05:00.000-04:00" ArrivalTime="2020-04-26T13:51:00.000-04:00" TravelTime="106" Distance="578" ClassOfService="M" ETicketability="Yes" Equipment="739" MarriageGroup="1" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==" ProviderSegmentOrder="2" OptionalServicesIndicator="false">
+								<air:FlightDetails Key="k3HVtBvYlDKAcEdTpDAAAA==" Origin="ATL" Destination="BWI" DepartureTime="2020-04-26T12:05:00.000-04:00" ArrivalTime="2020-04-26T13:51:00.000-04:00" FlightTime="106" TravelTime="106" Distance="575" Equipment="739" OnTimePerformance="90" OriginTerminal="S" AutomatedCheckin="false"/>
+							</air:AirSegment>
+							<air:AirSegment Key="k3HVtBvYlDKAdEdTpDAAAA==" Group="1" Carrier="DL" CabinClass="Economy" FlightNumber="2247" ProviderCode="1P" Origin="BWI" Destination="ATL" DepartureTime="2020-04-29T13:23:00.000-04:00" ArrivalTime="2020-04-29T15:21:00.000-04:00" TravelTime="118" Distance="578" ClassOfService="L" ETicketability="Yes" Equipment="739" MarriageGroup="2" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==" ProviderSegmentOrder="3" OptionalServicesIndicator="false">
+								<air:FlightDetails Key="k3HVtBvYlDKAiEdTpDAAAA==" Origin="BWI" Destination="ATL" DepartureTime="2020-04-29T13:23:00.000-04:00" ArrivalTime="2020-04-29T15:21:00.000-04:00" FlightTime="118" TravelTime="118" Distance="575" Equipment="739" OnTimePerformance="90" DestinationTerminal="S" AutomatedCheckin="false"/>
+								<air:Connection Duration="68" IncludeStopOverToFareQuote="NoStopOver"/>
+							</air:AirSegment>
+							<air:AirSegment Key="k3HVtBvYlDKAjEdTpDAAAA==" Group="1" Carrier="DL" CabinClass="Economy" FlightNumber="4771" ProviderCode="1P" Origin="ATL" Destination="LEX" DepartureTime="2020-04-29T16:29:00.000-04:00" ArrivalTime="2020-04-29T17:41:00.000-04:00" TravelTime="72" Distance="305" ClassOfService="L" ETicketability="Yes" Equipment="CR9" MarriageGroup="2" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==" ProviderSegmentOrder="4" OptionalServicesIndicator="false">
+								<air:CodeshareInfo>OPERATED BY ENDEAVOR AIR DBA DELTA CONNECTION</air:CodeshareInfo>
+								<air:FlightDetails Key="k3HVtBvYlDKAkEdTpDAAAA==" Origin="ATL" Destination="LEX" DepartureTime="2020-04-29T16:29:00.000-04:00" ArrivalTime="2020-04-29T17:41:00.000-04:00" FlightTime="72" TravelTime="72" Distance="303" Equipment="CR9" OnTimePerformance="90" OriginTerminal="S" AutomatedCheckin="false"/>
+							</air:AirSegment>
+							<air:AirPricingInfo Key="k3HVtBvYlDKAIYcTpDAAAA==" TotalPrice="USD711.40" BasePrice="USD618.61" Taxes="USD92.79" LatestTicketingTime="2020-02-20T23:59:00.000-05:00" PricingMethod="Auto" ProviderCode="1P" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==" AirPricingInfoGroup="1" PricingType="StoredFare" FareCalculationInd="9">
+								<air:FareInfo Key="k3HVtBvYlDKAJYcTpDAAAA==" FareBasis="MA0ZA0MQ" PassengerTypeCode="ADT" Origin="LEX" Destination="ATL" EffectiveDate="2020-02-19T00:00:00.000-05:00" TravelDate="2020-04-26" DepartureDate="2020-04-26">
+									<air:BaggageAllowance>
+										<air:NumberOfPieces>0</air:NumberOfPieces>
+									</air:BaggageAllowance>
+									<air:Brand BrandID="323393" Name="Main Cabin" Carrier="DL">
+										<air:Title Type="External" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Upsell" LanguageCode="EN">Upgrade to Main Cabin for added flexibility, including seat selection at purchase, same day travel changes (subject to availability, fees may apply) and full Medallion® benefits</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Strapline" LanguageCode="EN">Low affordable fare with perks</air:Text>
+										<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45994.jpg</air:ImageLocation>
+										<air:OptionalServices>
+											<air:OptionalService Type="Baggage" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.435+00:00" Key="k3HVtBvYlDKABrYTpDAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Carry on bags</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="PreReservedSeatAssignment" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.436+00:00" Key="k3HVtBvYlDKAFrYTpDAAAA==" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Seat Selection</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Select a seat before check-in</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Seat Selection</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Seat Selec</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="FrequentFlyer" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.436+00:00" Key="k3HVtBvYlDKALrYTpDAAAA==" SecondaryType="Mileage Accrual" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Miles</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+											</air:OptionalService>
+										</air:OptionalServices>
+									</air:Brand>
+								</air:FareInfo>
+								<air:FareInfo Key="k3HVtBvYlDKALYcTpDAAAA==" FareBasis="MA0ZA0MQ" PassengerTypeCode="ADT" Origin="ATL" Destination="BWI" EffectiveDate="2020-02-19T00:00:00.000-05:00" TravelDate="2020-04-26" DepartureDate="2020-04-26">
+									<air:BaggageAllowance>
+										<air:NumberOfPieces>0</air:NumberOfPieces>
+									</air:BaggageAllowance>
+									<air:Brand BrandID="323393" Name="Main Cabin" Carrier="DL">
+										<air:Title Type="External" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Upsell" LanguageCode="EN">Upgrade to Main Cabin for added flexibility, including seat selection at purchase, same day travel changes (subject to availability, fees may apply) and full Medallion® benefits</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Strapline" LanguageCode="EN">Low affordable fare with perks</air:Text>
+										<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45994.jpg</air:ImageLocation>
+										<air:OptionalServices>
+											<air:OptionalService Type="Baggage" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.463+00:00" Key="k3HVtBvYlDKAbhaTpDAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Carry on bags</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="PreReservedSeatAssignment" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.464+00:00" Key="k3HVtBvYlDKAfhaTpDAAAA==" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Seat Selection</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Select a seat before check-in</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Seat Selection</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Seat Selec</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="FrequentFlyer" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.464+00:00" Key="k3HVtBvYlDKAlhaTpDAAAA==" SecondaryType="Mileage Accrual" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Miles</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+											</air:OptionalService>
+										</air:OptionalServices>
+									</air:Brand>
+								</air:FareInfo>
+								<air:FareInfo Key="k3HVtBvYlDKAQYcTpDAAAA==" FareBasis="LAVOA0EL" PassengerTypeCode="ADT" Origin="BWI" Destination="ATL" EffectiveDate="2020-02-19T00:00:00.000-05:00" TravelDate="2020-04-29" DepartureDate="2020-04-26" NotValidBefore="2020-04-29" NotValidAfter="2020-04-29">
+									<air:BaggageAllowance>
+										<air:NumberOfPieces>0</air:NumberOfPieces>
+									</air:BaggageAllowance>
+								</air:FareInfo>
+								<air:FareInfo Key="k3HVtBvYlDKASYcTpDAAAA==" FareBasis="LAVOA0EL" PassengerTypeCode="ADT" Origin="ATL" Destination="LEX" EffectiveDate="2020-02-19T00:00:00.000-05:00" TravelDate="2020-04-29" DepartureDate="2020-04-26" NotValidBefore="2020-04-29" NotValidAfter="2020-04-29">
+									<air:BaggageAllowance>
+										<air:NumberOfPieces>0</air:NumberOfPieces>
+									</air:BaggageAllowance>
+								</air:FareInfo>
+								<air:BookingInfo BookingCode="M" FareInfoRef="k3HVtBvYlDKAJYcTpDAAAA==" SegmentRef="k3HVtBvYlDKAZEdTpDAAAA=="/>
+								<air:BookingInfo BookingCode="M" FareInfoRef="k3HVtBvYlDKALYcTpDAAAA==" SegmentRef="k3HVtBvYlDKAbEdTpDAAAA=="/>
+								<air:BookingInfo BookingCode="L" FareInfoRef="k3HVtBvYlDKAQYcTpDAAAA==" SegmentRef="k3HVtBvYlDKAdEdTpDAAAA=="/>
+								<air:BookingInfo BookingCode="L" FareInfoRef="k3HVtBvYlDKASYcTpDAAAA==" SegmentRef="k3HVtBvYlDKAjEdTpDAAAA=="/>
+								<air:TaxInfo Category="US" Amount="USD46.39" Key="k3HVtBvYlDKAUYcTpDAAAA=="/>
+								<air:TaxInfo Category="ZP" Amount="USD17.20" Key="k3HVtBvYlDKAVYcTpDAAAA=="/>
+								<air:TaxInfo Category="AY" Amount="USD11.20" Key="k3HVtBvYlDKAWYcTpDAAAA=="/>
+								<air:TaxInfo Category="XF" Amount="USD18.00" Key="k3HVtBvYlDKAXYcTpDAAAA=="/>
+								<air:FareCalc>LEX DL X/ATL DL BWI395.35DL X/ATL DL LEX Q BWILEX23.26 200.00USD618.61END DL ZPLEXATLBWIATL XF LEX4.5ATL4.5BWI4.5ATL4.5</air:FareCalc>
+								<air:PassengerType Code="ADT" BookingTravelerRef="k3HVtBvYlDKAnmcTpDAAAA=="/>
+								<common_v50_0:BookingTravelerRef Key="k3HVtBvYlDKAnmcTpDAAAA=="/>
+							</air:AirPricingInfo>
+							<air:AirPricingInfo Key="k3HVtBvYlDKAYYcTpDAAAA==" TotalPrice="USD711.40" BasePrice="USD618.61" Taxes="USD92.79" LatestTicketingTime="2020-02-23T23:59:53.383+00:00" PricingMethod="Auto" ProviderCode="1P" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==" AirPricingInfoGroup="2" PricingType="StoredFareQuote" FareCalculationInd="9">
+								<air:FareInfo Key="k3HVtBvYlDKAZYcTpDAAAA==" FareBasis="MA0ZA0MQ" PassengerTypeCode="ADT" Origin="LEX" Destination="ATL" EffectiveDate="2020-03-05T17:14:19.963+00:00" TravelDate="2020-04-26" DepartureDate="2020-04-26">
+									<air:Brand BrandID="323393" Name="Main Cabin" Carrier="DL">
+										<air:Title Type="External" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Upsell" LanguageCode="EN">Upgrade to Main Cabin for added flexibility, including seat selection at purchase, same day travel changes (subject to availability, fees may apply) and full Medallion® benefits</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Strapline" LanguageCode="EN">Low affordable fare with perks</air:Text>
+										<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45994.jpg</air:ImageLocation>
+										<air:OptionalServices>
+											<air:OptionalService Type="Baggage" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.567+00:00" Key="k3HVtBvYlDKApIbTpDAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Carry on bags</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="PreReservedSeatAssignment" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.567+00:00" Key="k3HVtBvYlDKAtIbTpDAAAA==" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Seat Selection</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Select a seat before check-in</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Seat Selection</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Seat Selec</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="FrequentFlyer" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.567+00:00" Key="k3HVtBvYlDKAzIbTpDAAAA==" SecondaryType="Mileage Accrual" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Miles</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+											</air:OptionalService>
+										</air:OptionalServices>
+									</air:Brand>
+								</air:FareInfo>
+								<air:FareInfo Key="k3HVtBvYlDKAbYcTpDAAAA==" FareBasis="MA0ZA0MQ" PassengerTypeCode="ADT" Origin="ATL" Destination="BWI" EffectiveDate="2020-03-05T17:14:19.964+00:00" TravelDate="2020-04-26" DepartureDate="2020-04-26">
+									<air:Brand BrandID="323393" Name="Main Cabin" Carrier="DL">
+										<air:Title Type="External" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Title Type="Short" LanguageCode="EN">Main Cabin</air:Title>
+										<air:Text Type="MarketingConsumer" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Upsell" LanguageCode="EN">Upgrade to Main Cabin for added flexibility, including seat selection at purchase, same day travel changes (subject to availability, fees may apply) and full Medallion® benefits</air:Text>
+										<air:Text Type="MarketingAgent" LanguageCode="EN">A higher standard.
+
+• Complimentary premium entertainment with Delta Studio
+• Complimentary snacks, soft drinks, and Starbucks® coffee on nearly all flights
+• Access to select preferred seats for a more comfortable ride, subject to availability  (fees may apply).
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+										<air:Text Type="Strapline" LanguageCode="EN">Low affordable fare with perks</air:Text>
+										<air:ImageLocation Type="Upsell" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/delta/DL_general_medium_44.jpg</air:ImageLocation>
+										<air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/delta/DL_general_large_45994.jpg</air:ImageLocation>
+										<air:OptionalServices>
+											<air:OptionalService Type="Baggage" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.606+00:00" Key="k3HVtBvYlDKArUbTpDAAAA==" SecondaryType="Carry On Hand Baggage" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Carry on bags</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88855.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Carry on bags</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Baggage may not exceed 45 linear inches (or 114 cm) in combined length, width and height, including any handles and wheels.
+
+Baggage must meet carry on size limits (approximately 22" x 14" x 9" or 56 x 35 x  23 cm).</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Carry on bags</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Y,1,X,CY</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="PreReservedSeatAssignment" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.606+00:00" Key="k3HVtBvYlDKAvUbTpDAAAA==" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Seat Selection</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88843.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Select a seat before check-in</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Seat Selection</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Seat Selec</air:Title>
+											</air:OptionalService>
+											<air:OptionalService Type="FrequentFlyer" SupplierCode="DL" CreateDate="2020-02-23T21:22:53.606+00:00" Key="k3HVtBvYlDKA1UbTpDAAAA==" SecondaryType="Mileage Accrual" Chargeable="Included in the brand">
+												<common_v50_0:ServiceInfo>
+													<common_v50_0:Description>Miles</common_v50_0:Description>
+													<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+													<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/delta/DL_general_medium_88860.jpg"/>
+												</common_v50_0:ServiceInfo>
+												<air:EMD AssociatedItem="Flight"/>
+												<air:Text Type="Strapline" LanguageCode="EN">Travel Well</air:Text>
+												<air:Text Type="MarketingAgent" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Text Type="MarketingConsumer" LanguageCode="EN">Travel Well
+
+As a Medallion member, your loyalty is rewarded with exclusive perks.
+Enjoy our industry-leading benefits including Rollover Medallion Qualification Miles (MQMs), Unlimited Complimentary Upgrades and new Choice Benefits for Diamond and Platinum Medallion members.
+
+Each of our four Medallion levels; from Diamond to Platinum to Gold to Silver; delivers an added level of service, exclusivity and rewards.
+
+Each year, you can earn status through a combination of the miles or segments you fly, and your annual spending to enjoy added perks at the airport, on board and beyond.</air:Text>
+												<air:Title Type="External" LanguageCode="EN">Miles</air:Title>
+												<air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+											</air:OptionalService>
+										</air:OptionalServices>
+									</air:Brand>
+								</air:FareInfo>
+								<air:FareInfo Key="k3HVtBvYlDKAdYcTpDAAAA==" FareBasis="LAVOA0EL" PassengerTypeCode="ADT" Origin="BWI" Destination="ATL" EffectiveDate="2020-03-05T17:14:19.965+00:00" TravelDate="2020-04-29" DepartureDate="2020-04-26" NotValidBefore="2020-04-29" NotValidAfter="2020-04-29"/>
+								<air:FareInfo Key="k3HVtBvYlDKAplcTpDAAAA==" FareBasis="LAVOA0EL" PassengerTypeCode="ADT" Origin="ATL" Destination="LEX" EffectiveDate="2020-03-05T17:14:19.966+00:00" TravelDate="2020-04-29" DepartureDate="2020-04-26" NotValidBefore="2020-04-29" NotValidAfter="2020-04-29"/>
+								<air:BookingInfo BookingCode="M" FareInfoRef="k3HVtBvYlDKAZYcTpDAAAA==" SegmentRef="k3HVtBvYlDKAZEdTpDAAAA=="/>
+								<air:BookingInfo BookingCode="M" FareInfoRef="k3HVtBvYlDKAbYcTpDAAAA==" SegmentRef="k3HVtBvYlDKAbEdTpDAAAA=="/>
+								<air:BookingInfo BookingCode="L" FareInfoRef="k3HVtBvYlDKAdYcTpDAAAA==" SegmentRef="k3HVtBvYlDKAdEdTpDAAAA=="/>
+								<air:BookingInfo BookingCode="L" FareInfoRef="k3HVtBvYlDKAplcTpDAAAA==" SegmentRef="k3HVtBvYlDKAjEdTpDAAAA=="/>
+								<air:TaxInfo Category="US" Amount="USD46.39" Key="k3HVtBvYlDKAjmcTpDAAAA=="/>
+								<air:TaxInfo Category="ZP" Amount="USD17.20" Key="k3HVtBvYlDKAkmcTpDAAAA=="/>
+								<air:TaxInfo Category="AY" Amount="USD11.20" Key="k3HVtBvYlDKAlmcTpDAAAA=="/>
+								<air:TaxInfo Category="XF" Amount="USD18.00" Key="k3HVtBvYlDKAmmcTpDAAAA=="/>
+								<air:FareCalc>LEX DL X/ATL DL BWI395.35DL X/ATL DL LEX Q BWILEX23.26 200.00USD618.61END DL ZPLEXATLBWIATL XF LEX4.5ATL4.5BWI4.5ATL4.5</air:FareCalc>
+								<air:PassengerType Code="ADT" BookingTravelerRef="k3HVtBvYlDKAnmcTpDAAAA=="/>
+								<common_v50_0:BookingTravelerRef Key="k3HVtBvYlDKAnmcTpDAAAA=="/>
+							</air:AirPricingInfo>
+							<air:TicketingModifiers Key="k3HVtBvYlDKAlEdTpDAAAA==">
+								<air:DocumentOptions>
+									<air:OverrideOption>PrintDirectAccessRecordLocator</air:OverrideOption>
+									<air:OverrideOption>PrintProviderReservationRecordLocator</air:OverrideOption>
+									<air:OverrideOption>SuppressItineraryInvoicePrinting</air:OverrideOption>
+									<air:OverrideOption>PrintFrequentTravelerNumber</air:OverrideOption>
+									<air:OverrideOption>PrintInvoiceRemarkOnly</air:OverrideOption>
+								</air:DocumentOptions>
+							</air:TicketingModifiers>
+						</air:AirReservation>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAQOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>TA/0TKT</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAROdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF53/80U</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKASOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>/THE TRAVEL AUTHORITY</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKATOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>/165 MOORE DRIVE</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAUOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>/LEXINGTON KY 40503</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAVOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF82/FS-K1LHC12345619FEB-W-V021920 1130A</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAWOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>BA/K1LHC</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAXOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>DIV/T126</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAYOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>EC/AX</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAZOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>RF/823.40</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAaOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>LF/711.40</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAbOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF60/N</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAcOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF71/711.40</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAdOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF56/FADZ</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAeOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF76/FADZ</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAfOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF55/EMAIL</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAgOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF48/KAREN</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAhOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF46/KAREN.GRIFFIN@KY.GOV </common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAiOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF47/021920</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAjOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF26/TE20</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAkOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFF79/WSPAN</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAlOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>DN-/T0067416763970-001.01|S05</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAmOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>DN-/T0067416763970-001.01|S06</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAnOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>DN-/T0067416763970-001.01|S07</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAoOdTpDAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>DN-/T0067416763970-001.01|S08</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKApOdTpDAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AGT HERMAN-K1LHC ( QEP/K1L/57*C13</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAqOdTpDAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> AGENT DOCUMENTATION FIELD</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKArOdTpDAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AIRTVL APPROVED BY KAREN/K1LHC-19FEB</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAsOdTpDAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>K1LHC/19FEB/FADZ-30.00</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAtOdTpDAAAA==" Category="A" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>HERMAN-19FEB/TRAVEL REQUESTED/VERIFIED WITH/KAREN</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAuOdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> FOR FEE INFO SEE ( G*/80U-FEES*HEALTH JAMIE</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAvOdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> AIR-NO </common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAwOdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> RPT-NO </common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAxOdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> FOP-CC </common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAyOdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-IF TVLR CALLS AND THEY HAVE A TE NBR THEY ARE</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAzOdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-APPROVED FOR AIRLINE PURCHASING TO THEIR</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKA6OdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-APPROPRIATE AGENCY. THEY NEED TO SPECIFY WHO</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAaPdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-THEY ARE WITH AND WHO THEIR CTC PERSON IS</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAbPdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-IF YOU CALL AND DONT GET AN ANSWER SEND EMAIL</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAJQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-EMAIL-TRAVEL.REIMBURSEMENT@KY.GOV</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAKQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-EMAIL IS MONITORED M-F 7A-430PM</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKALQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> STMT-NO </common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAMQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> APVL-IF KAREN OR AMY IS BACKUP</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKANQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> APVL-TVL MUST BE APPROVED BY *</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAOQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> APVL-CRYSTAL CHAMPAGNE</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAQQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> APVL-OR KAREN SMITH OR BECKY CORN</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKARQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> APVL-DOCUMENT( 5.ZAIRTVL APPROVED BY</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKASQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> APVL-OR EMAIL TRAVEL.REIMBURSEMENT@KY.GOV FOR APVL</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKATQdTpDAAAA==" Category="B" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> MISC-VERIFY AND DOCUMENT IN 5.ZADDR VFD</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAUQdTpDAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> CAR-AL-ALAMO ID-XPSL</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAVQdTpDAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> CAR-ZI-AVIS CD-A468700 PRIMARY VENDOR</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAWQdTpDAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> CAR-ZD-BUDGET CD-T211700</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAXQdTpDAAAA==" Category="C" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> CAR-ZE-HERTZ CD-17374</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAYQdTpDAAAA==" Category="E" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>ATTN TSC**YOU ARE REQUIRED TO PLACE A CALL TO**</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAZQdTpDAAAA==" Category="E" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>THE BRANCH EMER CONTACT PERSON IN G**TTA WHEN**</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAaQdTpDAAAA==" Category="E" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>YOU ENCOUNTER AN EMERG WITH A LEISURE BOOKING**</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAbQdTpDAAAA==" Category="E" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> TTA</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAcQdTpDAAAA==" Category="E" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> EMULATE TO 80U FOR TICKETING</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAdQdTpDAAAA==" Category="E" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> LOGID-80U</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAeQdTpDAAAA==" Category="E" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> IATA-18558271</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAfQdTpDAAAA==" Category="F" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>KARENJ.SMITH@KY.GOV</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAgQdTpDAAAA==" Category="F" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>CRYSTALN.CHAMPAGNE@KY.GOV</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAhQdTpDAAAA==" Category="F" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>KAREN.GRIFFIN@KY.GOV</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAiQdTpDAAAA==" Category="G" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>/TK-SENT TO TICKETING 19FEB1625</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAjQdTpDAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> HTL-**DO NOT USE STATE GVT CC FOR HTL GUA**</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAkQdTpDAAAA==" Category="H" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> HTL-TRAVELERS MUST USE THEIR PERSONAL CC FOR GUA</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAlQdTpDAAAA==" Category="K" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>QCCHECK</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAmQdTpDAAAA==" Category="M" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> COMPANY CONTACT-KAREN SMITH</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAnQdTpDAAAA==" Category="M" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData> TTA SALES CONTACT-PJ BLACKBURN</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAoQdTpDAAAA==" Category="T" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>REMOVED FEE $30.00/SRPC-8</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKApQdTpDAAAA==" Category="T" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>OK TO TICKET</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAqQdTpDAAAA==" Category="W" TypeInGds="Alpha" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>G*/80U*HEALTH JAMIE</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKArQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AGT HERMAN-K1LHC ( QEP/K1L/57*C13</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAsQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>****THERE IS A CREDIT AMOUNT ON WN FOR 166.20</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAtQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>****TO BE USED BY ANYONE. LOCATOR H88D58/EXP</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAuQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>19FEB-0402PM EST/EMAIL SENT</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAvQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>/19FEB/RMVD NO TKT INFO</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAwQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>/19FEB/RMVD SUBJ-PLEASE-APPROVE FOR TICKET</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAxQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AIRTVL APPROVED BY KAREN</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAyQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AIRTVL APPROVED BY KAREN/K1LHC-19FEB</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKAzQdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>IQCX SENT TO K1L/60*C20 FOR QC 19FEB-0418PM EST</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKA0QdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>19FEB-0423PM EST/SENT TO FAREANALYZER</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKA1QdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>IQCX 19FEB-0423PM EST/SENT TO AUTOTKT-K1L/70*C3</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKA2QdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>IQCX 19FEB-0423PM EST RECORD PROCESSED - QC/PNR OK</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKA3QdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>19FEB-0427PM EST/REMOVED FEE $30.00/SRPC-8</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="k3HVtBvYlDKA4QdTpDAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>19FEB-0427PM EST/EMAIL SENT</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="jKhZaCUc1BKAmWVNbIAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>FAREANALYZER - 711.40 TO 461.40 ON 2020-03-05T09:58:33.480</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="wOZiaCXYlDKAesnzPJAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>ATTEMPTING TO PLACE PNR IN QUEUE 2020-03-05T17:14:18.106</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:GeneralRemark Key="wOZiaCXYlDKAj7ozPJAAAA==" Category="Z" TypeInGds="Historical" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>FAREANALYZER - 711.40 TO 461.40 ON 2020-03-05T17:14:18.768</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:AccountingRemark Key="k3HVtBvYlDKAFYcTpDAAAA==" Category="Account" TypeInGds="Account" ProviderCode="1P" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>SH0046</common_v50_0:RemarkData>
+						</common_v50_0:AccountingRemark>
+						<common_v50_0:AgencyInfo>
+							<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI5003653521-AC5BCEA8" BranchCode="/ewgWLpXTG+T4x1ykApmYw==" AgencyCode="TVPORTDYNASKLTONWABAGENCY" EventTime="2020-02-23T21:22:53.256+00:00"/>
+							<common_v50_0:AgentAction ActionType="Modified" AgentCode="UAPI5003653521-AC5BCEA8" BranchCode="P8888888" AgencyCode="S9999999" EventTime="2020-03-06T00:04:57.414+00:00"/>
+							<common_v50_0:AgentAction ActionType="Ticketed" AgentCode="UAPI5003653521-AC5BCEA8" BranchCode="P8888888" AgencyCode="S9999999" EventTime="2020-02-23T21:22:53.929+00:00"/>
+						</common_v50_0:AgencyInfo>
+						<common_v50_0:InvoiceRemark Key="k3HVtBvYlDKA5QdTpDAAAA==" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AFTER OFFICE HOURS PLEASE CALL 800-282-0414</common_v50_0:RemarkData>
+						</common_v50_0:InvoiceRemark>
+						<common_v50_0:InvoiceRemark Key="k3HVtBvYlDKA6QdTpDAAAA==" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>THIS TICKET IS NONREFUNDABLE CHANGES WILL RESULT IN</common_v50_0:RemarkData>
+						</common_v50_0:InvoiceRemark>
+						<common_v50_0:InvoiceRemark Key="k3HVtBvYlDKA7QdTpDAAAA==" ProviderReservationInfoRef="k3HVtBvYlDKAdgXTpDAAAA==">
+							<common_v50_0:RemarkData>AN ADDITIONAL AIRLINE FEE PLUS ANY FARE DIFFERENCE.</common_v50_0:RemarkData>
+						</common_v50_0:InvoiceRemark>
+						<common_v50_0:FormOfPayment Key="k3HVtBvYlDKA+QdTpDAAAA==" Type="Credit" Reusable="true" ProfileKey="i3Nqso/qRy6qk9svqG/beg==">
+							<common_v50_0:CreditCard Type="**" Number="***********1007" ExpDate="*******"/>
+							<common_v50_0:ProviderReservationInfoRef Key="k3HVtBvYlDKAdgXTpDAAAA=="/>
+						</common_v50_0:FormOfPayment>
+					</universal:UniversalRecord>
+				</gdsQueue:GdsQueuePlaceRsp>
+			</SOAP:Body>
+		</SOAP:Envelope>
+		

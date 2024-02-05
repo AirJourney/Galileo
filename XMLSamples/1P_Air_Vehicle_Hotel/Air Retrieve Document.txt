@@ -1,0 +1,214 @@
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+		<soapenv:Header/>
+		<soapenv:Body>
+			<air:AirRetrieveDocumentReq TraceId="trace" AuthorizedBy="user" TargetBranch="P2850859" RetrieveProviderReservationDetails="false" ReturnPricing="true" RetrieveMCO="true" ProviderLocatorCode="AB1CDE" ProviderCode="1P" ReturnInfoOnFail="true" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+				<com:BillingPointOfSaleInfo OriginApplication="uAPI"/>
+				<com:OverridePCC ProviderCode="1P" PseudoCityCode="1QE"/>
+				<air:AirReservationLocatorCode>CX2D7S</air:AirReservationLocatorCode>
+			</air:AirRetrieveDocumentReq>
+		</soapenv:Body>
+	</soapenv:Envelope>
+
+
+
+	<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+		<SOAP:Body>
+			<air:AirRetrieveDocumentRsp xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" TraceId="trace" TransactionId="A880DBFE0A0759BB10ECDE876C810887" ResponseTime="695" UniversalRecordLocatorCode="XDSKYV">
+				<air:ETR Key="Ug09v0BAAA/B8z2dARAAAA==" TotalPrice="USD89.30" BasePrice="EUR44.00" Taxes="EUR40.3" EquivalentBasePrice="USD49.00" Refundable="false" Exchangeable="false" IssuedDate="2019-09-19T00:00:00.000-04:00" ProviderCode="1P" ProviderLocatorCode="AB1CDE" IATANumber="00000091" PlatingCarrier="IZ">
+					<air:AirReservationLocatorCode>CX2D7S</air:AirReservationLocatorCode>
+					<common_v50_0:AgencyInfo>
+						<common_v50_0:AgentAction ActionType="Created" AgentCode="UAPI2586358146-7217440A" BranchCode="P2850859" AgencyCode="S1234567" EventTime="2019-09-19T04:00:00.000+00:00"/>
+					</common_v50_0:AgencyInfo>
+					<common_v50_0:BookingTraveler Key="lglIA1kJ0BKAR0ycAGAAAA==" TravelerType="JWZ" DOB="**********" Gender="F">
+						<common_v50_0:BookingTravelerName Prefix="Ms" First="Sterling" Middle="VLynCurrent" Last="TESTUSER"/>
+						<common_v50_0:PhoneNumber Key="lglIA1kJ0BKAS0ycAGAAAA==" Type="None" Number="18086395742">
+							<common_v50_0:ProviderReservationInfoRef Key="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						</common_v50_0:PhoneNumber>
+						<common_v50_0:Email Key="lglIA1kJ0BKAW0ycAGAAAA==" EmailID="sterlingbird0@gmail.com">
+							<common_v50_0:ProviderReservationInfoRef Key="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						</common_v50_0:Email>
+						<common_v50_0:SSR Key="lglIA1kJ0BKAT0ycAGAAAA==" Status="HK" Type="****" FreeText="1/18086395742" Carrier="YY" ProviderReservationInfoRef="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						<common_v50_0:SSR Key="lglIA1kJ0BKAU0ycAGAAAA==" Status="HK" Type="****" FreeText="1/STERLINGBIRD0@GMAIL.COM" Carrier="YY" ProviderReservationInfoRef="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						<common_v50_0:SSR Key="lglIA1kJ0BKA5nIdAGAAAA==" Status="HK" Type="****" FreeText="1/////11MAY98/*//TESTUSER/STERLING/VLYNCURRENT" Carrier="IZ" ProviderReservationInfoRef="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						<common_v50_0:SSR Key="lglIA1kJ0BKA6nIdAGAAAA==" Status="HK" Type="****" FreeText="*///11MAY98/F" Carrier="YY" ProviderReservationInfoRef="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						<common_v50_0:SSR Key="lglIA1kJ0BKAV0ycAGAAAA==" Status="HK" Type="****" FreeText="1/////11MAY98/*//TESTUSER/STERLING/VLYNCURRENT" Carrier="YY" ProviderReservationInfoRef="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						<common_v50_0:SSR Key="Vu6MlABAAA/BM0bnxLAAAA==" Status="HK" Type="****" FreeText="2387410944407C1" Carrier="IZ" ProviderReservationInfoRef="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						<common_v50_0:NameRemark Key="lglIA1kJ0BKA7nIdAGAAAA==">
+							<common_v50_0:RemarkData>11MAY98</common_v50_0:RemarkData>
+							<common_v50_0:ProviderReservationInfoRef Key="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						</common_v50_0:NameRemark>
+						<common_v50_0:Address Key="lglIA1kJ0BKAX0ycAGAAAA==">
+							<common_v50_0:AddressName>**************</common_v50_0:AddressName>
+							<common_v50_0:Street>************</common_v50_0:Street>
+							<common_v50_0:City>Kalaheo</common_v50_0:City>
+							<common_v50_0:State>HI</common_v50_0:State>
+							<common_v50_0:PostalCode>96741</common_v50_0:PostalCode>
+							<common_v50_0:Country>US</common_v50_0:Country>
+							<common_v50_0:ProviderReservationInfoRef Key="lglIA1kJ0BKA4nIdAGAAAA=="/>
+						</common_v50_0:Address>
+					</common_v50_0:BookingTraveler>
+					<common_v50_0:FormOfPayment Key="lglIA1kJ0BKAZ0ycAGAAAA==" Type="Credit" Reusable="true" ProfileKey="mUCj09PsRQyuNFtI/93How==">
+						<common_v50_0:CreditCard Type="**" Number="************4818" ExpDate="*******" Name="SterlingV TESTUSER"/>
+					</common_v50_0:FormOfPayment>
+					<common_v50_0:Payment Key="Ug09v0BAAA/BkF3dARAAAA==" Type="Itinerary" Amount="USD89.30" FormOfPaymentRef="lglIA1kJ0BKAZ0ycAGAAAA=="/>
+					<common_v50_0:CreditCardAuth Number="************4818" Amount="USD89.30" AuthCode="074566" AuthResultCode="approved"/>
+					<common_v50_0:SupplierLocator SupplierCode="IZ" SupplierLocatorCode="5E25A5"/>
+					<air:FareCalc>ATH IZ TLV49.17NUC49.17END ROE.894724 IZ</air:FareCalc>
+					<air:Ticket Key="Ug09v0BAAA/B922dARAAAA==" TicketNumber="1234455544407" TicketStatus="S">
+						<air:Coupon Key="Ug09v0BAAA/BC32dARAAAA==" CouponNumber="1" MarketingCarrier="IZ" MarketingFlightNumber="00212" Origin="ATH" Destination="TLV" DepartureTime="2019-10-10T11:25:00.000+03:00" StopoverCode="true" BookingClass="X" FareBasis="XSIP" Status="F"/>
+						<air:TicketEndorsement Value="NONREF"/>
+						<air:TicketEndorsement Value="PEX"/>
+						<air:TicketEndorsement Value="VOLUNTARY CHNGS RESTRICTED"/>
+					</air:Ticket>
+					<common_v50_0:Commission Key="UKuSaCBAAA/BpunirHAAAA==" Level="Fare" Type="PercentBase" Percentage="5.0"/>
+					<air:AirPricingInfo Key="Ug09v0BAAA/BV21dARAAAA==" TotalPrice="USD89.30" BasePrice="EUR44.00" ApproximateTotalPrice="USD89.30" ApproximateBasePrice="USD49.00" EquivalentBasePrice="USD49.00" Taxes="USD40.30" LatestTicketingTime="2019-09-19T23:59:00.000+03:00" PricingMethod="Auto" ProviderReservationInfoRef="lglIA1kJ0BKA4nIdAGAAAA==" AirPricingInfoGroup="2" Ticketed="true" PricingType="StoredFare" FareCalculationInd="9">
+						<air:FareInfo Key="Ug09v0BAAA/BW21dARAAAA==" FareBasis="XSIP" PassengerTypeCode="JWZ" Origin="ATH" Destination="TLV" EffectiveDate="2019-09-19T00:00:00.000+03:00" TravelDate="2019-10-10" DepartureDate="2019-10-10">
+							<air:BaggageAllowance>
+								<air:MaxWeight Value="20" Unit="Kilograms"/>
+							</air:BaggageAllowance>
+							<air:Brand BrandID="167017" Name="Economy Class" Carrier="IZ">
+								<air:Title Type="External">Economy</air:Title>
+								<air:Title Type="Short">Economy</air:Title>
+								<air:Text Type="MarketingConsumer">Arkia operate dozens of flights daily within Israel and to destinations across the globe.
+
+▪  1 carry on bag included, up to 7kg.
+▪  1 checked bag included, up to 20kg.
+▪  Complimentary snacks and drinks on board and lighter meals on some longer routes.
+▪  Rebooking or refund not permitted.
+▪  Both KIOSK and web check in are available for all Arkia international flights departing Tel Aviv.
+▪  Exit row seats offering additional legroom available to book for an extra fee.
+
+
+If the flight will be operated by another airline then the on board product or service might be different.
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="MarketingAgent">Arkia operate dozens of flights daily within Israel and to destinations across the globe.
+
+▪  1 carry on bag included, up to 7kg.
+▪  1 checked bag included, up to 20kg.
+▪  Complimentary snacks and drinks on board and lighter meals on some longer routes.
+▪  Rebooking or refund not permitted.
+▪  Both KIOSK and web check in are available for all Arkia international flights departing Tel Aviv.
+▪  Exit row seats offering additional legroom available to book for an extra fee.
+
+
+If the flight will be operated by another airline then the on board product or service might be different.
+• Please note that if the flight is operated by another airline then the onboard product or service maybe different to that described above.</air:Text>
+								<air:Text Type="Strapline">The best deals</air:Text>
+								<air:ImageLocation Type="Consumer" ImageWidth="1400" ImageHeight="800">https://cdn.travelport.com/arkia/IZ_general_large_42609.jpg</air:ImageLocation>
+								<air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="149">https://cdn.travelport.com/arkia/IZ_general_medium_3517.jpg</air:ImageLocation>
+								<air:OptionalServices>
+									<air:OptionalService Type="Baggage" SupplierCode="IZ" CreateDate="2019-09-19T11:32:01.523+00:00" Key="UKuSaCBAAA/BCvnirHAAAA==">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Checked baggage</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/arkia/IZ_general_medium_3511.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/arkia/IZ_general_medium_3511.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+									</air:OptionalService>
+									<air:OptionalService Type="Baggage" SupplierCode="IZ" CreateDate="2019-09-19T11:32:01.523+00:00" Key="UKuSaCBAAA/BDvnirHAAAA==" SecondaryType="Carry On Hand Baggage">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Carry on baggage</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/arkia/IZ_general_medium_3512.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/arkia/IZ_general_medium_3512.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+									</air:OptionalService>
+									<air:OptionalService Type="MealOrBeverage" SupplierCode="IZ" CreateDate="2019-09-19T11:32:01.523+00:00" Key="UKuSaCBAAA/BEvnirHAAAA==" SecondaryType="Snack">
+										<common_v50_0:ServiceInfo>
+											<common_v50_0:Description>Snacks and drinks on board</common_v50_0:Description>
+											<common_v50_0:MediaItem caption="AGENT" height="60" width="60" url="https://cdn.travelport.com/arkia/IZ_general_medium_3515.jpg"/>
+											<common_v50_0:MediaItem caption="CONSUMER" height="60" width="60" url="https://cdn.travelport.com/arkia/IZ_general_medium_3515.jpg"/>
+										</common_v50_0:ServiceInfo>
+										<air:EMD AssociatedItem="Flight"/>
+									</air:OptionalService>
+								</air:OptionalServices>
+							</air:Brand>
+						</air:FareInfo>
+						<air:TaxInfo Category="GR" Amount="USD13.20" Key="UKuSaCBAAA/B+unirHAAAA=="/>
+						<air:TaxInfo Category="WP" Amount="USD17.60" Key="UKuSaCBAAA/B/unirHAAAA=="/>
+						<air:TaxInfo Category="WQ" Amount="USD5.50" Key="UKuSaCBAAA/BAvnirHAAAA=="/>
+						<air:TaxInfo Category="AP" Amount="USD4.00" Key="UKuSaCBAAA/BBvnirHAAAA=="/>
+						<air:FareCalc>ATH IZ TLV49.17NUC49.17END ROE.894724 IZ</air:FareCalc>
+						<air:PassengerType Code="JWZ" BookingTravelerRef="lglIA1kJ0BKAR0ycAGAAAA=="/>
+						<common_v50_0:BookingTravelerRef Key="lglIA1kJ0BKAR0ycAGAAAA=="/>
+						<air:ActionDetails EventDate="2019-09-19" EventTime="00:00:00.000+00:00" Text="4P*"/>
+					</air:AirPricingInfo>
+					<air:AuditData Key="UKuSaCBAAA/BW7mirHAAAA==" TotalPrice="USD89.30" BasePrice="EUR44.00" Taxes="EUR40.3"/>
+					<air:BaggageAllowances>
+						<air:BaggageAllowanceInfo TravelerType="JWZ" Origin="ATH" Destination="TLV" Carrier="IZ">
+							<air:URLInfo>
+								<air:URL>MYTRIPANDMORE.COM/BAGGAGEDETAILSIZ.BAGG</air:URL>
+							</air:URLInfo>
+							<air:TextInfo>
+								<air:Text>20K</air:Text>
+								<air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+							</air:TextInfo>
+							<air:BagDetails ApplicableBags="CarryOn">
+								<air:BaggageRestriction>
+									<air:TextInfo>
+										<air:Text>ALLOWANCE DATA NOT AVAILABLE</air:Text>
+									</air:TextInfo>
+								</air:BaggageRestriction>
+							</air:BagDetails>
+							<air:BagDetails ApplicableBags="1stChecked">
+								<air:BaggageRestriction>
+									<air:TextInfo>
+										<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+									</air:TextInfo>
+								</air:BaggageRestriction>
+							</air:BagDetails>
+							<air:BagDetails ApplicableBags="2ndChecked">
+								<air:BaggageRestriction>
+									<air:TextInfo>
+										<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+									</air:TextInfo>
+								</air:BaggageRestriction>
+							</air:BagDetails>
+						</air:BaggageAllowanceInfo>
+						<air:CarryOnAllowanceInfo Origin="ATH" Destination="TLV" Carrier="IZ">
+							<air:TextInfo>
+								<air:Text>CARRY ON ALLOWANCE DATA NOT AVAILABLE</air:Text>
+							</air:TextInfo>
+						</air:CarryOnAllowanceInfo>
+						<air:CarryOnAllowanceInfo Origin="ATH" Destination="TLV" Carrier="IZ">
+							<air:TextInfo>
+								<air:Text>20K</air:Text>
+							</air:TextInfo>
+							<air:CarryOnDetails ApplicableCarryOnBags="1">
+								<air:BaggageRestriction>
+									<air:TextInfo>
+										<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+									</air:TextInfo>
+								</air:BaggageRestriction>
+							</air:CarryOnDetails>
+							<air:CarryOnDetails ApplicableCarryOnBags="2">
+								<air:BaggageRestriction>
+									<air:TextInfo>
+										<air:Text>CHGS MAY APPLY IF BAGS EXCEED TTL WT ALLOWANCE</air:Text>
+									</air:TextInfo>
+								</air:BaggageRestriction>
+							</air:CarryOnDetails>
+						</air:CarryOnAllowanceInfo>
+					</air:BaggageAllowances>
+				</air:ETR>
+				<common_v50_0:MCO MCONumber="0000777780288" MCOIssued="true" MCOIssueDate="2020-09-19T07:23:00.000+00:00" MCODocNum="001" ProviderCode="1P" PseudoCityCode="1QE">
+					<common_v50_0:PassengerInfo PassengerType="JWZ">
+						<common_v50_0:Name First="STERLING.VLYNCURRENT.MS" Last="TESTUSER"/>
+					</common_v50_0:PassengerInfo>
+					<common_v50_0:FormOfPayment Type="Credit" Reusable="false" ProfileKey="zCudqG0DQ2GIBJ/JGpfnOQ==">
+						<common_v50_0:CreditCard Number="********************4818" ExpDate="*******" ApprovalCode="********"/>
+						<common_v50_0:ProviderReservationInfoRef Key="lglIA1kJ0BKA4nIdAGAAAA=="/>
+					</common_v50_0:FormOfPayment>
+					<common_v50_0:MCOPriceData MCOAmount="USD19.98" MCOTotalAmount="USD19.98">
+						<common_v50_0:Commission Amount="USD19.28"/>
+					</common_v50_0:MCOPriceData>
+					<common_v50_0:StockControl Type="SUPPRESSED" Number="A1070479"/>
+					<common_v50_0:StockControl Type="SUPPRESSED" Number="T1070479"/>
+					<common_v50_0:StockControl Type="SUPPRESSED" Number="P1070479"/>
+					<common_v50_0:MCOText Type="Agent Entry">EZM|SFT19.98</common_v50_0:MCOText>
+					<common_v50_0:MCOText Type="Command Text">EZM|SFT19.98</common_v50_0:MCOText>
+				</common_v50_0:MCO>
+			</air:AirRetrieveDocumentRsp>
+		</SOAP:Body>
+	</SOAP:Envelope>

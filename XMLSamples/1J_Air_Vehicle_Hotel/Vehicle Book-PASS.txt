@@ -1,0 +1,99 @@
+Vehicle Book-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:VehicleCreateReservationReq AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:univ="http://www.travelport.com/schema/universal_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:BookingTraveler Gender="M" DOB="1980-02-22" VIP="false" Age="38" TravelerType="ADT" Key="2A5ezQhlRHeH8y/fwYDPhA==">
+            <com:BookingTravelerName Suffix="Sr." Last="Test" Middle="Test" First="Test" Prefix="Mr"/>
+            <com:DeliveryInfo TrackingNumber="4565" SignatureRequired="Yes" Type="Importatnt">
+               <com:ShippingAddress Key="2A5ezQhlRHeH8y/fwYDPhA==">
+                  <com:AddressName>Test Building</com:AddressName>
+                  <com:Street>St. Havana Street</com:Street>
+                  <com:City>Englewood</com:City>
+                  <com:State>Colorado</com:State>
+                  <com:PostalCode>80112</com:PostalCode>
+                  <com:Country>US</com:Country>
+               </com:ShippingAddress>
+               <com:PhoneNumber Key="WbWrlFoCQpmpssiH2btN7Q==" Type="Business" Text="Test Phone" Extension="1234" Number="25852589" AreaCode="555" CountryCode="005" Location="Den"/>
+               <com:Email Key="fK3ZnTdKQwiQnvJHmw4GLA==" Type="Home" EmailID="TEST.ONly@test.COM" Comment="Test Email"/>
+            </com:DeliveryInfo>
+            <com:PhoneNumber Key="0DjwH4fFTjiMlGNyzVfSFA==" Type="Business" Text="TestForWorkPhone" Extension="1584" Number="84562584" AreaCode="7896" CountryCode="889" Location="FRA"/>
+            <com:Email Key="l1XXy7udS0OVYWfTdylFMQ==" Type="Work" EmailID="NewTEST.ONly@test.COM" Comment="Test Email"/>
+         </com:BookingTraveler>
+         <veh:VehicleDateLocation ReturnLocation="DEN" ReturnDateTime="2020-05-16T10:00:00" PickupLocation="DEN" PickupDateTime="2020-05-01T10:00:00"/>
+         <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" VendorLocationKey="VbtNMC8Q2BKAd8AICAAAAA==" AcrissVehicleCode="CCAR" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+            <vehicle:VehicleRate RatePeriod="Weekly" UnlimitedMileage="true" RateSource="Source" RateAvailability="Available" RateCode="GP" RateCategory="Standard">
+               <vehicle:SupplierRate RateForPeriod="USD150.00" BaseRate="USD330.00" EstimatedTotalAmount="USD498.88" ExtraMileageCharge="USD0.00" PayNow="USD0.00" PayLater="USD0.00"/>
+               <vehicle:ApproximateRate RateForPeriod="JPY16486" BaseRate="JPY36270" EstimatedTotalAmount="JPY54832" ExtraMileageCharge="JPY0" PayNow="USD0.00" PayLater="USD0.00"/>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <com:PointOfSale Key="to05QHJrR3qrUiRhKMo8xA==" PseudoCityCode="5X19" ProviderCode="1J"/>
+         <!--veh:DeliveryAddress Key="zcQW0DkPTx6a933YgK9Peg=="> <com:AddressName>Apt-423</com:AddressName> <com:Street>Havana St</com:Street> <com:City>EngelWood</com:City> <com:State>Colorado</com:State> <com:PostalCode>80111</com:PostalCode> <com:Country>US</com:Country> <com:PhoneNumber Key="Yp8JPmJOSFae+x1YfJwUBA==" Number="22222222"/> </veh:DeliveryAddress-->
+      </univ:VehicleCreateReservationReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Book-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:VehicleCreateReservationRsp TransactionId="9DCED08E0A0764772606212B71EC1BDB" ResponseTime="1912" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1J">00369 LOCATION NOT AUTHORIZED TO ISSUE FASTMAIL DOCUMENTS</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="3690" Type="Warning" ProviderCode="1J">Separate PointOfSale not supported by provider</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="0T1ON1" Version="0" Status="Active">
+            <common_v50_0:BookingTraveler Key="2A5ezQhlRHeH8y/fwYDPhA==" NameNumber="1.1" TravelerType="ADT" Age="38" VIP="false" DOB="1980-02-22" Gender="M" ElStat="A">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="Test" Middle="Test" Last="Test" Suffix="Sr."/>
+               <common_v50_0:DeliveryInfo Type="Importatnt" SignatureRequired="Yes" TrackingNumber="4565">
+                  <common_v50_0:ShippingAddress Key="2A5ezQhlRHeH8y/fwYDPhA==" ElStat="A">
+                     <common_v50_0:AddressName>Test Building</common_v50_0:AddressName>
+                     <common_v50_0:Street>St. Havana Street</common_v50_0:Street>
+                     <common_v50_0:City>Englewood</common_v50_0:City>
+                     <common_v50_0:State>COLORADO</common_v50_0:State>
+                     <common_v50_0:PostalCode>80112</common_v50_0:PostalCode>
+                     <common_v50_0:Country>US</common_v50_0:Country>
+                     <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAGy0FCAAAAA=="/>
+                  </common_v50_0:ShippingAddress>
+                  <common_v50_0:PhoneNumber Key="WbWrlFoCQpmpssiH2btN7Q==" Type="Business" Location="Den" CountryCode="005" Number="25852589" Extension="1234" AreaCode="555" Text="Test Phone" ElStat="A"/>
+                  <common_v50_0:Email Key="fK3ZnTdKQwiQnvJHmw4GLA==" Type="Home" Comment="Test Email" EmailID="TEST.ONly@test.COM" ElStat="A"/>
+               </common_v50_0:DeliveryInfo>
+               <common_v50_0:PhoneNumber Key="0DjwH4fFTjiMlGNyzVfSFA==" Type="Business" Location="FRA" CountryCode="889" Number="84562584" Extension="1584" AreaCode="7896" Text="TestForWorkPhone" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAGy0FCAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="l1XXy7udS0OVYWfTdylFMQ==" Type="Work" Comment="TEST EMAIL" EmailID="NewTEST.ONly@test.COM" ElStat="A">
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAGy0FCAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:NameRemark Key="sQTWMC3R2BKAKy0FCAAAAA==" ElStat="A">
+                  <common_v50_0:RemarkData>22FEB80</common_v50_0:RemarkData>
+                  <common_v50_0:ProviderReservationInfoRef Key="sQTWMC3R2BKAGy0FCAAAAA=="/>
+               </common_v50_0:NameRemark>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="sQTWMC3R2BKAFy0FCAAAAA==" Type="ACTIVE" ProviderReservationInfoRef="sQTWMC3R2BKAGy0FCAAAAA==" ProviderCode="1J" ElStat="A">
+               <common_v50_0:Remark>00</common_v50_0:Remark>
+            </common_v50_0:ActionStatus>
+            <universal:ProviderReservationInfo Key="sQTWMC3R2BKAGy0FCAAAAA==" ProviderCode="1J" LocatorCode="MEHOQX" CreateDate="2020-03-03T00:32:24.214+00:00" ModifiedDate="2020-03-03T00:32:24.214+00:00" HostCreateDate="2020-03-03" HostCreateTime="00:32:00.000+00:00" OwningPCC="00C" AgentOverride="1J"/>
+            <vehicle:VehicleReservation SupplierCode="ZD" BookingConfirmation="00000000US0" LocatorCode="0098S6W7" Status="HK" CreateDate="2020-03-03T00:32:24.179+00:00" ModifiedDate="2020-03-03T00:32:24.214+00:00" ProviderReservationInfoRef="sQTWMC3R2BKAGy0FCAAAAA==" TravelOrder="1" ProviderSegmentOrder="1">
+               <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+               <common_v50_0:ReservationName>
+                  <common_v50_0:NameOverride First="TEST" Last="TEST"/>
+               </common_v50_0:ReservationName>
+               <vehicle:VehicleDateLocation PickupDateTime="2020-05-01T10:00:00.000-06:00" PickupLocation="DEN" PickupLocationType="Terminal" PickupLocationNumber="01" ReturnDateTime="2020-05-16T10:00:00.000-06:00" ReturnLocation="DEN"/>
+               <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" VendorName="BUDGET" AcrissVehicleCode="CCAR">
+                  <vehicle:VehicleRate RatePeriod="Monthly" UnlimitedMileage="true" RateCode="GP" RateGuaranteeType="Rate Quoted">
+                     <vehicle:SupplierRate RateForPeriod="USD600.00" BaseRate="USD600.00"/>
+                     <vehicle:VehicleRateDescription>
+                        <vehicle:Text>APPROX TOTAL 498.88 USD INCLUDES TAXES-FEES-SURCHARGES</vehicle:Text>
+                     </vehicle:VehicleRateDescription>
+                     <vehicle:HourlyLateCharge RateForPeriod="USD22.51" UnlimitedMileage="true"/>
+                     <vehicle:DailyLateCharge RateForPeriod="USD30.00" UnlimitedMileage="true"/>
+                  </vehicle:VehicleRate>
+               </vehicle:Vehicle>
+               <common_v50_0:BookingSource Type="BookingSourceOverride" Code="1J"/>
+            </vehicle:VehicleReservation>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="TRAVELPORTSUPERADMIN" BranchCode="MXFVuATURbeqn5sADSKmcg==" AgencyCode="TVPORTDYNASKLTONWABAGENCY" EventTime="2020-03-03T00:32:22.771+00:00"/>
+            </common_v50_0:AgencyInfo>
+         </universal:UniversalRecord>
+      </universal:VehicleCreateReservationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

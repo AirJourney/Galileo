@@ -1,0 +1,63 @@
+Hotel Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelSearchAvailabilityReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" TraceId="PP_1P_001" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hot:HotelSearchLocation>
+            <hot:HotelLocation Location="BOM"/>
+         </hot:HotelSearchLocation>
+         <hot:HotelSearchModifiers NumberOfAdults="2" NumberOfRooms="1" AvailableHotelsOnly="true" ReturnAmenities="false">
+            <hot:PermittedChains>
+               <hot:HotelChain Code="LC"/>
+            </hot:PermittedChains>
+            <com:PermittedProviders>
+               <com:Provider Code="1P"/>
+            </com:PermittedProviders>
+         </hot:HotelSearchModifiers>
+         <hot:HotelStay>
+            <hot:CheckinDate>2020-05-01</hot:CheckinDate>
+            <hot:CheckoutDate>2020-05-16</hot:CheckoutDate>
+         </hot:HotelStay>
+      </hot:HotelSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelSearchAvailabilityRsp TraceId="PP_1P_001" TransactionId="9DCF2C830A0764772606212BE310DD7F" ResponseTime="463" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:ReferencePoint Country="IN">MUMBAI</hotel:ReferencePoint>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="LC" VendorLocationID="1540" Key="sQTWMC3R2BKAR80FCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="1540" Name="ITC GRAND CENTRAL MUMBAI" VendorLocationKey="sQTWMC3R2BKAR80FCAAAAA==" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKAR ROA PARE</hotel:Address>
+                  <hotel:Address>MUMBAI MH 400012</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="91 22 24101111"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="91 22 24101010"/>
+               <common_v50_0:Distance Units="MI" Value="2" Direction="N"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="USD184.57" ApproximateMaximumAmount="USD325.29"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="LC" VendorLocationID="1349" Key="sQTWMC3R2BKAS80FCAAAAA=="/>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="1349" Name="ITC MARATHA MUMBAI" VendorLocationKey="sQTWMC3R2BKAS80FCAAAAA==" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>SAHAR AIRPORT ROAD NEAR ANDHER</hotel:Address>
+                  <hotel:Address>MUMBAI MH 400099</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Fax" Number="91 22 28303131"/>
+               <common_v50_0:PhoneNumber Type="Business" Number="91 22 28303030"/>
+               <common_v50_0:Distance Units="MI" Value="12" Direction="N"/>
+            </hotel:HotelProperty>
+            <hotel:RateInfo ApproximateMinimumAmount="USD150.27" ApproximateMaximumAmount="USD608.15"/>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:HotelSearchResult>
+      </hotel:HotelSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

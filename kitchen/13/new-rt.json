@@ -1,0 +1,202 @@
+[
+  {
+    "from": "SGN",
+    "to": "LAX"
+  },
+  {
+    "from": "SGN",
+    "to": "DLI"
+  },
+  {
+    "from": "HPH",
+    "to": "SGN"
+  },
+  {
+    "from": "TYO",
+    "to": "SGN"
+  },
+  {
+    "from": "MAD",
+    "to": "SGN"
+  },
+  {
+    "from": "LAX",
+    "to": "SGN"
+  },
+  {
+    "from": "SEL",
+    "to": "SGN"
+  },
+  {
+    "from": "HAN",
+    "to": "DAD"
+  },
+  {
+    "from": "HAN",
+    "to": "VCS"
+  },
+  {
+    "from": "HAN",
+    "to": "PAR"
+  },
+  {
+    "from": "LYS",
+    "to": "HAN"
+  },
+  {
+    "from": "TYO",
+    "to": "HAN"
+  },
+  {
+    "from": "BER",
+    "to": "HAN"
+  },
+  {
+    "from": "HAN",
+    "to": "DAD"
+  },
+  {
+    "from": "SGN",
+    "to": "DAD"
+  },
+  {
+    "from": "HPH",
+    "to": "SGN"
+  },
+  {
+    "from": "KUL",
+    "to": "TGG"
+  },
+  {
+    "from": "KUL",
+    "to": "KCH"
+  },
+  {
+    "from": "KUL",
+    "to": "SIN"
+  },
+  {
+    "from": "KUL",
+    "to": "JED"
+  },
+  {
+    "from": "KUL",
+    "to": "LGK"
+  },
+  {
+    "from": "KUL",
+    "to": "PRG"
+  },
+  {
+    "from": "KUL",
+    "to": "BKI"
+  },
+  {
+    "from": "KUL",
+    "to": "DXB"
+  },
+  {
+    "from": "KUL",
+    "to": "LBU"
+  },
+  {
+    "from": "KUL",
+    "to": "MYY"
+  },
+  {
+    "from": "KUL",
+    "to": "TWU"
+  },
+  {
+    "from": "KUL",
+    "to": "LIM"
+  },
+  {
+    "from": "KUL",
+    "to": "PEN"
+  },
+  {
+    "from": "KUL",
+    "to": "LON"
+  },
+  {
+    "from": "KUL",
+    "to": "KBR"
+  },
+  {
+    "from": "KUL",
+    "to": "AOR"
+  },
+  {
+    "from": "KUL",
+    "to": "BKK"
+  },
+  {
+    "from": "KUL",
+    "to": "SYD"
+  },
+  {
+    "from": "KUL",
+    "to": "SBW"
+  },
+  {
+    "from": "KUL",
+    "to": "ATH"
+  },
+  {
+    "from": "KUL",
+    "to": "JHB"
+  },
+  {
+    "from": "SIN",
+    "to": "KUL"
+  },
+  {
+    "from": "AOR",
+    "to": "KUL"
+  },
+  {
+    "from": "NUE",
+    "to": "KUL"
+  },
+  {
+    "from": "KBR",
+    "to": "KUL"
+  },
+  {
+    "from": "PEN",
+    "to": "KUL"
+  },
+  {
+    "from": "MYY",
+    "to": "KUL"
+  },
+  {
+    "from": "BCN",
+    "to": "KUL"
+  },
+  {
+    "from": "JHB",
+    "to": "KUL"
+  },
+  {
+    "from": "MAN",
+    "to": "KUL"
+  },
+  {
+    "from": "SEL",
+    "to": "KUL"
+  },
+  {
+    "from": "TWU",
+    "to": "KUL"
+  },
+  {
+    "from": "DEL",
+    "to": "KUL"
+  },
+  {
+    "from": "SBW",
+    "to": "KUL"
+  }
+]

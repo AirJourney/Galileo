@@ -1,0 +1,291 @@
+HotelDetails-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+   <soapenv:Body>
+      <hotel:HotelDetailsReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" TraceId="PP_1V_0329" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hotel:HotelProperty HotelChain="LC" HotelCode="14645" HotelLocation="BOM" Name="ITC GRAND CENTRAL MUMBAI" VendorLocationKey="VbtNMC8Q2BKADAGICAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKA</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:CoordinateLocation latitude="19.0011" longitude="72.8368"/>
+               <common_v50_0:Distance Units="MI" Value="6" Direction="S"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>0</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+         <hotel:HotelDetailsModifiers RateRuleDetail="Complete" NumberOfAdults="1" NumberOfRooms="1">
+             <com:PermittedProviders>
+               <com:Provider Code="1V"/>
+            </com:PermittedProviders>
+
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-04-16</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-04-19</hotel:CheckoutDate>
+            </hotel:HotelStay>
+         </hotel:HotelDetailsModifiers>
+      </hotel:HotelDetailsReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelDetails-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelDetailsRsp TraceId="PP_1V_0329" TransactionId="9DD3BE700A0764785B1483FCD38E9F2A" ResponseTime="272" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:RequestedHotelDetails>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="14645" HotelLocation="BOM" Name="ITC GRAND CENTRAL MUMBAI" ParticipationLevel="2">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKAR ROA P</hotel:Address>
+                  <hotel:Address>MUMBAI MH 400012 IN</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Business" Number="91 22-24101010"/>
+               <common_v50_0:PhoneNumber Type="Fax" Number="91 22-24101111"/>
+               <common_v50_0:Distance Units="MI" Value="7" Direction="S"/>
+               <hotel:MarketingMessage>
+                  <hotel:Text>HOTELS THAT DEFINE THE DESTINATION</hotel:Text>
+               </hotel:MarketingMessage>
+            </hotel:HotelProperty>
+            <hotel:HotelDetailItem Name="CheckInTime">
+               <hotel:Text>2PM</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelDetailItem Name="CheckOutTime">
+               <hotel:Text>12N</hotel:Text>
+            </hotel:HotelDetailItem>
+            <hotel:HotelRateDetail RatePlanType="YBKC00" Total="INR39825.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Daily, See Rate Rules, Executive Club, Guest</hotel:Text>
+                  <hotel:Text>Room, 1 King Or Twin/single Bed S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>The Long Stay Special, Includes Breakfast</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR11250.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="APND00" Total="INR39825.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Executive Club, Guest Room, 1 King Or</hotel:Text>
+                  <hotel:Text>Twin/single Bed S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Prepay In Full, Non-refundable, No Changes,</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR11250.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGA00" Total="INR44250.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, Executive Club, Guest Room, 1 King Or</hotel:Text>
+                  <hotel:Text>Twin/single Bed S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate, Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR12500.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="APNN00" Total="INR44604.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, Executive Club Exclusive, Executive</hotel:Text>
+                  <hotel:Text>Lounge Access, Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate, Prepay In Full, See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR12600.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="APNO00" Total="INR49383.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, The Towers, Tower Lounge Access Level,</hotel:Text>
+                  <hotel:Text>Guest Room, Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate, Prepay In Full, See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR13950.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGD00" Total="INR49560.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, Executive Club Exclusive, Executive</hotel:Text>
+                  <hotel:Text>Lounge Access, Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate, Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR14000.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGE00" Total="INR54870.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, The Towers, Tower Lounge Access Level,</hotel:Text>
+                  <hotel:Text>Guest Room, Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate, Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR15500.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="BUYM00" Total="INR58941.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, Itc One, Larger Guest Room, 1 King,</hotel:Text>
+                  <hotel:Text>Mumbai Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate, Prepay In Full, See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR16650.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Deposit"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="REGF00" Total="INR65490.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, Itc One, Larger Guest Room, 1 King,</hotel:Text>
+                  <hotel:Text>Mumbai Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Stay For Breakfast Rate, Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR18500.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="XMIA00" Total="INR37612.50" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Rules, Executive Club, Guest Room, 1 King Or</hotel:Text>
+                  <hotel:Text>Twin/single Bed S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Marriott Senior Discount, Includes See Rate</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR10625.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="BFKD00" Total="INR39825.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Daily, See Rate Rules, Executive Club</hotel:Text>
+                  <hotel:Text>Exclusive, Executive Lounge Access, Skyline</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>The Long Stay Special, Includes Breakfast</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR11250.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="BFKE00" Total="INR54870.00" RateChangeIndicator="false" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Daily, See Rate Rules, The Towers, Tower Lounge</hotel:Text>
+                  <hotel:Text>Access Level, Guest Room, Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>The Long Stay Special, Includes Breakfast</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR15500.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="ZZLO00" Total="INR50150.00" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Culinary Break, Executive Club, Guest Room, 1</hotel:Text>
+                  <hotel:Text>King Or Twin/single Bed S</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR14500.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="ZZLQ00" Total="INR55460.00" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>CULINARY BREAK, EXECUTIVE CLUB EXCLUSIVE,.EXECUTIVE LOUNGE ACCESS, SKYLINE VIEW.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR16000.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelRateDetail RatePlanType="ZZLR00" Total="INR60770.00" RateChangeIndicator="true" ExtraFeesIncluded="false">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>Level, Guest Room, Skyline View</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Description">
+                  <hotel:Text>Culinary Break, The Towers, Tower Lounge Access</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-04-16" ExpireDate="2020-04-19" Base="INR17500.00"/>
+               <hotel:Commission Indicator="true"/>
+               <hotel:GuaranteeInfo GuaranteeType="Guarantee"/>
+               <hotel:Inclusions SmokingRoomIndicator="unknown">
+                  <hotel:BedTypes Code="248"/>
+                  <hotel:MealPlans Breakfast="unknown" Lunch="unknown" Dinner="unknown"/>
+               </hotel:Inclusions>
+            </hotel:HotelRateDetail>
+            <hotel:HotelType SourceLink="true"/>
+         </hotel:RequestedHotelDetails>
+      </hotel:HotelDetailsRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

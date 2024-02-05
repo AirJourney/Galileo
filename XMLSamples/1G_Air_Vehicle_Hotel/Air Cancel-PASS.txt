@@ -1,0 +1,128 @@
+Air Cancel-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+   <soapenv:Header>
+      <univ:SupportedVersions/>
+   </soapenv:Header>
+   <soapenv:Body>
+      <univ:AirCancelReq Version="2" TargetBranch="P7102538" AuthorizedBy="SUSIL">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:AirReservationLocatorCode>0T1JL2</air:AirReservationLocatorCode>
+         <!--<air:AirSegment xmlns:air="http://www.travelport.com/schema/air_v50_0" Key="nFB3GxBAAA/BTvXBAAAAAA==" Group="1" Carrier="UA" FlightNumber="241" Origin="ATL" Destination="ORD" DepartureTime="2020-04-14T06:20:00.000-07:00" ArrivalTime="2020-04-14T09:57:00.000-06:00" FlightTime="157" TravelTime="157" ETicketability="Yes" Equipment="753" ChangeOfPlane="false" ParticipantLevel="Secure Sell" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" OptionalServicesIndicator="false" AvailabilitySource="A" AvailabilityDisplayType="General" ProviderCode="1G" ClassOfService="Y"/> -->
+         <air:AirSegment Key="sQTWMC3R2BKAXdd7BAAAAA==" Group="1" Carrier="SA" FlightNumber="8854" ProviderCode="1G" Origin="PHW" Destination="JNB" DepartureTime="2020-04-21T13:15:00.000+02:00" ArrivalTime="2020-04-21T14:35:00.000+02:00" ClassOfService="W" Status="KK"/>
+      </univ:AirCancelReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Cancel-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:AirCancelRsp TransactionId="9C17C4AC0A0764785B1483FC5A550F47" ResponseTime="1615" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Info">AirSegment Cancelled Successfully</common_v50_0:ResponseMessage>
+         <common_v50_0:ResponseMessage Code="1" Type="Warning" ProviderCode="1G">CONFIRM SEGMENT 02/CONFIRM SEGMENT 03</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="0T1JKJ" Version="3" Status="Active">
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMQ==" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="CARSTEN" Last="LINDELOEV"/>
+               <common_v50_0:PhoneNumber Key="VbtNMC8Q2BKA3aP9BAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-722-2454" Extension="22" AreaCode="222" Text="Abc-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvbP9BAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="VbtNMC8Q2BKAIbP9BAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvbP9BAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="VbtNMC8Q2BKA4aP9BAAAAA==" Status="HK" Type="DOCS" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/LINDELOEV/CARSTENGJELLERUPMR -1LINDELOEV/CARSTENMR" Carrier="SA" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" ElStat="M"/>
+               <common_v50_0:Address Key="VbtNMC8Q2BKAJbP9BAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvbP9BAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMg==" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="john" Last="Long"/>
+               <common_v50_0:PhoneNumber Key="VbtNMC8Q2BKA7aP9BAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-702-2454" Extension="22" AreaCode="222" Text="Abd-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvbP9BAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="VbtNMC8Q2BKAKbP9BAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvbP9BAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="VbtNMC8Q2BKA8aP9BAAAAA==" Status="HK" Type="DOCS" FreeText="P/CA/F9850356/GB/04JAN80/M/01JAN14/LONG/JHONJELLERUPMR -1LONG/JOHNMR" Carrier="SA" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" ElStat="M"/>
+               <common_v50_0:Address Key="VbtNMC8Q2BKALbP9BAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="VbtNMC8Q2BKAPbP9BAAAAA==" Type="TAU" TicketDate="2020-03-07T23:59:00.000+02:00" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" ProviderCode="1G"/>
+            <universal:ProviderReservationInfo Key="VbtNMC8Q2BKAvbP9BAAAAA==" ProviderCode="1G" LocatorCode="5B542U" CreateDate="2020-03-02T16:31:35.625+00:00" ModifiedDate="2020-03-02T16:32:50.860+00:00" HostCreateDate="2020-03-02" OwningPCC="80EZ"/>
+            <air:AirReservation LocatorCode="0T1JL2" CreateDate="2020-03-02T16:31:34.919+00:00" ModifiedDate="2020-03-02T16:32:50.860+00:00">
+               <common_v50_0:SupplierLocator SupplierCode="SA" SupplierLocatorCode="VTHZOQ" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" CreateDateTime="2020-03-02T16:31:00.000+00:00"/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+               <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvbP9BAAAAA=="/>
+               <air:AirSegment Key="sQTWMC3R2BKAZdd7BAAAAA==" Group="0" Carrier="SA" CabinClass="Economy" FlightNumber="2019" ProviderCode="1G" Origin="JNB" Destination="CPT" DepartureTime="2020-04-21T15:45:00.000+02:00" ArrivalTime="2020-04-21T17:55:00.000+02:00" TravelTime="130" ClassOfService="G" ETicketability="No" Equipment="738" Status="NO" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true">
+                  <common_v50_0:SegmentRemark Key="VbtNMC8Q2BKAybP9BAAAAA==">MANGO</common_v50_0:SegmentRemark>
+                  <air:CodeshareInfo OperatingCarrier="JE"/>
+                  <air:FlightDetails Key="sQTWMC3R2BKABOg7BAAAAA==" Origin="JNB" Destination="CPT" DepartureTime="2020-04-21T15:45:00.000+02:00" ArrivalTime="2020-04-21T17:55:00.000+02:00" FlightTime="130" TravelTime="130" Equipment="738" OriginTerminal="B" AutomatedCheckin="false"/>
+                  <common_v50_0:SellMessage>*SECURED SELL NOT AVAILABLE*</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>OPERATED BY MANGO</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>DEPARTS JNB TERMINAL B</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirSegment Key="sQTWMC3R2BKAbdd7BAAAAA==" Group="1" Carrier="SA" CabinClass="Economy" FlightNumber="346" ProviderCode="1G" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:05:00.000+02:00" ArrivalTime="2020-04-26T17:00:00.000+02:00" TravelTime="115" ClassOfService="G" ETicketability="No" Equipment="359" Status="KK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" TravelOrder="2" ProviderSegmentOrder="2" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true">
+                  <air:FlightDetails Key="sQTWMC3R2BKACOg7BAAAAA==" Origin="CPT" Destination="JNB" DepartureTime="2020-04-26T15:05:00.000+02:00" ArrivalTime="2020-04-26T17:00:00.000+02:00" FlightTime="115" TravelTime="115" Equipment="359" DestinationTerminal="B" AutomatedCheckin="false"/>
+                  <common_v50_0:SellMessage>*SECURED SELL NOT AVAILABLE*</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>ARRIVES JNB TERMINAL B</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <air:AirSegment Key="sQTWMC3R2BKAddd7BAAAAA==" Group="2" Carrier="SA" CabinClass="Economy" FlightNumber="8853" ProviderCode="1G" Origin="JNB" Destination="PHW" DepartureTime="2020-04-27T11:45:00.000+02:00" ArrivalTime="2020-04-27T12:55:00.000+02:00" TravelTime="70" ClassOfService="W" ETicketability="No" Equipment="J41" Status="KK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" TravelOrder="3" ProviderSegmentOrder="3" OptionalServicesIndicator="false" AvailabilitySource="S" ParticipantLevel="Secure Sell" LinkAvailability="true">
+                  <common_v50_0:SegmentRemark Key="VbtNMC8Q2BKAzbP9BAAAAA==">SA AIRLINK</common_v50_0:SegmentRemark>
+                  <air:CodeshareInfo OperatingCarrier="4Z"/>
+                  <air:FlightDetails Key="sQTWMC3R2BKADOg7BAAAAA==" Origin="JNB" Destination="PHW" DepartureTime="2020-04-27T11:45:00.000+02:00" ArrivalTime="2020-04-27T12:55:00.000+02:00" FlightTime="70" TravelTime="70" Equipment="J41" OriginTerminal="B" AutomatedCheckin="false"/>
+                  <common_v50_0:SellMessage>*SECURED SELL NOT AVAILABLE*</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>OPERATED BY SA AIRLINK</common_v50_0:SellMessage>
+                  <common_v50_0:SellMessage>DEPARTS JNB TERMINAL B</common_v50_0:SellMessage>
+               </air:AirSegment>
+               <common_v50_0:Payment Key="NgSNMC7Q2BKA7kx2BAAAAA==" Type="Itinerary" Amount="USD0.00" ApproximateAmount="USD0.00" FormOfPaymentRef="PDz8y7xu4hGfaM/wYIhwmw=="/>
+               <common_v50_0:CreditCardAuth Key="NgSNMC7Q2BKA7kx2BAAAAA==" Number="************5557" Amount="USD0.00" AuthCode="4242" AuthResultCode="approved"/>
+            </air:AirReservation>
+            <common_v50_0:GeneralRemark Key="VbtNMC8Q2BKAMbP9BAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" CreateDate="2020-03-02T16:31:00.000+00:00">
+               <common_v50_0:RemarkData>BOOKING 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="VbtNMC8Q2BKANbP9BAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" CreateDate="2020-03-02T16:31:00.000+00:00">
+               <common_v50_0:RemarkData>RE- BOOKING 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="sQTWMC3R2BKA9Ng7BAAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" SupplierCode="SA" Direction="Incoming" CreateDate="2020-03-02T16:32:00.000+00:00">
+               <common_v50_0:RemarkData>FLIGHT MAPPING NOT FOUND OR INVALID AGENCY</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="sQTWMC3R2BKA+Ng7BAAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="VbtNMC8Q2BKAvbP9BAAAAA==" SupplierCode="1A" Direction="Incoming" CreateDate="2020-03-02T16:32:00.000+00:00">
+               <common_v50_0:RemarkData>ADTK1GTOSA BY 03MAR 2000 JNB TIME ZONE OTHERWISE WILL BE XLD</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="uAPI9941435167-84c5554e" BranchCode="P7102538" AgencyCode="S7082994" EventTime="2020-03-02T16:31:30.975+00:00"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="uAPI9941435167-84c5554e" BranchCode="P7102538" AgencyCode="S7082994" EventTime="2020-03-02T16:32:49.467+00:00"/>
+            </common_v50_0:AgencyInfo>
+            <common_v50_0:FormOfPayment Key="PDz8y7xu4hGfaM/wYIhwmw==" Type="Credit" Reusable="true" ProfileKey="p/zygZKgT/y0L/v3mRIRcA==">
+               <common_v50_0:CreditCard Type="CA" Number="5555555555555557" ExpDate="2021-01" Name="JAYA KUMAR">
+                  <common_v50_0:BillingAddress Key="VbtNMC8Q2BKAObP9BAAAAA==">
+                     <common_v50_0:AddressName>Jan Testora</common_v50_0:AddressName>
+                     <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                     <common_v50_0:Street>Apt 2</common_v50_0:Street>
+                     <common_v50_0:City>Englewood</common_v50_0:City>
+                     <common_v50_0:State>CO</common_v50_0:State>
+                     <common_v50_0:PostalCode>8011</common_v50_0:PostalCode>
+                     <common_v50_0:Country>AU</common_v50_0:Country>
+                  </common_v50_0:BillingAddress>
+               </common_v50_0:CreditCard>
+               <common_v50_0:ProviderReservationInfoRef Key="VbtNMC8Q2BKAvbP9BAAAAA=="/>
+            </common_v50_0:FormOfPayment>
+         </universal:UniversalRecord>
+      </universal:AirCancelRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

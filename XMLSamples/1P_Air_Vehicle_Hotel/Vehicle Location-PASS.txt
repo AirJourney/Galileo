@@ -1,0 +1,261 @@
+Vehicle Location-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleLocationReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+<!--         <veh:Vendor Code="SX"/>-->
+         <veh:PickupDateLocation Date="2020-03-26" Location="LHR"/>
+      </veh:VehicleLocationReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Location-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationRsp TransactionId="7D93954D0A07643BACD9EBEEB517BA85" ResponseTime="148" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZT" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="ShuttleOffAirport" AreaGroup="T" Location="LHR" AreaType="AirportSecondary">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW APO   LHR</common_v50_0:AddressName>
+                  <common_v50_0:Street>THE SHERATON HEATHROW HOT</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZE" VendorLocationID="050"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="Z" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>HEATHROW AIRPORT  A</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZI" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="D" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>CENTRAL HEATHROW LOC</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="KD" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="W" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>LONDON HEATHROW AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="OJ" VendorLocationID="050"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="A" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW</common_v50_0:AddressName>
+                  <common_v50_0:Street>LONDON HEATHROW AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="RZ" VendorLocationID="005"/>
+            <vehicle:LocationInformation LocationType="Hotel" AreaGroup="E" Location="LHR" AreaType="CityCenterDowntown">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LHRC01</common_v50_0:AddressName>
+                  <common_v50_0:Street>ALDERSHOT CITY OFFICE</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="NL" VendorLocationID="003"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="Q" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>LONDON HEATHROW AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZD" VendorLocationID="002"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="Q" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AP T2 3 4</common_v50_0:AddressName>
+                  <common_v50_0:Street>NORTHROP ROAD</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="GI" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="ShuttleOffAirport" AreaGroup="J" Location="LHR" AreaType="AirportSecondary">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>HOLIDAY INN M4J4  239 SIP</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="EQ" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="S" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>LONDON HEATHROW AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZE" VendorLocationID="051"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="F" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>HEATHROW T4</common_v50_0:AddressName>
+                  <common_v50_0:Street>HEATHROW HILTON HOTEL TER</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZR" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="ShuttleOffAirport" AreaGroup="K" Location="LHR" AreaType="AirportSecondary">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>COLNBROOK BYPAS WEST DRAY</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ET" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="I" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>NORTHERN PERIMETER ROAD</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="FY" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="Q" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>LONDON HEATHROW AIRPORT O</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="JK" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="N" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>LONDON HEATHROW AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="SX" VendorLocationID="005"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="R" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AP T5</common_v50_0:AddressName>
+                  <common_v50_0:Street>SOFITEL LONDON HEATHROW T</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ES" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="ShuttleOffAirport" AreaGroup="U" Location="LHR" AreaType="AirportSecondary">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>BATH ROAD</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="EP" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="A" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>NORTHERN PERIMETER ROAD W</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="AL" VendorLocationID="073"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="X" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>NORTHERN PERIMETER ROAD</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="SE" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="ShuttleOffAirport" AreaGroup="H" Location="LHR" AreaType="AirportSecondary">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LHRC01</common_v50_0:AddressName>
+                  <common_v50_0:Street>LONDON HEATHROW AIRPORT</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="AC" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="ShuttleOffAirport" AreaGroup="K" Location="LHR" AreaType="AirportSecondary">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>ACEGREEN MOTION</common_v50_0:AddressName>
+                  <common_v50_0:Street>HOLIDAY INN M4J4</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZL" VendorLocationID="003"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="D" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>HEATHROW AIRPORT</common_v50_0:AddressName>
+                  <common_v50_0:Street>NORTHERN PERIMETER ROAD</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="ZD" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="P" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>HEATHROW AIRPORT T5</common_v50_0:AddressName>
+                  <common_v50_0:Street>LEVEL 4 SHORT STAY CAR PA</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+         <vehicle:VehicleLocation>
+            <common_v50_0:VendorLocation ProviderCode="1P" VendorCode="SX" VendorLocationID="001"/>
+            <vehicle:LocationInformation LocationType="Terminal" AreaGroup="B" Location="LHR" AreaType="AirportMain">
+               <vehicle:Address>
+                  <common_v50_0:AddressName>LONDON HEATHROW T2 T3 T4</common_v50_0:AddressName>
+                  <common_v50_0:Street>GREAT SOUTH WEST ROAD</common_v50_0:Street>
+                  <common_v50_0:City>LHR</common_v50_0:City>
+               </vehicle:Address>
+            </vehicle:LocationInformation>
+         </vehicle:VehicleLocation>
+      </vehicle:VehicleLocationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

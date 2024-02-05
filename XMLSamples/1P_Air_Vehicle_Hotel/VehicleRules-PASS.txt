@@ -1,0 +1,90 @@
+VehicleRules-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <Vehicle:VehicleRulesReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:Vehicle="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <Vehicle:VehicleRulesLookup>
+            <Vehicle:VehicleDateLocation ReturnLocation="LHR" ReturnDateTime="2020-05-10T10:00:00" PickupLocation="LHR" PickupDateTime="2020-04-25T10:00:00">
+               <Vehicle:VendorLocation Key="n3Y7ONgbROaAyGU5duDUOw==" VendorLocationID="1" VendorCode="SX" ProviderCode="1P"/>
+            </Vehicle:VehicleDateLocation>
+            <Vehicle:VehicleSearchModifiers RatePeriod="Daily" RateCategory="Standard">
+               <Vehicle:VehicleModifier DoorCount="TwoToFourDoors" Category="Car" VehicleClass="Compact" TransmissionType="Automatic" AirConditioning="true"/>
+               <Vehicle:RateModifiers VendorCode="SX" RateCode="DU2"/>
+               <Vehicle:RateHostIndicator RateToken="02"/>
+            </Vehicle:VehicleSearchModifiers>
+         </Vehicle:VehicleRulesLookup>
+      </Vehicle:VehicleRulesReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+VehicleRules-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRulesRsp TransactionId="7D93888C0A076478D3ABDD5C6A60AA2D" ResponseTime="218" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" CounterLocationCode="CNTR" AcrissVehicleCode="CCAR">
+            <vehicle:VehicleRate RatePeriod="Daily" NumberOfPeriods="2" UnlimitedMileage="true" RateCode="DU2" RateCategory="Standard" AdvancedBooking="000H">
+               <vehicle:SupplierRate RateForPeriod="GBP30.50" BaseRate="GBP457.50" EstimatedTotalAmount="GBP658.80" MandatoryChargeTotal="GBP201.30"/>
+               <vehicle:VehicleRateDescription Name="General">
+                  <vehicle:Text>** PREMIUM SECOND US **</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:VehicleRateDescription Name="Advisory">
+                  <vehicle:Text>ADVISORY: CHARGES ASSOCIATED WITH THE BASE RATE ARE THOSE WHICH ARE APPLICABLE AT THE TIME OF BOOKING AND COULD BE SUBJECT TO   CHANGE.  ONLY THOSE CHARGES LISTED AS MANDATORY ARE INCLUDED IN THE TOTAL RATE FOR THE DISPLAYED RENTAL.</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:OperationTime>ArrivalTimeInformation -OpenTime/Check-in time 0500-CloseTime/Check-out time 2359</vehicle:OperationTime>
+         <vehicle:OperationTime>DepartureTimeInformation -OpenTime/Check-in time 0500-CloseTime/Check-out time 2359</vehicle:OperationTime>
+         <vehicle:RentalPeriodRules>
+            <vehicle:MaxRental RentalUnit="Days" Length="365"/>
+            <vehicle:MinRental RentalUnit="Days" Length="0"/>
+         </vehicle:RentalPeriodRules>
+         <vehicle:VehicleCharge Category="Tax" Name="ROAD TAX" Type="Rental">
+            <vehicle:Amount>GBP0.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="SURCHARGE" Type="Rental">
+            <vehicle:Amount>GBP91.50</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Tax" Name="TAX" Type="Rental">
+            <vehicle:Amount>GBP109.80</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Surcharge" Name="THIRD PARTY INSURANCE">
+            <vehicle:Amount>GBP0.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="YOUNG DRIVER SURCHARGE" Type="Rental">
+            <vehicle:Amount>GBP450.00</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="LOSS DAMAGE WAIVER" Type="Rental">
+            <vehicle:Amount>GBP175.05</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Coverage" Name="ADDITIONAL LIABILITY INSURANCE" Type="Rental">
+            <vehicle:Amount>GBP127.35</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Name="InfantSeat" Description="CHILD SEAT/INFANT" Type="PerDay">
+            <vehicle:Amount>GBP3.33</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Name="BabySeat" Description="CHILD SEAT/BABY" Type="PerDay">
+            <vehicle:Amount>GBP3.33</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:VehicleCharge Category="Special" Description="DIESEL" Type="PerDay">
+            <vehicle:Amount>GBP1.67</vehicle:Amount>
+         </vehicle:VehicleCharge>
+         <vehicle:PickupLocationInformation LocationName="GREAT SOUTH WES" CounterLocation="COUNTER IS IN TERMINAL - SHUTTLE TO CAR" VendorCode="SX" LocationCode="LHR" LocationType="Terminal" LocationNumber="001">
+            <vehicle:Address>
+               <common_v50_0:Street>GREAT SOUTH WEST ROAD</common_v50_0:Street>
+               <common_v50_0:Street>FELTHAM</common_v50_0:Street>
+               <common_v50_0:Street>GB</common_v50_0:Street>
+               <common_v50_0:Street>TW14 0PR</common_v50_0:Street>
+               <common_v50_0:State>TW</common_v50_0:State>
+               <common_v50_0:Country>US</common_v50_0:Country>
+            </vehicle:Address>
+            <common_v50_0:PhoneNumber Type="Business" Number="0044 2070188246"/>
+            <common_v50_0:PhoneNumber Type="Reservations" Number="0049 8966060060"/>
+            <vehicle:OperationTime>Arrival 0500-2359</vehicle:OperationTime>
+            <vehicle:OperationTime>Departure 0500-2359</vehicle:OperationTime>
+         </vehicle:PickupLocationInformation>
+      </vehicle:VehicleRulesRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

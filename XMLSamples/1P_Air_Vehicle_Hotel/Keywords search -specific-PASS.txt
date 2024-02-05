@@ -1,0 +1,21 @@
+Keywords search -specific-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelKeywordReq AuthorizedBy="SUSIL" TargetBranch="TP_1P_SOA" TraceId="PP_1P_001" HotelChain="LC" HotelCode="1540" CheckinDate="2020-04-01" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:Keyword Name="COMM" Number="3" Description="COMMISSION"/>
+      </hot:HotelKeywordReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Keywords search -specific-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelKeywordRsp TraceId="PP_1P_001" TransactionId="9DCF46E10A07643B096D7BC3954424A3" ResponseTime="62" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="5007" Type="Warning">Keyword description for all of the requested keywords not available.</common_v50_0:ResponseMessage>
+      </hotel:HotelKeywordRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

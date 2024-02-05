@@ -1,0 +1,39 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<universal:UniversalRecordModifyReq xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" AuthorizedBy="TRAVELPORT" TargetBranch="P7087679" TraceId="trace" Version="4">
+			<common:BillingPointOfSaleInfo OriginApplication="uAPI"/>
+			<common:ContinuityCheckOverride Key="0">Yes</common:ContinuityCheckOverride>
+			<universal:RecordIdentifier ProviderCode="1V" ProviderLocatorCode="NC5TNB" UniversalLocatorCode="127IM2"/>
+			<universal:UniversalModifyCmd Key="key1">
+				<universal:AirAdd ReservationLocatorCode="127IM3">
+					<air:AssociatedRemark SegmentRef="Sy/mOk/pWDKAgvSXCAAAAA==">
+						<common:RemarkData>ASSOCIATED AIR REMARK</common:RemarkData>
+					</air:AssociatedRemark>
+				</universal:AirAdd>
+			</universal:UniversalModifyCmd>
+			<universal:UniversalModifyCmd Key="key2">
+				<universal:HotelAdd ReservationLocatorCode="00M5HQGN">
+					<hotel:AssociatedRemark>
+						<common:RemarkData>ASSOCIATED HOTEL REMARK</common:RemarkData>
+					</hotel:AssociatedRemark>
+				</universal:HotelAdd>
+			</universal:UniversalModifyCmd>
+			<universal:UniversalModifyCmd Key="key3">
+				<universal:VehicleAdd ReservationLocatorCode="00M5HQP1">
+					<vehicle:AssociatedRemark>
+						<common:RemarkData>ASSOCIATED VEHICLE REMARK</common:RemarkData>
+					</vehicle:AssociatedRemark>
+				</universal:VehicleAdd>
+			</universal:UniversalModifyCmd>
+		</universal:UniversalRecordModifyReq>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordModifyRsp TraceId="trace" TransactionId="3358FDBB0A0D6A802E4B13D3AC595DDD" ResponseTime="875" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Info">Universal record successfully modified.</common_v50_0:ResponseMessage>
+      </universal:UniversalRecordModifyRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

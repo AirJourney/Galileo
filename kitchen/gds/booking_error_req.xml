@@ -1,0 +1,980 @@
+<!--Release 8.1-->
+<!--Version Dated as of 15/Apr/2015 11:24:06-->
+<!--Air Pricing For Galileo(1G) with LFS CheckFlightDetails Request-->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header/>
+    <soap:Body>
+        <air:AirPriceReq AuthorizedBy="user" CheckFlightDetails="true" TargetBranch="P3570601" TraceId=""
+            xmlns:air="http://www.travelport.com/schema/air_v52_0"
+            xmlns:com="http://www.travelport.com/schema/common_v52_0">
+            <com:BillingPointOfSaleInfo OriginApplication="UAPI"
+                xmlns:com="http://www.travelport.com/schema/common_v52_0"/>
+            <air:AirItinerary>
+                <air:AirSegment ArrivalTime="2023-06-26T12:40:00+08:00" DepartureTime="2023-06-26T12:00:00+08:00" Carrier="NZ" ClassOfService="T" CabinClass="Economy" Origin="TRG" Destination="AKL" ETicketability="Yes" Equipment="DH8C" FlightNumber="8134" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" ProviderCode="1G" Key="0" Group="0">
+                    <air:Connection/>
+                </air:AirSegment>
+                <air:AirSegment ArrivalTime="2023-06-26T18:15:00+08:00" DepartureTime="2023-06-26T17:05:00+08:00" Carrier="NZ" ClassOfService="Y" CabinClass="Economy" Origin="AKL" Destination="PMR" ETicketability="Yes" Equipment="AT72" FlightNumber="5125" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" ProviderCode="1G" Key="1" Group="0">
+                </air:AirSegment>
+                <air:AirSegment ArrivalTime="2023-06-27T15:45:00+08:00" DepartureTime="2023-06-27T13:50:00+08:00" Carrier="NZ" ClassOfService="B" CabinClass="Economy" Origin="CHC" Destination="TRG" ETicketability="Yes" Equipment="DH8C" FlightNumber="8802" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" ProviderCode="1G" Key="2" Group="1">
+                    <air:Connection/>
+                </air:AirSegment>
+                <air:AirSegment ArrivalTime="2023-06-27T11:30:00+08:00" DepartureTime="2023-06-27T10:10:00+08:00" Carrier="NZ" ClassOfService="W" CabinClass="Economy" Origin="PMR" Destination="CHC" ETicketability="Yes" Equipment="AT72" FlightNumber="5181" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" ProviderCode="1G" Key="3" Group="1">
+                </air:AirSegment>
+            </air:AirItinerary>
+            <air:AirPricingModifiers InventoryRequestType="DirectAccess"/>
+            <com:SearchPassenger Key="P_0" Code="ADT" Age="36"
+                xmlns:com="http://www.travelport.com/schema/common_v52_0"/>
+            <air:AirPricingCommand>
+                <air:AirSegmentPricingModifiers AirSegmentRef="0" FareBasisCode="TBAG">
+                    <air:PermittedBookingCodes>
+                        <air:BookingCode Code="T" />
+                    </air:PermittedBookingCodes>
+                </air:AirSegmentPricingModifiers>
+                <air:AirSegmentPricingModifiers AirSegmentRef="1" FareBasisCode="YBAG">
+                    <air:PermittedBookingCodes>
+                        <air:BookingCode Code="Y" />
+                    </air:PermittedBookingCodes>
+                </air:AirSegmentPricingModifiers>
+                <air:AirSegmentPricingModifiers AirSegmentRef="2" FareBasisCode="BBAG">
+                    <air:PermittedBookingCodes>
+                        <air:BookingCode Code="B" />
+                    </air:PermittedBookingCodes>
+                </air:AirSegmentPricingModifiers>
+                <air:AirSegmentPricingModifiers AirSegmentRef="3" FareBasisCode="WBAG">
+                    <air:PermittedBookingCodes>
+                        <air:BookingCode Code="W" />
+                    </air:PermittedBookingCodes>
+                </air:AirSegmentPricingModifiers>
+            </air:AirPricingCommand>
+        </air:AirPriceReq>
+    </soap:Body>
+</soap:Envelope>
+
+
+<!--AirCreateReservationReq-->
+<!--Release 8.1-->
+<!--Version Dated as of 15/Apr/2015 11:24:07-->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header xmlns:univ="http://www.travelport.com/schema/universal_v52_0">
+        <univ:SupportedVersions airVersion="air_v52_0"/>
+    </soap:Header>
+    <soap:Body>
+        <univ:AirCreateReservationReq
+            AuthorizedBy="user" TraceId=""
+            RetainReservation="Both" TargetBranch="P3570601"
+            RuleName="SIP"
+            
+            RestrictWaitlist="false"
+            xmlns:univ="http://www.travelport.com/schema/universal_v52_0"
+            xmlns:com="http://www.travelport.com/schema/common_v52_0"
+            xmlns:air="http://www.travelport.com/schema/air_v52_0"
+            xmlns:common_v52_0="http://www.travelport.com/schema/common_v52_0"
+            >
+            <com:BillingPointOfSaleInfo OriginApplication="uAPI" />
+            <com:BookingTraveler Key="P_0" Age="36" DOB="1986-11-20" Gender="M" TravelerType="ADT">
+                <com:BookingTravelerName First="JIA" Last="YE" />
+                <com:DeliveryInfo>
+                    <com:ShippingAddress>
+                        <com:AddressName>JIA YE</com:AddressName>
+                        <com:Street>shijie road 2000</com:Street>
+                        <com:City>ShangHai</com:City>
+                        <com:PostalCode>200000</com:PostalCode>
+                        <com:Country>UA</com:Country>
+                    </com:ShippingAddress>
+                </com:DeliveryInfo>
+
+                    <com:PhoneNumber
+                            CountryCode="86"
+                            Location="CHN"
+                            Number="17621580805"
+                            Type="Other"
+                    />
+
+                        <com:SSR Type="FOID" FreeText="PPUAEK6021559" />
+                        <com:SSR Type="DOCS" FreeText="P/UA/EK6021559/UA/20Nov86/M/21Jun24/YE/JIA" />
+            </com:BookingTraveler>
+
+            
+
+            <air:AirPricingSolution Key="oQBS9ipAuDKAvc1w8NAAAA==" TotalPrice="GBP569.30" BasePrice="NZD1015.65" ApproximateTotalPrice="GBP569.30" ApproximateBasePrice="GBP495.00" EquivalentBasePrice="GBP495.00" Taxes="GBP74.30" Fees="GBP0.00" ApproximateTaxes="GBP74.30" QuoteDate="2023-06-20" >
+                  <air:AirSegment Key="oQBS9ipAuDKAnc1w8NAAAA==" Group="0" Carrier="NZ" FlightNumber="8134" ProviderCode="1G" Origin="TRG" Destination="AKL" DepartureTime="2023-06-26T12:00:00.000+12:00" ArrivalTime="2023-06-26T12:40:00.000+12:00" FlightTime="40" TravelTime="40" Distance="90" ClassOfService="T" Equipment="DH8C" ChangeOfPlane="false" OptionalServicesIndicator="false" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+    <air:CodeshareInfo OperatingCarrier="NZ">Air New Zealand</air:CodeshareInfo>
+    <air:FlightDetails Key="oQBS9ipAuDKAoc1w8NAAAA==" Origin="TRG" Destination="AKL" DepartureTime="2023-06-26T12:00:00.000+12:00" ArrivalTime="2023-06-26T12:40:00.000+12:00" FlightTime="40" TravelTime="40" Equipment="DH3" DestinationTerminal="D" AutomatedCheckin="false">
+      <air:InFlightServices>Non-smoking</air:InFlightServices>
+    </air:FlightDetails>
+    <air:Connection/>
+  </air:AirSegment>
+  <air:AirSegment Key="oQBS9ipAuDKApc1w8NAAAA==" Group="0" Carrier="NZ" FlightNumber="5125" ProviderCode="1G" Origin="AKL" Destination="PMR" DepartureTime="2023-06-26T17:05:00.000+12:00" ArrivalTime="2023-06-26T18:15:00.000+12:00" FlightTime="70" TravelTime="70" Distance="234" ClassOfService="Y" Equipment="AT72" ChangeOfPlane="false" OptionalServicesIndicator="false" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+    <air:CodeshareInfo OperatingCarrier="NZ">Air New Zealand</air:CodeshareInfo>
+    <air:FlightDetails Key="oQBS9ipAuDKAqc1w8NAAAA==" Origin="AKL" Destination="PMR" DepartureTime="2023-06-26T17:05:00.000+12:00" ArrivalTime="2023-06-26T18:15:00.000+12:00" FlightTime="70" TravelTime="70" Equipment="AT7" OriginTerminal="D" AutomatedCheckin="false">
+      <air:InFlightServices>Non-smoking</air:InFlightServices>
+    </air:FlightDetails>
+  </air:AirSegment>
+  <air:AirSegment Key="oQBS9ipAuDKArc1w8NAAAA==" Group="1" Carrier="NZ" FlightNumber="5181" ProviderCode="1G" Origin="PMR" Destination="CHC" DepartureTime="2023-06-27T10:10:00.000+12:00" ArrivalTime="2023-06-27T11:30:00.000+12:00" FlightTime="80" TravelTime="80" Distance="271" ClassOfService="W" Equipment="AT72" ChangeOfPlane="false" OptionalServicesIndicator="false" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+    <air:CodeshareInfo OperatingCarrier="NZ">Air New Zealand</air:CodeshareInfo>
+    <air:FlightDetails Key="oQBS9ipAuDKAsc1w8NAAAA==" Origin="PMR" Destination="CHC" DepartureTime="2023-06-27T10:10:00.000+12:00" ArrivalTime="2023-06-27T11:30:00.000+12:00" FlightTime="80" TravelTime="80" Equipment="AT7" AutomatedCheckin="false">
+      <air:InFlightServices>Non-smoking</air:InFlightServices>
+    </air:FlightDetails>
+  </air:AirSegment>
+  <air:AirSegment Key="oQBS9ipAuDKAtc1w8NAAAA==" Group="1" Carrier="NZ" FlightNumber="8802" ProviderCode="1G" Origin="CHC" Destination="TRG" DepartureTime="2023-06-27T13:50:00.000+12:00" ArrivalTime="2023-06-27T15:45:00.000+12:00" FlightTime="115" TravelTime="115" Distance="447" ClassOfService="B" Equipment="DH8C" ChangeOfPlane="false" OptionalServicesIndicator="false" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+    <air:CodeshareInfo OperatingCarrier="NZ">Air New Zealand</air:CodeshareInfo>
+    <air:FlightDetails Key="oQBS9ipAuDKAuc1w8NAAAA==" Origin="CHC" Destination="TRG" DepartureTime="2023-06-27T13:50:00.000+12:00" ArrivalTime="2023-06-27T15:45:00.000+12:00" FlightTime="115" TravelTime="115" Equipment="DH3" AutomatedCheckin="false">
+      <air:InFlightServices>Non-smoking</air:InFlightServices>
+    </air:FlightDetails>
+    <air:Connection/>
+  </air:AirSegment>
+                  <air:AirPricingInfo Key="oQBS9ipAuDKA0c1w8NAAAA==" TotalPrice="GBP569.30" BasePrice="NZD1015.65" ApproximateTotalPrice="GBP569.30" ApproximateBasePrice="GBP495.00" EquivalentBasePrice="GBP495.00" ApproximateTaxes="GBP74.30" Taxes="GBP74.30" LatestTicketingTime="2023-06-20T23:59:00.000+01:00" PricingMethod="Manual" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="NZ" ProviderCode="1G">
+    <air:FareInfo Key="oQBS9ipAuDKA2c1w8NAAAA==" FareBasis="TBAG" PassengerTypeCode="ADT" Origin="TRG" Destination="AKL" EffectiveDate="2023-06-20T17:40:00.000+01:00" DepartureDate="2023-06-26" Amount="GBP69.00" NegotiatedFare="false" NotValidBefore="2023-06-26" NotValidAfter="2023-06-26" TaxAmount="GBP10.30">
+      <common_v52_0:Endorsement Value="NONEND/NONREF/VLD NZ ONLY"/>
+      <air:FareRuleKey FareInfoRef="oQBS9ipAuDKA2c1w8NAAAA==" ProviderCode="1G">6UUVoSldxwgtkHIc06QAgcbKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA7A8pC4XfblEVFE1oYlcasM3aSkvhp2ybVJbHnb7zGfJjzSpqfNT+pLAyGqh8JIaqMTOp/N4f6RXCAhm5Utg59qSAx6DoeVlJcCIbRqMTJch6v9tEaRJgF5C/YIEuJEelnYtWaeyxgRnW1RzkLp6dl5JTyB5x9tYSQLWhthMb3jlX8KJcBxbVb5fLA+U8QC0sGntJ2SB0imvly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA2+QKPIWaRvq6oxE1UL944DjaSte7T4ddDlN7mTMg9Nh+UgTJO14gcA2eq0lL/kzu99PKXFpaW1eKAxevs8wf8A=</air:FareRuleKey>
+      <air:Brand Key="oQBS9ipAuDKA2c1w8NAAAA==" BrandID="1216808" Name="SEAT PLUS BAG" UpSellBrandFound="false" Carrier="NZ" BrandTier="0002">
+        <air:Title Type="External" LanguageCode="EN">Seat Plus Bag</air:Title>
+        <air:Title Type="Short" LanguageCode="EN">SB</air:Title>
+        <air:Text Type="ATPCO" LanguageCode="EN">BAG SECOND////NZC/F/CARRY ON 7KG//06I/C/CHANGE BEFOREDEPARTURE//0CC/F/CHECKED BAG FIRST//0CD/C/CHECKED</air:Text>
+        <air:Text Type="MarketingConsumer" LanguageCode="EN">"Designed for longer trips or visits where you may need to take a little more than carry on. With seat+bag you will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Upsell" LanguageCode="EN">Book Flexichange for flexibility of change in travel dates without penalties, and standard seat request.</air:Text>
+        <air:Text Type="MarketingAgent" LanguageCode="EN">"Designed for longer trips or visits where your customer may need to take a little more than carry on. With seat+bag your customer will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Strapline" LanguageCode="EN">Seat Plus Bag</air:Text>
+        <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:OptionalServices>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CC" Key="oQBS9ipAuDKA4c1w8NAAAA==" Chargeable="Included in the brand" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>First Checked Bag</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">First Checked Bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">First Checked Bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0M3" Key="oQBS9ipAuDKA5c1w8NAAAA==" SecondaryType="CY" Chargeable="Included in the brand" Tag="Carry On Hand Baggage" DisplayOrder="2">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Carry7kg 15Lb Upto45li 115Lcm</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Chargeable Baggage"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CD" Key="oQBS9ipAuDKA6c1w8NAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="oQBS9ipAuDKA7c1w8NAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Second Checked Bag</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Second Checked Bag</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">2nd bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZD" Key="oQBS9ipAuDKA8c1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change Date Or Route</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change Date Or Route</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZF" Key="oQBS9ipAuDKA9c1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change On Departure Day</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change On Departure Day</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change On Departure Day</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZT" Key="oQBS9ipAuDKA+c1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change To Same Class</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change To Same Class</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06J" Key="oQBS9ipAuDKA/c1w8NAAAA==" SecondaryType="VC" Chargeable="Not offered" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change after departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change after departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Chg aft de</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06L" Key="oQBS9ipAuDKAAd1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund After Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund After Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06K" Key="oQBS9ipAuDKABd1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund Before Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund Before Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0B5" Key="oQBS9ipAuDKACd1w8NAAAA==" Chargeable="Available for a charge" Tag="Seat Assignment" DisplayOrder="5">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Pre reserved seat assignment</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Pre book your preferred seat in advance</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Pre reserved seat assignment</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0AT" Key="oQBS9ipAuDKADd1w8NAAAA==" SecondaryType="SN" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Snack</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Snack</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Snack</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T16:40:31.518+00:00" Key="oQBS9ipAuDKAEd1w8NAAAA==" SecondaryType="IT" Chargeable="Not offered" Tag="WiFi" DisplayOrder="7">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAnc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>WiFi</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+          </air:OptionalService>
+          <air:OptionalServiceRules Key="oQBS9ipAuDKA7c1w8NAAAA==">
+            <common_v52_0:Remarks>Y,1,KG,23,BAG</common_v52_0:Remarks>
+          </air:OptionalServiceRules>
+        </air:OptionalServices>
+      </air:Brand>
+    </air:FareInfo>
+    <air:FareInfo Key="oQBS9ipAuDKAFd1w8NAAAA==" FareBasis="YBAG" PassengerTypeCode="ADT" Origin="AKL" Destination="PMR" EffectiveDate="2023-06-20T17:40:00.000+01:00" DepartureDate="2023-06-26" Amount="GBP169.00" NegotiatedFare="false" NotValidBefore="2023-06-26" NotValidAfter="2023-06-26" TaxAmount="GBP25.40">
+      <common_v52_0:Endorsement Value="NONEND/NONREF/VLD NZ ONLY"/>
+      <air:FareRuleKey FareInfoRef="oQBS9ipAuDKAFd1w8NAAAA==" ProviderCode="1G">6UUVoSldxwgtkHIc06QAgcbKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA7A8pC4XfblEVFE1oYlcasM3aSkvhp2ybfjiG6fIPu5AGQH8h5ZpKf7AyGqh8JIaqBDB9RP/te/UCAhm5Utg59qSAx6DoeVlJcCIbRqMTJch6v9tEaRJgF5C/YIEuJEelnYtWaeyxgRnW1RzkLp6dl5JTyB5x9tYSQLWhthMb3jlvcvr7sf1sTIChIESRovmfuaoyaIUYH00ly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA2+QKPIWaRvq6oxE1UL944DjaSte7T4ddDlN7mTMg9Nh+UgTJO14gcAJK7DtCkbKDN9PKXFpaW1eKAxevs8wf8A=</air:FareRuleKey>
+      <air:Brand Key="oQBS9ipAuDKAFd1w8NAAAA==" BrandID="1216808" Name="SEAT PLUS BAG" UpSellBrandFound="false" Carrier="NZ" BrandTier="0002">
+        <air:Title Type="External" LanguageCode="EN">Seat Plus Bag</air:Title>
+        <air:Title Type="Short" LanguageCode="EN">SB</air:Title>
+        <air:Text Type="ATPCO" LanguageCode="EN">BAG SECOND////NZC/F/CARRY ON 7KG//06I/C/CHANGE BEFOREDEPARTURE//0CC/F/CHECKED BAG FIRST//0CD/C/CHECKED</air:Text>
+        <air:Text Type="MarketingConsumer" LanguageCode="EN">"Designed for longer trips or visits where you may need to take a little more than carry on. With seat+bag you will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Upsell" LanguageCode="EN">Book Flexichange for flexibility of change in travel dates without penalties, and standard seat request.</air:Text>
+        <air:Text Type="MarketingAgent" LanguageCode="EN">"Designed for longer trips or visits where your customer may need to take a little more than carry on. With seat+bag your customer will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Strapline" LanguageCode="EN">Seat Plus Bag</air:Text>
+        <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:OptionalServices>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CC" Key="oQBS9ipAuDKAHd1w8NAAAA==" Chargeable="Included in the brand" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>First Checked Bag</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">First Checked Bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">First Checked Bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0M3" Key="oQBS9ipAuDKAId1w8NAAAA==" SecondaryType="CY" Chargeable="Included in the brand" Tag="Carry On Hand Baggage" DisplayOrder="2">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Carry7kg 15Lb Upto45li 115Lcm</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Chargeable Baggage"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CD" Key="oQBS9ipAuDKAJd1w8NAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="oQBS9ipAuDKAKd1w8NAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Second Checked Bag</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Second Checked Bag</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">2nd bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZD" Key="oQBS9ipAuDKALd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change Date Or Route</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change Date Or Route</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZF" Key="oQBS9ipAuDKAMd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change On Departure Day</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change On Departure Day</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change On Departure Day</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZT" Key="oQBS9ipAuDKANd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change To Same Class</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change To Same Class</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06J" Key="oQBS9ipAuDKAOd1w8NAAAA==" SecondaryType="VC" Chargeable="Not offered" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change after departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change after departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Chg aft de</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06L" Key="oQBS9ipAuDKAPd1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund After Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund After Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06K" Key="oQBS9ipAuDKAQd1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund Before Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund Before Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0B5" Key="oQBS9ipAuDKARd1w8NAAAA==" Chargeable="Available for a charge" Tag="Seat Assignment" DisplayOrder="5">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Pre reserved seat assignment</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Pre book your preferred seat in advance</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Pre reserved seat assignment</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0AT" Key="oQBS9ipAuDKASd1w8NAAAA==" SecondaryType="SN" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Snack</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Snack</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Snack</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T16:40:31.518+00:00" Key="oQBS9ipAuDKATd1w8NAAAA==" SecondaryType="IT" Chargeable="Not offered" Tag="WiFi" DisplayOrder="7">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKApc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>WiFi</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+          </air:OptionalService>
+          <air:OptionalServiceRules Key="oQBS9ipAuDKAKd1w8NAAAA==">
+            <common_v52_0:Remarks>Y,1,KG,23,BAG</common_v52_0:Remarks>
+          </air:OptionalServiceRules>
+        </air:OptionalServices>
+      </air:Brand>
+    </air:FareInfo>
+    <air:FareInfo Key="oQBS9ipAuDKAUd1w8NAAAA==" FareBasis="BBAG" PassengerTypeCode="ADT" Origin="PMR" Destination="CHC" EffectiveDate="2023-06-20T17:40:00.000+01:00" DepartureDate="2023-06-27" Amount="GBP144.00" NegotiatedFare="false" NotValidBefore="2023-06-27" NotValidAfter="2023-06-27" TaxAmount="GBP21.70">
+      <common_v52_0:Endorsement Value="NONEND/NONREF/VLD NZ ONLY"/>
+      <air:FareRuleKey FareInfoRef="oQBS9ipAuDKAUd1w8NAAAA==" ProviderCode="1G">6UUVoSldxwgtkHIc06QAgcbKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA7A8pC4XfblEVFE1oYlcasM3aSkvhp2ybTWCWjL+jT3/QwvW/jQlSaTAyGqh8JIaqO2RDnBevPjSCAhm5Utg59rKua+Mx3Kfm8CIbRqMTJch6v9tEaRJgF5C/YIEuJEelnYtWaeyxgRnW1RzkLp6dl5JTyB5x9tYSQLWhthMb3jll6+nPL+HFkoEpDbshqB/I4+VRj1bMhMOly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA2+QKPIWaRvq6oxE1UL944DjaSte7T4ddDlN7mTMg9Nh+UgTJO14gcBo1UKKaYF2Wd9PKXFpaW1eKAxevs8wf8A=</air:FareRuleKey>
+      <air:FareRuleFailureInfo>
+        <air:Reason>BookingClassFailure</air:Reason>
+      </air:FareRuleFailureInfo>
+      <air:Brand Key="oQBS9ipAuDKAUd1w8NAAAA==" BrandID="1216808" Name="SEAT PLUS BAG" UpSellBrandFound="false" Carrier="NZ" BrandTier="0002">
+        <air:Title Type="External" LanguageCode="EN">Seat Plus Bag</air:Title>
+        <air:Title Type="Short" LanguageCode="EN">SB</air:Title>
+        <air:Text Type="ATPCO" LanguageCode="EN">BAG SECOND////NZC/F/CARRY ON 7KG//06I/C/CHANGE BEFOREDEPARTURE//0CC/F/CHECKED BAG FIRST//0CD/C/CHECKED</air:Text>
+        <air:Text Type="MarketingConsumer" LanguageCode="EN">"Designed for longer trips or visits where you may need to take a little more than carry on. With seat+bag you will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Upsell" LanguageCode="EN">Book Flexichange for flexibility of change in travel dates without penalties, and standard seat request.</air:Text>
+        <air:Text Type="MarketingAgent" LanguageCode="EN">"Designed for longer trips or visits where your customer may need to take a little more than carry on. With seat+bag your customer will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Strapline" LanguageCode="EN">Seat Plus Bag</air:Text>
+        <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:OptionalServices>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CC" Key="oQBS9ipAuDKAWd1w8NAAAA==" Chargeable="Included in the brand" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>First Checked Bag</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">First Checked Bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">First Checked Bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0M3" Key="oQBS9ipAuDKAXd1w8NAAAA==" SecondaryType="CY" Chargeable="Included in the brand" Tag="Carry On Hand Baggage" DisplayOrder="2">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Carry7kg 15Lb Upto45li 115Lcm</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Chargeable Baggage"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CD" Key="oQBS9ipAuDKAYd1w8NAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="oQBS9ipAuDKAZd1w8NAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Second Checked Bag</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Second Checked Bag</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">2nd bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZD" Key="oQBS9ipAuDKAad1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change Date Or Route</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change Date Or Route</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZF" Key="oQBS9ipAuDKAbd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change On Departure Day</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change On Departure Day</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change On Departure Day</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZT" Key="oQBS9ipAuDKAcd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change To Same Class</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change To Same Class</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06J" Key="oQBS9ipAuDKAdd1w8NAAAA==" SecondaryType="VC" Chargeable="Not offered" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change after departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change after departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Chg aft de</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06L" Key="oQBS9ipAuDKAed1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund After Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund After Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06K" Key="oQBS9ipAuDKAfd1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund Before Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund Before Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0B5" Key="oQBS9ipAuDKAgd1w8NAAAA==" Chargeable="Available for a charge" Tag="Seat Assignment" DisplayOrder="5">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Pre reserved seat assignment</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Pre book your preferred seat in advance</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Pre reserved seat assignment</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0AT" Key="oQBS9ipAuDKAhd1w8NAAAA==" SecondaryType="SN" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Snack</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Snack</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Snack</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T16:40:31.518+00:00" Key="oQBS9ipAuDKAid1w8NAAAA==" SecondaryType="IT" Chargeable="Not offered" Tag="WiFi" DisplayOrder="7">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKArc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>WiFi</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+          </air:OptionalService>
+          <air:OptionalServiceRules Key="oQBS9ipAuDKAZd1w8NAAAA==">
+            <common_v52_0:Remarks>Y,1,KG,23,BAG</common_v52_0:Remarks>
+          </air:OptionalServiceRules>
+        </air:OptionalServices>
+      </air:Brand>
+    </air:FareInfo>
+    <air:FareInfo Key="oQBS9ipAuDKAjd1w8NAAAA==" FareBasis="WBAG" PassengerTypeCode="ADT" Origin="CHC" Destination="TRG" EffectiveDate="2023-06-20T17:40:00.000+01:00" DepartureDate="2023-06-27" Amount="GBP113.00" NegotiatedFare="false" NotValidBefore="2023-06-27" NotValidAfter="2023-06-27" TaxAmount="GBP16.90">
+      <common_v52_0:Endorsement Value="NONEND/NONREF/VLD NZ ONLY"/>
+      <air:FareRuleKey FareInfoRef="oQBS9ipAuDKAjd1w8NAAAA==" ProviderCode="1G">6UUVoSldxwgtkHIc06QAgcbKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA7A8pC4XfblEVFE1oYlcasM3aSkvhp2ybY2wVSMyGT5po8L2ejaBHkjAyGqh8JIaqKBY1ZSybUTICAhm5Utg59rKua+Mx3Kfm8CIbRqMTJch6v9tEaRJgF5C/YIEuJEelnYtWaeyxgRnW1RzkLp6dl6W/LcvQUQwuALWhthMb3jlZLJHNvaeo98Ijo0/r2f4/OaoyaIUYH00ly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA2+QKPIWaRvq6oxE1UL944DjaSte7T4ddDlN7mTMg9Nh+UgTJO14gcDaQoLSD8uJO99PKXFpaW1eKAxevs8wf8A=</air:FareRuleKey>
+      <air:FareRuleFailureInfo>
+        <air:Reason>BookingClassFailure</air:Reason>
+      </air:FareRuleFailureInfo>
+      <air:Brand Key="oQBS9ipAuDKAjd1w8NAAAA==" BrandID="1216808" Name="SEAT PLUS BAG" UpSellBrandFound="false" Carrier="NZ" BrandTier="0002">
+        <air:Title Type="External" LanguageCode="EN">Seat Plus Bag</air:Title>
+        <air:Title Type="Short" LanguageCode="EN">SB</air:Title>
+        <air:Text Type="ATPCO" LanguageCode="EN">BAG SECOND////NZC/F/CARRY ON 7KG//06I/C/CHANGE BEFOREDEPARTURE//0CC/F/CHECKED BAG FIRST//0CD/C/CHECKED</air:Text>
+        <air:Text Type="MarketingConsumer" LanguageCode="EN">"Designed for longer trips or visits where you may need to take a little more than carry on. With seat+bag you will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Upsell" LanguageCode="EN">Book Flexichange for flexibility of change in travel dates without penalties, and standard seat request.</air:Text>
+        <air:Text Type="MarketingAgent" LanguageCode="EN">"Designed for longer trips or visits where your customer may need to take a little more than carry on. With seat+bag your customer will get:
+
+- one carry-on bag up to 7kg
+- one piece of checked luggage (up to 23kgs)
+- a standard seat select from just NZD $5, or free for Airpoints™ Gold, Elite and Koru members
+- free inflight snack, tea or coffee 
+- Airpoints Dollars™ and Status Points on every flight
+
+• Visit Air New Zealand's Covid-19 information hub for important travel updates: https://www.airnewzealand.co.nz/covid19"</air:Text>
+        <air:Text Type="Strapline" LanguageCode="EN">Seat Plus Bag</air:Text>
+        <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/airnewzealand/NZ_general_medium_226316.png</air:ImageLocation>
+        <air:OptionalServices>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CC" Key="oQBS9ipAuDKAld1w8NAAAA==" Chargeable="Included in the brand" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>First Checked Bag</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">First Checked Bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">First Checked Bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0M3" Key="oQBS9ipAuDKAmd1w8NAAAA==" SecondaryType="CY" Chargeable="Included in the brand" Tag="Carry On Hand Baggage" DisplayOrder="2">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Carry7kg 15Lb Upto45li 115Lcm</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Chargeable Baggage"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Carry7kg 15Lb Upto45li 115Lcm</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Baggage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0CD" Key="oQBS9ipAuDKAnd1w8NAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="oQBS9ipAuDKAod1w8NAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Second Checked Bag</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102113.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Second checked bag</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Second Checked Bag</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">2nd bag</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZD" Key="oQBS9ipAuDKApd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change Date Or Route</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change Date Or Route</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change Date Or Route</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZF" Key="oQBS9ipAuDKAqd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change On Departure Day</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change On Departure Day</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Changeable On Departure Day</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change On Departure Day</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="NZT" Key="oQBS9ipAuDKArd1w8NAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change To Same Class</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="Strapline" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change To Same Class</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change To Same Class</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06J" Key="oQBS9ipAuDKAsd1w8NAAAA==" SecondaryType="VC" Chargeable="Not offered" Tag="Rebooking" DisplayOrder="3">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Change after departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102118.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Change after departure permitted, fare difference/fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Change after departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Chg aft de</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06L" Key="oQBS9ipAuDKAtd1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund After Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable after departure, fees may apply</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund After Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="06K" Key="oQBS9ipAuDKAud1w8NAAAA==" SecondaryType="VR" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Refund Before Departure</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102119.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Refundable before departure</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Refund Before Departure</air:Title>
+            <air:Title Type="Short" LanguageCode="EN"/>
+          </air:OptionalService>
+          <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0B5" Key="oQBS9ipAuDKAvd1w8NAAAA==" Chargeable="Available for a charge" Tag="Seat Assignment" DisplayOrder="5">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Pre reserved seat assignment</common_v52_0:Description>
+              <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+              <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/airnewzealand/NZ_general_medium_102115.jpg"/>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Pre book your preferred seat in advance</air:Text>
+            <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Pre reserved seat assignment</air:Title>
+            <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T16:40:31.518+00:00" ServiceSubCode="0AT" Key="oQBS9ipAuDKAwd1w8NAAAA==" SecondaryType="SN" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>Snack</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+            <air:EMD AssociatedItem="Flight"/>
+            <air:Text Type="Strapline" LanguageCode="EN">Snack</air:Text>
+            <air:Title Type="External" LanguageCode="EN">Snack</air:Title>
+          </air:OptionalService>
+          <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T16:40:31.518+00:00" Key="oQBS9ipAuDKAxd1w8NAAAA==" SecondaryType="IT" Chargeable="Not offered" Tag="WiFi" DisplayOrder="7">
+            <common_v52_0:ServiceData AirSegmentRef="oQBS9ipAuDKAtc1w8NAAAA=="/>
+            <common_v52_0:ServiceInfo>
+              <common_v52_0:Description>WiFi</common_v52_0:Description>
+            </common_v52_0:ServiceInfo>
+          </air:OptionalService>
+          <air:OptionalServiceRules Key="oQBS9ipAuDKAod1w8NAAAA==">
+            <common_v52_0:Remarks>Y,1,KG,23,BAG</common_v52_0:Remarks>
+          </air:OptionalServiceRules>
+        </air:OptionalServices>
+      </air:Brand>
+    </air:FareInfo>
+    <air:BookingInfo BookingCode="T" CabinClass="Economy" FareInfoRef="oQBS9ipAuDKA2c1w8NAAAA==" SegmentRef="oQBS9ipAuDKAnc1w8NAAAA==" HostTokenRef="oQBS9ipAuDKAwc1w8NAAAA=="/>
+    <air:BookingInfo BookingCode="Y" CabinClass="Economy" FareInfoRef="oQBS9ipAuDKAFd1w8NAAAA==" SegmentRef="oQBS9ipAuDKApc1w8NAAAA==" HostTokenRef="oQBS9ipAuDKAxc1w8NAAAA=="/>
+    <air:BookingInfo BookingCode="W" CabinClass="Economy" FareInfoRef="oQBS9ipAuDKAUd1w8NAAAA==" SegmentRef="oQBS9ipAuDKArc1w8NAAAA==" HostTokenRef="oQBS9ipAuDKAyc1w8NAAAA=="/>
+    <air:BookingInfo BookingCode="B" CabinClass="Economy" FareInfoRef="oQBS9ipAuDKAjd1w8NAAAA==" SegmentRef="oQBS9ipAuDKAtc1w8NAAAA==" HostTokenRef="oQBS9ipAuDKAzc1w8NAAAA=="/>
+    <air:TaxInfo Category="NZ" Amount="GBP74.30" Key="oQBS9ipAuDKA1c1w8NAAAA=="/>
+    <air:FareCalc>TRG NZ AKL 140.87TBAG NZ PMR 347.83YBAG NZ CHC 296.52BBAG NZ TRG 230.43WBAG NZD1015.65END</air:FareCalc>
+    <air:PassengerType BookingTravelerRef="P_0" Code="ADT" Age="36"/>
+    <air:ChangePenalty PenaltyApplies="Before Departure">
+      <air:Amount>GBP24.00</air:Amount>
+    </air:ChangePenalty>
+    <air:CancelPenalty PenaltyApplies="Anytime">
+      <air:Percentage>100.00</air:Percentage>
+    </air:CancelPenalty>
+    <air:BaggageAllowances>
+      <air:BaggageAllowanceInfo TravelerType="ADT" Origin="TRG" Destination="CHC" Carrier="NZ">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/NZ</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>1P</air:Text>
+          <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+        </air:TextInfo>
+        <air:BagDetails ApplicableBags="1stChecked" BasePrice="NZD0.00" ApproximateBasePrice="GBP0.00" TotalPrice="NZD0.00" ApproximateTotalPrice="GBP0.00">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+        <air:BagDetails ApplicableBags="2ndChecked" BasePrice="NZD45.00" ApproximateBasePrice="GBP21.92" TotalPrice="NZD45.00" ApproximateTotalPrice="GBP21.92">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+      </air:BaggageAllowanceInfo>
+      <air:BaggageAllowanceInfo TravelerType="ADT" Origin="CHC" Destination="TRG" Carrier="NZ">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/NZ</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>1P</air:Text>
+          <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+        </air:TextInfo>
+        <air:BagDetails ApplicableBags="1stChecked" BasePrice="NZD0.00" ApproximateBasePrice="GBP0.00" TotalPrice="NZD0.00" ApproximateTotalPrice="GBP0.00">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+        <air:BagDetails ApplicableBags="2ndChecked" BasePrice="NZD45.00" ApproximateBasePrice="GBP21.92" TotalPrice="NZD45.00" ApproximateTotalPrice="GBP21.92">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:BagDetails>
+      </air:BaggageAllowanceInfo>
+      <air:CarryOnAllowanceInfo Origin="TRG" Destination="AKL" Carrier="NZ">
+        <air:TextInfo>
+          <air:Text>1P</air:Text>
+        </air:TextInfo>
+        <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="NZD0.00" ApproximateBasePrice="GBP0.00" TotalPrice="NZD0.00" ApproximateTotalPrice="GBP0.00">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO15LB/7KG AND UPTO45LI/115LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+      </air:CarryOnAllowanceInfo>
+      <air:CarryOnAllowanceInfo Origin="AKL" Destination="PMR" Carrier="NZ">
+        <air:TextInfo>
+          <air:Text>1P</air:Text>
+        </air:TextInfo>
+        <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="NZD0.00" ApproximateBasePrice="GBP0.00" TotalPrice="NZD0.00" ApproximateTotalPrice="GBP0.00">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO15LB/7KG AND UPTO45LI/115LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+      </air:CarryOnAllowanceInfo>
+      <air:CarryOnAllowanceInfo Origin="PMR" Destination="CHC" Carrier="NZ">
+        <air:TextInfo>
+          <air:Text>1P</air:Text>
+        </air:TextInfo>
+        <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="NZD0.00" ApproximateBasePrice="GBP0.00" TotalPrice="NZD0.00" ApproximateTotalPrice="GBP0.00">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO15LB/7KG AND UPTO45LI/115LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+      </air:CarryOnAllowanceInfo>
+      <air:CarryOnAllowanceInfo Origin="CHC" Destination="TRG" Carrier="NZ">
+        <air:TextInfo>
+          <air:Text>1P</air:Text>
+        </air:TextInfo>
+        <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="NZD0.00" ApproximateBasePrice="GBP0.00" TotalPrice="NZD0.00" ApproximateTotalPrice="GBP0.00">
+          <air:BaggageRestriction>
+            <air:TextInfo>
+              <air:Text>UPTO15LB/7KG AND UPTO45LI/115LCM</air:Text>
+            </air:TextInfo>
+          </air:BaggageRestriction>
+        </air:CarryOnDetails>
+      </air:CarryOnAllowanceInfo>
+      <air:EmbargoInfo Origin="TRG" Destination="AKL" Carrier="NZ">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/NZ</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>888</air:Text>
+        </air:TextInfo>
+      </air:EmbargoInfo>
+      <air:EmbargoInfo Origin="AKL" Destination="PMR" Carrier="NZ">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/NZ</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>888</air:Text>
+        </air:TextInfo>
+      </air:EmbargoInfo>
+      <air:EmbargoInfo Origin="PMR" Destination="CHC" Carrier="NZ">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/NZ</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>888</air:Text>
+        </air:TextInfo>
+      </air:EmbargoInfo>
+      <air:EmbargoInfo Origin="CHC" Destination="TRG" Carrier="NZ">
+        <air:URLInfo>
+          <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/NZ</air:URL>
+        </air:URLInfo>
+        <air:TextInfo>
+          <air:Text>888</air:Text>
+        </air:TextInfo>
+      </air:EmbargoInfo>
+    </air:BaggageAllowances>
+  </air:AirPricingInfo>
+                  <air:FareNote Key="oQBS9ipAuDKA2d1w8NAAAA==">RATE USED IN EQU TOTAL IS BSR 1NZD - 0.487068GBP</air:FareNote>
+  <air:FareNote Key="oQBS9ipAuDKA3d1w8NAAAA==">LAST DATE TO PURCHASE TICKET: 20JUN23</air:FareNote>
+  <air:FareNote Key="oQBS9ipAuDKA4d1w8NAAAA==">TICKETING AGENCY 7E0R</air:FareNote>
+  <air:FareNote Key="oQBS9ipAuDKA5d1w8NAAAA==">DEFAULT PLATING CARRIER NZ</air:FareNote>
+  <air:FareNote Key="oQBS9ipAuDKA6d1w8NAAAA==">FARE HAS A PLATING CARRIER RESTRICTION</air:FareNote>
+  <air:FareNote Key="oQBS9ipAuDKA7d1w8NAAAA==">E-TKT REQUIRED</air:FareNote>
+  <air:FareNote Key="oQBS9ipAuDKA8d1w8NAAAA==">TICKETING FEES MAY APPLY</air:FareNote>
+                  <common_v52_0:HostToken Key="oQBS9ipAuDKAwc1w8NAAAA==">GFB10101ADT00  01TBAG                                  010001#GFB200010101NADTV3302DOM10100000399#GFMCXOX302NDOM1 NZ ADTTBAG</common_v52_0:HostToken>
+  <common_v52_0:HostToken Key="oQBS9ipAuDKAxc1w8NAAAA==">GFB10101ADT00  02YBAG                                  010002#GFB200010102NADTV3302DOM10130000399#GFMCXOX302NDOM1 NZ ADTYBAG</common_v52_0:HostToken>
+  <common_v52_0:HostToken Key="oQBS9ipAuDKAyc1w8NAAAA==">GFB10101ADT00  03BBAG                                  010003#GFB200010103NADTV3302DOM10100000399#GFMCXOX302NDOM1 NZ ADTBBAG</common_v52_0:HostToken>
+  <common_v52_0:HostToken Key="oQBS9ipAuDKAzc1w8NAAAA==">GFB10101ADT00  04WBAG                                  010004#GFB200010104NADTV3302DOM10100000399#GFMCXOX302NDOM1 NZ ADTWBAG</common_v52_0:HostToken>
+            </air:AirPricingSolution>
+
+            <com:ActionStatus Type="TAU" TicketDate="2023-06-21T03:40:37+08:00" ProviderCode="1G" />
+
+        </univ:AirCreateReservationReq>
+    </soap:Body>
+</soap:Envelope>

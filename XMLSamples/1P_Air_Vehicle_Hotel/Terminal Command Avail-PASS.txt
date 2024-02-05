@@ -1,0 +1,34 @@
+Terminal Command Avail-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ter:TerminalReq AuthorizedBy="PRODSMOKETEST" TargetBranch="TP_1P_SOA" xmlns:ter="http://www.travelport.com/schema/terminal_v33_0" xmlns:com="http://www.travelport.com/schema/common_v33_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <com:HostToken Host="1P" Key="1T">73FD7A75-49E8-4E67-5063-5120F9F77043</com:HostToken>
+         <ter:TerminalCommand>ADENATL</ter:TerminalCommand>
+      </ter:TerminalReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Terminal Command Avail-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <terminal:TerminalRsp TransactionId="9DCF58DE0A07643CAB0E0A7C8861BD5D" ResponseTime="844" xmlns:terminal="http://www.travelport.com/schema/terminal_v33_0">
+         <terminal:TerminalCommandResponse>
+            <terminal:Text>NEUTRAL*         02MAR-MO-1932  DENATL        MT ET      AC1</terminal:Text>
+            <terminal:Text>DEN ALTERNATE APA BJC/ATL ALTERNATE FTY PDK</terminal:Text>
+            <terminal:Text>1*S#DL3063 J9 C9 D9 I9 Z8 W9 S0 Y9 DENATL-1802 2301    9 739 0E</terminal:Text>
+            <terminal:Text>2*A#UA 677 J8 C6 D4 Z3 P2 Y9 B9 M9 DENATL-1740 2231    7 320 0E</terminal:Text>
+            <terminal:Text>3*S#DL2867 J8 C8 D5 I5 Z5 W9 S0 Y9 DENSEA-1952 2159    8 319 0E</terminal:Text>
+            <terminal:Text>4*S#DL 962 J4 C4 D0 I0 Z0 W9 S9 Y9    ATL-2250 0626 #1 9 739 0E</terminal:Text>
+            <terminal:Text>5*O#AA6099 C7 J7 R7 D7 I6 U0 Y7 B7 DENLAX-1949 2141   *9 E75 0E</terminal:Text>
+            <terminal:Text>6*O#AA1071 C7 J7 R7 D7 I6 U0 Y7 B7    ATL-2313 0626 #1 N 738 0E</terminal:Text>
+            <terminal:Text>7*A#UA 257 J6 C0 D0 Z0 P0 Y9 B9 M9 DENSFO-1915 2105    8 753 0E</terminal:Text>
+            <terminal:Text>8*A#UA1554 J6 C0 D0 Z0 P0 Y9 B9 M9    ATL-2242 0619 #1 9 319 0E</terminal:Text>
+            <terminal:Text/>
+         </terminal:TerminalCommandResponse>
+      </terminal:TerminalRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

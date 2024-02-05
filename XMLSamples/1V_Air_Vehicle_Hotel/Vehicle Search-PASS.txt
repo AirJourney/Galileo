@@ -1,0 +1,132 @@
+Vehicle Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleSearchAvailabilityReq ReturnMediaLinks="true" AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:VehicleDateLocation Key="OngF/R9nSmGZOmAaefRUdg==" PickupLocationType="Terminal" PickupLocation="ATL" ReturnDateTime="2020-04-19T10:00:00" PickupDateTime="2020-04-16T10:00:00">
+            <veh:VendorLocation VendorCode="SX" ProviderCode="1V"/>
+         </veh:VehicleDateLocation>
+<!--         <com:PointOfSale Key="pqlNZBdtSnG/ZnM6m5tZ7Q==" ProviderCode="1V" PseudoCityCode="5X19"/>-->
+      </veh:VehicleSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleSearchAvailabilityRsp TransactionId="9DD38E790A07643B096D7BC321CB7069" ResponseTime="400" MediaLinksSearchId="9DD38E790A07643B096D7BC321CB7069_1V" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:NextResultReference ProviderCode="1V">4548429804</common_v50_0:NextResultReference>
+         <vehicle:VehicleDateLocation PickupDateTime="2020-04-16T10:00:00.000-04:00" PickupLocation="ATL" ReturnDateTime="2020-04-19T10:00:00.000-04:00">
+            <vehicle:VendorLocation ProviderCode="1V" VendorCode="SX" VendorLocationID="01" Key="NgSNMC7Q2BKAQltBCAAAAA==" LocationType="Terminal" LocationCode="ATL" Type="Pickup"/>
+         </vehicle:VehicleDateLocation>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Economy" Category="Car" DoorCount="TwoToFourDoors" Location="ARPT SHTTL TO CNTR/CAR ON ARPT GRNDS" CounterLocationCode="OASA" VendorLocationKey="NgSNMC7Q2BKAQltBCAAAAA==" AcrissVehicleCode="ECAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="CXA" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="USD59.56" BaseRate="USD178.68" EstimatedTotalAmount="USD239.68" ExtraMileageCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator RateToken="4548429804"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="019" Description="CARGO BARRIER FRONT"/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" Location="ARPT SHTTL TO CNTR/CAR ON ARPT GRNDS" CounterLocationCode="OASA" VendorLocationKey="NgSNMC7Q2BKAQltBCAAAAA==" AcrissVehicleCode="CCAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="CXA" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="USD60.02" BaseRate="USD180.07" EstimatedTotalAmount="USD241.39" ExtraMileageCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="2" RateToken="4548429804"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="019" Description="CARGO BARRIER FRONT"/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Intermediate" Category="Car" DoorCount="TwoToFourDoors" Location="ARPT SHTTL TO CNTR/CAR ON ARPT GRNDS" CounterLocationCode="OASA" VendorLocationKey="NgSNMC7Q2BKAQltBCAAAAA==" AcrissVehicleCode="ICAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="CXA" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="USD60.47" BaseRate="USD181.41" EstimatedTotalAmount="USD243.04" ExtraMileageCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="3" RateToken="4548429804"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="019" Description="CARGO BARRIER FRONT"/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Standard" Category="Car" DoorCount="TwoToFourDoors" Location="ARPT SHTTL TO CNTR/CAR ON ARPT GRNDS" CounterLocationCode="OASA" VendorLocationKey="NgSNMC7Q2BKAQltBCAAAAA==" AcrissVehicleCode="SCAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="CXA" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="USD60.90" BaseRate="USD182.71" EstimatedTotalAmount="USD244.64" ExtraMileageCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="4" RateToken="4548429804"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="019" Description="CARGO BARRIER FRONT"/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Fullsize" Category="Car" DoorCount="TwoToFourDoors" Location="ARPT SHTTL TO CNTR/CAR ON ARPT GRNDS" CounterLocationCode="OASA" VendorLocationKey="NgSNMC7Q2BKAQltBCAAAAA==" AcrissVehicleCode="FCAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="CXA" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="USD61.31" BaseRate="USD183.94" EstimatedTotalAmount="USD246.16" ExtraMileageCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="5" RateToken="4548429804"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="019" Description="CARGO BARRIER FRONT"/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Premium" Category="Car" DoorCount="TwoToFourDoors" Location="ARPT SHTTL TO CNTR/CAR ON ARPT GRNDS" CounterLocationCode="OASA" VendorLocationKey="NgSNMC7Q2BKAQltBCAAAAA==" AcrissVehicleCode="PCAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="CXA" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="USD69.66" BaseRate="USD208.98" EstimatedTotalAmount="USD276.97" ExtraMileageCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="6" RateToken="4548429804"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="019" Description="CARGO BARRIER FRONT"/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+         <vehicle:Vehicle VendorCode="SX" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Luxury" Category="Car" DoorCount="TwoToFourDoors" Location="ARPT SHTTL TO CNTR/CAR ON ARPT GRNDS" CounterLocationCode="OASA" VendorLocationKey="NgSNMC7Q2BKAQltBCAAAAA==" AcrissVehicleCode="LCAR" ReturnAtPickup="false">
+            <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" Units="KM" RateSource="I" RateAvailability="Available" RateCode="UX2" RateCategory="Standard" RateGuaranteed="true" RentalRestriction="true" RateQualifierInd="1">
+               <vehicle:SupplierRate RateForPeriod="USD76.60" BaseRate="USD229.81" EstimatedTotalAmount="USD302.59" ExtraMileageCharge="USD0.00"/>
+               <vehicle:VehicleRateDescription>
+                  <vehicle:Text>FULLY QUALIFIED IA RATES</vehicle:Text>
+               </vehicle:VehicleRateDescription>
+               <vehicle:RateHostIndicator InventoryToken="7" RateToken="4548429804"/>
+               <vehicle:RateInclusions>
+                  <vehicle:IncludedItem Code="447" Description="YOUNG DRIVER SURCHAR"/>
+                  <vehicle:IncludedItem Code="018" Description="CARGO BARRIER BACK"/>
+                  <vehicle:IncludedItem Code="019" Description="CARGO BARRIER FRONT"/>
+                  <vehicle:IncludedItem Code="030" Description="MOTORCYCLE HELMET"/>
+               </vehicle:RateInclusions>
+            </vehicle:VehicleRate>
+         </vehicle:Vehicle>
+      </vehicle:VehicleSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

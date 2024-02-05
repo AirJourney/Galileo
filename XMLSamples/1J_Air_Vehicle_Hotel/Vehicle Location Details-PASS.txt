@@ -1,0 +1,65 @@
+Vehicle Location Details-Request
+******************************************************************** 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <veh:VehicleLocationDetailReq TargetBranch="TP_WAB_031" AuthorizedBy="SUSIL" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <veh:Vendor Code="AD"/>
+         <veh:VehicleDateLocation PickupDateTime="2020-05-01T10:00:00" PickupLocation="DEN" ReturnDateTime="2020-05-16T10:00:00"/>
+      </veh:VehicleLocationDetailReq>
+   </soap:Body>
+</soap:Envelope>
+
+Vehicle Location Details-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleLocationDetailRsp TransactionId="9DCEE5920A07643B096D7BC39DABC8BC" ResponseTime="593" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning">Location Type not supported by provider.</common_v50_0:ResponseMessage>
+         <vehicle:VendorInfo Name="ADVANTAGE" Code="AD"/>
+         <vehicle:LocationInfo Name="DENVER" CounterLocation="Terminal">
+            <common_v50_0:LocationAddress>
+               <common_v50_0:Street>23790 EAST 78TH AVENUE</common_v50_0:Street>
+               <common_v50_0:Street>DENVER</common_v50_0:Street>
+               <common_v50_0:Street>CO US</common_v50_0:Street>
+               <common_v50_0:Street>80249</common_v50_0:Street>
+               <common_v50_0:State>CO</common_v50_0:State>
+               <common_v50_0:Country>US</common_v50_0:Country>
+            </common_v50_0:LocationAddress>
+            <common_v50_0:PhoneNumber Type="Business" Number="720-324-2260"/>
+            <common_v50_0:PhoneNumber Type="Reservations" Number="800.777.5500"/>
+            <vehicle:OperationTime>Arrival 0001 - 2359</vehicle:OperationTime>
+            <vehicle:OperationTime>Departure 0001 - 2359</vehicle:OperationTime>
+         </vehicle:LocationInfo>
+         <vehicle:VehiclePolicy>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="4" NumberOfDoors="3" Class="Economy" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA YARIS OR SIMILAR" AcrissVehicleCode="ECAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Compact" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="NISSAN VERSA OR SIMILAR" AcrissVehicleCode="CCAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="5" Class="Compact" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="VW GOLF TDI 2.0" FuelType="Diesel" AcrissVehicleCode="CCAD"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Intermediate" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="KIA FORTE OR SIMILAR" AcrissVehicleCode="ICAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Intermediate" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="VW JETTA TDI 2.0" FuelType="Diesel" AcrissVehicleCode="ICAD"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Standard" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="HYUNDAI SONATA OR SIMILAR" AcrissVehicleCode="SCAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Fullsize" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA CAMRY OR SIMILAR" AcrissVehicleCode="FCAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Fullsize" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="VW PASSAT TDI 2.0" FuelType="Diesel" AcrissVehicleCode="FCAD"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Premium" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="NISSAN MAXIMA OR SIMILAR" AcrissVehicleCode="PCAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Premium" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="VW AUDI A3 TDI 2.0" FuelType="Diesel" AcrissVehicleCode="PCAD"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Luxury" Category="Car" AirConditioning="true" Transmission="Automatic" MakeModel="CHRSYLER 300 OR SIMILAR" AcrissVehicleCode="LCAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="7" NumberOfDoors="5" Class="Mini" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="DODGE CARAVAN OR SIMILAR" AcrissVehicleCode="MVAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="12" NumberOfDoors="4" Class="Standard" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="FORD TRANSIT 12 PASSENGER" AcrissVehicleCode="SVAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="15" NumberOfDoors="4" Class="Fullsize" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="FORD 15PASS TRANSIT 15 PASSENGER" AcrissVehicleCode="FVAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="8" NumberOfDoors="5" Class="Premium" Category="Van" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA SIENNA OR SIMLAR" AcrissVehicleCode="PVAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="8" NumberOfDoors="5" Class="Premium" Category="Van" AirConditioning="true" Transmission="AutomaticAWD" MakeModel="TOYOTA TOYOTA SIENNA AWD" AcrissVehicleCode="PVDR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="4" NumberOfDoors="2" Class="Standard" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="FORD MUSTANG OR SIMILAR" AcrissVehicleCode="STAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="4" NumberOfDoors="2" Class="Premium" Category="Convertible" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET CAMARO SS OR SIMILAR" AcrissVehicleCode="PTAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="5" Class="Intermediate" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA RAV4 OR SIMILAR" AcrissVehicleCode="IFAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="7" NumberOfDoors="5" Class="Standard" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="HYUNDAI SANTA FE OR SIMILAR" AcrissVehicleCode="SFAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="7" NumberOfDoors="4" Class="Fullsize" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA SEQUOIA" AcrissVehicleCode="FFAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="8" NumberOfDoors="5" Class="Premium" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="CHEVROLET SUBURBAN OR SIMILAR" AcrissVehicleCode="PFAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="5" Class="Luxury" Category="SUV" AirConditioning="true" Transmission="Automatic" MakeModel="TOYOTA LAND CRUSIER OR SIM" AcrissVehicleCode="LFAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="4" NumberOfDoors="2" Class="Intermediate" Category="AllTerrain" AirConditioning="true" Transmission="Automatic" MakeModel="WRANGLER 2DR WANGLER 2 DR" AcrissVehicleCode="IJAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Premium" Category="AllTerrain" AirConditioning="true" Transmission="Automatic" MakeModel="WRANGLER 4DR WRANGLER 4DR" AcrissVehicleCode="PJAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Luxury" Category="Special" AirConditioning="true" Transmission="Automatic" MakeModel="VOLVO S60" AcrissVehicleCode="LXAR"/>
+            <vehicle:VehicleDetail Code="AD" PassengerCount="5" NumberOfDoors="4" Class="Fullsize" Category="RegularCabPickup" AirConditioning="true" Transmission="Automatic" MakeModel="RAM PICKUP 1500" AcrissVehicleCode="FPAR"/>
+         </vehicle:VehiclePolicy>
+      </vehicle:VehicleLocationDetailRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

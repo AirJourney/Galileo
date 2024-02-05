@@ -1,0 +1,1020 @@
+<!--Release 8.1-->
+<!--Version Dated as of 15/Apr/2015 11:24:06-->
+<!--Air Pricing For Galileo(1G) with LFS CheckFlightDetails Request-->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header/>
+    <soap:Body>
+        <air:AirPriceReq AuthorizedBy="user" CheckFlightDetails="true" TargetBranch="P3570601" TraceId=""
+            xmlns:air="http://www.travelport.com/schema/air_v52_0"
+            xmlns:com="http://www.travelport.com/schema/common_v52_0">
+            <com:BillingPointOfSaleInfo OriginApplication="UAPI"
+                xmlns:com="http://www.travelport.com/schema/common_v52_0"/>
+            <air:AirItinerary>
+                <air:AirSegment ArrivalTime="2023-06-23T21:50:00+08:00" DepartureTime="2023-06-23T11:00:00+08:00" Carrier="AA" ClassOfService="M" CabinClass="Economy" Origin="LGW" Destination="LAS" ETicketability="Yes" Equipment="n/a" FlightNumber="6906" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" ProviderCode="1G" Key="0" Group="0">
+                </air:AirSegment>
+                <air:AirSegment ArrivalTime="2023-06-27T00:45:00+08:00" DepartureTime="2023-06-26T14:45:00+08:00" Carrier="AA" ClassOfService="M" CabinClass="Economy" Origin="LAS" Destination="LGW" ETicketability="Yes" Equipment="n/a" FlightNumber="6905" LinkAvailability="true" PolledAvailabilityOption="Polled avail exists" ProviderCode="1G" Key="1" Group="1">
+                </air:AirSegment>
+            </air:AirItinerary>
+            <air:AirPricingModifiers InventoryRequestType="DirectAccess"/>
+            <com:SearchPassenger Key="P_0" Code="ADT" Age="36"
+                xmlns:com="http://www.travelport.com/schema/common_v52_0"/>
+            <air:AirPricingCommand>
+                <air:AirSegmentPricingModifiers AirSegmentRef="0" FareBasisCode="MKW0C1B4">
+                    <air:PermittedBookingCodes>
+                        <air:BookingCode Code="M" />
+                    </air:PermittedBookingCodes>
+                </air:AirSegmentPricingModifiers>
+                <air:AirSegmentPricingModifiers AirSegmentRef="1" FareBasisCode="MKX0C1B4">
+                    <air:PermittedBookingCodes>
+                        <air:BookingCode Code="M" />
+                    </air:PermittedBookingCodes>
+                </air:AirSegmentPricingModifiers>
+            </air:AirPricingCommand>
+        </air:AirPriceReq>
+    </soap:Body>
+</soap:Envelope>
+
+
+
+<!--AirCreateReservationReq-->
+<!--Release 8.1-->
+<!--Version Dated as of 15/Apr/2015 11:24:07-->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Header xmlns:univ="http://www.travelport.com/schema/universal_v52_0">
+        <univ:SupportedVersions airVersion="air_v52_0"/>
+    </soap:Header>
+    <soap:Body>
+        <univ:AirCreateReservationReq AuthorizedBy="user" TraceId="" RetainReservation="Both" TargetBranch="P3570601" RuleName="SIP" RestrictWaitlist="false"
+            xmlns:univ="http://www.travelport.com/schema/universal_v52_0"
+            xmlns:com="http://www.travelport.com/schema/common_v52_0"
+            xmlns:air="http://www.travelport.com/schema/air_v52_0"
+            xmlns:common_v52_0="http://www.travelport.com/schema/common_v52_0">
+            <com:BillingPointOfSaleInfo OriginApplication="uAPI" />
+            <com:BookingTraveler Key="P_0" Age="36" DOB="1986-11-20" Gender="M" TravelerType="ADT">
+                <com:BookingTravelerName First="JIA" Last="YE" />
+                <com:DeliveryInfo>
+                    <com:ShippingAddress>
+                        <com:AddressName>JIA YE</com:AddressName>
+                        <com:Street>shijie road 2000</com:Street>
+                        <com:City>ShangHai</com:City>
+                        <com:PostalCode>200000</com:PostalCode>
+                        <com:Country>UA</com:Country>
+                    </com:ShippingAddress>
+                </com:DeliveryInfo>
+
+                <com:PhoneNumber CountryCode="86" Location="CHN" Number="17621580805" Type="Other" />
+
+                <com:SSR Type="FOID" FreeText="PPUAEK6021559" />
+                <com:SSR Type="DOCS" FreeText="P/UA/EK6021559/UA/20Nov86/M/20Jun24/YE/JIA" />
+            </com:BookingTraveler>
+
+
+
+            <air:AirPricingSolution Key="JSPT9ibEuDKA2GivzNAAAA==" TotalPrice="GBP1090.27" BasePrice="GBP690.00" ApproximateTotalPrice="GBP1090.27" ApproximateBasePrice="GBP690.00" Taxes="GBP400.27" Fees="GBP0.00" ApproximateTaxes="GBP400.27" QuoteDate="2023-06-20">
+                <air:AirSegment Key="JSPT9ibEuDKAyGivzNAAAA==" Group="0" Carrier="AA" FlightNumber="6906" ProviderCode="1G" Origin="LGW" Destination="LAS" DepartureTime="2023-06-23T11:00:00.000+01:00" ArrivalTime="2023-06-23T13:50:00.000-07:00" FlightTime="650" TravelTime="650" Distance="5217" ClassOfService="M" Equipment="N/A" ChangeOfPlane="false" OptionalServicesIndicator="false" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+                    <air:CodeshareInfo OperatingCarrier="BA">BRITISH AIRWAYS</air:CodeshareInfo>
+                    <air:FlightDetails Key="JSPT9ibEuDKAzGivzNAAAA==" Origin="LGW" Destination="LAS" DepartureTime="2023-06-23T11:00:00.000+01:00" ArrivalTime="2023-06-23T13:50:00.000-07:00" FlightTime="650" TravelTime="650" Equipment="777" OriginTerminal="S" DestinationTerminal="3" AutomatedCheckin="false">
+                        <air:Meals>Meal</air:Meals>
+                        <air:InFlightServices>Non-smoking</air:InFlightServices>
+                        <air:InFlightServices>ADDITIONAL PASSENGER DATA REQUIRED</air:InFlightServices>
+                    </air:FlightDetails>
+                </air:AirSegment>
+                <air:AirSegment Key="JSPT9ibEuDKA0GivzNAAAA==" Group="1" Carrier="AA" FlightNumber="6905" ProviderCode="1G" Origin="LAS" Destination="LGW" DepartureTime="2023-06-26T14:45:00.000-07:00" ArrivalTime="2023-06-27T08:45:00.000+01:00" FlightTime="600" TravelTime="600" Distance="5217" ClassOfService="M" Equipment="N/A" ChangeOfPlane="false" OptionalServicesIndicator="false" LinkAvailability="true" AvailabilityDisplayType="Fare Specific Fare Quote Unbooked">
+                    <air:CodeshareInfo OperatingCarrier="BA">BRITISH AIRWAYS</air:CodeshareInfo>
+                    <air:FlightDetails Key="JSPT9ibEuDKA1GivzNAAAA==" Origin="LAS" Destination="LGW" DepartureTime="2023-06-26T14:45:00.000-07:00" ArrivalTime="2023-06-27T08:45:00.000+01:00" FlightTime="600" TravelTime="600" Equipment="777" OriginTerminal="3" DestinationTerminal="S" AutomatedCheckin="false">
+                        <air:Meals>Meal</air:Meals>
+                        <air:InFlightServices>Non-smoking</air:InFlightServices>
+                        <air:InFlightServices>ADDITIONAL PASSENGER DATA REQUIRED</air:InFlightServices>
+                    </air:FlightDetails>
+                </air:AirSegment>
+                <air:AirPricingInfo Key="JSPT9ibEuDKA5GivzNAAAA==" TotalPrice="GBP1090.27" BasePrice="GBP690.00" ApproximateTotalPrice="GBP1090.27" ApproximateBasePrice="GBP690.00" ApproximateTaxes="GBP400.27" Taxes="GBP400.27" LatestTicketingTime="2023-06-20T23:59:00.000+01:00" PricingMethod="Guaranteed" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="AA" ProviderCode="1G">
+                    <air:FareInfo Key="JSPT9ibEuDKADHivzNAAAA==" FareBasis="MKW0C1B4" PassengerTypeCode="ADT" Origin="LGW" Destination="LAS" EffectiveDate="2023-06-20T16:53:00.000+01:00" DepartureDate="2023-06-23" Amount="GBP360.00" NegotiatedFare="false" NotValidBefore="2023-06-23" NotValidAfter="2023-06-23" TaxAmount="GBP255.87">
+                        <common_v52_0:Endorsement Value="NONREF/BASIC"/>
+                        <air:FareRuleKey FareInfoRef="JSPT9ibEuDKADHivzNAAAA==" ProviderCode="1G">6UUVoSldxwgtkHIc06QAgcbKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAx2ONlqSPAIQxWa1uaqI55k3aSkvhp2ybe1M6EicTZ20cDbXcisqbM7AyGqh8JIaqE5AQwbWGRN4uV6wUniBTnlCTKX1CyLZfOr/bRGkSYBeVvL0gTWvGVKnsahilB5/WEUXhN9DjWmu8SW0TuwqnKz/fxjvjTYsQRdBMIWWcywWTicpvYbmY4XviQBXmhPC30nsniQsC5nAir5wkVQHOuKXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dc3mNX1GvOryuvoD1OYWkj2tlaRA3PFXCHZY3gSNhqSp4sE1Tm5Sj2LJwg41aUtOHamF8cVnSVUVGfMxHhlsNnQ==</air:FareRuleKey>
+                        <air:Brand Key="JSPT9ibEuDKADHivzNAAAA==" BrandID="1216286" Name="BASIC ECONOMY" UpSellBrandFound="false" Carrier="AA" BrandTier="0001">
+                            <air:Title Type="External" LanguageCode="EN">Basic Economy</air:Title>
+                            <air:Title Type="Short" LanguageCode="EN">BASIC</air:Title>
+                            <air:Text Type="MarketingConsumer" LanguageCode="EN">Basic Economy
+• carry on baggage                                                                                              
+• inflight entertainment                                                                              
+*Please refer to fare rules for full conditions
+• Please note that if the flight is operated by another airline then the on-board product or service maybe different to that described above.</air:Text>
+                            <air:Text Type="MarketingAgent" LanguageCode="EN">Basic Economy
+• carry on baggage                                                                                              
+• inflight entertainment                                                                              
+*Please refer to fare rules for full conditions
+• Please note that if the flight is operated by another airline then the on-board product or service maybe different to that described above.</air:Text>
+                            <air:Text Type="Strapline" LanguageCode="EN">Basic Economy</air:Text>
+                            <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/americanairlines/AA_general_medium_210976.jpg</air:ImageLocation>
+                            <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/americanairlines/AA_general_medium_210976.jpg</air:ImageLocation>
+                            <air:OptionalServices>
+                                <air:OptionalService Type="Equipment" CreateDate="2023-06-20T15:53:29.715+00:00" Key="JSPT9ibEuDKAFHivzNAAAA==" Chargeable="Included in the brand" Tag="Other" DisplayOrder="999">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Flight operated by BA</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/britishairways/BA_general_medium_4277.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/britishairways/BA_general_medium_4277.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Flight operated by BA</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">World Traveler
+World Traveler is our full-service economy class on flights beyond Europe, packed with all the comfort and benefits you expect from British Airways at an affordable price. Your seat is ergonomically designed and comes with an adjustable headrest, lumbar support and recline
+
+World Traveler Plus
+World Traveler Plus is our premium economy service, a more comfortable, relaxing experience on longer routes and proof that a premium service doesn't have to break the bank.
+
+Club Class
+Club World combines premium levels of comfort and service with the freedom and flexibility to make every journey unique and unforgettable. Whether you're travelling for business or pleasure, there's a Club World seat with your name on it.
+
+First Class
+First is your ticket to exceptional comfort and impeccable service in our most elegant surroundings. It's the finest way to travel.
+Your First suite is a haven of style and comfort where sophisticated and contemporary British design meet impeccable service and attention to detail. Whether you want to unwind or get down to business, you'll find you're equally well equipped.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">World Traveler
+World Traveler is our full-service economy class on flights beyond Europe, packed with all the comfort and benefits you expect from British Airways at an affordable price. Your seat is ergonomically designed and comes with an adjustable headrest, lumbar support and recline
+
+World Traveler Plus
+World Traveler Plus is our premium economy service, a more comfortable, relaxing experience on longer routes and proof that a premium service doesn't have to break the bank.
+
+Club Class
+Club World combines premium levels of comfort and service with the freedom and flexibility to make every journey unique and unforgettable. Whether you're travelling for business or pleasure, there's a Club World seat with your name on it.
+
+First Class
+First is your ticket to exceptional comfort and impeccable service in our most elegant surroundings. It's the finest way to travel.
+Your First suite is a haven of style and comfort where sophisticated and contemporary British design meet impeccable service and attention to detail. Whether you want to unwind or get down to business, you'll find you're equally well equipped.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Flight operated by BA</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">BA</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0MU" Key="JSPT9ibEuDKAGHivzNAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="JSPT9ibEuDKAHHivzNAAAA==" Tag="Carry On Hand Baggage" DisplayOrder="2">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Carry on bag up to 45 LI 115 LCM</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88935.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88935.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Carry on bag up to 45 LI 115 LCM.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Carry on bag up to 45 LI 115 LCM.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Carry on bag up to 45 LI 115 LCM</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Carry bags</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0MM" Key="JSPT9ibEuDKAIHivzNAAAA==" SecondaryType="CY" Chargeable="Included in the brand" Tag="Carry On Hand Baggage" DisplayOrder="2">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Personal Item  Up To 40 Li</common_v52_0:Description>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Personal Item  Up To 40 Li</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Personal Item  Up To 40 Li</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CC" Key="JSPT9ibEuDKAJHivzNAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="JSPT9ibEuDKAKHivzNAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>First checked bag</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88928.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88928.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in your bag for extra convenience</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">First checked bag</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">1st bag</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CD" Key="JSPT9ibEuDKALHivzNAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="JSPT9ibEuDKAMHivzNAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Second checked bag</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88931.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88931.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Additional checked baggage allowance</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Second checked bag</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">2nd Bag</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CE" Key="JSPT9ibEuDKANHivzNAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="JSPT9ibEuDKAOHivzNAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Third checked bag</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88932.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88932.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Third checked bag</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">ThirdBag</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="057" Key="JSPT9ibEuDKAPHivzNAAAA==" SecondaryType="FR" Chargeable="Included in the brand" Tag="Mileage Accrual" DisplayOrder="8">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>AAdvantage miles</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88946.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88946.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Earn and save</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">AAdvantage miles</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="059" Key="JSPT9ibEuDKAQHivzNAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Changeable ticket</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Changeable ticket</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Changes</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="08S" Key="JSPT9ibEuDKARHivzNAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Same Day Change</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Same Day Change</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">SameDyChg</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="056" Key="JSPT9ibEuDKASHivzNAAAA==" SecondaryType="RF" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Refundable ticket</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88944.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88944.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Cancelling your reservation</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Refundable ticket</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Refunds</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="050" Key="JSPT9ibEuDKATHivzNAAAA==" SecondaryType="SE" Chargeable="Not offered" Tag="Basic Seat" DisplayOrder="21">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Basic seat assignment</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Your seating assignment on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Basic seat assignment</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">BasicST</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="05Z" Key="JSPT9ibEuDKAUHivzNAAAA==" SecondaryType="SE" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Extra legroom seat</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">More space to stretch out on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Extra legroom seat</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">XLegroom</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="LFS" Key="JSPT9ibEuDKAVHivzNAAAA==" SecondaryType="SE" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Lie flat seat</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193200.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193200.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">The best sleep possible</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Lie flat seat</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">LieFlat</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="PSA" Key="JSPT9ibEuDKAWHivzNAAAA==" Chargeable="Available for a charge" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Pre reserved seats</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Pre reserve your preferred seat</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Pre reserved seats</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="MCE" Key="JSPT9ibEuDKAXHivzNAAAA==" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Main cabin extra</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">A little more of everything</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">- Earlier boarding. 
+- Extra legroom. 
+- 1xfree carry on. 
+- Free snacks and drinks. 
+- Free entertainment.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">- Earlier boarding. 
+- Extra legroom. 
+- 1xfree carry on. 
+- Free snacks and drinks. 
+- Free entertainment.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Main cabin extra</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">MnCbnXtra</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="PRS" Key="JSPT9ibEuDKAYHivzNAAAA==" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Premium seat</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92068.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92068.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Extra space and comfort</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Premium seat</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PremST</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0AV" Key="JSPT9ibEuDKAZHivzNAAAA==" SecondaryType="DR" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Premium beverages</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88934.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88934.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Wine, spirits and more</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Premium beverages</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PremBev</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0AT" Key="JSPT9ibEuDKAaHivzNAAAA==" SecondaryType="SN" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Meal or snack</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88940.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88940.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Meal or snack</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Meals</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0B1" Key="JSPT9ibEuDKAbHivzNAAAA==" Chargeable="Included in the brand" Tag="In Flight Entertainment" DisplayOrder="11">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Personal in-seat entertainment</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88941.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88941.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Available gate to gate on all new and refreshed planes</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary in-seat entertainment, wireless streaming and overhead screens available on select aircraft.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary in-seat entertainment, wireless streaming and overhead screens available on select aircraft.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Personal in-seat entertainment</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PTV IFE</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="032" Key="JSPT9ibEuDKAcHivzNAAAA==" SecondaryType="IT" Chargeable="Included in the brand" Tag="WiFi" DisplayOrder="7">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Streaming video</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92069.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92069.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Movies, TV and more streamed to your device</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Streaming video</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Video</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CL" Key="JSPT9ibEuDKAdHivzNAAAA==" SecondaryType="IT" Chargeable="Available for a charge" Tag="WiFi" DisplayOrder="7">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>WiFi</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88942.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88942.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Stay connected on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Stay connected using any Wi-Fi enabled device, including smartphones (in airplane mode). 
+
+WiFi is available on nearly all flights within the U.S., including our two class regional jets. Daily and monthly passes are available on aa.com. Enjoy WiFi service when traveling internationally on our 777-300ER, 787 Dreamliner and select 777-200 planes.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Stay connected using any Wi-Fi enabled device, including smartphones (in airplane mode). 
+
+WiFi is available on nearly all flights within the U.S., including our two class regional jets. Daily and monthly passes are available on aa.com. Enjoy WiFi service when traveling internationally on our 777-300ER, 787 Dreamliner and select 777-200 planes.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">WiFi</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">WiFi</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Lounge" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0BX" Key="JSPT9ibEuDKAeHivzNAAAA==" Chargeable="Available for a charge" Tag="Lounge Access" DisplayOrder="10">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Admirals Club</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92070.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92070.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Merchandising"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Somewhere quiet to work or relax</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Admirals Club</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Lounges</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Standby" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0BV" Key="JSPT9ibEuDKAfHivzNAAAA==" Chargeable="Included in the brand" Tag="Other" DisplayOrder="999">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Same day standby</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Ticket"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Space available boarding</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Same day standby</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Standby</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0G6" Key="JSPT9ibEuDKAgHivzNAAAA==" SecondaryType="PR" Chargeable="Available for a charge" Tag="Priority Boarding" DisplayOrder="17">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Priority boarding</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Board the aircraft with priority</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Priority boarding</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PrioBoard</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="SBO" Key="JSPT9ibEuDKAhHivzNAAAA==" Chargeable="Not offered" Tag="Other" DisplayOrder="999">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Standard boarding</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193201.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193201.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Boarding options</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Standard boarding</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">StdBoard</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="FSC" Key="JSPT9ibEuDKAiHivzNAAAA==" SecondaryType="PO" Chargeable="Not offered" Tag="Priority CheckIn" DisplayOrder="14">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Flagship check in</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in at a separate exclusive zone</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Flagship check in</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">FlagCHK</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="03P" Key="JSPT9ibEuDKAjHivzNAAAA==" SecondaryType="PO" Chargeable="Not offered" Tag="Priority CheckIn" DisplayOrder="14">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKAyGivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Priority check in</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in at a seperate exclusive zone</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Priority check in</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PrioCkn</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKAHHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,1,KG,20,CY - W23,H36,L56,CM</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKAKHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,1,KG,23,BAG</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKAMHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,2,KG,23,BAG</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKAOHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,3,KG,32,BAG</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                            </air:OptionalServices>
+                        </air:Brand>
+                    </air:FareInfo>
+                    <air:FareInfo Key="JSPT9ibEuDKAkHivzNAAAA==" FareBasis="MKX0C1B4" PassengerTypeCode="ADT" Origin="LAS" Destination="LGW" EffectiveDate="2023-06-20T16:53:00.000+01:00" DepartureDate="2023-06-26" Amount="GBP330.00" NegotiatedFare="false" NotValidBefore="2023-06-26" NotValidAfter="2023-06-26" TaxAmount="GBP144.40">
+                        <common_v52_0:Endorsement Value="NONREF/BASIC"/>
+                        <air:FareRuleKey FareInfoRef="JSPT9ibEuDKAkHivzNAAAA==" ProviderCode="1G">6UUVoSldxwgtkHIc06QAgcbKj3F8T9EyxsqPcXxP0TLGyo9xfE/RMsuWFfXVd1OAly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovAx2ONlqSPAIQxWa1uaqI55k3aSkvhp2ybWDikVfx2qmyqB1k4QLAMqjAyGqh8JIaqO4EgwI+MoqeuV6wUniBTnns+19ApSPT+Or/bRGkSYBeVvL0gTWvGVKnsahilB5/WEUXhN9DjWmu8SW0TuwqnKz/fxjvjTYsQS7Dz6yMjpk4TicpvYbmY4WkH9D1knrRtdzQarc+u8gvir5wkVQHOuKXLmrFneovA5cuasWd6i8Dly5qxZ3qLwOXLmrFneovA5cuasWd6i8Dc3mNX1GvOryuvoD1OYWkj2tlaRA3PFXCHZY3gSNhqSp4sE1Tm5Sj2LJwg41aUtOHamF8cVnSVUVGfMxHhlsNnQ==</air:FareRuleKey>
+                        <air:Brand Key="JSPT9ibEuDKAkHivzNAAAA==" BrandID="1216286" Name="BASIC ECONOMY" UpSellBrandFound="false" Carrier="AA" BrandTier="0001">
+                            <air:Title Type="External" LanguageCode="EN">Basic Economy</air:Title>
+                            <air:Title Type="Short" LanguageCode="EN">BASIC</air:Title>
+                            <air:Text Type="MarketingConsumer" LanguageCode="EN">Basic Economy
+• carry on baggage                                                                                              
+• inflight entertainment                                                                              
+*Please refer to fare rules for full conditions
+• Please note that if the flight is operated by another airline then the on-board product or service maybe different to that described above.</air:Text>
+                            <air:Text Type="MarketingAgent" LanguageCode="EN">Basic Economy
+• carry on baggage                                                                                              
+• inflight entertainment                                                                              
+*Please refer to fare rules for full conditions
+• Please note that if the flight is operated by another airline then the on-board product or service maybe different to that described above.</air:Text>
+                            <air:Text Type="Strapline" LanguageCode="EN">Basic Economy</air:Text>
+                            <air:ImageLocation Type="Agent" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/americanairlines/AA_general_medium_210976.jpg</air:ImageLocation>
+                            <air:ImageLocation Type="Consumer" ImageWidth="150" ImageHeight="150">https://cdn.travelport.com/americanairlines/AA_general_medium_210976.jpg</air:ImageLocation>
+                            <air:OptionalServices>
+                                <air:OptionalService Type="Equipment" CreateDate="2023-06-20T15:53:29.715+00:00" Key="JSPT9ibEuDKAmHivzNAAAA==" Chargeable="Included in the brand" Tag="Other" DisplayOrder="999">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Flight operated by BA</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/britishairways/BA_general_medium_4277.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/britishairways/BA_general_medium_4277.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Flight operated by BA</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">World Traveler
+World Traveler is our full-service economy class on flights beyond Europe, packed with all the comfort and benefits you expect from British Airways at an affordable price. Your seat is ergonomically designed and comes with an adjustable headrest, lumbar support and recline
+
+World Traveler Plus
+World Traveler Plus is our premium economy service, a more comfortable, relaxing experience on longer routes and proof that a premium service doesn't have to break the bank.
+
+Club Class
+Club World combines premium levels of comfort and service with the freedom and flexibility to make every journey unique and unforgettable. Whether you're travelling for business or pleasure, there's a Club World seat with your name on it.
+
+First Class
+First is your ticket to exceptional comfort and impeccable service in our most elegant surroundings. It's the finest way to travel.
+Your First suite is a haven of style and comfort where sophisticated and contemporary British design meet impeccable service and attention to detail. Whether you want to unwind or get down to business, you'll find you're equally well equipped.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">World Traveler
+World Traveler is our full-service economy class on flights beyond Europe, packed with all the comfort and benefits you expect from British Airways at an affordable price. Your seat is ergonomically designed and comes with an adjustable headrest, lumbar support and recline
+
+World Traveler Plus
+World Traveler Plus is our premium economy service, a more comfortable, relaxing experience on longer routes and proof that a premium service doesn't have to break the bank.
+
+Club Class
+Club World combines premium levels of comfort and service with the freedom and flexibility to make every journey unique and unforgettable. Whether you're travelling for business or pleasure, there's a Club World seat with your name on it.
+
+First Class
+First is your ticket to exceptional comfort and impeccable service in our most elegant surroundings. It's the finest way to travel.
+Your First suite is a haven of style and comfort where sophisticated and contemporary British design meet impeccable service and attention to detail. Whether you want to unwind or get down to business, you'll find you're equally well equipped.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Flight operated by BA</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">BA</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0MU" Key="JSPT9ibEuDKAnHivzNAAAA==" SecondaryType="CY" Chargeable="Included in the brand" OptionalServicesRuleRef="JSPT9ibEuDKAoHivzNAAAA==" Tag="Carry On Hand Baggage" DisplayOrder="2">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Carry on bag up to 45 LI 115 LCM</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88935.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88935.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Taking bags on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Carry on bag up to 45 LI 115 LCM.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Carry on bag up to 45 LI 115 LCM.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Carry on bag up to 45 LI 115 LCM</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Carry bags</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0MM" Key="JSPT9ibEuDKApHivzNAAAA==" SecondaryType="CY" Chargeable="Included in the brand" Tag="Carry On Hand Baggage" DisplayOrder="2">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Personal Item  Up To 40 Li</common_v52_0:Description>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Personal Item  Up To 40 Li</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Personal Item  Up To 40 Li</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CC" Key="JSPT9ibEuDKAqHivzNAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="JSPT9ibEuDKArHivzNAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>First checked bag</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88928.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88928.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in your bag for extra convenience</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">First checked bag</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">1st bag</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CD" Key="JSPT9ibEuDKAsHivzNAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="JSPT9ibEuDKAtHivzNAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Second checked bag</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88931.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88931.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Additional checked baggage allowance</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Second checked bag</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">2nd Bag</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Baggage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CE" Key="JSPT9ibEuDKAuHivzNAAAA==" Chargeable="Available for a charge" OptionalServicesRuleRef="JSPT9ibEuDKAvHivzNAAAA==" Tag="Checked Baggage" DisplayOrder="1">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Third checked bag</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88932.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88932.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Chargeable Baggage"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in your bags for extra convenience</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Third checked bag</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">ThirdBag</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="057" Key="JSPT9ibEuDKAwHivzNAAAA==" SecondaryType="FR" Chargeable="Included in the brand" Tag="Mileage Accrual" DisplayOrder="8">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>AAdvantage miles</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88946.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88946.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Earn and save</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">AAdvantage miles</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Miles</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="059" Key="JSPT9ibEuDKAxHivzNAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Changeable ticket</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Changeable ticket</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Changes</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="08S" Key="JSPT9ibEuDKAyHivzNAAAA==" SecondaryType="VC" Chargeable="Available for a charge" Tag="Rebooking" DisplayOrder="3">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Same Day Change</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Making changes to your reservation</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Same Day Change</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">SameDyChg</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="056" Key="JSPT9ibEuDKAzHivzNAAAA==" SecondaryType="RF" Chargeable="Not offered" Tag="Refund" DisplayOrder="4">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Refundable ticket</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88944.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88944.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Cancelling your reservation</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Check fare rules for details</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Refundable ticket</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Refunds</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="050" Key="JSPT9ibEuDKA0HivzNAAAA==" SecondaryType="SE" Chargeable="Not offered" Tag="Basic Seat" DisplayOrder="21">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Basic seat assignment</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Your seating assignment on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Basic seat assignment</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">BasicST</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="05Z" Key="JSPT9ibEuDKA1HivzNAAAA==" SecondaryType="SE" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Extra legroom seat</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">More space to stretch out on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the onboard seating options might be different.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Extra legroom seat</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">XLegroom</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Branded Fares" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="LFS" Key="JSPT9ibEuDKA2HivzNAAAA==" SecondaryType="SE" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Lie flat seat</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193200.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193200.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:Text Type="Strapline" LanguageCode="EN">The best sleep possible</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Lie flat seat</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">LieFlat</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="PSA" Key="JSPT9ibEuDKA3HivzNAAAA==" Chargeable="Available for a charge" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Pre reserved seats</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88933.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Pre reserve your preferred seat</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Please note that if the flight is operated by another airline then the options to pre assign seats might be different.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Pre reserved seats</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Seating</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="MCE" Key="JSPT9ibEuDKA4HivzNAAAA==" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Main cabin extra</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88937.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">A little more of everything</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">- Earlier boarding. 
+- Extra legroom. 
+- 1xfree carry on. 
+- Free snacks and drinks. 
+- Free entertainment.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">- Earlier boarding. 
+- Extra legroom. 
+- 1xfree carry on. 
+- Free snacks and drinks. 
+- Free entertainment.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Main cabin extra</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">MnCbnXtra</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="PreReservedSeatAssignment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="PRS" Key="JSPT9ibEuDKA5HivzNAAAA==" Chargeable="Not offered" Tag="Seat Assignment" DisplayOrder="5">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Premium seat</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92068.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92068.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Extra space and comfort</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Premium seat</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PremST</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0AV" Key="JSPT9ibEuDKA6HivzNAAAA==" SecondaryType="DR" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Premium beverages</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88934.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88934.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Wine, spirits and more</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Premium beverages</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PremBev</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="MealOrBeverage" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0AT" Key="JSPT9ibEuDKA7HivzNAAAA==" SecondaryType="SN" Chargeable="Included in the brand" Tag="Meals and Beverages" DisplayOrder="6">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Meal or snack</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88940.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88940.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">On board catering</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Meal or snack</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Meals</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0B1" Key="JSPT9ibEuDKA8HivzNAAAA==" Chargeable="Included in the brand" Tag="In Flight Entertainment" DisplayOrder="11">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Personal in-seat entertainment</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88941.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88941.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Available gate to gate on all new and refreshed planes</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Complimentary in-seat entertainment, wireless streaming and overhead screens available on select aircraft.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Complimentary in-seat entertainment, wireless streaming and overhead screens available on select aircraft.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Personal in-seat entertainment</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PTV IFE</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="032" Key="JSPT9ibEuDKA9HivzNAAAA==" SecondaryType="IT" Chargeable="Included in the brand" Tag="WiFi" DisplayOrder="7">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Streaming video</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92069.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92069.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Movies, TV and more streamed to your device</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Streaming video</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Video</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="InFlightEntertainment" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0CL" Key="JSPT9ibEuDKA+HivzNAAAA==" SecondaryType="IT" Chargeable="Available for a charge" Tag="WiFi" DisplayOrder="7">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>WiFi</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88942.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88942.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Stay connected on board</air:Text>
+                                    <air:Text Type="MarketingAgent" LanguageCode="EN">Stay connected using any Wi-Fi enabled device, including smartphones (in airplane mode). 
+
+WiFi is available on nearly all flights within the U.S., including our two class regional jets. Daily and monthly passes are available on aa.com. Enjoy WiFi service when traveling internationally on our 777-300ER, 787 Dreamliner and select 777-200 planes.</air:Text>
+                                    <air:Text Type="MarketingConsumer" LanguageCode="EN">Stay connected using any Wi-Fi enabled device, including smartphones (in airplane mode). 
+
+WiFi is available on nearly all flights within the U.S., including our two class regional jets. Daily and monthly passes are available on aa.com. Enjoy WiFi service when traveling internationally on our 777-300ER, 787 Dreamliner and select 777-200 planes.</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">WiFi</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">WiFi</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Lounge" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0BX" Key="JSPT9ibEuDKA/HivzNAAAA==" Chargeable="Available for a charge" Tag="Lounge Access" DisplayOrder="10">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Admirals Club</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92070.jpg"/>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_92070.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Merchandising"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Somewhere quiet to work or relax</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Admirals Club</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Lounges</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="Standby" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0BV" Key="JSPT9ibEuDKAAIivzNAAAA==" Chargeable="Included in the brand" Tag="Other" DisplayOrder="999">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Same day standby</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88943.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Ticket"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Space available boarding</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Same day standby</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">Standby</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="0G6" Key="JSPT9ibEuDKABIivzNAAAA==" SecondaryType="PR" Chargeable="Available for a charge" Tag="Priority Boarding" DisplayOrder="17">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Priority boarding</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Board the aircraft with priority</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Priority boarding</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PrioBoard</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="SBO" Key="JSPT9ibEuDKACIivzNAAAA==" Chargeable="Not offered" Tag="Other" DisplayOrder="999">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Standard boarding</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193201.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_193201.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Boarding options</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Standard boarding</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">StdBoard</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="FSC" Key="JSPT9ibEuDKADIivzNAAAA==" SecondaryType="PO" Chargeable="Not offered" Tag="Priority CheckIn" DisplayOrder="14">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Flagship check in</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in at a separate exclusive zone</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Flagship check in</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">FlagCHK</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalService Type="TravelServices" CreateDate="2023-06-20T15:53:29.715+00:00" ServiceSubCode="03P" Key="JSPT9ibEuDKAEIivzNAAAA==" SecondaryType="PO" Chargeable="Not offered" Tag="Priority CheckIn" DisplayOrder="14">
+                                    <common_v52_0:ServiceData AirSegmentRef="JSPT9ibEuDKA0GivzNAAAA=="/>
+                                    <common_v52_0:ServiceInfo>
+                                        <common_v52_0:Description>Priority check in</common_v52_0:Description>
+                                        <common_v52_0:MediaItem caption="Consumer" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                        <common_v52_0:MediaItem caption="Agent" height="60" width="60" url="https://cdn.travelport.com/americanairlines/AA_general_medium_88947.jpg"/>
+                                    </common_v52_0:ServiceInfo>
+                                    <air:EMD AssociatedItem="Flight"/>
+                                    <air:Text Type="Strapline" LanguageCode="EN">Check in at a seperate exclusive zone</air:Text>
+                                    <air:Title Type="External" LanguageCode="EN">Priority check in</air:Title>
+                                    <air:Title Type="Short" LanguageCode="EN">PrioCkn</air:Title>
+                                </air:OptionalService>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKAoHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,1,KG,20,CY - W23,H36,L56,CM</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKArHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,1,KG,23,BAG</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKAtHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,2,KG,23,BAG</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                                <air:OptionalServiceRules Key="JSPT9ibEuDKAvHivzNAAAA==">
+                                    <common_v52_0:Remarks>Y,3,KG,32,BAG</common_v52_0:Remarks>
+                                </air:OptionalServiceRules>
+                            </air:OptionalServices>
+                        </air:Brand>
+                    </air:FareInfo>
+                    <air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="JSPT9ibEuDKADHivzNAAAA==" SegmentRef="JSPT9ibEuDKAyGivzNAAAA==" HostTokenRef="JSPT9ibEuDKA3GivzNAAAA=="/>
+                    <air:BookingInfo BookingCode="M" CabinClass="Economy" FareInfoRef="JSPT9ibEuDKAkHivzNAAAA==" SegmentRef="JSPT9ibEuDKA0GivzNAAAA==" HostTokenRef="JSPT9ibEuDKA4GivzNAAAA=="/>
+                    <air:TaxInfo Category="GB" Amount="GBP87.00" Key="JSPT9ibEuDKA6GivzNAAAA=="/>
+                    <air:TaxInfo Category="UB" Amount="GBP18.77" Key="JSPT9ibEuDKA7GivzNAAAA=="/>
+                    <air:TaxInfo Category="AY" Amount="GBP4.40" Key="JSPT9ibEuDKA8GivzNAAAA=="/>
+                    <air:TaxInfo Category="US" Amount="GBP33.00" Key="JSPT9ibEuDKA9GivzNAAAA=="/>
+                    <air:TaxInfo Category="XA" Amount="GBP3.00" Key="JSPT9ibEuDKA+GivzNAAAA=="/>
+                    <air:TaxInfo Category="XF" Amount="GBP3.50" Key="JSPT9ibEuDKA/GivzNAAAA==">
+                        <common_v52_0:TaxDetail Amount="USD4.50" OriginAirport="LAS"/>
+                    </air:TaxInfo>
+                    <air:TaxInfo Category="XY" Amount="GBP5.50" Key="JSPT9ibEuDKAAHivzNAAAA=="/>
+                    <air:TaxInfo Category="YC" Amount="GBP5.10" Key="JSPT9ibEuDKABHivzNAAAA=="/>
+                    <air:TaxInfo Category="YR" Amount="GBP240.00" Key="JSPT9ibEuDKACHivzNAAAA=="/>
+                    <air:FareCalc>LON AA LAS 453.43MKW0C1B4 AA LON 415.64MKX0C1B4 NUC869.07END ROE0.793947</air:FareCalc>
+                    <air:PassengerType BookingTravelerRef="P_0" Code="ADT" Age="36"/>
+                    <air:ChangePenalty PenaltyApplies="Anytime">
+                        <air:Amount>GBP150.00</air:Amount>
+                    </air:ChangePenalty>
+                    <air:CancelPenalty NoShow="true" PenaltyApplies="Anytime">
+                        <air:Percentage>100.00</air:Percentage>
+                    </air:CancelPenalty>
+                    <air:BaggageAllowances>
+                        <air:BaggageAllowanceInfo TravelerType="ADT" Origin="LGW" Destination="LAS" Carrier="AA">
+                            <air:URLInfo>
+                                <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/AA</air:URL>
+                            </air:URLInfo>
+                            <air:TextInfo>
+                                <air:Text>0P</air:Text>
+                                <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+                            </air:TextInfo>
+                            <air:BagDetails ApplicableBags="1stChecked" BasePrice="GBP60.00" ApproximateBasePrice="GBP60.00" TotalPrice="GBP60.00" ApproximateTotalPrice="GBP60.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:BagDetails>
+                            <air:BagDetails ApplicableBags="2ndChecked" BasePrice="GBP75.00" ApproximateBasePrice="GBP75.00" TotalPrice="GBP75.00" ApproximateTotalPrice="GBP75.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:BagDetails>
+                        </air:BaggageAllowanceInfo>
+                        <air:BaggageAllowanceInfo TravelerType="ADT" Origin="LAS" Destination="LGW" Carrier="AA">
+                            <air:URLInfo>
+                                <air:URL>VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/AA</air:URL>
+                            </air:URLInfo>
+                            <air:TextInfo>
+                                <air:Text>0P</air:Text>
+                                <air:Text>BAGGAGE DISCOUNTS MAY APPLY BASED ON FREQUENT FLYER STATUS/ ONLINE CHECKIN/FORM OF PAYMENT/MILITARY/ETC.</air:Text>
+                            </air:TextInfo>
+                            <air:BagDetails ApplicableBags="1stChecked" BasePrice="GBP60.00" ApproximateBasePrice="GBP60.00" TotalPrice="GBP60.00" ApproximateTotalPrice="GBP60.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:BagDetails>
+                            <air:BagDetails ApplicableBags="2ndChecked" BasePrice="GBP75.00" ApproximateBasePrice="GBP75.00" TotalPrice="GBP75.00" ApproximateTotalPrice="GBP75.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO50LB/23KG AND UPTO62LI/158LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:BagDetails>
+                        </air:BaggageAllowanceInfo>
+                        <air:CarryOnAllowanceInfo Origin="LGW" Destination="LAS" Carrier="BA">
+                            <air:TextInfo>
+                                <air:Text>2P</air:Text>
+                            </air:TextInfo>
+                            <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="GBP0.00" ApproximateBasePrice="GBP0.00" TotalPrice="GBP0.00" ApproximateTotalPrice="GBP0.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO50LB/23KG AND UPTO50LB/127LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:CarryOnDetails>
+                            <air:CarryOnDetails ApplicableCarryOnBags="2" BasePrice="GBP0.00" ApproximateBasePrice="GBP0.00" TotalPrice="GBP0.00" ApproximateTotalPrice="GBP0.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO34LI/85 LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:CarryOnDetails>
+                        </air:CarryOnAllowanceInfo>
+                        <air:CarryOnAllowanceInfo Origin="LAS" Destination="LGW" Carrier="BA">
+                            <air:TextInfo>
+                                <air:Text>2P</air:Text>
+                            </air:TextInfo>
+                            <air:CarryOnDetails ApplicableCarryOnBags="1" BasePrice="USD0.00" TotalPrice="USD0.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO50LB/23KG AND UPTO50LB/127LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:CarryOnDetails>
+                            <air:CarryOnDetails ApplicableCarryOnBags="2" BasePrice="USD0.00" TotalPrice="USD0.00">
+                                <air:BaggageRestriction>
+                                    <air:TextInfo>
+                                        <air:Text>UPTO34LI/85 LCM</air:Text>
+                                    </air:TextInfo>
+                                </air:BaggageRestriction>
+                            </air:CarryOnDetails>
+                        </air:CarryOnAllowanceInfo>
+                    </air:BaggageAllowances>
+                </air:AirPricingInfo>
+                <air:FareNote Key="JSPT9ibEuDKAHIivzNAAAA==">SUM IDENTIFIED AS UB IS A PASSENGER SERVICE CHARGE</air:FareNote>
+                <air:FareNote Key="JSPT9ibEuDKAIIivzNAAAA==">LAST DATE TO PURCHASE TICKET: 20JUN23</air:FareNote>
+                <air:FareNote Key="JSPT9ibEuDKAJIivzNAAAA==">TICKETING AGENCY 7E0R</air:FareNote>
+                <air:FareNote Key="JSPT9ibEuDKAKIivzNAAAA==">DEFAULT PLATING CARRIER AA</air:FareNote>
+                <air:FareNote Key="JSPT9ibEuDKALIivzNAAAA==">FARE HAS A PLATING CARRIER RESTRICTION</air:FareNote>
+                <air:FareNote Key="JSPT9ibEuDKAMIivzNAAAA==">E-TKT REQUIRED</air:FareNote>
+                <air:FareNote Key="JSPT9ibEuDKANIivzNAAAA==">TICKETING FEES MAY APPLY</air:FareNote>
+                <common_v52_0:HostToken Key="JSPT9ibEuDKA3GivzNAAAA==">GFB10101ADT00  01MKW0C1B4                              010001#GFB200010101NADTV3001J6030020000299#GFMCERU001NJ603 AA ADTMKW0C1B4</common_v52_0:HostToken>
+                <common_v52_0:HostToken Key="JSPT9ibEuDKA4GivzNAAAA==">GFB10101ADT00  02MKX0C1B4                              010002#GFB200010102NADTV3001J6030020000299#GFMCERU001NJ603 AA ADTMKX0C1B4</common_v52_0:HostToken>
+            </air:AirPricingSolution>
+
+            <com:ActionStatus Type="TAU" TicketDate="2023-06-21T02:53:46+08:00" ProviderCode="1G" />
+
+        </univ:AirCreateReservationReq>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,633 @@
+Air Flight TimeTable-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:FlightTimeTableReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <air:FlightTimeTableCriteria>
+            <air:GeneralTimeTable StartDate="2020-03-17" EndDate="2020-03-22">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+               <air:FlightOrigin>
+                  <com:CityOrAirport Code="SEA" PreferCity="false"/>
+               </air:FlightOrigin>
+               <air:FlightDestination>
+                  <com:CityOrAirport Code="SFO" PreferCity="false"/>
+               </air:FlightDestination>
+            </air:GeneralTimeTable>
+         </air:FlightTimeTableCriteria>
+      </air:FlightTimeTableReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Flight TimeTable-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightTimeTableRsp TransactionId="9C1794BE0A07643B096D7BC35F9FA70A" ResponseTime="263" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <common_v50_0:NextResultReference>H4sIAAAAAAAAAFvzloG1hEHO2MDAwMLA0NLcwtLUwsRE19jI1MDY3MjM2MDU3MIMAOesqJolAAAA</common_v50_0:NextResultReference>
+         <air:FlightTimeTableList>
+            <air:FlightTimeDetail Key="ljTViE3iRrSdAJRVJnaknQ==" VendorCode="AS" FlightNumber="2950" Origin="SEA" Destination="SFO" DepartureTime="05:55:00-07:00" ArrivalTime="08:14:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="wyIVk4LGQmuWsAtUQM2jUg==" VendorCode="AS" FlightNumber="2950" Origin="SEA" Destination="SFO" DepartureTime="05:55:00-07:00" ArrivalTime="08:14:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="TLQvJ2VsSeqeY3nH0G++Lw==" VendorCode="SQ" FlightNumber="1288" Origin="SEA" Destination="SFO" DepartureTime="05:55:00-07:00" ArrivalTime="08:14:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="B0aa7Fm/RmyMDE9GV/7AJw==" VendorCode="KE" FlightNumber="6113" Origin="SEA" Destination="SFO" DepartureTime="05:55:00-07:00" ArrivalTime="08:14:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="mujSbtrwR9uR9DehGk/Glg==" VendorCode="NZ" FlightNumber="9423" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:14:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Siy00pfRQH6B2T6Obg3+Jw==" VendorCode="UA" FlightNumber="2499" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="DC0QFqC/S+29AGvvTkcr8w==" VendorCode="SQ" FlightNumber="1321" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="2Gq63D+jRUad8b6LvhYhrQ==" VendorCode="NZ" FlightNumber="9423" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="yLUMiOgWQCSlp1E4EG/xFQ==" VendorCode="NZ" FlightNumber="9423" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="q4SW5KmJRVSoKfw3CLYp6g==" VendorCode="UA" FlightNumber="2499" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="j1YJ//5tQBGVw6khCmm2OA==" VendorCode="AS" FlightNumber="405" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="wgUgNxvBSeGBo1OBLKGDNw==" VendorCode="UA" FlightNumber="2499" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="bkDj+1lpR6SWM+KqbQk+Lw==" VendorCode="NH" FlightNumber="7327" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="JIkbWDlZQKyExiHQa+c0hw==" VendorCode="NH" FlightNumber="7327" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:14:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="f+v7NkVoQ+eFsS60uetYaA==" VendorCode="UA" FlightNumber="2499" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:14:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="aFCotMIGQS+Eo2kdQu4ELw==" VendorCode="NH" FlightNumber="7327" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="NR1DQjruRpuJv6lpNXGFKg==" VendorCode="AS" FlightNumber="405" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9pp0BNLST4ybydJxWyD2Kg==" VendorCode="KE" FlightNumber="6113" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="oLpyu2QySTe/6p03OzwuZg==" VendorCode="UA" FlightNumber="2499" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="dJloo5PUTNCy5VbGvWZ21Q==" VendorCode="NH" FlightNumber="7327" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="GDRliHU4TGGRGkf3NfmgxQ==" VendorCode="NZ" FlightNumber="9423" Origin="SEA" Destination="SFO" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="KWs+HFCyQNmgxqL5hqNkaQ==" VendorCode="AS" FlightNumber="1752" Origin="SEA" Destination="SFO" DepartureTime="06:30:00-07:00" ArrivalTime="08:49:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="7lystK+CSBCsPzTnFnng5w==" VendorCode="AS" FlightNumber="1752" Origin="SEA" Destination="SFO" DepartureTime="06:30:00-07:00" ArrivalTime="08:49:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="vWOu7IVATzetiYY6GjNNTQ==" VendorCode="AS" FlightNumber="2251" Origin="SEA" Destination="SFO" DepartureTime="06:40:00-07:00" ArrivalTime="09:00:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="140" FlightTime="140" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="C/kSbdBbQwePoI5wPIpUIw==" VendorCode="AS" FlightNumber="2251" Origin="SEA" Destination="SFO" DepartureTime="06:40:00-07:00" ArrivalTime="09:00:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" DisplayOption="true" DayChange="0" JourneyTime="140" FlightTime="140" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="FH0CkcHwRMGyrvqU9PfTzA==" VendorCode="KE" FlightNumber="6097" Origin="SEA" Destination="SFO" DepartureTime="06:40:00-07:00" ArrivalTime="09:00:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="140" FlightTime="140" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="G1U0XHXuQCKyfUABRzEYNQ==" VendorCode="KE" FlightNumber="3083" Origin="SEA" Destination="SFO" DepartureTime="07:19:00-07:00" ArrivalTime="09:42:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="GfSBD3ejRrWRhP8s05koGg==" VendorCode="DL" FlightNumber="2490" Origin="SEA" Destination="SFO" DepartureTime="07:19:00-07:00" ArrivalTime="09:42:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="GZNtRdipRV2ZSzBX+0vuKQ==" VendorCode="AS" FlightNumber="1111" Origin="SEA" Destination="SFO" DepartureTime="08:00:00-07:00" ArrivalTime="10:15:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="IRQm2y/ZST6Tvw/kK/QiCg==" VendorCode="AS" FlightNumber="1111" Origin="SEA" Destination="SFO" DepartureTime="08:00:00-07:00" ArrivalTime="10:15:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="C3DtrT6CSciWwAJ8SVnhjg==" VendorCode="KE" FlightNumber="6115" Origin="SEA" Destination="SFO" DepartureTime="08:00:00-07:00" ArrivalTime="10:15:00-07:00" StopCount="0" Equipment="32A" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="oPJGgvIqQjee4+dL5yTpMQ==" VendorCode="AS" FlightNumber="1973" Origin="SEA" Destination="SFO" DepartureTime="09:00:00-07:00" ArrivalTime="11:19:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="40" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="gLyT67KrTF+3fMWxMx2RQw==" VendorCode="VS" FlightNumber="1903" Origin="SEA" Destination="SFO" DepartureTime="09:29:00-07:00" ArrivalTime="11:52:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="QL1vXfjpQ4OaaGjQL2VSnA==" VendorCode="VS" FlightNumber="1903" Origin="SEA" Destination="SFO" DepartureTime="09:29:00-07:00" ArrivalTime="11:55:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="146" FlightTime="146" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="4aSB2lcpRhKNvT7fMmgjiQ==" VendorCode="DL" FlightNumber="2429" Origin="SEA" Destination="SFO" DepartureTime="09:29:00-07:00" ArrivalTime="11:52:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="TcKA7IqUTp+rjgYxX0zEuQ==" VendorCode="DL" FlightNumber="2429" Origin="SEA" Destination="SFO" DepartureTime="09:29:00-07:00" ArrivalTime="11:55:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="146" FlightTime="146" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="+XxD1BgAQD2kSiVOpdcbWg==" VendorCode="AS" FlightNumber="300" Origin="SEA" Destination="SFO" DepartureTime="09:40:00-07:00" ArrivalTime="11:55:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="kEpBojybTfeRW1Akgip3Qg==" VendorCode="AS" FlightNumber="300" Origin="SEA" Destination="SFO" DepartureTime="09:40:00-07:00" ArrivalTime="11:55:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-20" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Sgq7Ik6DRg6zer43onDWGA==" VendorCode="AS" FlightNumber="300" Origin="SEA" Destination="SFO" DepartureTime="09:40:00-07:00" ArrivalTime="11:55:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="/Km6oRV6SZOgkjdZsGFMvQ==" VendorCode="TK" FlightNumber="9586" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="QhQ/4qhCSxmUynMtLk5arA==" VendorCode="JL" FlightNumber="6338" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="gbE66CnTTAqJCYVVG0A8Mw==" VendorCode="UA" FlightNumber="698" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="6zUGRBWETmWWRIcwTegfcA==" VendorCode="UA" FlightNumber="698" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="PI7ivrRJQK+scu5E8tx+PA==" VendorCode="AS" FlightNumber="1744" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="j9L/ZUF/TvOc0HQ2WXUG1A==" VendorCode="NZ" FlightNumber="9424" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="4nHiFUCOQtCQ7OIjW7ZzeQ==" VendorCode="NZ" FlightNumber="9424" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="CcMEfLYzRrm78rrkOeP2iA==" VendorCode="AS" FlightNumber="1744" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="wQJFgjPKRaOZr/DpTckjrA==" VendorCode="JL" FlightNumber="6338" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="3P30ZJVWScuMNM8+NMkbBg==" VendorCode="NZ" FlightNumber="9424" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="h/nq6wZtSRuocIo8+tOvRA==" VendorCode="UA" FlightNumber="698" Origin="SEA" Destination="SFO" DepartureTime="09:50:00-07:00" ArrivalTime="12:09:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="HTW1LXoFR5y5tvgc87LHQg==" VendorCode="AS" FlightNumber="742" Origin="SEA" Destination="SFO" DepartureTime="10:20:00-07:00" ArrivalTime="12:30:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="UkbaXvfMRcOM7fxxEqCXIw==" VendorCode="AS" FlightNumber="742" Origin="SEA" Destination="SFO" DepartureTime="10:20:00-07:00" ArrivalTime="12:30:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-21" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="r7BgmH9NSIW8y4vyYasN4w==" VendorCode="JL" FlightNumber="6338" Origin="SEA" Destination="SFO" DepartureTime="10:20:00-07:00" ArrivalTime="12:30:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="A4xU8htURQ+Ma2aP662caA==" VendorCode="JL" FlightNumber="6338" Origin="SEA" Destination="SFO" DepartureTime="10:40:00-07:00" ArrivalTime="12:55:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="rq0yu25KRB+vnE05kODq2Q==" VendorCode="AS" FlightNumber="300" Origin="SEA" Destination="SFO" DepartureTime="10:40:00-07:00" ArrivalTime="12:55:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="JVKkJu7XR1qN9mWYo8E/Pg==" VendorCode="SQ" FlightNumber="1286" Origin="SEA" Destination="SFO" DepartureTime="10:40:00-07:00" ArrivalTime="12:55:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="zNkoMRnKQq+3nX13X36oAw==" VendorCode="AS" FlightNumber="1750" Origin="SEA" Destination="SFO" DepartureTime="11:45:00-07:00" ArrivalTime="14:04:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="jNWMRbwrQ4aWnPp6qKP60A==" VendorCode="SQ" FlightNumber="1322" Origin="SEA" Destination="SFO" DepartureTime="11:45:00-07:00" ArrivalTime="14:04:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="WlOplPfNR3SSDwtZZgQZrA==" VendorCode="AS" FlightNumber="1750" Origin="SEA" Destination="SFO" DepartureTime="11:55:00-07:00" ArrivalTime="14:10:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="YLlGcPcBRuivxWIvoj37Cg==" VendorCode="SQ" FlightNumber="1322" Origin="SEA" Destination="SFO" DepartureTime="11:55:00-07:00" ArrivalTime="14:10:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-21" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Hzpj0NRvTASUNtk/nI4lNw==" VendorCode="AS" FlightNumber="1750" Origin="SEA" Destination="SFO" DepartureTime="11:55:00-07:00" ArrivalTime="14:10:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="F4Mzk4lTRWCsGJvRkv6m1A==" VendorCode="WN" FlightNumber="4065" Origin="SEA" Destination="SFO" DepartureTime="12:05:00-07:00" ArrivalTime="18:45:00-07:00" StopCount="1" Equipment="73H" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="0" DisplayOption="true" DayChange="0" JourneyTime="400" FlightTime="400" EndTerminal="1" FirstIntermediateStop="DEN" LastIntermediateStop="DEN" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="OYeyyCBbSLyxuy2YyQqY3g==" VendorCode="NZ" FlightNumber="9429" Origin="SEA" Destination="SFO" DepartureTime="12:40:00-07:00" ArrivalTime="15:07:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" DisplayOption="true" DayChange="0" JourneyTime="147" FlightTime="147" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="1LYoEsgbRZ+LyR3S+kTjxA==" VendorCode="UA" FlightNumber="5957" Origin="SEA" Destination="SFO" DepartureTime="12:40:00-07:00" ArrivalTime="15:07:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="147" FlightTime="147" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="aLzFqnDCShuHMLYYB+TF5w==" VendorCode="NH" FlightNumber="7284" Origin="SEA" Destination="SFO" DepartureTime="12:55:00-07:00" ArrivalTime="15:22:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="147" FlightTime="147" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="3GTSqRP5TDaw5MlXMdJwwg==" VendorCode="NZ" FlightNumber="9427" Origin="SEA" Destination="SFO" DepartureTime="12:55:00-07:00" ArrivalTime="15:22:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="147" FlightTime="147" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="UvEK6415SYeryxNEYJNHKA==" VendorCode="UA" FlightNumber="5957" Origin="SEA" Destination="SFO" DepartureTime="12:55:00-07:00" ArrivalTime="15:22:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="147" FlightTime="147" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="5VXTQIhIR+W5CIcgKt//Og==" VendorCode="DL" FlightNumber="2002" Origin="SEA" Destination="SFO" DepartureTime="13:12:00-07:00" ArrivalTime="15:31:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="wLHUJ6WrTRO6FhJsYlqm6g==" VendorCode="VS" FlightNumber="1907" Origin="SEA" Destination="SFO" DepartureTime="13:12:00-07:00" ArrivalTime="15:31:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="p6RlMTtnRu6FMGtszhREHg==" VendorCode="DL" FlightNumber="3130" Origin="SEA" Destination="SFO" DepartureTime="13:17:00-07:00" ArrivalTime="15:36:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="jryYm2LIQw+19Y99u66Rbg==" VendorCode="VS" FlightNumber="1907" Origin="SEA" Destination="SFO" DepartureTime="13:17:00-07:00" ArrivalTime="15:36:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="dozjOGzKSbOjuEPmrUQC8A==" VendorCode="AS" FlightNumber="1752" Origin="SEA" Destination="SFO" DepartureTime="13:45:00-07:00" ArrivalTime="16:00:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="0" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="YjWLS1zoSyiXapNVr1blCw==" VendorCode="JL" FlightNumber="5428" Origin="SEA" Destination="SFO" DepartureTime="13:45:00-07:00" ArrivalTime="16:00:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="UQMQ8LCiRCS2S3++b/3gVw==" VendorCode="JL" FlightNumber="5428" Origin="SEA" Destination="SFO" DepartureTime="13:45:00-07:00" ArrivalTime="16:00:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="k7kZb1LhSjOfYi6Gg3USGA==" VendorCode="AS" FlightNumber="1752" Origin="SEA" Destination="SFO" DepartureTime="13:45:00-07:00" ArrivalTime="16:00:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-20" OnTimePerformance="0" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="t0hbUI60R/C2klK1HVAWEg==" VendorCode="AY" FlightNumber="2502" Origin="SEA" Destination="SFO" DepartureTime="13:45:00-07:00" ArrivalTime="16:00:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="RtI4FoWJRAuByPPOWmyfvQ==" VendorCode="AS" FlightNumber="1752" Origin="SEA" Destination="SFO" DepartureTime="13:45:00-07:00" ArrivalTime="16:00:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" OnTimePerformance="0" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="g0dP+Bh9T22WzB3QdybcLg==" VendorCode="AY" FlightNumber="2502" Origin="SEA" Destination="SFO" DepartureTime="13:45:00-07:00" ArrivalTime="16:00:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ieLiHGL0QOG8yxh3XWz2hg==" VendorCode="JL" FlightNumber="5428" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="HIzFBPGnQNq1v/73Dr7Ong==" VendorCode="KE" FlightNumber="6097" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="dfUqZEsgQUu/Ycb6UhIcsw==" VendorCode="JL" FlightNumber="5428" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="c3OUnrtXRuWIh/I+BXFq9w==" VendorCode="KE" FlightNumber="6097" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="rqRL5y/6Tzmp98pJ+HM6pQ==" VendorCode="AY" FlightNumber="2502" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="fw4rkqhATiuOLnY+CjdCwg==" VendorCode="AS" FlightNumber="304" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="gv2N88gPQOiNPLlgMrnpQQ==" VendorCode="KE" FlightNumber="6097" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="r4OOF1gyR86CpcRwqtZjwQ==" VendorCode="AY" FlightNumber="2502" Origin="SEA" Destination="SFO" DepartureTime="13:55:00-07:00" ArrivalTime="16:14:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="XAZlwpXeR7yDDIRTCD3cow==" VendorCode="NZ" FlightNumber="9421" Origin="SEA" Destination="SFO" DepartureTime="14:10:00-07:00" ArrivalTime="16:28:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="138" FlightTime="138" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="f8c2aAYmQmu6ZR6PjpexZQ==" VendorCode="UA" FlightNumber="816" Origin="SEA" Destination="SFO" DepartureTime="14:10:00-07:00" ArrivalTime="16:28:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="138" FlightTime="138" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="kf2ct8GRQ8SAOxBFxcz+Ow==" VendorCode="TK" FlightNumber="9586" Origin="SEA" Destination="SFO" DepartureTime="14:10:00-07:00" ArrivalTime="16:28:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="138" FlightTime="138" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Uw8frFnuTJe+SzkUfvtlcA==" VendorCode="NH" FlightNumber="7284" Origin="SEA" Destination="SFO" DepartureTime="14:10:00-07:00" ArrivalTime="16:28:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="138" FlightTime="138" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Cc+lnHszTuGwdsRd8H0Uvw==" VendorCode="AS" FlightNumber="1760" Origin="SEA" Destination="SFO" DepartureTime="14:25:00-07:00" ArrivalTime="16:39:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="yPMagYyzRTeN762mZYqyVg==" VendorCode="AY" FlightNumber="2504" Origin="SEA" Destination="SFO" DepartureTime="14:25:00-07:00" ArrivalTime="16:39:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="DdODXN6TTgCss7aWfv1jOQ==" VendorCode="AY" FlightNumber="2504" Origin="SEA" Destination="SFO" DepartureTime="14:25:00-07:00" ArrivalTime="16:39:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9SLjPFfnTMGY6eNozjlVqg==" VendorCode="AY" FlightNumber="2504" Origin="SEA" Destination="SFO" DepartureTime="15:00:00-07:00" ArrivalTime="17:10:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="fWLGbYW5TCC9kn49RD7ZRQ==" VendorCode="AS" FlightNumber="368" Origin="SEA" Destination="SFO" DepartureTime="15:00:00-07:00" ArrivalTime="17:10:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="oJkrg+NoSYObWdUo00gN1w==" VendorCode="QF" FlightNumber="3768" Origin="SEA" Destination="SFO" DepartureTime="15:00:00-07:00" ArrivalTime="17:10:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="1OMxwm2xQ12ap01Ogdsn/w==" VendorCode="SQ" FlightNumber="1395" Origin="SEA" Destination="SFO" DepartureTime="15:00:00-07:00" ArrivalTime="17:10:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="2kdJma9BQIW2mqwSPUa/YQ==" VendorCode="DL" FlightNumber="2984" Origin="SEA" Destination="SFO" DepartureTime="15:30:00-07:00" ArrivalTime="17:50:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="140" FlightTime="140" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="m48bBs2+SJSNkddcp94JDA==" VendorCode="DL" FlightNumber="2984" Origin="SEA" Destination="SFO" DepartureTime="15:30:00-07:00" ArrivalTime="17:50:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="140" FlightTime="140" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="c5f4ke2hSEmAIZQFVTghSw==" VendorCode="VS" FlightNumber="1901" Origin="SEA" Destination="SFO" DepartureTime="15:30:00-07:00" ArrivalTime="17:50:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="140" FlightTime="140" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="nDJqvr2mQTamD5O8uMaZXQ==" VendorCode="DL" FlightNumber="2984" Origin="SEA" Destination="SFO" DepartureTime="15:30:00-07:00" ArrivalTime="17:50:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="140" FlightTime="140" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="krvEdEd4QXWoAqtE/fVfYA==" VendorCode="AS" FlightNumber="1784" Origin="SEA" Destination="SFO" DepartureTime="15:45:00-07:00" ArrivalTime="17:55:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="C3M5tDnlQ9+6KMS62MhQ2g==" VendorCode="SQ" FlightNumber="1395" Origin="SEA" Destination="SFO" DepartureTime="15:45:00-07:00" ArrivalTime="17:55:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="/hOzM4UgRaasCqZmd5DZug==" VendorCode="SQ" FlightNumber="1395" Origin="SEA" Destination="SFO" DepartureTime="15:45:00-07:00" ArrivalTime="17:55:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="7pUz2foPSz+HfVq4sso/bg==" VendorCode="AS" FlightNumber="1784" Origin="SEA" Destination="SFO" DepartureTime="15:45:00-07:00" ArrivalTime="17:55:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-20" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="qy5Ci6ljSeqJYg5BaemtLA==" VendorCode="NH" FlightNumber="7284" Origin="SEA" Destination="SFO" DepartureTime="16:22:00-07:00" ArrivalTime="18:30:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="qd0JR/czTvieFdV8nCDNew==" VendorCode="UA" FlightNumber="2294" Origin="SEA" Destination="SFO" DepartureTime="16:22:00-07:00" ArrivalTime="18:30:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="4aj87xcgTZejqhpVN3g+pA==" VendorCode="NZ" FlightNumber="9431" Origin="SEA" Destination="SFO" DepartureTime="16:22:00-07:00" ArrivalTime="18:30:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="fR6BgVovR6GiZA/Jl0ebiw==" VendorCode="UA" FlightNumber="2294" Origin="SEA" Destination="SFO" DepartureTime="16:22:00-07:00" ArrivalTime="18:30:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Yb1rSYiVRYuPxuOB7rxXlw==" VendorCode="UA" FlightNumber="2294" Origin="SEA" Destination="SFO" DepartureTime="16:22:00-07:00" ArrivalTime="18:30:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="m3SM2qgeRteDAtl30Ti+Tw==" VendorCode="NZ" FlightNumber="9431" Origin="SEA" Destination="SFO" DepartureTime="16:22:00-07:00" ArrivalTime="18:30:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="128" FlightTime="128" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Ex8XKHEMT3iv+VE2VMZySQ==" VendorCode="DL" FlightNumber="3964" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:23:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="HXskKJn/STWyJ3nfGi91sA==" VendorCode="DL" FlightNumber="2984" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:19:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-21" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="g6dw57+wSNOSeOBzNOk2CQ==" VendorCode="DL" FlightNumber="3964" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:23:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="jgk+5hooQgyLLXyNJ5sIfg==" VendorCode="VS" FlightNumber="1901" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:19:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="TAERlB31Rjezd22OmZVV3w==" VendorCode="VS" FlightNumber="1905" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:23:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="m7zyimPARFaYqjN1l4+yNw==" VendorCode="DL" FlightNumber="3964" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:23:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="AyAasfKTQyuRDV+XcbLG8Q==" VendorCode="DL" FlightNumber="3964" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:23:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9tUiJNIyQPm8AYsDCfeZJw==" VendorCode="KE" FlightNumber="3101" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:19:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="NvvGC0LyR1GaO4D55DlTuQ==" VendorCode="KE" FlightNumber="3101" Origin="SEA" Destination="SFO" DepartureTime="17:00:00-07:00" ArrivalTime="19:23:00-07:00" StopCount="0" Equipment="E7W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="143" FlightTime="143" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="dXR6lEAmQL64XdmHL2pSSg==" VendorCode="FJ" FlightNumber="5813" Origin="SEA" Destination="SFO" DepartureTime="17:25:00-07:00" ArrivalTime="19:37:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="aqyu1DzRTw+nydjPP1F6gg==" VendorCode="AS" FlightNumber="1754" Origin="SEA" Destination="SFO" DepartureTime="17:25:00-07:00" ArrivalTime="19:37:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="TEH3zshWQ5+u1AOtzcnQwg==" VendorCode="AS" FlightNumber="1754" Origin="SEA" Destination="SFO" DepartureTime="17:25:00-07:00" ArrivalTime="19:37:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="zFZYhkBFTcO5cBEPGq2oNQ==" VendorCode="FJ" FlightNumber="5811" Origin="SEA" Destination="SFO" DepartureTime="17:30:00-07:00" ArrivalTime="19:43:00-07:00" StopCount="0" Equipment="321" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="V76T947pQbqPwWsbpg2T+Q==" VendorCode="QF" FlightNumber="3768" Origin="SEA" Destination="SFO" DepartureTime="17:30:00-07:00" ArrivalTime="19:43:00-07:00" StopCount="0" Equipment="32B" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="bZsVBhlIRoaFLUhQ1TySoQ==" VendorCode="AS" FlightNumber="1756" Origin="SEA" Destination="SFO" DepartureTime="17:30:00-07:00" ArrivalTime="19:43:00-07:00" StopCount="0" Equipment="321" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="wheQN5PqSvmlrZgnwNaPzw==" VendorCode="AS" FlightNumber="1756" Origin="SEA" Destination="SFO" DepartureTime="17:30:00-07:00" ArrivalTime="19:43:00-07:00" StopCount="0" Equipment="321" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Yskj1yQbQkKQpy8pX1V/Ew==" VendorCode="AS" FlightNumber="1756" Origin="SEA" Destination="SFO" DepartureTime="17:30:00-07:00" ArrivalTime="19:43:00-07:00" StopCount="0" Equipment="321" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-20" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="cVpoMtwjRxu/gPg7yck1dQ==" VendorCode="AS" FlightNumber="1756" Origin="SEA" Destination="SFO" DepartureTime="17:30:00-07:00" ArrivalTime="19:43:00-07:00" StopCount="0" Equipment="321" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="iUpNffDCSnm0sPsKmtYoXw==" VendorCode="NZ" FlightNumber="9426" Origin="SEA" Destination="SFO" DepartureTime="18:02:00-07:00" ArrivalTime="20:17:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="3IuxwS+XTiyJG7uPTXJoew==" VendorCode="UA" FlightNumber="214" Origin="SEA" Destination="SFO" DepartureTime="18:02:00-07:00" ArrivalTime="20:17:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Q7GdzrAFRFe0xLYv5k7A1Q==" VendorCode="NZ" FlightNumber="9422" Origin="SEA" Destination="SFO" DepartureTime="18:05:00-07:00" ArrivalTime="20:20:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Thu="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="xdgz+ZwdQHSzFX8QJrsopQ==" VendorCode="NZ" FlightNumber="9426" Origin="SEA" Destination="SFO" DepartureTime="18:05:00-07:00" ArrivalTime="20:20:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-21" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="4a6x6Y44Rkydq3QoaAjOGQ==" VendorCode="UA" FlightNumber="214" Origin="SEA" Destination="SFO" DepartureTime="18:05:00-07:00" ArrivalTime="20:20:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="jL/CD8LXSsCOgvymUAt+XQ==" VendorCode="NZ" FlightNumber="9422" Origin="SEA" Destination="SFO" DepartureTime="18:05:00-07:00" ArrivalTime="20:20:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="6P3Ad7hCQnaila19Yrlz2A==" VendorCode="UA" FlightNumber="214" Origin="SEA" Destination="SFO" DepartureTime="18:05:00-07:00" ArrivalTime="20:20:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Thu="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="CewcvX1xT3OVTPyehkMA2A==" VendorCode="UA" FlightNumber="214" Origin="SEA" Destination="SFO" DepartureTime="18:05:00-07:00" ArrivalTime="20:20:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="HlzouREBSEKBtNEfXnm6FQ==" VendorCode="UA" FlightNumber="214" Origin="SEA" Destination="SFO" DepartureTime="18:05:00-07:00" ArrivalTime="20:20:00-07:00" StopCount="0" Equipment="319" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-20" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="CQY7f5V9TNmlWxBYNniu8A==" VendorCode="AS" FlightNumber="1756" Origin="SEA" Destination="SFO" DepartureTime="18:15:00-07:00" ArrivalTime="20:27:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="50" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="SYRoqvVzRQGdS2bZ7SkhEA==" VendorCode="AS" FlightNumber="1756" Origin="SEA" Destination="SFO" DepartureTime="18:15:00-07:00" ArrivalTime="20:27:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="50" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="k+MMFjeZSjWk7F3KdKvHXA==" VendorCode="QF" FlightNumber="3768" Origin="SEA" Destination="SFO" DepartureTime="18:15:00-07:00" ArrivalTime="20:27:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="1NO64sYORT+HjbBUk9tGiw==" VendorCode="FJ" FlightNumber="5811" Origin="SEA" Destination="SFO" DepartureTime="18:15:00-07:00" ArrivalTime="20:27:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="MeHIzOJKT+qK/uTLHkjjjw==" VendorCode="AS" FlightNumber="1744" Origin="SEA" Destination="SFO" DepartureTime="18:55:00-07:00" ArrivalTime="21:09:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="kZZU5KAUQ22RRL2f7IetDw==" VendorCode="AS" FlightNumber="1744" Origin="SEA" Destination="SFO" DepartureTime="18:55:00-07:00" ArrivalTime="21:09:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="LxcG97fKThu84IMFQreBqA==" VendorCode="FJ" FlightNumber="5813" Origin="SEA" Destination="SFO" DepartureTime="18:55:00-07:00" ArrivalTime="21:09:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="PkQJZ0tpQhS+lsuVSxAxhQ==" VendorCode="NZ" FlightNumber="9428" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-21" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="cVaBggJUTE+/InQgjflsEQ==" VendorCode="NZ" FlightNumber="9422" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true" Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="PMJgFv9WTyCIpK9TWucoaQ==" VendorCode="UA" FlightNumber="1775" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="cAt4CGeGSr6RwucHiOek/Q==" VendorCode="NZ" FlightNumber="9422" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="c0nSRbS/RrqGqrufqfiL+A==" VendorCode="NZ" FlightNumber="9428" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-19" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="khfD9shoRBa1Grc5yn/FCw==" VendorCode="UA" FlightNumber="1775" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ZT0wdubLQVi0YnGiw6A0cg==" VendorCode="NZ" FlightNumber="9428" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="DxIx1HYqR22uKdFQX/GOWQ==" VendorCode="UA" FlightNumber="1775" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9pwmfY2nTbqjNF5YDpnIkw==" VendorCode="UA" FlightNumber="1775" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="738" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-20" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="aHtF1TODQEitsvl3OC1XwQ==" VendorCode="UA" FlightNumber="1775" Origin="SEA" Destination="SFO" DepartureTime="19:33:00-07:00" ArrivalTime="21:46:00-07:00" StopCount="0" Equipment="739" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-22" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="3" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="CYcqAYKeSCickl3q/78+Cg==" VendorCode="AS" FlightNumber="376" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="AoRxIdBoSpuYNkCrId2a5w==" VendorCode="KE" FlightNumber="6115" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="YAaUhqy+TkKTB8O+4rqGtQ==" VendorCode="SQ" FlightNumber="1288" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="udBi5EbzT8WYKQH4LpFWFg==" VendorCode="AS" FlightNumber="376" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="mj0ymVbgQYiI2+Ar01ei4g==" VendorCode="AS" FlightNumber="376" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-20" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="0Y+hp3+YQOWl4KtMETLn3g==" VendorCode="AS" FlightNumber="376" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ByRBNHELRcWYa3tM1E2MjA==" VendorCode="KE" FlightNumber="6115" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="TfsuohHCR9qAFi8PDmgxRw==" VendorCode="SQ" FlightNumber="1288" Origin="SEA" Destination="SFO" DepartureTime="19:45:00-07:00" ArrivalTime="21:59:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9xJbfqL4SkuOaiB8xKDeQw==" VendorCode="SQ" FlightNumber="1395" Origin="SEA" Destination="SFO" DepartureTime="19:50:00-07:00" ArrivalTime="22:02:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9hhMg7i7QnaYvTAyksbmHA==" VendorCode="AS" FlightNumber="1092" Origin="SEA" Destination="SFO" DepartureTime="19:50:00-07:00" ArrivalTime="22:02:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="cs4GxXRZTy6cQNWFuj4KAg==" VendorCode="KE" FlightNumber="6115" Origin="SEA" Destination="SFO" DepartureTime="19:50:00-07:00" ArrivalTime="22:02:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ZGfVFvcMTiK9OxkU5euXCQ==" VendorCode="AS" FlightNumber="1092" Origin="SEA" Destination="SFO" DepartureTime="19:50:00-07:00" ArrivalTime="22:02:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="/bkxDqSrT3WwgVgZLcVG9Q==" VendorCode="SQ" FlightNumber="1321" Origin="SEA" Destination="SFO" DepartureTime="19:50:00-07:00" ArrivalTime="22:02:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="WXOtCkL5Te6dGoslRlf2eQ==" VendorCode="AS" FlightNumber="1094" Origin="SEA" Destination="SFO" DepartureTime="21:10:00-07:00" ArrivalTime="23:22:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="EvRBRJSwR7C482e5oMRoZQ==" VendorCode="AS" FlightNumber="1094" Origin="SEA" Destination="SFO" DepartureTime="21:10:00-07:00" ArrivalTime="23:22:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="80" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="DR7ji54+QSydWpHOY0vw2A==" VendorCode="AS" FlightNumber="1328" Origin="SEA" Destination="SFO" DepartureTime="21:15:00-07:00" ArrivalTime="23:29:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-20" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="hqU9aqm0QFmkRfzf4aoy6w==" VendorCode="AS" FlightNumber="1328" Origin="SEA" Destination="SFO" DepartureTime="21:15:00-07:00" ArrivalTime="23:29:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ycIbrxa4S3eC/mDbw2yZXQ==" VendorCode="AS" FlightNumber="1328" Origin="SEA" Destination="SFO" DepartureTime="21:15:00-07:00" ArrivalTime="23:29:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="EFdpKSoWT22uW9gZ8ek9lQ==" VendorCode="VS" FlightNumber="3214" Origin="SEA" Destination="SFO" DepartureTime="21:29:00-07:00" ArrivalTime="23:42:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="5f5vf3lRQ4Cc4V2C8KQOIw==" VendorCode="DL" FlightNumber="2621" Origin="SEA" Destination="SFO" DepartureTime="21:29:00-07:00" ArrivalTime="23:42:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="133" FlightTime="133" EndTerminal="1" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="zqdpIHnBTx2vaQsTD3yKhg==" VendorCode="AS" FlightNumber="406" Origin="SEA" Destination="SFO" DepartureTime="21:55:00-07:00" ArrivalTime="00:09:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="60" DisplayOption="true" DayChange="1" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="9YGgptUeQ/CE8v3j+nx2yw==" VendorCode="AS" FlightNumber="406" Origin="SEA" Destination="SFO" DepartureTime="21:55:00-07:00" ArrivalTime="00:09:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-20" ScheduleEndDate="2020-03-21" OnTimePerformance="60" DisplayOption="true" DayChange="1" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Fri="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="mr3SfcRDQBKxTsidtPi8EQ==" VendorCode="AS" FlightNumber="406" Origin="SEA" Destination="SFO" DepartureTime="21:55:00-07:00" ArrivalTime="00:09:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-19" OnTimePerformance="60" DisplayOption="true" DayChange="1" JourneyTime="134" FlightTime="134" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="8m/EOBQ9S120boQwoj36WA==" VendorCode="AS" FlightNumber="1330" Origin="SEA" Destination="SFO" DepartureTime="22:00:00-07:00" ArrivalTime="00:10:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" OnTimePerformance="60" DisplayOption="true" DayChange="1" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Tue="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="LfejSb6WQV2/iMMobY9nEw==" VendorCode="AS" FlightNumber="380" Origin="SEA" Destination="SFO" DepartureTime="22:00:00-07:00" ArrivalTime="00:10:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="60" DisplayOption="true" DayChange="1" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="1tJEypx9SKWeOkC8jMzhXg==" VendorCode="SQ" FlightNumber="1405" Origin="SEA" Destination="SFO" DepartureTime="22:00:00-07:00" ArrivalTime="00:10:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-17" DisplayOption="true" DayChange="1" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="wkUEejHFTN+8A6kRmUZ5Qw==" VendorCode="WN" FlightNumber="1243" Origin="SEA" Destination="OAK" DepartureTime="05:00:00-07:00" ArrivalTime="07:05:00-07:00" StopCount="0" Equipment="73W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="125" FlightTime="125" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="G4JowPYNTcyLUSMYDr7oIA==" VendorCode="WN" FlightNumber="4095" Origin="SEA" Destination="OAK" DepartureTime="05:15:00-07:00" ArrivalTime="07:25:00-07:00" StopCount="0" Equipment="73W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="uO13Yu+cSj6AX8DuGTUiyw==" VendorCode="WN" FlightNumber="3830" Origin="SEA" Destination="OAK" DepartureTime="05:30:00-07:00" ArrivalTime="07:40:00-07:00" StopCount="0" Equipment="73W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="fdbTv7XKT4OMTBX2TYTeKg==" VendorCode="AS" FlightNumber="342" Origin="SEA" Destination="OAK" DepartureTime="05:45:00-07:00" ArrivalTime="07:45:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="120" FlightTime="120" EndTerminal="1" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="+A43dQ7yRyOQ+nkACLFXlQ==" VendorCode="AS" FlightNumber="920" Origin="SEA" Destination="SJC" DepartureTime="06:00:00-07:00" ArrivalTime="08:11:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-18" ScheduleEndDate="2020-03-18" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="131" FlightTime="131" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="p0PBA7AvS9CTg/G8OR6NqA==" VendorCode="WN" FlightNumber="1880" Origin="SEA" Destination="SJC" DepartureTime="06:00:00-07:00" ArrivalTime="08:10:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="130" FlightTime="130" EndTerminal="B" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="rv0qG5YKSP24YyH+zsbQ+A==" VendorCode="AS" FlightNumber="364" Origin="SEA" Destination="SJC" DepartureTime="06:00:00-07:00" ArrivalTime="08:15:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-21" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true" Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="7PLTJKW4T9G3/FmD+TdI8Q==" VendorCode="WN" FlightNumber="4101" Origin="SEA" Destination="SJC" DepartureTime="06:15:00-07:00" ArrivalTime="10:45:00-07:00" StopCount="1" Equipment="73W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="270" FlightTime="270" EndTerminal="B" FirstIntermediateStop="LAS" LastIntermediateStop="LAS" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="t5fLigpnT+y+n1ar8IZ2Xw==" VendorCode="AS" FlightNumber="338" Origin="SEA" Destination="SJC" DepartureTime="07:00:00-07:00" ArrivalTime="09:15:00-07:00" StopCount="0" Equipment="73H" ScheduleStartDate="2020-03-21" ScheduleEndDate="2020-03-21" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="ZyRA05q2TT+XbYSBnUYvyA==" VendorCode="AS" FlightNumber="338" Origin="SEA" Destination="SJC" DepartureTime="07:00:00-07:00" ArrivalTime="09:15:00-07:00" StopCount="0" Equipment="320" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-20" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Thu="true" Fri="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="GsnV5WBcSRK63tPSZ3rAgA==" VendorCode="WN" FlightNumber="6178" Origin="SEA" Destination="OAK" DepartureTime="07:00:00-07:00" ArrivalTime="09:05:00-07:00" StopCount="0" Equipment="73W" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="125" FlightTime="125" EndTerminal="2" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Vik+VIdERfOP5PgN3KZK3A==" VendorCode="AS" FlightNumber="338" Origin="SEA" Destination="SJC" DepartureTime="07:00:00-07:00" ArrivalTime="09:15:00-07:00" StopCount="0" Equipment="32S" ScheduleStartDate="2020-03-22" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Thu="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Tw2Kw1xXS3OjtW0h1A0WHw==" VendorCode="AS" FlightNumber="344" Origin="SEA" Destination="SJC" DepartureTime="07:00:00-07:00" ArrivalTime="09:17:00-07:00" StopCount="0" Equipment="73J" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="137" FlightTime="137" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Wed="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="2hI0Vz04TbeOtV1S99p4iQ==" VendorCode="DL" FlightNumber="1658" Origin="SEA" Destination="SJC" DepartureTime="07:25:00-07:00" ArrivalTime="09:44:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="139" FlightTime="139" EndTerminal="A" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Sat="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="59YoxJmVQ8SWkACZS0VVKw==" VendorCode="DL" FlightNumber="1658" Origin="SEA" Destination="SJC" DepartureTime="07:25:00-07:00" ArrivalTime="09:43:00-07:00" StopCount="0" Equipment="221" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-22" OnTimePerformance="90" DisplayOption="true" DayChange="0" JourneyTime="138" FlightTime="138" EndTerminal="A" InsideAvailability="Y" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="Z90IMwQKRTy+BaT5reBDHQ==" VendorCode="AS" FlightNumber="2740" Origin="PAE" Destination="SJC" DepartureTime="07:30:00-07:00" ArrivalTime="09:42:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="132" FlightTime="132" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="dvjhuVHLTNWUlz2I9JzmMg==" VendorCode="AS" FlightNumber="2740" Origin="PAE" Destination="SJC" DepartureTime="07:30:00-07:00" ArrivalTime="09:36:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-17" ScheduleEndDate="2020-03-18" OnTimePerformance="70" DisplayOption="true" DayChange="0" JourneyTime="126" FlightTime="126" EndTerminal="B" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="rJEmSZ+jR8abJWFceyD9RA==" VendorCode="AS" FlightNumber="2828" Origin="PAE" Destination="SFO" DepartureTime="08:00:00-07:00" ArrivalTime="10:15:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" OnTimePerformance="60" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+            <air:FlightTimeDetail Key="CZZvRcYvRF6N6c2uKMhh1w==" VendorCode="FJ" FlightNumber="5869" Origin="PAE" Destination="SFO" DepartureTime="08:00:00-07:00" ArrivalTime="10:15:00-07:00" StopCount="0" Equipment="E75" ScheduleStartDate="2020-03-19" ScheduleEndDate="2020-03-22" DisplayOption="true" DayChange="0" JourneyTime="135" FlightTime="135" EndTerminal="2" InsideAvailability="N" SecureSell="SS">
+               <air:DaysOfOperation Mon="true" Tue="true" Wed="true" Thu="true" Fri="true" Sat="true" Sun="true"/>
+            </air:FlightTimeDetail>
+         </air:FlightTimeTableList>
+      </air:FlightTimeTableRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

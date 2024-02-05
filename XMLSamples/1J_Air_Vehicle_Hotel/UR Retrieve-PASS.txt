@@ -1,0 +1,114 @@
+UR Retrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <univ:UniversalRecordRetrieveReq TargetBranch="TP_WAB_031" xmlns:univ="http://www.travelport.com/schema/universal_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <univ:UniversalRecordLocatorCode>0SQAVI</univ:UniversalRecordLocatorCode>
+      </univ:UniversalRecordRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+UR Retrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordRetrieveRsp TransactionId="9DCE7EEE0A0764785B1483FC808401B9" ResponseTime="808" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <common_v50_0:ResponseMessage Code="1512" Type="Warning">Unable to process the request.</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="0SQAVI" Version="5" Status="Active">
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMQ==" NameNumber="1.1" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="CARSTEN" Last="LINDELOEV"/>
+               <common_v50_0:PhoneNumber Key="xIaV9B4R2BKAGh1CAAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-722-2454" Extension="22" AreaCode="222" Text="Abc-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="xIaV9B4R2BKAui1CAAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="xIaV9B4R2BKAPh1CAAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="xIaV9B4R2BKAui1CAAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="xIaV9B4R2BKAHh1CAAAAAA==" Status="HK" Type="DOCS" FreeText="1/P/CA/@--@0356/GB/@-----@/M/01JAN14/LINDELOEV/CARSTENGJELLERUPMR" Carrier="UA" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA=="/>
+               <common_v50_0:SSR Key="xIaV9B4R2BKAvi1CAAAAAA==" Status="HK" Type="PSPT" FreeText="1/@--@0356/CA/@-----@/M" Carrier="UA" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA=="/>
+               <common_v50_0:Address Key="xIaV9B4R2BKAQh1CAAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="xIaV9B4R2BKAui1CAAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:BookingTraveler Key="Qm9va2luZ1RyYXZlbGVyMg==" NameNumber="2.1" TravelerType="ADT">
+               <common_v50_0:BookingTravelerName Prefix="Mr" First="john" Last="Long"/>
+               <common_v50_0:PhoneNumber Key="xIaV9B4R2BKAKh1CAAAAAA==" Type="Home" Location="DEN" CountryCode="011" Number="227-702-2454" Extension="22" AreaCode="222" Text="Abd-Xy">
+                  <common_v50_0:ProviderReservationInfoRef Key="xIaV9B4R2BKAui1CAAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="xIaV9B4R2BKARh1CAAAAAA==" Type="Home" EmailID="jtestora@travelport.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="xIaV9B4R2BKAui1CAAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:SSR Key="xIaV9B4R2BKALh1CAAAAAA==" Status="HK" Type="DOCS" FreeText="1/P/CA/@--@0356/GB/@-----@/M/01JAN14/LONG/JHONJELLERUPMR" Carrier="UA" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA=="/>
+               <common_v50_0:SSR Key="xIaV9B4R2BKA5i1CAAAAAA==" Status="HK" Type="PSPT" FreeText="1/@--@0356/CA/@-----@/M" Carrier="UA" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA=="/>
+               <common_v50_0:Address Key="xIaV9B4R2BKASh1CAAAAAA==">
+                  <common_v50_0:AddressName>Jan Restora</common_v50_0:AddressName>
+                  <common_v50_0:Street>6901 S. Havana</common_v50_0:Street>
+                  <common_v50_0:Street>Apt 3</common_v50_0:Street>
+                  <common_v50_0:City>Englewood</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80111</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="xIaV9B4R2BKAWh1CAAAAAA==" Type="TAU" TicketDate="2020-03-01T00:00:00.000+09:00" QueueCategory="00" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA==" ProviderCode="1J">
+               <common_v50_0:Remark>01MAR</common_v50_0:Remark>
+            </common_v50_0:ActionStatus>
+            <universal:ProviderReservationInfo Key="xIaV9B4R2BKAui1CAAAAAA==" ProviderCode="1J" LocatorCode="4E7V25" CreateDate="2020-02-25T18:50:17.815+00:00" ModifiedDate="2020-02-26T16:58:31.745+00:00" HostCreateDate="2020-02-25" HostCreateTime="18:50:00.000+00:00" OwningPCC="00C" AgentOverride="1J"/>
+            <air:AirReservation LocatorCode="0SQAVO" CreateDate="2020-02-25T18:50:17.333+00:00" ModifiedDate="2020-02-26T16:58:31.745+00:00">
+               <common_v50_0:SupplierLocator SupplierCode="UA" SupplierLocatorCode="L7CGY3" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA=="/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+               <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+               <common_v50_0:ProviderReservationInfoRef Key="xIaV9B4R2BKAui1CAAAAAA=="/>
+               <air:AirPricingInfo Key="OtVP9B8Q2BKAlWoDAAAAAA==" TotalPrice="JPY66870" BasePrice="USD521.86" ApproximateTotalPrice="JPY66870" ApproximateBasePrice="JPY57400" EquivalentBasePrice="JPY57400" Taxes="JPY9470" LatestTicketingTime="2020-02-27T23:59:00.000+09:00" PricingMethod="Reprice" PlatingCarrier="UA" ProviderCode="1J" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA==" AirPricingInfoGroup="1" PricingType="TicketRecord" FareCalculationInd="9">
+                  <air:FareInfo Key="OtVP9B8Q2BKAqWoDAAAAAA==" FareBasis="VAA4AQDN" PassengerTypeCode="ADT" Origin="ATL" Destination="SEA" EffectiveDate="2020-02-26T03:50:17.779+09:00" TravelDate="2020-05-25" DepartureDate="2020-05-25" Amount="USD316.28"/>
+                  <air:FareInfo Key="xIaV9B4R2BKAri1CAAAAAA==" FareBasis="LAA2AKDN" PassengerTypeCode="ADT" Origin="SEA" Destination="ATL" EffectiveDate="2020-02-26T03:50:17.779+09:00" TravelDate="2020-05-31" DepartureDate="2020-05-25" Amount="USD205.58"/>
+                  <air:TaxInfo Category="AY" Amount="JPY1240" Key="OtVP9B8Q2BKAmWoDAAAAAA=="/>
+                  <air:TaxInfo Category="US" Amount="JPY4310" Key="OtVP9B8Q2BKAnWoDAAAAAA=="/>
+                  <air:TaxInfo Category="ZP" Amount="JPY1920" Key="OtVP9B8Q2BKAoWoDAAAAAA=="/>
+                  <air:TaxInfo Category="XF" Amount="JPY2000" Key="OtVP9B8Q2BKApWoDAAAAAA=="/>
+                  <air:FareCalc>ADT ATL UA X/DEN UA SEA316.28UA X/WAS UA ATL205.58USD521.86END UA ZPATLDENSEAIAD XF ATL4.5DEN4.5SEA4.5IAD4.5</air:FareCalc>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+                  <air:PassengerType Code="ADT" BookingTravelerRef="Qm9va2luZ1RyYXZlbGVyMg=="/>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMQ=="/>
+                  <common_v50_0:BookingTravelerRef Key="Qm9va2luZ1RyYXZlbGVyMg=="/>
+                  <air:ActionDetails PseudoCityCode="00C" AgentSine="1J" EventDate="2020-03-01" EventTime="18:50:00.000+00:00" Text="4P*PADT|S1/2/3/4:BF0002|CUA|TR|BO"/>
+               </air:AirPricingInfo>
+            </air:AirReservation>
+            <common_v50_0:GeneralRemark Key="xIaV9B4R2BKATh1CAAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA==">
+               <common_v50_0:RemarkData>Booking 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:GeneralRemark Key="xIaV9B4R2BKAUh1CAAAAAA==" TypeInGds="Basic" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA==">
+               <common_v50_0:RemarkData>Re- Booking 1</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="TRAVELPORTSUPERADMIN" BranchCode="MXFVuATURbeqn5sADSKmcg==" AgencyCode="TVPORTDYNASKLTONWABAGENCY" EventTime="2020-02-25T18:50:11.639+00:00"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="TRAVELPORTSUPERADMIN" BranchCode="TP_WAB_031" AgencyCode="TPAGENCY_45874" EventTime="2020-02-26T16:58:31.745+00:00"/>
+            </common_v50_0:AgencyInfo>
+            <common_v50_0:InvoiceRemark Key="OtVP9B8Q2BKAh4qDAAAAAA==" ProviderReservationInfoRef="xIaV9B4R2BKAui1CAAAAAA==">
+               <common_v50_0:RemarkData>AP-5555123456789013/PK-45689</common_v50_0:RemarkData>
+            </common_v50_0:InvoiceRemark>
+            <common_v50_0:FormOfPayment Key="PDz8y7xu4hGfaM/wYIhwmw==" Type="Credit" Reusable="false" ProfileKey="9tCg5terSrWbpt+k9+ZtQg==">
+               <common_v50_0:CreditCard Type="CA" Number="************5557" ExpDate="2021-01" Name="JAYA KUMAR">
+                  <common_v50_0:BillingAddress Key="xIaV9B4R2BKA6i1CAAAAAA==">
+                     <common_v50_0:AddressName>JAN TESTORA</common_v50_0:AddressName>
+                     <common_v50_0:Street>6901 S. HAVANA</common_v50_0:Street>
+                     <common_v50_0:Street>APT 2</common_v50_0:Street>
+                     <common_v50_0:City>ENGLEWOOD</common_v50_0:City>
+                     <common_v50_0:State>CO</common_v50_0:State>
+                     <common_v50_0:PostalCode>8011</common_v50_0:PostalCode>
+                     <common_v50_0:Country>AU</common_v50_0:Country>
+                  </common_v50_0:BillingAddress>
+               </common_v50_0:CreditCard>
+               <common_v50_0:ProviderReservationInfoRef Key="xIaV9B4R2BKAui1CAAAAAA=="/>
+            </common_v50_0:FormOfPayment>
+         </universal:UniversalRecord>
+      </universal:UniversalRecordRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

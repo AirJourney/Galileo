@@ -1,0 +1,81 @@
+HotelRetrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelRetrieveReq RetrieveProviderReservationDetails="true" AuthorizedBy="SUSIL" TargetBranch="TP_WAB_031" TraceId="PP_1J_001" ProviderCode="1J" ProviderLocatorCode="MEHOQZ" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </hot:HotelRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+HotelRetrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelRetrieveRsp TraceId="PP_1J_001" TransactionId="9DCF7C120A07643B096D7BC3137DCBFD" ResponseTime="365" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:HotelReservation Status="HK" BookingConfirmation="87304741" LocatorCode="0098SCGZ" CreateDate="2020-03-03T00:33:02.847+00:00" ModifiedDate="2020-03-03T00:33:03.015+00:00" ProviderReservationInfoRef="xs/MMC4R2BKAyYUKCAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="TuJJbrVu4hG1/9LlYIhwmw=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:NameOverride First="HARRY" Last="LOBO"/>
+            </common_v50_0:ReservationName>
+            <hotel:HotelProperty HotelChain="RC" HotelCode="DENRD" HotelLocation="DEN" Name="RESIDENCE INN CITY CN MARRIOTT">
+               <hotel:PropertyAddress>
+                  <hotel:Address>1725 CHAMPA ST</hotel:Address>
+                  <hotel:Address>DENVER CO US 80202</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:PhoneNumber Type="Hotel" Number="13032963444"/>
+               <common_v50_0:PhoneNumber Type="Fax" Number="13032963456"/>
+            </hotel:HotelProperty>
+            <hotel:HotelRateDetail RatePlanType="APND00" Base="USD3868.80" Total="USD4478.13">
+               <hotel:RoomRateDescription Name="Room">
+                  <hotel:Text>In Full  Non-refundable  Studio  1 Queen  Sofa</hotel:Text>
+                  <hotel:Text>Bed</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Cancellation">
+                  <hotel:Text>CANCEL PERMITTED UP TO 01 DAYS AFTER BOOKING. NON-REFUNDABLE RATE.</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Late Arrival Guarantee">
+                  <hotel:Text>DEPCCAXXXXXXXXXXXX0000EXP*****</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:RoomRateDescription Name="Rate">
+                  <hotel:Text>Advance Purchase Rate  15  Nights  Prepay</hotel:Text>
+               </hotel:RoomRateDescription>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-10" ExpireDate="2020-05-11" Base="USD152.15"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-11" ExpireDate="2020-05-16" Base="USD159.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-01" ExpireDate="2020-05-02" Base="USD159.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-02" ExpireDate="2020-05-03" Base="USD199.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-03" ExpireDate="2020-05-04" Base="USD702.05"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-04" ExpireDate="2020-05-05" Base="USD607.05"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-05" ExpireDate="2020-05-06" Base="USD578.55"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-06" ExpireDate="2020-05-07" Base="USD199.00"/>
+               <hotel:HotelRateByDate EffectiveDate="2020-05-07" ExpireDate="2020-05-10" Base="USD159.00"/>
+               <hotel:TaxDetails>
+                  <hotel:Tax Code="27" Term="Night" CollectionFreq="Compound">
+                     <hotel:Percentage>1.0</hotel:Percentage>
+                  </hotel:Tax>
+                  <hotel:Tax Code="15" Term="Night" CollectionFreq="Compound">
+                     <hotel:Percentage>4.0</hotel:Percentage>
+                  </hotel:Tax>
+                  <hotel:Tax Code="3" Term="Night" CollectionFreq="Compound">
+                     <hotel:Percentage>10.75</hotel:Percentage>
+                  </hotel:Tax>
+               </hotel:TaxDetails>
+            </hotel:HotelRateDetail>
+            <hotel:HotelStay>
+               <hotel:CheckinDate>2020-05-01</hotel:CheckinDate>
+               <hotel:CheckoutDate>2020-05-16</hotel:CheckoutDate>
+            </hotel:HotelStay>
+            <common_v50_0:Guarantee Type="Deposit" Key="PDz8y7xu4hGfaM/wYIhwmw==" Reusable="true">
+               <common_v50_0:CreditCard Type="AX" Number="***********0000" ExpDate="2020-09"/>
+            </common_v50_0:Guarantee>
+            <common_v50_0:BookingSource Type="IataNumber" Code="1J"/>
+            <hotel:GuestInformation NumberOfRooms="1">
+               <hotel:NumberOfAdults>2</hotel:NumberOfAdults>
+            </hotel:GuestInformation>
+            <common_v50_0:SellMessage>RATE PLAN REQUIRES ADVANCE PURCHASE $RC$ RATE IS BASED ON CONTINUOUS LENGTH OF STAY.                     EARLY DEPARTURE MAY RESULT IN A RATE CHANGE. $RC$ ARC/IATA NOT ON FILE WITH RESIDENCE. REFER TO G/HTL/RCQ/COMM. $RC$ GRQ-FULL STAY CHARGED TO YOUR CREDIT CARD RG1-EFF 01MAY20     159.00 USD RG2-EFF 02MAY20     199.00 USD  RG3-EFF 03MAY20     702.05 USD  RG4-EFF 04MAY20     607.05 USD  RG5-EFF 05MAY20     578.55 USD  RG6-EFF 06MAY20     199.00 USD  RG7-EFF 07MAY20     159.00 USD  RG8-EFF 10MAY20     152.15 USD  RG9-EFF 11MAY20     159.00 USD   $RC$</common_v50_0:SellMessage>
+            <hotel:HotelCommission>Y</hotel:HotelCommission>
+         </hotel:HotelReservation>
+      </hotel:HotelRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

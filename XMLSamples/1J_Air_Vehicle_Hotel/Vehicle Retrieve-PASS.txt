@@ -1,0 +1,37 @@
+Vehicle Retrieve-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <veh:VehicleRetrieveReq TargetBranch="TP_WAB_031" ProviderCode="1J" ProviderLocatorCode="MEHOQX" xmlns:veh="http://www.travelport.com/schema/vehicle_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+      </veh:VehicleRetrieveReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Vehicle Retrieve-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <vehicle:VehicleRetrieveRsp TransactionId="9DCEE8760A07643B096D7BC3622BF8E5" ResponseTime="405" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <vehicle:VehicleReservation SupplierCode="ZD" BookingConfirmation="00000000US0" LocatorCode="0098S6W7" Status="HK" CreateDate="2020-03-03T00:32:24.179+00:00" ModifiedDate="2020-03-03T00:32:24.214+00:00" ProviderReservationInfoRef="sQTWMC3R2BKAGy0FCAAAAA==" ProviderSegmentOrder="1">
+            <common_v50_0:BookingTravelerRef Key="2A5ezQhlRHeH8y/fwYDPhA=="/>
+            <common_v50_0:ReservationName>
+               <common_v50_0:NameOverride First="TEST" Last="TEST"/>
+            </common_v50_0:ReservationName>
+            <vehicle:VehicleDateLocation PickupDateTime="2020-05-01T10:00:00.000-06:00" PickupLocation="DEN" PickupLocationType="Terminal" PickupLocationNumber="01" ReturnDateTime="2020-05-16T10:00:00.000-06:00" ReturnLocation="DEN"/>
+            <vehicle:Vehicle VendorCode="ZD" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" VendorName="BUDGET" AcrissVehicleCode="CCAR">
+               <vehicle:VehicleRate RatePeriod="Monthly" UnlimitedMileage="true" RateCode="GP" RateGuaranteeType="Rate Quoted">
+                  <vehicle:SupplierRate RateForPeriod="USD600.00" BaseRate="USD600.00"/>
+                  <vehicle:VehicleRateDescription>
+                     <vehicle:Text>APPROX TOTAL 498.88 USD INCLUDES TAXES-FEES-SURCHARGES</vehicle:Text>
+                  </vehicle:VehicleRateDescription>
+                  <vehicle:HourlyLateCharge RateForPeriod="USD22.51" UnlimitedMileage="true"/>
+                  <vehicle:DailyLateCharge RateForPeriod="USD30.00" UnlimitedMileage="true"/>
+               </vehicle:VehicleRate>
+            </vehicle:Vehicle>
+            <common_v50_0:BookingSource Type="BookingSourceOverride" Code="1J"/>
+         </vehicle:VehicleReservation>
+      </vehicle:VehicleRetrieveRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

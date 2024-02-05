@@ -1,0 +1,25 @@
+Air Flight Information-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <air:FlightInformationReq TargetBranch="TP_WAB_003" xmlns:com="http://www.travelport.com/schema/common_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="uAPI"/>
+         <air:FlightInfoCriteria Key="1" Carrier="SQ" FlightNumber="531" Origin="AMD" Destination="SIN" DepartureDate="2020-03-14"/>
+      </air:FlightInformationReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Air Flight Information-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <air:FlightInformationRsp TransactionId="AC6F2BD60A07763F752A164F7CA7284A" ResponseTime="390" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <air:FlightInfo CriteriaKey="a0FlnEX0TkyhkUTMVtxoVA==" Carrier="SQ" FlightNumber="531" Origin="AMD" Destination="SIN" DepartureDate="2020-03-14">
+            <air:FlightInfoDetail Origin="AMD" Destination="SIN" ScheduledDepartureTime="2020-03-14T23:05:00.000+05:30" ScheduledArrivalTime="2020-03-15T07:15:00.000+08:00" TravelTime="340" ETicketability="Yes" Equipment="359" OriginTerminal="2" AutomatedCheckin="false">
+               <air:InFlightServices>Non-smoking</air:InFlightServices>
+            </air:FlightInfoDetail>
+         </air:FlightInfo>
+      </air:FlightInformationRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

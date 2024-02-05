@@ -1,0 +1,130 @@
+	<S:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+		<SOAP-ENV:Header/>
+		<S:Body>
+			<ns6:GdsEnterQueueReq ProviderCode="1G" ProviderLocatorCode="123456" PseudoCityCode="6PCC" TargetBranch="P2222222" TraceId="8125128c-108c-4053-b590-c2b5d3624b6b" xmlns:ns9="http://www.travelport.com/schema/cruise_v50_0" xmlns:ns8="http://www.travelport.com/schema/rail_v50_0" xmlns:ns7="http://www.travelport.com/schema/universal_v50_0" xmlns:ns6="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:ns5="http://www.travelport.com/schema/air_v50_0" xmlns:ns4="http://www.travelport.com/schema/passive_v50_0" xmlns:ns3="http://www.travelport.com/schema/hotel_v50_0" xmlns:ns2="http://www.travelport.com/schema/vehicle_v50_0" xmlns="http://www.travelport.com/schema/common_v50_0">
+				<BillingPointOfSaleInfo OriginApplication="uAPI"/>
+				<QueueSelector Queue="22"/>
+			</ns6:GdsEnterQueueReq>
+		</S:Body>
+	</S:Envelope>
+
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+			<SOAP:Body>
+				<gdsQueue:GdsEnterQueueRsp xmlns:gdsQueue="http://www.travelport.com/schema/gdsQueue_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" TraceId="8125128c-108c-4053-b590-c2b5d3624b6b" TransactionId="AE98753A0A0759BB82AB919FCE593013" ResponseTime="1476" QueueSessionToken="AE987AD20A0759BB82AB919F19D497F2">
+					<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="6211" Type="Info">
+						<![CDATA[PNR in Queue Mode: 1G-123456]]>
+					</common_v50_0:ResponseMessage>
+					<common_v50_0:ResponseMessage xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" Code="0" Type="Warning">
+						<![CDATA[OFF QUEUE]]>
+					</common_v50_0:ResponseMessage>
+					<universal:UniversalRecord xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle_37_1="http://www.travelport.com/schema/vehicle_v37_1" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" LocatorCode="2LZSPJ" Version="25" Status="Active">
+						<common_v50_0:BookingTraveler Key="mcKqF6Xc1BKAKxvDcGAAAA==" TravelerType="ADT" DOB="1983-01-01" Gender="M">
+							<common_v50_0:BookingTravelerName Prefix="MR" First="SHOUBAO" Last="DOE"/>
+							<common_v50_0:PhoneNumber Key="mcKqF6Xc1BKALxvDcGAAAA==" Type="None" Location="BJS" CountryCode="86" Number="13720200202">
+								<common_v50_0:ProviderReservationInfoRef Key="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+							</common_v50_0:PhoneNumber>
+							<common_v50_0:Email Key="mcKqF6Xc1BKAPxvDcGAAAA==" EmailID="LFGJDSTG@126.COM">
+								<common_v50_0:ProviderReservationInfoRef Key="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+							</common_v50_0:Email>
+							<common_v50_0:SSR Key="mcKqF6Xc1BKAMxvDcGAAAA==" Status="HK" Type="****" FreeText="P/CN/*********/CN/*******/M/*******/DOE/SHOUBAO -1DOE/SHOUBAOMR" Carrier="NH" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+							<common_v50_0:SSR Key="qFMkF6fB0BKANJwakGAAAA==" SegmentRef="MoOeF6BAAA/BN1vLkGAAAA==" Status="HK" Type="****" FreeText="2057410148787C1" Carrier="NH" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+							<common_v50_0:SSR Key="qFMkF6fB0BKA+JwakGAAAA==" SegmentRef="MoOeF6BAAA/BP1vLkGAAAA==" Status="HK" Type="****" FreeText="2057410148787C2" Carrier="NH" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+						</common_v50_0:BookingTraveler>
+						<common_v50_0:ActionStatus Key="mcKqF6Xc1BKAQxvDcGAAAA==" Type="ACTIVE" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA==" ProviderCode="1G">
+							<common_v50_0:Remark>ATS 21NOV1225Z WS AG</common_v50_0:Remark>
+						</common_v50_0:ActionStatus>
+						<universal:ProviderReservationInfo Key="mcKqF6Xc1BKA/TTGcGAAAA==" ProviderCode="1G" LocatorCode="123456" CreateDate="2019-11-21T12:05:26.064+00:00" ModifiedDate="2020-03-06T06:46:33.337+00:00" HostCreateDate="2019-11-21" InQueueMode="true" OwningPCC="6PCC"/>
+						<air:AirReservation xmlns:air="http://www.travelport.com/schema/air_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:rail="http://www.travelport.com/schema/rail_v50_0" LocatorCode="81D0W4" CreateDate="2019-11-21T12:05:25.342+00:00" ModifiedDate="2020-03-06T06:46:33.336+00:00">
+							<common_v50_0:SupplierLocator SupplierCode="NH" SupplierLocatorCode="O48NB6" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA==" CreateDateTime="2019-11-21T12:05:00.000+00:00"/>
+							<air:DocumentInfo>
+								<air:TicketInfo Number="2057410148787" TicketIssueDate="2019-11-21T18:00:00.000+08:00" IATANumber="02468642" TicketingAgentSignOn="Z8DN9GWS" CountryCode="US" Status="N" BookingTravelerRef="mcKqF6Xc1BKAKxvDcGAAAA==" AirPricingInfoRef="mcKqF6Xc1BKAHxvDcGAAAA==">
+									<common_v50_0:Name Prefix="MR" First="SHOUBAO" Last="DOE"/>
+								</air:TicketInfo>
+							</air:DocumentInfo>
+							<common_v50_0:BookingTravelerRef Key="mcKqF6Xc1BKAKxvDcGAAAA=="/>
+							<common_v50_0:ProviderReservationInfoRef Key="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+							<air:AirSegment Key="MoOeF6BAAA/BN1vLkGAAAA==" Group="0" Carrier="NH" CabinClass="Economy" FlightNumber="952" ProviderCode="1G" Origin="HGH" Destination="KIX" DepartureTime="2020-10-03T16:30:00.000+08:00" ArrivalTime="2020-10-03T20:05:00.000+09:00" TravelTime="155" Distance="926" ClassOfService="K" ETicketability="Yes" Status="TK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false">
+								<air:FlightDetails Key="0HsSaCBAAA/B2f3xgCAAAA==" Origin="HGH" Destination="KIX" DepartureTime="2020-10-03T16:30:00.000+08:00" ArrivalTime="2020-10-03T20:00:00.000+09:00" FlightTime="155" TravelTime="155" Equipment="320" DestinationTerminal="1" AutomatedCheckin="false"/>
+								<common_v50_0:SellMessage>ARRIVES KIX TERMINAL 1</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>ADD ADVANCE PASSENGER INFORMATION SSRS DOCA/DOCO/DOCS</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>PERSONAL DATA WHICH IS PROVIDED TO US IN CONNECTION</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>WITH YOUR TRAVEL MAY BE PASSED TO GOVERNMENT AUTHORITIES</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>FOR BORDER CONTROL AND AVIATION SECURITY PURPOSES</common_v50_0:SellMessage>
+							</air:AirSegment>
+							<air:AirSegment Key="MoOeF6BAAA/BP1vLkGAAAA==" Group="1" Carrier="NH" CabinClass="Economy" FlightNumber="951" ProviderCode="1G" Origin="KIX" Destination="HGH" DepartureTime="2020-10-11T13:55:00.000+09:00" ArrivalTime="2020-10-11T15:35:00.000+08:00" TravelTime="160" Distance="926" ClassOfService="K" ETicketability="Yes" Status="HK" ChangeOfPlane="false" GuaranteedPaymentCarrier="No" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA==" TravelOrder="2" ProviderSegmentOrder="2" OptionalServicesIndicator="false">
+								<air:FlightDetails Key="mcKqF6Xc1BKAiINGcGAAAA==" Origin="KIX" Destination="HGH" DepartureTime="2020-10-11T13:55:00.000+09:00" ArrivalTime="2020-10-11T15:35:00.000+08:00" FlightTime="160" TravelTime="160" Equipment="320" OriginTerminal="1" AutomatedCheckin="false"/>
+								<common_v50_0:SellMessage>DEPARTS KIX TERMINAL 1</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>ADD ADVANCE PASSENGER INFORMATION SSRS DOCA/DOCO/DOCS</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>PERSONAL DATA WHICH IS PROVIDED TO US IN CONNECTION</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>WITH YOUR TRAVEL MAY BE PASSED TO GOVERNMENT AUTHORITIES</common_v50_0:SellMessage>
+								<common_v50_0:SellMessage>FOR BORDER CONTROL AND AVIATION SECURITY PURPOSES</common_v50_0:SellMessage>
+							</air:AirSegment>
+							<air:AirPricingInfo Key="mcKqF6Xc1BKAHxvDcGAAAA==" TotalPrice="USD348.10" BasePrice="CNY1900" ApproximateTotalPrice="USD348.10" ApproximateBasePrice="USD270.00" EquivalentBasePrice="USD270.00" Taxes="USD78.10" TrueLastDateToTicket="2019-11-22T23:59:00.000+08:00" PricingMethod="Guaranteed" Exchangeable="true" IncludesVAT="false" ETicketability="Yes" PlatingCarrier="NH" ProviderCode="1G" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA==" AirPricingInfoGroup="1" PricingType="StoredFare" FareCalculationInd="G">
+								<air:FareInfo Key="mcKqF6Xc1BKAhKNGcGAAAA==" FareBasis="KLNNB1" PassengerTypeCode="ADT" Origin="HGH" Destination="KIX" EffectiveDate="2019-11-21T00:00:00.000+08:00" Amount="NUC132.92" NotValidBefore="2020-10-03" NotValidAfter="2020-10-03" PseudoCityCode="8PCC">
+									<common_v50_0:Endorsement Value="FLT/CNX/CHG RESTRICTED"/>
+									<common_v50_0:Endorsement Value="CHECK FARE RULE"/>
+									<air:BaggageAllowance>
+										<air:NumberOfPieces>2</air:NumberOfPieces>
+									</air:BaggageAllowance>
+								</air:FareInfo>
+								<air:FareInfo Key="mcKqF6Xc1BKAiKNGcGAAAA==" FareBasis="KLNNB1" PassengerTypeCode="ADT" Origin="KIX" Destination="HGH" EffectiveDate="2019-11-21T00:00:00.000+08:00" Amount="NUC132.92" NotValidBefore="2020-10-11" NotValidAfter="2020-10-11" PseudoCityCode="8PCC">
+									<common_v50_0:Endorsement Value="FLT/CNX/CHG RESTRICTED"/>
+									<common_v50_0:Endorsement Value="CHECK FARE RULE"/>
+									<air:BaggageAllowance>
+										<air:NumberOfPieces>2</air:NumberOfPieces>
+									</air:BaggageAllowance>
+								</air:FareInfo>
+								<air:BookingInfo BookingCode="K" CabinClass="Economy" FareInfoRef="mcKqF6Xc1BKAhKNGcGAAAA==" SegmentRef="MoOeF6BAAA/BN1vLkGAAAA=="/>
+								<air:BookingInfo BookingCode="K" CabinClass="Economy" FareInfoRef="mcKqF6Xc1BKAiKNGcGAAAA==" SegmentRef="MoOeF6BAAA/BP1vLkGAAAA=="/>
+								<air:TaxInfo Category="CN" Amount="USD12.80" Key="mcKqF6Xc1BKAJUTGcGAAAA=="/>
+								<air:TaxInfo Category="OI" Amount="USD2.90" Key="mcKqF6Xc1BKAKUTGcGAAAA=="/>
+								<air:TaxInfo Category="SW" Amount="USD25.60" Key="mcKqF6Xc1BKALUTGcGAAAA=="/>
+								<air:TaxInfo Category="TK" Amount="USD9.20" Key="mcKqF6Xc1BKAMUTGcGAAAA=="/>
+								<air:TaxInfo Category="YQ" Amount="USD27.60" Key="mcKqF6Xc1BKANUTGcGAAAA=="/>
+								<air:FareCalc>HGH NH OSA 132.92KLNNB1 NH HGH 132.93KLNNB1 NUC265.85END ROE7.1468</air:FareCalc>
+								<air:PassengerType Code="ADT" BookingTravelerRef="mcKqF6Xc1BKAKxvDcGAAAA==">
+									<air:FareGuaranteeInfo GuaranteeType="Invalid"/>
+								</air:PassengerType>
+								<common_v50_0:BookingTravelerRef Key="mcKqF6Xc1BKAKxvDcGAAAA=="/>
+								<air:ChangePenalty PenaltyApplies="Anytime">
+									<air:Percentage>100.00</air:Percentage>
+								</air:ChangePenalty>
+								<air:CancelPenalty PenaltyApplies="Anytime">
+									<air:Percentage>100.00</air:Percentage>
+								</air:CancelPenalty>
+								<air:TicketingModifiersRef Key="mcKqF6Xc1BKAIUTGcGAAAA=="/>
+							</air:AirPricingInfo>
+							<air:TicketingModifiers PlatingCarrier="NH" Key="mcKqF6Xc1BKAIUTGcGAAAA==">
+								<air:DocumentSelect IssueElectronicTicket="true"/>
+							</air:TicketingModifiers>
+						</air:AirReservation>
+						<common_v50_0:GeneralRemark Key="4nKnF6sB0BKAJaMzcGAAAA==" Category="Vendor" TypeInGds="Vendor" SupplierType="Air" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA==" SupplierCode="1A" Direction="Incoming" CreateDate="2019-11-21T12:05:00.000+00:00">
+							<common_v50_0:RemarkData>ADTK1GTONH BY 22NOV 0705 ATL TIME ZONE OTHERWISE WILL BE XLD</common_v50_0:RemarkData>
+						</common_v50_0:GeneralRemark>
+						<common_v50_0:AgencyInfo>
+							<common_v50_0:AgentAction ActionType="Created" AgentCode="uAPI7813815373-875186ad" BranchCode="P2222222" AgencyCode="S4TRAVEL" EventTime="2019-11-21T12:05:14.994+00:00"/>
+							<common_v50_0:AgentAction ActionType="Modified" AgentCode="uAPI7813815373-875186ad" BranchCode="P2222222" AgencyCode="S4TRAVEL" EventTime="2020-03-06T06:46:33.337+00:00"/>
+							<common_v50_0:AgentAction ActionType="Ticketed" AgentCode="uAPI7813815373-875186ad" BranchCode="P2323232" AgencyCode="S4TRAVEL" EventTime="2019-11-21T12:25:10.043+00:00"/>
+						</common_v50_0:AgencyInfo>
+						<common_v50_0:AgencyContactInfo>
+							<common_v50_0:PhoneNumber Key="mcKqF6Xc1BKAPUTGcGAAAA==" Type="Agency" Location="HKG" CountryCode="852" Number="1234569876" Text="Hong Kong Borabora Trading Limited">
+								<common_v50_0:ProviderReservationInfoRef Key="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+							</common_v50_0:PhoneNumber>
+						</common_v50_0:AgencyContactInfo>
+						<common_v50_0:SSR Key="mcKqF6Xc1BKAEKNGcGAAAA==" Status="HK" Type="****" FreeText="/13720205669-1DOE/SHOUBAOMR" Carrier="NH" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+						<common_v50_0:SSR Key="mcKqF6Xc1BKAFKNGcGAAAA==" Status="HK" Type="****" FreeText="/LFGJDSTG//126.COM-1DOE/SHOUBAOMR" Carrier="NH" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+						<common_v50_0:InvoiceData Key="0HsSaCBAAA/B0f3xgCAAAA==" InvoiceNumber="000016583" ProviderReservationInfoRef="mcKqF6Xc1BKA/TTGcGAAAA==">
+							<common_v50_0:BookingTravelerInformation BookingTravelerRef="0HsSaCBAAA/B1f3xgCAAAA==">
+								<common_v50_0:Name First="SHOUBAOMR" Last="DOE"/>
+							</common_v50_0:BookingTravelerInformation>
+						</common_v50_0:InvoiceData>
+						<common_v50_0:FormOfPayment Key="EYwlF6mB0BKAU8ZSiGAAAA==" Type="Credit" Reusable="true" ProfileKey="YkINaBPlQ9CvrC3Nio3lxg==">
+							<common_v50_0:CreditCard Type="**" Number="***********1008" ExpDate="*******"/>
+							<common_v50_0:ProviderReservationInfoRef Key="mcKqF6Xc1BKA/TTGcGAAAA=="/>
+						</common_v50_0:FormOfPayment>
+					</universal:UniversalRecord>
+				</gdsQueue:GdsEnterQueueRsp>
+			</SOAP:Body>
+		</SOAP:Envelope>|
+		

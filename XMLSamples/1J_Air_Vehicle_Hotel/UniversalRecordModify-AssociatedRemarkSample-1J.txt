@@ -1,0 +1,179 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<universal:UniversalRecordModifyReq AuthorizedBy="TRAVELPORT" TargetBranch="P7087809" TraceId="trace" Version="3" ReturnRecord="true" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:passive="http://www.travelport.com/schema/passive_v50_0" xmlns:common="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+			<common:BillingPointOfSaleInfo OriginApplication="uAPI"/>			
+			<universal:RecordIdentifier ProviderCode="1J" ProviderLocatorCode="MQQIF5" UniversalLocatorCode="12BXO3"/>
+			<universal:UniversalModifyCmd Key="key1">
+				<universal:AirAdd ReservationLocatorCode="12BXO4">
+					<air:AssociatedRemark SegmentRef="pEOpwh/pWDKAKRvICAAAAA==">
+						<common:RemarkData>ASSOCIATED AIR REMARK</common:RemarkData>
+					</air:AssociatedRemark>
+				</universal:AirAdd>
+			</universal:UniversalModifyCmd>
+			<universal:UniversalModifyCmd Key="key2">
+				<universal:HotelAdd ReservationLocatorCode="00MG5QLY">
+					<hotel:AssociatedRemark>
+						<common:RemarkData>ASSOCIATED HOTEL REMARK</common:RemarkData>
+					</hotel:AssociatedRemark>
+				</universal:HotelAdd>
+			</universal:UniversalModifyCmd>
+			<universal:UniversalModifyCmd Key="key3">
+				<universal:VehicleAdd ReservationLocatorCode="00MG5RVG">
+					<vehicle:AssociatedRemark>
+						<common:RemarkData>ASSOCIATED VEHICLE REMARK</common:RemarkData>
+					</vehicle:AssociatedRemark>
+				</universal:VehicleAdd>
+			</universal:UniversalModifyCmd>
+			
+		</universal:UniversalRecordModifyReq>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <universal:UniversalRecordModifyRsp TraceId="trace" TransactionId="4276FDEB0A0D6A7F8C6CFBB00C0B1F4E" ResponseTime="721" xmlns:universal="http://www.travelport.com/schema/universal_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0" xmlns:vehicle="http://www.travelport.com/schema/vehicle_v50_0" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:air="http://www.travelport.com/schema/air_v50_0">
+         <common_v50_0:ResponseMessage Code="0" Type="Warning" ProviderCode="1J"/>
+         <common_v50_0:ResponseMessage Code="0" Type="Info">Universal record successfully modified.</common_v50_0:ResponseMessage>
+         <universal:UniversalRecord LocatorCode="12BXO3" Version="4" Status="Active">
+            <common_v50_0:BookingTraveler Key="0651vfWcSXaEAJlEN4Q5VQ==" NameNumber="1.1" TravelerType="ADT" Age="25" DOB="1995-11-12" Gender="M">
+               <common_v50_0:BookingTravelerName First="Andrew" Last="Travelport"/>
+               <common_v50_0:PhoneNumber Key="eb1oOkAqWDKAjZ3bFAAAAA==" CountryCode="1" Number="3033033030">
+                  <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:PhoneNumber Key="eb1oOkAqWDKAiejcFAAAAA==" Type="Home" Number="303 123-1234">
+                  <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:PhoneNumber Key="al+DCl/pWDKAhhjBAAAAAA==" Number="98491849812349">
+                  <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+               </common_v50_0:PhoneNumber>
+               <common_v50_0:Email Key="eb1oOkAqWDKAnZ3bFAAAAA==" EmailID="test@test.com">
+                  <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+               </common_v50_0:Email>
+               <common_v50_0:Email Key="al+DCl/pWDKAihjBAAAAAA==" EmailID="travelport@test.com"/>
+               <common_v50_0:NameRemark Key="eb1oOkAqWDKAwZ3bFAAAAA==">
+                  <common_v50_0:RemarkData>12NOV95</common_v50_0:RemarkData>
+                  <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+               </common_v50_0:NameRemark>
+               <common_v50_0:Address Key="eb1oOkAqWDKAkejcFAAAAA==">
+                  <common_v50_0:AddressName>test test</common_v50_0:AddressName>
+                  <common_v50_0:Street>123 Main St</common_v50_0:Street>
+                  <common_v50_0:City>Denver</common_v50_0:City>
+                  <common_v50_0:State>CO</common_v50_0:State>
+                  <common_v50_0:PostalCode>80123</common_v50_0:PostalCode>
+                  <common_v50_0:Country>US</common_v50_0:Country>
+                  <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+               </common_v50_0:Address>
+            </common_v50_0:BookingTraveler>
+            <common_v50_0:ActionStatus Key="eb1oOkAqWDKApZ3bFAAAAA==" Type="TTL" TicketDate="2021-05-08T23:59:00.000-06:00" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==" AirportCode="JFK" ProviderCode="1J" SupplierCode="9F"/>
+            <universal:ProviderReservationInfo Key="eb1oOkAqWDKAvZ3bFAAAAA==" ProviderCode="1J" LocatorCode="MQQIF5" CreateDate="2021-05-06T15:32:56.576+00:00" ModifiedDate="2021-05-06T16:16:06.600+00:00" HostCreateDate="2021-05-06" HostCreateTime="15:32:00.000+00:00" OwningPCC="5WM" AgentOverride="JK"/>
+            <air:AirReservation LocatorCode="12BXO4" CreateDate="2021-05-06T15:32:56.522+00:00" ModifiedDate="2021-05-06T16:16:06.600+00:00">
+               <common_v50_0:SupplierLocator SupplierCode="9F" SupplierLocatorCode="Z4YRVN" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==">
+                  <common_v50_0:SegmentRef Key="pEOpwh/pWDKAKRvICAAAAA=="/>
+               </common_v50_0:SupplierLocator>
+               <common_v50_0:BookingTravelerRef Key="0651vfWcSXaEAJlEN4Q5VQ=="/>
+               <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+               <air:AirSegment Key="pEOpwh/pWDKAKRvICAAAAA==" Group="0" Carrier="9F" CabinClass="Economy" FlightNumber="9040" ProviderCode="1J" Origin="QQS" Destination="XPG" DepartureTime="2021-06-25T16:22:00.000+01:00" ArrivalTime="2021-06-25T19:47:00.000+02:00" TravelTime="145" ClassOfService="V" ETicketability="Yes" Equipment="TRS" Status="HK" ChangeOfPlane="false" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==" TravelOrder="1" ProviderSegmentOrder="1" OptionalServicesIndicator="false" AvailabilitySource="A" ParticipantLevel="Secure Sell">
+                  <air:FlightDetails Key="pEOpwh/pWDKALRvICAAAAA==" Origin="QQS" Destination="XPG" DepartureTime="2021-06-25T16:22:00.000+01:00" ArrivalTime="2021-06-25T19:47:00.000+02:00" FlightTime="145" TravelTime="145" Distance="218" Equipment="TRS" AutomatedCheckin="false"/>
+               </air:AirSegment>
+               <air:AssociatedRemark Key="al+DCl/pWDKAhElBAAAAAA==" ProviderCode="1J" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==" ElStat="A" SegmentRef="pEOpwh/pWDKAKRvICAAAAA==">
+                  <common_v50_0:RemarkData>ASSOCIATED AIR REMARK</common_v50_0:RemarkData>
+               </air:AssociatedRemark>
+            </air:AirReservation>
+            <hotel:HotelReservation Status="HK" BookingConfirmation="83891870" LocatorCode="00MG5QLY" CreateDate="2021-05-06T16:06:56.245+00:00" ModifiedDate="2021-05-06T16:16:06.600+00:00" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==" TravelOrder="2" ProviderSegmentOrder="2">
+               <common_v50_0:BookingTravelerRef Key="0651vfWcSXaEAJlEN4Q5VQ=="/>
+               <common_v50_0:ReservationName>
+                  <common_v50_0:BookingTravelerRef Key="0651vfWcSXaEAJlEN4Q5VQ=="/>
+               </common_v50_0:ReservationName>
+               <hotel:HotelProperty HotelChain="HX" HotelCode="65851" HotelLocation="ORD" Name="HAMPTON STE ROSEMONT CHICAGO O">
+                  <hotel:PropertyAddress>
+                     <hotel:Address>9480 W HIGGINS ROAD</hotel:Address>
+                     <hotel:Address>ROSEMONT IL 60018</hotel:Address>
+                  </hotel:PropertyAddress>
+                  <common_v50_0:PhoneNumber Type="Hotel" Number="1-847-692-3000"/>
+                  <common_v50_0:PhoneNumber Type="Fax" Number="1-847-692-3001"/>
+               </hotel:HotelProperty>
+               <hotel:HotelRateDetail RatePlanType="A07LV0" Base="USD169.00" Total="USD192.66">
+                  <hotel:RoomRateDescription Name="Tax Information">
+                     <hotel:Text>Hotel Total Tax is not returned by the Provider</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:RoomRateDescription Name="Late Arrival Guarantee">
+                     <hotel:Text>CCVIXXXXXXXXXXXX1111EXP*****</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:RoomRateDescription Name="Cancellation">
+                     <hotel:Text>24 HR CANCEL REQUIRED</hotel:Text>
+                  </hotel:RoomRateDescription>
+                  <hotel:HotelRateByDate EffectiveDate="2021-07-25" ExpireDate="2021-07-26" Base="USD169.00"/>
+                  <hotel:TaxDetails>
+                     <hotel:Tax Code="27" Term="Stay" CollectionFreq="Independent">
+                        <hotel:Amount>USD23.66</hotel:Amount>
+                     </hotel:Tax>
+                  </hotel:TaxDetails>
+               </hotel:HotelRateDetail>
+               <hotel:HotelStay>
+                  <hotel:CheckinDate>2021-07-25</hotel:CheckinDate>
+                  <hotel:CheckoutDate>2021-07-26</hotel:CheckoutDate>
+               </hotel:HotelStay>
+               <common_v50_0:Guarantee Type="Guarantee" Key="+sUqOkBqWDKAxwHZDAAAAA==" Reusable="true">
+                  <common_v50_0:CreditCard Type="VI" Number="************1111" ExpDate="2025-03">
+                     <common_v50_0:BillingAddress Key="+sUqOkBqWDKAywHZDAAAAA==">
+                        <common_v50_0:AddressName>test test</common_v50_0:AddressName>
+                        <common_v50_0:Street>123 Main St</common_v50_0:Street>
+                        <common_v50_0:City>Denver</common_v50_0:City>
+                        <common_v50_0:State>CO</common_v50_0:State>
+                        <common_v50_0:PostalCode>80123</common_v50_0:PostalCode>
+                        <common_v50_0:Country>US</common_v50_0:Country>
+                     </common_v50_0:BillingAddress>
+                  </common_v50_0:CreditCard>
+               </common_v50_0:Guarantee>
+               <common_v50_0:BookingSource Type="IataNumber" Code="1J"/>
+               <hotel:GuestInformation NumberOfRooms="1">
+                  <hotel:NumberOfAdults>1</hotel:NumberOfAdults>
+               </hotel:GuestInformation>
+               <hotel:AssociatedRemark Key="al+DCl/pWDKAiElBAAAAAA==" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==" ElStat="A">
+                  <common_v50_0:RemarkData>ASSOCIATED HOTEL REMARK</common_v50_0:RemarkData>
+               </hotel:AssociatedRemark>
+               <common_v50_0:SellMessage>GRQ-GUARANTEED BY CREDIT CARD TTL-192.66 USD  IATA NUMBER INVALID  100PCT HAMPTON GUARANTEE $HX$</common_v50_0:SellMessage>
+            </hotel:HotelReservation>
+            <vehicle:VehicleReservation SupplierCode="ZI" BookingConfirmation="14622599US5" LocatorCode="00MG5RVG" Status="HK" CreateDate="2021-05-06T16:14:01.898+00:00" ModifiedDate="2021-05-06T16:16:06.600+00:00" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==" TravelOrder="3" ProviderSegmentOrder="3">
+               <common_v50_0:BookingTravelerRef Key="0651vfWcSXaEAJlEN4Q5VQ=="/>
+               <common_v50_0:ReservationName>
+                  <common_v50_0:BookingTravelerRef Key="0651vfWcSXaEAJlEN4Q5VQ=="/>
+               </common_v50_0:ReservationName>
+               <vehicle:VehicleDateLocation PickupDateTime="2021-07-26T10:00:00.000-05:00" PickupLocation="ORD" PickupLocationType="Terminal" PickupLocationNumber="01" ReturnDateTime="2021-07-27T23:59:00.000-05:00" ReturnLocation="ORD"/>
+               <vehicle:Vehicle VendorCode="ZI" AirConditioning="true" TransmissionType="Automatic" VehicleClass="Compact" Category="Car" DoorCount="TwoToFourDoors" VendorName="AVIS" AcrissVehicleCode="CCAR">
+                  <vehicle:VehicleRate RatePeriod="Daily" UnlimitedMileage="true" RateCode="IJ" RateGuaranteeType="Rate Quoted">
+                     <vehicle:SupplierRate RateForPeriod="USD28.00" BaseRate="USD28.00"/>
+                     <vehicle:VehicleRateDescription>
+                        <vehicle:Text>APPROX TOTAL 101.70 USD INCLUDES TAXES-FEES-SURCHARGES</vehicle:Text>
+                     </vehicle:VehicleRateDescription>
+                     <vehicle:HourlyLateCharge RateForPeriod="USD21.01" UnlimitedMileage="true"/>
+                     <vehicle:DailyLateCharge RateForPeriod="USD28.00" UnlimitedMileage="true"/>
+                  </vehicle:VehicleRate>
+               </vehicle:Vehicle>
+               <common_v50_0:Guarantee Type="Guarantee" Key="al+DCl/pWDKArhjBAAAAAA==" Reusable="false">
+                  <common_v50_0:CreditCard Type="CA" Number="************0000" ExpDate="2023-06"/>
+               </common_v50_0:Guarantee>
+               <vehicle:AssociatedRemark Key="al+DCl/pWDKAjElBAAAAAA==" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==" ElStat="A">
+                  <common_v50_0:RemarkData>ASSOCIATED VEHICLE REMARK</common_v50_0:RemarkData>
+               </vehicle:AssociatedRemark>
+               <common_v50_0:BookingSource Type="BookingSourceOverride" Code="1J"/>
+            </vehicle:VehicleReservation>
+            <common_v50_0:GeneralRemark Key="+sUqOkBqWDKApwHZDAAAAA==" Category="Advisory" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA==">
+               <common_v50_0:RemarkData>GRQ-GUARANTEED BY CREDIT CARD TTL-192.66 USD  IATA NUMBER INVALID  100PCT HAMPTON GUARANTEE $HX$</common_v50_0:RemarkData>
+            </common_v50_0:GeneralRemark>
+            <common_v50_0:AgencyInfo>
+               <common_v50_0:AgentAction ActionType="Created" AgentCode="uAPI7182887984-406ac806" BranchCode="P7087809" AgencyCode="S7087667" EventTime="2021-05-06T15:32:55.481+00:00" AgentOverride="JK"/>
+               <common_v50_0:AgentAction ActionType="Modified" AgentCode="uAPI7182887984-406ac806" BranchCode="P7087809" AgencyCode="S7087667" EventTime="2021-05-06T16:16:06.600+00:00"/>
+            </common_v50_0:AgencyInfo>
+            <common_v50_0:SSR Key="eb1oOkAqWDKAnejcFAAAAA==" Type="ADTK" FreeText="1PTO9F BY 1532 /13MAY OTHERWISE WILL BE XLD" Carrier="1J" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+            <common_v50_0:SSR Key="eb1oOkAqWDKAoejcFAAAAA==" Status="HK" Type="NSST" FreeText="RS NA-  001.01" Carrier="9F" ProviderReservationInfoRef="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+            <common_v50_0:FormOfPayment Key="eb1oOkAqWDKAoZ3bFAAAAA==" Type="Credit" Reusable="false" ProfileKey="NOhrbKbGRjyU8PDTNAqJiA==">
+               <common_v50_0:CreditCard Type="VI" Number="************1111" ExpDate="2022-10"/>
+               <common_v50_0:ProviderReservationInfoRef Key="eb1oOkAqWDKAvZ3bFAAAAA=="/>
+            </common_v50_0:FormOfPayment>
+         </universal:UniversalRecord>
+      </universal:UniversalRecordModifyRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

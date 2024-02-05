@@ -1,0 +1,65 @@
+Hotel Search-Request
+******************************************************************** 
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <hot:HotelSearchAvailabilityReq AuthorizedBy="SUsil" TargetBranch="TP_1V_SOA" TraceId="PP_1V_0329" xmlns:hot="http://www.travelport.com/schema/hotel_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+         <com:BillingPointOfSaleInfo OriginApplication="UAPI"/>
+         <hot:HotelSearchLocation>
+            <hot:HotelLocation Location="BOM"/>
+         </hot:HotelSearchLocation>
+         <hot:HotelSearchModifiers NumberOfAdults="2" NumberOfRooms="1" AvailableHotelsOnly="true" ReturnAmenities="false">
+           <hot:PermittedChains>
+               <hot:HotelChain Code="LC"/>
+            </hot:PermittedChains>
+
+            
+            <com:PermittedProviders>
+               <com:Provider Code="1V"/>
+            </com:PermittedProviders>
+         </hot:HotelSearchModifiers>
+         <hot:HotelStay>
+            <hot:CheckinDate>2020-04-16</hot:CheckinDate>
+            <hot:CheckoutDate>2020-04-19</hot:CheckoutDate>
+         </hot:HotelStay>
+      </hot:HotelSearchAvailabilityReq>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+Hotel Search-Response
+******************************************************************** 
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP:Body>
+      <hotel:HotelSearchAvailabilityRsp TraceId="PP_1V_0329" TransactionId="9DD3BCD60A07643CAB0E0A7CCAE89B8C" ResponseTime="175" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0" xmlns:common_v50_0="http://www.travelport.com/schema/common_v50_0">
+         <hotel:ReferencePoint>CHHATRAPATI SHIVAJI</hotel:ReferencePoint>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1V" VendorCode="LC" VendorLocationID="14645" Key="VbtNMC8Q2BKADAGICAAAAA=="/>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="14645" HotelLocation="BOM" Name="ITC GRAND CENTRAL MUMBAI" VendorLocationKey="VbtNMC8Q2BKADAGICAAAAA==" HotelTransportation="26" ReserveRequirement="Other" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>DR BABASAHEB AMBEDKA</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:CoordinateLocation latitude="19.0011" longitude="72.8368"/>
+               <common_v50_0:Distance Units="MI" Value="6" Direction="S"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>0</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="INR13050.00" MaximumAmount="INR20500.00"/>
+         </hotel:HotelSearchResult>
+         <hotel:HotelSearchResult>
+            <common_v50_0:VendorLocation ProviderCode="1V" VendorCode="LC" VendorLocationID="33788" Key="VbtNMC8Q2BKAEAGICAAAAA=="/>
+            <hotel:HotelProperty HotelChain="LC" HotelCode="33788" HotelLocation="BOM" Name="ITC MARATHA MUMBAI" VendorLocationKey="VbtNMC8Q2BKAEAGICAAAAA==" HotelTransportation="9" ReserveRequirement="Guarantee" ParticipationLevel="2" Availability="Available">
+               <hotel:PropertyAddress>
+                  <hotel:Address>SAHAR AIRPORT ROAD N</hotel:Address>
+               </hotel:PropertyAddress>
+               <common_v50_0:CoordinateLocation latitude="19.115" longitude="72.8823"/>
+               <common_v50_0:Distance Units="MI" Value="2" Direction="NE"/>
+               <hotel:HotelRating RatingProvider="AAA">
+                  <hotel:Rating>0</hotel:Rating>
+               </hotel:HotelRating>
+            </hotel:HotelProperty>
+            <hotel:RateInfo MinimumAmount="INR11050.00" MaximumAmount="INR43000.00"/>
+         </hotel:HotelSearchResult>
+      </hotel:HotelSearchAvailabilityRsp>
+   </SOAP:Body>
+</SOAP:Envelope>

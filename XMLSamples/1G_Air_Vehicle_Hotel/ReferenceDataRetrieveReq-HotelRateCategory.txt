@@ -1,0 +1,258 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<HotelDetailsReq xmlns="http://www.travelport.com/schema/hotel_v50_0" xmlns:c="http://www.travelport.com/schema/common_v50_0" AuthorizedBy="Travelport" TargetBranch="TargetBranch">
+			<c:BillingPointOfSaleInfo OriginApplication="uAPI"/>
+			<HotelProperty HotelCode="70038" HotelChain="WV"/>
+			<HotelDetailsModifiers NumberOfAdults="2" RateRuleDetail="RatePlansOnly">
+				<c:PermittedProviders>
+					<c:Provider Code="1G"/>
+				</c:PermittedProviders>
+				<HotelStay>
+					<CheckinDate>2021-05-01</CheckinDate>
+					<CheckoutDate>2021-05-02</CheckoutDate>
+				</HotelStay>
+			</HotelDetailsModifiers>
+		</HotelDetailsReq>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+
+RESPONSE -----------------------------------------
+
+
+<hotel:HotelDetailsRsp TransactionId="A137B53E0A0E7D0413E4ED94F4C5D11B" ResponseTime="295" xmlns:hotel="http://www.travelport.com/schema/hotel_v50_0">
+	<hotel:RequestedHotelDetails>
+		<hotel:HotelProperty HotelChain="WV" HotelCode="70038" HotelLocation="STR" Name="Mo.Hotel"/>
+		<hotel:HotelRateDetail RatePlanType="C1SV12" Base="EUR85.50" Total="EUR85.50" RateCategory="4" RateChangeIndicator="false" ExtraFeesIncluded="false">
+			<hotel:RoomRateDescription Name="Room">
+				<hotel:Text>Std Rm 23m2 High Speed Inet Air Conditioning</hotel:Text>
+				<hotel:Text>Bath Products Fitness</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:RoomRateDescription Name="Rate">
+				<hotel:Text>Vienna Smart Room Only</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:HotelRateByDate EffectiveDate="2021-05-01" ExpireDate="2021-05-02" Base="EUR85.50"/>
+			<hotel:Commission Indicator="true" Percent="10"/>
+			<hotel:RateMatchIndicator Type="RoomCount" Status="Available" Value="1"/>
+			<hotel:RateMatchIndicator Type="AdultCount" Status="Available" Value="2"/>
+			<hotel:CancelInfo NonRefundableStayIndicator="true" TaxInclusive="true" FeeInclusive="true"/>
+			<hotel:GuaranteeInfo CredentialsRequired="false" GuaranteeType="Prepayment">
+				<hotel:DepositAmount Amount="EUR0.00"/>
+			</hotel:GuaranteeInfo>
+			<hotel:Inclusions SmokingRoomIndicator="unknown">
+				<hotel:BedTypes Code="248"/>
+				<hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+				<hotel:RoomView Code="20"/>
+			</hotel:Inclusions>
+		</hotel:HotelRateDetail>
+		<hotel:HotelRateDetail RatePlanType="STDV12" Base="EUR94.50" Total="EUR94.50" RateCategory="4" RateChangeIndicator="false" ExtraFeesIncluded="false">
+			<hotel:RoomRateDescription Name="Room">
+				<hotel:Text>Com Rm 27m2 High Speed Inet Air Conditioning</hotel:Text>
+				<hotel:Text>Bath Products Fitness Area</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:RoomRateDescription Name="Rate">
+				<hotel:Text>Vienna Smart Room Only</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:HotelRateByDate EffectiveDate="2021-05-01" ExpireDate="2021-05-02" Base="EUR94.50"/>
+			<hotel:Commission Indicator="true" Percent="10"/>
+			<hotel:RateMatchIndicator Type="RoomCount" Status="Available" Value="1"/>
+			<hotel:RateMatchIndicator Type="AdultCount" Status="Available" Value="2"/>
+			<hotel:CancelInfo NonRefundableStayIndicator="true" TaxInclusive="true" FeeInclusive="true"/>
+			<hotel:GuaranteeInfo CredentialsRequired="false" GuaranteeType="Prepayment">
+				<hotel:DepositAmount Amount="EUR0.00"/>
+			</hotel:GuaranteeInfo>
+			<hotel:Inclusions SmokingRoomIndicator="unknown">
+				<hotel:BedTypes Code="248"/>
+				<hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+				<hotel:RoomView Code="20"/>
+			</hotel:Inclusions>
+		</hotel:HotelRateDetail>
+		<hotel:HotelRateDetail RatePlanType="HNDV12" Base="EUR94.50" Total="EUR94.50" RateCategory="4" RateChangeIndicator="false" ExtraFeesIncluded="false">
+			<hotel:RoomRateDescription Name="Room">
+				<hotel:Text>Com Rm 27m2 High Speed Internet Bath Products</hotel:Text>
+				<hotel:Text>Bath Products Fitness Area</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:RoomRateDescription Name="Rate">
+				<hotel:Text>Vienna Smart Room Only</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:HotelRateByDate EffectiveDate="2021-05-01" ExpireDate="2021-05-02" Base="EUR94.50"/>
+			<hotel:Commission Indicator="true" Percent="10"/>
+			<hotel:RateMatchIndicator Type="RoomCount" Status="Available" Value="1"/>
+			<hotel:RateMatchIndicator Type="AdultCount" Status="Available" Value="2"/>
+			<hotel:CancelInfo NonRefundableStayIndicator="true" TaxInclusive="true" FeeInclusive="true"/>
+			<hotel:GuaranteeInfo CredentialsRequired="false" GuaranteeType="Prepayment">
+				<hotel:DepositAmount Amount="EUR0.00"/>
+			</hotel:GuaranteeInfo>
+			<hotel:Inclusions SmokingRoomIndicator="unknown">
+				<hotel:BedTypes Code="248"/>
+				<hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+				<hotel:RoomView Code="20"/>
+			</hotel:Inclusions>
+		</hotel:HotelRateDetail>
+		<hotel:HotelRateDetail RatePlanType="C1SV13" Base="EUR95.00" Total="EUR95.00" RateCategory="4" RateChangeIndicator="false" ExtraFeesIncluded="false">
+			<hotel:RoomRateDescription Name="Room">
+				<hotel:Text>Std Rm 23m2 High Speed Inet Air Conditioning</hotel:Text>
+				<hotel:Text>Bath Products Fitness</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:RoomRateDescription Name="Rate">
+				<hotel:Text>Vienna Flex Room Only</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:HotelRateByDate EffectiveDate="2021-05-01" ExpireDate="2021-05-02" Base="EUR95.00"/>
+			<hotel:Commission Indicator="true" Percent="10"/>
+			<hotel:RateMatchIndicator Type="RoomCount" Status="Available" Value="1"/>
+			<hotel:RateMatchIndicator Type="AdultCount" Status="Available" Value="2"/>
+			<hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2021-05-01T18:00:00.000+02:00" TaxInclusive="true" FeeInclusive="true"/>
+			<hotel:GuaranteeInfo AbsoluteDeadline="2021-05-01T00:00:00.000+00:00" CredentialsRequired="false" GuaranteeType="Guarantee">
+				<hotel:DepositAmount Amount="EUR0.00"/>
+			</hotel:GuaranteeInfo>
+			<hotel:Inclusions SmokingRoomIndicator="unknown">
+				<hotel:BedTypes Code="248"/>
+				<hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+				<hotel:RoomView Code="20"/>
+			</hotel:Inclusions>
+		</hotel:HotelRateDetail>
+		<hotel:HotelRateDetail RatePlanType="STDV13" Base="EUR105.00" Total="EUR105.00" RateCategory="4" RateChangeIndicator="false" ExtraFeesIncluded="false">
+			<hotel:RoomRateDescription Name="Room">
+				<hotel:Text>Com Rm 27m2 High Speed Inet Air Conditioning</hotel:Text>
+				<hotel:Text>Bath Products Fitness Area</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:RoomRateDescription Name="Rate">
+				<hotel:Text>Vienna Flex Room Only</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:HotelRateByDate EffectiveDate="2021-05-01" ExpireDate="2021-05-02" Base="EUR105.00"/>
+			<hotel:Commission Indicator="true" Percent="10"/>
+			<hotel:RateMatchIndicator Type="RoomCount" Status="Available" Value="1"/>
+			<hotel:RateMatchIndicator Type="AdultCount" Status="Available" Value="2"/>
+			<hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2021-05-01T18:00:00.000+02:00" TaxInclusive="true" FeeInclusive="true"/>
+			<hotel:GuaranteeInfo AbsoluteDeadline="2021-05-01T00:00:00.000+00:00" CredentialsRequired="false" GuaranteeType="Guarantee">
+				<hotel:DepositAmount Amount="EUR0.00"/>
+			</hotel:GuaranteeInfo>
+			<hotel:Inclusions SmokingRoomIndicator="unknown">
+				<hotel:BedTypes Code="248"/>
+				<hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+				<hotel:RoomView Code="20"/>
+			</hotel:Inclusions>
+		</hotel:HotelRateDetail>
+		<hotel:HotelRateDetail RatePlanType="HNDV13" Base="EUR105.00" Total="EUR105.00" RateCategory="4" RateChangeIndicator="false" ExtraFeesIncluded="false">
+			<hotel:RoomRateDescription Name="Room">
+				<hotel:Text>Com Rm 27m2 High Speed Internet Bath Products</hotel:Text>
+				<hotel:Text>Bath Products Fitness Area</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:RoomRateDescription Name="Rate">
+				<hotel:Text>Vienna Flex Room Only</hotel:Text>
+			</hotel:RoomRateDescription>
+			<hotel:HotelRateByDate EffectiveDate="2021-05-01" ExpireDate="2021-05-02" Base="EUR105.00"/>
+			<hotel:Commission Indicator="true" Percent="10"/>
+			<hotel:RateMatchIndicator Type="RoomCount" Status="Available" Value="1"/>
+			<hotel:RateMatchIndicator Type="AdultCount" Status="Available" Value="2"/>
+			<hotel:CancelInfo NonRefundableStayIndicator="false" CancelDeadline="2021-05-01T18:00:00.000+02:00" TaxInclusive="true" FeeInclusive="true"/>
+			<hotel:GuaranteeInfo AbsoluteDeadline="2021-05-01T00:00:00.000+00:00" CredentialsRequired="false" GuaranteeType="Guarantee">
+				<hotel:DepositAmount Amount="EUR0.00"/>
+			</hotel:GuaranteeInfo>
+			<hotel:Inclusions SmokingRoomIndicator="unknown">
+				<hotel:BedTypes Code="248"/>
+				<hotel:MealPlans Breakfast="false" Lunch="false" Dinner="false"/>
+				<hotel:RoomView Code="20"/>
+			</hotel:Inclusions>
+		</hotel:HotelRateDetail>
+		<hotel:HotelType SourceLink="true"/>
+	</hotel:RequestedHotelDetails>
+</hotel:HotelDetailsRsp>
+
+
+
+
+ReferenceDataRetrieveReq --------------------------
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:util="http://www.travelport.com/schema/util_v50_0" xmlns:com="http://www.travelport.com/schema/common_v50_0">
+<soapenv:Header/>
+<soapenv:Body>
+<util:ReferenceDataRetrieveReq TargetBranch="TargetBranch" TypeCode="HotelRateCategory">
+<com:BillingPointOfSaleInfo OriginApplication="uAPI"/>
+<util:ReferenceDataSearchModifiers MaxResults="10" StartFromResult="0"/>
+</util:ReferenceDataRetrieveReq>
+</soapenv:Body>
+</soapenv:Envelope>
+
+
+
+
+ReferenceDataRetrieveRespnse -------------------------
+
+
+<util:ReferenceDataRetrieveRsp TransactionId="A1454DAE0A0E7C817AAE94CA112BB643" ResponseTime="12" MoreResults="false" xmlns:util="http://www.travelport.com/schema/util_v50_0">
+  <util:ReferenceDataItem Code="913" Name="All" Description="All" Deprecated="false" />
+  <util:ReferenceDataItem Code="1" Name="Association" Description="Association" Deprecated="false" />
+  <util:ReferenceDataItem Code="3" Name="Convention" Description="Convention" Deprecated="false" />
+  <util:ReferenceDataItem Code="4" Name="Corporate" Description="Corporate" Deprecated="false" />
+  <util:ReferenceDataItem Code="2" Name="Club/concierge" Description="Club" Deprecated="false" />
+  <util:ReferenceDataItem Code="5" Name="Day rate" Description="One day stay" Deprecated="false" />
+  <util:ReferenceDataItem Code="13" Name="Regular/rack" Description="Rack General" Deprecated="false" />
+  <util:ReferenceDataItem Code="8" Name="Government" Description="Government" Deprecated="false" />
+</util:ReferenceDataRetrieveRsp>
+
+
+
+In host:  
+
+
+*HOC* WV 70038  VIENNA HOUSE EASY M    01MAY-02MAY 01NT 1 ADULTS
+                                                                
+REF      RATE      CUR                          COM CAT GT RF CR
+  1 NT     85.50   EUR                           10 COR  P  N  N
+    AT     85.50 VIENNA SMART ROOM ONLY                         
+                 STD RM 23M2 HIGH SPEED INET AIR CONDITIONING   
+                 BATH PRODUCTS FITNESS                          
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+FULL PREPAYMENT REQUIRED-NONREFUNDABLE                          
+REF      RATE      CUR                          COM CAT GT RF CR
+  2 NT     85.50   EUR                           10 COR  P  N  N
+    AT     85.50 VIENNA SMART ROOM ONLY                         
+                 STS RM 23M2 HIGH SPEED INET AIR CONDITIONING   
+                 BATH PRODUCTS FITNESS AREA                     
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+FULL PREPAYMENT REQUIRED-NONREFUNDABLE                          
+  3 NT     94.50   EUR                           10 COR  P  N  N
+    AT     94.50 VIENNA SMART ROOM ONLY                         
+                 COM RM 27M2 HIGH SPEED INET AIR CONDITIONING   
+                 BATH PRODUCTS FITNESS AREA                     
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+FULL PREPAYMENT REQUIRED-NONREFUNDABLE                          
+REF      RATE      CUR                          COM CAT GT RF CR
+  4 NT     94.50   EUR                           10 COR  P  N  N
+    AT     94.50 VIENNA SMART ROOM ONLY                         
+                 COM RM 27M2 HIGH SPEED INTERNET BATH PRODUCTS  
+                 BATH PRODUCTS FITNESS AREA                     
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+FULL PREPAYMENT REQUIRED-NONREFUNDABLE                          
+  5 NT     95.00   EUR                           10 COR  G  Y  N
+    AT     95.00 VIENNA FLEX ROOM ONLY                          
+                 STD RM 23M2 HIGH SPEED INET AIR CONDITIONING   
+                 BATH PRODUCTS FITNESS                          
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+CANCEL WITHOUT PENALTY BY  MAY 01 2021 1800 LOCAL HOTEL TIME    
+REF      RATE      CUR                          COM CAT GT RF CR
+  6 NT     95.00   EUR                           10 COR  G  Y  N
+    AT     95.00 VIENNA FLEX ROOM ONLY                          
+                 STS RM 23M2 HIGH SPEED INET AIR CONDITIONING   
+                 BATH PRODUCTS FITNESS AREA                     
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+CANCEL WITHOUT PENALTY BY  MAY 01 2021 1800 LOCAL HOTEL TIME    
+  7 NT    105.00   EUR                           10 COR  G  Y  N
+    AT    105.00 VIENNA FLEX ROOM ONLY                          
+                 COM RM 27M2 HIGH SPEED INET AIR CONDITIONING   
+                 BATH PRODUCTS FITNESS AREA                     
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+CANCEL WITHOUT PENALTY BY  MAY 01 2021 1800 LOCAL HOTEL TIME    
+REF      RATE      CUR                          COM CAT GT RF CR
+  8 NT    105.00   EUR                           10 COR  G  Y  N
+    AT    105.00 VIENNA FLEX ROOM ONLY                          
+                 COM RM 27M2 HIGH SPEED INTERNET BATH PRODUCTS  
+                 BATH PRODUCTS FITNESS AREA                     
+                 BED:UNK   MEAL:NO          VIEW:VARIOUS        
+CANCEL WITHOUT PENALTY BY  MAY 01 2021 1800 LOCAL HOTEL TIME    
+
+
